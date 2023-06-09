@@ -4,9 +4,9 @@ Voor het extern publiceren van documenten en standaarden gebruiken we â€œReSpecâ
 
 ## Wat is Markdown
 
-Markdown is een lichtgewicht opmaaktaal op basis van platte tekst die zodanig ontworpen is dat het gemakkelijk valt te converteren naar HTML en andere formaten middels een applicatie met dezelfde naam. Markdown wordt vaak gebruikt voor de opmaak van project documentatie (README-bestanden), eenvoudige CMS-systemen en berichten in online fora. Tekst in deze opmaaktaal is gemakkelijk te maken met een simpele teksteditor.
+[Markdown](https://nl.wikipedia.org/wiki/Markdown) is een lichtgewicht opmaaktaal op basis van platte tekst die zodanig ontworpen is dat het gemakkelijk valt te converteren naar HTML en andere formaten middels een applicatie met dezelfde naam. Markdown wordt vaak gebruikt voor de opmaak van project documentatie (README-bestanden), eenvoudige CMS-systemen en berichten in online fora. Tekst in deze opmaaktaal is gemakkelijk te maken met een simpele teksteditor.
 
-Het ontwerpdoel van de taal is leesbaarheid. Teksten geschreven met behulp van Markdown worden geacht al leesbaar te zijn voordat opmaak is toegepast op de tekst. Opmaakinstructies en tags zijn dan ook niet te vinden in pure Markdown<span class='noot'>[1]<span class='noottekst'> bron: https://nl.wikipedia.org/wiki/Markdown <br/></span></span>. 
+Het ontwerpdoel van de taal is leesbaarheid. Teksten geschreven met behulp van Markdown worden geacht al leesbaar te zijn voordat opmaak is toegepast op de tekst. Opmaakinstructies en tags zijn dan ook niet te vinden in pure Markdown.
 
 ### Werken met Markdown in Visual Code
 
