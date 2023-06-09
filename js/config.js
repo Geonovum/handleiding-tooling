@@ -2,7 +2,7 @@ let respecConfig = {
   useLogo: true,
   useLabel: true,
   // title is verplicht! Neem hier de titel van het document op ----------------------
-  title: "[Neem titel op in config.js]",
+  title: "Beheer GitHub/ Markdown/ ReSpec",
   //-- specStatus is verplicht! (activeer 1 van de volgende) --------------------------
   specStatus: "wv",                   // Werkversie
   //specStatus: "cv",               // Consultatieversie
@@ -14,10 +14,10 @@ let respecConfig = {
   //specType: "ST",                 // Standaard
   //specType: "IM",                 // Informatie Model
   //specType: "PR",                 // Praktijkrichtlijn
-  specType: "HR",                     // HandReiking
+  //specType: "HR",                     // HandReiking
   //specType: "WA",                 // Werkafspraak
   //specType: "BD",                 // Beheer Documentatie
-  //specType: "AL",                 // Algemeen document
+  specType: "AL",                 // Algemeen document
   //specType: "BP",                 // Best Practice
   specType: "HR",
   //-- pubDomain is verplicht! (komt in de URL) -------------------------------------
@@ -27,7 +27,7 @@ let respecConfig = {
   //licence: "cc0",                 // Public Domain Dedication
   licence: "cc-by",                 // Attribution, met bronvermelding
   //-- shortName is verplicht! (komt in de URL: kies logische afkorting)--------------
-  shortName: "NL-ReSpec-GN-template",
+  shortName: "handleiding-GitHub",
   //-- publishDate is verplicht -------------------------------------------------------
   //-- NB: in de werkversie uitzetten, want dan pakt Respec de pushdate ---------------
   //publishDate: "2023-03-28",
@@ -42,7 +42,7 @@ let respecConfig = {
   editors:
     [
       {
-        name: "voornaam achternaam",
+        name: "Wilko Quak",
         company: "Geonovum",
         companyURL: "https://www.geonovum.nl",
       }
@@ -52,7 +52,7 @@ let respecConfig = {
   authors:
     [
       {
-        name: "voornaam achternaam",
+        name: "Geonovum team",
         company: "Geonovum",
         companyURL: "https://www.geonovum.nl",
       }

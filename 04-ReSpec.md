@@ -1,8 +1,8 @@
-## ReSpec
+# ReSpec
 
 ReSpec is een tool van W3C die het schrijven van specifications makkelijker maakt. ReSpec zorgt voor een uniforme styling in het document, onderhoudt referenties en verwijzingen naar andere documentatie, verzorgt de inhoudsopgave, zorgt voor links naar vorige en meest recente versies, en heeft een integratie met Github issues.
 
-### Algemeen
+## Algemeen
 
 Er is een gedetailleerde (Engelstalige) gebruikershandleiding beschikbaar<span class='noot'>[2]<span class='noottekst'> Zie: https://github.com/w3c/respec/wiki/ReSpec-Editor's-Guide <br/></span></span>, en er is ook een ontwikkelaarshandleiding<span class='noot'>[3]<span class='noottekst'> Zie: https://github.com/w3c/respec/wiki/Developers-Guide <br/></span></span> te vinden.
 
@@ -10,9 +10,9 @@ Geonovum heeft een fork van W3C ReSpec omdat wij sommige onderdelen gecustomised
 
 De Geonovum wiki over ReSpec kan naast dit hoofdstuk worden gebruikt: <a href='https://github.com/Geonovum/respec/wiki' target='_blank'>https://github.com/Geonovum/respec/wiki</a> 
 
-### Documentatie maken met ReSpec 
+## Documentatie maken met ReSpec 
 
-#### De map indeling
+### De map indeling
 
 Een document dat bij Geonovum met ReSpec wordt gemaakt heeft standaard de onderstaande mappenstructuur. Voor het aanmaken van een nieuw ReSpec Document staat een template klaar.
 
@@ -100,103 +100,46 @@ In de submap “media” staat o.a. het bestand “style.css”, en ook worden a
 <img src='media/image23.png' alt='media/image23.png' style='width: 100%;'></img>
 De namen van de afbeeldingen in dit voorbeeld zijn geregenereerd door de Markdown plugin “Writage” (zie paragraaf <a href='#_Ref17110306'>3.2<a></a>) Het staat je vrij om die namen herkenbare namen te geven, zolang je deze namen dan ook maar in de verwijzingen worden gebruikt.
 
-#### Het bestand “index.html”
+### Het bestand “index.html”
 
 Het bestand index.html zorgt ervoor dat het ReSpec document automatisch wordt geladen in de browser. Bij het laden wordt ook automatisch de geonovum-ReSpec-code geladen en uitgevoerd. Deze code zorgt ervoor dat het document zijn standaard layout krijgt.
 
 Index.html heeft een standaard indeling. Hieronder de template zoals gebruikt voorbeeld:
 
-\<!DOCTYPE html\>
+```
+<!DOCTYPE html>
+<html lang="nl">
 
-\<html lang='nl'\>
+<head>
+  <meta content="text/html; charset=utf-8" http-equiv="content-type">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <script src="https://cdn.jsdelivr.net/gh/digitalbazaar/respec-mermaid@1.0.1/dist/main.js" class="remove"></script>
+  <script src="https://tools.geostandaarden.nl/respec/config/geonovum-config.js" class="remove"></script>
+  <script src="js/config.js" class="remove"></script>
+  <script class="remove"> respecConfig = {...organisationConfig, ...respecConfig}</script>
+  <script>document.title = respecConfig.title</script>
+  <title>Default</title>
+  <link rel="shortcut icon" type="image/x-icon" href="https://tools.geostandaarden.nl/respec/style/logos/Geonovum.ico" />
+  <script src="https://gitdocumentatie.logius.nl/publicatie/respec/builds/respec-nlgov.js" class="remove" async></script>
+</head>
 
- \<!-- HTML-Header --------------------------------------------------------------------------- --\>
+<body>
+  <section id="abstract" data-include-format="markdown" data-include="abstract.md"></section>
+  <section id="sotd"></section><!-- Wordt automatisch gevuld -->
 
- \<head\>
+  <!-- voeg hier je eigen hoofdstukken toe -->
+  <section data-include-format="markdown" data-include="ch01.md" class="informative"></section>
+  <section data-include-format="markdown" data-include="ch02.md"></section>
+  <section data-include-format="markdown" data-include="mermaid.md"></section>
 
- \<meta charset='utf-8'\>
+  <section id='conformance'></section>
+  <section id='tof'></section>
+  <section id="index"></section>
+</body>
 
-\<!-- -----------------------------------------------------------------------------------------------
+</html>
+```
 
-//-- File. . . : index.html
-
-//-- Bevat . . : Template voor de index.html die verplicht is voor ReSpec 
-
-//-- Gebaseerd op https://github.com/Geonovum/ReSpec/wiki
-
-//-- Deze file moet worden neergezet in de root-directory van de 
-
-//-- betreffende standaard. 
-
-//-- Door. . . : Jan van Gelder
-
-//-- -----------------------------------------------------------------------------------------------
-
-//-- -----------------------------------------------------------------------------------------------
-
-//-- Log . . . : 20181015 - JvG - Initiele versie 
-
-//
-
-----------------------------------------------------------------------------------------------------
-
-0 1 2 3 4 5 6 7 8 9 0
-
-1234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890
-
------------------------------------------------------------------------------------------------- --\>
-
- \<!-- Invullen: de titel van de standaard of het document ------------------------------- --\>
-
- \<title\>ReSpec en Markdown cases\</title\> 
-
- \<!-- Invullen: de naam van de lokale CSS file ------------------------------------------ --\>
-
- \<link rel="stylesheet" type="text/css" href="./media/style.css"\>
-
- \<link rel='shortcut icon' type='image/x-icon' href='https://tools.geostandaarden.nl/ReSpec/style/logos/Geonovum.ico' /\>
-
- \<script class="remove" src="./config.js"\>\</script\>
-
- \<script class='remove' src='https://tools.geostandaarden.nl/ReSpec/builds/ReSpec-geonovum.js' async\>\</script\>
-
- \</head\>
-
- \<!-- HTML-Body ----------------------------------------------------------------------------- --\>
-
- \<body\>
-
- \<section id='abstract' data-format="Markdown" data-include="Samenvatting.md"\>\<h2\>Samenvatting\</h2\>\</section\> 
-
- \<!-- sodt = 'status of this document'. ReSpec genereert automatisch een tekst hierin --- --\>
-
- \<!-- op basis van specType en specStatus. ---------------------------------------------- --\>
-
- \<!-- Deze automatische tekst kun je aanvullen door tussen \<p\>\</p\> iets te typen. ------- --\> 
-
- \<section id='sotd'\>\<p\>\</p\>\</section\>
-
- \<!-- vanaf hier per hoofdstuk een sectie of een div in het document -------------------- --\>
-
- \<!-- Secties komen in de inhoudsopgave div's niet -------------------------------------- --\>
-
- \<!-- Secties hebben verplicht \<h2\> tags, div's niet ------------------------------------ --\>
-
- \<!-- Voorbeelden: ---------------------------------------------------------------------- --\>
-
- \<!-- \<div id='H00' data-format="Markdown" data-include="filenaam.md"\>\</div\> ------------ --\>
-
- \<!-- voor een nieuw hoofdstuk kopieer je een regel, en voegt die toe ------------------- --\>
-
- \<section id='H01' data-format="Markdown" data-include="H1-Doel.md"\>\<h2\>Inleiding\</h2\>\</section\> 
-
- \<section id='H02' data-format="Markdown" data-include="H2-Testcases.md"\>\<h2\>Metamodel\</h2\>\</section\>
-
- \<section id='B00' data-format="Markdown" data-include="Bijlagen.md"\>\<h2\>Bijlagen\</h2\>\</section\>
-
- \</body\>
-
-\</html\>
 
 In de HTML-header wordt de js-ReSpec bibliotheek geladen. Het enige dat in de header mag worden aangepast is de title (tussen \<title\> en \</title\>. Andere aanpassingen die nodig zijn in de header mogen alleen worden gedaan in overleg met de ReSpec beheerders. Een overzicht van de ReSpec beheerders staat in Hoofdstuk 6
 
@@ -210,219 +153,85 @@ Een \<div\> is een sectie plus bijbehorend document, dat niet in de inhoudsopgav
 
 Een \<section\> komt wél in de inhoudsopgave terecht. Deze heeft daarom behalve de data-include van het document, ook (verplicht!) een \<h2\> tag. De tekst tussen \<h2\> en \</h2\> komt in de inhoudsopgave te staan.
 
-#### <a name='_Ref17112354'></a>Het bestand “config.js”
+### <a name='_Ref17112354'></a>Het bestand “config.js”
 
 In config.js wordt een stuurvariabele voor ReSpec gevuld. De waarden in deze variabele worden door ReSpec gebruikt om de layout te bepalen, en bevatten een aantal document-eigenschappen.
 
 Hieronder een voorbeeld config.js.
 
-//-------------------------------------------------------------------------------------
 
-//-- File. . . : config.js
+```
+let respecConfig = {
+  useLogo: true,
+  useLabel: true,
+  // title is verplicht! Neem hier de titel van het document op ----------------------
+  title: "[Neem titel op in config.js]",
+  //-- specStatus is verplicht! (activeer 1 van de volgende) --------------------------
+  specStatus: "wv",                   // Werkversie
+  //specStatus: "cv",               // Consultatieversie
+  //specStatus: "vv",               // Versie ter vaststelling
+  //specStatus: "def",              // Vastgestelde versie
+  //specStatus: "basis",            // Basis Document
+  //-- specType is verplicht bij alle andere dan BASIS ---------------------------------
+  //specType: "NO",                 // Norm
+  //specType: "ST",                 // Standaard
+  //specType: "IM",                 // Informatie Model
+  //specType: "PR",                 // Praktijkrichtlijn
+  specType: "HR",                     // HandReiking
+  //specType: "WA",                 // Werkafspraak
+  //specType: "BD",                 // Beheer Documentatie
+  //specType: "AL",                 // Algemeen document
+  //specType: "BP",                 // Best Practice
+  specType: "HR",
+  //-- pubDomain is verplicht! (komt in de URL) -------------------------------------
+  pubDomain: "dk",
+  //-- license: voor de geldende gebruiksvoorwaarden. Default is cc-by.
+  //licence: "cc-by-nd",            // bronvermelding, geen afgeleide werken (default)
+  //licence: "cc0",                 // Public Domain Dedication
+  licence: "cc-by",                 // Attribution, met bronvermelding
+  //-- shortName is verplicht! (komt in de URL: kies logische afkorting)--------------
+  shortName: "NL-ReSpec-GN-template",
+  //-- publishDate is verplicht -------------------------------------------------------
+  //-- NB: in de werkversie uitzetten, want dan pakt Respec de pushdate ---------------
+  //publishDate: "2023-03-28",
+  //eventueel is het mogelijk een versienummer mee te geven, maar bij Geonovum werken we gewoonlijk alleen met datum als onderdeel van de permanente URI.
+  //publishVersion: "0.0.2",
+  //previousVersion: "0.0.1",
+  //-- Voor dit blok geldt: alleen als er eerdere versies zijn en altijd beiden aan/uit! 
+  //previousPublishDate: "2014-05-01",
+  //previousMaturity: "CV",
+  //-- de namen van de Editor(s) / Redacteur(en)---------------------------------------
+  //-- vul in: per Editor: name:, company:, companyURL: -------------------------------
+  editors:
+    [
+      {
+        name: "voornaam achternaam",
+        company: "Geonovum",
+        companyURL: "https://www.geonovum.nl",
+      }
+    ],
+  //-- de namen van de auteur(s) ------------------------------------------------------
+  //-- vul in: per auteur: name:, company:, companyURL: -------------------------------
+  authors:
+    [
+      {
+        name: "voornaam achternaam",
+        company: "Geonovum",
+        companyURL: "https://www.geonovum.nl",
+      }
+    ],
+  //neem hier de URL van de github repository op waar het respec document in staat
+  github: "https://github.com/Geonovum/NL-ReSpec-GN-template",
+  // Create PDF and link to file in header (optional):
+  alternateFormats: [
+      {
+          label: "pdf",
+          uri: "template.pdf",
+      },
+  ],
+};
+```
 
-//-- Bevat . . : Template voor de configuratie voor ReSpec 
-
-//-- Gebaseerd op https://github.com/Geonovum/ReSpec/wiki
-
-//-- Deze file moet worden neergezet in de root-directory van de 
-
-//-- betreffende standaard. 
-
-//-- Door. . . : Jan van Gelder
-
-//-------------------------------------------------------------------------------------
-
-//-------------------------------------------------------------------------------------
-
-//-- Log . . . : 20181015 - JvG - Initiele versie 
-
-//-------------------------------------------------------------------------------------
-
-//-------------------------------------------------------------------------------------
-
-var ReSpecConfig = 
-
-\{
-
- //-- specStatus is verplicht! (activeer 1 van de volgende) --------------------------
-
- specStatus: "GN-WV",     // Werk Versie
-
- //specStatus: "GN-CV",     // Consultatie Versie
-
- //specStatus: "GN-VV",     // Vaststellings Versie
-
- //specStatus: "GN-DEF",     // Definitieve Versie
-
- //-- specType is verplicht! (activeer 1 van de volgende) ----------------------------
-
- //specType: "NO",     // Norm
-
- specType: "ST",     // Standaard
-
- //specType: "IM",     // Informatie Model
-
- //specType: "PR",     // Praktijk Richtlijn
-
- //specType: "HR",     // HandReiking
-
- //specType: "WA",     // Werkafspraak
-
- //-- format is verplicht! -----------------------------------------------------------
-
- format: "Markdown",     // altijd "Markdown" 
-
- //-- publishDate is verplicht -------------------------------------------------------
-
- //-- NB: in de werkversie uitzetten, want dan pakt ReSpec de pushdate ---------------
-
- //publishDate: "2018-09-18",    // Format is "YYY-MM-DD"
-
- //-- de namen van de Editor(s) ------------------------------------------------------
-
- //-- vul in: per Editor: name:, company:, companyURL: -------------------------------
-
- editors: 
-
- \[
-
- \{
-
- name: "Jan van Gelder",
-
- company: "Geonovum",
-
- companyURL: "https://www.geonovum.nl"
-
- \}
-
- \],
-
- //-- de namen van de Author(s) ------------------------------------------------------
-
- //-- vul in: per Author: name:, company:, companyURL: -------------------------------
-
- authors: 
-
- \[
-
- \{
-
- name: "Paul Janssen",
-
- company: "Geonovum",
-
- companyURL: "https://www.geonovum.nl"
-
- \},
-
- \{
-
- name: "Linda van de Brink",
-
- company: "Geonovum",
-
- companyURL: "https://www.geonovum.nl"
-
- \},
-
- \{
-
- \],
-
- //-- shortName is verplicht! (komt in de URL: kies logische naam) --------------------
-
- shortName: "mim",      // Wordt gebruikt in de document URL
-
- //-- pubDomain is verplicht! (komt in de URL: Activeer 1 van de volgende) ------------
-
- pubDomain: "mim",      // Metamodel Informatie Modellering
-
- //pubDomain: "bor",      // Beheer Openbare Ruimte
-
- //pubDomain: "bro",      // Basisregistratie Ondergrond
-
- //pubDomain: "imgeo",      // IMGeo / BGT
-
- //pubDomain: "kl",      // Kabels en Leidingen
-
- //pubDomain: "liv",      // Landelijke Informatievoorziening Vastgoedgebruik
-
- //pubDomain: "md",      // Metadata
-
- //pubDomain: "nen3610",      // Basismodel NEN3610
-
- //pubDomain: "oov",      // Openbare Orde en Veiligheid
-
- //pubDomain: "ro",      // Ruimtelijke Ordening
-
- //pubDomain: "serv",      // Services
-
- //pubDomain: "visu",      // Visualisatie
-
- //pubDomain: "wp",      // White Paper
-
- //-- Repositorynaam op GitHub -------------------------------------------------------
-
- github: "https://github.com/Geonovum/MIM-Werkomgeving",
-
- //-- Repositorynaam/issues op GitHub ------------------------------------------------
-
- issueBase: "https://github.com/Geonovum/MIM-Werkomgeving/issues/",
-
- //-- license: voor de geldende gebruiksvoorwaarden
-
- licence: "cc-by-nd",     //-- bronvermelding, geen afgeleide werken (default)
-
- // licence: "cc0",     //-- Public Domain Dedication
-
- // licence: "cc-by",     //-- Attribution, met bronvermelding
-
- 
-
- //-- localBiblio: lokale bibliografie, voor verwijzigingen
-
- //-- NB: kijk eesrt naar de beschikbare www.specref.org voor verwijziging 
-
- localBiblio: 
-
- \{
-
- "CITAAT":
-
- \{
-
- title: "Titel van het Citaat",
-
- href: "http://url van de publicatie",
-
- status: "versie van de publicatie",
-
- publisher: "naam van de publiceerder",
-
- company: "eventueel naam van bedrijf",
-
- \}
-
- \}
-
- //-- Voor dit blok geldt: alleen als er eerdere versies zijn en altijd beiden aan/uit! 
-
- //previousPublishDate: "2018-09-18",        // Format is "YYY-MM-DD"
-
- //previousMaturity: "CV",     // kies 1 van deze 2 regels  
-
- //previousMaturity: "VV",      // kies 1 van deze 2 regels
-
- //-- Optionele parameters:
-
- //emailComments: "mim@geonovum.nl",     // reactie mailadres, alleen bij CV!
-
- //subtitle: "iets",     // Subtitel van het document
-
- //maxTocLevel: 3,     // Aantal niveau's ToC, default is 0
-
-\};
 
 De file config.js is eigenlijk een stukje javascript (JSON) code, het bevat alle mogelijke waarden voor de verschillende versies die wij hanteren bij Geonovum. In de file zelf staat aangegeven welke waarden verplicht zijn, en uit welke waarden te kiezen is. In bovenstaand voorbeeld gaat het om een “Werkversie van een standaard”.
 
@@ -478,224 +287,49 @@ Onderstaande beschrijvingen komen uit het generiek beheerplan<span class='noot'>
 In de localBiblio variabele worden Referenties naar andere documenten gezet. Voordat je hier citaten toevoegt, loont het de moeite om eerst in de SpecRef van ReSpec zelf te kijken. Zie voor uitleg van Specref paragraaf <a href='#_Ref17110974'>4.3.3<a></a>. Pas als je een verwijzing niet vindt in SpecRef voeg je hem hier toe!
 
 
-#### Het bestand “style.css”
+### Het bestand “style.css”
+
+FIXME
 
 Het bestand style.css staat in de map media. De Geonovum Fork van ReSpec heeft een eigen styling. Met het bestand style.css kan je de default styling van Geonovum overschrijven en/of aanvullen. Om te voorkomen dat er een wildgroei aan stijlen, lettertypes en kleuren gaat ontstaan, moet die altijd in overleg met de ReSpec Beheerders (zie <a href='#_Ref17112095'>Hoofdstuk 5<a></a>). 
 
-/*-------------------------------------------------------------------------------------
 
-//-- File. . . : style.css
 
-//-- Bevat . . : Template voor de stylesheet voor ReSpec 
-
-//-- Gebaseerd op https://github.com/Geonovum/ReSpec/wiki
-
-//-- Deze file mag worden neergezet in de root-directory van de 
-
-//-- betreffende standaard, maar ook 1 niveau lager in de map "media"
-
-//-- gedefinieerde stijlen overschrijven de default stijlen. 
-
-//-- Door. . . : Jan van Gelder
-
-//-------------------------------------------------------------------------------------
-
-//-------------------------------------------------------------------------------------
-
-//-- Log . . . : 20181009 - JvG - Initiele versie 
-
-//-----------------------------------------------------------------------------------*/
-
-/*-- Definitie van Image ------------------------------------------------------------*/
-
-img 
-
-\{
-
- max-width: 100%;
-
- height: auto;
-
- width: auto;
-
-\}
-
-/*-- Definite van het Geonovum Logo bovenaan ReSpec document ------------------------*/
-
-img#Geonovum
-
-\{
-
- width:132px;
-
- height: 67px;
-
-\}
-
-/*-- Definite van BlockQuotes (uitgelichte tekstblokken) ----------------------------*/
-
-blockquote 
-
-\{
-
- /* margin-left: 20px !important; */
-
- font-family: 'Esteban', serif !important;
-
- font-style: italic;
-
- border-color: transparent !important;
-
- border-style: none !important;
-
- background-color: darkgray;
-
- color: white;
-
-\}
-
-/*-- Optioneel een symbool voor de blockquote --------------------------------------*/
-
-blockquote:before 
-
-\{
-
- display: block;
-
- height: 0;
-
- /* content: "|"; */ 
-
- margin-left: -0.95em;
-
- font: italic 400%/1 Esteban, serif;
-
- color: grey;
-
-\}
-
-/*-- Definite van tabellen ---------------------------------------------------------*/
-
-table
-
-\{
-
- empty-cells: show;
-
- min-width: 90%;
-
- border-color: grey;
-
- border-style: solid;
-
-\}
-
-/*-- Definite van de kopregel van een tabel ----------------------------------------*/
-
-thead
-
-\{
-
- background-color: grey;
-
- color: white;
-
-\}
-
-/*-- Definite van de body van een tabel --------------------------------------------*/
-
-tbody
-
-\{
-
- border-color: darkolivegreen;
-
- background-color: lightgrey
-
-\}
-
-/*-- Definite van de tabel-rij (deze zorgt voor 2 kleuren in de rijen) -------------*/
-
-tr:nth-child(even) 
-
-\{
-
- background-color: darkgrey;
-
-\}
-
-/*-- Definite van de tabel-cel (data) ----------------------------------------------*/
-
-td 
-
-\{
-
- min-width: 100px; /* lege kolommen hebben deze minimale breedte */
-
-\}
-
-/*-- Definite van rode tekst -------------------------------------------------------*/
-
-r
-
-\{
-
- color: red;
-
-\}
-
-/*-- Definite van rose tekstblok ---------------------------------------------------*/
-
-div#remark
-
-\{
-
- border-color: darkblue;
-
- border-style: solid;
-
- background-color: rosybrown;
-
- color: darkblue;
-
-\}
-
-
-#### Content: bestanden “*.md”
+### Content: bestanden “*.md”
 
 De “echte” content wordt gemaakt in het formaat “Markdown”. Er is een aantal editors beschikbaar die dat formaat ondersteunen. Zie hiervoor <a href='#_Ref17112190'>Hoofdstuk 3<a></a>. Het is handig om voor elk hoofdstuk een aparte Markdown file te maken, want dan blijven de bestanden beperkt in grootte, en zijn er gemakkelijker werkafspraken te maken over wie wanneer in welke file aan het editen is.
 
-#### Content: Afbeeldingen “*.png”
+### Content: Afbeeldingen “*.png”
 
 Afbeeldingen worden als “png” bestand neergezet in de map “media”. In je Markdown document neem je gewoon een plaatje op zoals je in Word gewend bent. Writage en ReSpec zorgen ervoor dat de plaatjes worden getoond.
 
-### 379031526670000ReSpec Frontend
+## ReSpec Frontend
 
-#### De knop “ReSpec”
+### De knop “ReSpec”
 
 De knop “ReSpec” rechtsboven in de frontend van ReSpec, bevat een aantal handige functies. Als je klikt op de knop, verschijnt het vervolgscherm met een viertal functies.
 
 Elk van de functies wordt hieronder uitgelegd.
 
 <img src='media/image25.png' alt='media/image25.png' style='width: 15.238974832602171%;'></img>
-#### Bewaar snapshot
+### Bewaar snapshot
 
 <img src='media/image26.png' alt='media/image26.png' style='width: 65.03117063033942%;'></img>
-#### <a name='_Ref17110974'></a>Doorzoek SpecRef
+### <a name='_Ref17110974'></a>Doorzoek SpecRef
 
 <img src='media/image27.png' alt='media/image27.png' style='width: 72.8180467859435%;'></img>
 <img src='media/image28.png' alt='media/image28.png' style='width: 70.24936504271531%;'></img>
 De gevonden zoekresultaten kunnen worden overgenomen in het ReSpec document.
 
-#### Lijst van definities
+### Lijst van definities
 
 Deze functie gebruiken wij vooralsnog niet.
 
-### Hogere ReSpec 
+## Hogere ReSpec 
 
 Omdat wij ervoor hebben gekozen om documenten te schrijven in Markdown, gebruiken wij niet alle ReSpec functionaliteit. In dit hoofdstuk worden de speciale ReSpec functies beschreven die als HTML code in het Markdown document kunnen wordnen opgenomen, of die in de door respec gegenereerde HTML file kunnen worden neergezet. Het gebruik van deze functionaliteit vereist dus wel HTML voorkennis.
 
-#### Afbeeldingen 
+### Afbeeldingen 
 
 Een lijst van afbeeldingen kan door ReSpec automatisch worden gegenereerd, maar dan moet er wel aan een aantal ReSpec specifieke voorwaarden worden voldaan, en dat werk niet vanuit de wrritage plugin….
 
@@ -726,7 +360,7 @@ Eventuele referenties naar plaatjes doe je op e volgende manier:
 
 
 
-#### Referentie naar GitHub issues 
+### Referentie naar GitHub issues 
 
 ReSpec ondersteunt ook een koppeling naar issues die zijn gemeld op GitHub. Jek kan referenties opnemen naar individuele issues. Ook is het mogelijk om een lijst met alle issues op te nemen in je document.
 
@@ -750,7 +384,7 @@ Een lijst met issues kan je toevoegen met de volgende HTML code:
 
 ```
 
-#### Foutmeldingen en waarschuwingen 
+### Foutmeldingen en waarschuwingen 
 
 <img src='media/image29.png' alt='media/image29.png' style='width: 100%;'></img>
 <img src='media/image30.png' alt='media/image30.png' style='width: 23.98405925419563%;'></img>

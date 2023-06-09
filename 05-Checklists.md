@@ -1,8 +1,8 @@
-## Checklists
+# Checklists
 
 In dit hoofdstuk staat een aantal checklists die je kan gebruiken als je vanuit GitHub en ReSpec “Versies” gaat aanmaken. Bijvoorbeeld hoe maak je een nieuwe GitHub repository aan, of hoe maak je vanuit een werkversie een consultatieversie aan,
 
-### De nieuwe ReSpec repository maken 
+## De nieuwe ReSpec repository maken 
 
 <table style='width: 100%;'><caption></caption>
 <colgroup><col id='col1' style='width: 8.079056865464633%;'
@@ -82,7 +82,7 @@ localBiblio
 </tbody>
 </table>
 
-### Consultatie versie (CV) maken
+## Consultatie versie (CV) maken
 
 <table style='width: 100%;'><caption></caption>
 <colgroup><col id='col1' style='width: 7.9519186315302814%;'
@@ -239,7 +239,7 @@ https://geonovum.github.io/Metadata-ISO19115/snapshot.html
 </tbody>
 </table>
 
-### Vaststellingsversie (VV) maken
+## Vaststellingsversie (VV) maken
 
 <table style='width: 100%;'><caption></caption>
 <colgroup><col id='col1' style='width: 8.079056865464633%;'
@@ -299,7 +299,7 @@ https://geonovum.github.io/Metadata-ISO19115/snapshot.html
 </tbody>
 </table>
 
-### Definitieve versie (DEF) maken
+## Definitieve versie (DEF) maken
 
 <table style='width: 100%;'><caption></caption>
 <colgroup><col id='col1' style='width: 8.079056865464633%;'
