@@ -331,7 +331,7 @@ Omdat wij ervoor hebben gekozen om documenten te schrijven in Markdown, gebruike
 
 ### Afbeeldingen 
 
-Een lijst van afbeeldingen kan door ReSpec automatisch worden gegenereerd, maar dan moet er wel aan een aantal ReSpec specifieke voorwaarden worden voldaan, en dat werk niet vanuit de wrritage plugin….
+Een lijst van afbeeldingen kan door ReSpec automatisch worden gegenereerd, maar dan moet er wel aan een aantal ReSpec specifieke voorwaarden worden voldaan:
 
 In Index.html komt ergens te staan:
 ```

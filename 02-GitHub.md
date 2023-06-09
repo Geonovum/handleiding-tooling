@@ -141,3 +141,31 @@ het committen heb je dus nog niks ge-upload.
 
 Nadat je de wijzigingen hebt gecommit, moeten ze richting de centrale repository. Nu zijn er twee mogelijkheden. Ofwel je hebt schrijfrechten op de Centrale Repository, of je hebt ze niet. In het eerste geval kan je een Push Origin uitvoeren, dan worden de wijzigingen meteen in de Centrale GitHub Repository verwerkt. In het tweede geval doe je een Pull request bij de eigenaar van de Repository om de wijzigingen door te voeren. Github maakt dan een eigen versie voor je aan (dat heet een fork) en vraagt aan de eigenaar van de Repository om die fork te verwerken in de Centrale Repository.
 
+## Enkele regels over GitHub binnen Geonovum
+
+- Geonovum heeft binnen github een team: https://github.com/Geonovum.
+
+### Github beheer
+
+- Github teamleden met beheerders rechten zijn te vinden via: https://github.com/orgs/Geonovum/people?query=role%3Aowner
+- Daarnaast zijn er nog drie inhoudelijk beheerders vanuit Geonovum: Arnoud de Boer, Frank Terpstra en Linda vd Brink.
+
+
+### Github gebruikers
+- Een overzicht van de gebruikers is te vinden op: https://github.com/orgs/Geonovum/people.
+- In principe geldt de regels: als je lid bent van Geonovum Teams dan hoor je ook bij de Geonovum GitHub organisatie. De inhoudelijk beheerders kunnen besluiten daar van af te wijken.
+- Er is geen bezwaar tegen het gebruiken van een privé account binnen de github omgeving.
+- Bij vertrek wordt je omgezet naar 'External Collaborator'.
+
+### GitHub teams
+
+- Er is een aantal teams gemaakt binnen Geonovum. Deze zijn te vinden op: https://github.com/orgs/Geonovum/teams
+- Het is de bedoeling dat alle repositories die beheerd worden aan een team is toegekend met als doel dat het team aanspreekpunt is voor het repository.
+- Team namen eindigen op ' team'. Bijvoorbeeld 'DSO team'.
+
+### GitHub repositories
+
+- Dit zijn de Geonovum reopsitories: https://github.com/orgs/Geonovum/repositories.
+- Richtlijnen voor het inrichten van repositories zijn er nog niet. Wel is er bijvoorbeeld een template voor respec documenten.
+
+

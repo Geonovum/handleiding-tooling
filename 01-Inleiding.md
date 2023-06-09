@@ -4,7 +4,7 @@ Voor het ontwikkelen en beheren van standaarden gebruiken verschillende tooling.
 
 ## Aanleiding
 
-Om de standaarden die in beheer zijn bji Geonovum te kunnen beheren, wordt gebruik gemaakt van verschillende tooling. Documenten die behoren bij de standaarden worden gepubliceerd op [https://docs.geonovum.nl](https://docs.geonovum.nl) als HTML bestanden, deze HTML bestanden worden aangemaakt met een tool van W3C: ReSpec. 
+Om de standaarden die in beheer zijn bij Geonovum te kunnen beheren, wordt gebruik gemaakt van verschillende tooling. Documenten die behoren bij de standaarden worden gepubliceerd op [https://docs.geonovum.nl](https://docs.geonovum.nl) als HTML bestanden, deze HTML bestanden worden aangemaakt met een tool van W3C: ReSpec. 
 
 ReSpec maakt gebruik van input bestanden om de HTML te genereren. Deze inputbestanden (de content) wordt gemaakt in een formaat: Markdown. Deze Markdown bestanden kunnen worden aangemaakt met Microsoft Word, met behulp van een plugin, maar ze kunnen ook worden ge-edit met een standaard ascii editor zoals Visual Studio van Microsoft of Notepad++. Visual Studio heeft het voordeel dat de editor mooi integreert met de Github Desktop Client. Github tenslotte wordt gebruikt als de “repository”, waarin alle bestanden die bij een standaard horen, komen te staan.
 
@@ -12,5 +12,5 @@ Dit document beschrijft hoe je een GitHub Account maakt, hoe je GitHub Desktop C
 
 ## Leeswijzer
 
-Dit document is ingedeeld in “delen”. Achtereenvolgens zijn de hoofstukken over GitHub, ReSpec, Markdown opgenomen. Ieder hoofdstuk heeft 3 vaste paragrafen: Installeren van de software (indien nodig), Hoe gebruiken wij de software bij Geonovum, en een paragraaf “aan de slag” met nuttige tips en trucs en FAQ.
+Dit document bevat hoofstukken over GitHub, ReSpec, Markdown opgenomen. Ieder hoofdstuk heeft 3 vaste paragrafen: Installeren van de software (indien nodig), Hoe gebruiken wij de software bij Geonovum, en een paragraaf “aan de slag” met nuttige tips en trucs en FAQ.
 
