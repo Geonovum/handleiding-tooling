@@ -8,7 +8,7 @@ Waarschijnlijk wil je weten wat GitHub is, anders was je nu niet deze handleidin
 
 ## Meer over Github
 
-Veel programmeurs wereldwijd maken gebruik van de website GitHub, momenteel zelfs meer dan 40 miljoen. Zelf zal je er misschien ook wel van gehoord hebben. Als programmeur is het handig om te weten wat GitHub is en hoe je er gebruik van maakt.
+Veel programmeurs wereldwijd maken gebruik van de website GitHub. Zelf zal je er misschien ook wel van gehoord hebben. Als programmeur is het handig om te weten wat GitHub is en hoe je er gebruik van maakt.
 
 GitHub bestaat uit twee woorden, namelijk Git + Hub. Laten we beginnen met Git. *Git is een open source versiebeheersysteem. De website GitHub is gemaakt op basis van het versiebeheersysteem Git. Met GitHub heb je alle mogelijkheden van Git + extra features.
 
@@ -76,15 +76,11 @@ Hieronder staan belangrijke GitHub termen + de betekenis ervan:
 | Checkout    | Deze Git commando wordt vaak gebruikt om te switchen tussen branches. Je checkt als het ware uit bij een branch en gaat aan de slag in een andere branch.                                              |
 
 
-
-Er zijn natuurlijk nog meer GitHub termen, maar voor beginners zijn dit de belangrijkste om te weten.
-
 ## Ga zelf aan de slag met Github
 
 Hopelijk heb je een beter beeld over wat GitHub is. Ben je een gebruiker of wil je programmeur worden en werk je nog niet met een (goed) versiebeheersysteem? Dan is het zeker aan te raden om te beginnen met GitHub.
 
 We hebben een testrepository waar je kan oefenen met github zonder iets echt stuk te maken. Deze is te vinden op: https://github.com/Geonovum/DT-Opleiding.
 
-Doe een mail naar account@geonovum.nl om toegevoegd te worden aan deze repository. Je moet dan wel eerst een account aangemaakt hebben op github. Hoe je dat doet staat in het Handboek Gebruikers Github Respec Markdown.
-
+Stuur een mail naar account@geonovum.nl om toegevoegd te worden aan deze repository. Je moet dan wel eerst een account aangemaakt hebben op github
 
