@@ -160,14 +160,24 @@ Nadat je de wijzigingen hebt gecommit, moeten ze richting de centrale repository
 
 ### GitHub teams
 
-- Er is een aantal teams gemaakt binnen Geonovum. Deze zijn te vinden op: https://github.com/orgs/Geonovum/teams
+- Er is een aantal teams gemaakt binnen Geonovum. Deze zijn te vinden op: https://github.com/orgs/Geonovum/teams.
 - Het is de bedoeling dat alle repositories die beheerd worden aan een team is toegekend met als doel dat het team aanspreekpunt is voor het repository.
 - Team namen eindigen op ' team'. Bijvoorbeeld 'DSO team'.
 
 ### GitHub repositories
 
 - Dit zijn de Geonovum reopsitories: https://github.com/orgs/Geonovum/repositories.
-- Er is ook een dashboard met een overzicht van publieke git repositories: https://geonovum.github.io/DashboardGit/
-- Richtlijnen voor het inrichten van repositories zijn er nog niet. Wel is er bijvoorbeeld een template voor respec documenten.
+- Er is ook een dashboard met een overzicht van publieke git repositories: [DashboardGit](https://geonovum.github.io/DashboardGit/).
+- Richtlijnen voor het inrichten van repositories zijn er nog niet. Wel is er een template voor respec documenten: [NL-ReSpec-GN-template](https://github.com/Geonovum/NL-ReSpec-GN-template)
+
+#### Naamgevingsconventies GitHub
+
+ - Deze zitten voor een deel in de ReSpec
+ - Er is een lijst met prefixes:
+     - **dso-** digitale ondersteuning omgevingswet.
+     - **ow-** omgevingswet. Dit lijkt wel een duplicaat. Laten opgaan in dso-?
+     - **KP-APIs-** kennisplatform API's.
+     - **xml_** Dit was een prefix voor dso repositories maar wordt voor nieuwe repositories niet meer gebruikt. 
+     - **disgeo-** DisGeo
 
 
