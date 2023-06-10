@@ -2,8 +2,6 @@
 
 Voor het extern publiceren van documenten en standaarden gebruiken we “ReSpec”. ReSpec werkt met HTML en Javascript. Dat is niet voor iedereen de meest voor de hand liggende documentatie tooling. Gelukkig ondersteunt ReSpec ook het gebruik van Markdown
 
-## Wat is Markdown
-
 [Markdown](https://nl.wikipedia.org/wiki/Markdown) is een lichtgewicht opmaaktaal op basis van platte tekst die zodanig ontworpen is dat het gemakkelijk valt te converteren naar HTML en andere formaten middels een applicatie met dezelfde naam. Markdown wordt vaak gebruikt voor de opmaak van project documentatie (README-bestanden), eenvoudige CMS-systemen en berichten in online fora. Tekst in deze opmaaktaal is gemakkelijk te maken met een simpele teksteditor.
 
 Het ontwerpdoel van de taal is leesbaarheid. Teksten geschreven met behulp van Markdown worden geacht al leesbaar te zijn voordat opmaak is toegepast op de tekst. Opmaakinstructies en tags zijn dan ook niet te vinden in pure Markdown.
@@ -18,5 +16,5 @@ Vooral het maken van Markdown tabellen in een tekst editor kan vervelend zijn. i
 
 ### Werken met Markdown in Notepad++
 
-Deze teksteditor is gratis te downloaden en heeft meer functionaliteit dan notepad/ kladblok/ wordpad. Deze is vergelijkbaar met textpad maar geeft visueel (in kleuren) ondersteuning in de code en bij fouten daarin. 
+Deze teksteditor is gratis te downloaden en heeft meer functionaliteit dan notepad/ kladblok/ wordpad en geeft visueel (in kleuren) ondersteuning in de code en bij fouten daarin. 
 

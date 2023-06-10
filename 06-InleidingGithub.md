@@ -61,7 +61,7 @@ Betekenis van Github termen?
 
 Op GitHub zijn er een aantal termen die handig zijn om alvast te weten. Als je meer gebruik gaat maken van GitHub, dan leer je de betekenis van deze termen vanzelf kennen.
 
-Hieronder staan belangrijke GitHub termen + de betekenis ervan:
+Hieronder staan belangrijke GitHub termen en de betekenis ervan:
 
 | GitHub term | Betekenis                                                                                                                                                                                              |
 | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -76,11 +76,11 @@ Hieronder staan belangrijke GitHub termen + de betekenis ervan:
 | Checkout    | Deze Git commando wordt vaak gebruikt om te switchen tussen branches. Je checkt als het ware uit bij een branch en gaat aan de slag in een andere branch.                                              |
 
 
-## Ga zelf aan de slag met Github
+## Zelf aan de slag met Github
 
 Hopelijk heb je een beter beeld over wat GitHub is. Ben je een gebruiker of wil je programmeur worden en werk je nog niet met een (goed) versiebeheersysteem? Dan is het zeker aan te raden om te beginnen met GitHub.
 
-We hebben een testrepository waar je kan oefenen met github zonder iets echt stuk te maken. Deze is te vinden op: https://github.com/Geonovum/DT-Opleiding.
+Als je een account hebt aangemaakt kun je zelf een repository aanmaken. Zie hiervoor: [Aanmaken GitHub Account](#aanmaken-github-account)
 
 Stuur een mail naar account@geonovum.nl om toegevoegd te worden aan deze repository. Je moet dan wel eerst een account aangemaakt hebben op github
 

@@ -1,1 +1,1 @@
-Tekst
+Dit document beschrijft hoe binnen Geonovum emt GitHub, Mardown en ReSpec documenten worden beheerd.

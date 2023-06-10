@@ -1,12 +1,12 @@
 # GitHub
 
-In dit hoofdstuk komen zowel GitHub als GiHub desktop client aan de orde. Geonovum heeft op github een eigen ‘onderkomen’: <a href='https://github.com/geonovum' target='_blank'>https://github.com/geonovum</a>. In dit hoofdstuk staat beschreven wat je moet doen om “up-and-running” te komen voor het uitvoeren van je beheertaken op GitHub. Hoe je een account aanmaakt, en hoe je de benodigde software installeert.
+In dit hoofdstuk komen zowel GitHub als GitHub desktop client aan de orde. Geonovum heeft op github een eigen ‘onderkomen’: https://github.com/geonovum. In dit hoofdstuk staat beschreven wat je moet doen om “up-and-running” te komen voor het uitvoeren van je beheertaken op GitHub. Hoe je een account aanmaakt, en hoe je de benodigde software installeert.
 
 ## Installatie en inrichting
 
 ### Aanmaken GitHub account
 
-Als je nog geen GitHub account hebt, of als je een apart GitHub account wil maken voor je Geonovum werkzaamheden, ga in je internet browser naar: <a href='https://github.com/join' target='_blank'>https://github.com/join</a>  
+Als je nog geen GitHub account hebt, of als je een apart GitHub account wil maken voor je Geonovum werkzaamheden, ga naar: https://github.com/join/get-started .
 
 Dan zie je het scherm dat hiernaast staat. Maak in dat scherm een usernaam aan waarmee je op GitHub gaat werken. 
 
@@ -22,9 +22,10 @@ Klik vervolgens op “Create Account” en dan wordt je account aangemaakt.
 Kies in dit scherm je persoonlijke plan. Bij Geonovum gebruiken we de gratis versie, dus selecteer die.
 
 <img src='media/image4.png' alt='media/image4.png' style='width: 32.6483491110598%;'></img>
+
 ### Installeren GitHub desktop
 
-Ga in je internet browser naar <a href='https://desktop.github.com/' target='_blank'>https://desktop.github.com/</a> 
+Ga in je internet browser naar https://desktop.github.com/ 
 
 Klik daar op download for Windows (64bit).
 
@@ -67,9 +68,8 @@ In dit scherm kan je de voorkeurs editor instellen. Default wordt gekeken naar d
 
 ###  De Geonovum GitHub pagina 
 
-Geonovum heeft een eigen GitHub Bedrijfspagina: <a href='https://github.com/Geonovum' target='_blank'>https://github.com/Geonovum</a>. 
+Geonovum heeft een eigen GitHub Bedrijfspagina: https://github.com/Geonovum . 
 
- 
 
 Voor alle projecten die een product maken of beheren wordt een repository aangemaakt.
 
@@ -91,11 +91,12 @@ In de readme.md file staat nog eens beschreven Wat de inhoud van de Repository i
 Neem altijd een link naar <a href='https://docs.geostandaarden.nl/' target='_blank'>https://docs.geostandaarden.nl/</a> op, en in het geval het technische documenten betreft zoals UML’s, XSD’s, GML’s, XML’s een link naar <a href='http://register.geostandaarden.nl/' target='_blank'>http://register.geostandaarden.nl/</a> in het Readme bestand op. 
 
 <img src='media/image17.png' alt='media/image17.png' style='width: 65.05425998614639%;'></img>
+
 ## Aan de slag met GitHub 
 
 In deze paragraaf een beschrijving van hoe je in GitHub een nieuwe repository aanmaakt, en hoe je die synchroniseert met je lokale GitHub client.
 
-### <a name='_Ref17107242'></a>361188023622000Het maken van een nieuwe repository
+### Het maken van een nieuwe repository
 
 Een nieuwe repository maak je aan in de Centrale GitHub omgeving. 
 
@@ -166,6 +167,7 @@ Nadat je de wijzigingen hebt gecommit, moeten ze richting de centrale repository
 ### GitHub repositories
 
 - Dit zijn de Geonovum reopsitories: https://github.com/orgs/Geonovum/repositories.
+- Er is ook een dashboard met een overzicht van publieke git repositories: https://geonovum.github.io/DashboardGit/
 - Richtlijnen voor het inrichten van repositories zijn er nog niet. Wel is er bijvoorbeeld een template voor respec documenten.
 
 
