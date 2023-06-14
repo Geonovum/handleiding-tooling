@@ -90,14 +90,16 @@ Een document dat bij Geonovum met ReSpec wordt gemaakt heeft standaard de onders
 
 Hieronder een voorbeeld van zo’n mappenstructuur. De .workspace file is een file die is aangemaakt door de “Visual Studio Code” Editor, daarover later meer.
 
-<img src='media/image22.png' alt='media/image22.png' style='width: 87.90117755714616%;'></img>
+![media/image22.png](media/image22.png)
+
+
 In de hoofdmap staan de submap “media en de files “index.html, “config.js en *.md (Markdown) files.
 
 In de submap “media” staat o.a. het bestand “style.css”, en ook worden alle afbeeldingen uit het Markdown door de Markdown plugin voor word in de map media gezet.
 
  
+![media/image23.png](media/image23.png)
 
-<img src='media/image23.png' alt='media/image23.png' style='width: 100%;'></img>
 De namen van de afbeeldingen in dit voorbeeld zijn geregenereerd door de Markdown plugin “Writage” (zie paragraaf <a href='#_Ref17110306'>3.2<a></a>) Het staat je vrij om die namen herkenbare namen te geven, zolang je deze namen dan ook maar in de verwijzingen worden gebruikt.
 
 ### Het bestand “index.html”
@@ -289,7 +291,7 @@ In de localBiblio variabele worden Referenties naar andere documenten gezet. Voo
 
 ### Het bestand “style.css”
 
-FIXME
+TODO:FIXME
 
 Het bestand style.css staat in de map media. De Geonovum Fork van ReSpec heeft een eigen styling. Met het bestand style.css kan je de default styling van Geonovum overschrijven en/of aanvullen. Om te voorkomen dat er een wildgroei aan stijlen, lettertypes en kleuren gaat ontstaan, moet die altijd in overleg met de ReSpec Beheerders (zie <a href='#_Ref17112095'>Hoofdstuk 5<a></a>). 
 
@@ -311,14 +313,17 @@ De knop “ReSpec” rechtsboven in de frontend van ReSpec, bevat een aantal han
 
 Elk van de functies wordt hieronder uitgelegd.
 
-<img src='media/image25.png' alt='media/image25.png' style='width: 15.238974832602171%;'></img>
+![media/image25.png](media/image25.png)
+
 ### Bewaar snapshot
 
-<img src='media/image26.png' alt='media/image26.png' style='width: 65.03117063033942%;'></img>
+![media/image26.png](media/image26.png)
+
 ### <a name='_Ref17110974'></a>Doorzoek SpecRef
 
-<img src='media/image27.png' alt='media/image27.png' style='width: 72.8180467859435%;'></img>
-<img src='media/image28.png' alt='media/image28.png' style='width: 70.24936504271531%;'></img>
+![media/image27.png](media/image27.png)
+![media/image28.png](media/image28.png)
+
 De gevonden zoekresultaten kunnen worden overgenomen in het ReSpec document.
 
 ### Lijst van definities
@@ -386,13 +391,16 @@ Een lijst met issues kan je toevoegen met de volgende HTML code:
 
 ### Foutmeldingen en waarschuwingen 
 
-<img src='media/image29.png' alt='media/image29.png' style='width: 100%;'></img>
-<img src='media/image30.png' alt='media/image30.png' style='width: 23.98405925419563%;'></img>
+![media/image29.png](media/image29.png)
+![media/image30.png](media/image30.png)
+
+
 In dit geval is er een tikfout gemaakt bij de naam van de Markdownfile die ge-include wordt. Het moet natuurlijk “H2-Testcases.md” zijn.
 
-<img src='media/image31.png' alt='media/image31.png' style='width: 20.174315546045083%;'></img>
+![media/image31.png](media/image31.png)
+
 Een voorbeeld van een waarschuwing. Klikken hierop geeft je je de waarschuwing.
 
 In het onderstaande voorbeeld meldt ReSpec dat er een \<h2\> header ontbreekt in het Markdown document.
 
-<img src='media/image32.png' alt='media/image32.png' style='width: 100%;'></img>
+![media/image32.png](media/image32.png)

@@ -16,12 +16,13 @@ Vul in het veld username je nieuwe GitHub naam in.
 
 Vul in het veld email adress je geonovum mailadres in
 
-<img src='media/image3.png' alt='media/image3.png' style='width: 32.636804433156314%;'></img>
+![media/image3.png](media/image3.png)
+
 Klik vervolgens op “Create Account” en dan wordt je account aangemaakt. 
 
 Kies in dit scherm je persoonlijke plan. Bij Geonovum gebruiken we de gratis versie, dus selecteer die.
 
-<img src='media/image4.png' alt='media/image4.png' style='width: 32.6483491110598%;'></img>
+![media/image4.png](media/image4.png)
 
 ### Installeren GitHub desktop
 
@@ -31,37 +32,42 @@ Klik daar op download for Windows (64bit).
 
 Nu wordt de installer gedownload, en dat zie je linksonder in je browser zoals in het plaatje rechts:
 
-<img src='media/image6.png' alt='media/image6.png' style='width: 25.721542368967906%;'></img>
-<img src='media/image7.png' alt='media/image7.png' style='width: 39.26344954975756%;'></img>
+![media/image6.png](media/image6.png)
+![media/image7.png](media/image7.png)
+
 Na starten van de installer verschijnt het scherm hiernaast
 
 Het volgende scherm zal nu openen
 
 Het aanmaken van een account hoeven we niet meer te doen, want dat hebben we in de vorige stap al gedaan. Dus klik op Sign Into Github.com
 
-<img src='media/image8.png' alt='media/image8.png' style='width: 39.26344954975756%;'></img>
+![media/image8.png](media/image8.png)
+
 Na Klikken op Sign into Github.com, verschijnt dit scherm. Hier hoeft verder niks ingevuld te worden, dus klik op continue.
 
 In dit scherm kan je desgewenst het vinkje bij het versturen van anonieme data uitzetten. Daarna klikken op Finish.
 
 GitHub Desktop is nu geïnstalleerd.
 
-<img src='media/image9.png' alt='media/image9.png' style='width: 39.26344954975756%;'></img>
+![media/image9.png](media/image9.png)
+
 ### Opties voor GitHub desktop
 
-<img src='media/image10.png' alt='media/image10.png' style='width: 15.319787577926576%;'></img>
+![media/image10.png](media/image10.png)
+
 GitHub Desktop kan worden aangepast aan persoonlijke voorkeuren. Dat doe je door in het hoofdscherm van de GitHub Desktop op het menu “File” te klikken en vervolgens voor “Opties” te kiezen.
 
-<img src='media/image11.png' alt='media/image11.png' style='width: 39.270085466977676%;'></img>
+![media/image11.png](media/image11.png)
 In het Accounts scherm staat hoe je bent ingelogd bij GitHub. Hier kan je uitloggen en opnieuw inloggen als je meerdere GitHub Accounts hebt.
 
-<img src='media/image12.png' alt='media/image12.png' style='width: 39.26344954975756%;'></img>
+![media/image12.png](media/image12.png)
 In het tabblad “Git” kan je je Github Naam eventueel aanpassen. De GitHub Email is de email die intern binnen Github wordt gebruikt. Die hoeft niet gewijzigd te worden.
 
-<img src='media/image13.png' alt='media/image13.png' style='width: 39.26344954975756%;'></img>
+![media/image13.png](media/image13.png)
 In het tabblad “Appearance” kan je ervoor kiezen om in Light of Dark modus te werken. Hiermee verander je alleen de achtergrondkleur van de GitHub Desktop omgeving.
 
-<img src='media/image14.png' alt='media/image14.png' style='width: 39.26344954975756%;'></img>
+![media/image14.png](media/image14.png)
+
 In dit scherm kan je de voorkeurs editor instellen. Default wordt gekeken naar de reeds aanwezige tekst editors. Omdat GitHub van nature een samenwerkomgeving is voor het ontwikkelen van programmatuur, gaat het hier om “platte tekst” editors.
 
 ## Werkwijze Geonovum 
@@ -77,7 +83,7 @@ Het aanmaken van een repository staat beschreven in paragraaf <a href='#_Ref1710
 
 ### Mappenstructuur in de respository 
 
-<img src='media/image16.png' alt='media/image16.png' style='width: 64.67328561533134%;'></img>
+![media/image16.png](media/image16.png)
 In de Repository maak je indien nodig submappen aan. Submappen zijn handig als er in je Repository meer dan één ReSpec document komt te staan. Over ReSpec meer in hoofdstuk 3.
 
 Hiernaast een afbeelding van de GitHub Repository voor MIM. Twee mappen omdat MIM twee documenten bevat.
@@ -90,7 +96,8 @@ In de readme.md file staat nog eens beschreven Wat de inhoud van de Repository i
 
 Neem altijd een link naar <a href='https://docs.geostandaarden.nl/' target='_blank'>https://docs.geostandaarden.nl/</a> op, en in het geval het technische documenten betreft zoals UML’s, XSD’s, GML’s, XML’s een link naar <a href='http://register.geostandaarden.nl/' target='_blank'>http://register.geostandaarden.nl/</a> in het Readme bestand op. 
 
-<img src='media/image17.png' alt='media/image17.png' style='width: 65.05425998614639%;'></img>
+
+![media/image17.png](media/image17.png)
 
 ## Aan de slag met GitHub 
 
@@ -104,7 +111,7 @@ Klik in de banner bovenaan de pagina, naast je profielfoto op “+” en kies �
 
 Nadat je op “+” hebt geklikt, verschijnt het scherm hieronder.
 
-<img src='media/image19.png' alt='media/image19.png' style='width: 33.54883398753175%;'></img>
+![media/image19.png](media/image19.png)
 Vul hier de naam van de repository in. Deze naam moet uniek zijn binnen de Geonovum omgeving, en voor MIM is dat geworden: MIM-Werkomgeving
 
 Denk goed na over de naam, en houd het kort en bondig, immers deze naam wordt onderdeel van de URL van de Repository
@@ -119,7 +126,7 @@ Het is wel zo netjes om een readme file aan te maken, hierin zet je een korte om
 
 ### GitHub Clone: eerste keer ophalen van de centrale repository 
 
-<img src='media/image20.png' alt='media/image20.png' style='width: 39.26344954975756%;'></img>
+![media/image20.png](media/image20.png)
 Start de GitHub Client, en kies in het menu File voor Clone Repository. En kies de Repository die je wil clonen (in dit geval Geonovum/MIM). Als Local Path kies je een logische plek op je PC/Laptop. (Tip: het is handig om één plek voor je Github Repositories te maken, bijvoorbeeld C:. Na het aanklikken van de knop clone wordt een lokale kopie gemaakt. Github weet welke versie je hebt opgehaald, en zal de wijzingen die je maakt netjes voor je bijhouden.
 
 In de map die je als local path hebt opgegeven komt de mappen structuur te staan zoals hierboven beschreven. 
