@@ -1,0 +1,9 @@
+site_name: Geonovum Werkwijze
+repo_url: https://github/Geonovum/handleiding-GitHub
+nav:
+    - Home: index.md
+    - GitHub: 02-GitHub.md
+    - Markdown: 03-Markdown.md
+    - ReSpec: 04-ReSpec.md
+    - Checklists: 05-Checklists.md
+    - GitHub Intro: 06-InleidingGithub.md
