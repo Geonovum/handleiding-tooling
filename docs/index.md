@@ -18,6 +18,6 @@ Welkom op de startpagina van de helpfiles van de Geonovum werkwijze. Hier  worde
 
 ## Subversion
 
-- [Subversion instructies](Subversion.md)
+- [Subversion instructies](07-Subversion.md)
 
 ## GML
