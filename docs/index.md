@@ -21,3 +21,9 @@ Welkom op de startpagina van de helpfiles van de Geonovum werkwijze. Hier  worde
 - [Subversion instructies](07-Subversion.md)
 
 ## GML
+
+- [GML](GML.md)
+
+## Enterprise Architect
+
+- [Primitieve datatypes](PrimitieveDatatypes.md)
