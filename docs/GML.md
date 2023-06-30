@@ -11,6 +11,7 @@ Bij een XML applicatie schema (dus ook voor GML schema's) wordt vaak een namespa
  - Een versienummer volgens semver X.Y. Een Z-versie is niet nodig omdat alle Z-versies backwards compatible zijn en je dus nooit meer dan 1 versie gebruikt.
 
 De volgende model onderdelen wordt gebruikt bij het maken construeren van schemas:
+
  - Een schema heeft een X.Y.Z versienummer
  - Een schema hoort bij een standaard met een [standaard]
  - Een schema heeft een onderdeel [onderdeel]
