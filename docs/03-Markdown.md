@@ -7,6 +7,7 @@ Voor het extern publiceren van documenten en standaarden gebruiken we â€œReSpecâ
 Het ontwerpdoel van de taal is leesbaarheid. Teksten geschreven met behulp van Markdown worden geacht al leesbaar te zijn voordat opmaak is toegepast op de tekst. Opmaakinstructies en tags zijn dan ook niet te vinden in pure Markdown.
 
 Resources:
+
  - [Markdown Tutorial](https://www.markdownguide.org/getting-started/)
  - [Markdown Reference](https://www.markdownguide.org/basic-syntax)
 

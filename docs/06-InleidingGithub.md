@@ -20,7 +20,6 @@ Maar waar staat “Hub” voor in GitHub? Met “Hub” wordt eigenlijk het cent
 
 Bij Geonovum gebruiken we Github op een andere manier. Namelijk voor het voor werken aan documentatie voor geostandaarden. Per project is een repository aangemaakt. Een Repository is eenvoudig gezegd een werkmap/projectomgeving.
 
- 
 
 
  
@@ -80,7 +79,6 @@ Hieronder staan belangrijke GitHub termen en de betekenis ervan:
 
 Hopelijk heb je een beter beeld over wat GitHub is. Ben je een gebruiker of wil je programmeur worden en werk je nog niet met een (goed) versiebeheersysteem? Dan is het zeker aan te raden om te beginnen met GitHub.
 
-Als je een account hebt aangemaakt kun je zelf een repository aanmaken. Zie hiervoor: [Aanmaken GitHub Account](#aanmaken-github-account)
+Als je een account hebt aangemaakt kun je zelf een repository aanmaken. Zie hiervoor: [Aanmaken GitHub Account](/02-GitHub#installatie-en-inrichting)
 
 Stuur een mail naar account@geonovum.nl om toegevoegd te worden aan deze repository. Je moet dan wel eerst een account aangemaakt hebben op github
-
