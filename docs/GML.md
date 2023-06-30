@@ -12,13 +12,15 @@ Bij een XML applicatie schema (dus ook voor GML schema's) wordt vaak een namespa
 
 De volgende model onderdelen wordt gebruikt bij het maken construeren van schemas:
 
- - Een schema heeft een X.Y.Z versienummer
+ - Een schema heeft een [X.Y.Z] versienummer
  - Een schema hoort bij een standaard met een [standaard]
  - Een schema heeft een onderdeel [onderdeel]
 
-namespace van schema: http://www.geostandaarden.nl/[standaard]/[onderdeel]/x.y
-locatie van schema: https://register.geostanadaarden.nl/xmlschema/[standaard]/[x.y.z]/[onderdeel].xsd
-vesion in het schema: x.y.z
+Samen wordt dit:
+
+ - namespace van schema: http://www.geostandaarden.nl/[standaard]/[onderdeel]/x.y
+ - locatie van schema: https://register.geostanadaarden.nl/xmlschema/[standaard]/[x.y.z]/[onderdeel].xsd
+ - vesion in het schema: [x.y.z]
 
 Bij een standaard zonder onderdelen wordt de bestandsnaam als onderdeelnaam gebruikt bij locatie.
 
