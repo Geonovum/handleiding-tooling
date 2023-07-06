@@ -1,6 +1,6 @@
 # GML en XSD
 
-Zie hiervoor: [Geometrie in model en GML](https://geonovum.github.io/gimeg/)
+Een algemene handleiding voor het opslaag van Geometrie in GML bestanden is te vinden in: [Geometrie in model en GML](https://geonovum.github.io/gimeg/)
 
 ## XSD en Namespaces
 

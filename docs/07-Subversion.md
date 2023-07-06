@@ -7,7 +7,7 @@ Wanneer een UML model in subversion beheerd is dan kun je deze als volgt op je e
  - Installeer een SVN client tool waar een command line verise bij zit
      - Installeer [sliksvn](https://sliksvn.com/download/)
      - Vroeger was het advies om tortoiseSVN te installeren (https://tortoisesvn.net). Deze bevat geen command line variant meer maar nog wel een mooie GUI die in de instructies hieronder gebruikt wordt.
- - Zorg voor een Geonovum svn account. Dit kun je aanvragen bij of als zij niet beschikbaar is rechtstreeks bij Rob Kaesehagen die de server beheert.
+ - Zorg voor een Geonovum svn account. Dit kun je aanvragen bij Wilko Quak of als hij niet beschikbaar is rechtstreeks bij Rob Kaesehagen die de server beheert.
  - Voor projectX die gebruik maakt van de subversion map svn.geostandaarden.nl/ProjectX:
      - Maak een folder op je lokale systeem: WerkmapProjectX
      - Maak een subfolder svn.

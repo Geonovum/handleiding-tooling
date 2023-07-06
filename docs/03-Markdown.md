@@ -21,5 +21,5 @@ Vooral het maken van Markdown tabellen in een tekst editor kan vervelend zijn. i
 
 ## Werken met Markdown in Notepad++
 
-Deze teksteditor is gratis te downloaden en heeft meer functionaliteit dan notepad/ kladblok/ wordpad en geeft visueel (in kleuren) ondersteuning in de code en bij fouten daarin. 
+Deze teksteditor is gratis te downloaden en geeft visueel (in kleuren) ondersteuning in de code en bij fouten daarin. 
 

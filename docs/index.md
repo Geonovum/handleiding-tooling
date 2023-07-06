@@ -1,16 +1,16 @@
 # Welkom
 
-Welkom op de startpagina van de helpfiles van de Geonovum werkwijze. Hier  worden de volgende onderwerpen behandeld:
+Welkom bij de helppagina's waarin de Geonovum Werkwijze beschreven is. Dit is niet een formele beschrijving van de werkwijze maar maar meer een hulpmiddel om stap voor stap de tooling uit te leggen. Binnen Geonovum maken we gebruik van de volgende tools:
 
 ##  GitHub
 
-- [GitHub handleiding](02-GitHub.md)
-- [GitHub werkwijze](06-InleidingGithub.md)
+- [GitHub handleiding](02-GitHub.md): Beschrijft hoe je een account aanmaakt en je beheertaken uitvoert.
+- [GitHub werkwijze](06-InleidingGithub.md): Meer algemene inleiding over GitHub.
 
 ##  ReSpec
 
-- [Respec handleiding](04-ReSpec.md)
-- [Respec checklist](05-Checklists.md)
+- [Respec handleiding](04-ReSpec.md): Algemene handleiding.
+- [Respec checklist](05-Checklists.md): Checklist van handeling bij het publiceren van een standaard middels ReSpec.
 
 ##  Markdown
 

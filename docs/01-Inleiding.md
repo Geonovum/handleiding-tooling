@@ -1,6 +1,6 @@
 # Inleiding
 
-Voor het ontwikkelen en beheren van standaarden gebruiken verschillende tooling. In dit document komen er drie aan de orde: GitHub, Markdown en ReSpec. 
+Dit document bevat een beschrijving van de Geonovum werkwijze en ook een handleiding behorend bij die werkwijze.
 
 ## Aanleiding
 
@@ -12,5 +12,5 @@ Dit document beschrijft hoe je een GitHub Account maakt, hoe je GitHub Desktop C
 
 ## Leeswijzer
 
-Dit document bevat hoofstukken over GitHub, ReSpec, Markdown opgenomen. Ieder hoofdstuk heeft 3 vaste paragrafen: Installeren van de software (indien nodig), Hoe gebruiken wij de software bij Geonovum, en een paragraaf “aan de slag” met nuttige tips en trucs en FAQ.
+In de menubalk aan de bovenkant zie je de verschillende onderwerpen die in deze documentatie behandeld worden. Van sommige van die onderwerpen zijn nog subonderwerpen beschreven. Kies een onderwerp en in de linkermenubalk verschijnt een hoofdstukindeling. Ook is er zoekfunctie.
 
