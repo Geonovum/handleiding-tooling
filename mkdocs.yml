@@ -10,6 +10,6 @@ nav:
     - ReSpec:
         - Manual: ReSpec.md
         - Checklists: ReSpec-Checklists.md
-    - SVN: Subversion.md
-    - UML: PrimitieveDatatypes.md
+    - Subversion: Subversion.md
+    - EA: PrimitieveDatatypes.md
     - GML: GML.md

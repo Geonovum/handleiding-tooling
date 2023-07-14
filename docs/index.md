@@ -4,41 +4,30 @@ Welkom bij de helppagina's waarin de Geonovum Werkwijze beschreven is. Dit is ni
 
 Om de standaarden die in beheer zijn bij Geonovum te kunnen beheren, wordt gebruik gemaakt van verschillende tooling. Documenten die behoren bij de standaarden worden gepubliceerd op https://docs.geostandaarden.nl als HTML bestanden, deze HTML bestanden worden aangemaakt met een tool van W3C: ReSpec. 
 
-ReSpec maakt gebruik van input bestanden om de HTML te genereren. Deze inputbestanden (de content) wordt gemaakt in een formaat: Markdown. Deze Markdown bestanden kunnen worden aangemaakt met text editor zoals Visual Studio van Microsoft of Notepad++. Visual Studio heeft het voordeel dat de editor mooi integreert met de Github Desktop Client. GitHub tenslotte wordt gebruikt als de “repository”, waarin alle bestanden die bij een standaard horen, komen te staan.
+ReSpec maakt gebruik van input bestanden om de HTML te genereren. Deze inputbestanden (de content) wordt gemaakt in een formaat: Markdown. Deze Markdown bestanden kunnen worden aangemaakt met text editor zoals Visual Studio van Microsoft of Notepad++. Visual Studio heeft het voordeel dat de editor mooi integreert met de Github Desktop Client. GitHub tenslotte wordt gebruikt als de 'repository', waarin alle bestanden die bij een standaard horen, komen te staan.
 
 Deze handleiding beschrijft hoe je een GitHub Account maakt, hoe je GitHub Desktop Client installeert en gebruikt, hoe je een Respec mappenstructuur opbouwt, welke bestanden er nodig zijn voor een standaard, en hoe je de verschillende versies van een standaard genereert. Ook wordt uitgelegd hoe je de Markdown plugin in Microsoft Word installeert en gebruikt.
 
+## Overzicht tooling
+
 Binnen Geonovum maken we gebruik van de volgende tools:
 
-##  GitHub
-
-- [GitHub handleiding](GitHub.md): Beschrijft hoe je een account aanmaakt en je beheertaken uitvoert.
-- [GitHub werkwijze](GitHub-Inleiding.md): Meer algemene inleiding over GitHub.
-
-##  ReSpec
-
-- [Respec handleiding](ReSpec.md): Algemene handleiding.
-- [Respec checklist](ReSpec-Checklists.md): Checklist van handeling bij het publiceren van een standaard middels ReSpec.
-
-##  Markdown
-
-- [Markdown handleiding](Markdown.md)
-
-## Subversion
-
-- [Subversion instructies](Subversion.md)
-
-## Imvertor
-
- - [Imvertor](Imvertor.md)
-
-## GML
-
-- [GML](GML.md)
-
-## Enterprise Architect
-
-- [Primitieve datatypes](PrimitieveDatatypes.md)
+- **GitHub**
+    - [GitHub handleiding](GitHub.md): Beschrijft hoe je een account aanmaakt en je beheertaken uitvoert.
+    - [GitHub werkwijze](GitHub-Inleiding.md): Meer algemene inleiding over GitHub.
+- **Imvertor**
+     - [Imvertor](Imvertor.md)
+- **Markdown**
+    - [Markdown handleiding](Markdown.md)
+-  **ReSpec**  
+    - [Respec handleiding](ReSpec.md): Algemene handleiding.
+    - [Respec checklist](ReSpec-Checklists.md): Checklist van handeling bij het publiceren van een standaard middels ReSpec.
+- **Subversion**
+    - [Subversion instructies](Subversion.md)
+- **EA**
+    - [Primitieve datatypes](PrimitieveDatatypes.md)
+- **GML**
+     - [GML](GML.md)
 
 ## Uitleg MkDocs
 
