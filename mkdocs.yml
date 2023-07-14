@@ -2,14 +2,14 @@ site_name: Geonovum Werkwijze
 repo_url: https://github.com/Geonovum/handleiding-GitHub
 edit_uri: blob/main/docs/
 nav:
-    - Home: index.md
     - GitHub:
-        - 'GitHub Intro': 06-InleidingGithub.md
-        - 'Manual': 02-GitHub.md
-    - Markdown: 03-Markdown.md
+        - 'GitHub Intro': GitHub-Inleiding.md
+        - 'Manual': GitHub.md
+    - Imvertor: Imvertor.md
+    - Markdown: Markdown.md
     - ReSpec:
-        - Manual: 04-ReSpec.md
-        - Checklists: 05-Checklists.md
-    - SVN: 07-Subversion.md
+        - Manual: ReSpec.md
+        - Checklists: ReSpec-Checklists.md
+    - SVN: Subversion.md
     - UML: PrimitieveDatatypes.md
     - GML: GML.md
