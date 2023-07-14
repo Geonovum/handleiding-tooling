@@ -1,25 +1,28 @@
 # Primitieve Datatypes
 
-In verschillende informatiemodellen worden verschillende primitieve datatypes gebruikt. Ik probeer te inventariseren welke waar gebruikt worden zodat we ook naar 1 mapping naar XSD kunnen.
+UML modellen maken gebruik van primitive datatypes zoals bijvoorbeeld gedefinieerd in het [MIM](https://docs.geostandaarden.nl/mim/mim/#datatypen). 
+In: svn.geostandaarden.nl/Datatypes zijn drie collecties met primitieve types opgenomen die alle primitieve types bevat die in Geonovum UML modellen gebruikt zijn. De volgende collecties zijn er:
 
-In: svn.geostandaarden.nl/Datatypes heb ik een lijst met primitieve datatypes gemaakt. IMGeluid maakt van deze lijst gebruik.
+  - De primtieve types genoend in [MIM](https://docs.geostandaarden.nl/mim/mim/#datatypen)
+  - De geometrietypes genoemd in [ISO19107](https://docs.geostandaarden.nl/nen3610/gimeg/)
+  - Overige datatypes die niet in de twee lijstjes hieronder vallen
 
-Deze lijst is al volgt tot stand gekomen:
-
-  - Als eerste heb ik de primitieve types uit MIM 1.1 gepakt 
-  - Daar heb ik de primitieve types uit de ISO 19100 serie toegevoegd. Een overzicht hiervan is te vinden in Table D.2 van de GML3.2.2 standaard. Ik heb nog niet de hele lijst toegevoegd.
-  - Daarna heb ik nog een los datatype wat in IMGeluid gevraagd was toegevoegd.
-
-Drie lijsten met datatypes:
+Deze packages zijn in beheer bij @wilkoquak.  Het is de bedoeling dat er in [Imvertor] een mapping komt die precies overeenkomt het deze drie collecties types
 
 ## Geometrie datatypes
+
+In dit package zitten de geometrische datatypes zoals genoemd in [ISO19107:2003](https://www.iso.org/standard/26012.html).
 
 ![Geometrie](media/GML-geometrie.png)
 
 ## MIM datatypes
 
+In dit package zitten de geometrische datatypes zoals genoemd in [MIM](https://docs.geostandaarden.nl/mim/mim/#datatypen).
+
 ![MIM](media/MIM11.png)
 
 ## Geonovum datatypes
+
+In dit package zitten datatypes die niet in de twee eerdergenoemde packages vallen maar wel ergens gebruikt zijn bij Geonovum.
 
 ![Geonovum datatypes](media/Geonovum-algemeen.png)
