@@ -12,5 +12,5 @@ Dit document beschrijft hoe je een GitHub Account maakt, hoe je GitHub Desktop C
 
 ## Leeswijzer
 
-In de menubalk aan de bovenkant zie je de verschillende onderwerpen die in deze documentatie behandeld worden. Van sommige van die onderwerpen zijn nog subonderwerpen beschreven. Kies een onderwerp en in de linkermenubalk verschijnt een hoofdstukindeling. Ook is er zoekfunctie.
+In de menubalk aan de bovenkant zie je de verschillende onderwerpen (en subonderwerpen) die in deze documentatie behandeld worden. Kies een onderwerp en in de linkermenubalk verschijnt een hoofdstukindeling. Ook is er zoekfunctie.
 

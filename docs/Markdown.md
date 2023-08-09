@@ -11,15 +11,13 @@ Resources:
  - [Markdown Tutorial](https://www.markdownguide.org/getting-started/)
  - [Markdown Reference](https://www.markdownguide.org/basic-syntax)
 
-## Werken met Markdown in Visual Code
+## Tools voor Markdown
 
-Een optie om de Markdown bestanden te editen is het gebruiken van Visual Studio Code. Dit is een editor die eigenlijk voor het schrijven van software is, maar ook heel goed te gebruiken als teksteditor. Het voordeel is dat je alle bestanden die bij je ReSpec omgeving horen, in één editor ziet staan, en kan aanpassen. Het biedt je meer overzicht dan werken in Word.
-
-Een voordeel van het werken met Micosoft Visual Studio is dat het mooi integreert met de GitHub Desktop Client, zo kan je meteen de editor opstarten vanuit de client, en kan je conflicten bij het committen van versies mooi oplossen. Als je alleen maar content wil editen, biedt Microsoft Word met de Markdown plugin voldoende functionaliteit.
-
-Vooral het maken van Markdown tabellen in een tekst editor kan vervelend zijn. in Een handige online tool om tabellen naar Markdown te converteren is <a href='https://www.tablesgenerator.com/markdown_tables' target='_blank'>https://www.tablesgenerator.com/markdown_tables</a>.  Ook is er een handige plugin om Visual Code tabellen te bewerken: [Markdown Table](https://marketplace.visualstudio.com/items?itemName=TakumiI.markdowntable)
-
-## Werken met Markdown in Notepad++
-
-Deze teksteditor is gratis te downloaden en geeft visueel (in kleuren) ondersteuning in de code en bij fouten daarin. 
-
+| tool                                                                                        | omschrijving                                                                                    |
+| ------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| [Visual Studio Code](https://code.visualstudio.com/)                                                                          | Fijne teksteditor die ook goed integreert met Github Desktop                                    |
+| [Notepad++](https://notepad-plus-plus.org/)                                                                                   | Nog een goede editor                                                                            |
+| [PowerToys](https://learn.microsoft.com/en-us/windows/powertoys/)                                                                                   | Geeft preview van Markdown rechtstreeks in Windows Explorer (en nog heeel veel andere tooltjes) |
+| [Tables Generator](https://www.tablesgenerator.com/markdown_tables)                         | Helpt met het maken van tabellen in MarkDown                                                    |
+| [Markdown Table](https://marketplace.visualstudio.com/items?itemName=TakumiI.markdowntable) | Plugin voor Visual Studion Code die het editen van Markdown tabellen ondersteunt.               |
+|                                                                                             |                                                                                                 |
