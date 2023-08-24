@@ -5,9 +5,31 @@
 
 Bij Geonovum gebruiken we een aantal voorgedefineerde datatypes. Deze zijn opgedeeld in drie categorieën: 
  1. MIM11 -- Dit package bevat de datatypes die voorgedefinieerd zijn in het [MIM](https://docs.geostandaarden.nl/mim/mim/)
- 1. Geonovum geometrie -- Dit package bevat de geometrietypes uit ISO-19107. Deze zijn in een los package gestopt zodat andere partijen die alleen geometrie willen gebruik deze types kunnen gebruiken,
+ 1. Geonovum geometrie -- Dit package bevat de geometrietypes uit [ISO19107](https://docs.geostandaarden.nl/nen3610/gimeg/). Deze zijn in een los package gestopt zodat andere partijen die alleen geometrie willen gebruik deze types kunnen gebruiken,
  1. Geonovum algemeen -- In dit package zitten alle overige datatypes die in Geonovum UML packages gebruikt worden. Merk op dat in dit package ook wat geometrie types zitten; dit zijn types die niet uit ISO-19107 komen. Bij voorkeur worden deze niet in de modellering gebruikt.
 
+
+In: svn.geostandaarden.nl/Datatypes zijn drie collecties met primitieve types opgenomen die alle primitieve types bevat die in Geonovum UML modellen gebruikt 
+
+Deze packages zijn in beheer bij @wilkoquak.  Het is de bedoeling dat er in [Imvertor] een mapping komt die precies overeenkomt het deze drie collecties types
+
+## Geometrie datatypes
+
+In dit package zitten de geometrische datatypes zoals genoemd in [ISO19107:2003](https://www.iso.org/standard/26012.html).
+
+![Geometrie](media/GML-geometrie.png)
+
+## MIM datatypes
+
+In dit package zitten de geometrische datatypes zoals genoemd in [MIM](https://docs.geostandaarden.nl/mim/mim/#datatypen).
+
+![MIM](media/MIM11.png)
+
+## Geonovum datatypes
+
+In dit package zitten datatypes die niet in de twee eerdergenoemde packages vallen maar wel ergens gebruikt zijn bij Geonovum.
+
+![Geonovum datatypes](media/Geonovum-algemeen.png)
 
 > **Note**
 > `@Wilko` wil jij een korte toelichting geven op de driedeling. Wat vind je waar en waarom?

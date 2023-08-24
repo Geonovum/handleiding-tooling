@@ -17,7 +17,6 @@ nav:
         - SVN installeren voor EAP: SVN-installeren-voor-EAP.md
         - 'SVN importeren bestaand project': SVN-importeren-bestaand-project.md
     - EA:
-        - Primitieve types: PrimitieveDatatypes.md
         - standaarddatatypen: EA-toepassing-standaarddatatypen.md
     - GML: GML.md
     - Ontologie: Handleiding-ontologie-maken-en-publiceren.md
