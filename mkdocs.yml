@@ -10,6 +10,14 @@ nav:
     - ReSpec:
         - Manual: ReSpec.md
         - Checklists: ReSpec-Checklists.md
-    - Subversion: Subversion.md
-    - EA: PrimitieveDatatypes.md
+        - 'Code toepassen': ReSpec-code-toepassen.md
+        - 'Definitielijst maken': ReSpec-definitielijst-maken.md
+    - Subversion:
+        - Overzicht: SVN.md
+        - SVN installeren voor EAP: SVN-installeren-voor-EAP.md
+        - 'SVN importeren bestaand project': SVN-importeren-bestaand-project.md
+    - EA:
+        - Primitieve types: PrimitieveDatatypes.md
+        - standaarddatatypen: EA-toepassing-standaarddatatypen.md
     - GML: GML.md
+    - Ontologie: Handleiding-ontologie-maken-en-publiceren.md

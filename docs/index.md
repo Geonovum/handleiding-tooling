@@ -22,8 +22,10 @@ Binnen Geonovum maken we gebruik van de volgende tools:
 -  **ReSpec**  
     - [Respec handleiding](ReSpec.md): Algemene handleiding.
     - [Respec checklist](ReSpec-Checklists.md): Checklist van handeling bij het publiceren van een standaard middels ReSpec.
+    - [Respec code toepassen](ReSpec-code-toepassen.md)
+    - [Respec definitielijst maken](ReSpec-definitielijst-maken.md)
 - **Subversion**
-    - [Subversion instructies](Subversion.md)
+    - [Subversion instructies](SVN.md)
 - **EA**
     - [Primitieve datatypes](PrimitieveDatatypes.md)
 - **GML**
