@@ -29,25 +29,25 @@ de Markdown plugin in Microsoft Word installeert en gebruikt.
 Binnen Geonovum maken we gebruik van de volgende tools:
 
 - **GitHub**
-   - [GitHub handleiding](GitHub.md): Beschrijft hoe je een account aanmaakt en
+     - [GitHub handleiding](GitHub.md): Beschrijft hoe je een account aanmaakt en
      je beheertaken uitvoert.
-   - [GitHub werkwijze](GitHub-Inleiding.md): Meer algemene inleiding over GitHub.
+     - [GitHub werkwijze](GitHub-Inleiding.md): Meer algemene inleiding over GitHub.
 - **Imvertor**
-   - [Imvertor](Imvertor.md)
+     - [Imvertor](Imvertor.md)
 - **Markdown**
    - [Markdown handleiding](Markdown.md)
 - **ReSpec**
-   - [Respec handleiding](ReSpec.md): Algemene handleiding.
-   - [Respec checklist](ReSpec-Checklists.md): Checklist van handeling bij het
+     - [Respec handleiding](ReSpec.md): Algemene handleiding.
+     - [Respec checklist](ReSpec-Checklists.md): Checklist van handeling bij het
      publiceren van een standaard middels ReSpec.
-   - [Respec code toepassen](ReSpec-code-toepassen.md)
-   - [Respec definitielijst maken](ReSpec-definitielijst-maken.md)
+     - [Respec code toepassen](ReSpec-code-toepassen.md)
+     - [Respec definitielijst maken](ReSpec-definitielijst-maken.md)
 - **Subversion**
-   - [Subversion instructies](SVN.md)
+     - [Subversion instructies](SVN.md)
 - **EA**
-   - [Primitieve datatypes](EA-toepassing-standaarddatatypen.md)
+     - [Primitieve datatypes](EA-toepassing-standaarddatatypen.md)
 - **GML**
-   - [GML](GML.md)
+     - [GML](GML.md)
 
 ## Uitleg MkDocs
 

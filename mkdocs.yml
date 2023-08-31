@@ -2,6 +2,7 @@ site_name: Geonovum Werkwijze
 repo_url: https://github.com/Geonovum/handleiding-GitHub
 edit_uri: blob/main/docs/
 nav:
+    - Home: index.md
     - GitHub:
         - 'GitHub Intro': GitHub-Inleiding.md
         - 'Manual': GitHub.md

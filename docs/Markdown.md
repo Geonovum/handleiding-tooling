@@ -6,18 +6,21 @@ Voor het extern publiceren van documenten en standaarden gebruiken we â€œReSpecâ
 
 Het ontwerpdoel van de taal is leesbaarheid. Teksten geschreven met behulp van Markdown worden geacht al leesbaar te zijn voordat opmaak is toegepast op de tekst. Opmaakinstructies en tags zijn dan ook niet te vinden in pure Markdown.
 
-Resources:
-
- - [Markdown Tutorial](https://www.markdownguide.org/getting-started/)
- - [Markdown Reference](https://www.markdownguide.org/basic-syntax)
 
 ## Tools voor Markdown
 
 | tool                                                                                        | omschrijving                                                                                    |
 | ------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
-| [Visual Studio Code](https://code.visualstudio.com/)                                                                          | Fijne teksteditor die ook goed integreert met Github Desktop                                    |
-| [Notepad++](https://notepad-plus-plus.org/)                                                                                   | Nog een goede editor                                                                            |
-| [PowerToys](https://learn.microsoft.com/en-us/windows/powertoys/)                                                                                   | Geeft preview van Markdown rechtstreeks in Windows Explorer (en nog heeel veel andere tooltjes) |
+| [Markdown Tutorial](https://www.markdownguide.org/getting-started/)                         | Handleiding Mardown                                                                             |
+| [Markdown Reference](https://www.markdownguide.org/basic-syntax)                            | Naslag Mardown |
+| [Visual Studio Code](https://code.visualstudio.com/)                                        | Fijne teksteditor die ook goed integreert met Github Desktop                                    |
+| [Notepad++](https://notepad-plus-plus.org/)                                                 | Nog een goede editor                                                                            |
+| [PowerToys](https://learn.microsoft.com/en-us/windows/powertoys/)                           | Geeft preview van Markdown rechtstreeks in Windows Explorer (en nog heeel veel andere tooltjes) |
 | [Tables Generator](https://www.tablesgenerator.com/markdown_tables)                         | Helpt met het maken van tabellen in MarkDown                                                    |
 | [Markdown Table](https://marketplace.visualstudio.com/items?itemName=TakumiI.markdowntable) | Plugin voor Visual Studion Code die het editen van Markdown tabellen ondersteunt.               |
-|                                                                                             |                                                                                                 |
+| [Prettier](https://prettier.io/)                                                            | Een code formatter die automatisch zorgt dat je markdown aan de regels voldoet.                 |
+| [mdlint](https://github.com/Laboratoria/mdlint)                                             | Een style checker form markdown bestanden. Geef meldingen voor verkeerde markdown               |
+
+
+> **Note**
+> `@Wilko`: we zouden nog een stel regels kunnen maken voor de formattering van markdown. Maximale regellengte = 80 bijvoorbeeld. Dit zou in `.mdlintrc` of de configuratie van Prettier kunnen gebruiken.
