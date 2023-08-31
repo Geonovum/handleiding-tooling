@@ -160,6 +160,7 @@ Nadat je de wijzigingen hebt gecommit, moeten ze richting de centrale repository
 
 
 ### Github gebruikers
+
 - Een overzicht van de gebruikers is te vinden op: https://github.com/orgs/Geonovum/people.
 - In principe geldt de regels: als je lid bent van Geonovum Teams dan hoor je ook bij de Geonovum GitHub organisatie. De inhoudelijk beheerders kunnen besluiten daar van af te wijken.
 - Er is geen bezwaar tegen het gebruiken van een privé account binnen de github omgeving.

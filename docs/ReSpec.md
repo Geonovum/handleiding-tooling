@@ -4,11 +4,11 @@ ReSpec is een tool van W3C die het schrijven van specifications makkelijker maak
 
 ## Algemeen
 
-Er is een gedetailleerde (Engelstalige) gebruikershandleiding beschikbaar<span class='noot'>[2]<span class='noottekst'> Zie: https://github.com/w3c/respec/wiki/ReSpec-Editor's-Guide <br/></span></span>, en er is ook een ontwikkelaarshandleiding<span class='noot'>[3]<span class='noottekst'> Zie: https://github.com/w3c/respec/wiki/Developers-Guide <br/></span></span> te vinden.
+Er is een gedetailleerde (Engelstalige) gebruikershandleiding beschikbaar. Zie: https://github.com/w3c/respec/wiki/ReSpec-Editor's-Guide >, en er is ook een ontwikkelaarshandleiding  Zie: https://github.com/w3c/respec/wiki/Developers-Guide  te vinden.
 
 Geonovum heeft een fork van W3C ReSpec omdat wij sommige onderdelen gecustomised hebben. Deze eigen versie van ReSpec wordt beheerd door de technisch beheerders van ReSpec, en dat valt buiten dit document.
 
-De Geonovum wiki over ReSpec kan naast dit hoofdstuk worden gebruikt: <a href='https://github.com/Geonovum/respec/wiki' target='_blank'>https://github.com/Geonovum/respec/wiki</a> 
+De Geonovum wiki over ReSpec kan naast dit hoofdstuk worden gebruikt: 'https://github.com/Geonovum/respec/wiki
 
 ## Documentatie maken met ReSpec 
 
@@ -16,77 +16,20 @@ De Geonovum wiki over ReSpec kan naast dit hoofdstuk worden gebruikt: <a href='h
 
 Een document dat bij Geonovum met ReSpec wordt gemaakt heeft standaard de onderstaande mappenstructuur. Voor het aanmaken van een nieuw ReSpec Document staat een template klaar.
 
-<table style='width: 100%;'><caption></caption>
-<colgroup><col id='col1' style='width: 14.459084604715672%;'
-<col id='col2' style='width: 14.50531668978271%;'
-<col id='col3' style='width: 14.412852519648636%;'
-<col id='col4' style='width: 56.62274618585298%;'
-</colgroup>
-<tbody valign='top'><tr><td align='left' style='border-top: 0.5pt solid #000000; border-left: 0.5pt solid #000000; border-bottom: 0.5pt solid #000000; border-right: 0.5pt solid #000000; background-color: none;'>Hoofdmap
 
-</td>
-<td align='left' style='border-top: 0.5pt solid #000000; border-left: 0.5pt solid #000000; border-bottom: 0.5pt solid #000000; border-right: 0.5pt solid #000000; background-color: none;'></td>
-<td align='left' style='border-top: 0.5pt solid #000000; border-left: 0.5pt solid #000000; border-bottom: 0.5pt solid #000000; border-right: 0.5pt solid #000000; background-color: none;'></td>
-<td align='left' style='border-top: 0.5pt solid #000000; border-left: 0.5pt solid #000000; border-bottom: 0.5pt solid #000000; border-right: 0.5pt solid #000000; background-color: none;'>Naam van de hoofdmap
+| hoofdmap | map        | file      | omschrijving                                            |
+| -------- | ---------- | --------- | ------------------------------------------------------- |
+| Hoofdmap |            |           | naam van de hoofdmap                                    |
+|          | media      |           | Map met de vaste naam “media”                           |
+|          |            | Style.css | File met vaste naam, bevat de styling van het document” |
+|          |            | *.png     | Afbeeldingsbestanden                                    |
+|          | index.html |           | File met de vaste naam “Index.html”                     |
+|          | config.js  |           | File met de vaste naam “config.js”                      |
+|          | *md        |           | Tekstbestanden (Markdown) die de content bevatten       |
+|          |            |           |                                                         |
 
-</td>
-</tr>
-<tr><td align='left' style='border-top: 0.5pt solid #000000; border-left: 0.5pt solid #000000; border-bottom: 0.5pt solid #000000; border-right: 0.5pt solid #000000; background-color: none;'></td>
-<td align='left' style='border-top: 0.5pt solid #000000; border-left: 0.5pt solid #000000; border-bottom: 0.5pt solid #000000; border-right: 0.5pt solid #000000; background-color: none;'>media
 
-</td>
-<td align='left' style='border-top: 0.5pt solid #000000; border-left: 0.5pt solid #000000; border-bottom: 0.5pt solid #000000; border-right: 0.5pt solid #000000; background-color: none;'></td>
-<td align='left' style='border-top: 0.5pt solid #000000; border-left: 0.5pt solid #000000; border-bottom: 0.5pt solid #000000; border-right: 0.5pt solid #000000; background-color: none;'>Map met de vaste naam “media”
 
-</td>
-</tr>
-<tr><td align='left' style='border-top: 0.5pt solid #000000; border-left: 0.5pt solid #000000; border-bottom: 0.5pt solid #000000; border-right: 0.5pt solid #000000; background-color: none;'></td>
-<td align='left' style='border-top: 0.5pt solid #000000; border-left: 0.5pt solid #000000; border-bottom: 0.5pt solid #000000; border-right: 0.5pt solid #000000; background-color: none;'></td>
-<td align='left' style='border-top: 0.5pt solid #000000; border-left: 0.5pt solid #000000; border-bottom: 0.5pt solid #000000; border-right: 0.5pt solid #000000; background-color: none;'>Style.css
-
-</td>
-<td align='left' style='border-top: 0.5pt solid #000000; border-left: 0.5pt solid #000000; border-bottom: 0.5pt solid #000000; border-right: 0.5pt solid #000000; background-color: none;'>File met vaste naam, bevat de styling van het document
-
-</td>
-</tr>
-<tr><td align='left' style='border-top: 0.5pt solid #000000; border-left: 0.5pt solid #000000; border-bottom: 0.5pt solid #000000; border-right: 0.5pt solid #000000; background-color: none;'></td>
-<td align='left' style='border-top: 0.5pt solid #000000; border-left: 0.5pt solid #000000; border-bottom: 0.5pt solid #000000; border-right: 0.5pt solid #000000; background-color: none;'></td>
-<td align='left' style='border-top: 0.5pt solid #000000; border-left: 0.5pt solid #000000; border-bottom: 0.5pt solid #000000; border-right: 0.5pt solid #000000; background-color: none;'>*.png
-
-</td>
-<td align='left' style='border-top: 0.5pt solid #000000; border-left: 0.5pt solid #000000; border-bottom: 0.5pt solid #000000; border-right: 0.5pt solid #000000; background-color: none;'>Afbeeldingsbestanden
-
-</td>
-</tr>
-<tr><td align='left' style='border-top: 0.5pt solid #000000; border-left: 0.5pt solid #000000; border-bottom: 0.5pt solid #000000; border-right: 0.5pt solid #000000; background-color: none;'></td>
-<td align='left' style='border-top: 0.5pt solid #000000; border-left: 0.5pt solid #000000; border-bottom: 0.5pt solid #000000; border-right: 0.5pt solid #000000; background-color: none;'>index.html
-
-</td>
-<td align='left' style='border-top: 0.5pt solid #000000; border-left: 0.5pt solid #000000; border-bottom: 0.5pt solid #000000; border-right: 0.5pt solid #000000; background-color: none;'></td>
-<td align='left' style='border-top: 0.5pt solid #000000; border-left: 0.5pt solid #000000; border-bottom: 0.5pt solid #000000; border-right: 0.5pt solid #000000; background-color: none;'>File met de vaste naam “Index.html”
-
-</td>
-</tr>
-<tr><td align='left' style='border-top: 0.5pt solid #000000; border-left: 0.5pt solid #000000; border-bottom: 0.5pt solid #000000; border-right: 0.5pt solid #000000; background-color: none;'></td>
-<td align='left' style='border-top: 0.5pt solid #000000; border-left: 0.5pt solid #000000; border-bottom: 0.5pt solid #000000; border-right: 0.5pt solid #000000; background-color: none;'>config.js
-
-</td>
-<td align='left' style='border-top: 0.5pt solid #000000; border-left: 0.5pt solid #000000; border-bottom: 0.5pt solid #000000; border-right: 0.5pt solid #000000; background-color: none;'></td>
-<td align='left' style='border-top: 0.5pt solid #000000; border-left: 0.5pt solid #000000; border-bottom: 0.5pt solid #000000; border-right: 0.5pt solid #000000; background-color: none;'>File met de vaste naam “config.js”
-
-</td>
-</tr>
-<tr><td align='left' style='border-top: 0.5pt solid #000000; border-left: 0.5pt solid #000000; border-bottom: 0.5pt solid #000000; border-right: 0.5pt solid #000000; background-color: none;'></td>
-<td align='left' style='border-top: 0.5pt solid #000000; border-left: 0.5pt solid #000000; border-bottom: 0.5pt solid #000000; border-right: 0.5pt solid #000000; background-color: none;'>*.md
-
-</td>
-<td align='left' style='border-top: 0.5pt solid #000000; border-left: 0.5pt solid #000000; border-bottom: 0.5pt solid #000000; border-right: 0.5pt solid #000000; background-color: none;'></td>
-<td align='left' style='border-top: 0.5pt solid #000000; border-left: 0.5pt solid #000000; border-bottom: 0.5pt solid #000000; border-right: 0.5pt solid #000000; background-color: none;'>Tekstbestanden (Markdown) die de content bevatten
-
-</td>
-</tr>
-</tbody>
-</table>
 
 Hieronder een voorbeeld van zo’n mappenstructuur. De .workspace file is een file die is aangemaakt door de “Visual Studio Code” Editor, daarover later meer.
 
