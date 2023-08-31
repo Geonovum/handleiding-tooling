@@ -2,7 +2,11 @@ site_name: Geonovum Werkwijze
 repo_url: https://github.com/Geonovum/handleiding-GitHub
 edit_uri: blob/main/docs/
 nav:
-    - Home: index.md
+    - Home:
+        - 'Index': index.md
+        - 'Geonovum Werkwijze Modelleren': geonovum-werkwijze-modelleren.md
+        - 'Werkomgeving Modelleren': werkomgeving-modelleren.md
+        - 'Werkwijze Modelleren': werkwijze-modelleren.md
     - GitHub:
         - 'GitHub Intro': GitHub-Inleiding.md
         - 'Manual': GitHub.md
@@ -18,6 +22,8 @@ nav:
         - SVN installeren voor EAP: SVN-installeren-voor-EAP.md
         - 'SVN importeren bestaand project': SVN-importeren-bestaand-project.md
     - EA:
+        - Overzicht: EA.md
         - standaarddatatypen: EA-toepassing-standaarddatatypen.md
     - GML: GML.md
     - Ontologie: Handleiding-ontologie-maken-en-publiceren.md
+    - Publiceren: Publiceren.md
