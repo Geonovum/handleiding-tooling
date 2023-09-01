@@ -68,7 +68,7 @@ Het EAP bestand wordt op het niveau van packages onder SVN gebracht.
  * Klik op _Save_ en _Close_
 
 > **Note**
-> Je kunt een melding krijgen dat er geen `svn.exe` aanwezig is. Installeer dan de *command line interface* (CLI) mee volgens [**deze instructie**](https://stackoverflow.com/questions/2967176/where-is-svn-exe-in-my-machine/2967196#2967196). Je hoeft SVN hiervoor niet opnieuw te installeren; deze stap breidt de installatie alleen uit. Hierna staat `svn.exe` gewoon netjes in de bedoelde map. Je hoeft dus verder niet met de CLI aan de slag.
+> Je kunt een melding krijgen dat er geen `svn.exe` aanwezig is. Installeer dan de *command line interface* (CLI) mee volgens [**deze instructie**](https://stackoverflow.com/questions/2967176/where-is-svn-exe-in-my-machine/2967196#2967196). Je hoeft SVN hiervoor niet opnieuw te installeren; deze stap breidt de installatie alleen uit. Hierna staat `svn.exe` gewoon netjes in de bedoelde map. Je hoeft dus verder niet met de CLI aan de slag. Een andere optie is om [SLIKSVN](https://sliksvn.com/download/) te installeren.
 
 ![Version Control Settings](media/svn_vcsettings.png)
 
