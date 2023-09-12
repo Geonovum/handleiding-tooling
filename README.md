@@ -6,8 +6,6 @@ Modelleurs bij Geonovum werken met verschillende tools. In deze repository verza
 
 Een html-versie van de handleiding is te vinden op [github pages](https://geonovum.github.io/handleiding-tooling/)
 
-### Lokaal
+### Lokaal serveren
 
-Als je deze folder lokaal hebt staan kan je met het commando 'mkdocs serve' een
-locale webserver starten en live kijken hoe de document eruitziet in je
-[browser](http://127.0.0.1:8000/).
+Als je deze folder lokaal hebt staan kan je met het commando 'mkdocs serve' een locale webserver starten en live kijken hoe de document eruitziet in je [browser](http://127.0.0.1:8000/). Hiervoor moet je wel python geïnstalleerd hebben. [Kijk hier voor de requirements voor mkdocs](https://www.mkdocs.org/user-guide/installation/#requirements). Als je [Python via www.python.org installeert](https://wiki.python.org/moin/BeginnersGuide/Download), hoef je pip niet meer apart te installeren.
