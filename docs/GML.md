@@ -6,27 +6,25 @@ Een algemene handleiding voor het opslaag van Geometrie in GML bestanden is te v
 
 Bij een XML applicatie schema (dus ook voor GML schema's) wordt vaak een namespace gebruikt. Deze namespace hoort vaak bij een domein en het is de bedoel dat de combinatie van de namespace  en het element uniek is. Dit kan alleen als de namespace, die de vorm van een URI heeft uniek is. Door een URI te kiezen die bij jou onder beheer is weet je zeker dat de combinatie uniek is. In de volgende paragraaf zie je een lijste gebruikte namespaces. Hieronder wat richtlijnen.
 
- - Voor de basis wordt: http://www.geostandaarden.nl gebruikt.  Het is nog even de vraag of we niet op https moeten overstappen. Dat doen we niet want niemand anders doet deze overstap.
- - Daarna volgt een identificatie van de standaard. 
- - Een versienummer volgens semver X.Y. Een Z-versie is niet nodig omdat alle Z-versies backwards compatible zijn en je dus nooit meer dan 1 versie gebruikt.
+- Voor de basis wordt: http://www.geostandaarden.nl gebruikt.  Het is nog even de vraag of we niet op https moeten overstappen. Dat doen we niet want niemand anders doet deze overstap.
+- Daarna volgt een identificatie van de standaard. 
+- Een versienummer volgens semver X.Y. Een Z-versie is niet nodig omdat alle Z-versies backwards compatible zijn en je dus nooit meer dan 1 versie gebruikt.
 
 De volgende model onderdelen wordt gebruikt bij het maken construeren van schemas:
 
- - Een schema heeft een [X.Y.Z] versienummer
- - Een schema hoort bij een standaard met een [standaard]
- - Een schema heeft een onderdeel [onderdeel]
+- Een schema heeft een [X.Y.Z] versienummer
+- Een schema hoort bij een standaard met een [standaard]
+- Een schema heeft een onderdeel [onderdeel]
 
 Samen wordt dit:
 
- - namespace van schema: http://www.geostandaarden.nl/[standaard]/[onderdeel]/x.y
- - locatie van schema: https://register.geostanadaarden.nl/xmlschema/[standaard]/[x.y.z]/[onderdeel].xsd
- - vesion in het schema: [x.y.z]
+- namespace van schema: http://www.geostandaarden.nl/[standaard]/[onderdeel]/x.y
+- locatie van schema: https://register.geostanadaarden.nl/xmlschema/[standaard]/[x.y.z]/[onderdeel].xsd
+- vesion in het schema: [x.y.z]
 
 Bij een standaard zonder onderdelen wordt de bestandsnaam als onderdeelnaam gebruikt bij locatie.
 
-
 ## Namespaces in door Geonovum beheerde schema's
-
 
 GML applicatieschema's zijn te vinden op: https://register.geostandaarden.nl/gmlapplicatieschema/
 

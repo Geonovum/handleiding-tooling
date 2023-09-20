@@ -6,13 +6,31 @@ Voor het extern publiceren van documenten en standaarden gebruiken we â€œReSpecâ
 
 Het ontwerpdoel van de taal is leesbaarheid. Teksten geschreven met behulp van Markdown worden geacht al leesbaar te zijn voordat opmaak is toegepast op de tekst. Opmaakinstructies en tags zijn dan ook niet te vinden in pure Markdown.
 
+## Het viewen van Markdown in je broswer
+
+Het openen van lokale bestanden in de browser is soms lastig omdat browsers vaak verwijzingen naar lokale bestanden niet toestaan. Voor iedere browser zijn de instellingen hiervoor verschillend:
+
+### Chrome
+
+Je moet twee dingen instellen:
+
+- Local access: Toestaan dat je local files toont in Chrome, dat is een opstart argument. Kan je doen vanuit een cmd-prompt `%localappdata%\google\chrome\application\chrome --allow-file-access-from-files
+- CORS Toestaan : zelfde soort oplossing: `--disable-web-security`
+
+Het opstartcommando kan je ook in een snelkoppeling zetten als icoon op de desktop
+
+### Firefox
+
+In Firefox kan je dat makkelijker instellen via de parameters.
+
+In de adresbalk: about:config, dan het risico aanvaarden, en deze parameter veranderen: `security.fileuri.strict_origin_policy = false` (dus op false zetten)
 
 ## Tools voor Markdown
 
 | tool                                                                                        | omschrijving                                                                                    |
 | ------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
 | [Markdown Tutorial](https://www.markdownguide.org/getting-started/)                         | Handleiding Mardown                                                                             |
-| [Markdown Reference](https://www.markdownguide.org/basic-syntax)                            | Naslag Mardown |
+| [Markdown Reference](https://www.markdownguide.org/basic-syntax)                            | Naslag Markdown |
 | [Visual Studio Code](https://code.visualstudio.com/)                                        | Fijne teksteditor die ook goed integreert met Github Desktop                                    |
 | [Notepad++](https://notepad-plus-plus.org/)                                                 | Nog een goede editor                                                                            |
 | [PowerToys](https://learn.microsoft.com/en-us/windows/powertoys/)                           | Geeft preview van Markdown rechtstreeks in Windows Explorer (en nog heeel veel andere tooltjes) |

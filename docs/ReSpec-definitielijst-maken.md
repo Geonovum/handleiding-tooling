@@ -1,7 +1,5 @@
 # Definities in ReSpec
 
-> **Note**
-> Dit stuk moet straks toegevoegd worden aan de [handleiding tooling](https://github.com/Geonovum/handleiding-tooling/)
 
 > **Note**
 > In dit stuk afbeeldingen opnemen waarin je het resultaat in ReSpec kunt zien. Daarvoor graag [NL-ReSpec-GN-template](https://geonovum.github.io/NL-ReSpec-GN-template/) aanvullen.

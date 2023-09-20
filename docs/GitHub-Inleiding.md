@@ -12,7 +12,7 @@ Veel programmeurs wereldwijd maken gebruik van de website GitHub. Zelf zal je er
 
 GitHub bestaat uit twee woorden, namelijk Git + Hub. Laten we beginnen met Git. *Git is een open source versiebeheersysteem. De website GitHub is gemaakt op basis van het versiebeheersysteem Git. Met GitHub heb je alle mogelijkheden van Git + extra features.
 
-*Volgens veel programmeurs is Git momenteel het beste versiebeheersysteem, daarom is GitHub ook zo populair.* In een versiebeheersysteem kunnen programmeurs projecten beheren met code. Het is mogelijk om verschillende versies te beheren en eventueel terug te vallen op een oude versie, mocht er iets misgaan.
+In een versiebeheersysteem kunnen programmeurs projecten beheren met code. Het is mogelijk om verschillende versies te beheren en eventueel terug te vallen op een oude versie, mocht er iets misgaan.
 
 Stel dat je met een team een app wilt programmeren. Dan is het handig als iedereen bij het project kan met daarin alle code van de app. Ook is het handig dat iedereen de laatste code wijzigingen ziet van teamleden en daar eventueel op kan reageren en/of het aanpassen.
 
@@ -24,7 +24,7 @@ Bij Geonovum gebruiken we Github op een andere manier. Namelijk voor het voor we
 
  
 
-## Welke andere mogelijkheden heeft Github?
+## Andere mogelijkheden van Github
 
 Je weet nu dat het mogelijk is om in een team projecten (Waarin code staat) te beheren op GitHub. Het is natuurlijk ook mogelijk om je eigen projecten op GitHub te beheren. Zo heb je een goed overzicht van de aanpassingen en verschillende versies.
 
@@ -42,7 +42,7 @@ Maar welke mogelijkheden heeft GitHub nog meer? Hier staan een aantal belangrijk
 - Een website hosten
 
 
-## Waarom is Github handig?
+## Voordelen van GitHub
 
 GitHub zorgt ervoor dat een individueel of een project in teamverband erg overzichtelijk is. *Je hebt een goed overzicht van de laatste aanpassingen en welke persoon dat heeft gedaan.*
 
@@ -65,7 +65,7 @@ Hieronder staan belangrijke GitHub termen en de betekenis ervan:
 | GitHub term | Betekenis                                                                                                                                                                                              |
 | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | Repository  | Een repository kan je zien als de hoofdmap van je project. Hierin staan alle bestanden van je project en de historie van wijzigingen die je hebt gedaan.                                               |
-| Branch      | Aparte plek binnen je repository, waar je bijvoorbeeld nieuwe code kan testen, zonder dat te hoeven doen op de “productversie”.                                                                        |
+| Branch      | Aparte plek binnen je repository, waar je bijvoorbeeld nieuwe code kan testen, zonder dat te hoeven doen op de 'productversie'.                                                                        |
 | Master      | Dit is de hoofdbranch, oftewel de “productversie” van je project. Nieuwe code die is getest en goedgekeurd, wordt samengevoegd met de Master branch.                                                   |
 | Fork        | Een fork is een kopie van een repository. Hierdoor kan je werken aan een project van iemand anders, zonder het origineel aan te passen.                                                                |
 | Commit      | Git commando dat veranderingen toevoegt aan je lokale repository.                                                                                                                                      |
@@ -79,6 +79,6 @@ Hieronder staan belangrijke GitHub termen en de betekenis ervan:
 
 Hopelijk heb je een beter beeld over wat GitHub is. Ben je een gebruiker of wil je programmeur worden en werk je nog niet met een (goed) versiebeheersysteem? Dan is het zeker aan te raden om te beginnen met GitHub.
 
-Als je een account hebt aangemaakt kun je zelf een repository aanmaken. Zie hiervoor: [Aanmaken GitHub Account](/02-GitHub#installatie-en-inrichting)
+Als je een account hebt aangemaakt kun je zelf een repository aanmaken. Zie hiervoor: [Aanmaken GitHub Account](GitHub#installatie-en-inrichting)
 
 Stuur een mail naar account@geonovum.nl om toegevoegd te worden aan deze repository. Je moet dan wel eerst een account aangemaakt hebben op github
