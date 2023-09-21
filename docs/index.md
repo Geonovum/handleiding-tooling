@@ -87,5 +87,5 @@ hiervoor heb je wel een github token
 
 >
 > TODO: Het is ook mogelijk om met een github action automatisch bij iedere
-> wijziging de pages up te daten.
+> wijziging de pages up te daten. Dat werkt nu bijna.
 >

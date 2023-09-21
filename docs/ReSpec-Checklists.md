@@ -172,7 +172,7 @@ https://geonovum.github.io/Metadata-ISO19115/snapshot.html
 
 ## Vaststellingsversie (VV) maken
 
-Moet nog worden ingevuld obv. de laatste inzichten
+Moet nog worden ingevuld.
 
 
 ## Definitieve versie (DEF) maken
