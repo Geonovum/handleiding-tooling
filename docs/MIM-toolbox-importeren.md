@@ -27,11 +27,11 @@
     - Selecteer in het dropdown-menu '_Windows_'
     - Kies '_Resources_' (onder '_Explore_')
 
-![](Media/mim_import_find_resources.jpg)
+![](media/mim_import_find_resources.jpg)
 
  - Klik op '_MDG Technologies_'
 
-![](Media/mim_import_find_mdg_tech.jpg)
+![](media/mim_import_find_mdg_tech.jpg)
 
 > **Note**<br>
 > Hier moet je de keuze maken of je de toolbox op model- of gebruikersniveau importeert. Beide hebben voor- en nadelen:
@@ -43,7 +43,7 @@
 
  - Klik met de rechtermuisknop op '_Model Technologies_' of '_User Technologies_'.
 
-![](Media/mim_import_choose_type.jpg)
+![](media/mim_import_choose_type.jpg)
 
  - Selecteer '_Import technology_'.
  - Zoek het gedownloade XML-bestand van de MIM-toolbox op en kies '_Openen_'.
@@ -52,14 +52,14 @@
  - De velden '_Technology_', '_Version_' en '_Notes_' worden nu automatisch ingevuld met de juiste informatie.
  - Controleer het versienummer: `Version: 1.1.1`.
 
-![](Media/mim_import_to_model.jpg)
+![](media/mim_import_to_model.jpg)
 
  - Klik '_Ok_'
  - Navigeer in het '_Resources_' naar '_MDG Technologies_' > '_Model Technologies_'.
  - Controleer of hier nu een map met de naam '_MIM_' staat.
  - Controleer ook of het MIM-versienummer klopt bij '_UML Profiles_', '_Diagram Types_' en '_Toolboxes_'.
 
-![](Media/mim_import_to_model_succesful.jpg)
+![](media/mim_import_to_model_succesful.jpg)
 
  - Bij een _user import_ zal er nog een venster verschijnen met de tekst '_Copy succesfull_'.
  - De MIM-toolbox is nu beschikbaar  voor gebruik, maar het is raadzaam om eerst de volgende instructies door te nemen: 
@@ -80,7 +80,7 @@ Dit probleem wordt veroorzaakt doordat een diagram en een toolbox aan elkaar gek
  - Selecteer een package.
  - Klik op het diagramlogo om een nieuw diagram aan te maken.
 
-![](Media/mim_diagram_create.jpg)
+![](media/mim_diagram_create.jpg)
 
  > **Warning**<br>
  > Dit kan alleen als je onder model in de _Project browser_ al een package hebt aangemaakt. Als je dat nog niet hebt, maak dan eerst een (nieuw) package aan.
@@ -90,11 +90,11 @@ Dit probleem wordt veroorzaakt doordat een diagram en een toolbox aan elkaar gek
  - Klik op het dropdown-menu bij '_Type_'.
  - Selecteer '_Specialized_' > '_User Technologies_' of '_Model Technologies_' (afhankelijk van de manier waarop je de [toolbox geimporteerd](#1-importeren-mim-toolbox) hebt).
 
-![](Media/mim_diagram_find_mim.jpg)
+![](media/mim_diagram_find_mim.jpg)
 
  - Klik in het deelvenster '_Select From_' op '_MIM 1.1.1_'.
 
-![](Media/mim_diagram_select_tech.jpg)
+![](media/mim_diagram_select_tech.jpg)
 
  - Nu verschijnt in het deelvenster '_Diagram Types_' het '_MIM Diagram_'.
  - Selecteer het diagram en klik op '_Ok_'.
@@ -102,16 +102,16 @@ Dit probleem wordt veroorzaakt doordat een diagram en een toolbox aan elkaar gek
  > **Note**<br>
  > Het is belangrijk dat je het diagram daadwerkelijk selecteert. Je kunt herkennen of dit gelukt is, doordat in het onderste deelvenster een toelichtende tekst op het diagram verschijnt (anders staat er alleen 'MIM').
 
-![](Media/mim_diagram_select_diagram.jpg) 
+![](media/mim_diagram_select_diagram.jpg) 
 
  - De MIM-toolbox verschijnt nu in het toolbox-menu.
 
-![](Media/mim_diagram_toolbox_menu.jpg)
+![](media/mim_diagram_toolbox_menu.jpg)
 
  - Dubbelklik in de '_Project browser_' op het nieuwe diagram.
  - In het venster '_Properties_' zie je dat het diagram van het type '_MIM_' is.
 
-![](Media/mim_diagram_final_check.jpg)
+![](media/mim_diagram_final_check.jpg)
 
 Het MIM-versienummer komt nu ook terug het veld Stereotype in het venster '_Properties_' van het object.
  - Maak een objecttype "A" aan.
@@ -119,13 +119,13 @@ Het MIM-versienummer komt nu ook terug het veld Stereotype in het venster '_Prop
  - Tevens verschijnt er in dit venster een deelmenu met de titel '_«Objecttype» ( from MIM 1.1.1 - Basiselementen )_'
  - Als dit klopt, is de toolbox correct geïmporteerd.
 
-![](Media/mim_modelelement_versienummer.jpg)
+![](media/mim_modelelement_versienummer.jpg)
 
 ## 3: Toepassen Quick Linker
 
 De Quick Linker is een hulpmiddel om snel en eenvoudig relaties te kunnen leggen tussen verschillende elementen. Het voordeel hiervan is dat het de gebruiker inzicht geeft in de volgens MIM toegestane relaties. De Quick Linker is beschikbaar via een icoontje dat rechtsboven een diagramelement verschijnt op het moment dat je het selecteert.
 
-![](Media/mim_ql_icon.jpg)
+![](media/mim_ql_icon.jpg)
 
 Je kunt de Quick Linker op drie manieren inzetten, namelijk voor het:
 
@@ -140,11 +140,11 @@ Hieronder beschrijven we elke methode afzonderlijk.
  - Houd de muisknop ingedrukt en trek een lijn naar het object waarmee je het wilt verbinden.
  - Er verschijnt een stippellijn en een menu.
 
-![](Media/mim_ql_connect_elements.jpg)
+![](media/mim_ql_connect_elements.jpg)
 
  - Selecteer het gewenste type MIM-relatie (bijvoorbeeld: `«Generalisatie»`.
 
-![](Media/mim_ql_generalization.jpg)
+![](media/mim_ql_generalization.jpg)
 
 ### 3.2 Nieuw modelelement
 Je kunt ook vanuit een bestaand element een nieuw modelelement creëren. Dat gaat als volgt:
@@ -153,12 +153,12 @@ Je kunt ook vanuit een bestaand element een nieuw modelelement creëren. Dat gaa
  - Houd de muisknop ingedrukt en trek een lijn naar een lege plek in het diagram.
  - Er verschijnt een stippellijn en een menu.
 
-![](Media/mim_ql_draw_relation.jpg)
+![](media/mim_ql_draw_relation.jpg)
 
  - Dit menu ziet er anders uit dan bij het verbinden van twee bestaande elementen.
  - Navigeer naar '_MIM_' en selecteer het gewenste type MIM-relatie (bijvoorbeeld: `«Generalisatie»`)
 
-![](Media/mim_ql_generalization.jpg)
+![](media/mim_ql_generalization.jpg)
 
 ### 3.3 Meerdere nieuwe modelelementen
 Ook is het mogelijk om vanuit een bestaand element meerdere én verschillende soorten modelelementen in één keer te creëren. Dat gaat als volgt:
@@ -167,17 +167,17 @@ Ook is het mogelijk om vanuit een bestaand element meerdere én verschillende so
  - Houd de muisknop ingedrukt en trek een lijn naar een lege plek in het diagram.
  - Er verschijnt een stippellijn en een menu.
 
-![](Media/mim_ql_create_multiple.jpg)
+![](media/mim_ql_create_multiple.jpg)
 
  - Navigeer naar '_Create Multiple Elements_'.
  - Er verschijnt een nieuw venster.
 
-![](Media/mim_ql_define_multiple.jpg)
+![](media/mim_ql_define_multiple.jpg)
 
  - Defineer in dit venster de elementen in de eerste kolom ('_Name_') en selecteer het gewenste type relatie in de derde kolom ('_Type_').
  - Klik op '_Ok_' als je klaar bent.
 
-![](Media/mim_ql_result_multiple.jpg)
+![](media/mim_ql_result_multiple.jpg)
 
 ## 4: Toepassen toolbox-item 'Relatierol'
 
@@ -190,7 +190,7 @@ Net als alle andere modelelementen uit de MIM-toolbox, kun je ook de `«Relatier
  - Klik op het toolbox-item `«Relatierol»` en sleep het item met de muisknop ingedrukt naar de _target end_ van de associatie en laat hier de muisknop weer los.
  - Er verschijnt een popup-venster.
 
-![](Media/mim_relatierol_name.jpg)
+![](media/mim_relatierol_name.jpg)
 
  - Vul bij '_Enter value_' de naam van de `«Relatierol»` in en klik op '_Ok_'.
  - Klik vervolgens in het '_Properties_' venster op het '_Target_' tabblad.
@@ -202,23 +202,23 @@ Er zijn verschillende situaties denkbaar waarin je één of meerdere type modele
 
 [Verwijder de oude toolbox](#6-verwijderen-oudere-toolbox) eerst en [importeer vervolgens de nieuwe versie](#1-importeren-mim-toolbox). Doorloop daarna de volgende stappen. Hieronder gebruiken we het updaten van `«Relatierol»` als voorbeeld, maar je kunt dit voor elk gewenst modelelement uit de toolbox toepassen.
 
-![](Media/mim_relatierol_target_menu.jpg)
+![](media/mim_relatierol_target_menu.jpg)
 
  - Ga naar het toolbox-item `Relatierol` en klik hier met de rechtermuisknop op.
 
-![](Media/mim_relatierol_sync_select.jpg)
+![](media/mim_relatierol_sync_select.jpg)
 
  - Klik op '_Synchronize Stereotype_'.
  - Er opent een nieuw venster
  - Hierin staat in het veld '_stereotype_' `Relatierol` al geselecteerd.
  - Klik op '_Ok_'.
 
-![](Media/mim_relatierol_sync_menu.jpg)
+![](media/mim_relatierol_sync_menu.jpg)
 
  - Er verschijnt een popup-venster dat vraagt: '_Save latest changes?_', klik '_Ja_'.
  - De tagged values zijn nu gesynchroniseerd.
 
-![](Media/mim_relatierol_sync_saved.jpg)
+![](media/mim_relatierol_sync_saved.jpg)
 
 Herhaal bovenstaande stappen als je ook andere modelelementen wilt updaten. 
 

@@ -4,7 +4,7 @@ Subversion is een versiebeheersysteem vergelijkbaar met GitHub. Echter binnen de
 
 ## Installeren van Subversion in Enterprise Architect
 Wanneer een UML model in subversion beheerd is dan kun je deze als volgt op je eigen computer gebruiken.
- - Installeer een svn client [zie hier](SVN-installeren.md)
+ - Installeer een svn client [zie hier](SVN-installeren-voor-EAP.md)
  - Zorg voor een Geonovum svn account. Dit kun je aanvragen bij Wilko Quak of als hij niet beschikbaar is rechtstreeks bij Rob Kaesehagen die de server beheert.
  - Voor projectX die gebruik maakt van de subversion map svn.geostandaarden.nl/ProjectX:
      - Maak een folder op je lokale systeem: WerkmapProjectX

@@ -43,7 +43,7 @@ Controleer of je beschikt over alle benodigde bestanden:
 
 Het MTS- en CSV-bestand vind je [hier](https://github.com/Geonovum/MIM-Werkomgeving/tree/master/UML%20profieltooling/werkversie1.1.1) (zie ook: onderstaande afbeelding).
 
-![](Media/mim_profile_mts_and_csv_file_location.jpg)
+![](media/mim_profile_mts_and_csv_file_location.jpg)
 
 ### 1.2 Benodigde profielen
 Controleer of je beschikt over alle benodigde profielen:
@@ -52,11 +52,11 @@ Controleer of je beschikt over alle benodigde profielen:
  - Ga in de project browser naar het package `MIM-UMLprofiel`.
  - Controleer of daarin de benodigde _profile packages_ aanwezig zijn:
 
-![](Media/mim_profile_benodigde_profielen.jpg)
+![](media/mim_profile_benodigde_profielen.jpg)
 
  - Controleer of in het _package_ `«profile» MIM` het element `«document» QuickLinker` aanwezig is.
 
-![](Media/mim_profile_quick_linker_location.jpg)
+![](media/mim_profile_quick_linker_location.jpg)
 
 > **NOTE**: Het CSV-bestand van de QuickLinker is een kopie van de informatie die in dit element is opgeslagen. Als je wijzigingen wilt aanbrengen in de QuickLinker, of als er in het model wijzingen zijn doorgevoerd die van invloed zijn op de QuickLinker, kun je die met behulp van het CSV-bestand aanpassen (hier [linkOpnemenNaarQuickLinkerMakenOfBewerken](url) lees je hoe dat moet).
 
@@ -88,21 +88,21 @@ De toolbox wordt gegenereerd uit profielen. Deze hebben ook een versienummer. Di
 
 Door in het veld `Alias` van elk package het versienummer mee te geven kan een gebruiker van de toolbox in één oogopslag in het _properties-venster_ zien met welke versie van de toolbox een modelelement is gemaakt. Dit is vooral handig in het dagelijks gebruik van de toolbox. Ook als je twee (versies van) MIM-modellen wilt vergelijken, geeft dit snel inzicht in de gebruikte MIM-versie.
 
-![](Media/mim_versionnr_elements_result.jpg)
+![](media/mim_versionnr_elements_result.jpg)
 
 #### 1.3.4 Versienummer _toolbox pages_
 
 De _toolbox pages_ krijgen eveneens een versienummer. Hiervoor vouw je het package met het stereotype `toolbox profile` uit. Voor elke toolbox page is een element met het stereotype: `stereotype`.
 
-![](Media/mim_versionnr_toolbox_stereo_types.jpg)
+![](media/mim_versionnr_toolbox_stereo_types.jpg)
 
 Controleer of bij elk element het versienummer klopt.
 
-![](Media/mim_versionnr_toolbox_stereo_types_check.jpg)
+![](media/mim_versionnr_toolbox_stereo_types_check.jpg)
 
 Hierdoor ziet de gebruiker van de toolbox in één oogopslag met welke versie er gewerkt wordt.
 
-![](Media/mim_versionnr_toolbox_stereo_types_result.jpg)
+![](media/mim_versionnr_toolbox_stereo_types_result.jpg)
 
 #### 1.3.5 Versienummer _diagram_
 
@@ -123,13 +123,13 @@ In MIM heeft het diagram geen versienummer. De MIM-dataspecificatie zegt daarom 
  - En klik op: _Publish Pack As UML profile_.
  - Er verschijnt nu een nieuw venster.
 
-![](Media/mim_publish_as_UML_or_MDG.jpg)
+![](media/mim_publish_as_UML_or_MDG.jpg)
 
  - Voer _profile name_ in: _MIM_.
  - Kies de locatie waar je het profiel wilt opslaan en geef het bestand een herkenbare naam 
  - Voer het versienummer van de corresponderende MIM-dataspecificatie in (bijv.:`1.1.1`).
 
-![](Media/mim_profile_publish_as_uml_settings.jpg)
+![](media/mim_profile_publish_as_uml_settings.jpg)
 
 Let op er zijn twee belangrijke voorwaarden:
 1. De _profile name_ moet overeenkomenm met de naam van het _package_.
@@ -139,7 +139,7 @@ Let op er zijn twee belangrijke voorwaarden:
 > **Opmerking**: Dat er daarnaast packages zijn met een andere naam, maakt niet uit, zoals bijv. `MIM_Keuzebasis`, zo lang de drie voorgenoemde packages maar hetzelfde zijn.
 
 
-![](Media/mim_profile_prefix_check.jpg)
+![](media/mim_profile_prefix_check.jpg)
 
 > **Opmerking**: Een toolbox-element verwijst naar de het package met het bijbehorende profiel. Als je de packagenaam van een profiel aanpast, verandert de naam van het toolbox-element niet automatisch mee. In de uiteindelijke toolbox zul je dit element dan niet kunnen gebruiken.
 
@@ -156,7 +156,7 @@ Doorloop voor het genereren van een toolbox de volgende stappen in de _Generate 
 
  - Selecteer het package waaronder alle subpackages vallen, in dit geval: `MIM-UMLprofiel`.
 
-![](Media/mim_mdg_select_package.jpg)
+![](media/mim_mdg_select_package.jpg)
 
 ### 3.2 Open wizard
 
@@ -164,7 +164,7 @@ Doorloop voor het genereren van een toolbox de volgende stappen in de _Generate 
  - Kies: 'Publish Package'.
  - Kies: 'Generate MDG Technology'.
 
-![](Media/mim_mdg_gen_tech.jpg)
+![](media/mim_mdg_gen_tech.jpg)
 
 ### 3.3 Selecteer MTS-bestand
 
@@ -182,7 +182,7 @@ Vanuit het MTS-bestand wordt het volgende venster al ingevuld
  - ID: build + build number (bijv.: `build03`)
  - Version: `1.1.1`
 
-![](Media/mim_mdg_tech_1.jpg)
+![](media/mim_mdg_tech_1.jpg)
 
 > **Toelichting**
 > 1. Icon en logo: deze velden blijven vooralsnog leeg.
@@ -198,7 +198,7 @@ Vanuit het MTS-bestand wordt het volgende venster al ingevuld
  - Wijzig indien nodig de instellingen 
  - Klik op 'Ok'
 
-![](Media/mim_mdg_tech_2.jpg)
+![](media/mim_mdg_tech_2.jpg)
 
 ### 3.6 Selecteer _profiles_
 
@@ -208,7 +208,7 @@ Vanuit het MTS-bestand wordt het volgende venster al ingevuld
  - Kies hier alle XML-bestanden, behalve de toolboxprofile.
  - Klik 'Volgende'.
 
-![](Media/mim_mdg_tech_3.jpg)
+![](media/mim_mdg_tech_3.jpg)
 
 ### 3.7 Selecteer _diagrams_
 
@@ -216,7 +216,7 @@ Vanuit het MTS-bestand wordt het volgende venster al ingevuld
  - Kies hier het diagramprofiel
  - Klik 'Volgende'.
 
-![](Media/mim_mdg_tech_4.jpg)
+![](media/mim_mdg_tech_4.jpg)
 
 ### 3.8 Selecteer _Toolboxes_
 
@@ -226,7 +226,7 @@ Vanuit het MTS-bestand wordt het volgende venster al ingevuld
 
  - In de volgende stap selecteer je tot slot het toolbox profiel.
 
-![](Media/mim_mdg_tech_5.jpg)
+![](media/mim_mdg_tech_5.jpg)
 
 ### 3.9 Controleer gegevens en voltooi proces
 
@@ -235,7 +235,7 @@ Vanuit het MTS-bestand wordt het volgende venster al ingevuld
  - Indien je wijzigingen in de configuratie hebt aangebracht:
  - Kies checkbox  'Save To MTS'
 
-![](Media/mim_mdg_tech_6.jpg)
+![](media/mim_mdg_tech_6.jpg)
 
  - Klik: 'Voltooien'
 
@@ -263,15 +263,15 @@ In ieder geval beschrijven:
 
 #### Afbeeldingen
 
-![](Media/mim_create_diagram_profiel.jpg)
+![](media/mim_create_diagram_profiel.jpg)
 
-![](Media/mim_create_diagram_profiel_model.jpg)
+![](media/mim_create_diagram_profiel_model.jpg)
 
-![](Media/mim_ql_in_browser.jpg)
+![](media/mim_ql_in_browser.jpg)
 
-![](Media/mim_ql_linked_doc.jpg)
+![](media/mim_ql_linked_doc.jpg)
 
-![](Media/mim_ql_column_e.jpg)
+![](media/mim_ql_column_e.jpg)
 
 ## 6 Aandachtspunten
 
