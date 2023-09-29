@@ -4,40 +4,36 @@ ReSpec is een tool van W3C die het schrijven van specifications makkelijker maak
 
 ## Algemeen
 
-Er is een gedetailleerde (Engelstalige) [gebruikershandleiding](https://github.com/w3c/respec/wiki/ReSpec-Editor's-Guide) beschikbaar. Er is ook een [ontwikkelaarshandleiding](https://github.com/w3c/respec/wiki/Developers-Guide)  te vinden.
+Er is een gedetailleerde (Engelstalige) [gebruikershandleiding](https://github.com/w3c/respec/wiki/ReSpec-Editor's-Guide) beschikbaar. Er is ook een [ontwikkelaarshandleiding](https://github.com/w3c/respec/wiki/Developers-Guide) te vinden.
 
 Geonovum heeft een fork van W3C ReSpec omdat wij sommige onderdelen gecustomised hebben. Deze eigen versie van ReSpec wordt beheerd door de technisch beheerders van ReSpec, en dat valt buiten dit document.
 
 De Geonovum [wiki over ReSpec](https://github.com/Geonovum/respec/wiki) kan naast dit hoofdstuk worden gebruikt.
 
-## Documentatie maken met ReSpec 
+## Documentatie maken met ReSpec
 
 ### De mapindeling
 
 Een document dat bij Geonovum met ReSpec wordt gemaakt heeft standaard de onderstaande mappenstructuur. Voor het aanmaken van een nieuw ReSpec Document staat een template klaar.
 
-
-| hoofdmap | map        | file      | omschrijving                                            |
-| -------- | ---------- | --------- | ------------------------------------------------------- |
-| Hoofdmap |            |           | naam van de hoofdmap                                    |
-|          | media      |           | Map met de vaste naam `media`                           |
-|          |            | Style.css | File met vaste naam, bevat de styling van het document  |
-|          |            | \*.png    | Afbeeldingsbestanden                                    |
-|          | index.html |           | File met de vaste naam `Index.html`                     |
-|          | config.js  |           | File met de vaste naam `config.js`                      |
-|          | \*md       |           | Tekstbestanden (Markdown) die de content bevatten       |
-
+| hoofdmap | map        | file      | omschrijving                                           |
+| -------- | ---------- | --------- | ------------------------------------------------------ |
+| Hoofdmap |            |           | naam van de hoofdmap                                   |
+|          | media      |           | Map met de vaste naam `media`                          |
+|          |            | Style.css | File met vaste naam, bevat de styling van het document |
+|          |            | \*.png    | Afbeeldingsbestanden                                   |
+|          | index.html |           | File met de vaste naam `Index.html`                    |
+|          | config.js  |           | File met de vaste naam `config.js`                     |
+|          | \*md       |           | Tekstbestanden (Markdown) die de content bevatten      |
 
 Hieronder staat een voorbeeld van zo’n mappenstructuur. De .workspace file is een file die is aangemaakt door de Visual Studio Code Editor.
 
 ![media/image22.png](media/image22.png)
 
-
 In de hoofdmap staan de submap `media` en de files `index.html`, `config.js` en `*.md` (Markdown) files.
 
 In de submap `media` staat o.a. het bestand `style.css`, en ook worden alle afbeeldingen uit het Markdown door de Markdown plugin voor word in de map media gezet.
 
- 
 ![media/image23.png](media/image23.png)
 
 De namen van de afbeeldingen in dit voorbeeld zijn geregenereerd. Het staat je vrij om die namen herkenbare namen te geven, zolang je deze namen dan ook maar in de verwijzingen worden gebruikt.
@@ -82,10 +78,9 @@ Index.html heeft een standaard indeling. Hieronder de template zoals gebruikt vo
 </html>
 ```
 
-
 In de HTML-header wordt de js-ReSpec bibliotheek geladen. Het enige dat in de header mag worden aangepast is de title (tussen \<title\> en \</title\>. Andere aanpassingen die nodig zijn in de header mogen alleen worden gedaan in overleg met de ReSpec beheerders. Een overzicht van de ReSpec beheerders staat in Hoofdstuk 6
 
-In de HTML-Body geldt *vrijheid in gebondenheid* De `<div>` en/of `<section>` regels mogen worden gekopieerd en toegevoegd. Wel belangrijk om de structuur over te nemen, dus als volgt:
+In de HTML-Body geldt _vrijheid in gebondenheid_ De `<div>` en/of `<section>` regels mogen worden gekopieerd en toegevoegd. Wel belangrijk om de structuur over te nemen, dus als volgt:
 
 ```
 <div id='H00' data-format='Markdown' data-include="ToCoVo.md"></div>
@@ -102,7 +97,6 @@ Een `<section>` komt wél in de inhoudsopgave terecht. Deze heeft daarom behalve
 In config.js wordt een stuurvariabele voor ReSpec gevuld. De waarden in deze variabele worden door ReSpec gebruikt om de layout te bepalen, en bevatten een aantal document-eigenschappen.
 
 Hieronder een voorbeeld config.js.
-
 
 ```
 let respecConfig = {
@@ -141,7 +135,7 @@ let respecConfig = {
   //eventueel is het mogelijk een versienummer mee te geven, maar bij Geonovum werken we gewoonlijk alleen met datum als onderdeel van de permanente URI.
   //publishVersion: "0.0.2",
   //previousVersion: "0.0.1",
-  //-- Voor dit blok geldt: alleen als er eerdere versies zijn en altijd beiden aan/uit! 
+  //-- Voor dit blok geldt: alleen als er eerdere versies zijn en altijd beiden aan/uit!
   //previousPublishDate: "2014-05-01",
   //previousMaturity: "CV",
   //-- de namen van de Editor(s) / Redacteur(en)---------------------------------------
@@ -176,24 +170,22 @@ let respecConfig = {
 };
 ```
 
-
 De file config.js is eigenlijk een stukje javascript (JSON) code, het bevat alle mogelijke waarden voor de verschillende versies die wij hanteren bij Geonovum. In de file zelf staat aangegeven welke waarden verplicht zijn, en uit welke waarden te kiezen is. In bovenstaand voorbeeld gaat het om een “Werkversie van een standaard”.
 
 ## SpecStatus
 
-De SpecStatus in de configuratie geeft de keuze uit 4 waarden, deze waarden zijn vastgesteld, en mogen niet zomaar uitgebreid of aangepast worden. Elke status hoort bij een formele fase van een ReSpec document. Zie ook de Geonovum ReSpec [wiki](https://github.com/Geonovum/respec/wiki). 
+De SpecStatus in de configuratie geeft de keuze uit 4 waarden, deze waarden zijn vastgesteld, en mogen niet zomaar uitgebreid of aangepast worden. Elke status hoort bij een formele fase van een ReSpec document. Zie ook de Geonovum ReSpec [wiki](https://github.com/Geonovum/respec/wiki).
 
-- *GN-WV, Werkversie*: Dit is de versie van het document waaraan wordt gewerkt. Deze versie is continu “under-construction”.
-- *GN-CV, Consultatieversie*: Dit is een “snapshot” van de versie die “in consultatie” wordt gezet. Aan deze versie wordt niks meer gedaan totdat de consultatie is afgelopen. Daarna worden alle op en aanmerkingen uit de consultatieronde verwerkt.
-- *GN-VV, Vaststellingsversie*: Dit is een “snapshot” van de versie na het verwerken van de op en aanmerkingen uit de consultatieronde is ontstaan. Deze versie wordt aangeboden aan de programma-raad van Geonovum, om te wordern “vastgesteld”.
-- *GN-DEF, Definitieve versie*: Dit is de definitieve versie van het document, zoals vastgesteld door de programma-raad. Van deze versie wordt opnieuw een “snapshot” gemaakt in ReSpec. Het resultaat van die snapshot wordt op <a href='http://docs.geonovum.nl' target='_blank'>http://docs.geonovum.nl</a> neergezet.
-
+-   _GN-WV, Werkversie_: Dit is de versie van het document waaraan wordt gewerkt. Deze versie is continu “under-construction”.
+-   _GN-CV, Consultatieversie_: Dit is een “snapshot” van de versie die “in consultatie” wordt gezet. Aan deze versie wordt niks meer gedaan totdat de consultatie is afgelopen. Daarna worden alle op en aanmerkingen uit de consultatieronde verwerkt.
+-   _GN-VV, Vaststellingsversie_: Dit is een “snapshot” van de versie na het verwerken van de op en aanmerkingen uit de consultatieronde is ontstaan. Deze versie wordt aangeboden aan de programma-raad van Geonovum, om te wordern “vastgesteld”.
+-   _GN-DEF, Definitieve versie_: Dit is de definitieve versie van het document, zoals vastgesteld door de programma-raad. Van deze versie wordt opnieuw een “snapshot” gemaakt in ReSpec. Het resultaat van die snapshot wordt op <a href='http://docs.geonovum.nl' target='_blank'>http://docs.geonovum.nl</a> neergezet.
 
 ## SpecType
 
-Het SpecType in de configuratie is een vaste lijst met waarden, deze waarden zijn vastgesteld, en mogen niet zonder overleg met de Technische ReSpec beheerders uitgebreid of aangepast worden. 
+Het SpecType in de configuratie is een vaste lijst met waarden, deze waarden zijn vastgesteld, en mogen niet zonder overleg met de Technische ReSpec beheerders uitgebreid of aangepast worden.
 
-Onderstaande beschrijvingen komen uit het generiek beheerplan<span class='noot'>[5]<span class='noottekst'> Zie: https://www.geonovum.nl/uploads/documents/Geonovum%20GENERIEK%20Beheerplan%20geo-standaarden%20v1.1.pdf <br/></span></span>. 
+Onderstaande beschrijvingen komen uit het generiek beheerplan<span class='noot'>[5]<span class='noottekst'> Zie: https://www.geonovum.nl/uploads/documents/Geonovum%20GENERIEK%20Beheerplan%20geo-standaarden%20v1.1.pdf <br/></span></span>.
 
 <ul><li><u>NO, Norm</u>: Een norm is bij een officieel standaardisatie instituut ondergebracht en bevat bindende afspraken.</li>
 <li>Naast het gebruik van normen is NEN 3610 de enige norm waar Geonovum een inhoudelijke verantwoordelijkheid heeft. Het formele beheer en beslissingen worden genomen in de NEN normcommissie 351 240 waar Geonovum de voorzitter van is.</li>
@@ -224,14 +216,11 @@ Onderstaande beschrijvingen komen uit het generiek beheerplan<span class='noot'>
 
 In de localBiblio variabele worden Referenties naar andere documenten gezet. Voordat je hier citaten toevoegt, loont het de moeite om eerst in de SpecRef van ReSpec zelf te kijken. Zie voor uitleg van Specref paragraaf <a href='#_Ref17110974'>4.3.3<a></a>. Pas als je een verwijzing niet vindt in SpecRef voeg je hem hier toe!
 
-
 ### Het bestand 'style.css'
 
 TODO:FIXME
 
-Het bestand style.css staat in de map media. De Geonovum Fork van ReSpec heeft een eigen styling. Met het bestand style.css kan je de default styling van Geonovum overschrijven en/of aanvullen. Om te voorkomen dat er een wildgroei aan stijlen, lettertypes en kleuren gaat ontstaan, moet die altijd in overleg met de ReSpec Beheerders (zie <a href='#_Ref17112095'>Hoofdstuk 5<a></a>). 
-
-
+Het bestand style.css staat in de map media. De Geonovum Fork van ReSpec heeft een eigen styling. Met het bestand style.css kan je de default styling van Geonovum overschrijven en/of aanvullen. Om te voorkomen dat er een wildgroei aan stijlen, lettertypes en kleuren gaat ontstaan, moet die altijd in overleg met de ReSpec Beheerders (zie <a href='#_Ref17112095'>Hoofdstuk 5<a></a>).
 
 ### Content: bestanden '\*.md'
 
@@ -264,17 +253,18 @@ De gevonden zoekresultaten kunnen worden overgenomen in het ReSpec document.
 
 ### Lijst van definities
 
-Deze functie gebruiken wij vooralsnog niet.
+Zie: [definitielijst maken](ReSpec-definitielijst-maken.md)
 
-## Hogere ReSpec 
+## Hogere ReSpec
 
-Omdat wij ervoor hebben gekozen om documenten te schrijven in Markdown, gebruiken wij niet alle ReSpec functionaliteit. In dit hoofdstuk worden de speciale ReSpec functies beschreven die als HTML code in het Markdown document kunnen wordnen opgenomen, of die in de door respec gegenereerde HTML file kunnen worden neergezet. Het gebruik van deze functionaliteit vereist dus wel HTML voorkennis.
+Omdat wij ervoor hebben gekozen om documenten te schrijven in Markdown, gebruiken wij niet alle ReSpec functionaliteit. In dit hoofdstuk worden de speciale ReSpec functies beschreven die als HTML code in het Markdown document kunnen wordnen opgenomen, of die in de door respec gegenereerde HTML file kunnen worden neergezet. Het gebruik van deze functionaliteit vereist dus wel HTML kennis.
 
-### Afbeeldingen 
+### Afbeeldingen
 
 Een lijst van afbeeldingen kan door ReSpec automatisch worden gegenereerd, maar dan moet er wel aan een aantal ReSpec specifieke voorwaarden worden voldaan:
 
 In Index.html komt ergens te staan:
+
 ```
 <figure id="flowchart">
    <img src="flowchart.svg" alt="">
@@ -282,7 +272,8 @@ In Index.html komt ergens te staan:
 </figure>
 ```
 
-In de documenten worden de afbeeldingen op de volgende manier neergezet: 
+In de documenten worden de afbeeldingen op de volgende manier neergezet:
+
 ```
 <figure id="flowchart">
    <img src="flowchart.svg" alt="">
@@ -299,9 +290,7 @@ Eventuele referenties naar plaatjes doe je op e volgende manier:
 </section>
 ```
 
-
-
-### Referentie naar GitHub issues 
+### Referentie naar GitHub issues
 
 ReSpec ondersteunt ook een koppeling naar issues die zijn gemeld op GitHub. Jek kan referenties opnemen naar individuele issues. Ook is het mogelijk om een lijst met alle issues op te nemen in je document.
 
@@ -310,6 +299,7 @@ Om GitHub issues op te nemen moet je in “config.js” een referentie opnemen n
 <span style='color: #24292E;'github</span><span style='color: #D73A49;':</span> <span style='color: #032F62;'"</span><span style='color: #032F62;'https://www.github.com/Geonovum/MIM-Werkomgeving/</span><span style='color: #032F62;'"</span><span style='color: #24292E;',</span>
 
 Een referentie naar een issue neem je als volgt op:
+
 ```
 <div class="issue" data-number="363"></div>
 ```
@@ -325,11 +315,10 @@ Een lijst met issues kan je toevoegen met de volgende HTML code:
 
 ```
 
-### Foutmeldingen en waarschuwingen 
+### Foutmeldingen en waarschuwingen
 
 ![media/image29.png](media/image29.png)
 ![media/image30.png](media/image30.png)
-
 
 In dit geval is er een tikfout gemaakt bij de naam van de Markdownfile die ge-include wordt. Het moet natuurlijk `H2-Testcases.md` zijn.
 

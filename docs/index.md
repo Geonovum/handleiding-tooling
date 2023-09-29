@@ -4,7 +4,7 @@ Welkom bij de Geonovum Werkwijze. Dit is
 geen formele beschrijving maar  een hulpmiddel om
 stap voor stap de tooling uit te leggen.
 
-Om de [standaarden van Geonovum](https://docs.geostandaarden.nl) te kunnen beheren, gebruiken we verschillende tools. We publiceren standaarden als HTML met een tool van W3C: ReSpec.
+Om de [standaarden van Geonovum](https://docs.geostandaarden.nl) te beheren, gebruiken we verschillende tools. We publiceren standaarden als HTML met een tool van W3C: ReSpec.
 
 ReSpec maakt gebruik van input bestanden om de HTML te genereren. Deze
 inputbestanden (de content) wordt gemaakt in een formaat: Markdown. Deze
@@ -20,9 +20,8 @@ opbouwt, welke bestanden er nodig zijn voor een standaard, en hoe je de
 verschillende versies van een standaard genereert. Ook wordt uitgelegd hoe je
 de Markdown plugin in Microsoft Word installeert en gebruikt.
 
-## Overzicht tooling
+## De tools van Geonovum
 
-Binnen Geonovum maken we gebruik van de volgende tools:
 
 - **GitHub**
     -   [GitHub handleiding](GitHub.md): Beschrijft hoe je een account aanmaakt en

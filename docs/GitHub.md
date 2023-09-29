@@ -8,9 +8,9 @@ In dit hoofdstuk komen zowel GitHub als GitHub desktop client aan de orde. Geono
 
 Als je nog geen GitHub account hebt, of als je een apart GitHub account wil maken voor je Geonovum werkzaamheden, ga naar: https://github.com/join/get-started .
 
-Dan zie je het scherm dat hiernaast staat. Maak in dat scherm een usernaam aan waarmee je op GitHub gaat werken. 
+Dan zie je het scherm dat hiernaast staat. Maak in dat scherm een usernaam aan waarmee je op GitHub gaat werken.
 
-<u>Tip</u>: als je met meerdere accounts gaat werken, zorg er dan voor dat aan de accountnaam kan zien waarvoor die dan gebruikt moet worden. (Bijvoorbeeld door die naam te eindigen op –GNM). Verplicht is dit niet. 
+<u>Tip</u>: als je met meerdere accounts gaat werken, zorg er dan voor dat aan de accountnaam kan zien waarvoor die dan gebruikt moet worden. (Bijvoorbeeld door die naam te eindigen op –GNM). Verplicht is dit niet.
 
 Vul in het veld username je nieuwe GitHub naam in.
 
@@ -18,7 +18,7 @@ Vul in het veld email adress je geonovum mailadres in
 
 ![media/image3.png](media/image3.png)
 
-Klik vervolgens op “Create Account” en dan wordt je account aangemaakt. 
+Klik vervolgens op “Create Account” en dan wordt je account aangemaakt.
 
 Kies in dit scherm je persoonlijke plan. Bij Geonovum gebruiken we de gratis versie, dus selecteer die.
 
@@ -26,7 +26,7 @@ Kies in dit scherm je persoonlijke plan. Bij Geonovum gebruiken we de gratis ver
 
 ### Installeren GitHub desktop
 
-Ga in je internet browser naar https://desktop.github.com/ 
+Ga in je internet browser naar https://desktop.github.com/
 
 Klik daar op download for Windows (64bit).
 
@@ -39,7 +39,7 @@ Na starten van de installer verschijnt het scherm hiernaast
 
 Het volgende scherm zal nu openen
 
-Het aanmaken van een account hoeven we niet meer te doen, want dat hebben we in de vorige stap al gedaan. Dus klik op Sign Into Github.com
+we hebben in de vorige stap al een account aangemaakt dus klik op Sign Into Github.com
 
 ![media/image8.png](media/image8.png)
 
@@ -70,18 +70,17 @@ In het tabblad “Appearance” kan je ervoor kiezen om in Light of Dark modus t
 
 In dit scherm kan je de voorkeurs editor instellen. Default wordt gekeken naar de reeds aanwezige tekst editors. Omdat GitHub van nature een samenwerkomgeving is voor het ontwikkelen van programmatuur, gaat het hier om “platte tekst” editors.
 
-## Werkwijze Geonovum 
+## Werkwijze Geonovum
 
-###  De Geonovum GitHub pagina 
+### De Geonovum GitHub pagina
 
-Geonovum heeft een eigen GitHub Bedrijfspagina: https://github.com/Geonovum . 
-
+Geonovum heeft een eigen GitHub Bedrijfspagina: https://github.com/Geonovum .
 
 Voor alle projecten die een product maken of beheren wordt een repository aangemaakt.
 
-Het aanmaken van een repository staat beschreven in paragraaf <a href='#_Ref17107242'>2.3.1<a></a>.  
+Het aanmaken van een repository staat beschreven in paragraaf <a href='#_Ref17107242'>2.3.1<a></a>.
 
-### Mappenstructuur in de respository 
+### Mappenstructuur in de respository
 
 ![media/image16.png](media/image16.png)
 In de Repository maak je indien nodig submappen aan. Submappen zijn handig als er in je Repository meer dan één ReSpec document komt te staan. Over ReSpec meer in hoofdstuk 3.
@@ -90,24 +89,23 @@ Hiernaast een afbeelding van de GitHub Repository voor MIM. Twee mappen omdat MI
 
 Ook maakt GitHub standaard een readme.md aan. De readme staat in het “Markdown” formaat, waarover in de volgende paragraaf meer.
 
-### Readme.md 
+### Readme.md
 
 In de readme.md file staat nog eens beschreven Wat de inhoud van de Repository is. Neem ook de link naar de webversie van de documenten hier op, dan is het voor bezoekers gemakkelijker om het document te openen in een browser.
 
-Neem altijd een link naar <a href='https://docs.geostandaarden.nl/' target='_blank'>https://docs.geostandaarden.nl/</a> op, en in het geval het technische documenten betreft zoals UML’s, XSD’s, GML’s, XML’s een link naar <a href='http://register.geostandaarden.nl/' target='_blank'>http://register.geostandaarden.nl/</a> in het Readme bestand op. 
-
+Neem altijd een link naar <a href='https://docs.geostandaarden.nl/' target='_blank'>https://docs.geostandaarden.nl/</a> op, en in het geval het technische documenten betreft zoals UML’s, XSD’s, GML’s, XML’s een link naar <a href='http://register.geostandaarden.nl/' target='_blank'>http://register.geostandaarden.nl/</a> in het Readme bestand op.
 
 ![media/image17.png](media/image17.png)
 
-## Aan de slag met GitHub 
+## Aan de slag met GitHub
 
 In deze paragraaf een beschrijving van hoe je in GitHub een nieuwe repository aanmaakt, en hoe je die synchroniseert met je lokale GitHub client.
 
 ### Het maken van een nieuwe repository
 
-Een nieuwe repository maak je aan in de Centrale GitHub omgeving. 
+Een nieuwe repository maak je aan in de Centrale GitHub omgeving.
 
-Klik in de banner bovenaan de pagina, naast je profielfoto op “+” en kies “Create Repository” 
+Klik in de banner bovenaan de pagina, naast je profielfoto op “+” en kies “Create Repository”
 
 Nadat je op “+” hebt geklikt, verschijnt het scherm hieronder.
 
@@ -124,12 +122,12 @@ Geef als local path de naam van de GitHub map op. GitHub zal dan de naam van de 
 
 Het is wel zo netjes om een readme file aan te maken, hierin zet je een korte omschrijving van de repository. Vinkje aanzetten dus. Klik vervolgens op “Create Repository”
 
-### GitHub Clone: eerste keer ophalen van de centrale repository 
+### GitHub Clone: eerste keer ophalen van de centrale repository
 
 ![media/image20.png](media/image20.png)
 Start de GitHub Client, en kies in het menu File voor Clone Repository. En kies de Repository die je wil clonen (in dit geval Geonovum/MIM). Als Local Path kies je een logische plek op je PC/Laptop. (Tip: het is handig om één plek voor je Github Repositories te maken, bijvoorbeeld C:. Na het aanklikken van de knop clone wordt een lokale kopie gemaakt. Github weet welke versie je hebt opgehaald, en zal de wijzingen die je maakt netjes voor je bijhouden.
 
-In de map die je als local path hebt opgegeven komt de mappen structuur te staan zoals hierboven beschreven. 
+In de map die je als local path hebt opgegeven komt de mappen structuur te staan zoals hierboven beschreven.
 
 ### GitHub Pull origin: ophalen van wijzigingen
 
@@ -137,7 +135,7 @@ Een pull commando werkt de lokale versie van je GitHub Repository bij. Wijziging
 
 NB: Voer dit commando regelmatig uit als er meerdere mensen in de repository werken, om conflicterende wijzigingen te voorkomen.
 
-### GitHub Commit to Master: wijzigingen opslaan 
+### GitHub Commit to Master: wijzigingen opslaan
 
 Met de knop Commit to master zet je de wijzigingen die je hebt gedaan klaar om te uploaden naar de Centrale GitHub Repository. GitHub maakt daartoe een versie aan,
 
@@ -145,47 +143,44 @@ die je verplicht voorziet van een summary en optioneel van een Description Let o
 
 het committen heb je dus nog niks ge-upload.
 
-### GitHub Push origin of Pull request: wijzigingen uploaden 
+### GitHub Push origin of Pull request: wijzigingen uploaden
 
 Nadat je de wijzigingen hebt gecommit, moeten ze richting de centrale repository. Nu zijn er twee mogelijkheden. Ofwel je hebt schrijfrechten op de Centrale Repository, of je hebt ze niet. In het eerste geval kan je een Push Origin uitvoeren, dan worden de wijzigingen meteen in de Centrale GitHub Repository verwerkt. In het tweede geval doe je een Pull request bij de eigenaar van de Repository om de wijzigingen door te voeren. Github maakt dan een eigen versie voor je aan (dat heet een fork) en vraagt aan de eigenaar van de Repository om die fork te verwerken in de Centrale Repository.
 
 ## Enkele regels over GitHub binnen Geonovum
 
-- Geonovum heeft binnen github een team: https://github.com/Geonovum.
+-   Geonovum heeft binnen github een team: https://github.com/Geonovum.
 
 ### Github beheer
 
-- Github teamleden met beheerders rechten zijn te vinden via: https://github.com/orgs/Geonovum/people?query=role%3Aowner
-- Daarnaast zijn er nog drie inhoudelijk beheerders vanuit Geonovum: Arnoud de Boer, Frank Terpstra en Linda vd Brink.
-
+-   Github teamleden met beheerders rechten zijn te vinden via: https://github.com/orgs/Geonovum/people?query=role%3Aowner
+-   Daarnaast zijn er nog drie inhoudelijk beheerders vanuit Geonovum: Arnoud de Boer, Frank Terpstra en Linda vd Brink.
 
 ### Github gebruikers
 
-- Een overzicht van de gebruikers is te vinden op: https://github.com/orgs/Geonovum/people.
-- In principe geldt de regels: als je lid bent van Geonovum Teams dan hoor je ook bij de Geonovum GitHub organisatie. De inhoudelijk beheerders kunnen besluiten daar van af te wijken.
-- Er is geen bezwaar tegen het gebruiken van een privé account binnen de github omgeving.
-- Bij vertrek wordt je omgezet naar 'External Collaborator'.
+-   Een overzicht van de gebruikers is te vinden op: https://github.com/orgs/Geonovum/people.
+-   In principe geldt de regels: als je lid bent van Geonovum Teams dan hoor je ook bij de Geonovum GitHub organisatie. De inhoudelijk beheerders kunnen besluiten daar van af te wijken.
+-   Er is geen bezwaar tegen het gebruiken van een privé account binnen de github omgeving.
+-   Bij vertrek wordt je omgezet naar 'External Collaborator'.
 
 ### GitHub teams
 
-- Er is een aantal teams gemaakt binnen Geonovum. Deze zijn te vinden op: https://github.com/orgs/Geonovum/teams.
-- Het is de bedoeling dat alle repositories die beheerd worden aan een team is toegekend met als doel dat het team aanspreekpunt is voor het repository.
-- Team namen eindigen op ' team'. Bijvoorbeeld 'DSO team'.
+-   Er is een aantal teams gemaakt binnen Geonovum. Deze zijn te vinden op: https://github.com/orgs/Geonovum/teams.
+-   Het is de bedoeling dat alle repositories die beheerd worden aan een team is toegekend met als doel dat het team aanspreekpunt is voor het repository.
+-   Team namen eindigen op ' team'. Bijvoorbeeld 'DSO team'.
 
 ### GitHub repositories
 
-- Dit zijn de Geonovum reopsitories: https://github.com/orgs/Geonovum/repositories.
-- Er is ook een dashboard met een overzicht van publieke git repositories: [DashboardGit](https://geonovum.github.io/DashboardGit/).
-- Richtlijnen voor het inrichten van repositories zijn er nog niet. Wel is er een template voor respec documenten: [NL-ReSpec-GN-template](https://github.com/Geonovum/NL-ReSpec-GN-template)
+-   Dit zijn de Geonovum reopsitories: https://github.com/orgs/Geonovum/repositories.
+-   Er is ook een dashboard met een overzicht van publieke git repositories: [DashboardGit](https://geonovum.github.io/DashboardGit/).
+-   Richtlijnen voor het inrichten van repositories zijn er nog niet. Wel is er een template voor respec documenten: [NL-ReSpec-GN-template](https://github.com/Geonovum/NL-ReSpec-GN-template)
 
 #### Naamgevingsconventies GitHub
 
- - Deze zitten voor een deel in de ReSpec
- - Er is een lijst met prefixes:
-     - **dso-** digitale ondersteuning omgevingswet.
-     - **ow-** omgevingswet. Dit lijkt wel een duplicaat. Laten opgaan in dso-?
-     - **KP-APIs-** kennisplatform API's.
-     - **xml_** Dit was een prefix voor dso repositories maar wordt voor nieuwe repositories niet meer gebruikt. 
-     - **disgeo-** DisGeo
-
-
+-   Deze zitten voor een deel in de ReSpec
+-   Er is een lijst met prefixes:
+    -   **dso-** digitale ondersteuning omgevingswet.
+    -   **ow-** omgevingswet. Dit lijkt wel een duplicaat. Laten opgaan in dso-?
+    -   **KP-APIs-** kennisplatform API's.
+    -   **xml\_** Dit was een prefix voor dso repositories maar wordt voor nieuwe repositories niet meer gebruikt.
+    -   **disgeo-** DisGeo
