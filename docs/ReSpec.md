@@ -8,13 +8,15 @@ Er is een gedetailleerde (Engelstalige) [gebruikershandleiding](https://github.c
 
 Geonovum heeft een fork van W3C ReSpec omdat wij sommige onderdelen gecustomised hebben. Deze eigen versie van ReSpec wordt beheerd door de technisch beheerders van ReSpec, en dat valt buiten dit document.
 
-De Geonovum [wiki over ReSpec](https://github.com/Geonovum/respec/wiki) kan naast dit hoofdstuk worden gebruikt.
+De Geonovum [wiki over ReSpec](https://github.com/Geonovum/respec/wiki) is een fork van de w3c ReSpec met aanpassingen voor Geonovum. Deze is eigenlijk achterhaald omdat we nu van de Logius Respec gebruik maken.
 
-## Documentatie maken met ReSpec
+## Documenten maken met ReSpec
+
+ReSpec documenten worden beheerd in een GitHub repository. Als je een nieuw ReSpec document wilt maken gebruik dan de [Geonovum ReSpec template](https://github.com/Geonovum/NL-ReSpec-GN-template) als startpunt door op de 'Use this template' knop te drukken en een nieuw repository aan te maken.
 
 ### De mapindeling
 
-Een document dat bij Geonovum met ReSpec wordt gemaakt heeft standaard de onderstaande mappenstructuur. Voor het aanmaken van een nieuw ReSpec Document staat een template klaar.
+Dit levert een nieuw repository op met de onderstaande mappenstructuur.
 
 | hoofdmap | map        | file      | omschrijving                                           |
 | -------- | ---------- | --------- | ------------------------------------------------------ |
@@ -23,10 +25,11 @@ Een document dat bij Geonovum met ReSpec wordt gemaakt heeft standaard de onders
 |          |            | Style.css | File met vaste naam, bevat de styling van het document |
 |          |            | \*.png    | Afbeeldingsbestanden                                   |
 |          | index.html |           | File met de vaste naam `Index.html`                    |
-|          | config.js  |           | File met de vaste naam `config.js`                     |
+|          | js         |           |                                                        |
+|          |            | config.js | File met de vaste naam `config.js`                     |
 |          | \*md       |           | Tekstbestanden (Markdown) die de content bevatten      |
 
-Hieronder staat een voorbeeld van zo’n mappenstructuur. De .workspace file is een file die is aangemaakt door de Visual Studio Code Editor.
+Hieronder staat een voorbeeld van zo’n mappenstructuur.
 
 ![media/image22.png](media/image22.png)
 
@@ -36,13 +39,13 @@ In de submap `media` staat o.a. het bestand `style.css`, en ook worden alle afbe
 
 ![media/image23.png](media/image23.png)
 
-De namen van de afbeeldingen in dit voorbeeld zijn geregenereerd. Het staat je vrij om die namen herkenbare namen te geven, zolang je deze namen dan ook maar in de verwijzingen worden gebruikt.
+De namen van de afbeeldingen in dit voorbeeld zijn gegenereerd. Het staat je vrij om die namen herkenbare namen te geven, zolang je deze namen dan ook maar in de verwijzingen worden gebruikt.
 
 ### Het bestand 'index.html'
 
 Het bestand index.html zorgt ervoor dat het ReSpec document automatisch wordt geladen in de browser. Bij het laden wordt ook automatisch de geonovum-ReSpec-code geladen en uitgevoerd. Deze code zorgt ervoor dat het document zijn standaard layout krijgt.
 
-Index.html heeft een standaard indeling. Hieronder de template zoals gebruikt voorbeeld:
+Het bestand 'index.html' heeft een vaste indeling. Hieronder de template zoals gebruikt voorbeeld:
 
 ```
 <!DOCTYPE html>
@@ -95,6 +98,61 @@ Een `<section>` komt wél in de inhoudsopgave terecht. Deze heeft daarom behalve
 ### Het bestand 'config.js'
 
 In config.js wordt een stuurvariabele voor ReSpec gevuld. De waarden in deze variabele worden door ReSpec gebruikt om de layout te bepalen, en bevatten een aantal document-eigenschappen.
+
+#### SpecStatus
+
+De SpecStatus in de configuratie geeft de keuze uit 4 waarden, deze waarden zijn vastgesteld, en mogen niet zomaar uitgebreid of aangepast worden. Elke status hoort bij een formele fase van een ReSpec document. Zie ook de Geonovum ReSpec [wiki](https://github.com/Geonovum/respec/wiki).
+
+-   _GN-WV, Werkversie_: Dit is de versie van het document waaraan wordt gewerkt. Deze versie is continu “under-construction”.
+-   _GN-CV, Consultatieversie_: Dit is een “snapshot” van de versie die “in consultatie” wordt gezet. Aan deze versie wordt niks meer gedaan totdat de consultatie is afgelopen. Daarna worden alle op en aanmerkingen uit de consultatieronde verwerkt.
+-   _GN-VV, Vaststellingsversie_: Dit is een “snapshot” van de versie na het verwerken van de op en aanmerkingen uit de consultatieronde is ontstaan. Deze versie wordt aangeboden aan de programma-raad van Geonovum, om te wordern “vastgesteld”.
+-   _GN-DEF, Definitieve versie_: Dit is de definitieve versie van het document, zoals vastgesteld door de programma-raad. Van deze versie wordt opnieuw een “snapshot” gemaakt in ReSpec. Het resultaat van die snapshot wordt op <a href='http://docs.geonovum.nl' target='_blank'>http://docs.geonovum.nl</a> neergezet.
+
+#### SpecType
+
+Het SpecType in de configuratie is een vaste lijst met waarden, deze waarden zijn vastgesteld, en mogen niet zonder overleg met de Technische ReSpec beheerders uitgebreid of aangepast worden.
+
+Onderstaande beschrijvingen komen uit het generiek beheerplan<span class='noot'>[5]<span class='noottekst'> Zie: https://www.geonovum.nl/uploads/documents/Geonovum%20GENERIEK%20Beheerplan%20geo-standaarden%20v1.1.pdf <br/></span></span>.
+
+<ul><li><u>NO, Norm</u>: Een norm is bij een officieel standaardisatie instituut ondergebracht en bevat bindende afspraken.</li>
+<li>Naast het gebruik van normen is NEN 3610 de enige norm waar Geonovum een inhoudelijke verantwoordelijkheid heeft. Het formele beheer en beslissingen worden genomen in de NEN normcommissie 351 240 waar Geonovum de voorzitter van is.</li>
+</ul>
+
+<ul><li><u>ST, Standaard</u>: Een document met (bindende) afspraken.</li>
+</ul>
+
+<ul><li><u>IM, Informatiemodel</u>: Een standaard waarbij door de term informatiemodel te hanteren wordt aangegeven dat het een abstractie (het model) vormt van de werkelijkheid zoals beschreven binnen een bepaalde sector/domein. Informatiemodellen zijn een semantische invulling van normen voor sectoren zoals ruimtelijke ordening, kabels en leidingen, water, etc..</li>
+</ul>
+
+<ul><li><u>PR, Praktijkrichtlijn</u>: Praktijkrichtlijnen zijn producten die informatie geven, vaak met een technisch karakter, die nodig is voor het toepassen van standaarden. Een praktijkrichtlijn hoort altijd bij een standaard/norm.</li>
+</ul>
+
+<ul><li><u>HR, Handreiking</u>: Op zichzelf staande documentatie dat als doel heeft een hulpmiddel te zijn, niet verplichtend maar ondersteunend.</li>
+</ul>
+
+<ul><li><u>WA, Werkafspraak</u>: Legt uit hoe wetgeving moet worden toegepast bij onduidelijkheden, discrepanties of fouten in de standaarden.</li>
+</ul>
+
+<ul><li><u>BD, Beheerdocument</u><u>atie</u>: Documentatie met betrekking tot het beheerproces van de standaard. Deze documentatie betreft niet een standaard of onderdeel daarvan, zoals een handreiking of werkafspraak.</li>
+</ul>
+
+<ul><li><u>AL, Algemeen</u>: Op zichzelf staande algemene documentatie over standaarden. De documentatie betreft niet een specifieke standaard of onderdeel daarvan, het is ook geen beheerdocumentatie van een specifieke standaard.</li>
+</ul>
+
+
+#### pubDomain
+
+De waarde van pubDomain bepaalt bij publicatie de naam van de hoofdfolder waarin in ReSpec document geplaast moet worden.
+
+>
+> **TODO** invullen.
+>
+
+#### LocalBiblio
+
+In de localBiblio variabele worden Referenties naar andere documenten gezet. Voordat je hier citaten toevoegt, loont het de moeite om eerst in de SpecRef van ReSpec zelf te kijken. Zie voor uitleg van Specref paragraaf <a href='#_Ref17110974'>4.3.3<a></a>. Pas als je een verwijzing niet vindt in SpecRef voeg je hem hier toe!
+
+
 
 Hieronder een voorbeeld config.js.
 
@@ -172,49 +230,7 @@ let respecConfig = {
 
 De file config.js is eigenlijk een stukje javascript (JSON) code, het bevat alle mogelijke waarden voor de verschillende versies die wij hanteren bij Geonovum. In de file zelf staat aangegeven welke waarden verplicht zijn, en uit welke waarden te kiezen is. In bovenstaand voorbeeld gaat het om een “Werkversie van een standaard”.
 
-## SpecStatus
 
-De SpecStatus in de configuratie geeft de keuze uit 4 waarden, deze waarden zijn vastgesteld, en mogen niet zomaar uitgebreid of aangepast worden. Elke status hoort bij een formele fase van een ReSpec document. Zie ook de Geonovum ReSpec [wiki](https://github.com/Geonovum/respec/wiki).
-
--   _GN-WV, Werkversie_: Dit is de versie van het document waaraan wordt gewerkt. Deze versie is continu “under-construction”.
--   _GN-CV, Consultatieversie_: Dit is een “snapshot” van de versie die “in consultatie” wordt gezet. Aan deze versie wordt niks meer gedaan totdat de consultatie is afgelopen. Daarna worden alle op en aanmerkingen uit de consultatieronde verwerkt.
--   _GN-VV, Vaststellingsversie_: Dit is een “snapshot” van de versie na het verwerken van de op en aanmerkingen uit de consultatieronde is ontstaan. Deze versie wordt aangeboden aan de programma-raad van Geonovum, om te wordern “vastgesteld”.
--   _GN-DEF, Definitieve versie_: Dit is de definitieve versie van het document, zoals vastgesteld door de programma-raad. Van deze versie wordt opnieuw een “snapshot” gemaakt in ReSpec. Het resultaat van die snapshot wordt op <a href='http://docs.geonovum.nl' target='_blank'>http://docs.geonovum.nl</a> neergezet.
-
-## SpecType
-
-Het SpecType in de configuratie is een vaste lijst met waarden, deze waarden zijn vastgesteld, en mogen niet zonder overleg met de Technische ReSpec beheerders uitgebreid of aangepast worden.
-
-Onderstaande beschrijvingen komen uit het generiek beheerplan<span class='noot'>[5]<span class='noottekst'> Zie: https://www.geonovum.nl/uploads/documents/Geonovum%20GENERIEK%20Beheerplan%20geo-standaarden%20v1.1.pdf <br/></span></span>.
-
-<ul><li><u>NO, Norm</u>: Een norm is bij een officieel standaardisatie instituut ondergebracht en bevat bindende afspraken.</li>
-<li>Naast het gebruik van normen is NEN 3610 de enige norm waar Geonovum een inhoudelijke verantwoordelijkheid heeft. Het formele beheer en beslissingen worden genomen in de NEN normcommissie 351 240 waar Geonovum de voorzitter van is.</li>
-</ul>
-
-<ul><li><u>ST, Standaard</u>: Een document met (bindende) afspraken.</li>
-</ul>
-
-<ul><li><u>IM, Informatiemodel</u>: Een standaard waarbij door de term informatiemodel te hanteren wordt aangegeven dat het een abstractie (het model) vormt van de werkelijkheid zoals beschreven binnen een bepaalde sector/domein. Informatiemodellen zijn een semantische invulling van normen voor sectoren zoals ruimtelijke ordening, kabels en leidingen, water, etc..</li>
-</ul>
-
-<ul><li><u>PR, Praktijkrichtlijn</u>: Praktijkrichtlijnen zijn producten die informatie geven, vaak met een technisch karakter, die nodig is voor het toepassen van standaarden. Een praktijkrichtlijn hoort altijd bij een standaard/norm.</li>
-</ul>
-
-<ul><li><u>HR, Handreiking</u>: Op zichzelf staande documentatie dat als doel heeft een hulpmiddel te zijn, niet verplichtend maar ondersteunend.</li>
-</ul>
-
-<ul><li><u>WA, Werkafspraak</u>: Legt uit hoe wetgeving moet worden toegepast bij onduidelijkheden, discrepanties of fouten in de standaarden.</li>
-</ul>
-
-<ul><li><u>BD, Beheerdocument</u><u>atie</u>: Documentatie met betrekking tot het beheerproces van de standaard. Deze documentatie betreft niet een standaard of onderdeel daarvan, zoals een handreiking of werkafspraak.</li>
-</ul>
-
-<ul><li><u>AL, Algemeen</u>: Op zichzelf staande algemene documentatie over standaarden. De documentatie betreft niet een specifieke standaard of onderdeel daarvan, het is ook geen beheerdocumentatie van een specifieke standaard.</li>
-</ul>
-
-## LocalBiblio
-
-In de localBiblio variabele worden Referenties naar andere documenten gezet. Voordat je hier citaten toevoegt, loont het de moeite om eerst in de SpecRef van ReSpec zelf te kijken. Zie voor uitleg van Specref paragraaf <a href='#_Ref17110974'>4.3.3<a></a>. Pas als je een verwijzing niet vindt in SpecRef voeg je hem hier toe!
 
 ### Het bestand 'style.css'
 
