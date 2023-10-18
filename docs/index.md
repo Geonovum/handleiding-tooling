@@ -28,25 +28,31 @@ de Markdown plugin in Microsoft Word installeert en gebruikt.
         je beheertaken uitvoert.
     -   [GitHub werkwijze](GitHub-Inleiding.md): Meer algemene inleiding over GitHub.
 - **Imvertor**
-    -   [Imvertor](Imvertor.md)
+    -   [Imvertor](Imvertor.md): Verwijzingen naar verschillende onderwerpen met betrekking tot Imvertor.
 - **Markdown**
-    -   [Markdown handleiding](Markdown.md)
+    -   [Markdown handleiding](Markdown.md): Handleiding werken met Markdown voor ReSpec-documentatie.
 - **ReSpec**
     -   [Respec handleiding](ReSpec.md): Algemene handleiding.
     -   [Respec checklist](ReSpec-Checklists.md): Checklist van handeling bij het
         publiceren van een standaard middels ReSpec.
-    -   [Respec code toepassen](ReSpec-code-toepassen.md)
-    -   [Respec definitielijst maken](ReSpec-definitielijst-maken.md)
+    -   [Respec code toepassen](ReSpec-code-toepassen.md): Richtlijnen voor het toepassen van code in documentatie.
+    -   [Respec definitielijst maken](ReSpec-definitielijst-maken.md): Handleiding voor het maken van een definitielijst in ReSpec-documentatie.
 - **MIM**
-    - [toolbox genereren](MIM-toolbox-genereren.md)
-    - [toolbox importeren](MIM-toolbox-importeren.md)
-    - [toolbox genereren extensie](MIM-toolbox-genereren-extensie.md)
-- **Subversion**
-    -   [Subversion instructies](SVN.md)
+    -   [Toolbox importeren](MIM-toolbox-importeren.md): Handleiding voor het importeren van de MIM-toolbox in EA.
+    -   [Toolbox genereren](MIM-toolbox-genereren.md): Handleiding voor het maken van een EA-toolbox.
+    -   [Toolbox genereren extensie](MIM-toolbox-genereren-extensie.md): Handleiding voor het maken van een extensie op de MIM-toolbox.
+- **Subversion (SVN)**
+    -   [Subversion instructies](SVN.md): Algemene handleiding
+    -   [Subversion installeren voor EA](SVN-importeren-bestaand-project): Installatie SVN en informatiemodel in versiebeheer zetten. 
+    -   [Subversion importeren bestaand project](SVN-installeren-voor-EAP): Packages importeren vanuit SVN in EA.
 - **EA**
-    -   [Primitieve datatypes](EA-toepassing-standaarddatatypen.md)
+    -   [Primitieve datatypes](EA-toepassing-standaarddatatypen.md): Handleiding en toelichting op het toepassen van standaarddatatypes in modelleeromgeving Geonovum.
 - **GML**
-    -   [GML](GML.md)
+    -   [GML](GML.md): Toelichting GML, XSD en Namespaces.
+- **Ontologie**
+    -   [Ontologie](Handleiding-ontologie-maken-en-publiceren.md):Handleiding voor het maken en publiceren van een ontologie.
+- **Publiceren**
+    -   [Documentatie publiceren](Publiceren.md): Handleiding voor de publicatie van ReSpec-documenten via GitHub met behulp van een webhook.
 
 ## Uitleg MkDocs
 
