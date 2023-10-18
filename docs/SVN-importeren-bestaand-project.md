@@ -5,7 +5,7 @@ Enterprise Architect versie: 15.2
 Tortoise SVN Subversion versie: 1.14.1
 
 ## Inleiding
-Deze handleiding beschrijft hoe je in Enterprise Architect de packages van een bestaand project in Subversion kunt importeren. Het stappenplan laat zien hoe je aan de hand van een EAP-bestand van het IMDiSGeo (`IMSOR-XMI`) een bestaand package toevoegt. In dit voorbeeld wordt het package met [standaarddatatypes](zodraBeschikbaarLinkOpnemen) toegevoegd. Je kunt ook bestaande packages importeren in een nieuw (leeg) EAP-bestand. De methode is vrijwel identiek. De handleiding licht beide opties toe.
+Deze handleiding beschrijft hoe je in Enterprise Architect de packages van een bestaand project kunt importeren vanuit Subversion . Het stappenplan laat zien hoe je aan de hand van een EAP-bestand van het IMDiSGeo (`IMSOR-XMI`) een bestaand package toevoegt. In dit voorbeeld wordt het package met [standaarddatatypes](zodraBeschikbaarLinkOpnemen) toegevoegd. Je kunt ook bestaande packages importeren in een nieuw (leeg) EAP-bestand. De methode is vrijwel identiek. De handleiding licht beide opties toe.
 
 ## Inhoud
 
