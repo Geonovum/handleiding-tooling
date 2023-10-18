@@ -30,15 +30,25 @@ In dit hoofdstuk staat een aantal checklists die je kan gebruiken als je vanuit 
         -  Als er al eerder een versie gepubliceerd is (stabiele versie, dus afgezien van de werkversie in github), kan Respec bovenin een document de navigatie naar vorige versie goed genereren. Daarvoor moet je ook invullen:
         - `Previousmaturity`: wat de status toen was.
         - `Previousmaturity`: wat de status toen was.
-2. Maak een snapshot (met de knop “Bewaar Snapshot” vanuit Respec)
-3. Kies “HTML” en noem dit bestand “snapshot.html”
-4. Commit het en push het naar dezelfde folder als waar `index.html` staat in je Github-repository
-6.  Maak een release tag conform de naamgevingsconventie: `\{specStatus\}-\{specType\}-\{shortName\}-\{publishDate\}`
-7. Het script kopieert nu automatisch (NB: dit moet wel eenmalig geconfigureerd zijn als ‘webhook’ in de github repository!) het `snapshot.html` en de bijbehorende afbeeldingen naar [docs.geostandaarden.nl]http://docs.geostandaarden.nl).
-8. Na succesvolle publicatie: 	
+1. Maak een snapshot (met de knop “Bewaar Snapshot” vanuit Respec)
+1. Kies “HTML” en noem dit bestand “snapshot.html”
+1. Commit het en push het naar dezelfde folder als waar `index.html` staat in je Github-repository
+
+### Consultatieversie maken met behulp van webhook
+
+[Klik hier](/Publiceren/) voor een beschrijving over hoe je een webhook eenmalig configureert voor een repository. over het toepassen van de webhook.
+
+1.  Maak een release tag conform de naamgevingsconventie: `\{specStatus\}-\{specType\}-\{shortName\}-\{publishDate\}`
+1. Het script kopieert nu automatisch (NB: dit moet wel eenmalig geconfigureerd zijn als ‘webhook’ in de github repository!) het `snapshot.html` en de bijbehorende afbeeldingen naar [docs.geostandaarden.nl]http://docs.geostandaarden.nl).
+1. Na succesvolle publicatie: 	
     - zet de `specStatus` in `config.js` terug op `"GN-WV"`
     - Vul `previousMaturity` in met `"GN-CV"`
     - Vul `previousPublishDate` in met de datum van de zojuist gepubliceerde consultatieversie
+
+
+### Consultatieverise met behulp van webhook.
+
+> **Note**: uitwerken
 
 ## Vaststellingsversie (VV) maken
 
@@ -78,6 +88,3 @@ In dit hoofdstuk staat een aantal checklists die je kan gebruiken als je vanuit 
     - zet de specStatus in config.js terug op GN-WV
     - Vul previousMaturity in met GN-DEF
     - Vul previousPublishDate in met de datum van de zojuist gepubliceerde definitieve versie
-
-
-\
