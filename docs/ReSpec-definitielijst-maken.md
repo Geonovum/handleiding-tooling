@@ -36,6 +36,10 @@ ReSpec toont een gedefinieerd begrip door de term schuin en dikgedrukt weer te g
 
 [`afbeelding opnemen`]
 
+##### Gebruik van definitie
+
+Wil je naar een gedefinineerd begrip verwijzen gaat dat zo: `<a>boek</a>`` of `[=boek-]`
+
 #### Aanvullende styling
 
 wrap een definitie in een aside met attribute class="definition"

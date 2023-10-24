@@ -4,24 +4,41 @@ ReSpec is een tool van W3C die het schrijven van specifications makkelijker maak
 
 ## Algemeen
 
-Er is een gedetailleerde (Engelstalige) [gebruikershandleiding](https://github.com/w3c/respec/wiki/ReSpec-Editor's-Guide) beschikbaar. Er is ook een [ontwikkelaarshandleiding](https://github.com/w3c/respec/wiki/Developers-Guide) te vinden.
+Geonovum gebruikt een fork van ReSpec die door Logius beheerd wordt. Dit document bevat een globale instructie over hoe snel aan de start te gaan. Meer documentatie is op andere plaatsen te vinden:
 
-Geonovum heeft een fork van W3C ReSpec omdat wij sommige onderdelen gecustomised hebben. Deze eigen versie van ReSpec wordt beheerd door de technisch beheerders van ReSpec, en dat valt buiten dit document.
+- Er is een gedetailleerde (Engelstalige) [gebruikershandleiding](https://github.com/w3c/respec/wiki/ReSpec-Editor's-Guide) beschikbaar. Er is ook een [ontwikkelaarshandleiding](https://github.com/w3c/respec/wiki/Developers-Guide) te vinden.
+- De Geonovum [wiki over ReSpec](https://github.com/Geonovum/respec/wiki) is een fork van de w3c ReSpec met aanpassingen voor Geonovum. Deze is eigenlijk achterhaald omdat we nu van de Logius Respec gebruik maken.
 
-De Geonovum [wiki over ReSpec](https://github.com/Geonovum/respec/wiki) is een fork van de w3c ReSpec met aanpassingen voor Geonovum. Deze is eigenlijk achterhaald omdat we nu van de Logius Respec gebruik maken.
+## Een nieuwe document maken
 
-## Documenten maken met ReSpec
+ReSpec documenten worden beheerd in een [GitHub](/GitHub) repository. Als je een nieuw ReSpec document wilt maken gebruik dan de [Geonovum ReSpec template](https://github.com/Geonovum/NL-ReSpec-GN-template) als startpunt en druk op de 'Use this template' knop om een nieuw repository aan te maken.
 
-ReSpec documenten worden beheerd in een GitHub repository. Als je een nieuw ReSpec document wilt maken gebruik dan de [Geonovum ReSpec template](https://github.com/Geonovum/NL-ReSpec-GN-template) als startpunt door op de 'Use this template' knop te drukken en een nieuw repository aan te maken.
+Zoek in dit repository op de tekst 'TODO' om de plaatsen te vinden waar aanpassen van de template vereist is. 
 
-### De mapindeling
+
+### De URL van een publicatie op docs.geonovum.nl
+
+ReSpec documenten worden gepubliceerd op  [docs.geostandaarden.nl](https://docs.geostandaarden.nl). Iedere gepubliceerde versie van een document heeft een eigen URL. Voor de laatst gepubliceerde versie is een aparte URL.
+
+De URL van iedere publicatie wordt als volgt bepaald:
+```
+https://docs.geostandaarden.nl/[pubdomain]/[specStatus]-[spectype]-[shortName]-[publishDate]/
+```
+
+De laatst gepubliceerde versie is OOK te vinden op:
+```
+https://docs.geostandaarden.nl/[pubdomain]/[shortName]/
+``` 
+De namen van de variabelen staan verderop uitgelegd.
+
+## De mapindeling van een ReSpec repository
 
 Dit levert een nieuw repository op met de onderstaande mappenstructuur.
 
 | hoofdmap | map        | file      | omschrijving                                           |
 | -------- | ---------- | --------- | ------------------------------------------------------ |
 | Hoofdmap |            |           | naam van de hoofdmap                                   |
-|          | media      |           | Map met de vaste naam `media`                          |
+|          | media      |           | Map met mediabestanden                                 |
 |          |            | Style.css | File met vaste naam, bevat de styling van het document |
 |          |            | \*.png    | Afbeeldingsbestanden                                   |
 |          | index.html |           | File met de vaste naam `Index.html`                    |
@@ -33,19 +50,12 @@ Hieronder staat een voorbeeld van zo’n mappenstructuur.
 
 ![media/image22.png](media/image22.png)
 
-In de hoofdmap staan de submap `media` en de files `index.html`, `config.js` en `*.md` (Markdown) files.
-
-In de submap `media` staat o.a. het bestand `style.css`, en ook worden alle afbeeldingen uit het Markdown door de Markdown plugin voor word in de map media gezet.
-
-![media/image23.png](media/image23.png)
-
-De namen van de afbeeldingen in dit voorbeeld zijn gegenereerd. Het staat je vrij om die namen herkenbare namen te geven, zolang je deze namen dan ook maar in de verwijzingen worden gebruikt.
 
 ### Het bestand 'index.html'
 
 Het bestand index.html zorgt ervoor dat het ReSpec document automatisch wordt geladen in de browser. Bij het laden wordt ook automatisch de geonovum-ReSpec-code geladen en uitgevoerd. Deze code zorgt ervoor dat het document zijn standaard layout krijgt.
 
-Het bestand 'index.html' heeft een vaste indeling. Hieronder de template zoals gebruikt voorbeeld:
+Het bestand 'index.html' heeft een vaste indeling. Hieronder de structuur uit de template:
 
 ```
 <!DOCTYPE html>
@@ -59,7 +69,7 @@ Het bestand 'index.html' heeft een vaste indeling. Hieronder de template zoals g
   <script src="js/config.js" class="remove"></script>
   <script class="remove"> respecConfig = {...organisationConfig, ...respecConfig}</script>
   <script>document.title = respecConfig.title</script>
-  <title>Default</title>
+  <title>TODO: Vul hier de titel in</title>
   <link rel="shortcut icon" type="image/x-icon" href="https://tools.geostandaarden.nl/respec/style/logos/Geonovum.ico" />
   <script src="https://gitdocumentatie.logius.nl/publicatie/respec/builds/respec-nlgov.js" class="remove" async></script>
 </head>
@@ -68,7 +78,7 @@ Het bestand 'index.html' heeft een vaste indeling. Hieronder de template zoals g
   <section id="abstract" data-include-format="markdown" data-include="abstract.md"></section>
   <section id="sotd"></section><!-- Wordt automatisch gevuld -->
 
-  <!-- voeg hier je eigen hoofdstukken toe -->
+  <!-- TODO: voeg hier je eigen hoofdstukken toe -->
   <section data-include-format="markdown" data-include="ch01.md" class="informative"></section>
   <section data-include-format="markdown" data-include="ch02.md"></section>
   <section data-include-format="markdown" data-include="mermaid.md"></section>
@@ -103,10 +113,10 @@ In config.js wordt een stuurvariabele voor ReSpec gevuld. De waarden in deze var
 
 De SpecStatus in de configuratie geeft de keuze uit 4 waarden, deze waarden zijn vastgesteld, en mogen niet zomaar uitgebreid of aangepast worden. Elke status hoort bij een formele fase van een ReSpec document. Zie ook de Geonovum ReSpec [wiki](https://github.com/Geonovum/respec/wiki).
 
--   _GN-WV, Werkversie_: Dit is de versie van het document waaraan wordt gewerkt. Deze versie is continu “under-construction”.
--   _GN-CV, Consultatieversie_: Dit is een “snapshot” van de versie die “in consultatie” wordt gezet. Aan deze versie wordt niks meer gedaan totdat de consultatie is afgelopen. Daarna worden alle op en aanmerkingen uit de consultatieronde verwerkt.
--   _GN-VV, Vaststellingsversie_: Dit is een “snapshot” van de versie na het verwerken van de op en aanmerkingen uit de consultatieronde is ontstaan. Deze versie wordt aangeboden aan de programma-raad van Geonovum, om te wordern “vastgesteld”.
--   _GN-DEF, Definitieve versie_: Dit is de definitieve versie van het document, zoals vastgesteld door de programma-raad. Van deze versie wordt opnieuw een “snapshot” gemaakt in ReSpec. Het resultaat van die snapshot wordt op <a href='http://docs.geonovum.nl' target='_blank'>http://docs.geonovum.nl</a> neergezet.
+-   _GN-WV, Werkversie_: Dit is de versie van het document waaraan wordt gewerkt. Deze versie is continu 'under-construction'.
+-   _GN-CV, Consultatieversie_: Dit is een 'snapshot' van de versie die 'in consultatie' wordt gezet. Aan deze versie wordt niks meer gedaan totdat de consultatie is afgelopen. Daarna worden alle op en aanmerkingen uit de consultatieronde verwerkt.
+-   _GN-VV, Vaststellingsversie_: Dit is een 'snapshot' van de versie na het verwerken van de op en aanmerkingen uit de consultatieronde is ontstaan. Deze versie wordt aangeboden aan de programma-raad van Geonovum, om te wordern 'vastgesteld'.
+-   _GN-DEF, Definitieve versie_: Dit is de definitieve versie van het document, zoals vastgesteld door de programma-raad. Van deze versie wordt opnieuw een 'snapshot' gemaakt in ReSpec. Het resultaat van die snapshot wordt op <a href='http://docs.geonovum.nl' target='_blank'>http://docs.geonovum.nl</a> neergezet.
 
 #### SpecType
 
@@ -114,30 +124,22 @@ Het SpecType in de configuratie is een vaste lijst met waarden, deze waarden zij
 
 Onderstaande beschrijvingen komen uit het generiek beheerplan<span class='noot'>[5]<span class='noottekst'> Zie: https://www.geonovum.nl/uploads/documents/Geonovum%20GENERIEK%20Beheerplan%20geo-standaarden%20v1.1.pdf <br/></span></span>.
 
-<ul><li><u>NO, Norm</u>: Een norm is bij een officieel standaardisatie instituut ondergebracht en bevat bindende afspraken.</li>
-<li>Naast het gebruik van normen is NEN 3610 de enige norm waar Geonovum een inhoudelijke verantwoordelijkheid heeft. Het formele beheer en beslissingen worden genomen in de NEN normcommissie 351 240 waar Geonovum de voorzitter van is.</li>
-</ul>
+ - **NO** Norm: Een norm is bij een officieel standaardisatie instituut ondergebracht en bevat bindende afspraken.
+ Naast het gebruik van normen is NEN 3610 de enige norm waar Geonovum een inhoudelijke verantwoordelijkheid heeft. Het formele beheer en beslissingen worden genomen in de NEN normcommissie 351 240 waar Geonovum de voorzitter van is.
 
-<ul><li><u>ST, Standaard</u>: Een document met (bindende) afspraken.</li>
-</ul>
+ - **ST** Standaard: Een document met (bindende) afspraken.
 
-<ul><li><u>IM, Informatiemodel</u>: Een standaard waarbij door de term informatiemodel te hanteren wordt aangegeven dat het een abstractie (het model) vormt van de werkelijkheid zoals beschreven binnen een bepaalde sector/domein. Informatiemodellen zijn een semantische invulling van normen voor sectoren zoals ruimtelijke ordening, kabels en leidingen, water, etc..</li>
-</ul>
+ - **IM** Informatiemodel: Een standaard waarbij door de term informatiemodel te hanteren wordt aangegeven dat het een abstractie (het model) vormt van de werkelijkheid zoals beschreven binnen een bepaalde sector/domein. Informatiemodellen zijn een semantische invulling van normen voor sectoren zoals ruimtelijke ordening, kabels en leidingen, water, etc..
 
-<ul><li><u>PR, Praktijkrichtlijn</u>: Praktijkrichtlijnen zijn producten die informatie geven, vaak met een technisch karakter, die nodig is voor het toepassen van standaarden. Een praktijkrichtlijn hoort altijd bij een standaard/norm.</li>
-</ul>
+ - **PR** Praktijkrichtlijn: Praktijkrichtlijnen zijn producten die informatie geven, vaak met een technisch karakter, die nodig is voor het toepassen van standaarden. Een praktijkrichtlijn hoort altijd bij een standaard/norm.
 
-<ul><li><u>HR, Handreiking</u>: Op zichzelf staande documentatie dat als doel heeft een hulpmiddel te zijn, niet verplichtend maar ondersteunend.</li>
-</ul>
+ - **HR** Handreiking: Op zichzelf staande documentatie dat als doel heeft een hulpmiddel te zijn, niet verplichtend maar ondersteunend.
 
-<ul><li><u>WA, Werkafspraak</u>: Legt uit hoe wetgeving moet worden toegepast bij onduidelijkheden, discrepanties of fouten in de standaarden.</li>
-</ul>
+ - **WA** Werkafspraak: Legt uit hoe wetgeving moet worden toegepast bij onduidelijkheden, discrepanties of fouten in de standaarden.
 
-<ul><li><u>BD, Beheerdocument</u><u>atie</u>: Documentatie met betrekking tot het beheerproces van de standaard. Deze documentatie betreft niet een standaard of onderdeel daarvan, zoals een handreiking of werkafspraak.</li>
-</ul>
+ - **BD** Beheerdocument<u>atie: Documentatie met betrekking tot het beheerproces van de standaard. Deze documentatie betreft niet een standaard of onderdeel daarvan, zoals een handreiking of werkafspraak.
 
-<ul><li><u>AL, Algemeen</u>: Op zichzelf staande algemene documentatie over standaarden. De documentatie betreft niet een specifieke standaard of onderdeel daarvan, het is ook geen beheerdocumentatie van een specifieke standaard.</li>
-</ul>
+ - **AL** Algemeen: Op zichzelf staande algemene documentatie over standaarden. De documentatie betreft niet een specifieke standaard of onderdeel daarvan, het is ook geen beheerdocumentatie van een specifieke standaard.
 
 
 #### pubDomain
@@ -228,7 +230,7 @@ let respecConfig = {
 };
 ```
 
-De file config.js is eigenlijk een stukje javascript (JSON) code, het bevat alle mogelijke waarden voor de verschillende versies die wij hanteren bij Geonovum. In de file zelf staat aangegeven welke waarden verplicht zijn, en uit welke waarden te kiezen is. In bovenstaand voorbeeld gaat het om een “Werkversie van een standaard”.
+De file config.js is eigenlijk een stukje javascript (JSON) code, het bevat alle mogelijke waarden voor de verschillende versies die wij hanteren bij Geonovum. In de file zelf staat aangegeven welke waarden verplicht zijn, en uit welke waarden te kiezen is. In bovenstaand voorbeeld gaat het om een 'Werkversie van een standaard'.
 
 
 
@@ -240,17 +242,17 @@ Het bestand style.css staat in de map media. De Geonovum Fork van ReSpec heeft e
 
 ### Content: bestanden '\*.md'
 
-De “echte” content wordt gemaakt in het formaat “Markdown”. Er is een aantal editors beschikbaar die dat formaat ondersteunen. Zie hiervoor <a href='#_Ref17112190'>Hoofdstuk 3<a></a>. Het is handig om voor elk hoofdstuk een aparte Markdown file te maken, want dan blijven de bestanden beperkt in grootte, en zijn er gemakkelijker werkafspraken te maken over wie wanneer in welke file aan het editen is.
+De 'echte' content wordt gemaakt in het formaat 'Markdown'. Er is een aantal editors beschikbaar die dat formaat ondersteunen. Zie hiervoor <a href='#_Ref17112190'>Hoofdstuk 3<a></a>. Het is handig om voor elk hoofdstuk een aparte Markdown file te maken, want dan blijven de bestanden beperkt in grootte, en zijn er gemakkelijker werkafspraken te maken over wie wanneer in welke file aan het editen is.
 
 ### Content: Afbeeldingen '\*.png'
 
-Afbeeldingen worden als “png” bestand neergezet in de map “media”. In je Markdown document neem je gewoon een plaatje op zoals je in Word gewend bent. Writage en ReSpec zorgen ervoor dat de plaatjes worden getoond.
+Afbeeldingen worden als '.png' of '.svg' bestand neergezet in de map 'media'. In je Markdown document neem je gewoon een plaatje op zoals je in Word gewend bent. Writage en ReSpec zorgen ervoor dat de plaatjes worden getoond.
 
 ## ReSpec Frontend
 
-### De knop “ReSpec”
+### De knop 'ReSpec'
 
-De knop “ReSpec” rechtsboven in de frontend van ReSpec, bevat een aantal handige functies. Als je klikt op de knop, verschijnt het vervolgscherm met een viertal functies.
+De knop 'ReSpec' rechtsboven in de frontend van ReSpec, bevat een aantal handige functies. Als je klikt op de knop, verschijnt het vervolgscherm met een viertal functies.
 
 Elk van de functies wordt hieronder uitgelegd.
 
@@ -310,7 +312,7 @@ Eventuele referenties naar plaatjes doe je op e volgende manier:
 
 ReSpec ondersteunt ook een koppeling naar issues die zijn gemeld op GitHub. Jek kan referenties opnemen naar individuele issues. Ook is het mogelijk om een lijst met alle issues op te nemen in je document.
 
-Om GitHub issues op te nemen moet je in “config.js” een referentie opnemen naar de GitHub repository.
+Om GitHub issues op te nemen moet je in 'config.js' een referentie opnemen naar de GitHub repository.
 
 <span style='color: #24292E;'github</span><span style='color: #D73A49;':</span> <span style='color: #032F62;'"</span><span style='color: #032F62;'https://www.github.com/Geonovum/MIM-Werkomgeving/</span><span style='color: #032F62;'"</span><span style='color: #24292E;',</span>
 
