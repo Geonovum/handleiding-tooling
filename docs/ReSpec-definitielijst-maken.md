@@ -29,12 +29,12 @@ ReSpec toont een gedefinieerd begrip door de term schuin en dikgedrukt weer te g
 #### Volgens ReSpec
 
 ```markdown
-<dfn>boek</dfn>een samengebonden of genaaid aantal bedrukte bladen
+<dfn>boek</dfn>een samengebonden of genaaid aantal bedrukte bladen.
 ```
 
 ##### Resultaat
 
-[`afbeelding opnemen`]
+![Voorbeeld van definitie in ReSpec](media/ReSpec-definitie.png)
 
 ##### Gebruik van definitie
 
