@@ -160,7 +160,7 @@ Naamgeefconventies:
 | Pubdomain      | Omschrijving                                             | Herkomst                   | status                    | GitHub Team                                                   |
 | -------------- | -------------------------------------------------------- | -------------------------- | ------------------------- | ------------------------------------------------------------- |
 | 3dbv           | 3D basisvoorziening                                      | docs.geostandaarden.nl     | inactief (gemigreerd)     |                                                               |
-| api            | Kennisplatform APIs                                      | respec utils               |                           | (API team)[https://github.com/orgs/Geonovum/teams/api-team]   |
+| api            | Kennisplatform APIs                                      | respec utils               |                           | [API team](https://github.com/orgs/Geonovum/teams/api-team)   |
 | basisgeometrie | Informatiemodel Basisgeometrie                           | register.geostandaarden.nl | zit op docs bij nen3610   |                                                               |
 | bgt            | Basisregistratie grootschalige topografie                | docs.geostandaarden.nl     |                           |                                                               |
 | brt            | Informatiemodellen Basisregistratie Topografie           | register.geostandaarden.nl |                           |                                                               |
@@ -169,7 +169,7 @@ Naamgeefconventies:
 | disgeo         | DisGeo                                                   | respec utils               |                           |                                                               |
 | dsgo           | Digitaal Stelsel Gebouwde Omgeving                       | docs.geostandaarden.nl     |                           |                                                               |
 | dso            | Digitaal Stelsel Omgevingswet                            | respec utils               | duplicaten: tpod imow ow  | [DSO team](https://github.com/orgs/Geonovum/teams/dso-team)   |
-| eu             |                                                          | docs.geostandaarden.nl     |                           | [EU team](https://github.com/orgs/Geonovum/teams/eu-team)    |
+| eu             |                                                          | docs.geostandaarden.nl     |                           | [EU team](https://github.com/orgs/Geonovum/teams/eu-team)     |
 | g4w            |                                                          | docs.geostandaarden.nl     |                           |                                                               |
 | gbd            |                                                          | docs.geostandaarden.nl     |                           |                                                               |
 | geobag         |                                                          | docs.geostandaarden.nl     |                           |                                                               |
