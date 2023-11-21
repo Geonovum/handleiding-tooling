@@ -2,21 +2,20 @@
 
 ReSpec is een tool van W3C die het schrijven van specifications makkelijker maakt. ReSpec zorgt voor een uniforme styling in het document, onderhoudt referenties en verwijzingen naar andere documentatie, verzorgt de inhoudsopgave, zorgt voor links naar vorige en meest recente versies, en heeft een integratie met Github issues.
 
-## Algemeen
 
 Geonovum gebruikt een fork van ReSpec die door Logius beheerd wordt. Dit document bevat een globale instructie over hoe snel aan de start te gaan. Meer documentatie is op andere plaatsen te vinden:
 
 - Er is een gedetailleerde (Engelstalige) [gebruikershandleiding](https://github.com/w3c/respec/wiki/ReSpec-Editor's-Guide) beschikbaar. Er is ook een [ontwikkelaarshandleiding](https://github.com/w3c/respec/wiki/Developers-Guide) te vinden.
 - De Geonovum [wiki over ReSpec](https://github.com/Geonovum/respec/wiki) is een fork van de w3c ReSpec met aanpassingen voor Geonovum. Deze is eigenlijk achterhaald omdat we nu van de Logius Respec gebruik maken.
 
-## Een nieuwe document maken
+# Een nieuwe document maken
 
 ReSpec documenten worden beheerd in een [GitHub](/GitHub) repository. Als je een nieuw ReSpec document wilt maken gebruik dan de [Geonovum ReSpec template](https://github.com/Geonovum/NL-ReSpec-GN-template) als startpunt en druk op de 'Use this template' knop om een nieuw repository aan te maken.
 
 Zoek in dit repository op de tekst 'TODO' om de plaatsen te vinden waar aanpassen van de template vereist is. 
 
 
-### De URL van een publicatie op docs.geonovum.nl
+## De URL van een publicatie op docs.geonovum.nl
 
 ReSpec documenten worden gepubliceerd op  [docs.geostandaarden.nl](https://docs.geostandaarden.nl). Iedere gepubliceerde versie van een document heeft een eigen URL. Voor de laatst gepubliceerde versie is een aparte URL.
 
@@ -31,7 +30,7 @@ https://docs.geostandaarden.nl/[pubdomain]/[shortName]/
 ``` 
 De namen van de variabelen staan verderop uitgelegd.
 
-## De mapindeling van een ReSpec repository
+# De mapindeling van een ReSpec repository
 
 Dit levert een nieuw repository op met de onderstaande mappenstructuur.
 
@@ -51,7 +50,7 @@ Hieronder staat een voorbeeld van zo’n mappenstructuur.
 ![media/image22.png](media/image22.png)
 
 
-### Het bestand 'index.html'
+## Het bestand 'index.html'
 
 Het bestand index.html zorgt ervoor dat het ReSpec document automatisch wordt geladen in de browser. Bij het laden wordt ook automatisch de geonovum-ReSpec-code geladen en uitgevoerd. Deze code zorgt ervoor dat het document zijn standaard layout krijgt.
 
@@ -105,11 +104,11 @@ Een `<div>` is een sectie plus bijbehorend document, dat niet in de inhoudsopgav
 
 Een `<section>` komt wél in de inhoudsopgave terecht. Deze heeft daarom behalve de data-include van het document, ook (verplicht!) een `<h2>` tag. De tekst tussen `<h2>` en `</h2>` komt in de inhoudsopgave te staan.
 
-### Het bestand 'config.js'
+## Het bestand 'config.js'
 
 In config.js wordt een stuurvariabele voor ReSpec gevuld. De waarden in deze variabele worden door ReSpec gebruikt om de layout te bepalen, en bevatten een aantal document-eigenschappen.
 
-#### SpecStatus
+### SpecStatus
 
 De SpecStatus in de configuratie geeft de keuze uit 4 waarden, deze waarden zijn vastgesteld, en mogen niet zomaar uitgebreid of aangepast worden. Elke status hoort bij een formele fase van een ReSpec document. Zie ook de Geonovum ReSpec [wiki](https://github.com/Geonovum/respec/wiki).
 
@@ -118,7 +117,7 @@ De SpecStatus in de configuratie geeft de keuze uit 4 waarden, deze waarden zijn
 -   _GN-VV, Vaststellingsversie_: Dit is een 'snapshot' van de versie na het verwerken van de op en aanmerkingen uit de consultatieronde is ontstaan. Deze versie wordt aangeboden aan de programma-raad van Geonovum, om te wordern 'vastgesteld'.
 -   _GN-DEF, Definitieve versie_: Dit is de definitieve versie van het document, zoals vastgesteld door de programma-raad. Van deze versie wordt opnieuw een 'snapshot' gemaakt in ReSpec. Het resultaat van die snapshot wordt op <a href='http://docs.geonovum.nl' target='_blank'>http://docs.geonovum.nl</a> neergezet.
 
-#### SpecType
+### SpecType
 
 Het SpecType in de configuratie is een vaste lijst met waarden, deze waarden zijn vastgesteld, en mogen niet zonder overleg met de Technische ReSpec beheerders uitgebreid of aangepast worden.
 
@@ -142,7 +141,7 @@ Onderstaande beschrijvingen komen uit het generiek beheerplan<span class='noot'>
  - **AL** Algemeen: Op zichzelf staande algemene documentatie over standaarden. De documentatie betreft niet een specifieke standaard of onderdeel daarvan, het is ook geen beheerdocumentatie van een specifieke standaard.
 
 
-#### pubDomain
+## pubDomain
 
 pubDomain bepaalt bij publicatie een deel van de URL waarop het document wordt gepubliceerd. Het zorgt voor een groepering van de documenten op docs.geostandaarden.nl Omdat je de URL van gepubliceerde documenten niet wilt veranderen is het van belang de juiste waarde te kiezen uit de beheerde lijst en tijdig aan de bel te trekken als er geen logische plaats te vinden is voor je publicatie.
 
@@ -199,7 +198,7 @@ De actuele lijst van pubDomains staat in de tabel hieronder. De herkomst van dez
 > **TODO** invullen.
 >
 
-#### LocalBiblio
+## LocalBiblio
 
 In de localBiblio variabele worden Referenties naar andere documenten gezet. Voordat je hier citaten toevoegt, loont het de moeite om eerst in de [https://www.specref.org/](SpecRef) van ReSpec zelf te kijken. Pas als je een verwijzing niet vindt in SpecRef voeg je hem hier toe!
 
@@ -216,21 +215,10 @@ let respecConfig = {
   title: "[Neem titel op in config.js]",
   //-- specStatus is verplicht! (activeer 1 van de volgende) --------------------------
   specStatus: "wv",                   // Werkversie
-  //specStatus: "cv",               // Consultatieversie
-  //specStatus: "vv",               // Versie ter vaststelling
-  //specStatus: "def",              // Vastgestelde versie
-  //specStatus: "basis",            // Basis Document
+
   //-- specType is verplicht bij alle andere dan BASIS ---------------------------------
-  //specType: "NO",                 // Norm
-  //specType: "ST",                 // Standaard
-  //specType: "IM",                 // Informatie Model
-  //specType: "PR",                 // Praktijkrichtlijn
   specType: "HR",                     // HandReiking
-  //specType: "WA",                 // Werkafspraak
-  //specType: "BD",                 // Beheer Documentatie
-  //specType: "AL",                 // Algemeen document
-  //specType: "BP",                 // Best Practice
-  specType: "HR",
+
   //-- pubDomain is verplicht! (komt in de URL) -------------------------------------
   pubDomain: "TODO",
   //-- license: voor de geldende gebruiksvoorwaarden. Default is cc-by.
@@ -283,12 +271,6 @@ let respecConfig = {
 De file config.js is een stukje javascript (JSON) code, het bevat alle mogelijke waarden voor de verschillende versies die wij hanteren bij Geonovum. In de file zelf staat aangegeven welke waarden verplicht zijn, en uit welke waarden te kiezen is. In bovenstaand voorbeeld gaat het om een 'Werkversie van een standaard'.
 
 
-
-### Het bestand 'style.css'
-
-TODO:FIXME
-
-Het bestand style.css staat in de map media. De Geonovum Fork van ReSpec heeft een eigen styling. Met het bestand style.css kan je de default styling van Geonovum overschrijven en/of aanvullen. Om te voorkomen dat er een wildgroei aan stijlen, lettertypes en kleuren gaat ontstaan, moet die altijd in overleg met de ReSpec Beheerders (zie <a href='#_Ref17112095'>Hoofdstuk 5<a></a>).
 
 ### Content: bestanden '\*.md'
 
