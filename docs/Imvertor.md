@@ -15,3 +15,7 @@ Imvertor wordt veel gebruikt binnen Geonovum voor het transformeren van UML mode
 | Imvertor meldingen    | [Meldingen](https://imvertor.armatiek.nl/imvertor-executor/dashboard/wiki?key=info-IMVMSG)                                    |
 | Uitleg schema mapping | [Hier](https://imvertor.armatiek.nl/imvertor-executor/dashboard/wiki?key=info-IMVERTORCONCEPTUALSCHEMAS)                      |
 
+
+## Denk hier aan
+
+- Een Imvertor run levert een flink aantal UML diagrammen op in de `data` folder. Niet meer gebruikt diagrammen worden nooit verwijderd uit deze folder waardoor er vaak veel niet gebruikt diagrammen in staan. **Tip:** gooi voor het draaien van Imvertor de data map een keer leeg.

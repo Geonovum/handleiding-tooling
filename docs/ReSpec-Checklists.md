@@ -1,6 +1,6 @@
-# Checklists
+# Checklist voor publicatie
 
-In dit hoofdstuk staat een aantal checklists die je kan gebruiken als je vanuit GitHub en ReSpec “Versies” gaat aanmaken. Bijvoorbeeld hoe maak je een nieuwe GitHub repository aan, of hoe maak je vanuit een werkversie een consultatieversie aan,
+In dit hoofdstuk staan checklists die je kan gebruiken als je vanuit GitHub en ReSpec “Versies” gaat aanmaken. Bijvoorbeeld hoe maak je een nieuwe GitHub repository aan, of hoe maak je vanuit een werkversie een consultatieversie aan,
 
 ## Een nieuwe ReSpec repository maken
 
@@ -14,12 +14,11 @@ In dit hoofdstuk staat een aantal checklists die je kan gebruiken als je vanuit 
 
 ## Controles voor publicatie
 
-1. Valideer HTML en links:
-    -  Neem de link naar de werkversie van je document, bijvoorbeeld `https://geonovum.github.io/Metadata-ISO19115/`, en zet daar `snapshot.html` achter. Dus: `https://geonovum.github.io/Metadata-ISO19115/snapshot.html`
-    -  De volgende stap is: [HTML valideren](https://validator.w3.org). Plak de github.io- link uit stap 1 in het Address veld en klik Check. De validator gaat nu valideren en geeft het foutrapport terug.
-    -  Hierna kun je de [links checken](https://validator.w3.org/checklink). Plak de github.io-link uit stap 1 in het input veld en klik weer op Check. De links worden nu gecontroleerd. Dit duurt even omdat op de achtergrond alle links in het document nu bezocht worden. Als het klaar is krijg je het rapport terug. NB als er links naar docs.geostandaarden.nl, naar het document dat je aan het checken bent, worden gerapporteerd als gebroken, kun je dit negeren. Dit komt doordat het document daar nu nog niet gepubliceerd staat.
-    - Los eventuele HTML fouten en gebroken links op en maak een nieuw snapshot, en commit dit naar dezelfde plek als de vorige keer.
+Controleer de volgende onderwerpen voor iedere publicatie:
 
+- Controleer op WCAG regels. Bij het pushen van een ReSpec document naar GitHub wordt automatisch een WCAG rapport geschreven. Dit is te vinden onder 'Actions'. Kies hier de commit die je gedaan hebt en je ziet daar 'Check/WCAG').
+- Controleer op Broken links. Bij het pushen van een ReSpec document naar GitHub wordt automatisch op broken links gechecked. Dit is te vinden onder 'Actions'. Kies hier de commit die je gedaan hebt en je ziet daar 'Check/Links').
+- Je kunt oook het HTML controleren: maak een snapshot aan en biedt het aan aan de [W3C validator](https://validator.w3.org)
 
 ## Consultatie versie (CV) maken
 

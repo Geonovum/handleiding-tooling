@@ -144,7 +144,56 @@ Onderstaande beschrijvingen komen uit het generiek beheerplan<span class='noot'>
 
 #### pubDomain
 
-De waarde van pubDomain bepaalt bij publicatie de naam van de hoofdfolder waarin in ReSpec document geplaast moet worden.
+pubDomain bepaalt bij publicatie een deel van de URL waarop het document wordt gepubliceerd. Het zorgt voor een groepering van de documenten op docs.geostandaarden.nl Omdat je de URL van gepubliceerde documenten niet wilt veranderen is het van belang de juiste waarde te kiezen uit de beheerde lijst en tijdig aan de bel te trekken als er geen logische plaats te vinden is voor je publicatie.
+
+De actuele lijst van pubDomains staat in de tabel hieronder. De herkomst van deze lijst is als volgt:
+- Eerst heb ik het lijstje wat te vinden is in de github repo (respec-utils)[https://github.com/Geonovum/respec-utils/blob/master/src/autodeploy/config/pubDomainList.json]   
+- Daarna heb ik op docs.geostandaarden.nl gekeken en ontbrekende waardes toegevoegd.
+- Als laatste heb ik ook naar register.geostandaarden.nl gekeken.
+
+| Pubdomain      | Omschrijving                                             | Herkomst                                 |
+| -------------- | -------------------------------------------------------- | ---------------------------------------- |
+| 3dbv           | 3D basisvoorziening                                      | docs.geostandaarden.nl                   |
+| api            | Kennisplatform APIs                                      | https://github.com/Geonovum/respec-utils |
+| basisgeometrie | Informatiemodel Basisgeometrie                           | register.geostandaarden.nl               |
+| bgt            |                                                          | docs.geostandaarden.nl                   |
+| brt            | Informatiemodellen Basisregistratie Topografie           | register.geostandaarden.nl               |
+| csr            |                                                          | docs.geostandaarden.nl                   |
+| cvgg           | Informatiemodel Geluid                                   | docs.geostandaarden.nl                   |
+| disgeo         | DisGeo                                                   | https://github.com/Geonovum/respec-utils |
+| dsgo           |                                                          | docs.geostandaarden.nl                   |
+| dso            | Digitaal Stelsel Omgevingswet                            | https://github.com/Geonovum/respec-utils |
+| eu             |                                                          | docs.geostandaarden.nl                   |
+| g4w            |                                                          | docs.geostandaarden.nl                   |
+| gdb            |                                                          | docs.geostandaarden.nl                   |
+| geobag         |                                                          | docs.geostandaarden.nl                   |
+| gsw            |                                                          | docs.geostandaarden.nl                   |
+| imear          | Informatiemodel AERIUS                                   | register.geostandaarden.nl               |
+| imev           |                                                          | docs.geostandaarden.nl                   |
+| img            | Informatiemodel Geluid                                   | https://github.com/Geonovum/respec-utils |
+| imgeo          | Informatiemodel Grootschalige Geografie                  | docs.geostandaarden.nl                   |
+| imka           |                                                          | docs.geostandaarden.nl                   |
+| imkad          | Informatiemodel Kadaster                                 | register.geostandaarden.nl               |
+| imkl           | Informatiemodel Kabels en Leidingen                      | docs.geostandaarden.nl                   |
+| imle           |                                                          | docs.geostandaarden.nl                   |
+| imro           |                                                          | register.geostandaarden.nl               |
+| imow           | Informatiemodel Omgevingswet                             | register.geostandaarden.nl               |
+| kl             | IMKL                                                     | https://github.com/Geonovum/respec-utils |
+| md             | Metadata                                                 | https://github.com/Geonovum/respec-utils |
+| mim            | Metamodel Informatie Modellering (MIM                    | https://github.com/Geonovum/respec-utils |
+| metadata       | Nederlandse metadata profielen voor datasets en services | register.geostandaarden.nl               |
+| nen3610        | NEN3610-Linkeddata                                       | https://github.com/Geonovum/respec-utils |
+| ngii           |                                                          | docs.geostandaarden.nl                   |
+| oov            |                                                          | docs.geostandaarden.nl                   |
+| ow             | Standaarden omgevingswet                                 | https://github.com/Geonovum/respec-utils |
+| ro             | RO Standaarden                                           | https://github.com/Geonovum/respec-utils |
+| rwgs           | Raamwerk van Geo-standaarden                             | https://github.com/Geonovum/respec-utils |
+| serv           | Services                                                 | https://github.com/Geonovum/respec-utils |
+| tpod           | Toepassingsprofiel omgevingsdocumenten                   | https://github.com/Geonovum/respec-utils |
+| vg             | Informatiemodel Vastgoedgebruik                          | https://github.com/Geonovum/respec-utils |
+| visu           | Visualisatie                                             | https://github.com/Geonovum/respec-utils |
+| vtm            |                                                          | docs.geostandaarden.nl                   |
+| wp             | Whitepaper Geostandaarden                                | https://github.com/Geonovum/respec-utils |
 
 >
 > **TODO** invullen.
@@ -152,11 +201,12 @@ De waarde van pubDomain bepaalt bij publicatie de naam van de hoofdfolder waarin
 
 #### LocalBiblio
 
-In de localBiblio variabele worden Referenties naar andere documenten gezet. Voordat je hier citaten toevoegt, loont het de moeite om eerst in de SpecRef van ReSpec zelf te kijken. Zie voor uitleg van Specref paragraaf <a href='#_Ref17110974'>4.3.3<a></a>. Pas als je een verwijzing niet vindt in SpecRef voeg je hem hier toe!
+In de localBiblio variabele worden Referenties naar andere documenten gezet. Voordat je hier citaten toevoegt, loont het de moeite om eerst in de [https://www.specref.org/](SpecRef) van ReSpec zelf te kijken. Pas als je een verwijzing niet vindt in SpecRef voeg je hem hier toe!
+
+Verwijzen naar een bibliografieelement gebeurt als volgt `[[ID]]`. De dubbele haakjes zorgen ervoor dat er blokhaken om de verwijzing staan in de tekst. Je kunt ook aangeven dat een verwijzing normatief is door er een uitroepteken voor te zetten `[[!ID]]`
 
 
-
-Hieronder een voorbeeld config.js.
+## Voorbeeld config.js
 
 ```
 let respecConfig = {
@@ -182,7 +232,7 @@ let respecConfig = {
   //specType: "BP",                 // Best Practice
   specType: "HR",
   //-- pubDomain is verplicht! (komt in de URL) -------------------------------------
-  pubDomain: "dk",
+  pubDomain: "TODO",
   //-- license: voor de geldende gebruiksvoorwaarden. Default is cc-by.
   //licence: "cc-by-nd",            // bronvermelding, geen afgeleide werken (default)
   //licence: "cc0",                 // Public Domain Dedication
@@ -230,7 +280,7 @@ let respecConfig = {
 };
 ```
 
-De file config.js is eigenlijk een stukje javascript (JSON) code, het bevat alle mogelijke waarden voor de verschillende versies die wij hanteren bij Geonovum. In de file zelf staat aangegeven welke waarden verplicht zijn, en uit welke waarden te kiezen is. In bovenstaand voorbeeld gaat het om een 'Werkversie van een standaard'.
+De file config.js is een stukje javascript (JSON) code, het bevat alle mogelijke waarden voor de verschillende versies die wij hanteren bij Geonovum. In de file zelf staat aangegeven welke waarden verplicht zijn, en uit welke waarden te kiezen is. In bovenstaand voorbeeld gaat het om een 'Werkversie van een standaard'.
 
 
 

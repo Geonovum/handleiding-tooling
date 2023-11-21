@@ -67,7 +67,7 @@ wrap een definitie in een aside met attribute class="definition"
 
 ## Verwijzing maken naar gedefinieerd begrip
 
-Als je op andere plekken in je document wilt verwijzen naar een gedefinieerd begrip, dan kan dat eenvoudig door het begrip tussen <a></a> te zetten, bijv: <a>boek</a>. Houd als richtlijn dat je alleen de eerste keer dat een term in een alinea voorkomt een verwijzing maakt. Dit voorkomt een overdaad aan verwijzingen in de tekst. Een verwijzing naar een term werkt in alle gevallen hetzelfde.
+Als je op andere plekken in je document wilt verwijzen naar een gedefinieerd begrip, dan kan dat eenvoudig door het begrip tussen `<a></a>` te zetten, bijv:  `<a>boek</a>`. Houd als richtlijn dat je alleen de eerste keer dat een term in een alinea voorkomt een verwijzing maakt. Dit voorkomt een overdaad aan verwijzingen in de tekst. Een verwijzing naar een term werkt in alle gevallen hetzelfde.
 
 <!-- ## Wanneer zelf term definieeren, wanneer verwijzen naar
 
