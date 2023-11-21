@@ -150,49 +150,54 @@ De actuele lijst van pubDomains staat in de tabel hieronder. De herkomst van dez
 - Daarna heb ik op docs.geostandaarden.nl gekeken en ontbrekende waardes toegevoegd.
 - Als laatste heb ik ook naar register.geostandaarden.nl gekeken.
 
-| Pubdomain      | Omschrijving                                             | Herkomst                                 |
-| -------------- | -------------------------------------------------------- | ---------------------------------------- |
-| 3dbv           | 3D basisvoorziening                                      | docs.geostandaarden.nl                   |
-| api            | Kennisplatform APIs                                      | https://github.com/Geonovum/respec-utils |
-| basisgeometrie | Informatiemodel Basisgeometrie                           | register.geostandaarden.nl               |
-| bgt            |                                                          | docs.geostandaarden.nl                   |
-| brt            | Informatiemodellen Basisregistratie Topografie           | register.geostandaarden.nl               |
-| csr            |                                                          | docs.geostandaarden.nl                   |
-| cvgg           | Informatiemodel Geluid                                   | docs.geostandaarden.nl                   |
-| disgeo         | DisGeo                                                   | https://github.com/Geonovum/respec-utils |
-| dsgo           |                                                          | docs.geostandaarden.nl                   |
-| dso            | Digitaal Stelsel Omgevingswet                            | https://github.com/Geonovum/respec-utils |
-| eu             |                                                          | docs.geostandaarden.nl                   |
-| g4w            |                                                          | docs.geostandaarden.nl                   |
-| gdb            |                                                          | docs.geostandaarden.nl                   |
-| geobag         |                                                          | docs.geostandaarden.nl                   |
-| gsw            |                                                          | docs.geostandaarden.nl                   |
-| imear          | Informatiemodel AERIUS                                   | register.geostandaarden.nl               |
-| imev           |                                                          | docs.geostandaarden.nl                   |
-| img            | Informatiemodel Geluid                                   | https://github.com/Geonovum/respec-utils |
-| imgeo          | Informatiemodel Grootschalige Geografie                  | docs.geostandaarden.nl                   |
-| imka           |                                                          | docs.geostandaarden.nl                   |
-| imkad          | Informatiemodel Kadaster                                 | register.geostandaarden.nl               |
-| imkl           | Informatiemodel Kabels en Leidingen                      | docs.geostandaarden.nl                   |
-| imle           |                                                          | docs.geostandaarden.nl                   |
-| imro           |                                                          | register.geostandaarden.nl               |
-| imow           | Informatiemodel Omgevingswet                             | register.geostandaarden.nl               |
-| kl             | IMKL                                                     | https://github.com/Geonovum/respec-utils |
-| md             | Metadata                                                 | https://github.com/Geonovum/respec-utils |
-| mim            | Metamodel Informatie Modellering (MIM                    | https://github.com/Geonovum/respec-utils |
-| metadata       | Nederlandse metadata profielen voor datasets en services | register.geostandaarden.nl               |
-| nen3610        | NEN3610-Linkeddata                                       | https://github.com/Geonovum/respec-utils |
-| ngii           |                                                          | docs.geostandaarden.nl                   |
-| oov            |                                                          | docs.geostandaarden.nl                   |
-| ow             | Standaarden omgevingswet                                 | https://github.com/Geonovum/respec-utils |
-| ro             | RO Standaarden                                           | https://github.com/Geonovum/respec-utils |
-| rwgs           | Raamwerk van Geo-standaarden                             | https://github.com/Geonovum/respec-utils |
-| serv           | Services                                                 | https://github.com/Geonovum/respec-utils |
-| tpod           | Toepassingsprofiel omgevingsdocumenten                   | https://github.com/Geonovum/respec-utils |
-| vg             | Informatiemodel Vastgoedgebruik                          | https://github.com/Geonovum/respec-utils |
-| visu           | Visualisatie                                             | https://github.com/Geonovum/respec-utils |
-| vtm            |                                                          | docs.geostandaarden.nl                   |
-| wp             | Whitepaper Geostandaarden                                | https://github.com/Geonovum/respec-utils |
+Naamgeefconventies:
+- Lowercase
+- Geen spaties
+
+
+| Pubdomain      | Omschrijving                                             | Herkomst                   | status                    |
+| -------------- | -------------------------------------------------------- | -------------------------- | ------------------------- |
+| 3dbv           | 3D basisvoorziening                                      | docs.geostandaarden.nl     | inactief (gemigreerd)     |
+| api            | Kennisplatform APIs                                      | respec utils               |                           |
+| basisgeometrie | Informatiemodel Basisgeometrie                           | register.geostandaarden.nl | zit op docs bij nen3610   |
+| bgt            | Basisregistratie grootschalige topografie                | docs.geostandaarden.nl     |                           |
+| brt            | Informatiemodellen Basisregistratie Topografie           | register.geostandaarden.nl |                           |
+| crs            | Coördinaatreferentiesystemen                             | docs.geostandaarden.nl     |                           |
+| cvgg           | Informatiemodel Geluid                                   | docs.geostandaarden.nl     | duplicaat van img         |
+| disgeo         | DisGeo                                                   | respec utils               |                           |
+| dsgo           | Digitaal Stelsel Gebouwde Omgeving                       | docs.geostandaarden.nl     |                           |
+| dso            | Digitaal Stelsel Omgevingswet                            | respec utils               | duplicaten: tpod imow ow  |
+| eu             |                                                          | docs.geostandaarden.nl     |                           |
+| g4w            |                                                          | docs.geostandaarden.nl     |                           |
+| gbd            |                                                          | docs.geostandaarden.nl     |                           |
+| geobag         |                                                          | docs.geostandaarden.nl     |                           |
+| gsw            |                                                          | docs.geostandaarden.nl     |                           |
+| imear          | Informatiemodel AERIUS                                   | register.geostandaarden.nl |                           |
+| imev           |                                                          | docs.geostandaarden.nl     |                           |
+| img            | Informatiemodel Geluid                                   | respec utils               | duplicaat: cvgg           |
+| imgeo          | Informatiemodel Grootschalige Geografie                  | docs.geostandaarden.nl     |                           |
+| imka           | Informatiemodel Klimaatadaptatie                         | docs.geostandaarden.nl     |                           |
+| imkad          | Informatiemodel Kadaster                                 | register.geostandaarden.nl |                           |
+| imkl           | Informatiemodel Kabels en Leidingen                      | docs.geostandaarden.nl     | duplicaat: kl             |
+| imle           |                                                          | docs.geostandaarden.nl     |                           |
+| imro           | Informatiemodel Ruimtelijke Ordening                     | register.geostandaarden.nl | duplicaat: ro             |
+| imow           | Informatiemodel Omgevingswet                             | register.geostandaarden.nl | duplicaten: tpod ow dso   |
+| kl             | IMKL                                                     | respec utils               | duplicaat: imkl           |
+| md             | Metadata                                                 | respec utils               | duplicaat: md             |
+| mim            | Metamodel Informatie Modellering (MIM                    | respec utils               | duplicaat: metadata       |
+| metadata       | Nederlandse metadata profielen voor datasets en services | register.geostandaarden.nl |                           |
+| nen3610        | NEN3610-Linkeddata                                       | respec utils               |                           |
+| ngii           |                                                          | docs.geostandaarden.nl     |                           |
+| oov            |                                                          | docs.geostandaarden.nl     |                           |
+| ow             | Standaarden omgevingswet                                 | respec utils               | duplicaten: tpod imow dso |
+| ro             | RO Standaarden                                           | respec utils               | duplicaat: imro           |
+| rwgs           | Raamwerk van Geo-standaarden                             | respec utils               |                           |
+| serv           | Services                                                 | respec utils               |                           |
+| tpod           | Toepassingsprofiel omgevingsdocumenten                   | respec utils               | duplicaten: ow imow dso   |
+| vg             | Informatiemodel Vastgoedgebruik                          | respec utils               |                           |
+| visu           | Visualisatie                                             | respec utils               |                           |
+| vtm            |                                                          | docs.geostandaarden.nl     | is eigenlijk metadata     |
+| wp             | Whitepaper Geostandaarden                                | respec utils               | ook een raar pubdomain    |
 
 >
 > **TODO** invullen.
