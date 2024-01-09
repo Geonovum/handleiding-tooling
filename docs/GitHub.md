@@ -110,21 +110,19 @@ Klik in de banner bovenaan de pagina, naast je profielfoto op “+” en kies �
 Nadat je op “+” hebt geklikt, verschijnt het scherm hieronder.
 
 ![media/image19.png](media/image19.png)
-Vul hier de naam van de repository in. Deze naam moet uniek zijn binnen de Geonovum omgeving, en voor MIM is dat geworden: MIM-Werkomgeving
 
-Denk goed na over de naam, en houd het kort en bondig, immers deze naam wordt onderdeel van de URL van de Repository
+Vul hier de naam van de repository in. Gebruik een naam die kort en bondig is. Zie ook verderop in dit document voor de naamgevingsconventies.
 
 Vul ook de beschrijving in van het project.
 
-Belangrijk is dat je lokaal dus op je werkplek de mappen ook logisch inricht. Maak dus eerst lokaal een map aan waarin je je lokale Repository neerzet. Het is slim om alle lokale Repositories onder een mapje “GitHub” neer te zetten.
-
 Geef als local path de naam van de GitHub map op. GitHub zal dan de naam van de standaard als mapnaam aanmaken onder de lokale GitHub map.
 
-Het is wel zo netjes om een readme file aan te maken, hierin zet je een korte omschrijving van de repository. Vinkje aanzetten dus. Klik vervolgens op “Create Repository”
+Het is wel zo netjes om een readme file aan te maken, hierin zet je een korte omschrijving van de repository. Klik vervolgens op “Create Repository”
 
 ### GitHub Clone: eerste keer ophalen van de centrale repository
 
 ![media/image20.png](media/image20.png)
+
 Start de GitHub Client, en kies in het menu File voor Clone Repository. En kies de Repository die je wil clonen (in dit geval Geonovum/MIM). Als Local Path kies je een logische plek op je PC/Laptop. (Tip: het is handig om één plek voor je Github Repositories te maken, bijvoorbeeld C:. Na het aanklikken van de knop clone wordt een lokale kopie gemaakt. Github weet welke versie je hebt opgehaald, en zal de wijzingen die je maakt netjes voor je bijhouden.
 
 In de map die je als local path hebt opgegeven komt de mappen structuur te staan zoals hierboven beschreven.
@@ -166,19 +164,20 @@ Nadat je de wijzigingen hebt gecommit, moeten ze richting de centrale repository
 ### GitHub teams
 
 -   Er is een aantal teams gemaakt binnen Geonovum. Deze zijn te vinden op: https://github.com/orgs/Geonovum/teams.
--   Het is de bedoeling dat alle repositories die beheerd worden aan een team is toegekend met als doel dat het team aanspreekpunt is voor het repository.
+-   Ieder repository moet aan een team worden toegekend. Het team is aanspreekpunt  voor het repository.
 -   Team namen eindigen op ' team'. Bijvoorbeeld 'DSO team'.
 
 ### GitHub repositories
 
--   Dit zijn de Geonovum reopsitories: https://github.com/orgs/Geonovum/repositories.
+-   Dit zijn de Geonovum repositories: https://github.com/orgs/Geonovum/repositories.
 -   Er is ook een dashboard met een overzicht van publieke git repositories: [DashboardGit](https://geonovum.github.io/DashboardGit/).
 -   Richtlijnen voor het inrichten van repositories zijn er nog niet. Wel is er een template voor respec documenten: [NL-ReSpec-GN-template](https://github.com/Geonovum/NL-ReSpec-GN-template)
 
 #### Naamgevingsconventies GitHub
 
--   Deze zitten voor een deel in de ReSpec
--   Er is een lijst met prefixes:
+- Voor repositories met een ReSpec document zijn aparte naamgevingsconventies.
+- Kies korte betekenisvolle namen die in lijn zijn met bestaande repositories.
+- Veelgebruikte prefixes zijn:
     -   **dso-** digitale ondersteuning omgevingswet.
     -   **ow-** omgevingswet. Dit lijkt wel een duplicaat. Laten opgaan in dso-?
     -   **KP-APIs-** kennisplatform API's.

@@ -16,13 +16,7 @@ In een versiebeheersysteem kunnen programmeurs projecten beheren met code. Het i
 
 Stel dat je met een team een app wilt programmeren. Dan is het handig als iedereen bij het project kan met daarin alle code van de app. Ook is het handig dat iedereen de laatste code wijzigingen ziet van teamleden en daar eventueel op kan reageren en/of het aanpassen.
 
-Maar waar staat “Hub” voor in GitHub? Met “Hub” wordt eigenlijk het centrale deel bedoeld, waar alle projecten samenkomen die beheerd worden met Git. De website GitHub is de centrale plek waar programmeurs hun projecten beheren met Git.
-
 Bij Geonovum gebruiken we Github op een andere manier. Namelijk voor het voor werken aan documentatie voor geostandaarden. Per project is een repository aangemaakt. Een Repository is eenvoudig gezegd een werkmap/projectomgeving.
-
-
-
- 
 
 ## Andere mogelijkheden van Github
 
@@ -40,7 +34,6 @@ Maar welke mogelijkheden heeft GitHub nog meer? Hier staan een aantal belangrijk
 - Tags meegeven aan verschillende versies, zoals V1.0 en V2.0
 - Kwetsbaarheden in de code makkelijker ontdekken, GitHub stuurt ook een mail als het kwetsbaarheden ontdekt
 - Een website hosten
-
 
 ## Voordelen van GitHub
 
