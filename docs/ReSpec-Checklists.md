@@ -44,7 +44,6 @@ Controleer de volgende onderwerpen voor iedere publicatie:
     - Vul `previousMaturity` in met `"GN-CV"`
     - Vul `previousPublishDate` in met de datum van de zojuist gepubliceerde consultatieversie
 
-
 ### Consultatieverise met behulp van webhook.
 
 > **Note**: uitwerken

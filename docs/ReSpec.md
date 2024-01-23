@@ -146,11 +146,13 @@ Onderstaande beschrijvingen komen uit het generiek beheerplan<span class='noot'>
 pubDomain bepaalt bij publicatie een deel van de URL waarop het document wordt gepubliceerd. Het zorgt voor een groepering van de documenten op docs.geostandaarden.nl Omdat je de URL van gepubliceerde documenten niet wilt veranderen is moet je hier goed over nadenken en alleen in overleg nieuwe toevoegen.
 
 De actuele lijst van pubDomains staat in de tabel hieronder. De herkomst van deze lijst is als volgt:
+
  1. Lijst op github : [respec-utils](https://github.com/Geonovum/respec-utils/blob/master/src/autodeploy/config/pubDomainList.json).   
  2. docs.geostandaarden.nl.
  3.  register.geostandaarden.nl.
 
 Naamgevinsregels voor pubDomain:
+
 - Lowercase
 - Geen spaties
 
