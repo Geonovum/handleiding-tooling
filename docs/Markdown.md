@@ -1,6 +1,6 @@
 # Markdown
 
-Voor het extern publiceren van documenten en standaarden gebruiken we [ReSpec](ReSpec). Deze tool ondersteunt naast HTML en Javascript ook Markdown
+Voor het extern publiceren van documenten en standaarden gebruiken we [ReSpec](../ReSpec). Deze tool ondersteunt naast HTML en Javascript ook Markdown
 
 [Markdown](https://nl.wikipedia.org/wiki/Markdown) is een lichtgewicht opmaaktaal op basis van platte tekst die zodanig ontworpen is dat het gemakkelijk valt te converteren naar HTML en andere. Markdown wordt vaak gebruikt voor de opmaak van project documentatie (README-bestanden), eenvoudige CMS-systemen en berichten in online fora. Je kunt Markdown in iedere simpele teksteditor bewerken.
 
