@@ -20,15 +20,14 @@ nav:
     - ReSpec:
         - Manual: ReSpec.md
         - Checklists: ReSpec-Checklists.md
-        - 'Code toepassen': ReSpec-code-toepassen.md
+        - Code toepassen: ReSpec-code-toepassen.md
         - 'Definitielijst maken': ReSpec-definitielijst-maken.md
-     - EA:
+    - EA:
         - Overzicht: EA.md
         - standaarddatatypen: EA-toepassing-standaarddatatypen.md
-   - Subversion:
+    - Subversion:
         - Overzicht: SVN.md
         - SVN installeren voor EAP: SVN-installeren-voor-EAP.md
         - 'SVN importeren bestaand project': SVN-importeren-bestaand-project.md
     - GML: GML.md
     - Ontologie: Handleiding-ontologie-maken-en-publiceren.md
-    - Publiceren: Publiceren.md
