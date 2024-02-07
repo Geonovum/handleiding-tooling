@@ -1,33 +1,47 @@
 # ReSpec
 
-ReSpec is een tool van W3C die het schrijven van specifications makkelijker maakt. ReSpec zorgt voor een uniforme styling in het document, onderhoudt referenties en verwijzingen naar andere documentatie, verzorgt de inhoudsopgave, zorgt voor links naar vorige en meest recente versies, en heeft een integratie met Github issues.
+Binnen Geonovum gebruiken we ReSpec voor het maken van standaarden. ReSpec maakt gebruik van input bestanden om HTML te genereren. Deze inputbestanden (de content) wordt gemaakt in het Markdown formaat. Deze
+Markdown bestanden kunnen worden aangemaakt met text editor zoals Visual Studio
+Code. Visual Studio heeft het voordeel dat de editor mooi
+integreert met de Github Desktop Client. GitHub tenslotte wordt gebruikt als de
+'repository', waarin alle bestanden die bij een standaard horen, komen te
+staan.
 
+Deze handleiding beschrijft hoe je een GitHub Account maakt, hoe je GitHub
+Desktop Client installeert en gebruikt, hoe je een Respec mappenstructuur
+opbouwt, welke bestanden er nodig zijn voor een standaard, en hoe je de
+verschillende versies van een standaard genereert. Ook wordt uitgelegd hoe je
+de Markdown plugin in Microsoft Word installeert en gebruikt.
+
+ReSpec is een tool van W3C die het schrijven van specifications makkelijker maakt. ReSpec zorgt voor een uniforme styling in het document, onderhoudt referenties en verwijzingen naar andere documentatie, verzorgt de inhoudsopgave, zorgt voor links naar vorige en meest recente versies, en heeft een integratie met Github issues.
 
 Geonovum gebruikt een fork van ReSpec die door Logius beheerd wordt. Dit document bevat een globale instructie over hoe snel aan de start te gaan. Meer documentatie is op andere plaatsen te vinden:
 
-- Er is een gedetailleerde (Engelstalige) [gebruikershandleiding](https://github.com/w3c/respec/wiki/ReSpec-Editor's-Guide) beschikbaar. Er is ook een [ontwikkelaarshandleiding](https://github.com/w3c/respec/wiki/Developers-Guide) te vinden.
-- De Geonovum [wiki over ReSpec](https://github.com/Geonovum/respec/wiki) is een fork van de w3c ReSpec met aanpassingen voor Geonovum. Deze is eigenlijk achterhaald omdat we nu van de Logius Respec gebruik maken.
+-   Er is een gedetailleerde (Engelstalige) [gebruikershandleiding](https://github.com/w3c/respec/wiki/ReSpec-Editor's-Guide) beschikbaar. Er is ook een [ontwikkelaarshandleiding](https://github.com/w3c/respec/wiki/Developers-Guide) te vinden.
+-   De Geonovum [wiki over ReSpec](https://github.com/Geonovum/respec/wiki) is een fork van de w3c ReSpec met aanpassingen voor Geonovum. Deze is eigenlijk achterhaald omdat we nu van de Logius Respec gebruik maken.
 
 # Een nieuwe document maken
 
 ReSpec documenten worden beheerd in een [GitHub](/GitHub) repository. Als je een nieuw ReSpec document wilt maken gebruik dan de [Geonovum ReSpec template](https://github.com/Geonovum/NL-ReSpec-GN-template) als startpunt en druk op de 'Use this template' knop om een nieuw repository aan te maken.
 
-Zoek in dit repository op de tekst 'TODO' om de plaatsen te vinden waar aanpassen van de template vereist is. 
-
+Zoek in dit repository op de tekst 'TODO' om de plaatsen te vinden waar aanpassen van de template vereist is.
 
 ## De URL van een publicatie op docs.geonovum.nl
 
-ReSpec documenten worden gepubliceerd op  [docs.geostandaarden.nl](https://docs.geostandaarden.nl). Iedere gepubliceerde versie van een document heeft een eigen URL. Voor de laatst gepubliceerde versie is een aparte URL.
+ReSpec documenten worden gepubliceerd op [docs.geostandaarden.nl](https://docs.geostandaarden.nl). Iedere gepubliceerde versie van een document heeft een eigen URL. Voor de laatst gepubliceerde versie is een aparte URL.
 
 De URL van iedere publicatie wordt als volgt bepaald:
+
 ```
 https://docs.geostandaarden.nl/[pubdomain]/[specStatus]-[spectype]-[shortName]-[publishDate]/
 ```
 
 De laatst gepubliceerde versie is OOK te vinden op:
+
 ```
 https://docs.geostandaarden.nl/[pubdomain]/[shortName]/
-``` 
+```
+
 De namen van de variabelen staan verderop uitgelegd.
 
 # De mapindeling van een ReSpec repository
@@ -48,7 +62,6 @@ Dit levert een nieuw repository op met de onderstaande mappenstructuur.
 Hieronder staat een voorbeeld van zo’n mappenstructuur.
 
 ![media/image22.png](media/image22.png)
-
 
 ## Het bestand 'index.html'
 
@@ -123,23 +136,22 @@ Het SpecType in de configuratie is een vaste lijst met waarden, deze waarden zij
 
 Onderstaande beschrijvingen komen uit het generiek beheerplan<span class='noot'>[5]<span class='noottekst'> Zie: https://www.geonovum.nl/uploads/documents/Geonovum%20GENERIEK%20Beheerplan%20geo-standaarden%20v1.1.pdf <br/></span></span>.
 
- - **NO** Norm: Een norm is bij een officieel standaardisatie instituut ondergebracht en bevat bindende afspraken.
- Naast het gebruik van normen is NEN 3610 de enige norm waar Geonovum een inhoudelijke verantwoordelijkheid heeft. Het formele beheer en beslissingen worden genomen in de NEN normcommissie 351 240 waar Geonovum de voorzitter van is.
+-   **NO** Norm: Een norm is bij een officieel standaardisatie instituut ondergebracht en bevat bindende afspraken.
+    Naast het gebruik van normen is NEN 3610 de enige norm waar Geonovum een inhoudelijke verantwoordelijkheid heeft. Het formele beheer en beslissingen worden genomen in de NEN normcommissie 351 240 waar Geonovum de voorzitter van is.
 
- - **ST** Standaard: Een document met (bindende) afspraken.
+-   **ST** Standaard: Een document met (bindende) afspraken.
 
- - **IM** Informatiemodel: Een standaard waarbij door de term informatiemodel te hanteren wordt aangegeven dat het een abstractie (het model) vormt van de werkelijkheid zoals beschreven binnen een bepaalde sector/domein. Informatiemodellen zijn een semantische invulling van normen voor sectoren zoals ruimtelijke ordening, kabels en leidingen, water, etc..
+-   **IM** Informatiemodel: Een standaard waarbij door de term informatiemodel te hanteren wordt aangegeven dat het een abstractie (het model) vormt van de werkelijkheid zoals beschreven binnen een bepaalde sector/domein. Informatiemodellen zijn een semantische invulling van normen voor sectoren zoals ruimtelijke ordening, kabels en leidingen, water, etc..
 
- - **PR** Praktijkrichtlijn: Praktijkrichtlijnen zijn producten die informatie geven, vaak met een technisch karakter, die nodig is voor het toepassen van standaarden. Een praktijkrichtlijn hoort altijd bij een standaard/norm.
+-   **PR** Praktijkrichtlijn: Praktijkrichtlijnen zijn producten die informatie geven, vaak met een technisch karakter, die nodig is voor het toepassen van standaarden. Een praktijkrichtlijn hoort altijd bij een standaard/norm.
 
- - **HR** Handreiking: Op zichzelf staande documentatie dat als doel heeft een hulpmiddel te zijn, niet verplichtend maar ondersteunend.
+-   **HR** Handreiking: Op zichzelf staande documentatie dat als doel heeft een hulpmiddel te zijn, niet verplichtend maar ondersteunend.
 
- - **WA** Werkafspraak: Legt uit hoe wetgeving moet worden toegepast bij onduidelijkheden, discrepanties of fouten in de standaarden.
+-   **WA** Werkafspraak: Legt uit hoe wetgeving moet worden toegepast bij onduidelijkheden, discrepanties of fouten in de standaarden.
 
- - **BD** Beheerdocumentatie: Documentatie met betrekking tot het beheerproces van de standaard. Deze documentatie betreft niet een standaard of onderdeel daarvan, zoals een handreiking of werkafspraak.
+-   **BD** Beheerdocumentatie: Documentatie met betrekking tot het beheerproces van de standaard. Deze documentatie betreft niet een standaard of onderdeel daarvan, zoals een handreiking of werkafspraak.
 
- - **AL** Algemeen: Op zichzelf staande algemene documentatie over standaarden. De documentatie betreft niet een specifieke standaard of onderdeel daarvan, het is ook geen beheerdocumentatie van een specifieke standaard.
-
+-   **AL** Algemeen: Op zichzelf staande algemene documentatie over standaarden. De documentatie betreft niet een specifieke standaard of onderdeel daarvan, het is ook geen beheerdocumentatie van een specifieke standaard.
 
 ## pubDomain
 
@@ -147,15 +159,14 @@ pubDomain bepaalt bij publicatie een deel van de URL waarop het document wordt g
 
 De actuele lijst van pubDomains staat in de tabel hieronder. De herkomst van deze lijst is als volgt:
 
- 1. Lijst op github : [respec-utils](https://github.com/Geonovum/respec-utils/blob/master/src/autodeploy/config/pubDomainList.json).   
- 2. docs.geostandaarden.nl.
- 3.  register.geostandaarden.nl.
+1.  Lijst op github : [respec-utils](https://github.com/Geonovum/respec-utils/blob/master/src/autodeploy/config/pubDomainList.json).
+2.  docs.geostandaarden.nl.
+3.  register.geostandaarden.nl.
 
 Naamgevinsregels voor pubDomain:
 
-- Lowercase
-- Geen spaties
-
+-   Lowercase
+-   Geen spaties
 
 | Pubdomain      | Omschrijving                                             | Herkomst                   | status                    | GitHub Team                                                   | Beslissing                              |
 | -------------- | -------------------------------------------------------- | -------------------------- | ------------------------- | ------------------------------------------------------------- | --------------------------------------- |
@@ -169,7 +180,7 @@ Naamgevinsregels voor pubDomain:
 | disgeo         | DisGeo                                                   | respec utils               |                           |                                                               | OK                                      |
 | dsgo           | Digitaal Stelsel Gebouwde Omgeving                       | docs.geostandaarden.nl     |                           |                                                               | OK (rare uri)                           |
 | dso            | Digitaal Stelsel Omgevingswet                            | respec utils               | duplicaten: tpod imow ow  | [DSO team](https://github.com/orgs/Geonovum/teams/dso-team)   | OK                                      |
-| eu             |                                                          | docs.geostandaarden.nl     |                           | [EU team](https://github.com/orgs/Geonovum/teams/eu-team)     | OK    (rare uri en werkversie weg)      |
+| eu             |                                                          | docs.geostandaarden.nl     |                           | [EU team](https://github.com/orgs/Geonovum/teams/eu-team)     | OK (rare uri en werkversie weg)         |
 | g4w            |                                                          | docs.geostandaarden.nl     |                           |                                                               | groeperen?                              |
 | gbd            |                                                          | docs.geostandaarden.nl     |                           |                                                               | groeperen?                              |
 | geobag         |                                                          | docs.geostandaarden.nl     |                           |                                                               | OK                                      |
@@ -181,7 +192,7 @@ Naamgevinsregels voor pubDomain:
 | imka           | Informatiemodel Klimaatadaptatie                         | docs.geostandaarden.nl     |                           |                                                               | OK                                      |
 | imkad          | Informatiemodel Kadaster                                 | register.geostandaarden.nl |                           | [IMKA team](https://github.com/orgs/Geonovum/teams/imka-team) | OK                                      |
 | imkl           | Informatiemodel Kabels en Leidingen                      | register.geostandaarden.nl | duplicaat: kl             | [IMKL team](https://github.com/orgs/Geonovum/teams/imkl-team) | Zou kl moeten worden                    |
-| imle           |                                                          | docs.geostandaarden.nl     |                           |                                                               | OK   (niet netjes gepubliceerd)         |
+| imle           |                                                          | docs.geostandaarden.nl     |                           |                                                               | OK (niet netjes gepubliceerd)           |
 | imro           | Informatiemodel Ruimtelijke Ordening                     | register.geostandaarden.nl | duplicaat: ro             |                                                               | liefst naar RO                          |
 | imow           | Informatiemodel Omgevingswet                             | register.geostandaarden.nl | duplicaten: tpod ow dso   |                                                               | liefst weg                              |
 | kl             | IMKL                                                     | respec utils               | duplicaat: imkl           |                                                               | OK                                      |
@@ -198,18 +209,15 @@ Naamgevinsregels voor pubDomain:
 | tpod           | Toepassingsprofiel omgevingsdocumenten                   | respec utils               | duplicaten: ow imow dso   |                                                               | OK                                      |
 | vg             | Informatiemodel Vastgoedgebruik                          | respec utils               |                           |                                                               | OK                                      |
 | visu           | Visualisatie                                             | respec utils               |                           |                                                               | groeperen?                              |
-| vtm            |                                                          | docs.geostandaarden.nl     | is eigenlijk metadata     |                                                               | verhuizen naar MD |
+| vtm            |                                                          | docs.geostandaarden.nl     | is eigenlijk metadata     |                                                               | verhuizen naar MD                       |
 | wp             | Whitepaper Geostandaarden                                | respec utils               | ook een raar pubdomain    |                                                               | verhuizen naar ngii                     |
 |                |                                                          |                            |                           |                                                               |                                         |
-
-
 
 ## LocalBiblio
 
 In de localBiblio variabele worden Referenties naar andere documenten gezet. Voordat je hier citaten toevoegt, loont het de moeite om eerst in de [https://www.specref.org/](SpecRef) van ReSpec zelf te kijken. Pas als je een verwijzing niet vindt in SpecRef voeg je hem hier toe!
 
 Verwijzen naar een bibliografieelement gebeurt als volgt `[[ID]]`. De dubbele haakjes zorgen ervoor dat er blokhaken om de verwijzing staan in de tekst. Je kunt ook aangeven dat een verwijzing normatief is door er een uitroepteken voor te zetten `[[!ID]]`
-
 
 ## Voorbeeld config.js
 
@@ -275,8 +283,6 @@ let respecConfig = {
 ```
 
 De file config.js is een stukje javascript (JSON) code, het bevat alle mogelijke waarden voor de verschillende versies die wij hanteren bij Geonovum. In de file zelf staat aangegeven welke waarden verplicht zijn, en uit welke waarden te kiezen is. In bovenstaand voorbeeld gaat het om een 'Werkversie van een standaard'.
-
-
 
 ### Content: bestanden '\*.md'
 

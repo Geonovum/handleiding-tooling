@@ -1,5 +1,5 @@
-site_name: Geonovum Werkwijze
-repo_url: https://github.com/Geonovum/handleiding-GitHub
+site_name: Geonovum tooling
+repo_url: https://github.com/Geonovum/handleiding-tooling
 edit_uri: blob/main/docs/
 nav:
     - Home:
@@ -22,13 +22,13 @@ nav:
         - Checklists: ReSpec-Checklists.md
         - 'Code toepassen': ReSpec-code-toepassen.md
         - 'Definitielijst maken': ReSpec-definitielijst-maken.md
-    - Subversion:
+     - EA:
+        - Overzicht: EA.md
+        - standaarddatatypen: EA-toepassing-standaarddatatypen.md
+   - Subversion:
         - Overzicht: SVN.md
         - SVN installeren voor EAP: SVN-installeren-voor-EAP.md
         - 'SVN importeren bestaand project': SVN-importeren-bestaand-project.md
-    - EA:
-        - Overzicht: EA.md
-        - standaarddatatypen: EA-toepassing-standaarddatatypen.md
     - GML: GML.md
     - Ontologie: Handleiding-ontologie-maken-en-publiceren.md
     - Publiceren: Publiceren.md

@@ -32,7 +32,6 @@ In de adresbalk: about:config, dan het risico aanvaarden, en deze parameter vera
 | [Markdown Tutorial](https://www.markdownguide.org/getting-started/)                         | Handleiding Markdown                                                                            |
 | [Markdown Reference](https://www.markdownguide.org/basic-syntax)                            | Naslag Markdown                                                                                 |
 | [Visual Studio Code](https://code.visualstudio.com/)                                        | Fijne teksteditor die ook goed integreert met Github Desktop                                    |
-| [Notepad++](https://notepad-plus-plus.org/)                                                 | Nog een goede editor                                                                            |
 | [PowerToys](https://learn.microsoft.com/en-us/windows/powertoys/)                           | Geeft preview van Markdown rechtstreeks in Windows Explorer (en nog heeel veel andere tooltjes) |
 | [Tables Generator](https://www.tablesgenerator.com/markdown_tables)                         | Helpt met het maken van tabellen in MarkDown                                                    |
 | [Markdown Table](https://marketplace.visualstudio.com/items?itemName=TakumiI.markdowntable) | VSCode plugin voor het editen van Markdown tabellen.               |
