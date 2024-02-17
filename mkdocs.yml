@@ -26,7 +26,6 @@ nav:
         - Overzicht: EA.md
         - standaarddatatypen: EA-toepassing-standaarddatatypen.md
     - Subversion:
-        - Overzicht: SVN.md
         - SVN installeren voor EAP: SVN-installeren-voor-EAP.md
         - 'SVN importeren bestaand project': SVN-importeren-bestaand-project.md
     - GML: GML.md

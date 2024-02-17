@@ -1,16 +1,14 @@
 # Welkom
 
-Welkom bij beschrijving van de Geonovum Werkwijze. Dit is een hulpmiddel om
-stap voor stap de tooling uit te leggen.
-
-Om onze [standaarden](https://docs.geostandaarden.nl) te beheren, gebruiken we verschillende tools. Deze tools staan in onderstaand overzicht genoemd. Daaronder staat de publicatieomgeving van Geonovum beschreven.
+Welkom bij de beschrijving van de Geonovum Werkwijze. Deze helpfiles beschrijven welke tools we gebruiken voor het maken en beheren van de standaarden van Geonovum. Deze tools staan in onderstaand overzicht. Daaronder staat de publicatieomgeving van Geonovum beschreven.
 
 ## De tools van Geonovum
 
-- **GitHub**
-    - [GitHub handleiding](GitHub.md): Beschrijft hoe je een account aanmaakt en
-      je beheertaken uitvoert.
-    - [GitHub werkwijze](GitHub-Inleiding.md): Meer algemene inleiding over GitHub.
+- **Enterprise Architect**
+    - [Primitieve datatypes](EA-toepassing-standaarddatatypen.md): Handleiding en toelichting op het toepassen van standaarddatatypes in modelleeromgeving Geonovum.
+- **GitHub**:
+    - [GitHub werkwijze](GitHub-Inleiding.md):  algemene inleiding over GitHub.
+    - [GitHub handleiding](GitHub.md): Hoe maak je een account aan en hoe doe je beheertaken.
 - **Imvertor**
     - [Imvertor](Imvertor.md): Verwijzingen naar verschillende onderwerpen met   betrekking tot Imvertor.
 - **Markdown**
@@ -26,15 +24,18 @@ Om onze [standaarden](https://docs.geostandaarden.nl) te beheren, gebruiken we v
     - [Toolbox genereren](MIM-toolbox-genereren.md): Handleiding voor het maken van een EA-toolbox.
     - [Toolbox genereren extensie](MIM-toolbox-genereren-extensie.md): Handleiding voor het maken van een extensie op de MIM-toolbox.
 - **Subversion (SVN)**
-    - [Subversion instructies](SVN.md): Algemene handleiding
-    - [Subversion installeren voor EA](SVN-importeren-bestaand-project): Installatie SVN en informatiemodel in versiebeheer zetten.
-    - [Subversion importeren bestaand project](SVN-installeren-voor-EAP): Packages importeren vanuit SVN in EA.
-- **EA**
-    - [Primitieve datatypes](EA-toepassing-standaarddatatypen.md): Handleiding en toelichting op het toepassen van standaarddatatypes in modelleeromgeving Geonovum.
+    - [Subversion installeren voor EA](SVN-importeren-bestaand-project.md): Installatie SVN en informatiemodel in versiebeheer zetten.
+    - [Subversion importeren bestaand project](SVN-installeren-voor-EAP.md): Packages importeren vanuit SVN in EA.
 - **GML**
     - [GML](GML.md): Toelichting GML, XSD en Namespaces.
 - **Ontologie**
     - [Ontologie](Handleiding-ontologie-maken-en-publiceren.md): Handleiding voor het maken en publiceren van een ontologie.
+
+Nog op te nemen in bovenstaand overzicht:
+
+- [werkomgeving modelleren](werkomgeving-modelleren.md).
+- [werkwijze modelleren](werkwijze-modelleren.md).
+- [geonovum werkwijze modelleren](geonovum-werkwijze-modelleren.md)
 
 ## De publicatieomgeving van Geonovum
 
