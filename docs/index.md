@@ -2,9 +2,10 @@
 
 Welkom bij de beschrijving van de Geonovum Werkwijze. Deze helpfiles beschrijven welke tools we gebruiken voor het maken en beheren van de standaarden van Geonovum. Deze tools staan in onderstaand overzicht. Daaronder staat de publicatieomgeving van Geonovum beschreven.
 
-## De tools van Geonovum
+## Geonovum tooling
 
 - **Enterprise Architect**
+    - [Overzicht](EA.md)
     - [Primitieve datatypes](EA-toepassing-standaarddatatypen.md): Handleiding en toelichting op het toepassen van standaarddatatypes in modelleeromgeving Geonovum.
 - **GitHub**:
     - [GitHub werkwijze](GitHub-Inleiding.md):  algemene inleiding over GitHub.
@@ -31,13 +32,17 @@ Welkom bij de beschrijving van de Geonovum Werkwijze. Deze helpfiles beschrijven
 - **Ontologie**
     - [Ontologie](Handleiding-ontologie-maken-en-publiceren.md): Handleiding voor het maken en publiceren van een ontologie.
 
-Nog op te nemen in bovenstaand overzicht:
+Voor licenties of de interne beheerder van de tooling kun je terecht op [intranet](https://stichtinggeonovum.sharepoint.com/:b:/r/sites/FBICT/Gedeelde%20documenten/General/wat%20staat%20waar/Tooling_en_Beheerders.pdf?csf=1&web=1&e=aEcKjl)
+
+### Documentatie elders
+
+De documentatie van de werkwijze is niet alleen hier vastgelegd. Links naar andere documenten:
 
 - [werkomgeving modelleren](werkomgeving-modelleren.md).
 - [werkwijze modelleren](werkwijze-modelleren.md).
 - [geonovum werkwijze modelleren](geonovum-werkwijze-modelleren.md)
 
-## De publicatieomgeving van Geonovum
+## Geonovum publicatieomgeving 
 
 Verschillende onderdelen van standaarden worden op verschillende plaatsen gepubliceerd. De publicatieomgeving ziet er als volgt uit
 
@@ -57,8 +62,8 @@ Technische onderdelen van de standaard worden op: [register.geostandaarden.nl](h
 
 ## Uitleg MkDocs
 
-[MkDocs](https://www.mkdocs.org/) is een lichtgewicht tool die een collectie
-Markdown handleidingen omzet in een navigeerbare handleiding. De markdown bestanden staan in de github repository [handleiding-tooling](https://github.com/Geonovum/handleiding-tooling). Deze wordt automatisch ontsloten op [github pages](https://github.com/Geonovum/handleiding-tooling)
+De handleiding wordt beheerd in [MkDocs](https://www.mkdocs.org/). Dit is een lichtgewicht tool die een collectie
+Markdown handleidingen omzet in een navigeerbare handleiding.  De handleiding staat op [github pages](https://github.com/Geonovum/handleiding-tooling). De bronbestanden staan in: [handleiding-tooling](https://github.com/Geonovum/handleiding-tooling).
 
 Je kunt mkdocs ook lokaal installeren. Dan kun je live je edits volgen in je browser: [http://127.0.0.1:8000/](http://127.0.0.1:8000/) met het commando:
 
