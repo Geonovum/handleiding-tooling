@@ -7,10 +7,10 @@ Instructie voor het gebruik van Enterprise Architect binnen Geonovum:
 
 ## Installatie
 
-- [Enterprise Architect](https://www.sparxsystems.eu/) is via de website te downloaden.
->
-> TODO
->
+- Op de website is een proefversie van [Enterprise Architect](https://www.sparxsystems.eu/) te downloaden.
+- Neem voor een licentie contact op met de [beheerder](https://stichtinggeonovum.sharepoint.com/:b:/r/sites/FBICT/Gedeelde%20documenten/General/wat%20staat%20waar/Tooling_en_Beheerders.pdf?csf=1&web=1&e=aEcKjl)
+
+
 
 ## De MIM toolbox
 

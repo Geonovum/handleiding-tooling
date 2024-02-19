@@ -31,6 +31,8 @@ Welkom bij de beschrijving van de Geonovum Werkwijze. Deze helpfiles beschrijven
     - [GML](GML.md): Toelichting GML, XSD en Namespaces.
 - **Ontologie**
     - [Ontologie](Handleiding-ontologie-maken-en-publiceren.md): Handleiding voor het maken en publiceren van een ontologie.
+- **Word Conversies**
+    - [Word2werkversie](WordConversies.md)
 
 Voor licenties of de interne beheerder van de tooling kun je terecht op [intranet](https://stichtinggeonovum.sharepoint.com/:b:/r/sites/FBICT/Gedeelde%20documenten/General/wat%20staat%20waar/Tooling_en_Beheerders.pdf?csf=1&web=1&e=aEcKjl)
 

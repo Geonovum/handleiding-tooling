@@ -3,7 +3,7 @@ repo_url: https://github.com/Geonovum/handleiding-tooling
 edit_uri: blob/main/docs/
 nav:
     - Home:
-        - 'Index': index.md
+        - 'Welkom': index.md
         - 'Geonovum Werkwijze Modelleren': geonovum-werkwijze-modelleren.md
         - 'Werkomgeving Modelleren': werkomgeving-modelleren.md
         - 'Werkwijze Modelleren': werkwijze-modelleren.md
@@ -30,3 +30,4 @@ nav:
         - 'SVN importeren bestaand project': SVN-importeren-bestaand-project.md
     - GML: GML.md
     - Ontologie: Handleiding-ontologie-maken-en-publiceren.md
+    - WordConversies: WordConversies.md

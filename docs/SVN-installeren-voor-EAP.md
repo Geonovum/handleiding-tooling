@@ -2,26 +2,28 @@
 
 
 
-Informatiemodellen staan idealiter onder **Subversion**. Dit is de versiebeheertool die we bij Geonovum gebruiken. Het voordeel van versiebeheer is dat we gemeenschappelijk kunnen werken aan één model en de wijzigingen daarvan op één plek bijhouden. Deze handleiding beschrijft hoe je een informatiemodel in de versiebeheeromgeving zet.
+UML modellen worden beheerd in **Subversion (SVN)** op 'svn.geostandaarden.nl'. Dit is een versiebeheertool die kan samenwerken met 'Enterprise Architect' en wordt daarom voor UML modellen gebruik.. Deze handleiding beschrijft hoe je een informatiemodel in de versiebeheeromgeving zet.
 
 Dit document bevat de volgende onderdelen:
 
-- [Voorbereiding: Installeer SVN Tortoise op pc.](#voorbereiding-installeer-svn-tortoise-op-pc)
-- [Stap 1: Folder aanmaken op SVN-server](#stap-1-folder-aanmaken-op-svn-server)
-- [Stap 2: Lokale folder aanmaken](#stap-2-lokale-folder-aanmaken)
-- [Stap 3: Lokale folder koppelen aan folder op SVN-server](#stap-3-lokale-folder-koppelen-aan-folder-op-svn-server)
-- [Stap 4: Breng EAP-bestand(packages) onder SVN.](#stap-4-breng-eap-bestandpackages-onder-svn)
-- [Stap 5: Breng package onder version control](#stap-5-breng-package-onder-version-control)
-- [Stap 6: Check package in of uit](#stap-6-check-package-in-of-uit)
-- [Meer informatie](#meer-informatie)
+1. Voorbereiding: Installeer SVN Tortoise vraag een account aan.
+1. Folder aanmaken op SVN-server.
+1. Lokale folder aanmaken.
+1. Lokale folder koppelen aan folder op SVN-server.
+1. Breng EAP-bestand(packages) onder SVN.
+1. Breng package onder version control.
+1. Check package in of uit.
+1. Meer informatie.
 
-### Voorbereiding: Installeer SVN Tortoise op pc.
+### Voorbereiding: Installeer SVN Tortoise en vraag account aan
 
 Als je **SVN Tortoise** nog niet hebt, installeer deze van
 <https://tortoisesvn.net/>.
 
 > **Note**
 > Installeer ook de _**Command Line Client Tools**_ mee. Dit heb je nodig bij [stap 4: Breng EAP-bestand (packages) onder SVN](#stap-4-breng-eap-bestand-packages-onder-svn). Het is een extra optie en valt niet onder de standaardinstallatie, dus je moet hier zelf alert op zijn. Het is ook mogelijk om dit achteraf te doen. Hoe je dit doet, staat beschreven in stap 4.
+
+Vraag een account aan voor svn.geostandaarden.nl bij de [beheerder](https://stichtinggeonovum.sharepoint.com/:b:/r/sites/FBICT/Gedeelde%20documenten/General/wat%20staat%20waar/Tooling_en_Beheerders.pdf?csf=1&web=1&e=R30VuV)
 
 ### Stap 1: Folder aanmaken op SVN-server
 

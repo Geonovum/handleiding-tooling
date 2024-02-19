@@ -21,7 +21,7 @@ Dit kan je ook in een snelkoppeling zetten als icoon op de desktop.
 
 ### Firefox
 
-In Firefox kan je dat  instellen via de parameters.
+In Firefox kan je dat instellen via de parameters.
 
 In de adresbalk: about:config, dan het risico aanvaarden, en deze parameter veranderen: `security.fileuri.strict_origin_policy = false` (dus op false zetten)
 
@@ -34,11 +34,9 @@ In de adresbalk: about:config, dan het risico aanvaarden, en deze parameter vera
 | [Visual Studio Code](https://code.visualstudio.com/)                                        | Fijne teksteditor die ook goed integreert met Github Desktop                                    |
 | [PowerToys](https://learn.microsoft.com/en-us/windows/powertoys/)                           | Geeft preview van Markdown rechtstreeks in Windows Explorer (en nog heeel veel andere tooltjes) |
 | [Tables Generator](https://www.tablesgenerator.com/markdown_tables)                         | Helpt met het maken van tabellen in MarkDown                                                    |
-| [Markdown Table](https://marketplace.visualstudio.com/items?itemName=TakumiI.markdowntable) | VSCode plugin voor het editen van Markdown tabellen.               |
+| [Markdown Table](https://marketplace.visualstudio.com/items?itemName=TakumiI.markdowntable) | VSCode plugin voor het editen van Markdown tabellen.                                            |
 | [Prettier](https://prettier.io/)                                                            | Een code formatter die automatisch zorgt dat je markdown aan de regels voldoet.                 |
 | [mdlint](https://github.com/Laboratoria/mdlint)                                             | Een style checker form markdown bestanden. Geef meldingen voor verkeerde markdown               |
-| [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)    | VSCode plugin. Klik rechtsonder op "Go Live"  en je ReSpec doc wordt in live browser geopend.   |
+| [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)    | VSCode plugin. Klik rechtsonder op "Go Live" en je ReSpec doc wordt in live browser geopend.    |
 
-
-> **Note**
-> `@Wilko`: we kunnen nog styling regels voor markdown vastleggen. Maximale regellengte = 80 bijvoorbeeld. Dit zou in `.mdlintrc` of de configuratie van Prettier kunnen.
+> **Note** > `@Wilko`: we kunnen nog styling regels voor markdown vastleggen. Maximale regellengte = 80 bijvoorbeeld. Dit zou in `.mdlintrc` of de configuratie van Prettier kunnen.
