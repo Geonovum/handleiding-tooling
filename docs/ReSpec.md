@@ -1,46 +1,70 @@
-# ReSpec
+# Inleiding ReSpec
 
-Binnen Geonovum gebruiken we ReSpec voor het maken van standaarden. ReSpec maakt gebruik van input bestanden om HTML te genereren. Deze inputbestanden (de content) wordt gemaakt in het Markdown formaat. Deze
-Markdown bestanden kunnen worden aangemaakt met text editor. GitHub wordt gebruikt als de 'repository' waarin alle bestanden die bij een standaard horen, beheerd worden.
+Binnen Geonovum gebruiken we ReSpec voor het maken van standaarden. ReSpec maakt
+gebruik van input bestanden om HTML te genereren. Deze inputbestanden (de
+content) wordt gemaakt in het Markdown formaat. Deze Markdown bestanden kunnen
+worden aangemaakt met text editor. GitHub wordt gebruikt als de 'repository'
+waarin alle bestanden die bij een standaard horen, beheerd worden.
 
 Deze handleiding beschrijft hoe je een GitHub Account maakt, hoe je GitHub
 Desktop Client installeert en gebruikt, hoe je een Respec mappenstructuur
 opbouwt, welke bestanden er nodig zijn voor een standaard, en hoe je de
-verschillende versies van een standaard genereert. Ook wordt uitgelegd hoe je
-de Markdown plugin in Microsoft Word installeert en gebruikt.
+verschillende versies van een standaard genereert. Ook wordt uitgelegd hoe je de
+Markdown plugin in Microsoft Word installeert en gebruikt.
 
-ReSpec is een tool van W3C die het schrijven van specifications makkelijker maakt. ReSpec zorgt voor een uniforme styling in het document, onderhoudt referenties en verwijzingen naar andere documentatie, verzorgt de inhoudsopgave, zorgt voor links naar vorige en meest recente versies, en heeft een integratie met Github issues.
+ReSpec is een tool van W3C die het schrijven van specifications makkelijker
+maakt. ReSpec zorgt voor een uniforme styling in het document, onderhoudt
+referenties en verwijzingen naar andere documentatie, verzorgt de inhoudsopgave,
+zorgt voor links naar vorige en meest recente versies, en heeft een integratie
+met Github issues.
 
-Geonovum gebruikt een fork van ReSpec die door Logius beheerd wordt. Dit document bevat een globale instructie over hoe snel aan de start te gaan. Meer documentatie is op andere plaatsen te vinden:
+Geonovum gebruikt een fork van ReSpec die door Logius beheerd wordt. Dit
+document bevat een globale instructie over hoe snel aan de start te gaan. Meer
+documentatie is op andere plaatsen te vinden:
 
-- Er is een gedetailleerde (Engelstalige) [gebruikershandleiding](https://github.com/w3c/respec/wiki/ReSpec-Editor's-Guide) beschikbaar. Er is ook een [ontwikkelaarshandleiding](https://github.com/w3c/respec/wiki/Developers-Guide) te vinden.
-- De Geonovum [wiki over ReSpec](https://github.com/Geonovum/respec/wiki) is een fork van de w3c ReSpec met aanpassingen voor Geonovum. Deze is eigenlijk achterhaald omdat we nu van de Logius Respec gebruik maken.
+-   Er is een gedetailleerde (Engelstalige)
+    [gebruikershandleiding](https://github.com/w3c/respec/wiki/ReSpec-Editor's-Guide)
+    beschikbaar.
+-   Er is ook een
+    [ontwikkelaarshandleiding](https://github.com/w3c/respec/wiki/Developers-Guide)
+    te vinden.
+-   De Geonovum [wiki over ReSpec](https://github.com/Geonovum/respec/wiki) is
+    een fork van de w3c ReSpec met aanpassingen voor Geonovum. Deze is
+    achterhaald omdat we nu van de Logius Respec gebruik maken. (TODO aanpassen)
 
-# Een nieuwe document maken
+## Een nieuwe document maken
 
-ReSpec documenten worden beheerd in een [GitHub](/GitHub) repository. Als je een nieuw ReSpec document wilt maken gebruik dan de [Geonovum ReSpec template](https://github.com/Geonovum/NL-ReSpec-GN-template) als startpunt en druk op de 'Use this template' knop om een nieuw repository aan te maken.
+ReSpec documenten worden beheerd in een [GitHub](/GitHub) repository. Als je een
+nieuw ReSpec document wilt maken gebruik dan de
+[Geonovum ReSpec template](https://github.com/Geonovum/NL-ReSpec-GN-template)
+als startpunt en druk op de 'Use this template' knop om een nieuw repository aan
+te maken.
 
-Zoek in dit repository op de tekst 'TODO' om de plaatsen te vinden waar aanpassen van de template vereist is.
+Zoek in dit repository op de tekst 'TODO' om de plaatsen te vinden waar
+aanpassen van de template vereist is.
 
 ## De URL van een publicatie op docs.geonovum.nl
 
-ReSpec documenten worden gepubliceerd op [docs.geostandaarden.nl](https://docs.geostandaarden.nl). Iedere gepubliceerde versie van een document heeft een eigen URL. Voor de laatst gepubliceerde versie is een aparte URL.
+ReSpec documenten worden gepubliceerd op
+[docs.geostandaarden.nl](https://docs.geostandaarden.nl). Iedere gepubliceerde
+versie van een document heeft een eigen URL. Voor de laatst gepubliceerde versie
+is een aparte URL.
 
 De URL van iedere publicatie wordt als volgt bepaald:
 
-```
+```text
 https://docs.geostandaarden.nl/[pubdomain]/[specStatus]-[spectype]-[shortName]-[publishDate]/
 ```
 
 De laatst gepubliceerde versie is OOK te vinden op:
 
-```
+```text
 https://docs.geostandaarden.nl/[pubdomain]/[shortName]/
 ```
 
 De namen van de variabelen staan verderop uitgelegd.
 
-# De mapindeling van een ReSpec repository
+## De mapindeling van een ReSpec repository
 
 Dit levert een nieuw repository op met de onderstaande mappenstructuur.
 
@@ -61,47 +85,91 @@ Hieronder staat een voorbeeld van zo’n mappenstructuur.
 
 ## Het bestand 'index.html'
 
-Het bestand index.html zorgt ervoor dat het ReSpec document automatisch wordt geladen in de browser. Bij het laden wordt ook automatisch de geonovum-ReSpec-code geladen en uitgevoerd. Deze code zorgt ervoor dat het document zijn standaard layout krijgt.
+Het bestand index.html zorgt ervoor dat het ReSpec document automatisch wordt
+geladen in de browser. Bij het laden wordt ook automatisch de
+geonovum-ReSpec-code geladen en uitgevoerd. Deze code zorgt ervoor dat het
+document zijn standaard layout krijgt.
 
-Het bestand 'index.html' heeft een vaste indeling. Hieronder de structuur uit de template:
+Het bestand 'index.html' heeft een vaste indeling. Hieronder de structuur uit de
+template:
 
-```
+```html
 <!DOCTYPE html>
 <html lang="nl">
+    <head>
+        <meta content="text/html; charset=utf-8" http-equiv="content-type" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+        <script
+            src="https://cdn.jsdelivr.net/gh/digitalbazaar/respec-mermaid@1.0.1/dist/main.js"
+            class="remove"
+        ></script>
+        <script
+            src="https://tools.geostandaarden.nl/respec/config/geonovum-config.js"
+            class="remove"
+        ></script>
+        <script src="js/config.js" class="remove"></script>
+        <script class="remove">
+            respecConfig = { ...organisationConfig, ...respecConfig };
+        </script>
+        <script>
+            document.title = respecConfig.title;
+        </script>
+        <title>TODO: Vul hier de titel in</title>
+        <link
+            rel="shortcut icon"
+            type="image/x-icon"
+            href="https://tools.geostandaarden.nl/respec/style/logos/Geonovum.ico"
+        />
+        <script
+            src="https://gitdocumentatie.logius.nl/publicatie/respec/builds/respec-nlgov.js"
+            class="remove"
+            async
+        ></script>
+    </head>
 
-<head>
-  <meta content="text/html; charset=utf-8" http-equiv="content-type">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <script src="https://cdn.jsdelivr.net/gh/digitalbazaar/respec-mermaid@1.0.1/dist/main.js" class="remove"></script>
-  <script src="https://tools.geostandaarden.nl/respec/config/geonovum-config.js" class="remove"></script>
-  <script src="js/config.js" class="remove"></script>
-  <script class="remove"> respecConfig = {...organisationConfig, ...respecConfig}</script>
-  <script>document.title = respecConfig.title</script>
-  <title>TODO: Vul hier de titel in</title>
-  <link rel="shortcut icon" type="image/x-icon" href="https://tools.geostandaarden.nl/respec/style/logos/Geonovum.ico" />
-  <script src="https://gitdocumentatie.logius.nl/publicatie/respec/builds/respec-nlgov.js" class="remove" async></script>
-</head>
+    <body>
+        <section
+            id="abstract"
+            data-include-format="markdown"
+            data-include="abstract.md"
+        ></section>
+        <section id="sotd"></section>
+        <!-- Wordt automatisch gevuld -->
 
-<body>
-  <section id="abstract" data-include-format="markdown" data-include="abstract.md"></section>
-  <section id="sotd"></section><!-- Wordt automatisch gevuld -->
+        <!-- TODO: voeg hier je eigen hoofdstukken toe -->
+        <section
+            data-include-format="markdown"
+            data-include="ch01.md"
+            class="informative"
+        ></section>
+        <section
+            data-include-format="markdown"
+            data-include="ch02.md"
+        ></section>
+        <section
+            data-include-format="markdown"
+            data-include="mermaid.md"
+        ></section>
 
-  <!-- TODO: voeg hier je eigen hoofdstukken toe -->
-  <section data-include-format="markdown" data-include="ch01.md" class="informative"></section>
-  <section data-include-format="markdown" data-include="ch02.md"></section>
-  <section data-include-format="markdown" data-include="mermaid.md"></section>
-
-  <section id='conformance'></section>
-  <section id='tof'></section>
-  <section id="index"></section>
-</body>
-
+        <section id="conformance"></section>
+        <section id="tof"></section>
+        <section id="index"></section>
+    </body>
 </html>
 ```
 
-In de HTML-header wordt de js-ReSpec bibliotheek geladen. Het enige dat in de header mag worden aangepast is de title (tussen \<title\> en \</title\>. Andere aanpassingen die nodig zijn in de header mogen alleen worden gedaan in overleg met de ReSpec beheerders. Een overzicht van de ReSpec beheerders staat in Hoofdstuk 6
+In de HTML-header wordt de js-ReSpec bibliotheek geladen. Het enige dat in de
+header mag worden aangepast is de title (tussen \<title\> en \</title\>. Andere
+aanpassingen die nodig zijn in de header mogen alleen worden gedaan in overleg
+met de ReSpec beheerders. Een overzicht van de ReSpec beheerders staat in
+Hoofdstuk 6
 
-In de HTML-Body geldt _vrijheid in gebondenheid_ De `<div>` en/of `<section>` regels mogen worden gekopieerd en toegevoegd. Wel belangrijk om de structuur over te nemen, dus als volgt:
+In de HTML-Body geldt _vrijheid in gebondenheid_ De `<div>` en/of `<section>`
+regels mogen worden gekopieerd en toegevoegd. Wel belangrijk om de structuur
+over te nemen, dus als volgt:
 
 ```
 <div id='H00' data-format='Markdown' data-include="ToCoVo.md"></div>
@@ -109,55 +177,101 @@ In de HTML-Body geldt _vrijheid in gebondenheid_ De `<div>` en/of `<section>` re
 <section id='H01' data-format='Markdown' data-include="H1-Inleiding.md"\>\<h2\>Inleiding\</h2\>\</section\>
 ```
 
-Een `<div>` is een sectie plus bijbehorend document, dat niet in de inhoudsopgave terechtkomt. Deze gebruik je bijvoorbeeld voor een Toelichting, een Colofon of een Voorwoord.
+Een `<div>` is een sectie plus bijbehorend document, dat niet in de
+inhoudsopgave terechtkomt. Deze gebruik je bijvoorbeeld voor een Toelichting,
+een Colofon of een Voorwoord.
 
-Een `<section>` komt wél in de inhoudsopgave terecht. Deze heeft daarom behalve de data-include van het document, ook (verplicht!) een `<h2>` tag. De tekst tussen `<h2>` en `</h2>` komt in de inhoudsopgave te staan.
+Een `<section>` komt wél in de inhoudsopgave terecht. Deze heeft daarom behalve
+de data-include van het document, ook (verplicht!) een `<h2>` tag. De tekst
+tussen `<h2>` en `</h2>` komt in de inhoudsopgave te staan.
 
 ## Het bestand 'config.js'
 
-In config.js wordt een stuurvariabele voor ReSpec gevuld. De waarden in deze variabele worden door ReSpec gebruikt om de layout te bepalen, en bevatten een aantal document-eigenschappen.
+In config.js wordt een stuurvariabele voor ReSpec gevuld. De waarden in deze
+variabele worden door ReSpec gebruikt om de layout te bepalen, en bevatten een
+aantal document-eigenschappen.
 
 ### SpecStatus
 
-De SpecStatus in de configuratie geeft de keuze uit 4 waarden, deze waarden zijn vastgesteld, en mogen niet zomaar uitgebreid of aangepast worden. Elke status hoort bij een formele fase van een ReSpec document. Zie ook de Geonovum ReSpec [wiki](https://github.com/Geonovum/respec/wiki).
+De SpecStatus in de configuratie geeft de keuze uit 4 waarden, deze waarden zijn
+vastgesteld, en mogen niet zomaar uitgebreid of aangepast worden. Elke status
+hoort bij een formele fase van een ReSpec document. Zie ook de Geonovum ReSpec
+[wiki](https://github.com/Geonovum/respec/wiki).
 
-- _GN-WV, Werkversie_: Dit is de versie van het document waaraan wordt gewerkt. Deze versie is continu 'under-construction'.
-- _GN-CV, Consultatieversie_: Dit is een 'snapshot' van de versie die 'in consultatie' wordt gezet. Aan deze versie wordt niks meer gedaan totdat de consultatie is afgelopen. Daarna worden alle op en aanmerkingen uit de consultatieronde verwerkt.
-- _GN-VV, Vaststellingsversie_: Dit is een 'snapshot' van de versie na het verwerken van de op en aanmerkingen uit de consultatieronde is ontstaan. Deze versie wordt aangeboden aan de programma-raad van Geonovum, om te wordern 'vastgesteld'.
-- _GN-DEF, Definitieve versie_: Dit is de definitieve versie van het document, zoals vastgesteld door de programma-raad. Van deze versie wordt opnieuw een 'snapshot' gemaakt in ReSpec. Het resultaat van die snapshot wordt op <a href='http://docs.geonovum.nl' target='_blank'>http://docs.geonovum.nl</a> neergezet.
+-   _GN-WV, Werkversie_: Dit is de versie van het document waaraan wordt
+    gewerkt. Deze versie is continu 'under-construction'.
+-   _GN-CV, Consultatieversie_: Dit is een 'snapshot' van de versie die 'in
+    consultatie' wordt gezet. Aan deze versie wordt niks meer gedaan totdat de
+    consultatie is afgelopen. Daarna worden alle op en aanmerkingen uit de
+    consultatieronde verwerkt.
+-   _GN-VV, Vaststellingsversie_: Dit is een 'snapshot' van de versie na het
+    verwerken van de op en aanmerkingen uit de consultatieronde is ontstaan.
+    Deze versie wordt aangeboden aan de programma-raad van Geonovum, om te
+    wordern 'vastgesteld'.
+-   _GN-DEF, Definitieve versie_: Dit is de definitieve versie van het document,
+    zoals vastgesteld door de programma-raad. Van deze versie wordt opnieuw een
+    'snapshot' gemaakt in ReSpec. Het resultaat van die snapshot wordt op
+    <a href='http://docs.geonovum.nl' target='_blank'>http://docs.geonovum.nl</a>
+    neergezet.
 
 ### SpecType
 
-Het SpecType in de configuratie is een vaste lijst met waarden, deze waarden zijn vastgesteld, en mogen niet zonder overleg met de Technische ReSpec beheerders uitgebreid of aangepast worden.
+Het SpecType in de configuratie is een vaste lijst met waarden, deze waarden
+zijn vastgesteld, en mogen niet zonder overleg met de Technische ReSpec
+beheerders uitgebreid of aangepast worden.
 
-Onderstaande beschrijvingen komen uit het generiek beheerplan<span class='noot'>[5]<span class='noottekst'> Zie: https://www.geonovum.nl/uploads/documents/Geonovum%20GENERIEK%20Beheerplan%20geo-standaarden%20v1.1.pdf <br/></span></span>.
+Onderstaande beschrijvingen komen uit het generiek
+beheerplan<span class='noot'>[5]<span class='noottekst'> Zie:
+https://www.geonovum.nl/uploads/documents/Geonovum%20GENERIEK%20Beheerplan%20geo-standaarden%20v1.1.pdf
+<br/></span></span>.
 
-- **NO** Norm: Een norm is bij een officieel standaardisatie instituut ondergebracht en bevat bindende afspraken.
-  Naast het gebruik van normen is NEN 3610 de enige norm waar Geonovum een inhoudelijke verantwoordelijkheid heeft. Het formele beheer en beslissingen worden genomen in de NEN normcommissie 351 240 waar Geonovum de voorzitter van is.
+- **NO** Norm: Een norm is bij een officieel standaardisatie instituut
+    ondergebracht en bevat bindende afspraken. Naast het gebruik van normen is
+    NEN 3610 de enige norm waar Geonovum een inhoudelijke verantwoordelijkheid
+    heeft. Het formele beheer en beslissingen worden genomen in de NEN
+    normcommissie 351 240 waar Geonovum de voorzitter van is.
 
 - **ST** Standaard: Een document met (bindende) afspraken.
 
-- **IM** Informatiemodel: Een standaard waarbij door de term informatiemodel te hanteren wordt aangegeven dat het een abstractie (het model) vormt van de werkelijkheid zoals beschreven binnen een bepaalde sector/domein. Informatiemodellen zijn een semantische invulling van normen voor sectoren zoals ruimtelijke ordening, kabels en leidingen, water, etc..
+- **IM** Informatiemodel: Een standaard waarbij door de term informatiemodel
+    te hanteren wordt aangegeven dat het een abstractie (het model) vormt van de
+    werkelijkheid zoals beschreven binnen een bepaalde sector/domein.
+    Informatiemodellen zijn een semantische invulling van normen voor sectoren
+    zoals ruimtelijke ordening, kabels en leidingen, water, etc..
 
-- **PR** Praktijkrichtlijn: Praktijkrichtlijnen zijn producten die informatie geven, vaak met een technisch karakter, die nodig is voor het toepassen van standaarden. Een praktijkrichtlijn hoort altijd bij een standaard/norm.
+- **PR** Praktijkrichtlijn: Praktijkrichtlijnen zijn producten die informatie
+    geven, vaak met een technisch karakter, die nodig is voor het toepassen van
+    standaarden. Een praktijkrichtlijn hoort altijd bij een standaard/norm.
 
-- **HR** Handreiking: Op zichzelf staande documentatie dat als doel heeft een hulpmiddel te zijn, niet verplichtend maar ondersteunend.
+- **HR** Handreiking: Op zichzelf staande documentatie dat als doel heeft een
+    hulpmiddel te zijn, niet verplichtend maar ondersteunend.
 
-- **WA** Werkafspraak: Legt uit hoe wetgeving moet worden toegepast bij onduidelijkheden, discrepanties of fouten in de standaarden.
+- **WA** Werkafspraak: Legt uit hoe wetgeving moet worden toegepast bij
+    onduidelijkheden, discrepanties of fouten in de standaarden.
 
-- **BD** Beheerdocumentatie: Documentatie met betrekking tot het beheerproces van de standaard. Deze documentatie betreft niet een standaard of onderdeel daarvan, zoals een handreiking of werkafspraak.
+- **BD** Beheerdocumentatie: Documentatie met betrekking tot het beheerproces
+    van de standaard. Deze documentatie betreft niet een standaard of onderdeel
+    daarvan, zoals een handreiking of werkafspraak.
 
-- **AL** Algemeen: Op zichzelf staande algemene documentatie over standaarden. De documentatie betreft niet een specifieke standaard of onderdeel daarvan, het is ook geen beheerdocumentatie van een specifieke standaard.
+- **AL** Algemeen: Op zichzelf staande algemene documentatie over standaarden.
+    De documentatie betreft niet een specifieke standaard of onderdeel daarvan,
+    het is ook geen beheerdocumentatie van een specifieke standaard.
 
 ## pubDomain
 
-pubDomain bepaalt bij publicatie een deel van de URL waarop het document wordt gepubliceerd. Het zorgt voor een groepering van de documenten op docs.geostandaarden.nl Omdat je de URL van gepubliceerde documenten niet wilt veranderen is moet je hier goed over nadenken en alleen in overleg nieuwe toevoegen.
+pubDomain bepaalt bij publicatie een deel van de URL waarop het document wordt
+gepubliceerd. Het zorgt voor een groepering van de documenten op
+docs.geostandaarden.nl Omdat je de URL van gepubliceerde documenten niet wilt
+veranderen is moet je hier goed over nadenken en alleen in overleg nieuwe
+toevoegen.
 
-De actuele lijst van pubDomains staat in de tabel hieronder. De herkomst van deze lijst is als volgt:
+De actuele lijst van pubDomains staat in de tabel hieronder. De herkomst van
+deze lijst is als volgt:
 
-1.  Lijst op github : [respec-utils](https://github.com/Geonovum/respec-utils/blob/master/src/autodeploy/config/pubDomainList.json).
-2.  docs.geostandaarden.nl.
-3.  register.geostandaarden.nl.
+1. Lijst op github :
+   [respec-utils](https://github.com/Geonovum/respec-utils/blob/master/src/autodeploy/config/pubDomainList.json).
+2. docs.geostandaarden.nl.
+3. register.geostandaarden.nl.
 
 Naamgevinsregels voor pubDomain:
 
@@ -211,9 +325,15 @@ Naamgevinsregels voor pubDomain:
 
 ## LocalBiblio
 
-In de localBiblio variabele worden Referenties naar andere documenten gezet. Voordat je hier citaten toevoegt, loont het de moeite om eerst in de [https://www.specref.org/](SpecRef) van ReSpec zelf te kijken. Pas als je een verwijzing niet vindt in SpecRef voeg je hem hier toe!
+In de localBiblio variabele worden Referenties naar andere documenten gezet.
+Voordat je hier citaten toevoegt, loont het de moeite om eerst in de
+[https://www.specref.org/](SpecRef) van ReSpec zelf te kijken. Pas als je een
+verwijzing niet vindt in SpecRef voeg je hem hier toe!
 
-Verwijzen naar een bibliografieelement gebeurt als volgt `[[ID]]`. De dubbele haakjes zorgen ervoor dat er blokhaken om de verwijzing staan in de tekst. Je kunt ook aangeven dat een verwijzing normatief is door er een uitroepteken voor te zetten `[[!ID]]`
+Verwijzen naar een bibliografieelement gebeurt als volgt `[[ID]]`. De dubbele
+haakjes zorgen ervoor dat er blokhaken om de verwijzing staan in de tekst. Je
+kunt ook aangeven dat een verwijzing normatief is door er een uitroepteken voor
+te zetten `[[!ID]]`
 
 ## Voorbeeld config.js
 
@@ -278,21 +398,34 @@ let respecConfig = {
 };
 ```
 
-De file config.js is een stukje javascript (JSON) code, het bevat alle mogelijke waarden voor de verschillende versies die wij hanteren bij Geonovum. In de file zelf staat aangegeven welke waarden verplicht zijn, en uit welke waarden te kiezen is. In bovenstaand voorbeeld gaat het om een 'Werkversie van een standaard'.
+De file config.js is een stukje javascript (JSON) code, het bevat alle mogelijke
+waarden voor de verschillende versies die wij hanteren bij Geonovum. In de file
+zelf staat aangegeven welke waarden verplicht zijn, en uit welke waarden te
+kiezen is. In bovenstaand voorbeeld gaat het om een 'Werkversie van een
+standaard'.
 
 ### Content: bestanden '\*.md'
 
-De 'echte' content wordt gemaakt in het formaat 'Markdown'. Er is een aantal editors beschikbaar die dat formaat ondersteunen. Zie hiervoor <a href='#_Ref17112190'>Hoofdstuk 3<a></a>. Het is handig om voor elk hoofdstuk een aparte Markdown file te maken, want dan blijven de bestanden beperkt in grootte, en zijn er gemakkelijker werkafspraken te maken over wie wanneer in welke file aan het editen is.
+De 'echte' content wordt gemaakt in het formaat 'Markdown'. Er is een aantal
+editors beschikbaar die dat formaat ondersteunen. Zie hiervoor
+<a href='#_Ref17112190'>Hoofdstuk 3<a></a>. Het is handig om voor elk hoofdstuk
+een aparte Markdown file te maken, want dan blijven de bestanden beperkt in
+grootte, en zijn er gemakkelijker werkafspraken te maken over wie wanneer in
+welke file aan het editen is.
 
 ### Content: Afbeeldingen '\*.png'
 
-Afbeeldingen worden als '.png' of '.svg' bestand neergezet in de map 'media'. In je Markdown document neem je gewoon een plaatje op zoals je in Word gewend bent. Writage en ReSpec zorgen ervoor dat de plaatjes worden getoond.
+Afbeeldingen worden als '.png' of '.svg' bestand neergezet in de map 'media'. In
+je Markdown document neem je gewoon een plaatje op zoals je in Word gewend bent.
+Writage en ReSpec zorgen ervoor dat de plaatjes worden getoond.
 
 ## ReSpec Frontend
 
 ### De knop 'ReSpec'
 
-De knop 'ReSpec' rechtsboven in de frontend van ReSpec, bevat een aantal handige functies. Als je klikt op de knop, verschijnt het vervolgscherm met een viertal functies.
+De knop 'ReSpec' rechtsboven in de frontend van ReSpec, bevat een aantal handige
+functies. Als je klikt op de knop, verschijnt het vervolgscherm met een viertal
+functies.
 
 Elk van de functies wordt hieronder uitgelegd.
 
@@ -304,8 +437,7 @@ Elk van de functies wordt hieronder uitgelegd.
 
 ### <a name='_Ref17110974'></a>Doorzoek SpecRef
 
-![media/image27.png](media/image27.png)
-![media/image28.png](media/image28.png)
+![media/image27.png](media/image27.png) ![media/image28.png](media/image28.png)
 
 De gevonden zoekresultaten kunnen worden overgenomen in het ReSpec document.
 
@@ -313,17 +445,23 @@ De gevonden zoekresultaten kunnen worden overgenomen in het ReSpec document.
 
 Zie: [definitielijst maken](ReSpec-definitielijst-maken.md)
 
-## Hogere ReSpec
+## HTML ingebed in ReSpec
 
-Omdat wij ervoor hebben gekozen om documenten te schrijven in Markdown, gebruiken wij niet alle ReSpec functionaliteit. In dit hoofdstuk worden de speciale ReSpec functies beschreven die als HTML code in het Markdown document kunnen wordnen opgenomen, of die in de door respec gegenereerde HTML file kunnen worden neergezet. Het gebruik van deze functionaliteit vereist dus wel HTML kennis.
+Omdat wij ervoor hebben gekozen om documenten te schrijven in Markdown,
+gebruiken wij niet alle ReSpec functionaliteit. In dit hoofdstuk worden de
+speciale ReSpec functies beschreven die als HTML code in het Markdown document
+kunnen wordnen opgenomen, of die in de door respec gegenereerde HTML file kunnen
+worden neergezet. Het gebruik van deze functionaliteit vereist dus wel HTML
+kennis.
 
-### Afbeeldingen
+## HTML voor Afbeeldingen
 
-Een lijst van afbeeldingen kan door ReSpec automatisch worden gegenereerd, maar dan moet er wel aan een aantal ReSpec specifieke voorwaarden worden voldaan:
+Een lijst van afbeeldingen kan door ReSpec automatisch worden gegenereerd, maar
+dan moet er wel aan een aantal ReSpec specifieke voorwaarden worden voldaan:
 
 In Index.html komt ergens te staan:
 
-```
+```html
 <figure id="flowchart">
    <img src="flowchart.svg" alt="">
    <figcaption>The water flows from bucket A to bucket B.</figcaption>
@@ -332,29 +470,35 @@ In Index.html komt ergens te staan:
 
 In de documenten worden de afbeeldingen op de volgende manier neergezet:
 
-```
+```html
 <figure id="flowchart">
    <img src="flowchart.svg" alt="">
    <figcaption>The water flows from bucket A to bucket B.</figcaption>
 </figure>
 ```
 
-NB: `<figure>` inclusief uniek ID en een ge-embedde `<figcaption>` zijn verplicht!
+NB: `<figure>` inclusief uniek ID en een ge-embedde `<figcaption>` zijn
+verplicht!
 
 Eventuele referenties naar plaatjes doe je op e volgende manier:
 
-```
+```html
 <p>The flowchart shown in <a href="#flowchart"></a> is quite impressive.</p>
 </section>
 ```
 
-### Referentie naar GitHub issues
+## Referentie naar GitHub issues
 
-ReSpec ondersteunt ook een koppeling naar issues die zijn gemeld op GitHub. Jek kan referenties opnemen naar individuele issues. Ook is het mogelijk om een lijst met alle issues op te nemen in je document.
+ReSpec ondersteunt ook een koppeling naar issues die zijn gemeld op GitHub. Jek
+kan referenties opnemen naar individuele issues. Ook is het mogelijk om een
+lijst met alle issues op te nemen in je document.
 
-Om GitHub issues op te nemen moet je in 'config.js' een referentie opnemen naar de GitHub repository.
+Om GitHub issues op te nemen moet je in 'config.js' een referentie opnemen naar
+de GitHub repository.
 
-<span style='color: #24292E;'github</span><span style='color: #D73A49;':</span> <span style='color: #032F62;'"</span><span style='color: #032F62;'https://www.github.com/Geonovum/MIM-Werkomgeving/</span><span style='color: #032F62;'"</span><span style='color: #24292E;',</span>
+```
+issueBase: "https://github.com/Geonovum/MIM-Werkomgeving/issues/"
+```
 
 Een referentie naar een issue neem je als volgt op:
 
@@ -373,17 +517,143 @@ Een lijst met issues kan je toevoegen met de volgende HTML code:
 
 ```
 
-### Foutmeldingen en waarschuwingen
+## Foutmeldingen en waarschuwingen
 
-![media/image29.png](media/image29.png)
-![media/image30.png](media/image30.png)
+![media/image29.png](media/image29.png) ![media/image30.png](media/image30.png)
 
-In dit geval is er een tikfout gemaakt bij de naam van de Markdownfile die ge-include wordt. Het moet natuurlijk `H2-Testcases.md` zijn.
+In dit geval is er een tikfout gemaakt bij de naam van de Markdownfile die
+ge-include wordt. Het moet natuurlijk `H2-Testcases.md` zijn.
 
 ![media/image31.png](media/image31.png)
 
 Een voorbeeld van een waarschuwing. Klikken hierop geeft je je de waarschuwing.
 
-In het onderstaande voorbeeld meldt ReSpec dat er een `<h2>` header ontbreekt in het Markdown document.
+In het onderstaande voorbeeld meldt ReSpec dat er een `<h2>` header ontbreekt in
+het Markdown document.
 
 ![media/image32.png](media/image32.png)
+
+# Publiceren in ReSpec
+
+In dit hoofdstuk staan checklists die je kan gebruiken als je vanuit GitHub en
+ReSpec “Versies” gaat aanmaken. Bijvoorbeeld hoe maak je een nieuwe GitHub
+repository aan, of hoe maak je vanuit een werkversie een consultatieversie aan,
+
+## Controles voor publicatie
+
+Controleer de volgende onderwerpen voor iedere publicatie:
+
+-   Controleer op WCAG regels. Bij het pushen van een ReSpec document naar
+    GitHub wordt automatisch een WCAG rapport geschreven. Dit is te vinden onder
+    'Actions'. Kies hier de commit die je gedaan hebt en je ziet daar
+    'Check/WCAG').
+-   Controleer op Broken links. Bij het pushen van een ReSpec document naar
+    GitHub wordt automatisch op broken links gechecked. Dit is te vinden onder
+    'Actions'. Kies hier de commit die je gedaan hebt en je ziet daar
+    'Check/Links').
+-   Je kunt oook het HTML controleren: maak een snapshot aan en biedt het aan
+    aan de [W3C validator](https://validator.w3.org)
+
+## Consultatie versie (CV) maken
+
+1. Edit en controleer config.js - configureer alles goed voor een
+   consultatieversie
+    - `specStatus`:`"GN-CV"`
+    - `publishDate`: moet ingevuld zijn met de datum van publicatie van de
+      consultatieversie. `"jjjj-mm-dd"`,
+    - `Shortname`: moet ingevuld zijn met korte naam voor het document. Dit
+      wordt onderdeel van de URL. Moet uniek zijn binnen pubdomain (afgezien van
+      versies).
+        - Als er al eerder een versie gepubliceerd is (stabiele versie, dus
+          afgezien van de werkversie in github), kan Respec bovenin een document
+          de navigatie naar vorige versie goed genereren. Daarvoor moet je ook
+          invullen:
+        - `Previousmaturity`: wat de status toen was.
+        - `Previousmaturity`: wat de status toen was.
+1. Maak een snapshot (met de knop “Bewaar Snapshot” vanuit Respec)
+1. Kies “HTML” en noem dit bestand “snapshot.html”
+1. Commit het en push het naar dezelfde folder als waar `index.html` staat in je
+   Github-repository
+
+### Consultatieversie maken met behulp van webhook
+
+[Klik hier](/Publiceren/) voor een beschrijving over hoe je een webhook eenmalig
+configureert voor een repository. over het toepassen van de webhook.
+
+1. Maak een release tag conform de naamgevingsconventie:
+   `\{specStatus\}-\{specType\}-\{shortName\}-\{publishDate\}`
+1. Het script kopieert nu automatisch (NB: dit moet wel eenmalig geconfigureerd
+   zijn als ‘webhook’ in de github repository!) het `snapshot.html` en de
+   bijbehorende afbeeldingen naar
+   [docs.geostandaarden.nl]<http://docs.geostandaarden.nl>).
+1. Na succesvolle publicatie:
+    - zet de `specStatus` in `config.js` terug op `"GN-WV"`
+    - Vul `previousMaturity` in met `"GN-CV"`
+    - Vul `previousPublishDate` in met de datum van de zojuist gepubliceerde
+      consultatieversie
+
+### Consultatieverise met behulp van webhook
+
+> **Note**: uitwerken
+
+## Vaststellingsversie (VV) maken
+
+1. Edit en controleer config.js - configureer alles goed voor een
+   vaststellingsversie
+    - specStatus: "GN-VV"
+    - publishDate: moet ingevuld zijn met de datum van publicatie van de
+      consultatieversie. "jjjj-mm-dd",
+    - Shortname: moet ingevuld zijn met korte naam voor het document. Dit wordt
+      onderdeel van de URL. Moet uniek zijn binnen pubdomain (afgezien van
+      versies).
+        - Als er al eerder een versie gepubliceerd is (stabiele versie, dus
+          afgezien van de werkversie in github), kan Respec bovenin een document
+          de navigatie naar vorige versie goed genereren. Daarvoor moet je ook
+          invullen:
+        - Previousmaturity: wat de status toen was.
+        - Previousmaturity: wat de status toen was.
+2. Maak een snapshot (met de knop “Bewaar Snapshot” vanuit Respec)
+3. Kies “HTML” en noem dit bestand “snapshot.html”
+4. Commit het en push het naar dezelfde folder als waar index.html staat in je
+   Github repository
+5. Maak een release tag conform de naamgevingsconventie:
+   \{specStatus\}-\{specType\}-\{shortName\}-\{publishDate\}
+6. Het script kopieert nu automatisch (NB: dit moet wel eenmalig geconfigureerd
+   zijn als ‘webhook’ in de github repository!) het snapshot.html en de
+   bijbehorende afbeeldingen naar <http://docs.geonovum.nl>
+7. Na succesvolle publicatie:
+    - zet de specStatus in config.js terug op GN-WV
+    - Vul previousMaturity in met GN-CV
+    - Vul previousPublishDate in met de datum van de zojuist gepubliceerde
+      consultatieversie
+
+## Definitieve versie (DEF) maken
+
+1. Edit en controleer config.js - configureer alles goed voor een definitieve
+   versie
+    - specStatus: "GN-DEF",
+    - publishDate: moet ingevuld zijn met de datum van publicatie van de
+      definitieve versie. "jjjj-mm-dd",
+    - Shortname: moet ingevuld zijn met korte naam voor het document. Dit wordt
+      onderdeel van de URL. Moet uniek zijn binnen pubdomain (afgezien van
+      versies).
+    - Als er al eerder een versie gepubliceerd is (stabiele versie, dus afgezien
+      van de werkversie in github), kan Respec bovenin een document de navigatie
+      naar vorige versie goed genereren. Daarvoor moet je ook invullen:
+        - Previousmaturity: wat de status toen was.
+        - previousPublishDate: vorige publicatiedatum (jjjj-mm-dd)
+2. Maak een snapshot (met de knop “Bewaar Snapshot” vanuit Respec)
+3. Kies “HTML” en noem dit bestand “snapshot.html”
+4. Commit het en push het naar dezelfde folder als waar index.html staat in je
+   Github repository
+5. Maak een release tag conform de naamgevingsconventie:
+   {specStatus}-{specType}-{shortName}-{publishDate}
+6. Het script kopieert nu automatisch (NB: dit moet wel eenmalig geconfigureerd
+   zijn als ‘webhook’ in de github repository!) het snapshot.html en de
+   bijbehorende afbeeldingen naar <http://docs.geostandaarden.nl> Hoe dit werkt
+   is beschreven in: <https://github.com/Geonovum/technisch-register-2019>
+7. Na succesvolle publicatie:
+    - zet de specStatus in config.js terug op GN-WV
+    - Vul previousMaturity in met GN-DEF
+    - Vul previousPublishDate in met de datum van de zojuist gepubliceerde
+      definitieve versie

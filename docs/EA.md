@@ -7,24 +7,19 @@ Instructie voor het gebruik van Enterprise Architect binnen Geonovum:
 
 ## Installatie
 
-- Op de website is een proefversie van [Enterprise Architect](https://www.sparxsystems.eu/) te downloaden.
-- Neem voor een licentie contact op met de [beheerder](https://stichtinggeonovum.sharepoint.com/:b:/r/sites/FBICT/Gedeelde%20documenten/General/wat%20staat%20waar/Tooling_en_Beheerders.pdf?csf=1&web=1&e=aEcKjl)
-
-
+- Op de website is een proefversie van
+  [Enterprise Architect](https://www.sparxsystems.eu/) te downloaden.
+- Neem voor een licentie contact op met de
+  [beheerder](https://stichtinggeonovum.sharepoint.com/:b:/r/sites/FBICT/Gedeelde%20documenten/General/wat%20staat%20waar/Tooling_en_Beheerders.pdf?csf=1&web=1&e=aEcKjl)
 
 ## De MIM toolbox
 
-Externe links: 
+Importeer de MIM toolbox:
+
+Zie: [MIM toolbox importeren](MIM-toolbox-importeren.md)
+
+Externe links:
+
 - [Handleiding gebruik MIM-toolbox](https://github.com/Geonovum/MIM-Werkomgeving/blob/master/UML%20profieltooling/werkversie1.1.1/README.md)
 - [Handleiding genereren MIM-profiel](https://github.com/Geonovum/MIM-Werkomgeving/tree/master/UML%20profieltooling#readme)
 - [Handleiding genereren Extensie MIM-toolbox](https://github.com/Geonovum/MIM-Werkomgeving/blob/master/UML%20profieltooling/how_to_extensie_op_toolbox.md)
-
-
-Stappen:
-- Download de MIM Toolbox. Deze is te vinden op: [github](https://github.com/Geonovum/MIM/tree/master/informatiemodel)
-- Start Enterprise Architect en open de project browser (Start→Design→Browser)
-- Open het resources tabje en klik met de rechtermuis op ‘MDG Technologies’.
-- Kies ‘Import Technology’  en importeer de MIM Toolbox.
-- Deze is nu zichtbaar onder ‘Model Technologies’:
-
-![MIM toolbox](media/MIM-toolbox.png)

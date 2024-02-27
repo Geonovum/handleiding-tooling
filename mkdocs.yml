@@ -19,9 +19,8 @@ nav:
         - Toolbox genereren extensie: MIM-toolbox-genereren-extensie.md
     - ReSpec:
         - Manual: ReSpec.md
-        - Checklists: ReSpec-Checklists.md
         - Code toepassen: ReSpec-code-toepassen.md
-        - 'Definitielijst maken': ReSpec-definitielijst-maken.md
+        - Definitielijst maken: ReSpec-definitielijst-maken.md
     - EA:
         - Overzicht: EA.md
         - standaarddatatypen: EA-toepassing-standaarddatatypen.md

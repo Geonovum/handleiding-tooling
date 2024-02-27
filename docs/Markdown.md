@@ -1,20 +1,32 @@
 # Markdown
 
-Voor het extern publiceren van documenten en standaarden gebruiken we [ReSpec](../ReSpec). Deze tool ondersteunt naast HTML en Javascript ook Markdown
+Voor het extern publiceren van documenten en standaarden gebruiken we
+[ReSpec](../ReSpec). Deze tool ondersteunt naast HTML en Javascript ook Markdown
 
-[Markdown](https://nl.wikipedia.org/wiki/Markdown) is een lichtgewicht opmaaktaal op basis van platte tekst die zodanig ontworpen is dat het gemakkelijk valt te converteren naar HTML en andere. Markdown wordt vaak gebruikt voor de opmaak van project documentatie (README-bestanden), eenvoudige CMS-systemen en berichten in online fora. Je kunt Markdown in iedere simpele teksteditor bewerken.
+[Markdown](https://nl.wikipedia.org/wiki/Markdown) is een lichtgewicht
+opmaaktaal op basis van platte tekst die zodanig ontworpen is dat het
+gemakkelijk valt te converteren naar HTML en andere. Markdown wordt vaak
+gebruikt voor de opmaak van project documentatie (README-bestanden), eenvoudige
+CMS-systemen en berichten in online fora. Je kunt Markdown in iedere simpele
+teksteditor bewerken.
 
-Het ontwerpdoel van de taal is leesbaarheid. Teksten geschreven met behulp van Markdown worden geacht al leesbaar te zijn voordat opmaak is toegepast op de tekst. Opmaakinstructies en tags zijn dan ook niet te vinden in pure Markdown.
+Het ontwerpdoel van de taal is leesbaarheid. Teksten geschreven met behulp van
+Markdown worden geacht al leesbaar te zijn voordat opmaak is toegepast op de
+tekst. Opmaakinstructies en tags zijn dan ook niet te vinden in pure Markdown.
 
 ## Het viewen van Markdown in je broswer
 
-Sommige browsers weigeren het openen van lokale bestanden, of negeren links naar locale bestanden. Dit kun je in de configuratie aanpassen:
+Sommige browsers weigeren het openen van lokale bestanden, of negeren links naar
+locale bestanden. Dit kun je in de configuratie aanpassen:
 
 ### Chrome
 
 Je moet twee dingen instellen:
 
-- Local access: Toestaan dat je local files toont in Chrome, dat is een opstart argument. Kan je doen vanuit een cmd-prompt `%localappdata%\google\chrome\application\chrome --allow-file-access-from-files
+- Local access: Toestaan dat je local files toont in Chrome, dat is een opstart
+  argument. Kan je doen vanuit een cmd-prompt
+  `%localappdata%\google\chrome\application\chrome
+  --allow-file-access-from-files
 - CORS Toestaan : zelfde soort oplossing: `--disable-web-security`
 
 Dit kan je ook in een snelkoppeling zetten als icoon op de desktop.
@@ -23,7 +35,9 @@ Dit kan je ook in een snelkoppeling zetten als icoon op de desktop.
 
 In Firefox kan je dat instellen via de parameters.
 
-In de adresbalk: about:config, dan het risico aanvaarden, en deze parameter veranderen: `security.fileuri.strict_origin_policy = false` (dus op false zetten)
+In de adresbalk: about:config, dan het risico aanvaarden, en deze parameter
+veranderen: `security.fileuri.strict_origin_policy = false` (dus op false
+zetten)
 
 ## Tools voor Markdown
 
@@ -39,4 +53,19 @@ In de adresbalk: about:config, dan het risico aanvaarden, en deze parameter vera
 | [mdlint](https://github.com/Laboratoria/mdlint)                                             | Een style checker form markdown bestanden. Geef meldingen voor verkeerde markdown               |
 | [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)    | VSCode plugin. Klik rechtsonder op "Go Live" en je ReSpec doc wordt in live browser geopend.    |
 
-> **Note** > `@Wilko`: we kunnen nog styling regels voor markdown vastleggen. Maximale regellengte = 80 bijvoorbeeld. Dit zou in `.mdlintrc` of de configuratie van Prettier kunnen.
+> **Note** `@Wilko`: we kunnen nog styling regels voor markdown vastleggen.
+> Maximale regellengte = 80 bijvoorbeeld. Dit kan door een `.prettierrc` in de root van
+> een project te zetten.
+
+Voorbeeld van '.prettierrc' gebruikt in dit project:
+
+```json
+{
+  "printWidth": 80,
+  "tabWidth": 2,
+  "useTabs": false,
+  "singleQuote": true,
+  "endOfLine": "lf",
+  "proseWrap": "always"
+}
+```
