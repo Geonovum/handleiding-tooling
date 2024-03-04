@@ -57,17 +57,16 @@ Voor licenties of de interne beheerder van de tooling kun je terecht op
 De documentatie van de werkwijze is niet alleen hier vastgelegd. Links naar
 andere documenten:
 
--   [werkomgeving modelleren](werkomgeving-modelleren.md).
--   [werkwijze modelleren](werkwijze-modelleren.md).
--   [geonovum werkwijze modelleren](geonovum-werkwijze-modelleren.md)
+- [werkomgeving modelleren](werkomgeving-modelleren.md).
+- [werkwijze modelleren](werkwijze-modelleren.md).
+- [geonovum werkwijze modelleren](geonovum-werkwijze-modelleren.md)
 
 ## Geonovum publicatieomgeving
 
 Verschillende onderdelen van standaarden worden op verschillende plaatsen
 gepubliceerd. De publicatieomgeving ziet er als volgt uit
 
-![Architectuurplaatje](media/GeonovumInterneArchitectuur.drawio.png)
-
+![Architectuurplaatje](https://raw.githubusercontent.com/Geonovum/DrawIO/master/GeonovumInterneArchitectuur.drawio.png)
 ### Documenten (docs.geostandaarden.nl)
 
 Standaarden en technische documentatie. Voor een nette lijst van pubdomains op
@@ -83,9 +82,10 @@ dit met een webhook kan doen staat beschreven in:
 
 ### Ontologieën (begrippen.geostandaarden.nl)
 
+
 ### Conceptenbibliotheek (definities.geostandaarden.nl)
 
-## Uitleg MkDocs
+## MkDocs voor deze handleiding
 
 De handleiding wordt beheerd in [MkDocs](https://www.mkdocs.org/). Dit is een
 lichtgewicht tool die een collectie Markdown handleidingen omzet in een

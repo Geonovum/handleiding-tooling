@@ -14,7 +14,7 @@ Het ontwerpdoel van de taal is leesbaarheid. Teksten geschreven met behulp van
 Markdown worden geacht al leesbaar te zijn voordat opmaak is toegepast op de
 tekst. Opmaakinstructies en tags zijn dan ook niet te vinden in pure Markdown.
 
-## Het viewen van Markdown in je broswer
+## Lokale markdown in je browser
 
 Sommige browsers weigeren het openen van lokale bestanden, of negeren links naar
 locale bestanden. Dit kun je in de configuratie aanpassen:
@@ -35,9 +35,9 @@ Dit kan je ook in een snelkoppeling zetten als icoon op de desktop.
 
 In Firefox kan je dat instellen via de parameters.
 
-In de adresbalk: about:config, dan het risico aanvaarden, en deze parameter
-veranderen: `security.fileuri.strict_origin_policy = false` (dus op false
-zetten)
+- Kies: <about:config>
+- Vertel firefox dat je weet waar je mee bezig bent.
+- `security.fileuri.strict_origin_policy = false` (dus op false zetten)
 
 ## Tools voor Markdown
 
@@ -50,12 +50,21 @@ zetten)
 | [Tables Generator](https://www.tablesgenerator.com/markdown_tables)                         | Helpt met het maken van tabellen in MarkDown                                                    |
 | [Markdown Table](https://marketplace.visualstudio.com/items?itemName=TakumiI.markdowntable) | VSCode plugin voor het editen van Markdown tabellen.                                            |
 | [Prettier](https://prettier.io/)                                                            | Een code formatter die automatisch zorgt dat je markdown aan de regels voldoet.                 |
-| [mdlint](https://github.com/Laboratoria/mdlint)                                             | Een style checker form markdown bestanden. Geef meldingen voor verkeerde markdown               |
+| [markdownlint](https://github.com/Laboratoria/mdlint)                                       | Een style checker form markdown bestanden. Geeft meldingen voor verkeerde markdown               |
 | [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)    | VSCode plugin. Klik rechtsonder op "Go Live" en je ReSpec doc wordt in live browser geopend.    |
 
-> **Note** `@Wilko`: we kunnen nog styling regels voor markdown vastleggen.
-> Maximale regellengte = 80 bijvoorbeeld. Dit kan door een `.prettierrc` in de root van
-> een project te zetten.
+## Regels voor Markdown
+
+Styling regels vastleggen voor Markdown zorgt ervoor dat wijzigingen in de markdown ook
+altijd inhoudelijke wijzigingen zijn. Suggesties hiervoor
+
+- Regellengte vastleggen.
+- Hoeveel springen we in?
+- Gebruiken unix end-of-line of windows
+
+Deze afspraken kunnen we ook vastleggen. Zie hieronder twee voorbeelden. Het lijkt
+erop dat de veschillende tools op verschillende manier formatteren. Niet alles
+gaat goed samen.
 
 Voorbeeld van '.prettierrc' gebruikt in dit project:
 
@@ -67,5 +76,17 @@ Voorbeeld van '.prettierrc' gebruikt in dit project:
   "singleQuote": true,
   "endOfLine": "lf",
   "proseWrap": "always"
+}
+```
+
+Voorbeeld van `.markdownlinkt.json`:
+
+```json
+{
+    "default": true,
+    "MD003": { "style": "atx" },
+    "MD007": { "indent": 4 },
+    "MD013": { "line_length": 80, "code_blocks": false, "heading_line_length": 200, "tables": false},
+    "no-hard-tabs": false
 }
 ```

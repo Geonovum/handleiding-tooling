@@ -321,7 +321,6 @@ Naamgevinsregels voor pubDomain:
 | visu           | Visualisatie                                             | respec utils               |                           |                                                               | groeperen?                              |
 | vtm            |                                                          | docs.geostandaarden.nl     | is eigenlijk metadata     |                                                               | verhuizen naar MD                       |
 | wp             | Whitepaper Geostandaarden                                | respec utils               | ook een raar pubdomain    |                                                               | verhuizen naar ngii                     |
-|                |                                                          |                            |                           |                                                               |                                         |
 
 ## LocalBiblio
 
