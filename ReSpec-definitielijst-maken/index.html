@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Definitielijst maken - Geonovum tooling</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">Geonovum tooling</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Home <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href=".." class="dropdown-item">Welkom</a>
+</li>
+                                    
+<li>
+    <a href="../geonovum-werkwijze-modelleren/" class="dropdown-item">Geonovum Werkwijze Modelleren</a>
+</li>
+                                    
+<li>
+    <a href="../werkomgeving-modelleren/" class="dropdown-item">Werkomgeving Modelleren</a>
+</li>
+                                    
+<li>
+    <a href="../werkwijze-modelleren/" class="dropdown-item">Werkwijze Modelleren</a>
+</li>
+                                    
+<li>
+    <a href="../SuggestiesHandleiding/" class="dropdown-item">SuggestiesHandleiding</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">GitHub <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../GitHub-Inleiding/" class="dropdown-item">GitHub Intro</a>
+</li>
+                                    
+<li>
+    <a href="../GitHub/" class="dropdown-item">Manual</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="navitem">
+                                <a href="../Imvertor/" class="nav-link">Imvertor</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../Markdown/" class="nav-link">Markdown</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">MIM <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../MIM-toolbox-genereren/" class="dropdown-item">Toolbox genereren</a>
+</li>
+                                    
+<li>
+    <a href="../MIM-toolbox-importeren/" class="dropdown-item">Toolbox importeren</a>
+</li>
+                                    
+<li>
+    <a href="../MIM-toolbox-genereren-extensie/" class="dropdown-item">Toolbox genereren extensie</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">ReSpec <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../ReSpec/" class="dropdown-item">Manual</a>
+</li>
+                                    
+<li>
+    <a href="../ReSpec-code-toepassen/" class="dropdown-item">Code toepassen</a>
+</li>
+                                    
+<li>
+    <a href="./" class="dropdown-item active">Definitielijst maken</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">EA <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../EA/" class="dropdown-item">Overzicht</a>
+</li>
+                                    
+<li>
+    <a href="../EA-toepassing-standaarddatatypen/" class="dropdown-item">standaarddatatypen</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Subversion <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../SVN-installeren-voor-EAP/" class="dropdown-item">SVN installeren voor EAP</a>
+</li>
+                                    
+<li>
+    <a href="../SVN-importeren-bestaand-project/" class="dropdown-item">SVN importeren bestaand project</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="navitem">
+                                <a href="../GML/" class="nav-link">GML</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../Handleiding-ontologie-maken-en-publiceren/" class="nav-link">Ontologie</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../WordConversies/" class="nav-link">WordConversies</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../ReSpec-code-toepassen/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../EA/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/Geonovum/handleiding-tooling/blob/main/docs/ReSpec-definitielijst-maken.md" class="nav-link"><i class="fa fa-github"></i> Edit on GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#definities-in-respec" class="nav-link">Definities in ReSpec</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#intro" class="nav-link">Intro</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#definitie-van-een-begrip-opnemen-in-specificatie" class="nav-link">Definitie van een begrip opnemen in specificatie</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#verwijzing-maken-naar-gedefinieerd-begrip" class="nav-link">Verwijzing maken naar gedefinieerd begrip</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="definities-in-respec">Definities in ReSpec</h1>
+<blockquote>
+<p><strong>Note</strong>
+In dit stuk afbeeldingen opnemen waarin je het resultaat in ReSpec kunt zien. Daarvoor graag <a href="https://geonovum.github.io/NL-ReSpec-GN-template/">NL-ReSpec-GN-template</a> aanvullen.</p>
+</blockquote>
+<h2 id="intro">Intro</h2>
+<p>Een belangrijk onderdeel van een dataspecificatie is de definitie van begrippen. Steeds vaker leggen we bij Geonovum begrippen vast in een <a href="https://definities.geostandaarden.nl/nl/">begrippenkader</a>. Idealiter zouden we voor de definitie van een begrip altijd daarnaar willen verwijzen. Op dit moment is dat om meerdere redenen nog niet mogelijk. Op deze plek leggen we uit hoe we nu een definitie opnemen.</p>
+<h2 id="definitie-van-een-begrip-opnemen-in-specificatie">Definitie van een begrip opnemen in specificatie</h2>
+<p>De meeste begrippen in een dataspecificatie worden gedefinieerd in het hoofdstuk <em>Gegevensdefinitie</em>. Imvertor genereert dit hoofdstuk automatisch op basis van het model in EA. Deze beschrijving richt zich alleen op de hoofdstukken die met de hand geschreven worden.</p>
+<p>De <a href="https://respec.org/docs/#definitions-and-linking">beschrijving in de handleiding van ReSpec</a> is heel summier. Hierdoor pas je het snel en eenvoudig toe, maar het leidt niet vanzelfsprekend tot éénduidig gebruik. Er zijn namelijk verschillende manieren waarop je als gebruiker een begrip met definitie kunt opnemen:</p>
+<ol>
+<li>inline</li>
+<li>losse regel</li>
+<li>lijst</li>
+</ol>
+<p>Binnen Geonovum willen we dit meer kaderen. Daarnaast hebben we aanvullende eisen ten aanzien van de weergave.</p>
+<blockquote>
+<p><strong>Warning</strong>
+Blokweergave en 'normale' weergave niet door elkaar gebruiken. Als je het script gebruikt gaat dat niet goed. Dat kan aangepast worden, maar het is bovenal niet wenselijk om verschillende stijlen in één document toe te passen.</p>
+</blockquote>
+<h3 id="weergave">Weergave</h3>
+<p>ReSpec toont een gedefinieerd begrip door de term schuin en dikgedrukt weer te geven. Deze styling is niet voor elk doeleinde geschikt. Voor inline- en lijstweergave werkt dit prima, maar als losse regel weer niet. Daar mist styling. Toch is dat soms wenselijk, zoals in het MIM-document. Hiervoor is een aanvulling gemaakt op ReSpec, die je kunt gebruikern door [<code>nog invullen</code>].</p>
+<h4 id="volgens-respec">Volgens ReSpec</h4>
+<pre><code class="language-markdown">&lt;dfn&gt;boek&lt;/dfn&gt;een samengebonden of genaaid aantal bedrukte bladen.
+</code></pre>
+<h5 id="resultaat">Resultaat</h5>
+<p><img alt="Voorbeeld van definitie in ReSpec" src="../media/ReSpec-definitie.png" /></p>
+<h5 id="gebruik-van-definitie">Gebruik van definitie</h5>
+<p>Wil je naar een gedefinineerd begrip verwijzen gaat dat zo: <code>&lt;a&gt;boek&lt;/a&gt;`` of</code>[=boek-]`</p>
+<h4 id="aanvullende-styling">Aanvullende styling</h4>
+<p>wrap een definitie in een aside met attribute class="definition"</p>
+<pre><code class="language-html">&lt;aside class=&quot;definition&quot;&gt;
+    &lt;dfn&gt;papier&lt;/dfn&gt;stof om te beschrijven of bedrukken, uit vezelachtige
+    stoffen, hout, lompen, stro enz. vervaardigd
+&lt;/aside&gt;
+</code></pre>
+<h5 id="resultaat_1">Resultaat</h5>
+<p>[<code>afbeelding opnemen</code>]</p>
+<!-- In guide NL-ReSpec-GN-template ook css voor dfn-box opnemen. Die gebruikt `<aside>` met extra attribuut, dus dan kan ik voorbeeld met en voorbeeld zonder attribuut laten zien -->
+
+<blockquote>
+<p><strong>Warning</strong>
+Een begrip mag maar één keer voorkomen; je kunt een term niet op twee verschillende manieren definiëren.</p>
+</blockquote>
+<!-- Maar het komt ook voor dat je losse termen op verschillende plekken in je document wilt definieren. Dus niet in lijstvorm -->
+
+<blockquote>
+<p><strong>Warning</strong>
+Hier graag zoveel mogelijk één lijn in trekken. Graag voorbeelden van hoe dat in huidige documenten zit.</p>
+</blockquote>
+<h2 id="verwijzing-maken-naar-gedefinieerd-begrip">Verwijzing maken naar gedefinieerd begrip</h2>
+<p>Als je op andere plekken in je document wilt verwijzen naar een gedefinieerd begrip, dan kan dat eenvoudig door het begrip tussen <code>&lt;a&gt;&lt;/a&gt;</code> te zetten, bijv:  <code>&lt;a&gt;boek&lt;/a&gt;</code>. Houd als richtlijn dat je alleen de eerste keer dat een term in een alinea voorkomt een verwijzing maakt. Dit voorkomt een overdaad aan verwijzingen in de tekst. Een verwijzing naar een term werkt in alle gevallen hetzelfde.</p>
+<!-- ## Wanneer zelf term definieeren, wanneer verwijzen naar
+
+Index
+Begrippen gedefinieerd door deze specificatie
+https://respec.org/docs/#definitions-and-linking
+
+Begrippen gedefineerd door verwijzing.
+https://respec.org/docs/#referencing-terms-from-other-specifications
+
+bladzijde
+één kant van een blad uit een boek, krant, tijdschrift enz.
+
+kaft
+papieren omslag om een boek of schrift --></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../js/jquery-3.6.0.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js"></script>
+        <script src="../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

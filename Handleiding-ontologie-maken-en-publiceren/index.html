@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Ontologie - Geonovum tooling</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">Geonovum tooling</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Home <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href=".." class="dropdown-item">Welkom</a>
+</li>
+                                    
+<li>
+    <a href="../geonovum-werkwijze-modelleren/" class="dropdown-item">Geonovum Werkwijze Modelleren</a>
+</li>
+                                    
+<li>
+    <a href="../werkomgeving-modelleren/" class="dropdown-item">Werkomgeving Modelleren</a>
+</li>
+                                    
+<li>
+    <a href="../werkwijze-modelleren/" class="dropdown-item">Werkwijze Modelleren</a>
+</li>
+                                    
+<li>
+    <a href="../SuggestiesHandleiding/" class="dropdown-item">SuggestiesHandleiding</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">GitHub <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../GitHub-Inleiding/" class="dropdown-item">GitHub Intro</a>
+</li>
+                                    
+<li>
+    <a href="../GitHub/" class="dropdown-item">Manual</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="navitem">
+                                <a href="../Imvertor/" class="nav-link">Imvertor</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../Markdown/" class="nav-link">Markdown</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">MIM <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../MIM-toolbox-genereren/" class="dropdown-item">Toolbox genereren</a>
+</li>
+                                    
+<li>
+    <a href="../MIM-toolbox-importeren/" class="dropdown-item">Toolbox importeren</a>
+</li>
+                                    
+<li>
+    <a href="../MIM-toolbox-genereren-extensie/" class="dropdown-item">Toolbox genereren extensie</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">ReSpec <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../ReSpec/" class="dropdown-item">Manual</a>
+</li>
+                                    
+<li>
+    <a href="../ReSpec-code-toepassen/" class="dropdown-item">Code toepassen</a>
+</li>
+                                    
+<li>
+    <a href="../ReSpec-definitielijst-maken/" class="dropdown-item">Definitielijst maken</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">EA <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../EA/" class="dropdown-item">Overzicht</a>
+</li>
+                                    
+<li>
+    <a href="../EA-toepassing-standaarddatatypen/" class="dropdown-item">standaarddatatypen</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Subversion <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../SVN-installeren-voor-EAP/" class="dropdown-item">SVN installeren voor EAP</a>
+</li>
+                                    
+<li>
+    <a href="../SVN-importeren-bestaand-project/" class="dropdown-item">SVN importeren bestaand project</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="navitem">
+                                <a href="../GML/" class="nav-link">GML</a>
+                            </li>
+                            <li class="navitem active">
+                                <a href="./" class="nav-link">Ontologie</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../WordConversies/" class="nav-link">WordConversies</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../GML/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../WordConversies/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/Geonovum/handleiding-tooling/blob/main/docs/Handleiding-ontologie-maken-en-publiceren.md" class="nav-link"><i class="fa fa-github"></i> Edit on GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#handleiding-ontologie-maken-en-publiceren" class="nav-link">Handleiding ontologie maken en publiceren</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#inleiding" class="nav-link">Inleiding</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#ontologie-genereren" class="nav-link">Ontologie genereren</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#regels-voor-de-uri" class="nav-link">Regels voor de URI</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#kwaliteitscontrole" class="nav-link">Kwaliteitscontrole</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#publiceren" class="nav-link">Publiceren</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#opname-in-vocabulary-catalogus" class="nav-link">Opname in vocabulary catalogus</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#fair-ontologie" class="nav-link">FAIR ontologie</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="handleiding-ontologie-maken-en-publiceren">Handleiding ontologie maken en publiceren</h1>
+<h2 id="inleiding">Inleiding</h2>
+<p>Naast UML-informatiemodellen en begrippenkaders maakt Geonovum wellicht in de
+toekomst ook meer ontologieën. Momenteel is er één ontologie gepubliceerd: die
+van NEN 3610. Hier is gedocumenteerd hoe dat is gedaan.  </p>
+<h2 id="ontologie-genereren">Ontologie genereren</h2>
+<p>De ontologie is gegenereerd uit het NEN3610-informatiemodel op basis van de regels in MIM.  </p>
+<ul>
+<li><strong>Input</strong>: MIM UML-model </li>
+<li><strong>Output</strong>: Ontologie in Turtle (<code>.ttl</code>) syntax en documentatie van de ontologie in Markdown (<code>.md</code>) syntax (op te nemen in ReSpec-document) </li>
+</ul>
+<p>In je UML-project is daarvoor nodig:<br />
+- tagged value <code>baseURI</code> op packageniveau </p>
+<p>De ontologie is gegenereerd met scripts van Marco Brattinga.<br />
+ - Scripts staan in de repository <a href="https://github.com/Geonovum/nen3610-werkomgeving/tree/main/model/mim-ld-export">NEN3610-werkomgeving</a><br />
+ - Het script dat je moet runnen is: <code>convert.sh</code>. Dit kun je lokaal doen (onder Windows moet je dit aanroepen in een batch-bestand) of we kunnen dit in een <em>git workflow</em> zetten zodat het script elke keer wordt uitgevoerd als je een EAP-bestand of MIM-XML-bestand pusht. Jesse Bakker heeft dit laatste binnen IMX-Geo gedaan. 
+ - Het script genereert met een aantal tussenstappen de uiteindelijke ontologie (RDF-bestand, <code>.ttl</code>) en een markdown-bestand (<code>.md</code>) met documentatie, dat je in een ReSpec-document kunt opnemen. </p>
+<p>Naast Marco Brattinga hebben Linda, Pano, en Jesse Bakker (Kadaster) kennis van
+deze scripts. </p>
+<h2 id="regels-voor-de-uri">Regels voor de URI</h2>
+<p>De URI (in EA: <code>baseURI</code>) is de <em>identifier URL</em> van de ontologie. Het is belangrijk dat deze lange tijd stabiel blijft (dus geen <em>projectnaam</em>, <em>organisatienaam</em>, <em>versieinformatie</em> etc. erin opnemen). Samengevat gelden hiervoor de volgende regels:</p>
+<ul>
+<li>Moet <strong>beginnen met</strong> <code>http://modellen.geostandaarden.nl/def/</code> </li>
+<li>Na <code>/def/</code>  volgt een <strong>korte naam</strong> </li>
+<li>Na de korte naam volgt een <code>#</code>  </li>
+<li><strong>Geen versie-aanduiding in de URI</strong></li>
+</ul>
+<p>Voorbeeld: <code>http://modellen.geostandaarden.nl/def/nen3610#</code> </p>
+<blockquote>
+<p><strong>Note</strong>
+<strong>Waarom geen versie</strong></p>
+<p>Hierover is veel discussie geweest. In de LinkedData-wereld is het de gewoonte om geen versie in de URL te zetten. De <strong>belangrijkste reden</strong> hiervoor is dat de URI een identificatie is. Als deze per versie zou wijzigen, zou dat eigenlijk betekenen dat het een nieuwe ontologie is en dat alles dat erin staat een nieuwe betekenis heeft. Dit is bijna nooit echt wat je wilt.</p>
+<p>De klasse <code>Gebouw</code> uit NEN3610:2011 is in essentie nog steeds dezelfde als de klasse <code>Gebouw</code> uit NEN3610:2022. Mogelijk is de definitie en daarmee populatie een enigszins veranderd. Dat wil zeggen: misschien zit er tussen beide definities een verschil tussen wat je als een gebouw beschouwt. Maar in essentie bedoel je nog steeds hetzelfde, dus verander je dan niet de identificatie.</p>
+<p>Een <strong>andere reden</strong> om geen versie in de URI op te nemen is dat dit voorkomt dat je alle data die de ontologie gebruikt, moet updaten als de URI gewijzigd is vanwege een nieuwe versie van de ontologie. </p>
+</blockquote>
+<h2 id="kwaliteitscontrole">Kwaliteitscontrole</h2>
+<p>Controleer het gegenereerde .ttl-bestand op correcte syntax met behulp van een <a href="http://ttl.summerofcode.be">online validator</a>.</p>
+<h2 id="publiceren">Publiceren</h2>
+<p>De ontologie is gepubliceerd op http://modellen.geostandaarden.nl 
+Beheerders, oa Linda en Pano hebben de FTP-toegang hiervan.<br />
+De ontologie is gepubliceerd in vier bestandsformaten: 
+ - HTML (<code>.html</code>)
+ - Turtle (<code>.ttl</code>)
+ - RDF/XML (<code>.rdf</code>)
+ - JSON-LD (<code>.json</code>)</p>
+<p>Het <code>.ttl</code>-bestand is automatisch geconverteerd naar RDF/XML en JSON-LD met behulp van een <a href="https://www.easyrdf.org/converter">online conversietool</a>.</p>
+<h3 id="folderstructuur-en-rootfolder">Folderstructuur en rootfolder</h3>
+<p>De folderstructuur op de webserver is als volgt:  </p>
+<pre><code>/ 
+ index.html 
+ .htaccess 
+ /def 
+   /nen3610 
+   /nen36102022 
+</code></pre>
+<p>In de <em>root</em> <code>/</code> staat een bestand <code>index.html</code> dat de content bevat die je ziet in je browser als je naar <code>http://modellen.geostandaarden.nl</code> gaat. Dit bestand wordt <strong>handmatig beheerd</strong>. Het moet worden aangepast als er meer ontologieën bij komen.</p>
+<p>In de <em>root</em> <code>/</code> staat verder een <code>.htaccess</code>-bestand. Dat is een webserverscript dat ervoor zorgt dat een verzoek om de ontologie, afhankelijk van de client, de webserver het juiste bestandsformaat laat teruggeven. Als een gebruiker met een webbrowser om <code>http://modellen.geostandaarden.nl/def/nen3610#</code> vraagt, geeft de webserver een <code>html</code>-bestand terug dat de browser kan tonen en de gebruiker kan lezen. Als een gebruiker met een ontologie-editor vraagt om dezelfde URL, geeft de webserver bijvoorbeeld het <code>.ttl</code>-bestand terug.  </p>
+<p>Het <code>.htaccess</code>-bestand is gemaakt door Linda en Pano en wordt beheerd in github.  </p>
+<h3 id="ontologie-bestanden-op-de-webserver">Ontologie-bestanden op de webserver</h3>
+<p>De ontologie-bestanden <code>.ttl</code>, <code>.rdf</code> en <code>.json</code> staan in <code>/def</code>. De ontologie is zowel als bestand met versieloze bestandsnaam en als bestand met versieaanduiding opgeslagen. NEN3610 gebruikt een <em>jaartal</em>, maar <em>semantic versioning</em> is ook toegestaan.</p>
+<pre><code>  /def 
+    nen3610.ttl 
+    nen3610.rdf 
+    nen3610.json 
+    nen3610-2022.ttl 
+    nen3610-2022.rdf 
+    nen3610-2022.json 
+</code></pre>
+<h3 id="html-bestanden-op-de-webserver">HTML-bestanden op de webserver</h3>
+<p>De <code>.html</code>-bestanden staan in twee subfolders, eentje <em>met</em> versieaanduiding en eentje <em>zonder</em>. De versieloze folder bevat altijd dezelfde inhoud als de nieuwste versie.  </p>
+<pre><code>    /nen3610 
+     index.html 
+    /nen36102022 
+     index.html 
+</code></pre>
+<h2 id="opname-in-vocabulary-catalogus">Opname in vocabulary catalogus</h2>
+<p>En pagina over de NEN3610-ontologie is daarnaast ook op <em>Linked Open Vocabularies</em> (LOV) gepubliceerd, een online catalogus van ontologieën. Dit is aangevraagd via een email naar de beheerders via de contactlink. De beheerders controleren de ontologie en geven tips ter verbetering. NEN3610 staat <a href="https://lov.linkeddata.es/dataset/lov/vocabs/nen3610">hier</a>.</p>
+<h2 id="fair-ontologie">FAIR ontologie</h2>
+<p>Om te zorgen dat de ontologie vindbaar en bruikbaar is, zijn er aanvullende regels. Deze zijn gebaseerd op de regels voor FAIR-ontologieën van <em>Linked Open Vocabularies</em>, de vindplaats van ontologieën waar NEN3610 ook in is opgenomen. Hun regels zijn ook beschreven in een goed leesbare paper. De manier waarop de NEN3610-ontologie is gepubliceerd is hierop gebaseerd.</p>
+<h3 id="metadata">Metadata</h3>
+<p>De volgende metadata dient te worden opgenomen in de ontologie:  </p>
+<ul>
+<li>Versie-informatie: <code>owl:versionIRI</code> en <code>owl:versionInfo</code> </li>
+<li><code>license</code> (CC-BY) </li>
+<li><code>creator</code>, eventueel <code>contributor</code>, <code>creationDate</code> en (als die bestaat) <code>previousVersion</code> </li>
+<li><code>prefix</code>, <code>title</code> and <code>description</code> </li>
+<li><code>source</code>: verwijzing naar informatiemodel waar de ontologie op gebaseerd is </li>
+<li><code>publisher</code>: verwijzing naar Geonovum</li>
+</ul>
+<h3 id="vertaling-naar-het-engels">Vertaling naar het Engels</h3>
+<p>Het wordt aangeraden om de ontologie te <strong>vertalen naar het Engels</strong> (dit kan in hetzelfde bestand, door verschillende talige labels aan de klassen en eigenschappen te geven). Voor NEN3610 wordt dit overwogen.</p>
+<h3 id="relatie-met-andere-ontologieen">Relatie met andere ontologieën</h3>
+<p>Het is <em>good practice</em> om de ontologie te relateren aan andere ontologieën, met name aan NEN3610, GeoSPARQL, OWL Time, de Semantic Sensor Network Ontology (SSN), NEN 2660 etc. Voor NEN3610 is dit nog niet gedaan. Hiervoor zijn een aantal standaardrelaties beschikbaar, zoals;
+ - <code>equivalentClass</code>
+ - <code>equivalentProperty</code>
+ - <code>subClassOf</code>
+ - <code>subPropertyOf</code></p>
+<h3 id="relatie-met-andere-ontologieen-in-enterprise-architect">Relatie met andere ontologieën in Enterprise Architect</h3>
+<p>In Enterprise Architect is het mogelijk om deze relaties aan te geven. De ontologie-generator zet ze dan ook in de ontologie, maar het mechanisme is nog niet gestandaardiseerd in MIM. De <a href="https://github.com/Geonovum/WaU-UC3/blob/main/mim2rdf.md">Generatie MIM-ontologie</a> is ontwikkeld in het WaU als onderdeel van het IMX-Geo-project. Om aan te geven dat iets uit je model precies hetzelfde is als iets uit een ander model: Tagged value <code>uri</code> bij <em>klassen</em>, <em>attributen</em> en <em>relaties</em>; gevuld met de URI van de ontologie plus de identifier van de klasse of eigenschap in de ontologie (de MIM naam). Dit wordt vertaald naar <code>equivalentClass</code> of <code>equivalentProperty</code>. Om aan te geven dat iets een subklasse of -eigenschap is van een klasse of eigenschap uit een ander model, is er nu nog geen methode. </p>
+<h3 id="voorbeeld-relatie-met-andere-ontologie-imx-geo-en-nen3610">Voorbeeld relatie met andere ontologie IMX-Geo en NEN3610</h3>
+<p><img alt="Voorbeeld relatie naar NEN3610-ontologie vanuit IMX-Geo" src="../media/ontologie_voorbeeld_imxgeo_bouwerk.png" /></p>
+<p>De attributen domein en identificatie komen uit NEN3610.  </p>
+<p><code>domein</code> heeft Tagged value:  </p>
+<pre><code>uri = http: http://modellen.geostandaarden.nl/def/nen3610-2022#domein 
+</code></pre>
+<p><code>identificatie</code> heeft Tagged value:  </p>
+<pre><code>uri = http://modellen.geostandaarden.nl/def/nen3610-2022#identificatie  
+</code></pre></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../js/jquery-3.6.0.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js"></script>
+        <script src="../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
