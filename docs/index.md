@@ -80,8 +80,11 @@ Technische onderdelen van de standaard worden op:
 dit met een webhook kan doen staat beschreven in:
 [technisch-register-2019](https://github.com/Geonovum/technisch-register-2019/blob/master/documentatie/Handleiding%20voor%20beheerders%20informatiemodellen.md)
 
-### Ontologieën (begrippen.geostandaarden.nl)
+### Ontologieën (modellen.geostandaarden.nl)
 
+Er is één ontologie gepubliceerd: die van NEN 3610. 
+
+Dit is uitgelegd in de [handleiding ontologie maken](Handleiding-ontologie-maken-en-publiceren.md)
 
 ### Conceptenbibliotheek (definities.geostandaarden.nl)
 

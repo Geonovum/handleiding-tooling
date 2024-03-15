@@ -35,9 +35,9 @@ Dit kan je ook in een snelkoppeling zetten als icoon op de desktop.
 
 In Firefox kan je dat instellen via de parameters.
 
-- Kies: <about:config>
-- Vertel firefox dat je weet waar je mee bezig bent.
-- `security.fileuri.strict_origin_policy = false` (dus op false zetten)
+- Ga naar het configuratiescherm van Firefox door `about:config` in de zoekbalk te zetten.
+- Firefox vraag nu of je het zeker weet. Niet twijfelen.
+- zet de instelling `security.fileuri.strict_origin_policy = false` op false.
 
 ## Tools voor Markdown
 

@@ -6,11 +6,16 @@ In dit hoofdstuk komen zowel GitHub als GitHub desktop client aan de orde. Geono
 
 ### Aanmaken GitHub account
 
-Als je nog geen GitHub account hebt, of als je een apart GitHub account wil maken voor je Geonovum werkzaamheden, ga naar: https://github.com/join/get-started .
+Als je nog geen GitHub account hebt, of als je een apart GitHub account wil
+maken voor je Geonovum werkzaamheden, ga naar:
+https://github.com/join/get-started .
 
-Dan zie je het scherm dat hiernaast staat. Maak in dat scherm een usernaam aan waarmee je op GitHub gaat werken.
+Dan zie je het scherm dat hiernaast staat. Maak in dat scherm een usernaam aan
+waarmee je op GitHub gaat werken.
 
-<u>Tip</u>: als je met meerdere accounts gaat werken, zorg er dan voor dat aan de accountnaam kan zien waarvoor die dan gebruikt moet worden. (Bijvoorbeeld door die naam te eindigen op –GNM). Verplicht is dit niet.
+**Tip**: als je met meerdere accounts gaat werken, zorg er dan voor dat aan
+de accountnaam kan zien waarvoor die dan gebruikt moet worden. (Bijvoorbeeld
+door die naam te eindigen op –GNM). Verplicht is dit niet.
 
 Vul in het veld username je nieuwe GitHub naam in.
 
@@ -20,7 +25,8 @@ Vul in het veld email adress je geonovum mailadres in
 
 Klik vervolgens op “Create Account” en dan wordt je account aangemaakt.
 
-Kies in dit scherm je persoonlijke plan. Bij Geonovum gebruiken we de gratis versie, dus selecteer die.
+Kies in dit scherm je persoonlijke plan. Bij Geonovum gebruiken we de gratis
+versie, dus selecteer die.
 
 ![media/image4.png](media/image4.png)
 

@@ -46,6 +46,13 @@ Vraag een account aan voor svn.geostandaarden.nl bij de [beheerder](https://stic
 
 ![SVN Checkout](media/svn_checkout.png)
 
+
+Het kan zijn dat iemand anders een bestand uitgechecked heeft. Wie dat dan is geweest kan je via de command-line op de volgende manier controleren:
+
+```
+svn info svn://svn.geostandaarden.nl/Datatypes/datatypen-ISO19107-2003.xml
+```
+
 ### Stap 4: Breng EAP-bestand (packages) onder SVN
 
 Het EAP bestand wordt op het niveau van packages onder SVN gebracht.

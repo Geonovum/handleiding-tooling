@@ -1,17 +1,19 @@
 # Handleiding ontologie maken en publiceren
 
 ## Inleiding
-Naast UML-informatiemodellen en begrippenkaders maakt Geonovum wellicht in de toekomst ook meer ontologieën. Momenteel is er één ontologie gepubliceerd: die van NEN 3610. Hier is gedocumenteerd hoe dat is gedaan.  
+Naast UML-informatiemodellen en begrippenkaders maakt Geonovum wellicht in de
+toekomst ook meer ontologieën. Momenteel is er één ontologie gepubliceerd: die
+van NEN 3610. Hier is gedocumenteerd hoe dat is gedaan.  
  
 ## Ontologie genereren 
 
 De ontologie is gegenereerd uit het NEN3610-informatiemodel op basis van de regels in MIM.  
 
- - **Input**: MIM UML-model 
- - **Output**: Ontologie in Turtle (`.ttl`) syntax en documentatie van de ontologie in Markdown (`.md`) syntax (op te nemen in ReSpec-document) 
+- **Input**: MIM UML-model 
+- **Output**: Ontologie in Turtle (`.ttl`) syntax en documentatie van de ontologie in Markdown (`.md`) syntax (op te nemen in ReSpec-document) 
 
 In je UML-project is daarvoor nodig:  
- - tagged value `baseURI` op packageniveau 
+- tagged value `baseURI` op packageniveau 
 
 
 De ontologie is gegenereerd met scripts van Marco Brattinga.  
@@ -19,7 +21,8 @@ De ontologie is gegenereerd met scripts van Marco Brattinga.
  - Het script dat je moet runnen is: `convert.sh`. Dit kun je lokaal doen (onder Windows moet je dit aanroepen in een batch-bestand) of we kunnen dit in een _git workflow_ zetten zodat het script elke keer wordt uitgevoerd als je een EAP-bestand of MIM-XML-bestand pusht. Jesse Bakker heeft dit laatste binnen IMX-Geo gedaan. 
  - Het script genereert met een aantal tussenstappen de uiteindelijke ontologie (RDF-bestand, `.ttl`) en een markdown-bestand (`.md`) met documentatie, dat je in een ReSpec-document kunt opnemen. 
 
-Naast Marco Brattinga hebben Linda, Pano, en Jesse Bakker (Kadaster) kennis van deze scripts. 
+Naast Marco Brattinga hebben Linda, Pano, en Jesse Bakker (Kadaster) kennis van
+deze scripts. 
 
 ## Regels voor de URI 
 
