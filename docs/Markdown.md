@@ -35,7 +35,8 @@ Dit kan je ook in een snelkoppeling zetten als icoon op de desktop.
 
 In Firefox kan je dat instellen via de parameters.
 
-- Ga naar het configuratiescherm van Firefox door `about:config` in de zoekbalk te zetten.
+- Ga naar het configuratiescherm van Firefox door `about:config` in de zoekbalk
+  te zetten.
 - Firefox vraag nu of je het zeker weet. Niet twijfelen.
 - zet de instelling `security.fileuri.strict_origin_policy = false` op false.
 
@@ -63,19 +64,19 @@ altijd inhoudelijke wijzigingen zijn. Suggesties hiervoor
 - Gebruiken unix end-of-line of windows
 
 Deze afspraken kunnen we ook vastleggen. Zie hieronder twee voorbeelden. Het lijkt
-erop dat de veschillende tools op verschillende manier formatteren. Niet alles
+erop dat de verschillende tools op verschillende manier formatteren. Niet alles
 gaat goed samen.
 
 Voorbeeld van '.prettierrc' gebruikt in dit project:
 
 ```json
 {
-  "printWidth": 80,
-  "tabWidth": 2,
-  "useTabs": false,
-  "singleQuote": true,
-  "endOfLine": "lf",
-  "proseWrap": "always"
+    "tabWidth": 4,
+    "useTabs": false,
+    "singleQuote": true,
+    "endOfLine": "lf",
+    "proseWrap": "always",
+    "printWidth": 80
 }
 ```
 

@@ -8,7 +8,7 @@ In dit hoofdstuk komen zowel GitHub als GitHub desktop client aan de orde. Geono
 
 Als je nog geen GitHub account hebt, of als je een apart GitHub account wil
 maken voor je Geonovum werkzaamheden, ga naar:
-https://github.com/join/get-started .
+<https://github.com/join/get-started> .
 
 Dan zie je het scherm dat hiernaast staat. Maak in dat scherm een usernaam aan
 waarmee je op GitHub gaat werken.
@@ -19,7 +19,7 @@ door die naam te eindigen op –GNM). Verplicht is dit niet.
 
 Vul in het veld username je nieuwe GitHub naam in.
 
-Vul in het veld email adress je geonovum mailadres in
+Vul je Geonovum email in
 
 ![media/image3.png](media/image3.png)
 
@@ -32,7 +32,7 @@ versie, dus selecteer die.
 
 ### Installeren GitHub desktop
 
-Ga in je internet browser naar https://desktop.github.com/
+Ga in je internet browser naar <https://desktop.github.com/>
 
 Klik daar op download for Windows (64bit).
 
@@ -80,7 +80,7 @@ In dit scherm kan je de voorkeurs editor instellen. Default wordt gekeken naar d
 
 ### De Geonovum GitHub pagina
 
-Geonovum heeft een eigen GitHub Bedrijfspagina: https://github.com/Geonovum .
+Geonovum heeft een eigen GitHub Bedrijfspagina: <https://github.com/Geonovum> .
 
 Voor alle projecten die een product maken of beheren wordt een repository aangemaakt.
 
@@ -153,39 +153,39 @@ Nadat je de wijzigingen hebt gecommit, moeten ze richting de centrale repository
 
 ## Enkele regels over GitHub binnen Geonovum
 
--   Geonovum heeft binnen github een team: https://github.com/Geonovum.
+- Geonovum heeft binnen github een team: <https://github.com/Geonovum>.
 
 ### Github beheer
 
--   Github teamleden met beheerders rechten zijn te vinden via: https://github.com/orgs/Geonovum/people?query=role%3Aowner
--   Daarnaast zijn er nog drie inhoudelijk beheerders vanuit Geonovum: Arnoud de Boer, Frank Terpstra en Linda vd Brink.
+- Github teamleden met beheerders rechten zijn te vinden via: <https://github.com/orgs/Geonovum/people?query=role%3Aowner>
+- Daarnaast zijn er nog drie inhoudelijk beheerders vanuit Geonovum: Arnoud de Boer, Frank Terpstra en Linda vd Brink.
 
 ### Github gebruikers
 
--   Een overzicht van de gebruikers is te vinden op: https://github.com/orgs/Geonovum/people.
--   In principe geldt de regels: als je lid bent van Geonovum Teams dan hoor je ook bij de Geonovum GitHub organisatie. De inhoudelijk beheerders kunnen besluiten daar van af te wijken.
--   Er is geen bezwaar tegen het gebruiken van een privé account binnen de github omgeving.
--   Bij vertrek wordt je omgezet naar 'External Collaborator'.
+- Een overzicht van de gebruikers is te vinden op: <https://github.com/orgs/Geonovum/people>.
+- In principe geldt de regels: als je lid bent van Geonovum Teams dan hoor je ook bij de Geonovum GitHub organisatie. De inhoudelijk beheerders kunnen besluiten daar van af te wijken.
+- Er is geen bezwaar tegen het gebruiken van een privé account binnen de github omgeving.
+- Bij vertrek wordt je omgezet naar 'External Collaborator'.
 
 ### GitHub teams
 
--   Er is een aantal teams gemaakt binnen Geonovum. Deze zijn te vinden op: https://github.com/orgs/Geonovum/teams.
--   Ieder repository moet aan een team worden toegekend. Het team is aanspreekpunt  voor het repository.
--   Team namen eindigen op ' team'. Bijvoorbeeld 'DSO team'.
+- Er is een aantal teams gemaakt binnen Geonovum. Deze zijn te vinden op: <https://github.com/orgs/Geonovum/teams>.
+- Ieder repository moet aan een team worden toegekend. Het team is aanspreekpunt  voor het repository.
+- Team namen eindigen op ' team'. Bijvoorbeeld 'DSO team'.
 
 ### GitHub repositories
 
--   Dit zijn de Geonovum repositories: https://github.com/orgs/Geonovum/repositories.
--   Er is ook een dashboard met een overzicht van publieke git repositories: [DashboardGit](https://geonovum.github.io/DashboardGit/).
--   Richtlijnen voor het inrichten van repositories zijn er nog niet. Wel is er een template voor respec documenten: [NL-ReSpec-GN-template](https://github.com/Geonovum/NL-ReSpec-GN-template)
+- Dit zijn de Geonovum repositories: <https://github.com/orgs/Geonovum/repositories>.
+- Er is ook een dashboard met een overzicht van publieke git repositories: [DashboardGit](https://geonovum.github.io/DashboardGit/).
+- Richtlijnen voor het inrichten van repositories zijn er nog niet. Wel is er een template voor respec documenten: [NL-ReSpec-GN-template](https://github.com/Geonovum/NL-ReSpec-GN-template)
 
 #### Naamgevingsconventies GitHub
 
 - Voor repositories met een ReSpec document zijn aparte naamgevingsconventies.
 - Kies korte betekenisvolle namen die in lijn zijn met bestaande repositories.
 - Veelgebruikte prefixes zijn:
-    -   **dso-** digitale ondersteuning omgevingswet.
-    -   **ow-** omgevingswet. Dit lijkt wel een duplicaat. Laten opgaan in dso-?
-    -   **KP-APIs-** kennisplatform API's.
-    -   **xml\_** Dit was een prefix voor dso repositories maar wordt voor nieuwe repositories niet meer gebruikt.
-    -   **disgeo-** DisGeo
+    - **dso-** digitale ondersteuning omgevingswet.
+    - **ow-** omgevingswet. Dit lijkt wel een duplicaat. Laten opgaan in dso-?
+    - **KP-APIs-** kennisplatform API's.
+    - **xml\_** Dit was een prefix voor dso repositories maar wordt voor nieuwe repositories niet meer gebruikt.
+    - **disgeo-** DisGeo
