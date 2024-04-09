@@ -574,6 +574,16 @@ Controleer de volgende onderwerpen voor iedere publicatie:
 1. Commit het en push het naar dezelfde folder als waar `index.html` staat in je
    Github-repository
 
+### Consultatieverise met ftp
+
+> **Note**: uitwerken
+
+Omdat de webhook nogal eens problemen oplevert is er ook een proces voor het
+publiceren met ftp. In het kort is het als volgt:
+
+1. Zet alles klaar in github (zoals bij de webhook).
+2. Vraag een beheerder om de boel naar docs.geostandaarden.nl om te zetten.
+
 ### Consultatieversie maken met behulp van webhook
 
 [Klik hier](/Publiceren/) voor een beschrijving over hoe je een webhook eenmalig
@@ -591,9 +601,7 @@ configureert voor een repository. over het toepassen van de webhook.
     - Vul `previousPublishDate` in met de datum van de zojuist gepubliceerde
       consultatieversie
 
-### Consultatieverise met behulp van webhook
 
-> **Note**: uitwerken
 
 ## Vaststellingsversie (VV) maken
 
