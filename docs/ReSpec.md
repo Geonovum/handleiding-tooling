@@ -198,21 +198,22 @@ vastgesteld, en mogen niet zomaar uitgebreid of aangepast worden. Elke status
 hoort bij een formele fase van een ReSpec document. Zie ook de Geonovum ReSpec
 [wiki](https://github.com/Geonovum/respec/wiki).
 
-- GN-WV, Werkversie_: Dit is de versie van het document waaraan wordt
+- **GN-WV**, Werkversie: Dit is de versie van het document waaraan wordt
   gewerkt. Deze versie is continu 'under-construction'.
-- GN-CV, Consultatieversie_: Dit is een 'snapshot' van de versie die 'in
+- **CV**, Consultatieversie: Dit is een 'snapshot' van de versie die 'in
     consultatie' wordt gezet. Aan deze versie wordt niks meer gedaan totdat de
     consultatie is afgelopen. Daarna worden alle op en aanmerkingen uit de
     consultatieronde verwerkt.
-- GN-VV, Vaststellingsversie_: Dit is een 'snapshot' van de versie na het
+- **VV**, Vaststellingsversie: Dit is een 'snapshot' van de versie na het
     verwerken van de op en aanmerkingen uit de consultatieronde is ontstaan.
     Deze versie wordt aangeboden aan de programma-raad van Geonovum, om te
     wordern 'vastgesteld'.
-- GN-DEF, Definitieve versie_: Dit is de definitieve versie van het document,
+- **DEF**, Definitieve versie: Dit is de definitieve versie van het document,
     zoals vastgesteld door de programma-raad. Van deze versie wordt opnieuw een
     'snapshot' gemaakt in ReSpec. Het resultaat van die snapshot wordt op
     <a href='http://docs.geonovum.nl' target='_blank'>http://docs.geonovum.nl</a>
     neergezet.
+- **LD**, Levend document: Geschikt voor handreikingen en dergelijke die regelmatig gewijzigd worden en waarvoor niet een consultatie- en goedkeuringsproces gevolgd hoeft te worden
 
 ### SpecType
 
