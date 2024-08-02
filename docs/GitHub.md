@@ -179,6 +179,16 @@ Nadat je de wijzigingen hebt gecommit, moeten ze richting de centrale repository
 - Er is ook een dashboard met een overzicht van publieke git repositories: [DashboardGit](https://geonovum.github.io/DashboardGit/).
 - Richtlijnen voor het inrichten van repositories zijn er nog niet. Wel is er een template voor respec documenten: [NL-ReSpec-GN-template](https://github.com/Geonovum/NL-ReSpec-GN-template)
 
+### GitHub organisaties
+
+Een GitHub Organization is een verzamelplaats van repositories, die allemaal van dezelfde eigenaar, zijnde een bedrijf of instelling, zijn. Geonovum heeft twee GitHub organisaties: 
+- https://github.com/Geonovum: hierin staan de repositories voor onze standaarden en andere gerelateerde producten.
+- https://github.com/Geonovum-labs: hierin staan enkele repositories met open source code, demo's, voorbeelden en experimenten ter ondersteuning van standaarden. 
+
+https://github.com/Geonovum heeft een README.md introtekst met summiere informatie over Geonovum, hoe wij met github werken en verwijzingen naar meer informatie. Deze tekst wordt beheerd in een aparte github repository: https://github.com/Geonovum/.github. 
+
+Daarnaast wordt een landingspagina getoond op https://geonovum.github.io. Dit is (een kopie van) dezelfde tekst. Deze staat ook in een README.md, die wordt beheerd in een andere github repository: https://github.com/Geonovum/geonovum.github.io. 
+
 #### Naamgevingsconventies GitHub
 
 - Voor repositories met een ReSpec document zijn aparte naamgevingsconventies.
