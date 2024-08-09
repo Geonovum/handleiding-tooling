@@ -198,7 +198,7 @@ vastgesteld, en mogen niet zomaar uitgebreid of aangepast worden. Elke status
 hoort bij een formele fase van een ReSpec document. Zie ook de Geonovum ReSpec
 [wiki](https://github.com/Geonovum/respec/wiki).
 
-- **GN-WV**, Werkversie: Dit is de versie van het document waaraan wordt
+- **WV**, Werkversie: Dit is de versie van het document waaraan wordt
   gewerkt. Deze versie is continu 'under-construction'.
 - **CV**, Consultatieversie: Dit is een 'snapshot' van de versie die 'in
     consultatie' wordt gezet. Aan deze versie wordt niks meer gedaan totdat de
@@ -214,6 +214,7 @@ hoort bij een formele fase van een ReSpec document. Zie ook de Geonovum ReSpec
     <a href='http://docs.geonovum.nl' target='_blank'>http://docs.geonovum.nl</a>
     neergezet.
 - **LD**, Levend document: Geschikt voor handreikingen en dergelijke die regelmatig gewijzigd worden en waarvoor niet een consultatie- en goedkeuringsproces gevolgd hoeft te worden
+- **basis**, document zonder officiële status.
 
 ### SpecType
 
@@ -543,16 +544,17 @@ repository aan, of hoe maak je vanuit een werkversie een consultatieversie aan,
 
 Controleer de volgende onderwerpen voor iedere publicatie:
 
--   Controleer op WCAG regels. Bij het pushen van een ReSpec document naar
+- Controleer op **WCAG** regels. Bij het pushen van een ReSpec document naar
     GitHub wordt automatisch een WCAG rapport geschreven. Dit is te vinden onder
     'Actions'. Kies hier de commit die je gedaan hebt en je ziet daar
     'Check/WCAG').
--   Controleer op Broken links. Bij het pushen van een ReSpec document naar
+- Controleer op **Broken links**. Bij het pushen van een ReSpec document naar
     GitHub wordt automatisch op broken links gechecked. Dit is te vinden onder
     'Actions'. Kies hier de commit die je gedaan hebt en je ziet daar
     'Check/Links').
--   Je kunt oook het HTML controleren: maak een snapshot aan en biedt het aan
+- Controleer of de **HTML correct** is: maak een snapshot aan en biedt het aan
     aan de [W3C validator](https://validator.w3.org)
+- C
 
 ## Consultatie versie (CV) maken
 
