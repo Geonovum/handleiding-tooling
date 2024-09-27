@@ -46,7 +46,7 @@ publicatieomgeving van Geonovum beschreven.
 - **Ontologie**
     - [Ontologie](Handleiding-ontologie-maken-en-publiceren.md): Handleiding
         voor het maken en publiceren van een ontologie.
-- **Word Conversies**
+- **Word2XXX**
     - [Word2werkversie](WordConversies.md)
 
 Voor licenties of de interne beheerder van de tooling kun je terecht op

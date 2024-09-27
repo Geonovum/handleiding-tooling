@@ -193,6 +193,8 @@ aantal document-eigenschappen.
 
 ### SpecStatus
 
+**Bron:** <https://github.com/Geonovum/NL-ReSpec-GN-beheer/blob/main/js/organisation-config.js> 
+
 De SpecStatus in de configuratie geeft de keuze uit 4 waarden, deze waarden zijn
 vastgesteld, en mogen niet zomaar uitgebreid of aangepast worden. Elke status
 hoort bij een formele fase van een ReSpec document. Zie ook de Geonovum ReSpec
@@ -207,25 +209,21 @@ hoort bij een formele fase van een ReSpec document. Zie ook de Geonovum ReSpec
 - **VV**, Vaststellingsversie: Dit is een 'snapshot' van de versie na het
     verwerken van de op en aanmerkingen uit de consultatieronde is ontstaan.
     Deze versie wordt aangeboden aan de programma-raad van Geonovum, om te
-    wordern 'vastgesteld'.
+    worden 'vastgesteld'.
 - **DEF**, Definitieve versie: Dit is de definitieve versie van het document,
     zoals vastgesteld door de programma-raad. Van deze versie wordt opnieuw een
     'snapshot' gemaakt in ReSpec. Het resultaat van die snapshot wordt op
-    <a href='http://docs.geonovum.nl' target='_blank'>http://docs.geonovum.nl</a>
-    neergezet.
+    <http://docs.geonovum.nl> neergezet.
 - **LD**, Levend document: Geschikt voor handreikingen en dergelijke die regelmatig gewijzigd worden en waarvoor niet een consultatie- en goedkeuringsproces gevolgd hoeft te worden
 - **basis**, document zonder officiële status.
 
 ### SpecType
 
+**Bron:** <https://www.geonovum.nl/uploads/documents/Geonovum%20GENERIEK%20Beheerplan%20geo-standaarden%20v1.1.pdf> 
+
 Het SpecType in de configuratie is een vaste lijst met waarden, deze waarden
 zijn vastgesteld, en mogen niet zonder overleg met de Technische ReSpec
 beheerders uitgebreid of aangepast worden.
-
-Onderstaande beschrijvingen komen uit het generiek
-beheerplan<span class='noot'>[5]<span class='noottekst'> Zie:
-https://www.geonovum.nl/uploads/documents/Geonovum%20GENERIEK%20Beheerplan%20geo-standaarden%20v1.1.pdf
-<br/></span></span>.
 
 - **NO** Norm: Een norm is bij een officieel standaardisatie instituut
     ondergebracht en bevat bindende afspraken. Naast het gebruik van normen is

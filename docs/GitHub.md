@@ -154,6 +154,7 @@ Nadat je de wijzigingen hebt gecommit, moeten ze richting de centrale repository
 ## Enkele regels over GitHub binnen Geonovum
 
 - Geonovum heeft binnen github een team: <https://github.com/Geonovum>.
+- Geonovum heeft ook het team <https://github.com/Geonovum-labs>
 
 ### Github beheer
 
@@ -163,9 +164,9 @@ Nadat je de wijzigingen hebt gecommit, moeten ze richting de centrale repository
 ### Github gebruikers
 
 - Een overzicht van de gebruikers is te vinden op: <https://github.com/orgs/Geonovum/people>.
-- In principe geldt de regels: als je lid bent van Geonovum Teams dan hoor je ook bij de Geonovum GitHub organisatie. De inhoudelijk beheerders kunnen besluiten daar van af te wijken.
+- Als je lid bent van Geonovum Teams dan hoor je ook bij de Geonovum GitHub organisatie. De inhoudelijk beheerders kunnen besluiten daar van af te wijken.
 - Er is geen bezwaar tegen het gebruiken van een privé account binnen de github omgeving.
-- Bij vertrek wordt je omgezet naar 'External Collaborator'.
+- Werk je niet meer bij Geonovum wordt je omgezet naar 'External Collaborator'.
 
 ### GitHub teams
 
@@ -176,7 +177,6 @@ Nadat je de wijzigingen hebt gecommit, moeten ze richting de centrale repository
 ### GitHub repositories
 
 - Dit zijn de Geonovum repositories: <https://github.com/orgs/Geonovum/repositories>.
-- Er is ook een dashboard met een overzicht van publieke git repositories: [DashboardGit](https://geonovum.github.io/DashboardGit/).
 - Richtlijnen voor het inrichten van repositories zijn er nog niet. Wel is er een template voor respec documenten: [NL-ReSpec-GN-template](https://github.com/Geonovum/NL-ReSpec-GN-template)
 
 ### GitHub organisaties
