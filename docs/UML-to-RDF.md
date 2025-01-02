@@ -56,6 +56,122 @@ bind(replace(?comment, "^.*-- Definition --(.*?)-- Description --.*$", "$1") as 
 bind(replace(?comment, "^.*-- Description --(.*?)-- Source.*$", "$1") as ?newNote).
 
 ```
+Het structuur van YAML bestaand:
+
+De YAML-file heeft de volgende structuur en inhoud, die een handleiding beschrijft voor het uitvoeren van SPARQL-query's in de context van een MIM-conversie (MIM staat voor Metamodel Informatie Modellering). Hieronder is de opbouw beschreven:
+
+### Structuur
+#### Metadata
+
+- title: De titel van de handleiding of tool (bijvoorbeeld "MIM conversie").
+version: Versienummer van het bestand (bijvoorbeeld "0.3").
+prefixes: Lijst met namespaces en hun bijbehorende URI's om de SPARQL-query's eenvoudiger te maken.
+Queries
+
+- Een lijst van query's, elk met de volgende onderdelen:
+title: Een korte beschrijving van de query, bijvoorbeeld "get skos:ConceptAttribuutSoort".
+query: De daadwerkelijke SPARQL-query, inclusief PREFIX-definities en INSERT-instructies voor het vullen van een grafiek.
+Voorbeeldinhoud
+Metadata
+yaml
+```
+title: MIM conversie
+version: 0.3
+prefixes:
+  imevbegrip: http://definities.geostandaarden.nl/imev/id/begrip/
+  begrippenkader: http://definities.geostandaarden.nl/id/begrippenkader/
+  skos: http://www.w3.org/2004/02/skos/core#
+  owl: http://www.w3.org/2002/07/owl#
+```
+- Queries
+Elke query bevat de logica voor het extraheren en transformeren van gegevens. Hier is een voorbeeld van één query:
+
+```YAML
+- title: get skos:ConceptAttribuutSoort
+  query: >
+    PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+    PREFIX imevbegrip: <http://definities.geostandaarden.nl/imev/id/begrip/>
+    PREFIX ea: <http://www.sparxsystems.eu/def/ea#>
+    INSERT {
+      GRAPH <urn:output> {
+        ?begrip a skos:Concept;
+          rdfs:label ?label;
+          skos:prefLabel ?label;
+          skos:definition ?comment;
+          skos:inScheme begrippenkader:IMEV;
+          skos:notation ?label.
+        begrippenkader:IMEV a skos:ConceptScheme;
+          rdfs:label "Begrippenkader IMEV"@nl;
+          skos:prefLabel "Begrippenkader IMEV"@nl.
+      }
+    }
+    WHERE {
+      GRAPH <urn:input> {
+        SELECT (iri(concat('http://definities.geostandaarden.nl/imev/id/begrip/',?label)) as ?begrip) ?label ?comment
+        WHERE {
+          ?element a ea:Attribute;
+          ea:stereotype "Attribuutsoort";
+          rdfs:label ?label;
+          rdfs:comment ?comment.
+        }
+      }
+    }
+```
+Deze structuur is bedoeld om gegevens uit een bron te halen en om te zetten naar SKOS-concepten in een RDF-graaf.
+
+
+### Structuur van de SPARQL-query
+- Prefixes
+Deze sectie definieert namespaces die in de query worden gebruikt. Prefixes maken de query compacter door URI's af te korten.
+Voorbeeld:
+
+```sparql
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX imevbegrip: <http://definities.geostandaarden.nl/imev/id/begrip/>
+```
+
+- INSERT-sectie
+In deze sectie wordt gedefinieerd welke triples moeten worden toegevoegd aan een doelgraaf (GRAPH <urn:output>). De structuur van de RDF-triples (subject, predicate, object) is hier beschreven.
+Voorbeeld:
+
+```sparql
+INSERT {
+  GRAPH <urn:output> {
+    ?begrip a skos:Concept;
+      rdfs:label ?label;
+      skos:prefLabel ?label;
+      skos:definition ?comment;
+      skos:inScheme begrippenkader:IMEV;
+      skos:notation ?label.
+    begrippenkader:IMEV a skos:ConceptScheme;
+      rdfs:label "Begrippenkader IMEV"@nl;
+      skos:prefLabel "Begrippenkader IMEV"@nl.
+  }
+}
+```
+
+- WHERE-sectie
+Hier wordt beschreven welke data uit de bron moet worden opgehaald en welke voorwaarden gelden voor de selectie.
+Voorbeeld:
+
+```sparql
+WHERE {
+  GRAPH <urn:input> {
+    SELECT (iri(concat('http://definities.geostandaarden.nl/imev/id/begrip/', ?label)) AS ?begrip) ?label ?comment
+    WHERE {
+      ?element a ea:Attribute;
+      ea:stereotype "Attribuutsoort";
+      rdfs:label ?label;
+      rdfs:comment ?comment.
+    }
+  }
+}
+```
+
+Deze SPARQL-query is ontworpen om begrippen te creëren en te transformeren in overeenstemming met het SKOS (Simple Knowledge Organization System)-model. De resulterende RDF-data kunnen direct worden geüpload naar de omgeving https://staging-definities.geostandaarden.nl/nl/. Dit is een staging-omgeving voor het beheren en publiceren van termen en begrippenkaders binnen geostandaarden.
+
+
+
 
 ## Stap 5: Controleer en Pas de Output Aan
 
