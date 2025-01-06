@@ -168,7 +168,7 @@ WHERE {
 }
 ```
 
-Deze SPARQL-query is ontworpen om begrippen te creëren en te transformeren in overeenstemming met het SKOS (Simple Knowledge Organization System)-model. De resulterende RDF-data kunnen direct worden geüpload naar de omgeving https://staging-definities.geostandaarden.nl/nl/. Dit is een staging-omgeving voor het beheren en publiceren van termen en begrippenkaders binnen geostandaarden.
+Deze SPARQL-query is ontworpen om begrippen te creëren en te transformeren in overeenstemming met het SKOS (Simple Knowledge Organization System)-model. De resulterende RDF-data kunnen direct worden geüpload naar de omgeving https://staging-definities.geostandaarden.nl/nl/.
 
 
 
@@ -177,8 +177,75 @@ Deze SPARQL-query is ontworpen om begrippen te creëren en te transformeren in o
 
 Na de transformatie is het belangrijk om het resultaat te controleren. Vaak moeten taal-tags en datatypes worden toegevoegd of geoptimaliseerd. Bijvoorbeeld, bij SKOS kan het nodig zijn om de taal voor labels of beschrijvingen te specificeren, of om de juiste datatypes voor numerieke waarden toe te voegen.
 
-## Tips voor Werken met EA2RDF en RDF2RDF - TODO (meerdere SPARQL voorbeelden toevoegen)
+## Tips voor Werken met EA2RDF en RDF2RDF
 
 * **SPARQL-queries zijn krachtig** : Door SPARQL-constructs in je YAML-bestand te gebruiken, kun je gegevens uit je model extraheren en het RDF-formaat aanpassen aan je wensen.
+SPARQL voor begrippen van "Class"
+```sparql
+      PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+      PREFIX imklbegrip: <http://definities.geostandaarden.nl/imkl/id/begrip/>
+      prefix begrippenkader: <http://definities.geostandaarden.nl/id/begrippenkader/>
+      PREFIX ea: <http://www.sparxsystems.eu/def/ea#>
+      PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+      PREFIX owl: <http://www.w3.org/2002/07/owl#>
+      INSERT {
+        GRAPH <urn:output> {
+          ?begrip a skos:Concept.
+          ?begrip skos:notation ?label.
+        }
+      }
+      WHERE {
+        GRAPH <urn:input> {
+          SELECT (iri(concat('http://definities.geostandaarden.nl/imkl/id/begrip/',?label) as ?begrip)) ?label
+          WHERE {
+            {
+              ?s a ea:Object.
+              ?s ea:type "Class".
+              ?s ea:stereotype "Objecttype".
+              ?s rdfs:label ?label.
+              ?s ea:alias ?alias.
+            }
+          }
+        }
+      }
+```
+
 * **SHACL en andere Linked Data** : Je kunt SHACL-shapes genereren en de output in andere Linked Data-formaten omzetten door de YAML-configuratie te wijzigen.
-* **Tijdschatting** : Het kan 2-3 uur duren om een goed werkend TTL-bestand te genereren, en tot een dag voor het schoonmaken van de data.
+Voorbeelden van creeren een SHACL shapes
+
+```sparql
+      PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+      PREFIX imgbegrip: <http://definities.geostandaarden.nl/img/id/begrip/>
+      PREFIX ea: <http://www.sparxsystems.eu/def/ea#>
+      PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+      PREFIX owl: <http://www.w3.org/2002/07/owl#>
+      PREFIX img: <http://definities.geostandaarden.nl/img/>
+      PREFIX sh: <http://www.w3.org/ns/shacl#>
+      INSERT {
+        GRAPH <urn:output> {
+      ?shape
+        a sh:PropertyShape;
+        sh:minCount ?lower;
+        sh:maxCount ?upper;
+        sh:dataType ?type;
+        rdfs:comment ?comment.
+        }
+      }
+      WHERE {
+        GRAPH <urn:input> {
+          SELECT ?lower ?type ?comment (iri(concat("http://definities.geostandaarden.nl/def/",if(?label = "lokaalID" || ?label = "namespace", "nen3610/", ""), ?label)) as ?shape) ?upper
+          WHERE {
+            {
+              ?sh ea:lowerBound ?lower;
+                ea:stereotype "Data element";
+                rdfs:label ?label;
+                ea:upperBound ?upper;
+                ea:type ?type;
+                rdfs:comment ?comment.
+            }
+          }
+        }
+      }
+```
+
+* **Schoonmaken van bestanden** : Sommige tijdelijke transformatie heeft "trailing newlines" die wij kunnen vind en replace met deze regex
