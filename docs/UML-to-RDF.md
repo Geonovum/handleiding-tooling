@@ -1,6 +1,6 @@
-# Handleiding voor het Gebruik van EA2RDF en RDF2RDF Tools
+.# Handleiding voor het Gebruik van EA2RDF en RDF2RDF Tools
 
-Deze handleiding legt uit hoe je een RDF-bestand kunt genereren vanuit een Enterprise Architect (EA) EAPX-bestand, met behulp van de [**ea2rdf](https://github.com/architolk/ea2rdf/releases/tag/v1.2.3)** en [**rdf2rdf](https://github.com/architolk/rdf2rdf/releases/tag/v1.4.0)**tools ontwikkeld door Marco Bratingo. We zullen ook enkele tips geven voor het aanpassen van de output om het geschikt te maken voor verdere verwerking in RDF- en Linked Data-toepassingen.
+Deze handleiding legt uit hoe je een RDF-bestand kunt genereren vanuit een Enterprise Architect (EA) EAPX-bestand, met behulp van de [**ea2rdf**](https://github.com/architolk/ea2rdf/releases/tag/v1.2.3) en [**rdf2rdf**](https://github.com/architolk/rdf2rdf/releases/tag/v1.4.0)tools ontwikkeld door Marco Bratingo. We zullen ook enkele tips geven voor het aanpassen van de output om het geschikt te maken voor verdere verwerking in RDF- en Linked Data-toepassingen.
 
 ## Vereisten
 
@@ -10,6 +10,23 @@ Deze handleiding legt uit hoe je een RDF-bestand kunt genereren vanuit een Enter
 ## Stap 1: Converteer EA-bestand naar TTL (Turtle formaat)
 
 De eerste stap is het omzetten van het Enterprise Architect-bestand (EAP of EAPX) naar een tussentijds TTL-bestand. Dit wordt gedaan met de **ea2rdf** tool.
+
+#### Voorbereidingen:
+
+1. Maak een nieuwe map.
+`mkdir {NAAm van je map}`
+
+In deze map maak je 4 submappen aan:
+
+- lib
+- input
+- pipeline
+- output
+2. Zet je EAP(X)-bestand in de map input.
+
+3. Sla de JAR-bestanden op in de map lib.
+
+4. Maak een YAML-bestand aan in de hoofdmap.Het structuur van de yaml bestand zie in het deel [structuur](#structuur).
 
 #### Voor EAPX-bestanden:
 
