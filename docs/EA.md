@@ -23,3 +23,28 @@ Externe links:
 - [Handleiding gebruik MIM-toolbox](https://github.com/Geonovum/MIM-Werkomgeving/blob/master/UML%20profieltooling/werkversie1.1.1/README.md)
 - [Handleiding genereren MIM-profiel](https://github.com/Geonovum/MIM-Werkomgeving/tree/master/UML%20profieltooling#readme)
 - [Handleiding genereren Extensie MIM-toolbox](https://github.com/Geonovum/MIM-Werkomgeving/blob/master/UML%20profieltooling/how_to_extensie_op_toolbox.md)
+
+
+
+## Exporteren en importeren van XMI
+
+XMI is een uitwisselformaat voor UML modellen. Er zijn heel veel versies:
+
+### Native EA XMI
+
+Dit formaat kan je gebruiken om een UML model met zo weinig mogelijk verlies te delen in gevallen dat het EAPX bestanden delen niet werkt.
+
+#### Export
+
+Open het te exporteren model en selecteer het top package:
+
+![selecteer top package](media/image.png)
+
+In Publish-->Export-XML->Export XML for Current package:
+
+![alt text](media/image36.png)
+
+Kies voor Native als Export Type en 'Export'!
+
+![alt text](media/image35.png)
+

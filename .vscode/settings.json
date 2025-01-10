@@ -3,5 +3,8 @@
         "CORS",
         "Geonovum",
         "Respec"
-    ]
+    ],
+    "markdown.copyFiles.destination": {
+        "/docs/**/*": "media"
+    }
 }

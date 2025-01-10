@@ -322,17 +322,23 @@ Naamgevinsregels voor pubDomain:
 | vtm            |                                                          | docs.geostandaarden.nl     | is eigenlijk metadata     |                                                               | verhuizen naar MD                       |
 | wp             | Whitepaper Geostandaarden                                | respec utils               | ook een raar pubdomain    |                                                               | verhuizen naar ngii                     |
 
-## LocalBiblio
+## Bibligrafie
 
-In de localBiblio variabele worden Referenties naar andere documenten gezet.
-Voordat je hier citaten toevoegt, loont het de moeite om eerst in de
-[https://www.specref.org/](SpecRef) van ReSpec zelf te kijken. Pas als je een
-verwijzing niet vindt in SpecRef voeg je hem hier toe!
+ReSpec maakt automatisch een literatuurlijst van alle documenten waarnaar
+je verwijst. Een normatieve verwijzing naar een document ziet er als volgt uit
 
-Verwijzen naar een bibliografieelement gebeurt als volgt `[[ID]]`. De dubbele
-haakjes zorgen ervoor dat er blokhaken om de verwijzing staan in de tekst. Je
-kunt ook aangeven dat een verwijzing normatief is door er een uitroepteken voor
-te zetten `[[!ID]]`
+```markdown
+we gebruiken [[SemVer]] voor het nummeren van versies.
+```
+
+Verwijzingen worden op drie manieren geresolved:
+
+- Een globale lijst is te vinden op: [SpecRef](https://www.specref.org/).
+- Een Geonovum brede lijst (TODO) is te vinden op: [tools.geostandaarden.nl](https://github.com/Geonovum/tools.geostandaarden.nl/blob/main/tools.geostandaarden.nl/respec/config/geonovum-config.js)
+- In de lokale `config.js` kan je lokale referenties toevoegen
+
+Je kunt met  aangeven of een verwijzing normatief is of niet door er een uitroepteken of vraagteken voor te zetten
+te zetten `[[!ID]]` of `[[?ID]]`.
 
 ## Voorbeeld config.js
 

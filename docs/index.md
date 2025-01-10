@@ -7,7 +7,7 @@ publicatieomgeving van Geonovum beschreven.
 
 ## Geonovum tooling
 
-- **Enterprise Architect**
+- **UML Modelleertool:** Enterprise Architect
     - [Overzicht](EA.md)
     - [Primitieve datatypes](EA-toepassing-standaarddatatypen.md): Handleiding
         en toelichting op het toepassen van standaarddatatypes in
@@ -91,8 +91,8 @@ Dit is uitgelegd in de [handleiding ontologie maken](Handleiding-ontologie-maken
 ## MkDocs voor deze handleiding
 
 De handleiding wordt beheerd in [MkDocs](https://www.mkdocs.org/). Dit is een
-lichtgewicht tool die een collectie Markdown handleidingen omzet in een
-navigeerbare handleiding. De handleiding staat op
+lichtgewicht tool die een doorzoekbare en navigeerbare site maakt van een
+verzameling Markdown documenten. De handleiding staat op
 [github pages](https://github.com/Geonovum/handleiding-tooling). De
 bronbestanden staan in:
 [handleiding-tooling](https://github.com/Geonovum/handleiding-tooling).

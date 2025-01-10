@@ -3,6 +3,10 @@
 > **Note**
 > In dit stuk afbeeldingen opnemen waarin je het resultaat in ReSpec kunt zien. Daarvoor graag [NL-ReSpec-GN-template](https://geonovum.github.io/NL-ReSpec-GN-template/) aanvullen.
 
+
+> **TODO**
+> Het zou wel heel leuk zijn om een link met [NL-SBB](https://docs.geostandaarden.nl/nl-sbb/nl-sbb/) te leggen.
+
 ## Intro
 
 Een belangrijk onderdeel van een dataspecificatie is de definitie van begrippen. Steeds vaker leggen we bij Geonovum begrippen vast in een [begrippenkader](https://definities.geostandaarden.nl/nl/). Idealiter zouden we voor de definitie van een begrip altijd daarnaar willen verwijzen. Op dit moment is dat om meerdere redenen nog niet mogelijk. Op deze plek leggen we uit hoe we nu een definitie opnemen.
