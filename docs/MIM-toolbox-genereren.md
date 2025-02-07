@@ -7,6 +7,7 @@
 | Subversion (SVN)     | 1.14.1 |
 
 ## Inhoud
+
  1. [Voorbereiding](#1-voorbereiding)
  1. [Profiel publiceren](#2-profiel-publiceren)
  1. [Genereer MDG Technologie](#3-genereer-mdg-technologie)
@@ -17,17 +18,19 @@
  1. [Regels](#8-regels)
 
 ## Beschrijving
+
 Deze handleiding beschrijft het proces voor het genereren van een customized toolbox voor modelleren met Enterprise Architect. Het gaat specifiek in op het maken van de _MIM-toolbox_. Maar ook voor het genereren customized toolboxen in het algemeen, biedt deze beschrijving een handig overzicht van de benodigde stappen. Een inhoudelijke beschrijving voor het maken van de benodigde profielen, vind je hier ([linkOpnemen](url)). De meest actuele versie van MIM kun je hier ([linkOpnemen](url)) raadplegen.
 
 <!-- ```diff
 NOG VERWERKEN
-+ In deze bexchrijving gaan we ervan uit dat de inhoud voor de toolbox al is aangemaakt
++ In deze beschrijving gaan we ervan uit dat de inhoud voor de toolbox al is aangemaakt
 + en dat deze in de juiste packages en dito structuur is opgenomen.
 + Beschrijving inhoudelijke informatie voor het maken van _profile packages_
 + (zelf schrijven en/of verwijzen naar _Sparx_/_profile helpers_)?
 ``` -->
 
 ## 1 Voorbereiding
+
 Controleer voordat je (MIM-)profielen gaat genereren eerst de volgende zaken:
 
  - Beschik je over de [benodigde bestanden](#benodigde-bestanden)?
@@ -35,6 +38,7 @@ Controleer voordat je (MIM-)profielen gaat genereren eerst de volgende zaken:
  - Is het [versienummer correct ingevuld](#versienummer-toolbox)?
 
 ### 1.1 Benodigde bestanden
+
 Controleer of je beschikt over alle benodigde bestanden:
 
  - **EA-bestand** met MIM profile packages voor het genereren van de profiles en mdg technology ([Create MDG Technology File](https://sparxsystems.com/enterprise_architect_user_guide/15.2/modeling/creatingmdgtechnologies.html)), hiertoe behoort ten minste één package per stereotype: `«profile»`, `«diagram profile»` en `«toolbox profile»` (zie voor meer informatie over ... ([linkOpnemenNaarWelkePackagesPubliceren](url)).

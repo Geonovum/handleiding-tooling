@@ -1,77 +1,113 @@
-# Welkom
+# Publicatie Infrastructuur van Geonovum
 
-Welkom bij de beschrijving van de Geonovum Werkwijze. Deze helpfiles beschrijven
-welke tools we gebruiken voor het maken en beheren van de standaarden van
-Geonovum. Deze tools staan in onderstaand overzicht. Daaronder staat de
-publicatieomgeving van Geonovum beschreven.
+Dit is de publicatie infrstructuur van Geonovum. Onder het architectuurplaatje staan:
 
-## Geonovum tooling
+- Een korte [beschrijving](#kort-overzicht).
+- Verwijzing naar [documentatie](#documentatie).
+- Verbeterpunten [verbeterpunten](#verbeterpunten).
 
-- **UML Modelleertool:** Enterprise Architect
-    - [Overzicht](EA.md)
-    - [Primitieve datatypes](EA-toepassing-standaarddatatypen.md): Handleiding
-        en toelichting op het toepassen van standaarddatatypes in
-        modelleeromgeving Geonovum.
-- **GitHub**:
-    - [GitHub werkwijze](GitHub-Inleiding.md): algemene inleiding over GitHub.
-    - [GitHub handleiding](GitHub.md): Hoe maak je een account aan en hoe doe
-        je beheertaken.
-- **Imvertor**
-    - [Imvertor](Imvertor.md): Verwijzingen naar verschillende onderwerpen met
-        betrekking tot Imvertor.
-- **Markdown**
-    - [Markdown handleiding](Markdown.md): Handleiding werken met Markdown
-        voor ReSpec-documentatie.
-- **ReSpec**
-    - [Respec handleiding](ReSpec.md): Algemene handleiding.
-    - [Respec code toepassen](ReSpec-code-toepassen.md): Richtlijnen voor het
-        toepassen van code in documentatie.
-    - [Respec definitielijst maken](ReSpec-definitielijst-maken.md):
-        Handleiding voor het maken van een definitielijst in
-        ReSpec-documentatie.
-- **MIM**
-    - [Toolbox importeren](MIM-toolbox-importeren.md): Handleiding voor het
-        importeren van de MIM-toolbox in EA.
-    - [Toolbox genereren](MIM-toolbox-genereren.md): Handleiding voor het
-        maken van een EA-toolbox.
-    - [Toolbox genereren extensie](MIM-toolbox-genereren-extensie.md):
-        Handleiding voor het maken van een extensie op de MIM-toolbox.
-- **Subversion (SVN)**
-    - [Subversion installeren voor EA](SVN-importeren-bestaand-project.md):
-        Installatie SVN en informatiemodel in versiebeheer zetten.
-    - [Subversion importeren bestaand project](SVN-installeren-voor-EAP.md):
-        Packages importeren vanuit SVN in EA.
-- **GML**
-    - [GML](GML.md): Toelichting GML, XSD en Namespaces.
-- **Ontologie**
-    - [Ontologie](Handleiding-ontologie-maken-en-publiceren.md): Handleiding
-        voor het maken en publiceren van een ontologie.
-- **Word2XXX**
-    - [Word2werkversie](WordConversies.md)
+
+![Publicatie Infrastructuur Geonvoum](media/PublicatieInfrastructuurGeonovum.drawio.svg)
+
+## Kort Overzicht
+
+### [1] UML
+
+- UML klasse diagrammen maken we met Enterprise Architect.
+- Binnen UML gebruiken we MIM als metataal.
+- Ook gebruiken we NEN 3610 als raamwerk.
+
+### [2] Subversion
+
+- De UML diagram worden met subversion (svn) beheerd.
+- Deze server draait op `svn.geostandaarden.nl`
+
+### [3] Imvertor
+
+- Imvertor vertaalt het UML naar catalog, xsd etc.
+
+### [4] ReSpec document
+
+- Onze standaarden maken we in ReSpec.
+- Dit is een tool die uit een aantal bestanden (Markdown, HTML) een mooi document publiceert.
+- De bestanden beheren we in GitHub
+
+### [5] GitHub
+
+- Onze standaarden beheren en versioneren we in GitHub.
+
+### [6] docs.geostandaarden.nl
+
+- Onze standaarden publiceren we op docs.geostandaarden.nl
+- Dit doen we door het ftp de bestanden daarnaartoe te kopieren.
+
+### [7] tools.geostandaarden.nl
+
+- Op deze server staan css bestanden en hulpbestanden voor ReSpec
+
+## Documentatie
+
+### [1] UML
+
+- [Overzicht](EA.md)
+- [Primitieve datatypes](EA-toepassing-standaarddatatypen.md): Handleiding
+    en toelichting op het toepassen van standaarddatatypes in
+    modelleeromgeving Geonovum.
+
+### [2] Subversion
+
+- [Subversion installeren voor EA](SVN-importeren-bestaand-project.md):
+    Installatie SVN en informatiemodel in versiebeheer zetten.
+- [Subversion importeren bestaand project](SVN-installeren-voor-EAP.md):
+    Packages importeren vanuit SVN in EA.
+
+### [3] Imvertor
+
+- [Imvertor](Imvertor.md): Verwijzingen naar verschillende onderwerpen met
+    betrekking tot Imvertor.
+
+### [4] ReSpec
+- [Respec handleiding](ReSpec.md): Algemene handleiding.
+- [Respec code toepassen](ReSpec-code-toepassen.md): Richtlijnen voor het
+    toepassen van code in documentatie.
+- [Respec definitielijst maken](ReSpec-definitielijst-maken.md):
+    Handleiding voor het maken van een definitielijst in
+    ReSpec-documentatie.
+
+### [5] GitHub*
+- [GitHub werkwijze](GitHub-Inleiding.md): algemene inleiding over GitHub.
+- [GitHub handleiding](GitHub.md): Hoe maak je een account aan en hoe doe
+    je beheertaken.
+
+### [6] docs.geostandaarden.nl
+- Zie [pubDomainList.json](https://github.com/Geonovum/respec-utils/blob/master/src/autodeploy/config/pubDomainList.json)
+
+### Markdown
+ - [Markdown handleiding](Markdown.md): Handleiding werken met Markdown
+     voor ReSpec-documentatie.
+
+### MIM
+- [Toolbox importeren](MIM-toolbox-importeren.md): Handleiding voor het
+    importeren van de MIM-toolbox in EA.
+- [Toolbox genereren](MIM-toolbox-genereren.md): Handleiding voor het
+    maken van een EA-toolbox.
+- [Toolbox genereren extensie](MIM-toolbox-genereren-extensie.md):
+    Handleiding voor het maken van een extensie op de MIM-toolbox.
+
+### GML
+
+- [GML](GML.md): Toelichting GML, XSD en Namespaces.
+### Ontologie
+
+- [Ontologie](Handleiding-ontologie-maken-en-publiceren.md): Handleiding
+    voor het maken en publiceren van een ontologie.
+### Word2XXX
+
+- [Word2werkversie](WordConversies.md)
 
 Voor licenties of de interne beheerder van de tooling kun je terecht op
 [intranet](https://stichtinggeonovum.sharepoint.com/:b:/r/sites/FBICT/Gedeelde%20documenten/General/wat%20staat%20waar/Tooling_en_Beheerders.pdf?csf=1&web=1&e=aEcKjl)
 
-### Documentatie elders
-
-De documentatie van de werkwijze is niet alleen hier vastgelegd. Links naar
-andere documenten:
-
-- [werkomgeving modelleren](werkomgeving-modelleren.md).
-- [werkwijze modelleren](werkwijze-modelleren.md).
-- [geonovum werkwijze modelleren](geonovum-werkwijze-modelleren.md)
-
-## Geonovum publicatieomgeving
-
-Verschillende onderdelen van standaarden worden op verschillende plaatsen
-gepubliceerd. De publicatieomgeving ziet er als volgt uit
-
-![Architectuurplaatje](https://raw.githubusercontent.com/Geonovum/DrawIO/master/GeonovumInterneArchitectuur.drawio.png)
-### Documenten (docs.geostandaarden.nl)
-
-Standaarden en technische documentatie. Voor een nette lijst van pubdomains op
-docs.geostandaarden.nl moet de de volgende lijst up-to-date zijn:
-[pubDomainList.json](https://github.com/Geonovum/respec-utils/blob/master/src/autodeploy/config/pubDomainList.json)
 
 ### Het Technisch Register (register.geostandaarden.nl)
 
@@ -87,6 +123,20 @@ Er is één ontologie gepubliceerd: die van NEN 3610.
 Dit is uitgelegd in de [handleiding ontologie maken](Handleiding-ontologie-maken-en-publiceren.md)
 
 ### Conceptenbibliotheek (definities.geostandaarden.nl)
+
+
+## Verbeterpunten
+
+### [1] UML
+
+- Er is een alternatieve tool voor UML: 
+
+### [3] Imvertor
+
+- De beheerders van Imvertor willen binnenkort met pensioen.
+- Imvertor is niet echt modulair
+
+### [6] Imvertor
 
 ## MkDocs voor deze handleiding
 

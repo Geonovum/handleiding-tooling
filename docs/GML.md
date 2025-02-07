@@ -1,12 +1,13 @@
 # GML en XSD
 
-Een algemene handleiding voor het opslaag van Geometrie in GML bestanden is te vinden in: [Geometrie in model en GML](https://geonovum.github.io/gimeg/)
+Een algemene handleiding voor het opslaan van Geometrie in GML bestanden is te
+vinden in: [Geometrie in model en GML](https://geonovum.github.io/gimeg/)
 
 ## XSD en Namespaces
 
-Bij een XML applicatie schema (dus ook voor GML schema's) wordt vaak een namespace gebruikt. Deze namespace hoort vaak bij een domein en het is de bedoel dat de combinatie van de namespace  en het element uniek is. Dit kan alleen als de namespace, die de vorm van een URI heeft uniek is. Door een URI te kiezen die bij jou onder beheer is weet je zeker dat de combinatie uniek is. In de volgende paragraaf zie je een lijste gebruikte namespaces. Hieronder wat richtlijnen.
+In een GML applicatieschema gebruiken we namespaces. Een namespace is de heeft de vorm van een URI en identificeert een domein. 
 
-- Voor de basis wordt: http://www.geostandaarden.nl gebruikt.  Het is nog even de vraag of we niet op https moeten overstappen. Dat doen we niet want niemand anders doet deze overstap.
+- Voor de basis wordt: http://www.geostandaarden.nl gebruikt.
 - Daarna volgt een identificatie van de standaard. 
 - Een versienummer volgens semver X.Y. Een Z-versie is niet nodig omdat alle Z-versies backwards compatible zijn en je dus nooit meer dan 1 versie gebruikt.
 
@@ -44,6 +45,4 @@ Een korte inventarisatie levert:
 | imkl2015 (wionbr) | 1.2       | http://www.geostandaarden.nl/imkl/2015/wionbr/1.2                        |
 | imkl2015 (wionbr) | 1.2.1     | http://www.geostandaarden.nl/imkl/2015/wionbr/1.2                        |
 | top10nl           | 1.1.1     | http://www.kadaster.nl/schemas/top10nl/v20120116                         |
-| top10nl            | 1.2.0     | http://register.geostandaarden.nl/gmlapplicatieschema/top10nl/1.2.0      |
-|                   |           |                                                                          |
-
+| top10nl           | 1.2.0     | http://register.geostandaarden.nl/gmlapplicatieschema/top10nl/1.2.0      |
