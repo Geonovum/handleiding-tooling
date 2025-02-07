@@ -7,9 +7,10 @@ Dit is de publicatie infrstructuur van Geonovum. Onder het architectuurplaatje s
 - Verbeterpunten [verbeterpunten](#verbeterpunten).
 
 
-![Publicatie Infrastructuur Geonvoum](media/PublicatieInfrastructuurGeonovum.drawio.svg)
+![pubinf](media/PublicatieInfrastructuurGeonovum.drawio.svg)
 
 ## Kort Overzicht
+
 
 ### [1] UML
 
@@ -45,6 +46,14 @@ Dit is de publicatie infrstructuur van Geonovum. Onder het architectuurplaatje s
 
 - Op deze server staan css bestanden en hulpbestanden voor ReSpec
 
+### [7] beheertools
+
+- Interne server die beheertaken automatiseert.
+
+### [9] register.geostandaarden.nl
+
+- Technisch register met xsds, json-schema etc.
+
 ## Documentatie
 
 ### [1] UML
@@ -53,6 +62,8 @@ Dit is de publicatie infrstructuur van Geonovum. Onder het architectuurplaatje s
 - [Primitieve datatypes](EA-toepassing-standaarddatatypen.md): Handleiding
     en toelichting op het toepassen van standaarddatatypes in
     modelleeromgeving Geonovum.
+- [Toolbox importeren](MIM-toolbox-importeren.md): Handleiding voor het
+    importeren van de MIM-toolbox in EA.
 
 ### [2] Subversion
 
@@ -87,8 +98,6 @@ Dit is de publicatie infrstructuur van Geonovum. Onder het architectuurplaatje s
      voor ReSpec-documentatie.
 
 ### MIM
-- [Toolbox importeren](MIM-toolbox-importeren.md): Handleiding voor het
-    importeren van de MIM-toolbox in EA.
 - [Toolbox genereren](MIM-toolbox-genereren.md): Handleiding voor het
     maken van een EA-toolbox.
 - [Toolbox genereren extensie](MIM-toolbox-genereren-extensie.md):
@@ -97,10 +106,12 @@ Dit is de publicatie infrstructuur van Geonovum. Onder het architectuurplaatje s
 ### GML
 
 - [GML](GML.md): Toelichting GML, XSD en Namespaces.
+
 ### Ontologie
 
 - [Ontologie](Handleiding-ontologie-maken-en-publiceren.md): Handleiding
     voor het maken en publiceren van een ontologie.
+
 ### Word2XXX
 
 - [Word2werkversie](WordConversies.md)
