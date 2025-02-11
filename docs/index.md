@@ -4,7 +4,9 @@ Dit is de publicatie infrstructuur van Geonovum. Onder het architectuurplaatje s
 
 - Een korte [beschrijving](#kort-overzicht).
 - Verwijzing naar [documentatie](#documentatie).
-- Verbeterpunten [verbeterpunten](#verbeterpunten).
+- Aandachtspunten [verbeterpunten](#aandachtspunten).
+- Hoe we de boel beheren staat in [wie beheert wat](#beheer).
+- Wat vertellen wij onze opdrachtgevers in de [bijsluiter](https://stichtinggeonovum.sharepoint.com/:b:/s/Basisprogramma/EVGORVYMb0FFkjC0L14Ud5AB3cuyP27Ux2lz6ZfxGqqMDw?e=EYVtfs)
 
 
 ![pubinf](media/PublicatieInfrastructuurGeonovum.drawio.svg)
@@ -54,6 +56,17 @@ Dit is de publicatie infrstructuur van Geonovum. Onder het architectuurplaatje s
 
 - Technisch register met xsds, json-schema etc.
 
+### [13] Nationaal Georegister
+
+- Staat los van de rest van de publicatie infrastructuur.
+
+### [14] Web server van Geonovum
+
+- Staat los van rest van publicatie infrastructuur.
+
+
+
+
 ## Documentatie
 
 ### [1] UML
@@ -85,7 +98,7 @@ Dit is de publicatie infrstructuur van Geonovum. Onder het architectuurplaatje s
     Handleiding voor het maken van een definitielijst in
     ReSpec-documentatie.
 
-### [5] GitHub*
+### [5] GitHub
 - [GitHub werkwijze](GitHub-Inleiding.md): algemene inleiding over GitHub.
 - [GitHub handleiding](GitHub.md): Hoe maak je een account aan en hoe doe
     je beheertaken.
@@ -93,7 +106,15 @@ Dit is de publicatie infrstructuur van Geonovum. Onder het architectuurplaatje s
 ### [6] docs.geostandaarden.nl
 - Zie [pubDomainList.json](https://github.com/Geonovum/respec-utils/blob/master/src/autodeploy/config/pubDomainList.json)
 
-### Markdown
+
+### [9] register.geostandaarden.nl
+
+Technische onderdelen van de standaard worden op:
+[register.geostandaarden.nl](https://register.geostandaarden.nl) gezet. Hoe je
+dit met een webhook kan doen staat beschreven in:
+[technisch-register-2019](https://github.com/Geonovum/technisch-register-2019/blob/master/documentatie/Handleiding%20voor%20beheerders%20informatiemodellen.md)
+
+### [10] Markdown
  - [Markdown handleiding](Markdown.md): Handleiding werken met Markdown
      voor ReSpec-documentatie.
 
@@ -116,38 +137,49 @@ Dit is de publicatie infrstructuur van Geonovum. Onder het architectuurplaatje s
 
 - [Word2werkversie](WordConversies.md)
 
-Voor licenties of de interne beheerder van de tooling kun je terecht op
-[intranet](https://stichtinggeonovum.sharepoint.com/:b:/r/sites/FBICT/Gedeelde%20documenten/General/wat%20staat%20waar/Tooling_en_Beheerders.pdf?csf=1&web=1&e=aEcKjl)
-
-
-### Het Technisch Register (register.geostandaarden.nl)
-
-Technische onderdelen van de standaard worden op:
-[register.geostandaarden.nl](https://register.geostandaarden.nl) gezet. Hoe je
-dit met een webhook kan doen staat beschreven in:
-[technisch-register-2019](https://github.com/Geonovum/technisch-register-2019/blob/master/documentatie/Handleiding%20voor%20beheerders%20informatiemodellen.md)
-
 ### Ontologieën (modellen.geostandaarden.nl)
 
 Er is één ontologie gepubliceerd: die van NEN 3610. 
 
 Dit is uitgelegd in de [handleiding ontologie maken](Handleiding-ontologie-maken-en-publiceren.md)
 
-### Conceptenbibliotheek (definities.geostandaarden.nl)
+## beheer
 
+Voor licenties of de interne beheerder van de tooling kun je terecht op
+[intranet](https://stichtinggeonovum.sharepoint.com/:b:/r/sites/FBICT/Gedeelde%20documenten/General/wat%20staat%20waar/Tooling_en_Beheerders.pdf?csf=1&web=1&e=aEcKjl)
 
-## Verbeterpunten
+## Aandachtspunten
 
-### [1] UML
-
-- Er is een alternatieve tool voor UML: 
-
-### [3] Imvertor
-
-- De beheerders van Imvertor willen binnenkort met pensioen.
-- Imvertor is niet echt modulair
-
-### [6] Imvertor
+- **Algemeen**
+    - Het is niet één gezicht naar buiten maar meerdere. De samenhang kan beter.
+- **UML**
+    - Er is een alternatieve tool voor UML. Wat gaan we daar mee doen? [Modeldesk](https://modeldesk.io/).
+- **Imvertor**
+    - De beheerders van Imvertor willen binnenkort met pensioen.
+    - Imvertor is niet echt modulair
+- **modellen.geostandaarden.nl**
+    - Hoe kan het dat hier maar 1 standaard op staat?
+- **docs.geostandaarden.nl**
+    - De gegevens op deze server worden slecht beheerd. We hebben ideeën voor een mooie beheeromgeving maar die is er nog niet.
+    - Documenten op de site zouden self contained moeten zijn maar sommige verwijzen naar css bestanden op register.geostandaarden.nl waardoor gepubliceerde standaarden opeens onleesbaar kunnen worden.
+- **definities.geostandaarden.nl**
+    - Er zijn hiervoor twee verschillende werkwijzes die een verschillend resultaat leveren. Goede beschrijving werkwijze is hier nodig.
+- **register.geostandaarden.nl**
+    - De documenten die hierop staan zijn niet in beheer.
+- **beheertools**
+    - Deze server moet zelf in beheer genomen worden.
+- **GitHub**
+    - Deze server is publiek waardoor alles wat hierop staat publiek is.
+- **ReSpec**
+    - Heel veel documenten zijn van minder dan gewenste kwaliteit omdat er geen goede kwaliteitscriteria en controle mechanismes zijn.
+- **Website Geonovum**
+    - Beheer links met technische servers is vooral handmatig.
+    - Scheiding met technische servers kan leiden tot lagere ranking documenten bij zoeken.
+- **Microsoft teams**
+    - Dit is vooral een intern systeem waardoor samenwerking met externe partijen soms lastig is.
+    - Alle teams zouden voor iedereeen binnen Geonovum zichbaar moeten zijn maar zijn dat niet.
+    - Onderscheid tussen dingen die per jaar gaan en dingen die per project gaan is niet goed geregeld.
+    - Heel veel spookmappen en document die bij niemand bekend zijn.
 
 ## MkDocs voor deze handleiding
 
