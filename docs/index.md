@@ -13,6 +13,8 @@ Dit is de publicatie infrstructuur van Geonovum. Onder het architectuurplaatje s
 
 ## Kort Overzicht
 
+Zie het document [werkwijze informatiemodelleren](https://stichtinggeonovum.sharepoint.com/sites/StarterspakketGeonovum/SitePages/Werkwijze-informatiemodelleren.aspx) voor een iets langer overzicht.
+
 
 ### [1] UML
 
