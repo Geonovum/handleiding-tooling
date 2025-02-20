@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Geonovum Werkwijze Modelleren - Geonovum tooling</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../css/brands.min.css" rel="stylesheet">
+        <link href="../css/solid.min.css" rel="stylesheet">
+        <link href="../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">Geonovum tooling</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Home</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href=".." class="dropdown-item">Welkom</a>
+</li>
+                                    
+<li>
+    <a href="./" class="dropdown-item active" aria-current="page">Geonovum Werkwijze Modelleren</a>
+</li>
+                                    
+<li>
+    <a href="../werkomgeving-modelleren/" class="dropdown-item">Werkomgeving Modelleren</a>
+</li>
+                                    
+<li>
+    <a href="../werkwijze-modelleren/" class="dropdown-item">Werkwijze Modelleren</a>
+</li>
+                                    
+<li>
+    <a href="../SuggestiesHandleiding/" class="dropdown-item">SuggestiesHandleiding</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">GitHub</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../GitHub-Inleiding/" class="dropdown-item">GitHub Intro</a>
+</li>
+                                    
+<li>
+    <a href="../GitHub/" class="dropdown-item">Manual</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../Imvertor/" class="nav-link">Imvertor</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../Markdown/" class="nav-link">Markdown</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">MIM</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../MIM-toolbox-genereren/" class="dropdown-item">Toolbox genereren</a>
+</li>
+                                    
+<li>
+    <a href="../MIM-toolbox-importeren/" class="dropdown-item">Toolbox importeren</a>
+</li>
+                                    
+<li>
+    <a href="../MIM-toolbox-genereren-extensie/" class="dropdown-item">Toolbox genereren extensie</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">ReSpec</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../ReSpec/" class="dropdown-item">Manual</a>
+</li>
+                                    
+<li>
+    <a href="../ReSpec-code-toepassen/" class="dropdown-item">Code toepassen</a>
+</li>
+                                    
+<li>
+    <a href="../ReSpec-definitielijst-maken/" class="dropdown-item">Definitielijst maken</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">EA</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../EA/" class="dropdown-item">Overzicht</a>
+</li>
+                                    
+<li>
+    <a href="../EA-toepassing-standaarddatatypen/" class="dropdown-item">standaarddatatypen</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Subversion</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../SVN-installeren-voor-EAP/" class="dropdown-item">SVN installeren voor EAP</a>
+</li>
+                                    
+<li>
+    <a href="../SVN-importeren-bestaand-project/" class="dropdown-item">SVN importeren bestaand project</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../GML/" class="nav-link">GML</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../BegrippenXL/" class="nav-link">BegrippenXL</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../UML-to-RDF/" class="nav-link">UML-to-RDF</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../Handleiding-ontologie-maken-en-publiceren/" class="nav-link">Ontologie</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../WordConversies/" class="nav-link">Word2XXX</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href=".." class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../werkomgeving-modelleren/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/Geonovum/handleiding-tooling/blob/main/docs/geonovum-werkwijze-modelleren.md" class="nav-link"><i class="fa-brands fa-github"></i> Edit on GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="2"><a href="#overzicht-beschikbare-documenten" class="nav-link">Overzicht beschikbare documenten</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#suggestie-voor-de-langetermijn" class="nav-link">Suggestie voor de langetermijn</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#inventarisatie-inhoud-documenten" class="nav-link">Inventarisatie inhoud documenten</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h2 id="overzicht-beschikbare-documenten">Overzicht beschikbare documenten</h2>
+<p>De onderstaande tabbelen geven een overzicht van reeds beschikbare handleidingen en andere documenten die voor een modelleur bij Geonovum relevant zijn.</p>
+<blockquote>
+<p><strong>Note</strong>
+<strong>Nog verwerken</strong></p>
+</blockquote>
+<ol>
+<li>Handboek beheer standaarden</li>
+<li>Handleiding toepassing standaarddatatypes</li>
+<li>Document JvG, beheerinformatie GitHub, ReSpec, etc.</li>
+<li>Handleiding Logius Respec (door Linda)</li>
+<li>Handleiding GitHub ReSpec Markdwon v1.1 (org:<code>Handleiding GitHub ReSpec Markdown v1.1.docx</code>)</li>
+<li>Handleiding introductie GitHub (org:<code>Handleiding introductie GitHub.docx</code>)</li>
+</ol>
+<blockquote>
+<p><strong>Note</strong>
+Wilko heeft twee bestaande <a href="https://geonovum.github.io/handleiding-tooling/">documenten
+samengevoegd</a>, maar daarin
+zit ook overlap met het document van Linda over Logius ReSpec. Bovendien bevat
+het document secties waarvan het fijn is om er apart naar te kunnen verwijzen.
+M.a.w.: tabellen kunnen aangevuld worden, maar goed kijken welke documenten
+(zie ook: rij <code>16</code> en <code>22</code> in de <a href="../werkomgeving-modelleren/">tabel met het overzicht van beschikbare
+documentatie m.b.t. werkomgeving</a>. ). Intranet
+luistert iets nauwer: daar misschien specifiekere verwijzingen maken.</p>
+</blockquote>
+<h2 id="suggestie-voor-de-langetermijn">Suggestie voor de langetermijn</h2>
+<blockquote>
+<p><strong>Note</strong>
+Voorbeeld samenhang processen, data, inten/extern van <a href="https://aquo.nl">aquo-standaarden</a></p>
+</blockquote>
+<p>De volgende lijst bevat een aantal suggesties om documentatie (van o.a.
+werkwijze en -omgeving) beter en efficienter op orde te krijgen. Voor
+documentatie zouden we eens kunnen kijken naar DITA, een standaard uit de
+uitgeverswereld. Op Wikipedia wordt het als volgt uitgelegd: "<em>Uitgangspunt van
+de architectuur is het verdelen van tekst in bouwstenen of 'topics' ten behoeve
+van hergebruik en specialisatie en het bundelen van bouwstenen via zogenaamde
+DITA Maps.</em>"</p>
+<ul>
+<li>Dit zou heel aantrekkelijk kunnen zijn voor onze documentatie, zoals
+  handleidingen en instructies, maar ook modellen.</li>
+<li>Imvertor maakt nu van UML een catalogus.</li>
+<li>Maar zou het niet mooier zijn om van datamodel naar database met objecten,
+  definities en diagrammen te gaan</li>
+<li>En van daaruit kun je dat (bijvoorbeeld) een catalogus genereren?</li>
+<li>Informatie die op meerdere plekken terugkeert kan zo éénmalig opgeslagen en
+  beheerd worden</li>
+<li>Op dit moment is verwijzen tussen standaarden onderling lastig, een dergelijke
+  structuur zou een oplossing kunnen zijn.,</li>
+<li>NEN3610 is topmodel voor veel modellen, daar wil je naar kunnen verwijzen;
+  m.a.w. echt mee kunnen verbinden</li>
+<li>Wat is ervoor nodig?</li>
+<li>Welke stappen kunnen we nu al nemen zonder onszelf in de toekomst klem te
+  zetten?</li>
+<li>Informatie in database zou applicatie-onafhankelijk moeten zijn (m.a.w. niet
+  afhankelijk van EA of Imvertor)</li>
+<li>De huidige werkwijze van het publiceren van modellen en standaarden is te veel
+  verzuild; ieder model is een zuil.</li>
+<li>Gerard W. heeft affiniteit met de uitgeverswereld en weet hierover meer.</li>
+<li>Een ander deel van de workflow zou kunnen zijn om documenten via MS Word aan
+  te leveren voor de database.</li>
+<li>Maar misschien wil je aan de aanleverkant meerdere formaten kunnen toestaan. </li>
+<li>Arjan Loeffen heeft hier vanuit andere invalshoek ook ideeën over: datamodel
+  van heel NL</li>
+<li>Dan moet je ook kunnen verbinden en standaardistaie ook verder doorvoeren
+  (bijv. lay-out)</li>
+</ul>
+<h3 id="links-naar-informatie-over-dita">Links naar informatie over DITA</h3>
+<ul>
+<li><a href="https://nl.wikipedia.org/wiki/Darwin_Information_Typing_Architecture">Uitleg op Wikipedia</a></li>
+<li><a href="https://www.xml.com/articles/2017/01/19/what-dita/">Artikel op XML.com</a></li>
+</ul>
+<h2 id="inventarisatie-inhoud-documenten">Inventarisatie inhoud documenten</h2>
+<p>Deze paragraaf geeft per document een korte analyse van de inhoud. Op basis hiervan wordt een koppeling gemaakt met de lijst met personen die op dit moment verantwoordelijk zijn voor bepaalde onderdelen binnen Geonovum. Dit wordt voorlopig alleen toegepast op wat relevant is voor de <em>Geonovumwerkomgeving</em> (m.u.v. <em>HIM</em>). Op die manier wordt duidelijk welke onderdelen afgedekt zijn en welke niet, maar ook wie er mogelijk verantwoordelijk voor is.</p>
+<h3 id="him">HIM</h3>
+<ul>
+<li>Past misschien beter bij <em>Geonovumwerkwijze</em> (i.p.v. ~<em>omgeving</em>)</li>
+<li>Handreiking voor informatiemodellering</li>
+<li>Voor informatieproduten uitwisselen in context DSO</li>
+<li>Objectgeoriënteerd</li>
+<li>Heeft update nodig</li>
+<li>Hoofdstuk 2-5 zijn met name relevant</li>
+<li>Zouden we naast 'bijlage offerte' (Arnoud) moeten leggen.</li>
+<li>Waarom blijven liggen? Nuttig document toch!?</li>
+<li>Veel DSO-taal, hoewel idee toch voor alle informatiemodellen geldt?</li>
+</ul>
+<h3 id="geonovum-technisch-register-2019">Geonovum Technisch register (2019)</h3>
+<ul>
+<li>Bevat Drie Documenten</li>
+<li>Niet allemaal even compleet</li>
+<li>Heel inhoudelijk van aard, weinig extra uitleg</li>
+<li>Missschien ook prima</li>
+<li>Deels in Nederlands, deels in Engels</li>
+</ul>
+<h3 id="publiceren-van-het-imgeluid-eap-bestand">Publiceren van het IMGeluid EAP-bestand</h3>
+<ul>
+<li>Heel nuttig!</li>
+<li>Verwijst naar wijzigingsprotocol IMGeluid (ook breed nuttig)</li>
+<li>Herinnert mij aan doc. Pano: versionering</li>
+<li>Noemt 'beheerhandboek' (BOMOS?), is ook relevant voor modelleur. Grensgeval scope?</li>
+<li>Bevat ook SVN, bestaat ook GitHub handleiding van</li>
+<li>Handmatig XSD bewerken: o.a. imvertor ns verwijderen, hoorde ik ook bij BRO. Terugkoppelen naar Arjan?</li>
+<li>Worden ook tools genoemd:<ul>
+<li>XML editor voor validatie</li>
+<li>W3C Markup Validation Service</li>
+</ul>
+</li>
+</ul>
+<h3 id="installatie-svn">Installatie SVN</h3>
+<ul>
+<li>Actueel</li>
+<li>Volledig</li>
+</ul>
+<h3 id="importeren-van-een-bestaand-svn-project-in-ea">Importeren van een bestaand SVN-project in EA</h3>
+<ul>
+<li>Actueel </li>
+<li>Volledig</li>
+</ul>
+<blockquote>
+<p><strong>Note</strong>
+Overzicht verder aanvullen</p>
+<p><strong>Note</strong>
+Relevante passages uit Model Driven Design documentatie VNG-realisatie. In het algemeen heel mooi dat alles netjes bij elkaar staat: begrippen, werkomgeving en werkwijze:</p>
+</blockquote>
+<ul>
+<li>Sectie 1:   EA Toolpack installeren</li>
+<li>Sectie 5:   Gebruik van datatypes</li>
+<li>Sectie 5:   Technieken en handigheidjes</li>
+<li>Sectie 5:   Naamgevingsconventies (het hebben hiervan!)</li>
+<li>Sectie 8:   Veel voorkomende fouten (het hebben hiervan!)</li>
+</ul></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js"></script>
+        <script src="../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
