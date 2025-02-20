@@ -1,4 +1,12 @@
 site_name: Geonovum tooling
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
 repo_url: https://github.com/Geonovum/handleiding-tooling
 edit_uri: blob/main/docs/
 nav:
@@ -28,5 +36,7 @@ nav:
         - SVN installeren voor EAP: SVN-installeren-voor-EAP.md
         - 'SVN importeren bestaand project': SVN-importeren-bestaand-project.md
     - GML: GML.md
+    - BegrippenXL: BegrippenXL.md
+    - UML-to-RDF: UML-to-RDF.md
     - Ontologie: Handleiding-ontologie-maken-en-publiceren.md
     - Word2XXX: WordConversies.md

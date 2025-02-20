@@ -1,6 +1,6 @@
-.# Handleiding voor het Gebruik van EA2RDF en RDF2RDF Tools
+# Handleiding voor het Gebruik van EA2RDF en RDF2RDF Tools
 
-Deze handleiding legt uit hoe je een RDF-bestand kunt genereren vanuit een Enterprise Architect (EA) EAPX-bestand, met behulp van de [**ea2rdf**](https://github.com/architolk/ea2rdf/releases/tag/v1.2.3) en [**rdf2rdf**](https://github.com/architolk/rdf2rdf/releases/tag/v1.4.0)tools ontwikkeld door Marco Bratingo. We zullen ook enkele tips geven voor het aanpassen van de output om het geschikt te maken voor verdere verwerking in RDF- en Linked Data-toepassingen.
+Deze handleiding legt uit hoe je een RDF-bestand kunt genereren vanuit een Enterprise Architect (EA) EAPX-bestand, met behulp van de [**ea2rdf**](https://github.com/architolk/ea2rdf/releases/tag/v1.2.3) en [**rdf2rdf**](https://github.com/architolk/rdf2rdf/releases/tag/v1.4.0) tools ontwikkeld door Marco Brattinga. We zullen ook enkele tips geven voor het aanpassen van de output om het geschikt te maken voor verdere verwerking in RDF- en Linked Data-toepassingen.
 
 ## Vereisten
 
@@ -14,7 +14,7 @@ De eerste stap is het omzetten van het Enterprise Architect-bestand (EAP of EAPX
 #### Voorbereidingen:
 
 1. Maak een nieuwe map.
-`mkdir {NAAm van je map}`
+`mkdir {Naam van je map}`
 
 In deze map maak je 4 submappen aan:
 
@@ -22,6 +22,7 @@ In deze map maak je 4 submappen aan:
 - input
 - pipeline
 - output
+
 2. Zet je EAP(X)-bestand in de map input.
 
 3. Sla de JAR-bestanden op in de map lib.
@@ -66,12 +67,10 @@ De YAML-configuratie (`ea2skos.yaml`) bepaalt hoe de transformatie plaatsvindt. 
 
 Bijvoorbeeld, als je definities en beschrijvingen uit een commentaarveld wilt halen, kun je de volgende SPARQL-aanpassing gebruiken:
 
-```
-SPARQL
+```SPARQL
 ?subject rdfs:comment ?comment.
 bind(replace(?comment, "^.*-- Definition --(.*?)-- Description --.*$", "$1") as ?newDescription)
 bind(replace(?comment, "^.*-- Description --(.*?)-- Source.*$", "$1") as ?newNote).
-
 ```
 Het structuur van YAML bestaand:
 
@@ -91,6 +90,7 @@ query: De daadwerkelijke SPARQL-query, inclusief PREFIX-definities en INSERT-ins
 Voorbeeldinhoud
 Metadata
 yaml
+
 ```
 title: MIM conversie
 version: 0.3
@@ -198,6 +198,7 @@ Na de transformatie is het belangrijk om het resultaat te controleren. Vaak moet
 
 * **SPARQL-queries zijn krachtig** : Door SPARQL-constructs in je YAML-bestand te gebruiken, kun je gegevens uit je model extraheren en het RDF-formaat aanpassen aan je wensen.
 SPARQL voor begrippen van "Class"
+
 ```sparql
       PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
       PREFIX imklbegrip: <http://definities.geostandaarden.nl/imkl/id/begrip/>
