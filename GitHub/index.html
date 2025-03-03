@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Manual - Geonovum tooling</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../css/brands.min.css" rel="stylesheet">
+        <link href="../css/solid.min.css" rel="stylesheet">
+        <link href="../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">Geonovum tooling</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Home</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href=".." class="dropdown-item">Welkom</a>
+</li>
+                                    
+<li>
+    <a href="../geonovum-werkwijze-modelleren/" class="dropdown-item">Geonovum Werkwijze Modelleren</a>
+</li>
+                                    
+<li>
+    <a href="../werkomgeving-modelleren/" class="dropdown-item">Werkomgeving Modelleren</a>
+</li>
+                                    
+<li>
+    <a href="../werkwijze-modelleren/" class="dropdown-item">Werkwijze Modelleren</a>
+</li>
+                                    
+<li>
+    <a href="../SuggestiesHandleiding/" class="dropdown-item">SuggestiesHandleiding</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">GitHub</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../GitHub-Inleiding/" class="dropdown-item">GitHub Intro</a>
+</li>
+                                    
+<li>
+    <a href="./" class="dropdown-item active" aria-current="page">Manual</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../Imvertor/" class="nav-link">Imvertor</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../Markdown/" class="nav-link">Markdown</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">ReSpec</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../ReSpec/" class="dropdown-item">Manual</a>
+</li>
+                                    
+<li>
+    <a href="../ReSpec/ReSpec-code-toepassen/" class="dropdown-item">Code toepassen</a>
+</li>
+                                    
+<li>
+    <a href="../ReSpec/ReSpec-definitielijst-maken/" class="dropdown-item">Definitielijst maken</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">EA</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../EA/" class="dropdown-item">Overzicht</a>
+</li>
+                                    
+<li>
+    <a href="../EA/EA-toepassing-standaarddatatypen/" class="dropdown-item">standaarddatatypen</a>
+</li>
+                                    
+<li>
+    <a href="../EA/MIM-toolbox-genereren/" class="dropdown-item">Toolbox genereren</a>
+</li>
+                                    
+<li>
+    <a href="../EA/MIM-toolbox-importeren/" class="dropdown-item">Toolbox importeren</a>
+</li>
+                                    
+<li>
+    <a href="../EA/MIM-toolbox-genereren-extensie/" class="dropdown-item">Toolbox genereren extensie</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Subversion</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../SVN-installeren-voor-EAP/" class="dropdown-item">SVN installeren voor EAP</a>
+</li>
+                                    
+<li>
+    <a href="../SVN-importeren-bestaand-project/" class="dropdown-item">SVN importeren bestaand project</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../GML/" class="nav-link">GML</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../BegrippenXL/" class="nav-link">BegrippenXL</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../UML-to-RDF/" class="nav-link">UML-to-RDF</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../Handleiding-ontologie-maken-en-publiceren/" class="nav-link">Ontologie</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../WordConversies/" class="nav-link">Word2XXX</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../GitHub-Inleiding/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../Imvertor/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/Geonovum/handleiding-tooling/blob/main/docs/GitHub.md" class="nav-link"><i class="fa-brands fa-github"></i> Edit on GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#github" class="nav-link">GitHub</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#installatie-en-inrichting" class="nav-link">Installatie en inrichting</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#werkwijze-geonovum" class="nav-link">Werkwijze Geonovum</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#aan-de-slag-met-github" class="nav-link">Aan de slag met GitHub</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#enkele-regels-over-github-binnen-geonovum" class="nav-link">Enkele regels over GitHub binnen Geonovum</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="github">GitHub</h1>
+<p>In dit hoofdstuk komen zowel GitHub als GitHub desktop client aan de orde. Geonovum heeft op github een eigen ‘onderkomen’ op: <a href="https://github.com/Geonovum">https://github.com/Geonovum</a>. In dit hoofdstuk staat beschreven wat je moet doen om “up-and-running” te komen voor het uitvoeren van je beheertaken op GitHub. Hoe je een account aanmaakt, en hoe je de benodigde software installeert.</p>
+<h2 id="installatie-en-inrichting">Installatie en inrichting</h2>
+<h3 id="aanmaken-github-account">Aanmaken GitHub account</h3>
+<p>Als je nog geen GitHub account hebt, of als je een apart GitHub account wil
+maken voor je Geonovum werkzaamheden, ga naar:
+<a href="https://github.com/join/get-started">https://github.com/join/get-started</a> .</p>
+<p>Dan zie je het scherm dat hiernaast staat. Maak in dat scherm een usernaam aan
+waarmee je op GitHub gaat werken.</p>
+<p><strong>Tip</strong>: als je met meerdere accounts gaat werken, zorg er dan voor dat aan
+de accountnaam kan zien waarvoor die dan gebruikt moet worden. (Bijvoorbeeld
+door die naam te eindigen op –GNM). Verplicht is dit niet.</p>
+<p>Vul in het veld username je nieuwe GitHub naam in.</p>
+<p>Vul je Geonovum email in</p>
+<p><img alt="media/image3.png" src="../media/image3.png" /></p>
+<p>Klik vervolgens op “Create Account” en dan wordt je account aangemaakt.</p>
+<p>Kies in dit scherm je persoonlijke plan. Bij Geonovum gebruiken we de gratis
+versie, dus selecteer die.</p>
+<p><img alt="media/image4.png" src="../media/image4.png" /></p>
+<h3 id="installeren-github-desktop">Installeren GitHub desktop</h3>
+<p>Ga in je internet browser naar <a href="https://desktop.github.com/">https://desktop.github.com/</a></p>
+<p>Klik daar op download for Windows (64bit).</p>
+<p>Nu wordt de installer gedownload, en dat zie je linksonder in je browser zoals in het plaatje rechts:</p>
+<p><img alt="media/image6.png" src="../media/image6.png" />
+<img alt="media/image7.png" src="../media/image7.png" /></p>
+<p>Na starten van de installer verschijnt het scherm hiernaast</p>
+<p>Het volgende scherm zal nu openen</p>
+<p>we hebben in de vorige stap al een account aangemaakt dus klik op Sign Into Github.com</p>
+<p><img alt="media/image8.png" src="../media/image8.png" /></p>
+<p>Na Klikken op Sign into Github.com, verschijnt dit scherm. Hier hoeft verder niks ingevuld te worden, dus klik op continue.</p>
+<p>In dit scherm kan je desgewenst het vinkje bij het versturen van anonieme data uitzetten. Daarna klikken op Finish.</p>
+<p>GitHub Desktop is nu geïnstalleerd.</p>
+<p><img alt="media/image9.png" src="../media/image9.png" /></p>
+<h3 id="opties-voor-github-desktop">Opties voor GitHub desktop</h3>
+<p><img alt="media/image10.png" src="../media/image10.png" /></p>
+<p>GitHub Desktop kan worden aangepast aan persoonlijke voorkeuren. Dat doe je door in het hoofdscherm van de GitHub Desktop op het menu “File” te klikken en vervolgens voor “Opties” te kiezen.</p>
+<p><img alt="media/image11.png" src="../media/image11.png" />
+In het Accounts scherm staat hoe je bent ingelogd bij GitHub. Hier kan je uitloggen en opnieuw inloggen als je meerdere GitHub Accounts hebt.</p>
+<p><img alt="media/image12.png" src="../media/image12.png" />
+In het tabblad “Git” kan je je Github Naam eventueel aanpassen. De GitHub Email is de email die intern binnen Github wordt gebruikt. Die hoeft niet gewijzigd te worden.</p>
+<p><img alt="media/image13.png" src="../media/image13.png" />
+In het tabblad “Appearance” kan je ervoor kiezen om in Light of Dark modus te werken. Hiermee verander je alleen de achtergrondkleur van de GitHub Desktop omgeving.</p>
+<p><img alt="media/image14.png" src="../media/image14.png" /></p>
+<p>In dit scherm kan je de voorkeurs editor instellen. Default wordt gekeken naar de reeds aanwezige tekst editors. Omdat GitHub van nature een samenwerkomgeving is voor het ontwikkelen van programmatuur, gaat het hier om “platte tekst” editors.</p>
+<h2 id="werkwijze-geonovum">Werkwijze Geonovum</h2>
+<h3 id="de-geonovum-github-pagina">De Geonovum GitHub pagina</h3>
+<p>Geonovum heeft een eigen GitHub Bedrijfspagina: <a href="https://github.com/Geonovum">https://github.com/Geonovum</a> .</p>
+<p>Voor alle projecten die een product maken of beheren wordt een repository aangemaakt.</p>
+<p>Het aanmaken van een repository staat beschreven in paragraaf <a href='#_Ref17107242'>2.3.1<a></a>.</p>
+<h3 id="mappenstructuur-in-de-respository">Mappenstructuur in de respository</h3>
+<p><img alt="media/image16.png" src="../media/image16.png" />
+In de Repository maak je indien nodig submappen aan. Submappen zijn handig als er in je Repository meer dan één ReSpec document komt te staan. Over ReSpec meer in hoofdstuk 3.</p>
+<p>Hiernaast een afbeelding van de GitHub Repository voor MIM. Twee mappen omdat MIM twee documenten bevat.</p>
+<p>Ook maakt GitHub standaard een readme.md aan. De readme staat in het “Markdown” formaat, waarover in de volgende paragraaf meer.</p>
+<h3 id="readmemd">Readme.md</h3>
+<p>In de readme.md file staat nog eens beschreven Wat de inhoud van de Repository is. Neem ook de link naar de webversie van de documenten hier op, dan is het voor bezoekers gemakkelijker om het document te openen in een browser.</p>
+<p>Neem altijd een link naar <a href='https://docs.geostandaarden.nl/' target='_blank'>https://docs.geostandaarden.nl/</a> op, en in het geval het technische documenten betreft zoals UML’s, XSD’s, GML’s, XML’s een link naar <a href='http://register.geostandaarden.nl/' target='_blank'>http://register.geostandaarden.nl/</a> in het Readme bestand op.</p>
+<p><img alt="media/image17.png" src="../media/image17.png" /></p>
+<h2 id="aan-de-slag-met-github">Aan de slag met GitHub</h2>
+<p>In deze paragraaf een beschrijving van hoe je in GitHub een nieuwe repository aanmaakt, en hoe je die synchroniseert met je lokale GitHub client.</p>
+<h3 id="het-maken-van-een-nieuwe-repository">Het maken van een nieuwe repository</h3>
+<p>Een nieuwe repository maak je aan in de Centrale GitHub omgeving.</p>
+<p>Klik in de banner bovenaan de pagina, naast je profielfoto op “+” en kies “Create Repository”</p>
+<p>Nadat je op “+” hebt geklikt, verschijnt het scherm hieronder.</p>
+<p><img alt="media/image19.png" src="../media/image19.png" /></p>
+<p>Vul hier de naam van de repository in. Gebruik een naam die kort en bondig is. Zie ook verderop in dit document voor de naamgevingsconventies.</p>
+<p>Vul ook de beschrijving in van het project.</p>
+<p>Geef als local path de naam van de GitHub map op. GitHub zal dan de naam van de standaard als mapnaam aanmaken onder de lokale GitHub map.</p>
+<p>Het is wel zo netjes om een readme file aan te maken, hierin zet je een korte omschrijving van de repository. Klik vervolgens op “Create Repository”</p>
+<h3 id="github-clone-eerste-keer-ophalen-van-de-centrale-repository">GitHub Clone: eerste keer ophalen van de centrale repository</h3>
+<p><img alt="media/image20.png" src="../media/image20.png" /></p>
+<p>Start de GitHub Client, en kies in het menu File voor Clone Repository. En kies de Repository die je wil clonen (in dit geval Geonovum/MIM). Als Local Path kies je een logische plek op je PC/Laptop. (Tip: het is handig om één plek voor je Github Repositories te maken, bijvoorbeeld C:. Na het aanklikken van de knop clone wordt een lokale kopie gemaakt. Github weet welke versie je hebt opgehaald, en zal de wijzingen die je maakt netjes voor je bijhouden.</p>
+<p>In de map die je als local path hebt opgegeven komt de mappen structuur te staan zoals hierboven beschreven.</p>
+<h3 id="github-pull-origin-ophalen-van-wijzigingen">GitHub Pull origin: ophalen van wijzigingen</h3>
+<p>Een pull commando werkt de lokale versie van je GitHub Repository bij. Wijzigingen die zijn gedaan in de centrale repository (dus op Github.com) worden ook doorgevoerd in je lokale kopie. Het uitvoeren van een pull doe je door in het menu Repository op pull te klikken.</p>
+<p>NB: Voer dit commando regelmatig uit als er meerdere mensen in de repository werken, om conflicterende wijzigingen te voorkomen.</p>
+<h3 id="github-commit-to-master-wijzigingen-opslaan">GitHub Commit to Master: wijzigingen opslaan</h3>
+<p>Met de knop Commit to master zet je de wijzigingen die je hebt gedaan klaar om te uploaden naar de Centrale GitHub Repository. GitHub maakt daartoe een versie aan,</p>
+<p>die je verplicht voorziet van een summary en optioneel van een Description Let op: met</p>
+<p>het committen heb je dus nog niks ge-upload.</p>
+<h3 id="github-push-origin-of-pull-request-wijzigingen-uploaden">GitHub Push origin of Pull request: wijzigingen uploaden</h3>
+<p>Nadat je de wijzigingen hebt gecommit, moeten ze richting de centrale repository. Nu zijn er twee mogelijkheden. Ofwel je hebt schrijfrechten op de Centrale Repository, of je hebt ze niet. In het eerste geval kan je een Push Origin uitvoeren, dan worden de wijzigingen meteen in de Centrale GitHub Repository verwerkt. In het tweede geval doe je een Pull request bij de eigenaar van de Repository om de wijzigingen door te voeren. Github maakt dan een eigen versie voor je aan (dat heet een fork) en vraagt aan de eigenaar van de Repository om die fork te verwerken in de Centrale Repository.</p>
+<h2 id="enkele-regels-over-github-binnen-geonovum">Enkele regels over GitHub binnen Geonovum</h2>
+<ul>
+<li>Geonovum heeft binnen github een team: <a href="https://github.com/Geonovum">https://github.com/Geonovum</a>.</li>
+<li>Geonovum heeft ook het team <a href="https://github.com/Geonovum-labs">https://github.com/Geonovum-labs</a></li>
+</ul>
+<h3 id="github-beheer">Github beheer</h3>
+<ul>
+<li>Github teamleden met beheerders rechten zijn te vinden via: <a href="https://github.com/orgs/Geonovum/people?query=role%3Aowner">https://github.com/orgs/Geonovum/people?query=role%3Aowner</a></li>
+<li>Daarnaast zijn er nog drie inhoudelijk beheerders vanuit Geonovum: Arnoud de Boer, Frank Terpstra en Linda vd Brink.</li>
+</ul>
+<h3 id="github-gebruikers">Github gebruikers</h3>
+<ul>
+<li>Een overzicht van de gebruikers is te vinden op: <a href="https://github.com/orgs/Geonovum/people">https://github.com/orgs/Geonovum/people</a>.</li>
+<li>Als je lid bent van Geonovum Teams dan hoor je ook bij de Geonovum GitHub organisatie. De inhoudelijk beheerders kunnen besluiten daar van af te wijken.</li>
+<li>Er is geen bezwaar tegen het gebruiken van een privé account binnen de github omgeving.</li>
+<li>Werk je niet meer bij Geonovum wordt je omgezet naar 'External Collaborator'.</li>
+</ul>
+<h3 id="github-teams">GitHub teams</h3>
+<ul>
+<li>Er is een aantal teams gemaakt binnen Geonovum. Deze zijn te vinden op: <a href="https://github.com/orgs/Geonovum/teams">https://github.com/orgs/Geonovum/teams</a>.</li>
+<li>Ieder repository moet aan een team worden toegekend. Het team is aanspreekpunt  voor het repository.</li>
+<li>Team namen eindigen op ' team'. Bijvoorbeeld 'DSO team'.</li>
+</ul>
+<h3 id="github-repositories">GitHub repositories</h3>
+<ul>
+<li>Dit zijn de Geonovum repositories: <a href="https://github.com/orgs/Geonovum/repositories">https://github.com/orgs/Geonovum/repositories</a>.</li>
+<li>Richtlijnen voor het inrichten van repositories zijn er nog niet. Wel is er een template voor respec documenten: <a href="https://github.com/Geonovum/NL-ReSpec-GN-template">NL-ReSpec-GN-template</a></li>
+</ul>
+<h3 id="github-organisaties">GitHub organisaties</h3>
+<p>Een GitHub Organization is een verzamelplaats van repositories, die allemaal van dezelfde eigenaar, zijnde een bedrijf of instelling, zijn. Geonovum heeft twee GitHub organisaties: 
+- https://github.com/Geonovum: hierin staan de repositories voor onze standaarden en andere gerelateerde producten.
+- https://github.com/Geonovum-labs: hierin staan enkele repositories met open source code, demo's, voorbeelden en experimenten ter ondersteuning van standaarden. </p>
+<p>https://github.com/Geonovum heeft een README.md introtekst met summiere informatie over Geonovum, hoe wij met github werken en verwijzingen naar meer informatie. Deze tekst wordt beheerd in een aparte github repository: https://github.com/Geonovum/.github. </p>
+<p>Daarnaast wordt een landingspagina getoond op https://geonovum.github.io. Dit is (een kopie van) dezelfde tekst. Deze staat ook in een README.md, die wordt beheerd in een andere github repository: https://github.com/Geonovum/geonovum.github.io. </p>
+<h4 id="naamgevingsconventies-github">Naamgevingsconventies GitHub</h4>
+<ul>
+<li>Voor repositories met een ReSpec document zijn aparte naamgevingsconventies.</li>
+<li>Kies korte betekenisvolle namen die in lijn zijn met bestaande repositories.</li>
+<li>Veelgebruikte prefixes zijn:<ul>
+<li><strong>dso-</strong> digitale ondersteuning omgevingswet.</li>
+<li><strong>ow-</strong> omgevingswet. Dit lijkt wel een duplicaat. Laten opgaan in dso-?</li>
+<li><strong>KP-APIs-</strong> kennisplatform API's.</li>
+<li><strong>xml_</strong> Dit was een prefix voor dso repositories maar wordt voor nieuwe repositories niet meer gebruikt.</li>
+<li><strong>disgeo-</strong> DisGeo</li>
+</ul>
+</li>
+</ul></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js"></script>
+        <script src="../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
