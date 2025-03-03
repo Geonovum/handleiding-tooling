@@ -9,7 +9,7 @@ Dit is de publicatie infrstructuur van Geonovum. Onder het architectuurplaatje s
 - Wat vertellen wij onze opdrachtgevers in de [bijsluiter](https://stichtinggeonovum.sharepoint.com/:b:/s/Basisprogramma/EVGORVYMb0FFkjC0L14Ud5AB3cuyP27Ux2lz6ZfxGqqMDw?e=EYVtfs)
 
 
-![pubinf](media/PublicatieInfrastructuurGeonovum.drawio.svg)
+![publicatie infrastructuur](media/PublicatieInfrastructuurGeonovum.drawio.svg)
 
 ## Kort Overzicht
 
@@ -73,11 +73,11 @@ Zie het document [werkwijze informatiemodelleren](https://stichtinggeonovum.shar
 
 ### [1] UML
 
-- [Overzicht](EA.md)
-- [Primitieve datatypes](EA-toepassing-standaarddatatypen.md): Handleiding
+- [Overzicht](EA/index.md)
+- [Primitieve datatypes](EA/EA-toepassing-standaarddatatypen.md): Handleiding
     en toelichting op het toepassen van standaarddatatypes in
     modelleeromgeving Geonovum.
-- [Toolbox importeren](MIM-toolbox-importeren.md): Handleiding voor het
+- [Toolbox importeren](EA/MIM-toolbox-importeren.md): Handleiding voor het
     importeren van de MIM-toolbox in EA.
 
 ### [2] Subversion
@@ -93,10 +93,10 @@ Zie het document [werkwijze informatiemodelleren](https://stichtinggeonovum.shar
     betrekking tot Imvertor.
 
 ### [4] ReSpec
-- [Respec handleiding](ReSpec.md): Algemene handleiding.
-- [Respec code toepassen](ReSpec-code-toepassen.md): Richtlijnen voor het
+- [Respec handleiding](ReSpec/): Algemene handleiding.
+- [Respec code toepassen](ReSpec/ReSpec-code-toepassen.md): Richtlijnen voor het
     toepassen van code in documentatie.
-- [Respec definitielijst maken](ReSpec-definitielijst-maken.md):
+- [Respec definitielijst maken](ReSpec/ReSpec-definitielijst-maken.md):
     Handleiding voor het maken van een definitielijst in
     ReSpec-documentatie.
 
@@ -121,9 +121,9 @@ dit met een webhook kan doen staat beschreven in:
      voor ReSpec-documentatie.
 
 ### MIM
-- [Toolbox genereren](MIM-toolbox-genereren.md): Handleiding voor het
+- [Toolbox genereren](EA/MIM-toolbox-genereren.md): Handleiding voor het
     maken van een EA-toolbox.
-- [Toolbox genereren extensie](MIM-toolbox-genereren-extensie.md):
+- [Toolbox genereren extensie](EA/MIM-toolbox-genereren-extensie.md):
     Handleiding voor het maken van een extensie op de MIM-toolbox.
 
 ### GML

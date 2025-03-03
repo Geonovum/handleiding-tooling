@@ -11,10 +11,10 @@ CMS-systemen en berichten in online fora. Je kunt Markdown in iedere simpele
 teksteditor bewerken.
 
 Het ontwerpdoel van de taal is leesbaarheid. Teksten geschreven met behulp van
-Markdown worden geacht al leesbaar te zijn voordat opmaak is toegepast op de
+Markdown zijn al leesbaar voordat opmaak is toegepast op de
 tekst. Opmaakinstructies en tags zijn dan ook niet te vinden in pure Markdown.
 
-## Lokale markdown in je browser
+## Markdown openen in je browser
 
 Sommige browsers weigeren het openen van lokale bestanden, of negeren links naar
 locale bestanden. Dit kun je in de configuratie aanpassen:
@@ -56,18 +56,12 @@ In Firefox kan je dat instellen via de parameters.
 
 ## Regels voor Markdown
 
-Styling regels vastleggen voor Markdown zorgt ervoor dat wijzigingen in de markdown ook
-altijd inhoudelijke wijzigingen zijn. Suggesties hiervoor
+Voor beter leesbare en uitwisselbare Markdown spreken we volgende styling regels
+af. Tools zoals 'prettier' en 'markdownlint' helpen hierbij.
 
-- Regellengte vastleggen.
-- Hoeveel springen we in?
-- Gebruiken unix end-of-line of windows
+Configuratie bestanden hiervoor: 
 
-Deze afspraken kunnen we ook vastleggen. Zie hieronder twee voorbeelden. Het lijkt
-erop dat de verschillende tools op verschillende manier formatteren. Niet alles
-gaat goed samen.
-
-Voorbeeld van '.prettierrc' gebruikt in dit project:
+Voorbeeld van '.prettierrc':
 
 ```json
 {

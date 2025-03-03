@@ -21,17 +21,16 @@ nav:
         - 'Manual': GitHub.md
     - Imvertor: Imvertor.md
     - Markdown: Markdown.md
-    - MIM:
-        - Toolbox genereren: MIM-toolbox-genereren.md
-        - Toolbox importeren: MIM-toolbox-importeren.md
-        - Toolbox genereren extensie: MIM-toolbox-genereren-extensie.md
     - ReSpec:
-        - Manual: ReSpec.md
-        - Code toepassen: ReSpec-code-toepassen.md
-        - Definitielijst maken: ReSpec-definitielijst-maken.md
+        - Manual: ReSpec/index.md
+        - Code toepassen: ReSpec/ReSpec-code-toepassen.md
+        - Definitielijst maken: ReSpec/ReSpec-definitielijst-maken.md
     - EA:
-        - Overzicht: EA.md
-        - standaarddatatypen: EA-toepassing-standaarddatatypen.md
+        - Overzicht: EA/index.md
+        - standaarddatatypen: EA/EA-toepassing-standaarddatatypen.md
+        - Toolbox genereren: EA/MIM-toolbox-genereren.md
+        - Toolbox importeren: EA/MIM-toolbox-importeren.md
+        - Toolbox genereren extensie: EA/MIM-toolbox-genereren-extensie.md
     - Subversion:
         - SVN installeren voor EAP: SVN-installeren-voor-EAP.md
         - 'SVN importeren bestaand project': SVN-importeren-bestaand-project.md

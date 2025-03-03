@@ -1,19 +1,13 @@
-# Inleiding ReSpec
+# ReSpec
 
-Binnen Geonovum gebruiken we ReSpec voor het maken van standaarden. ReSpec maakt
-gebruik van input bestanden om HTML te genereren. Deze inputbestanden (de
-content) wordt gemaakt in het Markdown formaat. Deze Markdown bestanden kunnen
+We maken standaarden met ReSpec. ReSpec gebruikt
+input bestanden om HTML te genereren. Deze inputbestanden (de
+content) wordt gemaakt in Markdown. Deze Markdown bestanden kunnen
 worden aangemaakt met text editor. GitHub wordt gebruikt als de 'repository'
 waarin alle bestanden die bij een standaard horen, beheerd worden.
 
-Deze handleiding beschrijft hoe je een GitHub Account maakt, hoe je GitHub
-Desktop Client installeert en gebruikt, hoe je een Respec mappenstructuur
-opbouwt, welke bestanden er nodig zijn voor een standaard, en hoe je de
-verschillende versies van een standaard genereert. Ook wordt uitgelegd hoe je de
-Markdown plugin in Microsoft Word installeert en gebruikt.
-
-ReSpec is een tool van W3C die het schrijven van specifications makkelijker
-maakt. ReSpec zorgt voor een uniforme styling in het document, onderhoudt
+ReSpec is een tool van W3C voor het schrijven van specifications.
+ReSpec zorgt voor een uniforme styling in het document, onderhoudt
 referenties en verwijzingen naar andere documentatie, verzorgt de inhoudsopgave,
 zorgt voor links naar vorige en meest recente versies, en heeft een integratie
 met Github issues.
@@ -22,26 +16,26 @@ Geonovum gebruikt een fork van ReSpec die door Logius beheerd wordt. Dit
 document bevat een globale instructie over hoe snel aan de start te gaan. Meer
 documentatie is op andere plaatsen te vinden:
 
--   Er is een gedetailleerde (Engelstalige)
-    [gebruikershandleiding](https://github.com/w3c/respec/wiki/ReSpec-Editor's-Guide)
-    beschikbaar.
--   Er is ook een
-    [ontwikkelaarshandleiding](https://github.com/w3c/respec/wiki/Developers-Guide)
-    te vinden.
--   De Geonovum [wiki over ReSpec](https://github.com/Geonovum/respec/wiki) is
-    een fork van de w3c ReSpec met aanpassingen voor Geonovum. Deze is
-    achterhaald omdat we nu van de Logius Respec gebruik maken. (TODO aanpassen)
+- Er is een gedetailleerde 
+  [gebruikershandleiding](https://github.com/w3c/respec/wiki/ReSpec-Editor's-Guide)
+  beschikbaar.
+- Er is ook een
+  [ontwikkelaarshandleiding](https://github.com/w3c/respec/wiki/Developers-Guide)
+  te vinden.
+- De Geonovum [wiki over ReSpec](https://github.com/Geonovum/respec/wiki) is
+  een fork van de w3c ReSpec met aanpassingen voor Geonovum. Deze is
+  achterhaald omdat we nu van de Logius Respec gebruik maken. (TODO aanpassen)
 
 ## Een nieuwe document maken
 
-ReSpec documenten worden beheerd in een [GitHub](/GitHub) repository. Als je een
-nieuw ReSpec document wilt maken gebruik dan de
-[Geonovum ReSpec template](https://github.com/Geonovum/NL-ReSpec-GN-template)
-als startpunt en druk op de 'Use this template' knop om een nieuw repository aan
-te maken.
+ReSpec documenten worden beheerd in een [GitHub](/GitHub) repository. 
 
-Zoek in dit repository op de tekst 'TODO' om de plaatsen te vinden waar
+1. Gebruik de [Geonovum ReSpec template](https://github.com/Geonovum/NL-ReSpec-GN-template)
+als startpunt en druk op 'Use this template'.
+2. Zoek in dit repository op de tekst 'TODO' om de plaatsen te vinden waar
 aanpassen van de template vereist is.
+
+![publicatie infrastructuur](../media/PublicatieInfrastructuurGeonovum.drawio.svg)
 
 ## De URL van een publicatie op docs.geonovum.nl
 
@@ -79,9 +73,6 @@ Dit levert een nieuw repository op met de onderstaande mappenstructuur.
 |          |            | config.js | File met de vaste naam `config.js`                     |
 |          | \*md       |           | Tekstbestanden (Markdown) die de content bevatten      |
 
-Hieronder staat een voorbeeld van zo’n mappenstructuur.
-
-![media/image22.png](media/image22.png)
 
 ## Het bestand 'index.html'
 
@@ -162,18 +153,14 @@ template:
 ```
 
 In de HTML-header wordt de js-ReSpec bibliotheek geladen. Het enige dat in de
-header mag worden aangepast is de title (tussen \<title\> en \</title\>. Andere
-aanpassingen die nodig zijn in de header mogen alleen worden gedaan in overleg
-met de ReSpec beheerders. Een overzicht van de ReSpec beheerders staat in
-Hoofdstuk 6
+header mag worden aangepast is de title (tussen \<title\> en \</title\>. 
 
 In de HTML-Body geldt _vrijheid in gebondenheid_ De `<div>` en/of `<section>`
 regels mogen worden gekopieerd en toegevoegd. Wel belangrijk om de structuur
 over te nemen, dus als volgt:
 
-```
+```html
 <div id='H00' data-format='Markdown' data-include="ToCoVo.md"></div>
-
 <section id='H01' data-format='Markdown' data-include="H1-Inleiding.md"\>\<h2\>Inleiding\</h2\>\</section\>
 ```
 
@@ -200,21 +187,21 @@ vastgesteld, en mogen niet zomaar uitgebreid of aangepast worden. Elke status
 hoort bij een formele fase van een ReSpec document. Zie ook de Geonovum ReSpec
 [wiki](https://github.com/Geonovum/respec/wiki).
 
-- **WV**, Werkversie: Dit is de versie van het document waaraan wordt
+- **wv**, Werkversie: Dit is de versie van het document waaraan wordt
   gewerkt. Deze versie is continu 'under-construction'.
-- **CV**, Consultatieversie: Dit is een 'snapshot' van de versie die 'in
+- **cv**, Consultatieversie: Dit is een 'snapshot' van de versie die 'in
     consultatie' wordt gezet. Aan deze versie wordt niks meer gedaan totdat de
     consultatie is afgelopen. Daarna worden alle op en aanmerkingen uit de
     consultatieronde verwerkt.
-- **VV**, Vaststellingsversie: Dit is een 'snapshot' van de versie na het
+- **vv**, Vaststellingsversie: Dit is een 'snapshot' van de versie na het
     verwerken van de op en aanmerkingen uit de consultatieronde is ontstaan.
     Deze versie wordt aangeboden aan de programma-raad van Geonovum, om te
     worden 'vastgesteld'.
-- **DEF**, Definitieve versie: Dit is de definitieve versie van het document,
+- **def**, Definitieve versie: Dit is de definitieve versie van het document,
     zoals vastgesteld door de programma-raad. Van deze versie wordt opnieuw een
     'snapshot' gemaakt in ReSpec. Het resultaat van die snapshot wordt op
     <http://docs.geonovum.nl> neergezet.
-- **LD**, Levend document: Geschikt voor handreikingen en dergelijke die regelmatig gewijzigd worden en waarvoor niet een consultatie- en goedkeuringsproces gevolgd hoeft te worden
+- **ld**, Levend document: Geschikt voor handreikingen en dergelijke die regelmatig gewijzigd worden en waarvoor niet een consultatie- en goedkeuringsproces gevolgd hoeft te worden
 - **basis**, document zonder officiële status.
 
 ### SpecType
@@ -361,7 +348,7 @@ let respecConfig = {
   //licence: "cc0",                 // Public Domain Dedication
   licence: "cc-by",                 // Attribution, met bronvermelding
   //-- shortName is verplicht! (komt in de URL: kies logische afkorting)--------------
-  shortName: "NL-ReSpec-GN-template",
+  shortName: "NL-ReSpec-template",
   //-- publishDate is verplicht -------------------------------------------------------
   //-- NB: in de werkversie uitzetten, want dan pakt Respec de pushdate ---------------
   //publishDate: "2023-03-28",
@@ -522,22 +509,6 @@ Een lijst met issues kan je toevoegen met de volgende HTML code:
 
 ```
 
-## Foutmeldingen en waarschuwingen
-
-![media/image29.png](media/image29.png) ![media/image30.png](media/image30.png)
-
-In dit geval is er een tikfout gemaakt bij de naam van de Markdownfile die
-ge-include wordt. Het moet natuurlijk `H2-Testcases.md` zijn.
-
-![media/image31.png](media/image31.png)
-
-Een voorbeeld van een waarschuwing. Klikken hierop geeft je je de waarschuwing.
-
-In het onderstaande voorbeeld meldt ReSpec dat er een `<h2>` header ontbreekt in
-het Markdown document.
-
-![media/image32.png](media/image32.png)
-
 # Publiceren in ReSpec
 
 In dit hoofdstuk staan checklists die je kan gebruiken als je vanuit GitHub en
@@ -564,7 +535,7 @@ Controleer de volgende onderwerpen voor iedere publicatie:
 
 1. Edit en controleer config.js - configureer alles goed voor een
    consultatieversie
-    - `specStatus`:`"GN-CV"`
+    - `specStatus`:`"CV"`
     - `publishDate`: moet ingevuld zijn met de datum van publicatie van de
       consultatieversie. `"jjjj-mm-dd"`,
     - `Shortname`: moet ingevuld zijn met korte naam voor het document. Dit
@@ -603,8 +574,8 @@ configureert voor een repository. over het toepassen van de webhook.
    bijbehorende afbeeldingen naar
    [docs.geostandaarden.nl]<http://docs.geostandaarden.nl>).
 1. Na succesvolle publicatie:
-    - zet de `specStatus` in `config.js` terug op `"GN-WV"`
-    - Vul `previousMaturity` in met `"GN-CV"`
+    - zet de `specStatus` in `config.js` terug op `"WV"`
+    - Vul `previousMaturity` in met `"CV"`
     - Vul `previousPublishDate` in met de datum van de zojuist gepubliceerde
       consultatieversie
 
@@ -614,7 +585,7 @@ configureert voor een repository. over het toepassen van de webhook.
 
 1. Edit en controleer config.js - configureer alles goed voor een
    vaststellingsversie
-    - specStatus: "GN-VV"
+    - specStatus: "VV"
     - publishDate: moet ingevuld zijn met de datum van publicatie van de
       consultatieversie. "jjjj-mm-dd",
     - Shortname: moet ingevuld zijn met korte naam voor het document. Dit wordt
@@ -636,19 +607,17 @@ configureert voor een repository. over het toepassen van de webhook.
    zijn als ‘webhook’ in de github repository!) het snapshot.html en de
    bijbehorende afbeeldingen naar <http://docs.geonovum.nl>
 7. Na succesvolle publicatie:
-    - zet de specStatus in config.js terug op GN-WV
-    - Vul previousMaturity in met GN-CV
+    - zet de specStatus in config.js terug op WV
+    - Vul previousMaturity in met CV
     - Vul previousPublishDate in met de datum van de zojuist gepubliceerde
       consultatieversie
 
 ## Definitieve versie (DEF) maken
 
-1. Edit en controleer config.js - configureer alles goed voor een definitieve
-   versie
-    - specStatus: "GN-DEF",
-    - publishDate: moet ingevuld zijn met de datum van publicatie van de
-      definitieve versie. "jjjj-mm-dd",
-    - Shortname: moet ingevuld zijn met korte naam voor het document. Dit wordt
+1. Zet in config.js alles goed voor een definitieve versie
+    - specStatus: "DEF",
+    - publishDate: de publicatiedatum van de definitieve versie. "jjjj-mm-dd",
+    - Shortname: korte naam voor het document. Dit wordt
       onderdeel van de URL. Moet uniek zijn binnen pubdomain (afgezien van
       versies).
     - Als er al eerder een versie gepubliceerd is (stabiele versie, dus afgezien
@@ -667,7 +636,7 @@ configureert voor een repository. over het toepassen van de webhook.
    bijbehorende afbeeldingen naar <http://docs.geostandaarden.nl> Hoe dit werkt
    is beschreven in: <https://github.com/Geonovum/technisch-register-2019>
 7. Na succesvolle publicatie:
-    - zet de specStatus in config.js terug op GN-WV
-    - Vul previousMaturity in met GN-DEF
+    - zet de specStatus in config.js terug op WV
+    - Vul previousMaturity in met DEF
     - Vul previousPublishDate in met de datum van de zojuist gepubliceerde
       definitieve versie
