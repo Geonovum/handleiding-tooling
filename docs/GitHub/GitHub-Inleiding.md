@@ -1,13 +1,10 @@
 # Inleiding Github
 
-Bij Geonovum worden documenten (standaarden, onderzoeken, rapporten, enz) web-based gepubliceerd. Ook worden de documenten vaak in een werkgroep gemaakt, waarbij ieder werkgroeplid meeschrijft aan het document. Om dit te kunnen gebruiken we een aantal tools: GitHub, Respec en Markdown.
+Bij Geonovum worden documenten (standaarden, onderzoeken, rapporten, enz) web-based gepubliceerd. Ook worden de documenten vaak in een werkgroep gemaakt, waarbij ieder werkgroeplid meeschrijft aan het document. Dit krijgen we voor elkaar met: GitHub, ReSpec en Markdown.
 
 ## Meer over Github
 
-
 GitHub bestaat uit twee woorden, namelijk Git + Hub. Laten we beginnen met Git. *Git is een open source versiebeheersysteem. De website GitHub is gemaakt op basis van het versiebeheersysteem Git. Met GitHub heb je alle mogelijkheden van Git + extra features.
-
-In een versiebeheersysteem kunnen programmeurs projecten beheren met code. Het is mogelijk om verschillende versies te beheren en eventueel terug te vallen op een oude versie, mocht er iets misgaan.
 
 Stel dat je met een team een app wilt programmeren. Dan is het handig als iedereen bij het project kan met daarin alle code van de app. Ook is het handig dat iedereen de laatste code wijzigingen ziet van teamleden en daar eventueel op kan reageren en/of het aanpassen.
 

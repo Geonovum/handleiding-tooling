@@ -17,8 +17,8 @@ nav:
         - 'Werkwijze Modelleren': werkwijze-modelleren.md
         - 'SuggestiesHandleiding': SuggestiesHandleiding.md
     - GitHub:
-        - 'GitHub Intro': GitHub-Inleiding.md
-        - 'Manual': GitHub.md
+        - 'Manual': GitHub/index.md
+        - 'GitHub Intro': GitHub/GitHub-Inleiding.md
     - Imvertor: Imvertor.md
     - Markdown: Markdown.md
     - ReSpec:
@@ -39,3 +39,4 @@ nav:
     - UML-to-RDF: UML-to-RDF.md
     - Ontologie: Handleiding-ontologie-maken-en-publiceren.md
     - Word2XXX: WordConversies.md
+    - Publicatieservers: publicaties/index.md

@@ -101,8 +101,8 @@ Zie het document [werkwijze informatiemodelleren](https://stichtinggeonovum.shar
     ReSpec-documentatie.
 
 ### [5] GitHub
-- [GitHub werkwijze](GitHub-Inleiding.md): algemene inleiding over GitHub.
-- [GitHub handleiding](GitHub.md): Hoe maak je een account aan en hoe doe
+- [GitHub werkwijze](GitHub/GitHub-Inleiding.md): algemene inleiding over GitHub.
+- [GitHub handleiding](GitHub/index.md): Hoe maak je een account aan en hoe doe
     je beheertaken.
 
 ### [6] docs.geostandaarden.nl
@@ -111,10 +111,7 @@ Zie het document [werkwijze informatiemodelleren](https://stichtinggeonovum.shar
 
 ### [9] register.geostandaarden.nl
 
-Technische onderdelen van de standaard worden op:
-[register.geostandaarden.nl](https://register.geostandaarden.nl) gezet. Hoe je
-dit met een webhook kan doen staat beschreven in:
-[technisch-register-2019](https://github.com/Geonovum/technisch-register-2019/blob/master/documentatie/Handleiding%20voor%20beheerders%20informatiemodellen.md)
+Zie [publiceren op register.geostandaarden.nl](publicaties/#register.geostandaarden.nl)
 
 ### [10] Markdown
  - [Markdown handleiding](Markdown.md): Handleiding werken met Markdown
