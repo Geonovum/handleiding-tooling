@@ -56,14 +56,13 @@ In het Accounts scherm staat hoe je bent ingelogd bij GitHub. Hier kan je uitlog
 ![media/image12.png](media/image12.png)
 In het tabblad “Git” kan je je Github Naam eventueel aanpassen. De GitHub Email is de email die intern binnen Github wordt gebruikt. Die hoeft niet gewijzigd te worden.
 
-
 ![media/image14.png](media/image14.png)
 
 In dit scherm kan je de voorkeurs editor instellen. Default wordt gekeken naar de reeds aanwezige tekst editors. Omdat GitHub van nature een samenwerkomgeving is voor het ontwikkelen van programmatuur, gaat het hier om “platte tekst” editors.
 
 ## Werkwijze Geonovum
 
-### De Geonovum GitHub 
+### De Geonovum GitHub
 
 Geonovum heeft binnen GitHub twee teams:
 
@@ -71,7 +70,7 @@ Geonovum heeft binnen GitHub twee teams:
 | ---------------------------------- | --------------------------------------------- |
 | <https://github.com/Geonovum>      | Voor het beheren van producten en standaarden |
 | <https://github.com/Geonovum-labs> | repositories met open source code, demo's, voorbeelden en experimenten ter ondersteuning van standaarden.                                     |
- 
+
 ### Mappenstructuur in de respository
 
 ![media/image16.png](media/image16.png)
@@ -85,7 +84,7 @@ Ook maakt GitHub standaard een readme.md aan. De readme staat in het “Markdown
 
 In de readme.md file staat nog eens beschreven Wat de inhoud van de Repository is. Neem ook de link naar de webversie van de documenten hier op, dan is het voor bezoekers gemakkelijker om het document te openen in een browser.
 
-Neem altijd een link naar <a href='https://docs.geostandaarden.nl/' target='_blank'>https://docs.geostandaarden.nl/</a> op, en in het geval het technische documenten betreft zoals UML’s, XSD’s, GML’s, XML’s een link naar <a href='http://register.geostandaarden.nl/' target='_blank'>http://register.geostandaarden.nl/</a> in het Readme bestand op.
+Neem altijd een link naar <https://docs.geostandaarden.nl/>  op, en in het geval het technische documenten betreft zoals UML’s, XSD’s, GML’s, XML’s een link naar <http://register.geostandaarden.nl> in het Readme bestand op.
 
 ![media/image17.png](media/image17.png)
 
@@ -137,7 +136,6 @@ het committen heb je dus nog niks ge-upload.
 
 Nadat je de wijzigingen hebt gecommit, moeten ze richting de centrale repository. Nu zijn er twee mogelijkheden. Ofwel je hebt schrijfrechten op de Centrale Repository, of je hebt ze niet. In het eerste geval kan je een Push Origin uitvoeren, dan worden de wijzigingen meteen in de Centrale GitHub Repository verwerkt. In het tweede geval doe je een Pull request bij de eigenaar van de Repository om de wijzigingen door te voeren. Github maakt dan een eigen versie voor je aan (dat heet een fork) en vraagt aan de eigenaar van de Repository om die fork te verwerken in de Centrale Repository.
 
-
 ### Github beheer
 
 - Github teamleden met beheerders rechten zijn te vinden via: <https://github.com/orgs/Geonovum/people?query=role%3Aowner>
@@ -155,15 +153,11 @@ Nadat je de wijzigingen hebt gecommit, moeten ze richting de centrale repository
 - Ieder repository moet aan een team worden toegekend. Het team is aanspreekpunt voor het repository.
 - Team namen eindigen op ' team'. Bijvoorbeeld 'DSO team'.
 
-
-
 ### GitHub organisaties
 
+<https://github.com/Geonovum> heeft een README.md introtekst met summiere informatie over Geonovum, hoe wij met github werken en verwijzingen naar meer informatie. Deze tekst wordt beheerd in een aparte github repository: <https://github.com/Geonovum/.github>.
 
-
-https://github.com/Geonovum heeft een README.md introtekst met summiere informatie over Geonovum, hoe wij met github werken en verwijzingen naar meer informatie. Deze tekst wordt beheerd in een aparte github repository: https://github.com/Geonovum/.github. 
-
-Daarnaast wordt een landingspagina getoond op https://geonovum.github.io. Dit is (een kopie van) dezelfde tekst. Deze staat ook in een README.md, die wordt beheerd in een andere github repository: https://github.com/Geonovum/geonovum.github.io. 
+Daarnaast wordt een landingspagina getoond op <https://geonovum.github.io>. Dit is (een kopie van) dezelfde tekst. Deze staat ook in een README.md, die wordt beheerd in een andere github repository: <https://github.com/Geonovum/geonovum.github.io>.
 
 #### Naamgevingsconventies GitHub
 
@@ -178,4 +172,3 @@ De volgende prefixen zijn in gebruik:
 | KP-APIs- | kennisplatform API's.                                                                            |
 | xml\_    | Dit was een prefix voor dso repositories maar wordt voor nieuwe repositories niet meer gebruikt. |
 | disgeo   | DisGeo                                                                                           |
-

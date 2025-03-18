@@ -16,7 +16,7 @@ Geonovum gebruikt een fork van ReSpec die door Logius beheerd wordt. Dit
 document bevat een globale instructie over hoe snel aan de start te gaan. Meer
 documentatie is op andere plaatsen te vinden:
 
-- Er is een gedetailleerde 
+- Er is een gedetailleerde
   [gebruikershandleiding](https://github.com/w3c/respec/wiki/ReSpec-Editor's-Guide)
   beschikbaar.
 - Er is ook een
@@ -26,14 +26,23 @@ documentatie is op andere plaatsen te vinden:
   een fork van de w3c ReSpec met aanpassingen voor Geonovum. Deze is
   achterhaald omdat we nu van de Logius Respec gebruik maken. (TODO aanpassen)
 
-## Een nieuwe document maken
+## Workflows voor het maken van een ReSpec document
 
-ReSpec documenten worden beheerd in een [GitHub](/GitHub) repository. 
+Het volgende diagram beschrijft verschillende workflows voor het maken van een
+ReSpec publicatie. Er zijn twee hoofdroutes:
+
+1. ReSpec via Word.
+2. ReSpec via Markdown.
+
+![publicatie infrastructuur](../media/WorkflowPublicatieproces.drawio.svg)
+
+## ReSpec via Markdown
+
+ReSpec documenten worden beheerd in een [GitHub](/GitHub) repository.
 
 1. Gebruik de [Geonovum ReSpec template](https://github.com/Geonovum/NL-ReSpec-GN-template)
 als startpunt en druk op 'Use this template'.
-2. Zoek in dit repository op de tekst 'TODO' om de plaatsen te vinden waar
-aanpassen van de template vereist is.
+2. Vervang alle voorkomens van 'TODO' met betekenisvolle content.
 
 ![publicatie infrastructuur](../media/PublicatieInfrastructuurGeonovum.drawio.svg)
 
@@ -58,23 +67,9 @@ https://docs.geostandaarden.nl/[pubdomain]/[shortName]/
 
 De namen van de variabelen staan verderop uitgelegd.
 
-## De mapindeling van een ReSpec repository
+## De bestanden van een ReSpec repository
 
-Dit levert een nieuw repository op met de onderstaande mappenstructuur.
-
-| hoofdmap | map        | file      | omschrijving                                           |
-| -------- | ---------- | --------- | ------------------------------------------------------ |
-| Hoofdmap |            |           | naam van de hoofdmap                                   |
-|          | media      |           | Map met mediabestanden                                 |
-|          |            | Style.css | File met vaste naam, bevat de styling van het document |
-|          |            | \*.png    | Afbeeldingsbestanden                                   |
-|          | index.html |           | File met de vaste naam `Index.html`                    |
-|          | js         |           |                                                        |
-|          |            | config.js | File met de vaste naam `config.js`                     |
-|          | \*md       |           | Tekstbestanden (Markdown) die de content bevatten      |
-
-
-## Het bestand 'index.html'
+### Het bestand 'index.html'
 
 Het bestand index.html zorgt ervoor dat het ReSpec document automatisch wordt
 geladen in de browser. Bij het laden wordt ook automatisch de
@@ -153,7 +148,7 @@ template:
 ```
 
 In de HTML-header wordt de js-ReSpec bibliotheek geladen. Het enige dat in de
-header mag worden aangepast is de title (tussen \<title\> en \</title\>. 
+header mag worden aangepast is de title (tussen \<title\> en \</title\>.
 
 In de HTML-Body geldt _vrijheid in gebondenheid_ De `<div>` en/of `<section>`
 regels mogen worden gekopieerd en toegevoegd. Wel belangrijk om de structuur
@@ -172,7 +167,7 @@ Een `<section>` komt wél in de inhoudsopgave terecht. Deze heeft daarom behalve
 de data-include van het document, ook (verplicht!) een `<h2>` tag. De tekst
 tussen `<h2>` en `</h2>` komt in de inhoudsopgave te staan.
 
-## Het bestand 'config.js'
+### Het bestand 'config.js'
 
 In config.js wordt een stuurvariabele voor ReSpec gevuld. De waarden in deze
 variabele worden door ReSpec gebruikt om de layout te bepalen, en bevatten een
@@ -180,7 +175,7 @@ aantal document-eigenschappen.
 
 ### SpecStatus
 
-**Bron:** <https://github.com/Geonovum/NL-ReSpec-GN-beheer/blob/main/js/organisation-config.js> 
+**Bron:** <https://github.com/Geonovum/NL-ReSpec-GN-beheer/blob/main/js/organisation-config.js>
 
 De SpecStatus in de configuratie geeft de keuze uit 4 waarden, deze waarden zijn
 vastgesteld, en mogen niet zomaar uitgebreid of aangepast worden. Elke status
@@ -201,12 +196,14 @@ hoort bij een formele fase van een ReSpec document. Zie ook de Geonovum ReSpec
     zoals vastgesteld door de programma-raad. Van deze versie wordt opnieuw een
     'snapshot' gemaakt in ReSpec. Het resultaat van die snapshot wordt op
     <http://docs.geonovum.nl> neergezet.
-- **ld**, Levend document: Geschikt voor handreikingen en dergelijke die regelmatig gewijzigd worden en waarvoor niet een consultatie- en goedkeuringsproces gevolgd hoeft te worden
+- **ld**, Levend document: Geschikt voor handreikingen en dergelijke die
+  regelmatig gewijzigd worden en waarvoor niet een consultatie- en
+  goedkeuringsproces gevolgd hoeft te worden
 - **basis**, document zonder officiële status.
 
 ### SpecType
 
-**Bron:** <https://www.geonovum.nl/uploads/documents/Geonovum%20GENERIEK%20Beheerplan%20geo-standaarden%20v1.1.pdf> 
+**Bron:** <https://www.geonovum.nl/uploads/documents/Geonovum%20GENERIEK%20Beheerplan%20geo-standaarden%20v1.1.pdf>
 
 Het SpecType in de configuratie is een vaste lijst met waarden, deze waarden
 zijn vastgesteld, en mogen niet zonder overleg met de Technische ReSpec
@@ -244,7 +241,7 @@ beheerders uitgebreid of aangepast worden.
     De documentatie betreft niet een specifieke standaard of onderdeel daarvan,
     het is ook geen beheerdocumentatie van een specifieke standaard.
 
-## pubDomain
+### pubDomain
 
 pubDomain bepaalt bij publicatie een deel van de URL waarop het document wordt
 gepubliceerd. Het zorgt voor een groepering van de documenten op
@@ -324,12 +321,13 @@ Verwijzingen worden op drie manieren geresolved:
 - Een Geonovum brede lijst (TODO) is te vinden op: [tools.geostandaarden.nl](https://github.com/Geonovum/tools.geostandaarden.nl/blob/main/tools.geostandaarden.nl/respec/config/geonovum-config.js)
 - In de lokale `config.js` kan je lokale referenties toevoegen
 
-Je kunt met  aangeven of een verwijzing normatief is of niet door er een uitroepteken of vraagteken voor te zetten
-te zetten `[[!ID]]` of `[[?ID]]`.
+Je kunt  aangeven of een verwijzing normatief is of niet door er een
+uitroepteken of vraagteken voor te zetten te
+zetten `[[!ID]]` of `[[?ID]]`.
 
-## Voorbeeld config.js
+### Voorbeeld config.js
 
-```
+```javascript
 let respecConfig = {
   useLogo: true,
   useLabel: true,
@@ -396,20 +394,15 @@ zelf staat aangegeven welke waarden verplicht zijn, en uit welke waarden te
 kiezen is. In bovenstaand voorbeeld gaat het om een 'Werkversie van een
 standaard'.
 
-### Content: bestanden '\*.md'
+### Content: markdown bestanden
 
 De 'echte' content wordt gemaakt in het formaat 'Markdown'. Er is een aantal
-editors beschikbaar die dat formaat ondersteunen. Zie hiervoor
-<a href='#_Ref17112190'>Hoofdstuk 3<a></a>. Het is handig om voor elk hoofdstuk
-een aparte Markdown file te maken, want dan blijven de bestanden beperkt in
-grootte, en zijn er gemakkelijker werkafspraken te maken over wie wanneer in
-welke file aan het editen is.
+editors beschikbaar die dat formaat ondersteunen. Maak van elk hoofdstuk
+een aparte Markdown file.
 
-### Content: Afbeeldingen '\*.png'
+### Afbeeldingen
 
-Afbeeldingen worden als '.png' of '.svg' bestand neergezet in de map 'media'. In
-je Markdown document neem je gewoon een plaatje op zoals je in Word gewend bent.
-Writage en ReSpec zorgen ervoor dat de plaatjes worden getoond.
+Afbeeldingen worden als '.png' of '.svg' bestand neergezet in de map 'media'.
 
 ## ReSpec Frontend
 
@@ -427,7 +420,7 @@ Elk van de functies wordt hieronder uitgelegd.
 
 ![media/image26.png](media/image26.png)
 
-### <a name='_Ref17110974'></a>Doorzoek SpecRef
+### Doorzoek SpecRef
 
 ![media/image27.png](media/image27.png) ![media/image28.png](media/image28.png)
 
@@ -488,13 +481,13 @@ lijst met alle issues op te nemen in je document.
 Om GitHub issues op te nemen moet je in 'config.js' een referentie opnemen naar
 de GitHub repository.
 
-```
+```html
 issueBase: "https://github.com/Geonovum/MIM-Werkomgeving/issues/"
 ```
 
 Een referentie naar een issue neem je als volgt op:
 
-```
+```html
 <div class="issue" data-number="363"></div>
 ```
 
@@ -502,14 +495,14 @@ Waarbij data-number het issuenummer is.
 
 Een lijst met issues kan je toevoegen met de volgende HTML code:
 
-```
+```html
 <section class="appendix" id="issue-summary">
   <!-- Issues will magically be listed here! -->
 </section>
 
 ```
 
-# Publiceren in ReSpec
+## Publiceren in ReSpec
 
 In dit hoofdstuk staan checklists die je kan gebruiken als je vanuit GitHub en
 ReSpec “Versies” gaat aanmaken. Bijvoorbeeld hoe maak je een nieuwe GitHub
@@ -578,8 +571,6 @@ configureert voor een repository. over het toepassen van de webhook.
     - Vul `previousMaturity` in met `"CV"`
     - Vul `previousPublishDate` in met de datum van de zojuist gepubliceerde
       consultatieversie
-
-
 
 ## Vaststellingsversie (VV) maken
 
