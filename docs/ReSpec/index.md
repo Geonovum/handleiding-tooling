@@ -31,10 +31,10 @@ documentatie is op andere plaatsen te vinden:
 Het volgende diagram beschrijft verschillende workflows voor het maken van een
 ReSpec publicatie. Er zijn twee hoofdroutes:
 
-1. ReSpec via Word.
-2. ReSpec via Markdown.
+1. ReSpec via Word. (Blauwe kolom)
+2. ReSpec via Markdown. (Groene kolom)
 
-![publicatie infrastructuur](../media/WorkflowPublicatieproces.drawio.svg)
+![publicatie infrastructuur](../media/WorkflowPublicatieProces.drawio.svg)
 
 ## ReSpec via Markdown
 
@@ -42,9 +42,8 @@ ReSpec documenten worden beheerd in een [GitHub](/GitHub) repository.
 
 1. Gebruik de [Geonovum ReSpec template](https://github.com/Geonovum/NL-ReSpec-GN-template)
 als startpunt en druk op 'Use this template'.
-2. Vervang alle voorkomens van 'TODO' met betekenisvolle content.
+2. Vervang alle voorkomens van 'TODO' met inhoud.
 
-![publicatie infrastructuur](../media/PublicatieInfrastructuurGeonovum.drawio.svg)
 
 ## De URL van een publicatie op docs.geonovum.nl
 
@@ -76,76 +75,7 @@ geladen in de browser. Bij het laden wordt ook automatisch de
 geonovum-ReSpec-code geladen en uitgevoerd. Deze code zorgt ervoor dat het
 document zijn standaard layout krijgt.
 
-Het bestand 'index.html' heeft een vaste indeling. Hieronder de structuur uit de
-template:
-
-```html
-<!DOCTYPE html>
-<html lang="nl">
-    <head>
-        <meta content="text/html; charset=utf-8" http-equiv="content-type" />
-        <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1, shrink-to-fit=no"
-        />
-        <script
-            src="https://cdn.jsdelivr.net/gh/digitalbazaar/respec-mermaid@1.0.1/dist/main.js"
-            class="remove"
-        ></script>
-        <script
-            src="https://tools.geostandaarden.nl/respec/config/geonovum-config.js"
-            class="remove"
-        ></script>
-        <script src="js/config.js" class="remove"></script>
-        <script class="remove">
-            respecConfig = { ...organisationConfig, ...respecConfig };
-        </script>
-        <script>
-            document.title = respecConfig.title;
-        </script>
-        <title>TODO: Vul hier de titel in</title>
-        <link
-            rel="shortcut icon"
-            type="image/x-icon"
-            href="https://tools.geostandaarden.nl/respec/style/logos/Geonovum.ico"
-        />
-        <script
-            src="https://gitdocumentatie.logius.nl/publicatie/respec/builds/respec-nlgov.js"
-            class="remove"
-            async
-        ></script>
-    </head>
-
-    <body>
-        <section
-            id="abstract"
-            data-include-format="markdown"
-            data-include="abstract.md"
-        ></section>
-        <section id="sotd"></section>
-        <!-- Wordt automatisch gevuld -->
-
-        <!-- TODO: voeg hier je eigen hoofdstukken toe -->
-        <section
-            data-include-format="markdown"
-            data-include="ch01.md"
-            class="informative"
-        ></section>
-        <section
-            data-include-format="markdown"
-            data-include="ch02.md"
-        ></section>
-        <section
-            data-include-format="markdown"
-            data-include="mermaid.md"
-        ></section>
-
-        <section id="conformance"></section>
-        <section id="tof"></section>
-        <section id="index"></section>
-    </body>
-</html>
-```
+Het bestand 'index.html' heeft een vaste indeling. 
 
 In de HTML-header wordt de js-ReSpec bibliotheek geladen. Het enige dat in de
 header mag worden aangepast is de title (tussen \<title\> en \</title\>.
@@ -325,74 +255,12 @@ Je kunt  aangeven of een verwijzing normatief is of niet door er een
 uitroepteken of vraagteken voor te zetten te
 zetten `[[!ID]]` of `[[?ID]]`.
 
-### Voorbeeld config.js
-
-```javascript
-let respecConfig = {
-  useLogo: true,
-  useLabel: true,
-  // title is verplicht! Neem hier de titel van het document op ----------------------
-  title: "[Neem titel op in config.js]",
-  //-- specStatus is verplicht! (activeer 1 van de volgende) --------------------------
-  specStatus: "wv",                   // Werkversie
-
-  //-- specType is verplicht bij alle andere dan BASIS ---------------------------------
-  specType: "HR",                     // HandReiking
-
-  //-- pubDomain is verplicht! (komt in de URL) -------------------------------------
-  pubDomain: "TODO",
-  //-- license: voor de geldende gebruiksvoorwaarden. Default is cc-by.
-  //licence: "cc-by-nd",            // bronvermelding, geen afgeleide werken (default)
-  //licence: "cc0",                 // Public Domain Dedication
-  licence: "cc-by",                 // Attribution, met bronvermelding
-  //-- shortName is verplicht! (komt in de URL: kies logische afkorting)--------------
-  shortName: "NL-ReSpec-template",
-  //-- publishDate is verplicht -------------------------------------------------------
-  //-- NB: in de werkversie uitzetten, want dan pakt Respec de pushdate ---------------
-  //publishDate: "2023-03-28",
-  //eventueel is het mogelijk een versienummer mee te geven, maar bij Geonovum werken we gewoonlijk alleen met datum als onderdeel van de permanente URI.
-  //publishVersion: "0.0.2",
-  //previousVersion: "0.0.1",
-  //-- Voor dit blok geldt: alleen als er eerdere versies zijn en altijd beiden aan/uit!
-  //previousPublishDate: "2014-05-01",
-  //previousMaturity: "CV",
-  //-- de namen van de Editor(s) / Redacteur(en)---------------------------------------
-  //-- vul in: per Editor: name:, company:, companyURL: -------------------------------
-  editors:
-    [
-      {
-        name: "voornaam achternaam",
-        company: "Geonovum",
-        companyURL: "https://www.geonovum.nl",
-      }
-    ],
-  //-- de namen van de auteur(s) ------------------------------------------------------
-  //-- vul in: per auteur: name:, company:, companyURL: -------------------------------
-  authors:
-    [
-      {
-        name: "voornaam achternaam",
-        company: "Geonovum",
-        companyURL: "https://www.geonovum.nl",
-      }
-    ],
-  //neem hier de URL van de github repository op waar het respec document in staat
-  github: "https://github.com/Geonovum/NL-ReSpec-GN-template",
-  // Create PDF and link to file in header (optional):
-  alternateFormats: [
-      {
-          label: "pdf",
-          uri: "template.pdf",
-      },
-  ],
-};
-```
+###  config.js
 
 De file config.js is een stukje javascript (JSON) code, het bevat alle mogelijke
-waarden voor de verschillende versies die wij hanteren bij Geonovum. In de file
+waarden voor de verschillende versies die wij hanteren. In de file
 zelf staat aangegeven welke waarden verplicht zijn, en uit welke waarden te
-kiezen is. In bovenstaand voorbeeld gaat het om een 'Werkversie van een
-standaard'.
+kiezen is.
 
 ### Content: markdown bestanden
 
