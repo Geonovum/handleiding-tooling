@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>UML-to-RDF - Geonovum tooling</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../css/brands.min.css" rel="stylesheet">
+        <link href="../css/solid.min.css" rel="stylesheet">
+        <link href="../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">Geonovum tooling</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Home</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href=".." class="dropdown-item">Welkom</a>
+</li>
+                                    
+<li>
+    <a href="../geonovum-werkwijze-modelleren/" class="dropdown-item">Geonovum Werkwijze Modelleren</a>
+</li>
+                                    
+<li>
+    <a href="../werkomgeving-modelleren/" class="dropdown-item">Werkomgeving Modelleren</a>
+</li>
+                                    
+<li>
+    <a href="../werkwijze-modelleren/" class="dropdown-item">Werkwijze Modelleren</a>
+</li>
+                                    
+<li>
+    <a href="../SuggestiesHandleiding/" class="dropdown-item">SuggestiesHandleiding</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">GitHub</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../GitHub/" class="dropdown-item">Manual</a>
+</li>
+                                    
+<li>
+    <a href="../GitHub/GitHub-Inleiding/" class="dropdown-item">GitHub Intro</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../Imvertor/" class="nav-link">Imvertor</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../Markdown/" class="nav-link">Markdown</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">ReSpec</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../ReSpec/" class="dropdown-item">Manual</a>
+</li>
+                                    
+<li>
+    <a href="../ReSpec/ReSpec-code-toepassen/" class="dropdown-item">Code toepassen</a>
+</li>
+                                    
+<li>
+    <a href="../ReSpec/ReSpec-definitielijst-maken/" class="dropdown-item">Definitielijst maken</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">EA</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../EA/" class="dropdown-item">Overzicht</a>
+</li>
+                                    
+<li>
+    <a href="../EA/EA-toepassing-standaarddatatypen/" class="dropdown-item">standaarddatatypen</a>
+</li>
+                                    
+<li>
+    <a href="../EA/MIM-toolbox-genereren/" class="dropdown-item">Toolbox genereren</a>
+</li>
+                                    
+<li>
+    <a href="../EA/MIM-toolbox-importeren/" class="dropdown-item">Toolbox importeren</a>
+</li>
+                                    
+<li>
+    <a href="../EA/MIM-toolbox-genereren-extensie/" class="dropdown-item">Toolbox genereren extensie</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Subversion</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../SVN-installeren-voor-EAP/" class="dropdown-item">SVN installeren voor EAP</a>
+</li>
+                                    
+<li>
+    <a href="../SVN-importeren-bestaand-project/" class="dropdown-item">SVN importeren bestaand project</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../GML/" class="nav-link">GML</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../BegrippenXL/" class="nav-link">BegrippenXL</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="./" class="nav-link active" aria-current="page">UML-to-RDF</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../Handleiding-ontologie-maken-en-publiceren/" class="nav-link">Ontologie</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../WordConversies/" class="nav-link">Word2XXX</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../publicaties/" class="nav-link">Publicatieservers</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../BegrippenXL/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../Handleiding-ontologie-maken-en-publiceren/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/Geonovum/handleiding-tooling/blob/main/docs/UML-to-RDF.md" class="nav-link"><i class="fa-brands fa-github"></i> Edit on GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#handleiding-voor-het-gebruik-van-ea2rdf-en-rdf2rdf-tools" class="nav-link">Handleiding voor het Gebruik van EA2RDF en RDF2RDF Tools</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#vereisten" class="nav-link">Vereisten</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#stap-1-converteer-ea-bestand-naar-ttl-turtle-formaat" class="nav-link">Stap 1: Converteer EA-bestand naar TTL (Turtle formaat)</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#stap-2-verfijn-het-tussentijdse-ttl-bestand" class="nav-link">Stap 2: Verfijn het Tussentijdse TTL-bestand</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#stap-3-gebruik-rdf2rdf-voor-verdere-transformatie" class="nav-link">Stap 3: Gebruik RDF2RDF voor Verdere Transformatie</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#stap-4-aanpassen-van-de-yaml-configuratie" class="nav-link">Stap 4: Aanpassen van de YAML-configuratie</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#stap-5-controleer-en-pas-de-output-aan" class="nav-link">Stap 5: Controleer en Pas de Output Aan</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#tips-voor-werken-met-ea2rdf-en-rdf2rdf" class="nav-link">Tips voor Werken met EA2RDF en RDF2RDF</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="handleiding-voor-het-gebruik-van-ea2rdf-en-rdf2rdf-tools">Handleiding voor het Gebruik van EA2RDF en RDF2RDF Tools</h1>
+<p>Deze handleiding legt uit hoe je een RDF-bestand kunt genereren vanuit een Enterprise Architect (EA) EAPX-bestand, met behulp van de <a href="https://github.com/architolk/ea2rdf/releases/tag/v1.2.3"><strong>ea2rdf</strong></a> en <a href="https://github.com/architolk/rdf2rdf/releases/tag/v1.4.0"><strong>rdf2rdf</strong></a> tools ontwikkeld door Marco Brattinga. We zullen ook enkele tips geven voor het aanpassen van de output om het geschikt te maken voor verdere verwerking in RDF- en Linked Data-toepassingen.</p>
+<h2 id="vereisten">Vereisten</h2>
+<ul>
+<li><strong>EA2RDF en RDF2RDF JAR-bestanden</strong>: De benodigde tools zijn de <code>ea2rdf.jar</code> en <code>rdf2rdf.jar</code>, die gedownload moeten worden.</li>
+<li><strong>YAML-configuratie</strong>: Voor de RDF2RDF stap heb je een configuratiebestand nodig, bijvoorbeeld <code>ea2skosIMG.yaml</code>.</li>
+</ul>
+<h2 id="stap-1-converteer-ea-bestand-naar-ttl-turtle-formaat">Stap 1: Converteer EA-bestand naar TTL (Turtle formaat)</h2>
+<p>De eerste stap is het omzetten van het Enterprise Architect-bestand (EAP of EAPX) naar een tussentijds TTL-bestand. Dit wordt gedaan met de <strong>ea2rdf</strong> tool.</p>
+<h4 id="voorbereidingen">Voorbereidingen:</h4>
+<ol>
+<li>Maak een nieuwe map.
+<code>mkdir {Naam van je map}</code></li>
+</ol>
+<p>In deze map maak je 4 submappen aan:</p>
+<ul>
+<li>lib</li>
+<li>input</li>
+<li>pipeline</li>
+<li>
+<p>output</p>
+</li>
+<li>
+<p>Zet je EAP(X)-bestand in de map input.</p>
+</li>
+<li>
+<p>Sla de JAR-bestanden op in de map lib.</p>
+</li>
+<li>
+<p>Maak een YAML-bestand aan in de hoofdmap.Het structuur van de yaml bestand zie in het deel <a href="#structuur">structuur</a>.</p>
+</li>
+</ul>
+<h4 id="voor-eapx-bestanden">Voor EAPX-bestanden:</h4>
+<p>Gebruik het volgende commando in de terminal:</p>
+<pre class="highlight"><code class="language-bash">java -jar lib/ea2rdf.jar -ea -0 -e input/{NAAM VAN DE BESTAND}.eapx &gt; pipeline/{NAAM VAN DE OUTPUT BESTAND}.ttl</code></pre>
+<h4 id="voor-eap-bestanden">Voor EAP-bestanden:</h4>
+<p>Gebruik het volgende commando in de terminal:</p>
+<pre class="highlight"><code class="language-bash">java -jar lib/ea2rdf.jar -ea -e input/{NAAM VAN DE BESTAND}.eap &gt; pipeline/{NAAM VAN DE OUTPUT BESTAND}.ttl</code></pre>
+<h2 id="stap-2-verfijn-het-tussentijdse-ttl-bestand">Stap 2: Verfijn het Tussentijdse TTL-bestand</h2>
+<p>Het bestand dat je ontvangt (<code>img.ttl</code>) is een tussenbestand in TTL-formaat, maar het kan enige schoonmaak vereisen omdat het niet altijd volledig TTL-compatibel is. Het is aanbevolen om de uitvoer te controleren en waar nodig aan te passen, zoals het toevoegen van de juiste taal-tags en datatypes. Je kunt dit bestand handmatig aanpassen of een script gebruiken om de inconsistenties te verhelpen.</p>
+<h2 id="stap-3-gebruik-rdf2rdf-voor-verdere-transformatie">Stap 3: Gebruik RDF2RDF voor Verdere Transformatie</h2>
+<p>Na het genereren van het TTL-bestand, gebruik je de <strong>rdf2rdf</strong> tool om het bestand om te zetten naar een specifiek RDF-formaat (bijvoorbeeld SKOS) of SHACL-shapes.</p>
+<p>Gebruik het volgende commando om de transformatie uit te voeren:</p>
+<pre class="highlight"><code>java -jar lib/rdf2rdf.jar -i pipeline/{Naam van de bestand}.ttl -o output/{Naam van de bestaand}.ttl -c ea2skos.yaml</code></pre>
+<p>Het <code>ea2skos.yaml</code> bestand bevat de configuratie voor de transformatie, en je kunt dit bestand aanpassen om verschillende uitvoerformaten te verkrijgen, zoals SKOS of andere Linked Data-vormen.</p>
+<h2 id="stap-4-aanpassen-van-de-yaml-configuratie">Stap 4: Aanpassen van de YAML-configuratie</h2>
+<p>De YAML-configuratie (<code>ea2skos.yaml</code>) bepaalt hoe de transformatie plaatsvindt. Het kan nodig zijn om de SPARQL-constructies in de YAML aan te passen om specifieke gegevens zoals definities of scope-notities te extraheren.</p>
+<p>Bijvoorbeeld, als je definities en beschrijvingen uit een commentaarveld wilt halen, kun je de volgende SPARQL-aanpassing gebruiken:</p>
+<p><pre class="highlight"><code class="language-SPARQL">?subject rdfs:comment ?comment.
+bind(replace(?comment, "^.*-- Definition --(.*?)-- Description --.*$", "$1") as ?newDescription)
+bind(replace(?comment, "^.*-- Description --(.*?)-- Source.*$", "$1") as ?newNote).</code></pre>
+Het structuur van YAML bestaand:</p>
+<p>De YAML-file heeft de volgende structuur en inhoud, die een handleiding beschrijft voor het uitvoeren van SPARQL-query's in de context van een MIM-conversie (MIM staat voor Metamodel Informatie Modellering). Hieronder is de opbouw beschreven:</p>
+<h3 id="structuur">Structuur</h3>
+<h4 id="metadata">Metadata</h4>
+<ul>
+<li>
+<p>title: De titel van de handleiding of tool (bijvoorbeeld "MIM conversie").
+version: Versienummer van het bestand (bijvoorbeeld "0.3").
+prefixes: Lijst met namespaces en hun bijbehorende URI's om de SPARQL-query's eenvoudiger te maken.
+Queries</p>
+</li>
+<li>
+<p>Een lijst van query's, elk met de volgende onderdelen:
+title: Een korte beschrijving van de query, bijvoorbeeld "get skos:ConceptAttribuutSoort".
+query: De daadwerkelijke SPARQL-query, inclusief PREFIX-definities en INSERT-instructies voor het vullen van een grafiek.
+Voorbeeldinhoud
+Metadata
+yaml</p>
+</li>
+</ul>
+<p><pre class="highlight"><code>title: MIM conversie
+version: 0.3
+prefixes:
+  imevbegrip: http://definities.geostandaarden.nl/imev/id/begrip/
+  begrippenkader: http://definities.geostandaarden.nl/id/begrippenkader/
+  skos: http://www.w3.org/2004/02/skos/core#
+  owl: http://www.w3.org/2002/07/owl#</code></pre>
+- Queries
+Elke query bevat de logica voor het extraheren en transformeren van gegevens. Hier is een voorbeeld van één query:</p>
+<p><pre class="highlight"><code class="language-YAML">- title: get skos:ConceptAttribuutSoort
+  query: &gt;
+    PREFIX skos: &lt;http://www.w3.org/2004/02/skos/core#&gt;
+    PREFIX imevbegrip: &lt;http://definities.geostandaarden.nl/imev/id/begrip/&gt;
+    PREFIX ea: &lt;http://www.sparxsystems.eu/def/ea#&gt;
+    INSERT {
+      GRAPH &lt;urn:output&gt; {
+        ?begrip a skos:Concept;
+          rdfs:label ?label;
+          skos:prefLabel ?label;
+          skos:definition ?comment;
+          skos:inScheme begrippenkader:IMEV;
+          skos:notation ?label.
+        begrippenkader:IMEV a skos:ConceptScheme;
+          rdfs:label "Begrippenkader IMEV"@nl;
+          skos:prefLabel "Begrippenkader IMEV"@nl.
+      }
+    }
+    WHERE {
+      GRAPH &lt;urn:input&gt; {
+        SELECT (iri(concat('http://definities.geostandaarden.nl/imev/id/begrip/',?label)) as ?begrip) ?label ?comment
+        WHERE {
+          ?element a ea:Attribute;
+          ea:stereotype "Attribuutsoort";
+          rdfs:label ?label;
+          rdfs:comment ?comment.
+        }
+      }
+    }</code></pre>
+Deze structuur is bedoeld om gegevens uit een bron te halen en om te zetten naar SKOS-concepten in een RDF-graaf.</p>
+<h3 id="structuur-van-de-sparql-query">Structuur van de SPARQL-query</h3>
+<ul>
+<li>Prefixes
+Deze sectie definieert namespaces die in de query worden gebruikt. Prefixes maken de query compacter door URI's af te korten.
+Voorbeeld:</li>
+</ul>
+<pre class="highlight"><code class="language-sparql">PREFIX skos: &lt;http://www.w3.org/2004/02/skos/core#&gt;
+PREFIX imevbegrip: &lt;http://definities.geostandaarden.nl/imev/id/begrip/&gt;</code></pre>
+<ul>
+<li>INSERT-sectie
+In deze sectie wordt gedefinieerd welke triples moeten worden toegevoegd aan een doelgraaf (GRAPH <urn:output>). De structuur van de RDF-triples (subject, predicate, object) is hier beschreven.
+Voorbeeld:</li>
+</ul>
+<pre class="highlight"><code class="language-sparql">INSERT {
+  GRAPH &lt;urn:output&gt; {
+    ?begrip a skos:Concept;
+      rdfs:label ?label;
+      skos:prefLabel ?label;
+      skos:definition ?comment;
+      skos:inScheme begrippenkader:IMEV;
+      skos:notation ?label.
+    begrippenkader:IMEV a skos:ConceptScheme;
+      rdfs:label "Begrippenkader IMEV"@nl;
+      skos:prefLabel "Begrippenkader IMEV"@nl.
+  }
+}</code></pre>
+<ul>
+<li>WHERE-sectie
+Hier wordt beschreven welke data uit de bron moet worden opgehaald en welke voorwaarden gelden voor de selectie.
+Voorbeeld:</li>
+</ul>
+<pre class="highlight"><code class="language-sparql">WHERE {
+  GRAPH &lt;urn:input&gt; {
+    SELECT (iri(concat('http://definities.geostandaarden.nl/imev/id/begrip/', ?label)) AS ?begrip) ?label ?comment
+    WHERE {
+      ?element a ea:Attribute;
+      ea:stereotype "Attribuutsoort";
+      rdfs:label ?label;
+      rdfs:comment ?comment.
+    }
+  }
+}</code></pre>
+<p>Deze SPARQL-query is ontworpen om begrippen te creëren en te transformeren in overeenstemming met het SKOS (Simple Knowledge Organization System)-model. De resulterende RDF-data kunnen direct worden geüpload naar de omgeving https://staging-definities.geostandaarden.nl/nl/.</p>
+<h2 id="stap-5-controleer-en-pas-de-output-aan">Stap 5: Controleer en Pas de Output Aan</h2>
+<p>Na de transformatie is het belangrijk om het resultaat te controleren. Vaak moeten taal-tags en datatypes worden toegevoegd of geoptimaliseerd. Bijvoorbeeld, bij SKOS kan het nodig zijn om de taal voor labels of beschrijvingen te specificeren, of om de juiste datatypes voor numerieke waarden toe te voegen.</p>
+<h2 id="tips-voor-werken-met-ea2rdf-en-rdf2rdf">Tips voor Werken met EA2RDF en RDF2RDF</h2>
+<ul>
+<li><strong>SPARQL-queries zijn krachtig</strong> : Door SPARQL-constructs in je YAML-bestand te gebruiken, kun je gegevens uit je model extraheren en het RDF-formaat aanpassen aan je wensen.
+SPARQL voor begrippen van "Class"</li>
+</ul>
+<pre class="highlight"><code class="language-sparql">      PREFIX skos: &lt;http://www.w3.org/2004/02/skos/core#&gt;
+      PREFIX imklbegrip: &lt;http://definities.geostandaarden.nl/imkl/id/begrip/&gt;
+      prefix begrippenkader: &lt;http://definities.geostandaarden.nl/id/begrippenkader/&gt;
+      PREFIX ea: &lt;http://www.sparxsystems.eu/def/ea#&gt;
+      PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+      PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt;
+      INSERT {
+        GRAPH &lt;urn:output&gt; {
+          ?begrip a skos:Concept.
+          ?begrip skos:notation ?label.
+        }
+      }
+      WHERE {
+        GRAPH &lt;urn:input&gt; {
+          SELECT (iri(concat('http://definities.geostandaarden.nl/imkl/id/begrip/',?label) as ?begrip)) ?label
+          WHERE {
+            {
+              ?s a ea:Object.
+              ?s ea:type "Class".
+              ?s ea:stereotype "Objecttype".
+              ?s rdfs:label ?label.
+              ?s ea:alias ?alias.
+            }
+          }
+        }
+      }</code></pre>
+<ul>
+<li><strong>SHACL en andere Linked Data</strong> : Je kunt SHACL-shapes genereren en de output in andere Linked Data-formaten omzetten door de YAML-configuratie te wijzigen.
+Voorbeelden van creeren een SHACL shapes</li>
+</ul>
+<pre class="highlight"><code class="language-sparql">      PREFIX skos: &lt;http://www.w3.org/2004/02/skos/core#&gt;
+      PREFIX imgbegrip: &lt;http://definities.geostandaarden.nl/img/id/begrip/&gt;
+      PREFIX ea: &lt;http://www.sparxsystems.eu/def/ea#&gt;
+      PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+      PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt;
+      PREFIX img: &lt;http://definities.geostandaarden.nl/img/&gt;
+      PREFIX sh: &lt;http://www.w3.org/ns/shacl#&gt;
+      INSERT {
+        GRAPH &lt;urn:output&gt; {
+      ?shape
+        a sh:PropertyShape;
+        sh:minCount ?lower;
+        sh:maxCount ?upper;
+        sh:dataType ?type;
+        rdfs:comment ?comment.
+        }
+      }
+      WHERE {
+        GRAPH &lt;urn:input&gt; {
+          SELECT ?lower ?type ?comment (iri(concat("http://definities.geostandaarden.nl/def/",if(?label = "lokaalID" || ?label = "namespace", "nen3610/", ""), ?label)) as ?shape) ?upper
+          WHERE {
+            {
+              ?sh ea:lowerBound ?lower;
+                ea:stereotype "Data element";
+                rdfs:label ?label;
+                ea:upperBound ?upper;
+                ea:type ?type;
+                rdfs:comment ?comment.
+            }
+          }
+        }
+      }</code></pre>
+<ul>
+<li><strong>Schoonmaken van bestanden</strong> : Sommige tijdelijke transformatie heeft "trailing newlines" die wij kunnen vind en replace met deze regex</li>
+</ul></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js"></script>
+        <script src="../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
