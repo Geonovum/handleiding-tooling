@@ -1,3 +1,3 @@
 # Begrippen XL
 
-TODO: Hallo Tanja hier kan je beginnen
+Dit document bevat een beschrijving van een werkproces om begrippen aan te maken
