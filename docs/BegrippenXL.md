@@ -16,4 +16,5 @@ Op het gedeelte *Begrippenkaders* van een hoofdpagina staat een overzicht van al
 Als je klikt op de naam van de begrippenkader dan je bent redirect naar de pagina met begrippen:
 ![1742818463526](image/BegrippenXL/1742818463526.png)
 
-Daar mag je een begrippen controleren, lezen en als nodig een nieuwe begrip aanmaken.
+Daar mag je een begrippen controleren, lezen en als nodig een nieuwe begrip aanmaken (klick aan **nieuwe begrip aanmaken**):
+![1742819517964](image/BegrippenXL/1742819517964.png)
