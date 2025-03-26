@@ -18,3 +18,10 @@ Als je klikt op de naam van de begrippenkader dan je bent redirect naar de pagin
 
 Daar mag je een begrippen controleren, lezen en als nodig een nieuwe begrip aanmaken (klick aan **nieuwe begrip aanmaken**):
 ![1742819517964](image/BegrippenXL/1742819517964.png)
+
+Kies in een "drop-down" menu aan welke kader hoort een nieuwe begrip (hetzelfde voor collectie als nodig).
+
+![1742990727264](image/BegrippenXL/1742990727264.png)
+
+Na het bijwerken van de kader/collectie koppeling termen kunnen worden aangepast. Er zijn verschillende talen beschikbaar (nl, de, en, fr) en het is mogelijk om meer dan één waarde te gebruiken.
+![1742991313650](image/BegrippenXL/1742991313650.png)
