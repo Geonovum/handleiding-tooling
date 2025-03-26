@@ -47,14 +47,20 @@ Het is ook mogelijk om een nieuw begrippenkader aan te maken en een naam, notiti
 
 5. **Bijwerken van begrippen in bulk (bulk bewerken, importeren csv of rdf).**
 
-Om meer dan één begrip/begrippenkader/collectie te wijzigen, moet je speciale tools gebruiken, zoals  **Bulk bewerken** , **CSV importeren** of  **RDF importeren** . Als je een bulkbewerking wilt uitvoeren, kun je in een **drop-downmenu** kiezen welk deel je wilt aanpassen.
+Om meer dan één begrip/begrippenkader/collectie te wijzigen, moet je speciale tools gebruiken, zoals  **Bulk bewerken** , **CSV importeren** of  **RDF importeren** . Als je een **bulkbewerking** wilt uitvoeren, kun je in een drop-downmenu kiezen welk deel je wilt aanpassen. Een hulp pagina met beschrijving is beschikbaar [hier](https://geonovum-begrippen.wikixl.nl/index.php/Speciaal:BulkBewerken/help)
 
     ![1742994908166](image/BegrippenXL/1742994908166.png)
 
 Daarna verschijnt een keuzemenu waarin je kunt aangeven welk deel van het **begrip, begrippenkader of collectie** je wilt bijwerken. Bijvoorbeeld, voor een  **begrippenkader** :
-
-	![1742995010120](image/BegrippenXL/1742995010120.png)
+![1742995010120](image/BegrippenXL/1742995010120.png)
 
 
 Na je keuze kom je op een bewerkingspagina. Door op het **bewerken-icoon** te klikken (zie rechtsboven in de afbeelding) kun je de gegevens aanpassen.
-	![1742995065069](image/BegrippenXL/1742995065069.png)
+	
+
+    ![1742995328657](image/BegrippenXL/1742995328657.png)
+
+
+**Importeren een csv.**
+
+![1742995382942](image/BegrippenXL/1742995382942.png)
