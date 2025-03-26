@@ -37,4 +37,24 @@ En daarna krijg je een ttl bestand.
 
     ![1742992101790](image/BegrippenXL/1742992101790.png)
 
-**4.**
+**4. Creeren van een begrippenkader**
+
+Het is ook mogelijk om een nieuw begrippenkader aan te maken en een naam, notitie, rechten, bron, enz. toe te voegen. Indien nodig kunnen ook eigenschappen op basis van de Dublin Core-ontologie worden toegepast.
+
+
+    ![1742993980483](image/BegrippenXL/1742993980483.png)
+
+
+5. **Bijwerken van begrippen in bulk (bulk bewerken, importeren csv of rdf).**
+
+Om meer dan één begrip/begrippenkader/collectie te wijzigen, moet je speciale tools gebruiken, zoals  **Bulk bewerken** , **CSV importeren** of  **RDF importeren** . Als je een bulkbewerking wilt uitvoeren, kun je in een **drop-downmenu** kiezen welk deel je wilt aanpassen.
+
+    ![1742994908166](image/BegrippenXL/1742994908166.png)
+
+Daarna verschijnt een keuzemenu waarin je kunt aangeven welk deel van het **begrip, begrippenkader of collectie** je wilt bijwerken. Bijvoorbeeld, voor een  **begrippenkader** :
+
+	![1742995010120](image/BegrippenXL/1742995010120.png)
+
+
+Na je keuze kom je op een bewerkingspagina. Door op het **bewerken-icoon** te klikken (zie rechtsboven in de afbeelding) kun je de gegevens aanpassen.
+	![1742995065069](image/BegrippenXL/1742995065069.png)
