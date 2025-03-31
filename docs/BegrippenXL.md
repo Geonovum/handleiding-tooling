@@ -5,8 +5,7 @@ Dit document bevat een beschrijving van het werkproces om begrippen naar de begr
 1. **Toegang** tot de begrippeneditor is nodig. Deze kun je aanvragen bij [Tanja Ronzhina](t.ronzhina@geonovum.nl "email").
 2. Een **overzicht** van hoofdpagina van begrippen editor:
 
-    ![1742818628675](image/BegrippenXL/1742818628675.png)
-
+   ![1742818628675](image/BegrippenXL/1742818628675.png)
 3. **Begrippen uitzoeken en navigeren binnen een editor:**
 
 Op het gedeelte *Begrippenkaders* van een hoofdpagina staat een overzicht van alle beschikbare begrippenkaders (met het aantal begrippen tussen haakjes).
@@ -41,9 +40,7 @@ En daarna krijg je een ttl bestand.
 
 Het is ook mogelijk om een nieuw begrippenkader aan te maken en een naam, notitie, rechten, bron, enz. toe te voegen. Indien nodig kunnen ook eigenschappen op basis van de Dublin Core-ontologie worden toegepast.
 
-
     ![1742993980483](image/BegrippenXL/1742993980483.png)
-
 
 5. **Bijwerken van begrippen in bulk (bulk bewerken, importeren csv of rdf).**
 
@@ -54,13 +51,23 @@ Om meer dan één begrip/begrippenkader/collectie te wijzigen, moet je speciale 
 Daarna verschijnt een keuzemenu waarin je kunt aangeven welk deel van het **begrip, begrippenkader of collectie** je wilt bijwerken. Bijvoorbeeld, voor een  **begrippenkader** :
 ![1742995010120](image/BegrippenXL/1742995010120.png)
 
-
 Na je keuze kom je op een bewerkingspagina. Door op het **bewerken-icoon** te klikken (zie rechtsboven in de afbeelding) kun je de gegevens aanpassen.
-	
 
     ![1742995328657](image/BegrippenXL/1742995328657.png)
-
 
 **Importeren een csv.**
 
 ![1742995382942](image/BegrippenXL/1742995382942.png)
+
+
+Na importeren een csv krijg je een deze pagina als je een "dry run " uitgevoerd. Een overzicht van importeerde begrippen
+
+![1743419800069](image/BegrippenXL/1743419800069.png)
+
+
+Zonder "dry run" krijg je een vaarschuwing dat een werk is gestart en plaats op een rij en meer gedetaels je mag op job queue viewer vinden.
+
+![1743419894506](image/BegrippenXL/1743419894506.png)
+
+en in een job queue zie je lijst van taken:
+![1743419973003](image/BegrippenXL/1743419973003.png)
