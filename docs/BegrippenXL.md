@@ -2,10 +2,15 @@
 
 Dit document bevat een beschrijving van het werkproces om begrippen naar de begrippeneditor-website te uploaden en bij te werken.
 
+**NOTE:**De editor is ontwikkeld op basis van WikiXL en SemanticMediaWiki. Het is makkelijker om met BegrippenXL te werken als mensen al bekend zijn met de UI en het overzicht van WikiXL. Voor mensen die deze interface niet kennen, kost het wat tijd om de juiste weg in de editor te vinden. Als je vragen hebt, stel ze dan direct aan Tanja Ronzhina, zonder aarzeling.
+
 1. **Toegang** tot de begrippeneditor is nodig. Deze kun je aanvragen bij [Tanja Ronzhina](t.ronzhina@geonovum.nl "email").
 2. Een **overzicht** van hoofdpagina van begrippen editor:
 
    ![1742818628675](image/BegrippenXL/1742818628675.png)
+
+   En overizcht van meeste gebruikend paginas in de editor vind je op de linkse kant van de hoofdpagina:
+   	![1743589052520](image/BegrippenXL/1743589052520.png)
 3. **Begrippen uitzoeken en navigeren binnen een editor:**
 
 Op het gedeelte *Begrippenkaders* van een hoofdpagina staat een overzicht van alle beschikbare begrippenkaders (met het aantal begrippen tussen haakjes).
@@ -59,11 +64,9 @@ Na je keuze kom je op een bewerkingspagina. Door op het **bewerken-icoon** te kl
 
 ![1742995382942](image/BegrippenXL/1742995382942.png)
 
-
 Na importeren een csv krijg je een deze pagina als je een "dry run " uitgevoerd. Een overzicht van importeerde begrippen
 
 ![1743419800069](image/BegrippenXL/1743419800069.png)
-
 
 Zonder "dry run" krijg je een vaarschuwing dat een werk is gestart en plaats op een rij en meer gedetaels je mag op job queue viewer vinden.
 
