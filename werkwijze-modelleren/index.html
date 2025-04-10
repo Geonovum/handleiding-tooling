@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Werkwijze Modelleren - Geonovum tooling</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../css/brands.min.css" rel="stylesheet">
+        <link href="../css/solid.min.css" rel="stylesheet">
+        <link href="../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">Geonovum tooling</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Home</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href=".." class="dropdown-item">Welkom</a>
+</li>
+                                    
+<li>
+    <a href="../geonovum-werkwijze-modelleren/" class="dropdown-item">Geonovum Werkwijze Modelleren</a>
+</li>
+                                    
+<li>
+    <a href="../werkomgeving-modelleren/" class="dropdown-item">Werkomgeving Modelleren</a>
+</li>
+                                    
+<li>
+    <a href="./" class="dropdown-item active" aria-current="page">Werkwijze Modelleren</a>
+</li>
+                                    
+<li>
+    <a href="../SuggestiesHandleiding/" class="dropdown-item">SuggestiesHandleiding</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">GitHub</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../GitHub/" class="dropdown-item">Manual</a>
+</li>
+                                    
+<li>
+    <a href="../GitHub/GitHub-Inleiding/" class="dropdown-item">GitHub Intro</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../Imvertor/" class="nav-link">Imvertor</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../Markdown/" class="nav-link">Markdown</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">ReSpec</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../ReSpec/" class="dropdown-item">Manual</a>
+</li>
+                                    
+<li>
+    <a href="../ReSpec/ReSpec-code-toepassen/" class="dropdown-item">Code toepassen</a>
+</li>
+                                    
+<li>
+    <a href="../ReSpec/ReSpec-definitielijst-maken/" class="dropdown-item">Definitielijst maken</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">EA</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../EA/" class="dropdown-item">Overzicht</a>
+</li>
+                                    
+<li>
+    <a href="../EA/EA-toepassing-standaarddatatypen/" class="dropdown-item">standaarddatatypen</a>
+</li>
+                                    
+<li>
+    <a href="../EA/MIM-toolbox-genereren/" class="dropdown-item">Toolbox genereren</a>
+</li>
+                                    
+<li>
+    <a href="../EA/MIM-toolbox-importeren/" class="dropdown-item">Toolbox importeren</a>
+</li>
+                                    
+<li>
+    <a href="../EA/MIM-toolbox-genereren-extensie/" class="dropdown-item">Toolbox genereren extensie</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Subversion</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../SVN-installeren-voor-EAP/" class="dropdown-item">SVN installeren voor EAP</a>
+</li>
+                                    
+<li>
+    <a href="../SVN-importeren-bestaand-project/" class="dropdown-item">SVN importeren bestaand project</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../GML/" class="nav-link">GML</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../BegrippenXL/" class="nav-link">BegrippenXL</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../UML-to-RDF/" class="nav-link">UML-to-RDF</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../Handleiding-ontologie-maken-en-publiceren/" class="nav-link">Ontologie</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../WordConversies/" class="nav-link">Word2XXX</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../publicaties/" class="nav-link">Publicatieservers</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../werkomgeving-modelleren/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../SuggestiesHandleiding/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/Geonovum/handleiding-tooling/blob/main/docs/werkwijze-modelleren.md" class="nav-link"><i class="fa-brands fa-github"></i> Edit on GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#werkwijze-informatiemodelleren" class="nav-link">Werkwijze Informatiemodelleren</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="werkwijze-informatiemodelleren">Werkwijze Informatiemodelleren</h1>
+<p>Intern cursusmateriaal: <a href="https://stichtinggeonovum.sharepoint.com/:f:/s/Basisprogramma/ErIgyU58KvFeoe5cieS22z4BSl-c9UcUoeHVvaXibHPxaA?e=Y2Imgb">op onedrive</a></p>
+<blockquote>
+<p><strong>Note</strong>
+Een link naar dit document opnemen op intranet voor degenen die liever documentatie aan de hand van een tabel opzoeken.</p>
+<p><strong>Note</strong> 
+<strong>Todo geonovumwerkwijze voor informatiemodelleurs</strong></p>
+</blockquote>
+<ol>
+<li>Afstemmen met <strong>document dat Arnoud</strong> schrijft als bijlage voor offertes</li>
+<li>Overzicht onderwerpen/repo's mogelijk betrekking hebben op de <strong>geonovumwerkwijze</strong></li>
+<li>Onderscheid tussen <strong>werkwijze</strong> en <strong>werkomgeving</strong> goed controleren bij toevoeging aan tabellen</li>
+<li>Handleiding voor het maken <strong>begrippenkader</strong> en <strong>ontologie</strong> en de toepassing/noodzaak ervan.</li>
+<li>Relatie met <strong>BOMOS</strong></li>
+<li>Je zou naast <strong>Geometrie in Model en GML</strong> ook <strong>Geometrie in Model en JSON</strong> moeten hebben </li>
+</ol>
+<blockquote>
+<p><strong>Note</strong>
+<strong>Optioneel</strong></p>
+</blockquote>
+<ol>
+<li>Nog kolom <code>beheer</code> toevoegen: <code>["Geonovum", "Armatiek", "W3C", "Logius"]</code>.</li>
+<li>Nog Kolom <code>ReSpec</code> toevoegen: <code>["Ja", "Nee"]</code>. Is het document in ReSpec-formaat beschikbaar?</li>
+<li>Toelichting bij kolomnamen maken: een document kan bijvoorbeeld in werkversie op GitHub staan en als geconsulteerde (definitieve) versie op docs.geostandaarden. In deze tabel hanteren we locatie van het brondocument; het document op docs.geostandaarden.nl is een snapshot. Op GitHub vind je de actueelste informatie. Bovendien kun vanuit dat document altijd naar de laatst gepubliceerde versie komen.</li>
+<li>Een andere mogelijk is om een extra kolom toe te voegen met <code>gepubliceerde versie</code>, of <code>formele status</code>.</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Onderwerp</th>
+<th>Naam document</th>
+<th>Korte omschrijving</th>
+<th>Laatst bijgewerkt</th>
+<th>Locatie</th>
+<th>Gebruik</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Opstellen van model</td>
+<td>HIM - Handreiking Informatie Modelleren</td>
+<td>Handleiding voor het opstellen van een informatiemodel of dataproductspecificatie. Beschrijft rol, proces en basismethodiek</td>
+<td>2019</td>
+<td><a href="https://geonovum.github.io/HIM-Werkomgeving/">Github</a></td>
+<td>Openbaar</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Geometrie in model</td>
+<td>GIMEG</td>
+<td>Beschrijving van de toepassing van geometrie in informatiemodellering en de implementatie daarvan in GML.</td>
+<td>2021</td>
+<td><a href="https://geonovum.github.io/gimeg/">GitHub</a></td>
+<td>Openbaar</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Geometrie in uitwisselingsformaten</td>
+<td>Geometrie in uitwisselingsformaten</td>
+<td>Handreiking over het uitwisselen van geometrie, met o.a. een overzicht van de verschillende bestandsformaten, handvatten voor het kiezen van het juiste formaat en gedetaileerde informatie over het uitwisselen van geometrie in HTML, GML, JSON, GeoPackage en RDF.</td>
+<td>2022</td>
+<td><a href="https://docs.geostandaarden.nl/g4w/vv-hr-geox-20220104/#kieswijzer">GitHub</a></td>
+<td>Openbaar</td>
+</tr>
+<tr>
+<td>4</td>
+<td>CRS in uitwisselingsformaten</td>
+<td>Handreiking gebruik coördinaatreferentiesystemen bij uitwisseling en visualisatie van geo-informatie</td>
+<td>Bundeling van bestaande adviezen van het NSGI over geodetisch correcte gebruik van de in Nederland gebruikte CRS-en.</td>
+<td>2022</td>
+<td><a href="https://docs.geostandaarden.nl/crs/crs/">GitHub</a></td>
+<td>Openbaar</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Lange lijnenadvies</td>
+<td>Eenduidige transformatie van grenzen tussen ETRS89 en RD</td>
+<td>Advies voor het waarborgen van de nauwkeurigheid van lange lijnstukken van grenzen.</td>
+<td>2018</td>
+<td><a href="https://geoforum.nl/uploads/default/original/2X/c/c0795baa683bf3845c866ae4c576a880455be02a.pdf">Geoforum</a></td>
+<td>Openbaar</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Keuzehulp standaarden</td>
+<td>Raamwerk Geostandaarden 4.0</td>
+<td>Het Raamwerk van geo-standaarden helpt bij de opzet en ontwikkeling van een geo-informatie infrastructuur om de juiste set standaarden te kiezen.</td>
+<td>2023</td>
+<td><a href="https://geonovum.github.io/raamwerk-geostandaarden/">GitHub</a></td>
+<td>Openbaar</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Beschrijving MIM</td>
+<td>MIM - Metamodel Informatie Modellering</td>
+<td>Beschrijving van een metamodel waar informatiemodellen mee gemaakt worden. Het informeert over de metaklassen, metastructuur en metagegevens als grondslag voor een informatiemodel.</td>
+<td>2022</td>
+<td><a href="https://docs.geostandaarden.nl/mim/mim/">GitHub</a></td>
+<td>Openbaar</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Toepassing NEN3610</td>
+<td>Basismodel geo-informatie - toelichting</td>
+<td>Handreiking voor het toepassen van het Basismodel geo-informatie (NEN 3610:2022), bedoeld als service-informatie om te ondersteunen bij het toepassen van het model in sectorale informatiemodellen.</td>
+<td>2023</td>
+<td><a href="https://geonovum.github.io/nen3610-werkomgeving/">GitHub</a></td>
+<td>Openbaar</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Toepassing NEN3610 in LD</td>
+<td>NEN 3610 - Linked Data</td>
+<td>Combinatie van een <em>technisch rapport</em>, een <em>handboek</em> en een <em>standaard</em> voor NEN3610 in Linked Data.</td>
+<td>2021</td>
+<td><a href="https://geonovum.github.io/NEN3610-Linkeddata/">GitHub</a></td>
+<td>Openbaar</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Doel en Toepassing Model Basisgeometrie</td>
+<td>Basisgeometrie</td>
+<td>Specificatie van het model basisgeometrie voor geo-informatiemodellen die een externe geometriereferentie nodig hebben.</td>
+<td>2020</td>
+<td><a href="https://geonovum.github.io/Basisgeometrie-Werkomgeving/">GitHub</a></td>
+<td>Openbaar</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Toepassing ReSpec</td>
+<td>ReSpec Wiki</td>
+<td>Engelstalige wiki voor de configuratie en het gebruik van ReSpec</td>
+<td>2021</td>
+<td><a href="https://github.com/w3c/respec/wiki">GitHub</a></td>
+<td>Openbaar</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Wijzigingen in model</td>
+<td>Wijzigingsprotocol geo-standaarden</td>
+<td>Sturende principes achter het generieke wijzigingsproces van de basisset geo-standaarden.</td>
+<td>2021</td>
+<td><a href="https://geonovum.github.io/Geo-standaarden-wijzigingsprotocol/">GitHub</a></td>
+<td>Openbaar</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Beheer standaarden</td>
+<td>Beheer basis geo-standaarden</td>
+<td>Beschrijving van verschillende beheeraspecten, zoals o.a. <em>implementatieondersteuning</em>, <em>wijzigingsproces</em>, <em>governance</em>, etc.</td>
+<td>2021</td>
+<td><a href="https://geonovum.github.io/Geo-standaarden-beheerplan/">GitHub</a></td>
+<td>Openbaar</td>
+</tr>
+<tr>
+<td>14</td>
+<td>Object-identificatie</td>
+<td>UOI Ontwerp</td>
+<td>Ontwerp voor een Unieke Objectidentificator (UOI) om gegevens op verantwoorde en betrouwbare wijze domein-overstijgend te kunnen registreren, uitwisselen (delen) en koppelen aan andere gegevens.</td>
+<td>2022</td>
+<td><a href="https://geonovum.github.io/UOI-Ontwerp/">GitHub</a></td>
+<td>Openbaar</td>
+</tr>
+<tr>
+<td>15</td>
+<td>Wijzigingen in model</td>
+<td>Wijzigingsprotocol Informatiemodel Geluid</td>
+<td>Dit document beschrijft de sturende principes achter het wijzigingsproces voor IMG.</td>
+<td>2023</td>
+<td><a href="https://geonovum.github.io/IMG-wijzigingsprotocol/">GitHub</a></td>
+<td>Intern</td>
+</tr>
+<tr>
+<td>16</td>
+<td>Geostandaarden ISO</td>
+<td>ISO <code>19xxx</code></td>
+<td>Bestandsmap met bij Geonovum aanwezige documentatie van standaarden. Dit zijn niet altijd de meest actuele of formele versies.</td>
+<td>2022</td>
+<td><a href="https://stichtinggeonovum.sharepoint.com/sites/Basisprogramma/Gedeelde%20documenten/Forms/AllItems.aspx?csf=1&amp;web=1&amp;e=51pjTB&amp;cid=8e49bf07%2D9c61%2D4222%2D8d16%2Dd7e33e4ae315&amp;FolderCTID=0x01200083248CF916421045A630BAD1CFC3A243&amp;id=%2Fsites%2FBasisprogramma%2FGedeelde%20documenten%2FGeneral%2FStandaardisatie%20GII%2F4%20Bibliotheek%2FISO%2019xxx&amp;sortField=Modified&amp;isAscending=false&amp;viewid=94f965cf%2D2c44%2D46c9%2Dbbd2%2D1aff169b4901">Teams</a></td>
+<td>Intern</td>
+</tr>
+<tr>
+<td>17</td>
+<td>Bestaande modellen</td>
+<td>n.v.t.</td>
+<td>Verschillende bestandsmappen (en archief?) met (documentatie van) verschillende door Geonovum ontwikkelde (sectorale) standaarden</td>
+<td>n.v.t.</td>
+<td>Teams</td>
+<td>Intern</td>
+</tr>
+</tbody>
+</table>
+<!-- ```diff
+Niet meegenomen van github.com/geonovum
+- eu_regelingen_datastrategie
+- praktijkrichtlijn vector tiling
+- DashboardGit
+- INSPIRE-handreiking
+- uml2json
+- word2publicatie_template
+- nen3610
+- mim
+- toegankelijke-locatiedata
+- vector-tiling-best-practices
+- webrichtlijnen-geo
+``` --></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js"></script>
+        <script src="../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
