@@ -1,5 +1,8 @@
 # Werkwijze Informatiemodelleren
 
+
+Intern cursusmateriaal: [op onedrive](https://stichtinggeonovum.sharepoint.com/:f:/s/Basisprogramma/ErIgyU58KvFeoe5cieS22z4BSl-c9UcUoeHVvaXibHPxaA?e=Y2Imgb)
+
 >**Note**
 > Een link naar dit document opnemen op intranet voor degenen die liever documentatie aan de hand van een tabel opzoeken.
 

@@ -44,6 +44,10 @@ ReSpec documenten worden beheerd in een [GitHub](/GitHub) repository.
 als startpunt en druk op 'Use this template'.
 2. Vervang alle voorkomens van 'TODO' met inhoud.
 
+**Regel:** Een github repository mag maar één ReSpec document bevatten.
+
+**Regel:** Nieuwe ReSpec documenten in Markdown volgen de  [Geonovum ReSpec template](https://github.com/Geonovum/NL-ReSpec-GN-template)
+
 
 ## De URL van een publicatie op docs.geonovum.nl
 
@@ -75,7 +79,7 @@ geladen in de browser. Bij het laden wordt ook automatisch de
 geonovum-ReSpec-code geladen en uitgevoerd. Deze code zorgt ervoor dat het
 document zijn standaard layout krijgt.
 
-Het bestand 'index.html' heeft een vaste indeling. 
+Het bestand 'index.html' heeft een vaste indeling.
 
 In de HTML-header wordt de js-ReSpec bibliotheek geladen. Het enige dat in de
 header mag worden aangepast is de title (tussen \<title\> en \</title\>.
@@ -372,9 +376,8 @@ Een lijst met issues kan je toevoegen met de volgende HTML code:
 
 ## Publiceren in ReSpec
 
-In dit hoofdstuk staan checklists die je kan gebruiken als je vanuit GitHub en
-ReSpec “Versies” gaat aanmaken. Bijvoorbeeld hoe maak je een nieuwe GitHub
-repository aan, of hoe maak je vanuit een werkversie een consultatieversie aan,
+In dit hoofdstuk staan checklists die je kan gebruiken als je een nieuwe
+versie van een ReSpec document wilt publiceren op docs.geostandaarden.nl
 
 ## Controles voor publicatie
 

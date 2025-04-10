@@ -1,6 +1,6 @@
 # Publicatie Infrastructuur van Geonovum
 
-Dit is de publicatie infrstructuur van Geonovum. Onder het architectuurplaatje staan:
+Dit is de publicatie infrastructuur van Geonovum. Onder het architectuurplaatje staan:
 
 - Een korte [beschrijving](#kort-overzicht).
 - Verwijzing naar [documentatie](#documentatie).
@@ -10,6 +10,8 @@ Dit is de publicatie infrstructuur van Geonovum. Onder het architectuurplaatje s
 
 
 ![publicatie infrastructuur](media/PublicatieInfrastructuurGeonovum.drawio.svg)
+
+
 
 ## Kort Overzicht
 
