@@ -10,7 +10,7 @@ Dit document bevat een beschrijving van het werkproces om begrippen naar de begr
    ![1742818628675](image/BegrippenXL/1742818628675.png)
 
    En overizcht van meeste gebruikend paginas in de editor vind je op de linkse kant van de hoofdpagina:
-   	![1743589052520](image/BegrippenXL/1743589052520.png)
+   ![1743589052520](image/BegrippenXL/1743589052520.png)
 3. **Begrippen uitzoeken en navigeren binnen een editor:**
 
 Op het gedeelte *Begrippenkaders* van een hoofdpagina staat een overzicht van alle beschikbare begrippenkaders (met het aantal begrippen tussen haakjes).
@@ -43,7 +43,7 @@ En daarna krijg je een ttl bestand.
 
 **4. Creeren van een begrippenkader**
 
-Het is ook mogelijk om een nieuw begrippenkader aan te maken en een naam, notitie, rechten, bron, enz. toe te voegen. Indien nodig kunnen ook eigenschappen op basis van de Dublin Core-ontologie worden toegepast.
+Het is ook mogelijk om een nieuw begrippenkader aan te maken en een naam, notitie, rechten, bron, enz. toe te voegen. Indien nodig kunnen ook eigenschappen op basis van de Dublin Core-ontologie worden toegepast. Het is de makkelijkste manier op een begrippenkader maken (zonder upload van bestanden).
 
     ![1742993980483](image/BegrippenXL/1742993980483.png)
 
@@ -60,9 +60,11 @@ Na je keuze kom je op een bewerkingspagina. Door op het **bewerken-icoon** te kl
 
     ![1742995328657](image/BegrippenXL/1742995328657.png)
 
-**Importeren een csv.**
+**6. Importeren een csv.** Is er een mogelijkheid om begrippen in bulk te importeren (upload csv bestand).
 
 ![1742995382942](image/BegrippenXL/1742995382942.png)
+
+Het is een goede 
 
 Na importeren een csv krijg je een deze pagina als je een "dry run " uitgevoerd. Een overzicht van importeerde begrippen
 
@@ -74,3 +76,5 @@ Zonder "dry run" krijg je een vaarschuwing dat een werk is gestart en plaats op 
 
 en in een job queue zie je lijst van taken:
 ![1743419973003](image/BegrippenXL/1743419973003.png)
+
+Als upload is klaar dan krijg je een bericht dat begrippen zijn klaar en gedownloaded begrippen je kan zien op de begrippenkader pagina.
