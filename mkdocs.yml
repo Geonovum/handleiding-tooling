@@ -12,10 +12,9 @@ edit_uri: blob/main/docs/
 nav:
     - Home:
         - 'Welkom': index.md
-        - 'Geonovum Werkwijze Modelleren': geonovum-werkwijze-modelleren.md
-        - 'Werkomgeving Modelleren': werkomgeving-modelleren.md
-        - 'Werkwijze Modelleren': werkwijze-modelleren.md
-        - 'SuggestiesHandleiding': SuggestiesHandleiding.md
+        - 'Werkwijze Modelleren': werkwijzemodelleren.md
+        - 'tooling' : tooling.md
+        - 'Werkwijze todo': werkwijze-todo.md
     - GitHub:
         - 'Manual': GitHub/index.md
         - 'GitHub Intro': GitHub/GitHub-Inleiding.md
@@ -39,4 +38,3 @@ nav:
     - UML-to-RDF: UML-to-RDF.md
     - Ontologie: Handleiding-ontologie-maken-en-publiceren.md
     - Word2XXX: WordConversies.md
-    - Publicatieservers: publicaties/index.md
