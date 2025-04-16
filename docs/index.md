@@ -6,7 +6,7 @@ Deze pagina bevat een index naar tooling documenten:
 | ---------------------------------------------------- | ---------------------------------------------------------------------- |
 | [werkwijze](werkwijzemodelleren.md)                  | Goed leesbare beschrijving van de werkwijze van Geonovum               |
 | [tooling](tooling)                                   | Architectuurplaatje van onze tooling met verwijzing naar handleidingen |
-| todo](werkwijze-todo.md)                  | Actiepunten van dingen die nog toe te voegen zijn.                     |
+| [todo](werkwijze-todo.md)                  | Actiepunten van dingen die nog toe te voegen zijn.                     |
 
 
 Link naar specifieke tools:
