@@ -25,20 +25,17 @@ Handleiding per tool
 
 Overzicht van onderwerpen en repositories die mogelijk betrekking hebben op de tooling die bij Geonovum gebruikt wordt.
 
+**TODO**: al deze documenten onderbrengen bij bovenstaande onderwerpen.
+
 | | Applicatie | Naam document | Korte omschrijving | Laatst bijgewerkt | Locatie | Gebruik |
 | --- | --- | --- | --- | --- | --- | --- |
-| 1 | EA | Handleiding gebruik MIM-toolbox | Deze handleiding beschrijft hoe je de MIM toolbox kunt importeren en toepassen | 2023 | [GitHub](https://github.com/Geonovum/MIM-Werkomgeving/blob/master/UML%20profieltooling/werkversie1.1.1/README.md) | Openbaar |
-| 2 | EA | Handleiding genereren MIM-profiel | Deze handleiding beschrijft het proces voor het genereren van een customized toolbox voor modelleren met Enterprise Architect. | 2023 | [GitHub](https://github.com/Geonovum/MIM-Werkomgeving/tree/master/UML%20profieltooling#readme) | Openbaar |
-| 3 | EA | Handleiding genereren Extensie MIM-toolbox | Deze handleiding beschrijft hoe je in Enterprise Architect een extensie maakt op de MIM-toolbox. | 2023 | [Github](https://github.com/Geonovum/MIM-Werkomgeving/blob/master/UML%20profieltooling/how_to_extensie_op_toolbox.md) |  Openbaar |
 | 4 | EA, Imvertor | Imvertor installeren | Instructies voor de installatie en configuratie van Imvertor voor Enterprise Architect | 2022 | [GitHub](https://github.com/Geonovum/imvertor/blob/main/handleidingen/Imvertor%20-%20installeren%20voor%20EAP.md) | Openbaar |
 | 5 | EA, SVN | Strategie Semantic Versioning DiSGeo | Beschrijft de implementatie van Semantic Versioning voor DiSGeo | 2022 | [GitHub](https://github.com/Geonovum/disgeo-im/blob/main/docs/algemeen/versionering_strategie.md) | Openbaar |
 | 6 | Metadata kwaliteitsmonitor (MKM) | Tool voor Validatie metadatakwaliteit | De metadata kwaliteits monitor (MKM) maakt automatisch rapportages over de kwaliteit van metadata uit een Catalogue Servcie for the Web (CSW). | 2019 | [GitHub](https://github.com/Geonovum/metadatakwaliteit) | Openbaar |
 | 7 | Imvertor, EA, SVN | Handleiding tooling van VNG | Deze Wiki is een inventarisatie van informatie over de Model Driven Design aanpak van VNG Realisatie. | ---- | [GitHub](https://vng-realisatie.github.io/Model-Driven-Design-Documentatie/) | Openbaar |
-| 8 | EA, SVN | Installatie SVN | Deze handleiding beschrijft hoe je SVN installeert en je een EA-project onder versiebeheer brengt | 2023 | [GitHub](https://github.com/Geonovum/imvertor/blob/main/handleidingen/SVN%20-%20installeren%20voor%20EAP.md) | Intern |
 | 9 | EA, SVN | Importeren van een bestaand SVN-project in EA | Deze handleiding beschrijft hoe je vanuit een nieuw project in Enterprise Architect, de packages van een bestaand project in Subversion, kunt importeren. | 2022 | [GitHub](https://geonovum.github.io/handleiding-tooling/SVN-importeren-bestaand-project/) | Intern |
 | 10 | EA, Imvertor, Respec | Het publiceren van het IMGeluid EAP bestand | Een werkinstructie voor IMGeluid maar zeker toepasbaar voor alle standaarden | 2023 |[Confluence](https://geonovum.atlassian.net/l/cp/Fi0U9bCk) | Intern |
 | 11 |Imvertor | Documentatie over Imvertor | Lijstje links naar handige Imvertor dingetjes | 2021 | [Confluence](https://geonovum.atlassian.net/l/cp/2iwpfavy) | Intern |
-| 12 | EA | Enterprise Architect, profielen en toolboxen | Instructie voor het gebruik van profielen en toolboxen. Gekregen van de BRO (kan waarschijnlijk weg) | 2021 | [Confluence](https://geonovum.atlassian.net/l/cp/YCt6Vi1J) | Intern |
 | 13 | SVN | Gebruik van subversion in EA | Handleiding van hoe EA en subversion samenwerken | 2022 | [Github](https://geonovum.github.io/handleiding-GitHub/#subversion) | Intern |
 | 14 |GitHub, Markdown, ReSpec | Beheer GitHub/ Markdown/ ReSpec | Handleiding van genoemde tooling | 2022 | [Onedrive](https://stichtinggeonovum.sharepoint.com/:w:/r/sites/msteams_bf388d/Gedeelde%20documenten/General/A%20Beheer%20Geostandaarden/Handleidingen/Handleiding%20GitHub%20ReSpec%20Markdown%20v1.1.docx?d=wcec3f04c51c85e0ba6a6005f1166a81c&csf=1&web=1&e=3HGDEI)| Intern |
 | 15 | VocBench | Handleiding VocBench | Een simpele snelstartgids voor het voor het ontwikkelen van begrippenmodellen in VocBench als Linked data. | 2022 | [Onedrive](https://stichtinggeonovum.sharepoint.com/:p:/r/sites/msteams_bf388d/Gedeelde%20documenten/General/A%20Beheer%20Geostandaarden/Handleidingen/20210125%20Werken%20met%20VocBench.pptx?d=wa614298850a24803b8eb658aa51ff4ee&csf=1&web=1&e=vhYwX3)| Intern |

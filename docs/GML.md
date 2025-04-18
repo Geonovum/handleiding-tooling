@@ -5,12 +5,12 @@ vinden in: [Geometrie in model en GML](https://geonovum.github.io/gimeg/)
 
 ## XSD en Namespaces
 
-In een GML applicatieschema gebruiken we namespaces. Een namespace heeft de vorm 
+In een GML applicatieschema gebruiken we namespaces. Een namespace heeft de vorm
 van een URI en identificeert een domein.
 
 - Voor de basis wordt: http://www.geostandaarden.nl gebruikt.
-- Daarna volgt een identificatie van de standaard. 
-- Een versienummer volgens semver X.Y. Een Z-versie is niet nodig omdat alle Z-versies 
+- Daarna volgt een identificatie van de standaard.
+- Een versienummer volgens semver X.Y. Een Z-versie is niet nodig omdat alle Z-versies
   backwards compatible zijn en je dus nooit meer dan 1 versie gebruikt.
 - Voor een XML-schema geldt dat het backwards compatible is als bestanden die valide
   waren bij de vorige versie van het schema dat ook zijn voor de huidige.

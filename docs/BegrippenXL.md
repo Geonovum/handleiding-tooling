@@ -60,7 +60,7 @@ Het is ook mogelijk om een nieuw begrippenkader aan te maken en een naam, notiti
 
 ![1742993980483](media/BegrippenXL/1742993980483.png)
 
-## Bijwerken van begrippen in bulk (bulk bewerken, importeren csv of rdf).
+## Bijwerken van begrippen in bulk (bulk bewerken, importeren csv of rdf)
 
 Om meer dan één begrip/begrippenkader/collectie te wijzigen, moet je speciale tools gebruiken, zoals  **Bulk bewerken** , **CSV importeren** of  **RDF importeren** . Als je een **bulkbewerking** wilt uitvoeren, kun je in een drop-downmenu kiezen welk deel je wilt aanpassen. Een hulp pagina met beschrijving is beschikbaar [hier](https://geonovum-begrippen.wikixl.nl/index.php/Speciaal:BulkBewerken/help)
 
@@ -74,7 +74,7 @@ Na je keuze kom je op een bewerkingspagina. Door op het **bewerken-icoon** te kl
 
 ![1742995328657](media/BegrippenXL/1742995328657.png)
 
-## Importeren een csv.
+## Importeren een csv
 
 Is er een mogelijkheid om begrippen in bulk te importeren (upload csv bestand).
 
@@ -94,3 +94,7 @@ en in een job queue zie je lijst van taken:
 ![1743419973003](media/BegrippenXL/1743419973003.png)
 
 Als upload is klaar dan krijg je een bericht dat begrippen zijn klaar en gedownloaded begrippen je kan zien op de begrippenkader pagina.
+
+## Publiceren op register.geostandaarden.nl
+
+Het vocabulaire kan je downloaden als .ttl en dat publiceren.
