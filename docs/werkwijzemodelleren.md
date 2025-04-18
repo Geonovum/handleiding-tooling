@@ -1,6 +1,6 @@
 # Werkwijze informatiemodelleren
 
-## Informatiemodellen: De basis 
+## De basis
 
 **Wat is een informatiemodel?**
 
@@ -18,15 +18,15 @@ Een metamodel beschrijft de informatie-elementen die kunnen voorkomen in een inf
 
 De modellering van een bepaald domein start in principe met het beschrijven van kennis, te weten de begrippen die een rol spelen in een domein, uitgedrukt in een (meestal) domein specifieke terminologie: **niveau 1**. Op dit niveau is er nog geen of slechts een beperkte notie van welke informatie er geregistreerd en uitgewisseld moet worden; er dus geen nog sprake van een informatiemodel. MIM verstaat onder een informatiemodel een *conceptueel*: **niveau 2**, of *logisch informatiemodel*: **niveau 3**. Het metamodel (MIM) richt zich dan ook primair op niveau 2 en 3. Tot slot kan een het informatiemodel uitgewerkt worden in verschillende soorten technische datamodellen en schema's, zoals XML of JSON. In MIM wordt dit **niveau 4** genoemd. Meer informatie over de verschillende niveau's, vind je hier:  
 
-- Niveau 1: [Model van begrippen](https://docs.geostandaarden.nl/mim/mim/#niveau-1-model-van-begrippen)
-- Niveau 2: [Conceptueel informatiemodel](https://docs.geostandaarden.nl/mim/mim/#niveau-2-conceptueel-informatiemodel)
-- Niveau 3: [Logisch informatiemodel](https://docs.geostandaarden.nl/mim/mim/#niveau-3-logisch-informatie-of-gegevensmodel)
-- Niveau 4: [Fysiek of Technisch gegevensmodel](https://docs.geostandaarden.nl/mim/mim/#niveau-3-logisch-informatie-of-gegevensmodel)
+- Niveau 1: [Model van begrippen](https://docs.geostandaarden.nl/mim/mim/#beschouwingsniveau-1-model-van-begrippen)
+- Niveau 2: [Conceptueel informatiemodel](https://docs.geostandaarden.nl/mim/mim/#beschouwingsniveau-2-conceptueel-informatiemodel)
+- Niveau 3: [Logisch informatiemodel](https://docs.geostandaarden.nl/mim/mim/#beschouwingsniveau-3-logisch-informatie-of-gegevensmodel)
+- Niveau 4: [Fysiek of Technisch gegevensmodel](https://docs.geostandaarden.nl/mim/mim/#beschouwingsniveau-4-fysiek-of-technisch-gegevens-of-datamodel)
 
 Een informatiemodel is altijd **techniek-onafhankelijk**. Niveau 4 valt daarom buiten de scope van het MIM. Wel streeft het MIM naar *Model Driven Development*, waarbij technische modellen (niveau 4) gegenereerd kunnen worden vanuit logische modellen (niveau 3). Hiervoor gebruiken we bij Geonovum Imvertor ([lees meer](https://docs.geostandaarden.nl/mim/mim/#typering-van-modellen-en-wat-wel-en-niet-in-scope-is-van-deze-standaard)).
 
 
-## ​​​​​​​​​​​​​​Informatiemodellen: locatie-informatie 
+## ​​​​​​​​​​​​​locatie-informatie
 
 **Basismodel Geo-informatie (NEN3610)**
 
@@ -52,7 +52,7 @@ Geography Markup Language (GML) is een hele volledige, maar ook vrij complexe st
 
 In sommige situaties beschrijven verschillende informatiemodellen hetzelfde object in de werkelijkheid. Als elk model een unieke set van kenmerken bevat van hetzelfde object en daarvoor dezelfde geometrie hanteert, is het niet nodig dat elk model de geometrie apart vastlegt. Je kunt die modellen naar één geometrie laten verwijzen. Het [model Basisgeometrie](https://geonovum.github.io/Basisgeometrie-Werkomgeving/) biedt hiervoor een gestandaardiseerde oplossing.
 
-## Informatiemodellen: relevante standaarden​
+## relevante standaarden​
 
 **​​​​​​​​​​​​​Bij de ontwikkeling van een geo-informatiestandaard, krijg je te maken met een grote verscheidenheid aan verschillende soorten standaarden. Niet alle standaarden zijn voor elke toepassing relevant.**
 
@@ -64,33 +64,27 @@ Het [raamwerk van geo-standaarden](https://geonovum.github.io/raamwerk-geostanda
 
 Hoofdmap waar documentatie van de [ISO-standaarden op Teams](https://stichtinggeonovum.sharepoint.com/sites/Basisprogramma/Gedeelde%20documenten/Forms/AllItems.aspx?csf=1&amp;web=1&amp;e=51pjTB&amp;cid=8e49bf07-9c61-4222-8d16-d7e33e4ae315&amp;FolderCTID=0x01200083248CF916421045A630BAD1CFC3A243&amp;id=/sites/Basisprogramma/Gedeelde%20documenten/General/Standaardisatie%20GII/4%20Bibliotheek/ISO%2019xxx&amp;sortField=Modified&amp;isAscending=false&amp;viewid=94f965cf-2c44-46c9-bbd2-1aff169b4901) beschikbaar zijn. We beschikken niet over de complete set relevante geo-standaarden. Bovendien zijn de documenten in deze map niet altijd de formeel definitieve versie van de standaard.
 
-## Aan de slag met...
-https://stichtinggeonovum.sharepoint.com/sites/StarterspakketGeonovum/SitePages/Werkwijze-informatiemodelleren.aspx#aan-de-slag-met...
-
 ## Software installeren en configureren
-https://stichtinggeonovum.sharepoint.com/sites/StarterspakketGeonovum/SitePages/Werkwijze-informatiemodelleren.aspx#software-installeren-en-configureren
 
 ​​​​​​​**UML modelleersoftware: Enterprise Architect (EA)**
 
-Informatiemodellen ontwikkelen we bij Geonovum met de software Enterprise Architect van Sparx Systems. Vraag een **licentie** aan via ([**Paul Janssen**](https://eur.delve.office.com/?u=b62697e8-e7f0-48fe-b701-a5c7b17d8ebc&amp;v=work)). Download en installeer EA ([installatie-instructie](https://sparxsystems.com/enterprise_architect_user_guide/15.2/product_information/installea.html)). Bewaar het installatiebestand. De licentie voor support van Sparx verloopt na een jaar en daarmee tevens de *credentials* voor het downloaden van de laatste versie. Je kunt EA dan nog wel gebruiken. Mocht je EA opnieuw willen installeren, dan heb je dit bestand en je oorspronkelijke *credentials *nodig. Bewaar die dus goed!
+Informatiemodellen ontwikkelen we bij Geonovum met de software Enterprise Architect van Sparx Systems. Download en installeer EA ([installatie-instructie](https://sparxsystems.com/enterprise_architect_user_guide/15.2/product_information/installea.html)). Bewaar het installatiebestand. De licentie voor support van Sparx verloopt na een jaar en daarmee tevens de *credentials* voor het downloaden van de laatste versie. Je kunt EA dan nog wel gebruiken. Mocht je EA opnieuw willen installeren, dan heb je dit bestand en je oorspronkelijke *credentials *nodig. Bewaar die dus goed!
 
 **Versiebeheersoftware: Subversion (SVN)**
 
-Informatiemodellen staan altijd onder versiebeheer. Hiervoor gebruiken we het programma **TurtoiseSVN**. Vraag **toegang **tot de SVN-server (via **Rob Kaesehagen**). Installeer SVN en zet een project in versiebeheer ([installatie-instructie](https://github.com/Geonovum/handleiding-tooling/blob/main/docs/SVN-installeren-voor-EAP.md)). Ga je met een bestaand project aan de slag, lees dan in de handleiding [importeren bestaand SVN-project in EA](https://github.com/Geonovum/handleiding-tooling/blob/main/docs/SVN-importeren-bestaand-project.md)hoe je dat doet. Onder het kopje [versiebeheer](https://github.com/Geonovum/geonovum-werkwijze/blob/main/howto.md#72---versiebeheer), vind je meer informatie.
+Informatiemodellen staan altijd onder versiebeheer. Hiervoor gebruiken we het programma **TurtoiseSVN**. Vraag **toegang **tot de SVN-server (via **Rob Kaesehagen**). Installeer SVN en zet een project in versiebeheer ([installatie-instructie](https://geonovum.github.io/handleiding-tooling/SVN-installeren-voor-EAP/)). Ga je met een bestaand project aan de slag, lees dan in de handleiding [importeren bestaand SVN-project in EA](https://github.com/Geonovum/handleiding-tooling/blob/main/docs/SVN-importeren-bestaand-project.md)hoe je dat doet. Onder het kopje [versiebeheer](https://github.com/Geonovum/geonovum-werkwijze/blob/main/howto.md#72---versiebeheer), vind je meer informatie.
 
 **MIM-toolbox voor Enterprise Architect**
 
-Voor een eenvoudige toepassing van Metamodel voor Informatiemodellering (MIM) is de MIM-toolbox beschikbaar. Het gebruik van de toolbox is niet verplicht, maar we raden het wel aan. Het bespaart je als modelleur veel handwerk. De handleiding [importeren en toepassen MIM-toolbox voor Enterprise Architect](https://github.com/Geonovum/MIM-Werkomgeving/blob/master/UML%20profieltooling/werkversie1.1.1/README.md#handleiding---importeren-en-toepassen-mim-toolbox-in-enterprise-architect) legt uit hoe je hiermee aan de slag kunt.
+Voor een eenvoudige toepassing van Metamodel voor Informatiemodellering (MIM) is de MIM-toolbox beschikbaar. Het gebruik van de toolbox is niet verplicht, maar we raden het wel aan. Het bespaart je als modelleur veel handwerk. De handleiding [importeren en toepassen MIM-toolbox voor Enterprise Architect](https://github.com/Geonovum/MIM-Werkomgeving/blob/master/UML%20profieltooling/werkversie1.1.1/README.md) legt uit hoe je hiermee aan de slag kunt.
 
 **GitHub**
 
-Werkversies van informatiemodellen maken we publiek toegankelijk via GitHub. De **handleiding** [GitHub-introductie](https://geonovum.github.io/handleiding-tooling/GitHub-Inleiding/) legt uit waarom GitHub handig is en hoe je ermee aan de slag kunt. Een **beschrijving** van de manier waarop we GitHub gebruiken, is opgenomen in de handleiding GitHub, onder [werkwijze Geonovum](https://geonovum.github.io/handleiding-tooling/GitHub/#werkwijze-geonovum). Om met GitHub te werken heb je een **account** nodig. Als je dat nog niet hebt, maak er dan één aan ([account maken](https://geonovum.github.io/handleiding-tooling/GitHub/#installatie-en-inrichting)). Vraag vervolgens aan één van de GitHub-*administrators* ([**Linda van den Brink**](https://eur.delve.office.com/?p=l.vandenbrink%40geonovum.nl&amp;v=work), [**Frank Terpstra**](https://eur.delve.office.com/?u=d3ea5548-2d66-4b1c-96b6-0cf77d708713&amp;v=work) of [**Arnoud de Boer**](https://eur.delve.office.com/?u=0c9de0d3-d5a1-4fe2-8cd2-f47c4f22d29b&amp;v=work)) om je toe te voegen aan de [Geonovum-GitHub-pagina](https://github.com/Geonovum), dit kan onder andere via het Slack-kanaal **#github-admins**. Zorg hierna dat je de juiste **rechten** ontvangt voor de *repository *waaraan je gaat werken. Ga je aan een nieuw project werken, vraag dan of één van de Github *administrators* een **nieuwe *****repository*** voor je opzet. 
+Werkversies van informatiemodellen maken we publiek toegankelijk via GitHub. De **handleiding** [GitHub-introductie](https://geonovum.github.io/handleiding-tooling/GitHub-Inleiding/) legt uit waarom GitHub handig is en hoe je ermee aan de slag kunt. Een **beschrijving** van de manier waarop we GitHub gebruiken, is opgenomen in de handleiding GitHub, onder [werkwijze Geonovum](https://geonovum.github.io/handleiding-tooling/GitHub/#werkwijze-geonovum). Om met GitHub te werken heb je een **account** nodig. Als je dat nog niet hebt, maak er dan één aan ([account maken](https://geonovum.github.io/handleiding-tooling/GitHub/#installatie-en-inrichting)). Vraag vervolgens aan één van de GitHub-*administrators* om je toe te voegen aan de [Geonovum-GitHub-pagina](https://github.com/Geonovum), dit kan onder andere via het Slack-kanaal **#github-admins**. Zorg hierna dat je de juiste **rechten** ontvangt voor de *repository *waaraan je gaat werken. Ga je aan een nieuw project werken, vraag dan of één van de Github *administrators* een **nieuw repository** voor je opzet. 
 
 **Publicatie- en schemageneratiesoftware: Imvertor**
 
-Geonovum ontwikkelt standaarden *Model Driven*. Deze manier van softwareontwikkeling integreert het hele proces van bedenken tot uitvoeren en testen. Hiervoor gebruiken we de software Imvertor. Dit is een *add-in* voor Enterprise Architect. Vraag een **Imvertoraccount **aan bij **Armatiek**: **Arjan Loeffen**, of via de **contactpersoon **bij **Geonovum**: [**Wilko Quak**](https://eur.delve.office.com/?u=ed56a0c5-f6e3-4b66-9d93-20459a339eb0&amp;v=work). Installeer Imvertor aan de hand van de [installatie-instructie](https://imvertor.armatiek.nl/imvertor-executor/dashboard/wiki?key=info-IMVERTORHTSWWI) op de website van Armatiek. Naast de standaardinstallatie biedt Imvertor veel configuratie-opties. Vanuit gebruikservaring bij Geonovum is er een document met enkele [handige tips voor Imvertorgebruik beschikbaar](https://geonovum.atlassian.net/l/cp/2iwpfavy).
-
-* * *
+Geonovum ontwikkelt standaarden *Model Driven*. Deze manier van softwareontwikkeling integreert het hele proces van bedenken tot uitvoeren en testen. Hiervoor gebruiken we de software Imvertor. Dit is een *add-in* voor Enterprise Architect. Vraag een **Imvertoraccount **aan. Installeer Imvertor aan de hand van de [installatie-instructie](https://imvertor.armatiek.nl/imvertor-executor/dashboard/wiki?key=info-IMVERTORHTSWWI) op de website van Armatiek. Naast de standaardinstallatie biedt Imvertor veel configuratie-opties. Vanuit gebruikservaring bij Geonovum is er een document met enkele [handige tips voor Imvertorgebruik beschikbaar](https://geonovum.atlassian.net/l/cp/2iwpfavy).
 
 ## Informatiemodelleren
 
@@ -110,9 +104,6 @@ Ben je op zoek naar voorbeelden van door Geonovum ontwikkelde modellen? Kijk dan
 
 Het programma Werk aan Uitvoering (WAU) levert o.a. een aantal [deliverables](https://github.com/geonovum/WaU/#deliverables) op, zoals een *cross-domein model*, *generieke modelleerpatronen* en *vertaalspecificaties*. Dit is nog in ontwikkeling, maar biedt belangrijke uitgangspunten en aanknopingspunten voor het modelleren van domeinoverstijgende vraagstukken.
 
-**UOI**
-
-Om gegevens op verantwoorde en betrouwbare wijze domein-overstijgend te kunnen registreren, uitwisselen en koppelen aan andere gegevens, is er behoefte aan een unieke objectidentificatie. Het UOI-code stelsel fungeert als voor domein-overstijgende infrastructuur voor het vinden van objectgegevens. Het document [Ontwerp voor een Unieke Objectidentificator](https://geonovum.github.io/UOI-Ontwerp/) (UOI) identificeerd drie principes voor het domein-overstijgend zoeken, vinden en interpreteren van objecten.
 
 ## Informatiemodel publiceren​​​​​​​
 
@@ -128,7 +119,7 @@ Het ReSpec-document van een vastgestelde versie van een standaard publiceren we 
 
 **Register.geostandaarden**
 
-Het technisch register biedt praktische informatie aan met name ontwikkelaars die op basis van deze informatiemodellen software bouwen. Het is daarmee de authentieke bron waar je alle relevante versies van technische bestanden, inclusief validatieregels, direct online kunt vinden. Het register is de centrale plek waar je alle technische bestanden van informatiemodellen uit de NEN3610-familie vindt. Op de [Github-pagina technisch register 2019](https://github.com/Geonovum/technisch-register-2019) vind je meer informatie. Hoe je de technische bestanden van een informatiemodel in het technisch register publiceert, lees je in de [handleiding voor beheerders informatiemodellen](https://github.com/Geonovum/technisch-register-2019/blob/master/documentatie/Handleiding%20voor%20beheerders%20informatiemodellen.md). Wil je een systeem opzetten voor het volgen van versies van een nieuw informatiemodel, raadpleeg dan de [handleiding voor beheerders technisch register](https://github.com/Geonovum/technisch-register-2019/blob/master/documentatie/Handleiding%20voor%20beheerders%20technisch%20register.md) en kijk voor meer informatie bij [versiebeheer](https://github.com/Geonovum/geonovum-werkwijze/blob/main/howto.md#versiebeheer).
+Het technisch register biedt praktische informatie aan met name ontwikkelaars die op basis van deze informatiemodellen software bouwen. Het is daarmee de authentieke bron waar je alle relevante versies van technische bestanden, inclusief validatieregels, direct online kunt vinden. Het register is de centrale plek waar je alle technische bestanden van informatiemodellen uit de NEN3610-familie vindt. Op de [Github-pagina technisch register 2019](https://github.com/Geonovum/technisch-register-2019) vind je meer informatie. Hoe je de technische bestanden van een informatiemodel in het technisch register publiceert, lees je in de [handleiding voor beheerders informatiemodellen](https://github.com/Geonovum/technisch-register-2019/blob/master/documentatie/HandleidingVoorBeheerdersInformatiemodellen.md). Wil je een systeem opzetten voor het volgen van versies van een nieuw informatiemodel, raadpleeg dan de [handleiding voor beheerders technisch register](https://github.com/Geonovum/technisch-register-2019/blob/master/documentatie/HandleidingVoorBeheerdersTechnischRegister.md) en kijk voor meer informatie bij [versiebeheer](https://github.com/Geonovum/geonovum-werkwijze/blob/main/howto.md#versiebeheer).
 
 
 ## Standaardenbeheer
@@ -149,39 +140,3 @@ Over de manier waarop de wijzigingen van een basis-geostandaard plaatsvinden lee
 
 Geonovum werkt aan vele projecten en aan flink aantal beheeropdrachten. Beheer is een proces en geen project en daarom des te meer van belang onze ervaring en kennis te delen, te borgen en de nieuwe collega’s te coachen in het standaardenwerk bij Geonovum. Daarbij hoort ook het vastleggen van de afspraken: *zo doen we dat bij Geonovum!* Het [handboek beheer](https://stichtinggeonovum.sharepoint.com/:b:/r/sites/msteams_bf388d/Gedeelde%20documenten/General/A%20Beheer%20Geostandaarden/Handboek%20Beheerder/Handboek%20beheer%20standaarden%20bij%20Geonovum.pdf?csf=1&amp;web=1&amp;e=ltQh3L) is de invulling van de beheeropdracht, het [handboek opdrachtnemer](https://stichtinggeonovum.sharepoint.com/sites/msteams_bf388d/Gedeelde%20documenten/Forms/AllItems.aspx?id=/sites/msteams_bf388d/Gedeelde%20documenten/General/Handboek%20Opdrachtnemer/componenten/pdf/Handboekopdrachtnemer.pdf&amp;viewid=3a693696-6e40-41fb-a369-1de62b54d550&amp;parent=/sites/msteams_bf388d/Gedeelde%20documenten/General/Handboek%20Opdrachtnemer/componenten/pdf) gaat over onder andere het organiseren van de beheeropdracht in samenwerking met de opdrachtgever.
 
-
-## Verwijzingenoverzicht
-
-Overzicht van onderwerpen en repositories die mogelijk betrekking hebben op de tooling die bij Geonovum gebruikt wordt.
-
->**Note**
-> Een link naar dit document opnemen op intranet voor degenen die liever documentatie aan de hand van een tabel opzoeken.
-
->**Note**
-> `docs.geostandaarden.nl` en `register.geostandaarden.nl` nog opnemen?
-
-| | Applicatie | Naam document | Korte omschrijving | Laatst bijgewerkt | Locatie | Gebruik |
-| --- | --- | --- | --- | --- | --- | --- |
-| 1 | EA | Handleiding gebruik MIM-toolbox | Deze handleiding beschrijft hoe je de MIM toolbox kunt importeren en toepassen | 2023 | [GitHub](https://github.com/Geonovum/MIM-Werkomgeving/blob/master/UML%20profieltooling/werkversie1.1.1/README.md) | Openbaar |
-| 2 | EA | Handleiding genereren MIM-profiel | Deze handleiding beschrijft het proces voor het genereren van een customized toolbox voor modelleren met Enterprise Architect. | 2023 | [GitHub](https://github.com/Geonovum/MIM-Werkomgeving/tree/master/UML%20profieltooling#readme) | Openbaar |
-| 3 | EA | Handleiding genereren Extensie MIM-toolbox | Deze handleiding beschrijft hoe je in Enterprise Architect een extensie maakt op de MIM-toolbox. | 2023 | [Github](https://github.com/Geonovum/MIM-Werkomgeving/blob/master/UML%20profieltooling/how_to_extensie_op_toolbox.md) |  Openbaar |
-| 4 | EA, Imvertor | Imvertor installeren | Instructies voor de installatie en configuratie van Imvertor voor Enterprise Architect | 2022 | [GitHub](https://github.com/Geonovum/imvertor/blob/main/handleidingen/Imvertor%20-%20installeren%20voor%20EAP.md) | Openbaar |
-| 5 | EA, SVN | Strategie Semantic Versioning DiSGeo | Beschrijft de implementatie van Semantic Versioning voor DiSGeo | 2022 | [GitHub](https://github.com/Geonovum/disgeo-im/blob/main/docs/algemeen/versionering_strategie.md) | Openbaar |
-| 6 | Metadata kwaliteitsmonitor (MKM) | Tool voor Validatie metadatakwaliteit | De metadata kwaliteits monitor (MKM) maakt automatisch rapportages over de kwaliteit van metadata uit een Catalogue Servcie for the Web (CSW). | 2019 | [GitHub](https://github.com/Geonovum/metadatakwaliteit) | Openbaar |
-| 7 | Imvertor, EA, SVN | Handleiding tooling van VNG | Deze Wiki is een inventarisatie van informatie over de Model Driven Design aanpak van VNG Realisatie. | ---- | [GitHub](https://vng-realisatie.github.io/Model-Driven-Design-Documentatie/) | Openbaar |
-| 8 | EA, SVN | Installatie SVN | Deze handleiding beschrijft hoe je SVN installeert en je een EA-project onder versiebeheer brengt | 2023 | [GitHub](https://github.com/Geonovum/imvertor/blob/main/handleidingen/SVN%20-%20installeren%20voor%20EAP.md) | Intern |
-| 9 | EA, SVN | Importeren van een bestaand SVN-project in EA | Deze handleiding beschrijft hoe je vanuit een nieuw project in Enterprise Architect, de packages van een bestaand project in Subversion, kunt importeren. | 2022 | [GitHub](https://github.com/Geonovum/imvertor/blob/main/handleidingen/SVN%20-%20importeren%20bestaand%20project.md) | Intern |
-| 10 | EA, Imvertor, Respec | Het publiceren van het IMGeluid EAP bestand | Een werkinstructie voor IMGeluid maar zeker toepasbaar voor alle standaarden | 2023 |[Confluence](https://geonovum.atlassian.net/l/cp/Fi0U9bCk) | Intern |
-| 11 |Imvertor | Documentatie over Imvertor | Lijstje links naar handige Imvertor dingetjes | 2021 | [Confluence](https://geonovum.atlassian.net/l/cp/2iwpfavy) | Intern |
-| 12 | EA | Enterprise Architect, profielen en toolboxen | Instructie voor het gebruik van profielen en toolboxen. Gekregen van de BRO (kan waarschijnlijk weg) | 2021 | [Confluence](https://geonovum.atlassian.net/l/cp/YCt6Vi1J) | Intern |
-| 13 | SVN | Gebruik van subversion in EA | Handleiding van hoe EA en subversion samenwerken | 2022 | [Github](https://geonovum.github.io/handleiding-GitHub/#subversion) | Intern |
-| 14 |GitHub, Markdown, ReSpec | Beheer GitHub/ Markdown/ ReSpec | Handleiding van genoemde tooling | 2022 | [Onedrive](https://stichtinggeonovum.sharepoint.com/:w:/r/sites/msteams_bf388d/Gedeelde%20documenten/General/A%20Beheer%20Geostandaarden/Handleidingen/Handleiding%20GitHub%20ReSpec%20Markdown%20v1.1.docx?d=wcec3f04c51c85e0ba6a6005f1166a81c&csf=1&web=1&e=3HGDEI)| Intern |
-| 15 | VocBench | Handleiding VocBench | Een simpele snelstartgids voor het voor het ontwikkelen van begrippenmodellen in VocBench als Linked data. | 2022 | [Onedrive](https://stichtinggeonovum.sharepoint.com/:p:/r/sites/msteams_bf388d/Gedeelde%20documenten/General/A%20Beheer%20Geostandaarden/Handleidingen/20210125%20Werken%20met%20VocBench.pptx?d=wa614298850a24803b8eb658aa51ff4ee&csf=1&web=1&e=vhYwX3)| Intern |
-| 16 | GitHub | GitHub introductie |  Waarom github handig is en hoe je aan de slag kunt | 2023 |[Onedrive](https://stichtinggeonovum.sharepoint.com/:w:/r/sites/msteams_bf388d/Gedeelde%20documenten/General/A%20Beheer%20Geostandaarden/Handleidingen/Handleiding%20introductie%20Github.docx?d=w963f0d41bdb55e97b3aa3e9f68ac87e2&csf=1&web=1&e=Z4ICcH)| Intern |
-| 17 | Overzicht | Overzicht tooling team Standaardisatie | handig overzicht | 2023 | [Onedrive](https://stichtinggeonovum.sharepoint.com/:w:/r/sites/msteams_bf388d/Gedeelde%20documenten/General/A%20Beheer%20Geostandaarden/Tooling/Overzicht%20tooling%20team%20Standaardisatie.docx?d=we7a1b6e0c1005cb4a9611f23881311af&csf=1&web=1&e=8DIJfs)| Intern |
-| 18 | Technisch register | Geonovum technisch register 2019 | Instructies hoe je een Respec document automatisch publiceert op docs.geostandaarden.nl | 2020 | [GitHub](https://github.com/Geonovum/technisch-register-2019) | Intern |
-| 19 | Technisch register | Handleiding voor beheerders informatiemodellen | In dit document worden de stappen beschreven voor het publiceren van de technische bestanden van een informatiemodel in het Technisch register van Geonovum. | 2019 | [GitHub](https://github.com/Geonovum/technisch-register-2019/blob/master/documentatie/Handleiding%20voor%20beheerders%20informatiemodellen.md) | Intern |
-| 20 | Technisch register | Handleiding voor beheerders technisch register | In dit document worden de stappen beschreven voor het opzetten van een systeem voor het volgen van versies van een nieuw informatiemodel in het Technisch register van Geonovum. | 2022 | [GitHub](https://github.com/Geonovum/technisch-register-2019/blob/master/documentatie/Handleiding%20voor%20beheerders%20technisch%20register.md) | Intern |
-| 21 | EA, Imvertor, SVN | **Suggesties** voor aanvullende handleidingen | Dit document is op zichzelf **geen handleiding**, maar geeft een overzicht van mogelijke relevante onderwerpen om nog een handleiding voor te schrijven | 2022 | [GitHub](https://github.com/Geonovum/imvertor/blob/main/handleidingen/Suggesties%20handleiding.md) | Intern |
-| 22 | ReSpec | ReSpec Utilities | ReSpec Utilities voor Geonovum | 2019 | [GitHub](https://github.com/Geonovum/respec-utils) | Intern |
-| 23 | Word, Git, ReSpec | word2werkversie/~markdown/~publicatie | Beschrijving van ingerichte workflow waarmee je Word-bestanden om kunt zetten naar een ReSpec-werkversies. | 2023 | [Github](https://geonovum.github.io/word2werkversie_handleiding/) | Intern |

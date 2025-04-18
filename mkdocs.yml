@@ -31,10 +31,11 @@ nav:
         - Toolbox importeren: EA/MIM-toolbox-importeren.md
         - Toolbox genereren extensie: EA/MIM-toolbox-genereren-extensie.md
     - Subversion:
-        - SVN installeren voor EAP: SVN-installeren-voor-EAP.md
-        - 'SVN importeren bestaand project': SVN-importeren-bestaand-project.md
+        - SVN: svn/index.md
+        - SVN installeren voor EAP: svn/SVN-installeren-voor-EAP.md
+        - 'SVN importeren bestaand project': svn/SVN-importeren-bestaand-project.md
     - GML: GML.md
     - BegrippenXL: BegrippenXL.md
-    - UML-to-RDF: UML-to-RDF.md
+    - RDF: RDF/UML-to-RDF.md
     - Ontologie: Handleiding-ontologie-maken-en-publiceren.md
-    - Word2XXX: WordConversies.md
+    - Word2ReSpec: WordConversies.md

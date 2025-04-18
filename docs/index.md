@@ -1,15 +1,13 @@
 # Geonovum tooling
 
-Deze pagina bevat een index naar tooling documenten:
+Welkom bij de beschrijving van werkwijze en tooling van Geonovum.
+Hierin wordt beschreven:
 
-| Document                                             | Omschrijving                                                           |
-| ---------------------------------------------------- | ---------------------------------------------------------------------- |
-| [werkwijze](werkwijzemodelleren.md)                  | Goed leesbare beschrijving van de werkwijze van Geonovum               |
-| [tooling](tooling)                                   | Architectuurplaatje van onze tooling met verwijzing naar handleidingen |
-| [todo](werkwijze-todo.md)                  | Actiepunten van dingen die nog toe te voegen zijn.                     |
+- Een compacte en leesbare beschrijving van de [werkwijze](werkwijzemodelleren.md) met veel links.
+- Architectuurplaatje van onze [tooling](tooling).
+- [todo](werkwijze-todo.md) items ter verbetering.
 
-
-Link naar specifieke tools:
+Handleiding per tool
 
 | Tool                                                   | omscrijving                                                 |
 | ------------------------------------------------------ | ----------------------------------------------------------- |
@@ -18,9 +16,37 @@ Link naar specifieke tools:
 | [Markdown](Markdown)                                   | Eenvoudige mark-up taal waarin we veel documenten schrijven |
 | [ReSpec](ReSpec)                                       | Hierin schrijven we onze standaarden                        |
 | [EA](EA)                                               | UML Edtior                                                  |
-| [Subversion](Subversion)                               | Beheertool voor UML diagrammen                              |
+| [Subversion](svn)                                      | Beheertool voor UML diagrammen                              |
 | [GML](GML)                                             | Uitwisseltaal voor geodata                                  |
 | [BegrippenXL](BegrippenXL)                             | Begrippen                                                   |
 | [UML-to-RDF](UML-to-RDF)                               | Conversietool naar RDF                                      |
 | [Ontologie](Handleiding-ontologie-maken-en-publiceren) | Ontologie                                                   |
-| [Word2XXX](WordConversies)                             | Word naar ReSpec, Mardown etc. |
+| [Word2ReSpec](WordConversies)                             | Word naar ReSpec, Markdown etc.                              |
+
+Overzicht van onderwerpen en repositories die mogelijk betrekking hebben op de tooling die bij Geonovum gebruikt wordt.
+
+| | Applicatie | Naam document | Korte omschrijving | Laatst bijgewerkt | Locatie | Gebruik |
+| --- | --- | --- | --- | --- | --- | --- |
+| 1 | EA | Handleiding gebruik MIM-toolbox | Deze handleiding beschrijft hoe je de MIM toolbox kunt importeren en toepassen | 2023 | [GitHub](https://github.com/Geonovum/MIM-Werkomgeving/blob/master/UML%20profieltooling/werkversie1.1.1/README.md) | Openbaar |
+| 2 | EA | Handleiding genereren MIM-profiel | Deze handleiding beschrijft het proces voor het genereren van een customized toolbox voor modelleren met Enterprise Architect. | 2023 | [GitHub](https://github.com/Geonovum/MIM-Werkomgeving/tree/master/UML%20profieltooling#readme) | Openbaar |
+| 3 | EA | Handleiding genereren Extensie MIM-toolbox | Deze handleiding beschrijft hoe je in Enterprise Architect een extensie maakt op de MIM-toolbox. | 2023 | [Github](https://github.com/Geonovum/MIM-Werkomgeving/blob/master/UML%20profieltooling/how_to_extensie_op_toolbox.md) |  Openbaar |
+| 4 | EA, Imvertor | Imvertor installeren | Instructies voor de installatie en configuratie van Imvertor voor Enterprise Architect | 2022 | [GitHub](https://github.com/Geonovum/imvertor/blob/main/handleidingen/Imvertor%20-%20installeren%20voor%20EAP.md) | Openbaar |
+| 5 | EA, SVN | Strategie Semantic Versioning DiSGeo | Beschrijft de implementatie van Semantic Versioning voor DiSGeo | 2022 | [GitHub](https://github.com/Geonovum/disgeo-im/blob/main/docs/algemeen/versionering_strategie.md) | Openbaar |
+| 6 | Metadata kwaliteitsmonitor (MKM) | Tool voor Validatie metadatakwaliteit | De metadata kwaliteits monitor (MKM) maakt automatisch rapportages over de kwaliteit van metadata uit een Catalogue Servcie for the Web (CSW). | 2019 | [GitHub](https://github.com/Geonovum/metadatakwaliteit) | Openbaar |
+| 7 | Imvertor, EA, SVN | Handleiding tooling van VNG | Deze Wiki is een inventarisatie van informatie over de Model Driven Design aanpak van VNG Realisatie. | ---- | [GitHub](https://vng-realisatie.github.io/Model-Driven-Design-Documentatie/) | Openbaar |
+| 8 | EA, SVN | Installatie SVN | Deze handleiding beschrijft hoe je SVN installeert en je een EA-project onder versiebeheer brengt | 2023 | [GitHub](https://github.com/Geonovum/imvertor/blob/main/handleidingen/SVN%20-%20installeren%20voor%20EAP.md) | Intern |
+| 9 | EA, SVN | Importeren van een bestaand SVN-project in EA | Deze handleiding beschrijft hoe je vanuit een nieuw project in Enterprise Architect, de packages van een bestaand project in Subversion, kunt importeren. | 2022 | [GitHub](https://geonovum.github.io/handleiding-tooling/SVN-importeren-bestaand-project/) | Intern |
+| 10 | EA, Imvertor, Respec | Het publiceren van het IMGeluid EAP bestand | Een werkinstructie voor IMGeluid maar zeker toepasbaar voor alle standaarden | 2023 |[Confluence](https://geonovum.atlassian.net/l/cp/Fi0U9bCk) | Intern |
+| 11 |Imvertor | Documentatie over Imvertor | Lijstje links naar handige Imvertor dingetjes | 2021 | [Confluence](https://geonovum.atlassian.net/l/cp/2iwpfavy) | Intern |
+| 12 | EA | Enterprise Architect, profielen en toolboxen | Instructie voor het gebruik van profielen en toolboxen. Gekregen van de BRO (kan waarschijnlijk weg) | 2021 | [Confluence](https://geonovum.atlassian.net/l/cp/YCt6Vi1J) | Intern |
+| 13 | SVN | Gebruik van subversion in EA | Handleiding van hoe EA en subversion samenwerken | 2022 | [Github](https://geonovum.github.io/handleiding-GitHub/#subversion) | Intern |
+| 14 |GitHub, Markdown, ReSpec | Beheer GitHub/ Markdown/ ReSpec | Handleiding van genoemde tooling | 2022 | [Onedrive](https://stichtinggeonovum.sharepoint.com/:w:/r/sites/msteams_bf388d/Gedeelde%20documenten/General/A%20Beheer%20Geostandaarden/Handleidingen/Handleiding%20GitHub%20ReSpec%20Markdown%20v1.1.docx?d=wcec3f04c51c85e0ba6a6005f1166a81c&csf=1&web=1&e=3HGDEI)| Intern |
+| 15 | VocBench | Handleiding VocBench | Een simpele snelstartgids voor het voor het ontwikkelen van begrippenmodellen in VocBench als Linked data. | 2022 | [Onedrive](https://stichtinggeonovum.sharepoint.com/:p:/r/sites/msteams_bf388d/Gedeelde%20documenten/General/A%20Beheer%20Geostandaarden/Handleidingen/20210125%20Werken%20met%20VocBench.pptx?d=wa614298850a24803b8eb658aa51ff4ee&csf=1&web=1&e=vhYwX3)| Intern |
+| 16 | GitHub | GitHub introductie |  Waarom github handig is en hoe je aan de slag kunt | 2023 |[Onedrive](https://stichtinggeonovum.sharepoint.com/:w:/r/sites/msteams_bf388d/Gedeelde%20documenten/General/A%20Beheer%20Geostandaarden/Handleidingen/Handleiding%20introductie%20Github.docx?d=w963f0d41bdb55e97b3aa3e9f68ac87e2&csf=1&web=1&e=Z4ICcH)| Intern |
+| 17 | Overzicht | Overzicht tooling team Standaardisatie | handig overzicht | 2023 | [Onedrive](https://stichtinggeonovum.sharepoint.com/:w:/r/sites/msteams_bf388d/Gedeelde%20documenten/General/A%20Beheer%20Geostandaarden/Tooling/Overzicht%20tooling%20team%20Standaardisatie.docx?d=we7a1b6e0c1005cb4a9611f23881311af&csf=1&web=1&e=8DIJfs)| Intern |
+| 18 | Technisch register | Geonovum technisch register 2019 | Instructies hoe je een Respec document automatisch publiceert op docs.geostandaarden.nl | 2020 | [GitHub](https://github.com/Geonovum/technisch-register-2019) | Intern |
+| 19 | Technisch register | Handleiding voor beheerders informatiemodellen | In dit document worden de stappen beschreven voor het publiceren van de technische bestanden van een informatiemodel in het Technisch register van Geonovum. | 2019 | [GitHub](https://github.com/Geonovum/technisch-register-2019/blob/master/documentatie/Handleiding%20voor%20beheerders%20informatiemodellen.md) | Intern |
+| 20 | Technisch register | Handleiding voor beheerders technisch register | In dit document worden de stappen beschreven voor het opzetten van een systeem voor het volgen van versies van een nieuw informatiemodel in het Technisch register van Geonovum. | 2022 | [GitHub](https://github.com/Geonovum/technisch-register-2019/blob/master/documentatie/Handleiding%20voor%20beheerders%20technisch%20register.md) | Intern |
+| 22 | ReSpec | ReSpec Utilities | ReSpec Utilities voor Geonovum | 2019 | [GitHub](https://github.com/Geonovum/respec-utils) | Intern |
+| 23 | Word, Git, ReSpec | word2werkversie/~markdown/~publicatie | Beschrijving van ingerichte workflow waarmee je Word-bestanden om kunt zetten naar een ReSpec-werkversies. | 2023 | [Github](https://geonovum.github.io/word2werkversie_handleiding/) | Intern |
+

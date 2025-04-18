@@ -6,7 +6,7 @@ vinden in: [Geometrie in model en GML](https://geonovum.github.io/gimeg/)
 ## XSD en Namespaces
 
 In een GML applicatieschema gebruiken we namespaces. Een namespace heeft de vorm 
-van een URI en identificeert een domein. 
+van een URI en identificeert een domein.
 
 - Voor de basis wordt: http://www.geostandaarden.nl gebruikt.
 - Daarna volgt een identificatie van de standaard. 

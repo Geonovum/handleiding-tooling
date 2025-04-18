@@ -7,15 +7,9 @@ Dit is de publicatie infrastructuur van Geonovum. Onder het architectuurplaatje 
 - Aandachtspunten [verbeterpunten](#aandachtspunten).
 - Hoe we de boel beheren staat in [wie beheert wat](#beheer).
 
-
 ![publicatie infrastructuur](media/PublicatieInfrastructuurGeonovum.drawio.svg)
 
-
-
 ## Kort Overzicht
-
-Zie het document [werkwijze informatiemodelleren](https://stichtinggeonovum.sharepoint.com/sites/StarterspakketGeonovum/SitePages/Werkwijze-informatiemodelleren.aspx) voor een iets langer overzicht.
-
 
 ### [1] UML
 
@@ -49,26 +43,24 @@ Zie het document [werkwijze informatiemodelleren](https://stichtinggeonovum.shar
 
 ### [7] tools.geostandaarden.nl
 
-- Op deze server staan css bestanden en hulpbestanden voor ReSpec
+Op deze server staan css bestanden en hulpbestanden voor ReSpec. Ook staan
+hier de logo's die in docs.geostandaarden.nl gebruikt worden.
 
 ### [7] beheertools
 
-- Interne server die beheertaken automatiseert.
+Interne server die beheertaken automatiseert.
 
 ### [9] register.geostandaarden.nl
 
-- Technisch register met xsds, json-schema etc.
+Technisch register met xml-schemas, json-schemas etc.
 
 ### [13] Nationaal Georegister
 
-- Staat los van de rest van de publicatie infrastructuur.
+Staat los van de rest van de publicatie infrastructuur.
 
 ### [14] Web server van Geonovum
 
-- Staat los van rest van publicatie infrastructuur.
-
-
-
+Staat los van rest van publicatie infrastructuur.
 
 ## Documentatie
 
@@ -83,9 +75,9 @@ Zie het document [werkwijze informatiemodelleren](https://stichtinggeonovum.shar
 
 ### [2] Subversion
 
-- [Subversion installeren voor EA](SVN-importeren-bestaand-project.md):
+- [Subversion installeren voor EA](svn/SVN-importeren-bestaand-project.md):
     Installatie SVN en informatiemodel in versiebeheer zetten.
-- [Subversion importeren bestaand project](SVN-installeren-voor-EAP.md):
+- [Subversion importeren bestaand project](svn/SVN-installeren-voor-EAP.md):
     Packages importeren vanuit SVN in EA.
 
 ### [3] Imvertor
@@ -115,8 +107,6 @@ Zie het document [werkwijze informatiemodelleren](https://stichtinggeonovum.shar
 Invulinstructies: [https://github.com/Geonovum/technisch-register-2019/blob/master/documentatie/HandleidingVoorBeheerdersInformatiemodellen.md](https://github.com/Geonovum/technisch-register-2019/blob/master/documentatie/HandleidingVoorBeheerdersInformatiemodellen.md)
  
 Technische onderdelen van de standaard worden op: [register.geostandaarden.nl](https://register.geostandaarden.nl) gezet. Hoe je dit met een webhook kan doen staat beschreven in: [technisch-register-2019](https://github.com/Geonovum/technisch-register-2019/blob/master/documentatie/Handleiding%20voor%20beheerders%20informatiemodellen.md)
-
-
 
 Invulinstructies: <https://github.com/Geonovum/technisch-register-2019/blob/master/documentatie/HandleidingVoorBeheerdersInformatiemodellen.md>
 
@@ -164,7 +154,7 @@ xmi is het uitwisselformaat voor UML modellen. Er zijn veel smaken. Voorstel voo
 - [Ontologie](Handleiding-ontologie-maken-en-publiceren.md): Handleiding
     voor het maken en publiceren van een ontologie.
 
-### Word2XXX
+### Word2ResSpc
 
 - [Word2werkversie](WordConversies.md)
 
