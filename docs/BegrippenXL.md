@@ -6,7 +6,7 @@ Dit document bevat een beschrijving van het werkproces om begrippen naar de begr
 
 ## Toegang
 
-De begrippeneditor staat op: <https://geonovum-begrippen.wikixl.nl/>
+De begrippeneditor staat op: [https://geonovum-begrippen.wikixl.nl/](https://geonovum-begrippen.wikixl.nl/)
 
 **Toegang** tot de begrippeneditor is nodig. Deze kun je aanvragen bij [Tanja Ronzhina](mailto:t.ronzhina@geonovum.nl).
 
@@ -76,13 +76,11 @@ Na je keuze kom je op een bewerkingspagina. Door op het **bewerken-icoon** te kl
 
 ## Importeren een csv
 
-Is er een mogelijkheid om begrippen in bulk te importeren (upload csv bestand).
+Is er een mogelijkheid om begrippen in bulk te importeren (upload csv bestand). Na update van begrippen editor is er ook een mogelikheide om lege csv bestaand te exporteren. Deze bestand heeft alle juiste rijen en colomen dat iemand kan gebruiken als voorbeeld met juiste structuur van velden voor begrippen te schrijven en daarna importeren.
 
 ![1742995382942](media/BegrippenXL/1742995382942.png)
 
-Het is een goede
-
-Na importeren een csv krijg je een deze pagina als je een "dry run " uitgevoerd. Een overzicht van importeerde begrippen
+Na importeren van een csv krijg je een deze pagina als je een "dry run " uitgevoerd. Een overzicht van importeerde begrippen
 
 ![1743419800069](media/BegrippenXL/1743419800069.png)
 
@@ -95,6 +93,9 @@ en in een job queue zie je lijst van taken:
 
 Als upload is klaar dan krijg je een bericht dat begrippen zijn klaar en gedownloaded begrippen je kan zien op de begrippenkader pagina.
 
+Op hetzelfde pagina (begrippen importeren) kan je kieze een import van rdf bestand, uploaden een ingevuld/geschreven ttl bestand met begrippen en(of) begrippenkader.
+Het process van importeren is hetzelfde als csv importeren. 
+
 ## Publiceren op register.geostandaarden.nl
 
-Het vocabulaire kan je downloaden als .ttl en dat publiceren.
+Het vocabulaire kan je downloaden als .ttl en dat publiceren. Automatische publicatie van begrippen op register is nog in ontwikelling door Archi XL.
