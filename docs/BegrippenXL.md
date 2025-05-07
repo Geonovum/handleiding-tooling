@@ -94,8 +94,8 @@ en in een job queue zie je lijst van taken:
 Als upload is klaar dan krijg je een bericht dat begrippen zijn klaar en gedownloaded begrippen je kan zien op de begrippenkader pagina.
 
 Op hetzelfde pagina (begrippen importeren) kan je kieze een import van rdf bestand, uploaden een ingevuld/geschreven ttl bestand met begrippen en(of) begrippenkader.
-Het process van importeren is hetzelfde als csv importeren. 
+Het process van importeren is hetzelfde als csv importeren.
 
-## Publiceren op register.geostandaarden.nl
+## Publiceren op [definities.geostandaarden.nl](https://definities.geostandaarden.nl/nl/)
 
 Het vocabulaire kan je downloaden als .ttl en dat publiceren. Automatische publicatie van begrippen op register is nog in ontwikelling door Archi XL.
