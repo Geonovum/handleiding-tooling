@@ -1,8 +1,5 @@
 # Markdown
 
-Voor het extern publiceren van documenten en standaarden gebruiken we
-[ReSpec](../ReSpec). Deze tool ondersteunt naast HTML en Javascript ook Markdown
-
 [Markdown](https://nl.wikipedia.org/wiki/Markdown) is een lichtgewicht
 opmaaktaal op basis van platte tekst die zodanig ontworpen is dat het
 gemakkelijk valt te converteren naar HTML en andere. Markdown wordt vaak
@@ -13,6 +10,8 @@ teksteditor bewerken.
 Het ontwerpdoel van de taal is leesbaarheid. Teksten geschreven met behulp van
 Markdown zijn al leesbaar voordat opmaak is toegepast op de
 tekst. Opmaakinstructies en tags zijn dan ook niet te vinden in pure Markdown.
+
+De tekst in onze [ReSpec](../ReSpec) documenten schrijven we in Markdown.
 
 ## Markdown openen in je browser
 
@@ -54,10 +53,16 @@ In Firefox kan je dat instellen via de parameters.
 | [markdownlint](https://github.com/Laboratoria/mdlint)                                       | Een style checker form markdown bestanden. Geeft meldingen voor verkeerde markdown               |
 | [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)    | VSCode plugin. Klik rechtsonder op "Go Live" en je ReSpec doc wordt in live browser geopend.    |
 
-## Regels voor Markdown
+## Markdown formattering
 
 Voor beter leesbare en uitwisselbare Markdown spreken we volgende styling regels
-af. Tools zoals 'prettier' en 'markdownlint' helpen hierbij.
+af:
+
+- We maken gebruik van unix style line endings.
+
+
+
+Tools zoals 'prettier' en 'markdownlint' helpen hierbij.
 
 Configuratie bestanden hiervoor: 
 

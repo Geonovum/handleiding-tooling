@@ -1,7 +1,5 @@
 # EA - Gebruik standaarddatatypes (intern)
 
-> **Note** > `@Gerard`: screenshots toevoegen
-
 Bij Geonovum gebruiken we een aantal voorgedefineerde datatypes. Deze zijn
 opgedeeld in drie categorieën:
 
@@ -44,8 +42,6 @@ vallen maar wel ergens gebruikt zijn bij Geonovum.
 
 ![Geonovum datatypes](media/Geonovum-algemeen.png)
 
-> **Note** > `@Wilko` wil jij een korte toelichting geven op de driedeling. Wat
-> vind je waar en waarom?
 
 Alle basic datatypes binnen UML zouden in één van deze packages moeten staan.
 Als dat niet zo is neem dan contact op met `@Wilko`.

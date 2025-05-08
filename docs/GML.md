@@ -3,7 +3,7 @@
 Een algemene handleiding voor het opslaan van Geometrie in GML bestanden is te
 vinden in: [Geometrie in model en GML](https://geonovum.github.io/gimeg/)
 
-## XSD en Namespaces
+## De namespace van een GML-applicatieschema
 
 In een GML applicatieschema gebruiken we namespaces. Een namespace heeft de vorm
 van een URI en identificeert een domein.

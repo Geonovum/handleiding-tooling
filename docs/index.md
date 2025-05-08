@@ -3,11 +3,12 @@
 Welkom bij de beschrijving van werkwijze en tooling van Geonovum.
 Hierin wordt beschreven:
 
+- De werkwijze geef invulling aan het document [Informatiemodellering Geonovum](https://stichtinggeonovum.sharepoint.com/:b:/s/Basisprogramma/EVGORVYMb0FFkjC0L14Ud5AB3cuyP27Ux2lz6ZfxGqqMDw?e=ESaacU) wat bedoeld is als bijsluiter voor onze opdrachtgevers.
 - Een compacte en leesbare beschrijving van de [werkwijze](werkwijzemodelleren.md) met veel links.
 - Architectuurplaatje van onze [tooling](tooling).
 - [todo](werkwijze-todo.md) items ter verbetering.
 
-Handleiding per tool
+Handleiding per onderwerp
 
 | Tool                                                   | omscrijving                                                 |
 | ------------------------------------------------------ | ----------------------------------------------------------- |
@@ -21,7 +22,8 @@ Handleiding per tool
 | [BegrippenXL](BegrippenXL)                             | Begrippen                                                   |
 | [UML-to-RDF](UML-to-RDF)                               | Conversietool naar RDF                                      |
 | [Ontologie](Handleiding-ontologie-maken-en-publiceren) | Ontologie                                                   |
-| [Word2ReSpec](WordConversies)                             | Word naar ReSpec, Markdown etc.                              |
+| [Word2ReSpec](WordConversies)                          | Word naar ReSpec, Markdown etc.                             |
+| [MIM](MIM)                                             | MIM wordt gebruik als metamodel voor onze modellen |
 
 Overzicht van onderwerpen en repositories die mogelijk betrekking hebben op de tooling die bij Geonovum gebruikt wordt.
 

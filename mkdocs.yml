@@ -35,6 +35,7 @@ nav:
         - SVN installeren voor EAP: svn/SVN-installeren-voor-EAP.md
         - 'SVN importeren bestaand project': svn/SVN-importeren-bestaand-project.md
     - GML: GML.md
+    - MIM: MIM/index.md
     - BegrippenXL: BegrippenXL.md
     - RDF: RDF/UML-to-RDF.md
     - Ontologie: Handleiding-ontologie-maken-en-publiceren.md
