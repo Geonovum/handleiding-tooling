@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>SVN importeren bestaand project - Geonovum tooling</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../../css/brands.min.css" rel="stylesheet">
+        <link href="../../css/solid.min.css" rel="stylesheet">
+        <link href="../../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">Geonovum tooling</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Home</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../.." class="dropdown-item">Welkom</a>
+</li>
+                                    
+<li>
+    <a href="../../werkwijzemodelleren/" class="dropdown-item">Werkwijze Modelleren</a>
+</li>
+                                    
+<li>
+    <a href="../../tooling/" class="dropdown-item">tooling</a>
+</li>
+                                    
+<li>
+    <a href="../../werkwijze-todo/" class="dropdown-item">Werkwijze todo</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">GitHub</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../GitHub/" class="dropdown-item">Manual</a>
+</li>
+                                    
+<li>
+    <a href="../../GitHub/GitHub-Inleiding/" class="dropdown-item">GitHub Intro</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../../Imvertor/" class="nav-link">Imvertor</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../../Markdown/" class="nav-link">Markdown</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">ReSpec</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../ReSpec/" class="dropdown-item">Manual</a>
+</li>
+                                    
+<li>
+    <a href="../../ReSpec/ReSpec-code-toepassen/" class="dropdown-item">Code toepassen</a>
+</li>
+                                    
+<li>
+    <a href="../../ReSpec/ReSpec-definitielijst-maken/" class="dropdown-item">Definitielijst maken</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">EA</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../EA/" class="dropdown-item">Overzicht</a>
+</li>
+                                    
+<li>
+    <a href="../../EA/EA-toepassing-standaarddatatypen/" class="dropdown-item">standaarddatatypen</a>
+</li>
+                                    
+<li>
+    <a href="../../EA/MIM-toolbox-genereren/" class="dropdown-item">Toolbox genereren</a>
+</li>
+                                    
+<li>
+    <a href="../../EA/MIM-toolbox-importeren/" class="dropdown-item">Toolbox importeren</a>
+</li>
+                                    
+<li>
+    <a href="../../EA/MIM-toolbox-genereren-extensie/" class="dropdown-item">Toolbox genereren extensie</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Subversion</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../" class="dropdown-item">SVN</a>
+</li>
+                                    
+<li>
+    <a href="../SVN-installeren-voor-EAP/" class="dropdown-item">SVN installeren voor EAP</a>
+</li>
+                                    
+<li>
+    <a href="./" class="dropdown-item active" aria-current="page">SVN importeren bestaand project</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../../GML/" class="nav-link">GML</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../../MIM/" class="nav-link">MIM</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../../BegrippenXL/" class="nav-link">BegrippenXL</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../../RDF/UML-to-RDF/" class="nav-link">RDF</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../../Handleiding-ontologie-maken-en-publiceren/" class="nav-link">Ontologie</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../../WordConversies/" class="nav-link">Word2ReSpec</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../SVN-installeren-voor-EAP/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../../GML/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/Geonovum/handleiding-tooling/blob/main/docs/svn/SVN-importeren-bestaand-project.md" class="nav-link"><i class="fa-brands fa-github"></i> Edit on GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#svn-importeren-van-een-bestaand-project-in-ea" class="nav-link">SVN - Importeren van een bestaand project in EA</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#inleiding" class="nav-link">Inleiding</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#inhoud" class="nav-link">Inhoud</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#voorbereiding" class="nav-link">Voorbereiding</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#packages-importeren" class="nav-link">Packages importeren</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="svn-importeren-van-een-bestaand-project-in-ea">SVN - Importeren van een bestaand project in EA</h1>
+<p>Enterprise Architect versie: 15.2</p>
+<p>Tortoise SVN Subversion versie: 1.14.1</p>
+<h2 id="inleiding">Inleiding</h2>
+<p>Deze handleiding beschrijft hoe je in Enterprise Architect de packages van een bestaand project kunt importeren vanuit Subversion . Het stappenplan laat zien hoe je aan de hand van een EAP-bestand van het IMDiSGeo (<code>IMSOR-XMI</code>) een bestaand package toevoegt. In dit voorbeeld wordt het package met <a href="zodraBeschikbaarLinkOpnemen">standaarddatatypes</a> toegevoegd. Je kunt ook bestaande packages importeren in een nieuw (leeg) EAP-bestand. De methode is vrijwel identiek. De handleiding licht beide opties toe.</p>
+<h2 id="inhoud">Inhoud</h2>
+<p>Dit document bevat de volgende onderdelen: </p>
+<ul>
+<li><a href="#voorbereiding">Voorbereiding</a></li>
+<li><a href="#stap-1-configureer-de-vc-settings">Stap 1: Configureer de VC-settings</a></li>
+<li><a href="#stap-2-haal-het-package-op">Stap 2: Haal het <em>package</em> op</a></li>
+<li><a href="#stap-3-haal-de-inhoud-van-het-package-op">Stap 3: Haal de inhoud van het <em>package</em> op</a></li>
+</ul>
+<h2 id="voorbereiding">Voorbereiding</h2>
+<h3 id="mim-toolbox-importeren">MIM-toolbox importeren</h3>
+<p>Importeer de MIM-toolbox (<a href="https://github.com/Geonovum/MIM-Werkomgeving/blob/master/UML%20profieltooling/werkversie1.1.1/README.md#1--importeren-mim-toolbox">instructie</a>). Dit is met name relevant als het bestaande project ontwikkeld is met de MIM-toolbox. Door de toolbox vooraf te importeren, maakt EA automatisch een koppeling met de MIM-modelelementen in de packages die je gaat importeren.</p>
+<h3 id="lokale-folder-aanmaken-en-koppelen">Lokale folder aanmaken en koppelen</h3>
+<p>Zie hiervoor <strong>stap 2</strong> en <strong>stap 3</strong> uit de handleiding <a href="https://github.com/Geonovum/imvertor/blob/main/handleidingen/SVN%20-%20installeren%20voor%20EAP.md#handleiding-voor-het-installeren-van-svn-subversion-voor-een-eap-bestand">SVN - installeren voor EAP</a>.</p>
+<h2 id="packages-importeren"><em>Packages</em> importeren</h2>
+<h3 id="stap-1-configureer-de-vc-settings">Stap 1: Configureer de VC-settings</h3>
+<p>Configueer de version control settings van het bestaande project</p>
+<ul>
+<li>Ga naar <code>Configure</code> &gt; <code>Project-VC</code>.</li>
+<li>Er verschijn nu een venster met de naam <code>Version Control Settings</code>.</li>
+<li>Bij een <strong>nieuw EAP-bestand</strong> is dit venster leeg, maar bij een <strong>bestaand EAP-bestand</strong> met packages onder versiebeheer moet je eerst op <em>New</em> klikken (zie onderstaande afbeelding).</li>
+<li>Doorloop daarna de onderdelen onder de afbeelding.</li>
+</ul>
+<p><img alt="" src="../media/svn_pcsettings_create_new.png" /></p>
+<h4 id="11-model-settings">1.1 Model Settings:</h4>
+<ul>
+<li>Check: "<em>Save nested version</em>" [...]</li>
+</ul>
+<h4 id="12-configuration-details">1.2 Configuration Details</h4>
+<ul>
+<li>Check: "<em>Subversion</em>"</li>
+<li>Unique ID: Zelf gekozen unieke aanduiding voor de package onder version control. <strong>Suggestie</strong>: <code>Geonovum-{naam van het package}</code>, bijvoorbeeld; <code>Geonovum-datatypes</code>, of: <code>Geonovum-imkl</code>.</li>
+<li>Selecteer het <em>Working Copy Path</em> dat je gebruikt voor Subversion. Dit is de folder waar de lokale SVN-gegevens worden weggeschreven (zie: stap 2 bij <a href="#lokale-folder-aanmaken-en-koppelen">lokale folder aanmaken en koppelen</a>).</li>
+</ul>
+<h4 id="13-workstation-settings">1.3 Workstation Settings</h4>
+<ul>
+<li>Selecteer het <em>Subversion Exe Path</em> (de locatie van het bestand: <code>svn.exe</code>), als dat nog niet is ingevuld.</li>
+<li>Klik <em>Save</em></li>
+</ul>
+<h4 id="14-defined-configurations">1.4 Defined Configurations</h4>
+<ul>
+<li>Controleer de Defined Configuration. Dit veld heeft nu één (nieuwe) ingevulde regel (zie afbeelding) met de Unique ID die je in <a href="#12-configuration-details">onderdeel 1.2</a> hebt opgegeven.</li>
+<li>Klik <em>Close</em></li>
+</ul>
+<p><img alt="" src="../media/svn_configure_project_vc.jpg" /></p>
+<h3 id="stap-2-haal-het-package-op">Stap 2: Haal het <em>package</em> op</h3>
+<ul>
+<li>Klik met rechtermuisknop op <em>Model</em> en ga naar <code>Package Control</code> &gt; <code>Get Package</code>.</li>
+<li>Selecteer bij <em>Select a Version Control Configuration</em> in: <code>Geonovum-datatypes</code>.</li>
+<li>Selecteer bij <em>Select A Shared File For Inclusion</em>: <code>Geonovum-algemeen.xml</code>.</li>
+</ul>
+<p><img alt="" src="../media/svn_get_package.png" /></p>
+<blockquote>
+<p><strong>Note</strong>: Kies indien van toepassing het 'hoogtste' <em>package</em> in de hiërarchie van de <em>package</em>-structuur van het te importeren bestand. Op deze manier haal je ook in één keer alle subpackages op. </p>
+<p><strong>Note</strong>: Het niveau in de package-structuur van de project browser waar je klikt, bepaalt de plek waar het geimporteerde package terecht komt. Het komt daaronder. kies je model, dan komt het op het 'hoogste' niveau. Dit is soms relevant. Als iets wel, of juist niet onderdeel van het model moet zijn. Ook voor Imvertor is/was dit relevant... (controleren)</p>
+</blockquote>
+<p><img alt="" src="../media/svn_get_shared_file.png" /></p>
+<p>In de <em>Project Browser</em> verschijnt nu het <em>package</em> <code>Geonovum-algemeen</code> en indien aanwezig inclusief de subpackages. Het kan zijn dat de <em>packages</em> in dit stadium nog leeg zijn. Dat lossen we in de volgende stap op.</p>
+<h3 id="stap-3-haal-de-inhoud-van-het-package-op">Stap 3: Haal de inhoud van het <em>package</em> op</h3>
+<blockquote>
+<p><strong>Note</strong>: Via onderstaande stappen haal je de meest actuele versie op van de packages die onder versiebeheer staan. Als je met verschillende modelleurs aan een package werkt, is het verstandig om deze stappen tussentijds regelmatig uit te voeren.</p>
+</blockquote>
+<ul>
+<li>Klik met de rechtermuisknop op een <em>package</em>, bijv. <code>Geonovum-geometrie</code>.</li>
+<li>Klik op <em>Ok</em></li>
+<li>Klik met de rechtermuisknop op het <em>package</em> <code>Geonovum-geometrie</code> &gt; <code>Package Control</code> &gt; <code>Get All Latest</code>.</li>
+</ul>
+<p><img alt="" src="../media/svn_get_all_latest.png" /></p>
+<p>Er verschijnt een venster <em>Get All Latest</em>
+ - Selecteer <em>Import Changed Files Only</em> (recommended)
+ - Klik <em>Ok</em>.</p>
+<p><img alt="" src="../media/svn_get_all_latest_window.png" /></p>
+<p>Het <em>package</em> en de <em>subpackages</em> zijn succesvol geïmporteerd. Indien je meerdere basismodellen (of andere typen <em>packages</em>) wilt importeren, doorloop je stap 1 t/m 3 opnieuw.</p>
+<blockquote>
+<p><strong>Note</strong>: Het kan zijn dat de packages toch niet goed geïmporteerd worden. Doorloop dan onderstaande stappen.</p>
+</blockquote>
+<ul>
+<li>Klik met de rechtermuisknop op het <em>package</em> <code>«Geonovum-geometrie»</code>.</li>
+<li>Klik op <em>Ok</em></li>
+<li>Klik met de rechtermuisknop op het <em>package</em> <code>Basismodel</code> &gt; <code>Package Control</code> &gt; <code>Get Latest</code>.</li>
+</ul>
+<p>Er verschijnt een venster <em>Import Package</em>
+ - Selecteer <em>Force reload from XMI</em>
+ - Klik <em>Ok</em>.</p>
+<p><img alt="" src="../media/svn_get_latest_force_reload.png" /></p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js"></script>
+        <script src="../../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
