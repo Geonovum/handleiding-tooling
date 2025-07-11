@@ -4,6 +4,8 @@ In dit hoofdstuk komen zowel GitHub als GitHub desktop client aan de orde. Geono
 
 ## Installatie en inrichting
 
+<!-- WQ: Dit mag een stuk korter -->
+
 ### Aanmaken GitHub account
 
 Als je nog geen GitHub account hebt, of als je een apart GitHub account wil

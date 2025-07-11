@@ -1,5 +1,4 @@
 # ReSpec
-
 We maken standaarden met ReSpec. ReSpec gebruikt
 input bestanden om HTML te genereren. Deze inputbestanden (de
 content) wordt gemaakt in Markdown. Deze Markdown bestanden kunnen
@@ -40,13 +39,13 @@ ReSpec publicatie. Er zijn twee hoofdroutes:
 
 ReSpec documenten worden beheerd in een [GitHub](/GitHub) repository.
 
-1. Gebruik de [Geonovum ReSpec template](https://github.com/Geonovum/NL-ReSpec-GN-template)
+1. Gebruik de [Geonovum ReSpec template](https://github.com/Geonovum/NL-ReSpec-template)
 als startpunt en druk op 'Use this template'.
 2. Vervang alle voorkomens van 'TODO' met inhoud.
 
 **Regel:** Een github repository mag maar één ReSpec document bevatten.
 
-**Regel:** Nieuwe ReSpec documenten in Markdown volgen de  [Geonovum ReSpec template](https://github.com/Geonovum/NL-ReSpec-GN-template)
+**Regel:** Nieuwe ReSpec documenten in Markdown volgen de  [Geonovum ReSpec template](https://github.com/Geonovum/NL-ReSpec-template)
 
 
 ## De URL van een publicatie op docs.geonovum.nl
@@ -109,7 +108,7 @@ aantal document-eigenschappen.
 
 ### SpecStatus
 
-**Bron:** <https://github.com/Geonovum/NL-ReSpec-GN-beheer/blob/main/js/organisation-config.js>
+**Bron:** <https://github.com/Geonovum/tools.geostandaarden.nl/blob/main/tools.geostandaarden.nl/respec/config/geonovum-config.js>
 
 De SpecStatus in de configuratie geeft de keuze uit 4 waarden, deze waarden zijn
 vastgesteld, en mogen niet zomaar uitgebreid of aangepast worden. Elke status
@@ -240,7 +239,7 @@ Naamgevinsregels voor pubDomain:
 | vtm            |                                                          | docs.geostandaarden.nl     | is eigenlijk metadata     |                                                               | verhuizen naar MD                       |
 | wp             | Whitepaper Geostandaarden                                | respec utils               | ook een raar pubdomain    |                                                               | verhuizen naar ngii                     |
 
-## Bibligrafie
+## Bibliografie
 
 ReSpec maakt automatisch een literatuurlijst van alle documenten waarnaar
 je verwijst. Een normatieve verwijzing naar een document ziet er als volgt uit
@@ -249,30 +248,32 @@ je verwijst. Een normatieve verwijzing naar een document ziet er als volgt uit
 we gebruiken [[SemVer]] voor het nummeren van versies.
 ```
 
-Verwijzingen worden op drie manieren geresolved:
+De referentie in dubbele blokhaken wordt op drie niveaus gezicht:
 
 - Een globale lijst is te vinden op: [SpecRef](https://www.specref.org/).
-- Een Geonovum brede lijst (TODO) is te vinden op: [tools.geostandaarden.nl](https://github.com/Geonovum/tools.geostandaarden.nl/blob/main/tools.geostandaarden.nl/respec/config/geonovum-config.js)
+- Een Geonovum brede lijst is te vinden op: [tools.geostandaarden.nl](https://github.com/Geonovum/tools.geostandaarden.nl/blob/main/tools.geostandaarden.nl/respec/config/geonovum-config.js)
 - In de lokale `config.js` kan je lokale referenties toevoegen
 
-Je kunt  aangeven of een verwijzing normatief is of niet door er een
-uitroepteken of vraagteken voor te zetten te
-zetten `[[!ID]]` of `[[?ID]]`.
+Bij verwijzingen kan je kiezen of ze normatief zijn of niet. In
+de referenties onderaan worden twee lijsten getoond. 
+Of een referentie normatief is of niet hangt ervanaf of het hoofdstuk
+normatief is of niet. Per referentie kan het ook instellen door een 
+uitroepteken of vraagteken voor de verwijzing zetten te zetten `[[!ID]]` of `[[?ID]]`.
 
-###  config.js
+##  config.js
 
 De file config.js is een stukje javascript (JSON) code, het bevat alle mogelijke
 waarden voor de verschillende versies die wij hanteren. In de file
 zelf staat aangegeven welke waarden verplicht zijn, en uit welke waarden te
 kiezen is.
 
-### Content: markdown bestanden
+## Content: markdown bestanden
 
 De 'echte' content wordt gemaakt in het formaat 'Markdown'. Er is een aantal
 editors beschikbaar die dat formaat ondersteunen. Maak van elk hoofdstuk
 een aparte Markdown file.
 
-### Afbeeldingen
+## Afbeeldingen
 
 Afbeeldingen worden als '.png' of '.svg' bestand neergezet in de map 'media'.
 

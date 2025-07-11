@@ -1,7 +1,7 @@
 # Definities in ReSpec
 
 > **Note**
-> In dit stuk afbeeldingen opnemen waarin je het resultaat in ReSpec kunt zien. Daarvoor graag [NL-ReSpec-GN-template](https://geonovum.github.io/NL-ReSpec-GN-template/) aanvullen.
+> In dit stuk afbeeldingen opnemen waarin je het resultaat in ReSpec kunt zien. Daarvoor graag [NL-ReSpec-template](https://geonovum.github.io/NL-ReSpec-template/) aanvullen.
 
 
 > **TODO**
@@ -59,7 +59,7 @@ wrap een definitie in een aside met attribute class="definition"
 
 [`afbeelding opnemen`]
 
-<!-- In guide NL-ReSpec-GN-template ook css voor dfn-box opnemen. Die gebruikt `<aside>` met extra attribuut, dus dan kan ik voorbeeld met en voorbeeld zonder attribuut laten zien -->
+<!-- In guide NL-ReSpec-template ook css voor dfn-box opnemen. Die gebruikt `<aside>` met extra attribuut, dus dan kan ik voorbeeld met en voorbeeld zonder attribuut laten zien -->
 
 > **Warning**
 > Een begrip mag maar één keer voorkomen; je kunt een term niet op twee verschillende manieren definiëren.
