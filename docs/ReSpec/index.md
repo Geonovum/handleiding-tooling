@@ -248,7 +248,7 @@ je verwijst. Een normatieve verwijzing naar een document ziet er als volgt uit
 we gebruiken [[SemVer]] voor het nummeren van versies.
 ```
 
-De referentie in dubbele blokhaken wordt op drie niveaus gezicht:
+De referentie in dubbele blokhaken wordt op drie niveaus gezocht:
 
 - Een globale lijst is te vinden op: [SpecRef](https://www.specref.org/).
 - Een Geonovum brede lijst is te vinden op: [tools.geostandaarden.nl](https://github.com/Geonovum/tools.geostandaarden.nl/blob/main/tools.geostandaarden.nl/respec/config/geonovum-config.js)
