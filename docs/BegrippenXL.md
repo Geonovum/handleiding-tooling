@@ -96,6 +96,17 @@ Als upload is klaar dan krijg je een bericht dat begrippen zijn klaar en gedownl
 Op hetzelfde pagina (begrippen importeren) kan je kieze een import van rdf bestand, uploaden een ingevuld/geschreven ttl bestand met begrippen en(of) begrippenkader.
 Het process van importeren is hetzelfde als csv importeren.
 
+## Verwijderen van een begrip (begrippenkader)
+
+Kies een begrip dat je wilt verwijderen. Klik vervolgens op "Meer" in het dropdownmenu en selecteer "Verwijderen".
+![1747141905195](image/BegrippenXL/1747141905195.png)
+
+Je wordt doorgestuurd naar de verwijderpagina. Voeg daar een reden toe en klik op "Pagina verwijderen".
+![1747141956616](image/BegrippenXL/1747141956616.png)
+
+NOTE:als je zie geen "verwijderen" dan vraag Tanja R. voor rechten.
+
+
 ## Publiceren op [definities.geostandaarden.nl](https://definities.geostandaarden.nl/nl/)
 
 Het vocabulaire kan je downloaden als .ttl en dat publiceren. Automatische publicatie van begrippen op register is nog in ontwikelling door Archi XL.
