@@ -39,7 +39,7 @@ Dit is de publicatie infrastructuur van Geonovum. Onder het architectuurplaatje 
 ### [6] docs.geostandaarden.nl
 
 - Onze standaarden publiceren we op docs.geostandaarden.nl
-- Dit doen we door het ftp de bestanden daarnaartoe te kopieren.
+- Dit gebeurt via een geautomatiseerde workflow die in onze github repositories werkt. 
 
 ### [7] tools.geostandaarden.nl
 
