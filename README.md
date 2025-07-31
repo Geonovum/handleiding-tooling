@@ -4,6 +4,7 @@ Voor vragen, neem contact op met [Linda van den Brink](mailto:l.vandenbrink@geon
 Als je een nieuwe publicatie wilt starten, lees dan eerst de instructies in de README van de NL-ReSpec-template:
 [https://github.com/Geonovum/NL-ReSpec-template](https://github.com/Geonovum/NL-ReSpec-template).
 
+
 # Handleiding GitHub
 
 Modelleurs bij Geonovum werken met verschillende tools. In deze repository
