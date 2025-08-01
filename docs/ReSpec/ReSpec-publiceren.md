@@ -20,6 +20,7 @@ Je kan controleren of de workflow is geïnstalleerd door bovenin de README.md in
 Als de workflow niet automatisch is geïnstalleerd, kun je dit zelf doen. Dit is een eenmalige stap. Mocht dit niet lukken, dan kan Linda, Wilko of Matthijs erbij helpen:
 
 **Zorg dat Git is geïnstalleerd en beschikbaar is in je terminal**
+
 1. Open de **Opdrachtprompt**:
     - ➜ Druk op de **Windows-knop**, typ `cmd`, druk op **Enter**
 1. Typ vervolgens in de cmd terminal:
@@ -28,6 +29,7 @@ Als de workflow niet automatisch is geïnstalleerd, kun je dit zelf doen. Dit is
 1. Krijg je een foutmelding zoals `'git' is not recognized as an internal or external command`, dan moet je Git nog installeren via: https://git-scm.com/downloads/win
  
 **Vervolg, na installatie van git**
+
 1. **Navigeer naar de repository in Verkenner**
 1. Open de map waarin de repository staat
     - **Shift** + **rechter muisklik** in een lege ruimte in de map
@@ -40,6 +42,7 @@ Als de workflow niet automatisch is geïnstalleerd, kun je dit zelf doen. Dit is
 1. Als er geen errors verschijnen is dit gelukt. Je kunt dit checken door README.md te openen: als het goed is staat hier nu bovenin een tekst die begint met "Deze repository is automatisch bijgewerkt..."
 
 **Tenslotte**
+
 1. Verwijder het bestand "replace_workflow-local.ps1"
 
 ### Automatisch publiceren via de workflow
@@ -53,7 +56,7 @@ De automatische workflow gaat aan het werk bij elke keer dat je iets commit in d
     1. Links worden gecontroleerd
 1. Bekijk de resultaten van de controles via het tabblad **Actions** van de repository. Als er fouten gevonden zijn, los deze dan op en herhaal stap 1, of vraag om hulp.
 1. (optioneel) maak een Pre-release aan in de github repository. 
-    - Het ReSpec document wordt automatisch gepubliceerd op [test.docs.geostandaarden.nl](https://test.docs.geostandaarden.nl/). 
+    - Het ReSpec document wordt automatisch gepubliceerd op [test.docs.geostandaarden.nl](https://test.docs.geostandaarden.nl/). Je kunt het hier bekijken om te zien of alles goed is gegaan.
 1. Maak een Release aan in de github repository (zie [Publiceren in ReSpec](./index.md#publiceren-in-respec) voor meer informatie). 
     - Er wordt automatisch een Pull Request (PR) aangemaakt naar: Geonovum/docs.geostandaarden.nl
     - Na goedkeuring van de PR (door Wilko, Frank of Linda) wordt het document gepubliceerd op: https://docs.geostandaarden.nl/

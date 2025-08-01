@@ -405,8 +405,9 @@ Publiceren op docs.geostandaarden.nl met behulp van FTP is niet meer mogelijk.
 [Klik hier](ReSpec-publiceren.md) voor een beschrijving van de automatische publicatieworkflow.
 
 Voorwaarden voor de werking van de publicatieworkflow: 
+
 - de folderstructuur van de repository waarin het ReSpec document staat, moet conform de [Geonovum ReSpec template](https://github.com/Geonovum/NL-ReSpec-template) zijn
-  - dat wil zeggen, `index.html` in de root folder, `config.js` in `/js` folder, afbeeldingen in `/media` en/of `/data/Images` folder;
+    - dat wil zeggen, `index.html` in de root folder, `config.js` in `/js` folder, afbeeldingen in `/media` en/of `/data/Images` folder;
 - de github repository mag maar één ReSpec document bevatten.
 
 ## Consultatie versie (CV) maken
@@ -435,7 +436,7 @@ Voorwaarden voor de werking van de publicatieworkflow:
    zijn als [workflow](ReSpec-publiceren.md) in de github repository!) het `snapshot.html` en de
    bijbehorende afbeeldingen naar de [publicatierepository](https://github.com/Geonovum/docs.geostandaarden.nl). 
 1. Eén van de reviewers Frank Terpstra, Linda van den Brink of Wilko Quak checkt de publicatie. Als alles goed is bevonden  wordt het document vervolgens automatisch gepubliceerd op 
-   [docs.geostandaarden.nl]<http://docs.geostandaarden.nl>).
+   [docs.geostandaarden.nl](http://docs.geostandaarden.nl).
 1. Na succesvolle publicatie:
     - zet de `specStatus` in `config.js` terug op `"WV"`
     - Vul `previousMaturity` in met `"CV"`
@@ -465,7 +466,7 @@ Voorwaarden voor de werking van de publicatieworkflow:
    zijn als [workflow](ReSpec-publiceren.md) in de github repository!) het`snapshot.html` en de
    bijbehorende afbeeldingen naar de [publicatierepository](https://github.com/Geonovum/docs.geostandaarden.nl). 
 1. Eén van de reviewers Frank Terpstra, Linda van den Brink of Wilko Quak checkt de publicatie. Als alles goed is bevonden  wordt het document vervolgens automatisch gepubliceerd op 
-   [docs.geostandaarden.nl]<http://docs.geostandaarden.nl>).
+   [docs.geostandaarden.nl](http://docs.geostandaarden.nl).
 7. Na succesvolle publicatie:
     - zet de specStatus in config.js terug op WV
     - Vul previousMaturity in met CV
@@ -492,7 +493,7 @@ Voorwaarden voor de werking van de publicatieworkflow:
    zijn als [workflow](ReSpec-publiceren.md) in de github repository!) het`snapshot.html` en de
    bijbehorende afbeeldingen naar de [publicatierepository](https://github.com/Geonovum/docs.geostandaarden.nl). 
 1. Eén van de reviewers Frank Terpstra, Linda van den Brink of Wilko Quak checkt de publicatie. Als alles goed is bevonden  wordt het document vervolgens automatisch gepubliceerd op 
-   [docs.geostandaarden.nl]<http://docs.geostandaarden.nl>).
+   [docs.geostandaarden.nl](http://docs.geostandaarden.nl).
 7. Na succesvolle publicatie:
     - zet de specStatus in config.js terug op WV
     - Vul previousMaturity in met DEF
