@@ -1,0 +1,1079 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Manual - Geonovum tooling</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../css/brands.min.css" rel="stylesheet">
+        <link href="../css/solid.min.css" rel="stylesheet">
+        <link href="../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">Geonovum tooling</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Home</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href=".." class="dropdown-item">Welkom</a>
+</li>
+                                    
+<li>
+    <a href="../werkwijzemodelleren/" class="dropdown-item">Werkwijze Modelleren</a>
+</li>
+                                    
+<li>
+    <a href="../tooling/" class="dropdown-item">tooling</a>
+</li>
+                                    
+<li>
+    <a href="../werkwijze-todo/" class="dropdown-item">Werkwijze todo</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">GitHub</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../GitHub/" class="dropdown-item">Manual</a>
+</li>
+                                    
+<li>
+    <a href="../GitHub/GitHub-Inleiding/" class="dropdown-item">GitHub Intro</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../Imvertor/" class="nav-link">Imvertor</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../Markdown/" class="nav-link">Markdown</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">ReSpec</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="./" class="dropdown-item active" aria-current="page">Manual</a>
+</li>
+                                    
+<li>
+    <a href="ReSpec-code-toepassen/" class="dropdown-item">Code toepassen</a>
+</li>
+                                    
+<li>
+    <a href="ReSpec-definitielijst-maken/" class="dropdown-item">Definitielijst maken</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">EA</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../EA/" class="dropdown-item">Overzicht</a>
+</li>
+                                    
+<li>
+    <a href="../EA/EA-toepassing-standaarddatatypen/" class="dropdown-item">standaarddatatypen</a>
+</li>
+                                    
+<li>
+    <a href="../EA/MIM-toolbox-genereren/" class="dropdown-item">Toolbox genereren</a>
+</li>
+                                    
+<li>
+    <a href="../EA/MIM-toolbox-importeren/" class="dropdown-item">Toolbox importeren</a>
+</li>
+                                    
+<li>
+    <a href="../EA/MIM-toolbox-genereren-extensie/" class="dropdown-item">Toolbox genereren extensie</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Subversion</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../svn/" class="dropdown-item">SVN</a>
+</li>
+                                    
+<li>
+    <a href="../svn/SVN-installeren-voor-EAP/" class="dropdown-item">SVN installeren voor EAP</a>
+</li>
+                                    
+<li>
+    <a href="../svn/SVN-importeren-bestaand-project/" class="dropdown-item">SVN importeren bestaand project</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../GML/" class="nav-link">GML</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../MIM/" class="nav-link">MIM</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../BegrippenXL/" class="nav-link">BegrippenXL</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../RDF/UML-to-RDF/" class="nav-link">RDF</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../Handleiding-ontologie-maken-en-publiceren/" class="nav-link">Ontologie</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../WordConversies/" class="nav-link">Word2ReSpec</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../Markdown/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="ReSpec-code-toepassen/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/Geonovum/handleiding-tooling/blob/main/docs/ReSpec/index.md" class="nav-link"><i class="fa-brands fa-github"></i> Edit on GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#respec" class="nav-link">ReSpec</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#workflows-voor-het-maken-van-een-respec-document" class="nav-link">Workflows voor het maken van een ReSpec document</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#respec-via-markdown" class="nav-link">ReSpec via Markdown</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#de-url-van-een-publicatie-op-docsgeonovumnl" class="nav-link">De URL van een publicatie op docs.geonovum.nl</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#de-bestanden-van-een-respec-repository" class="nav-link">De bestanden van een ReSpec repository</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#bibliografie" class="nav-link">Bibliografie</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#configjs" class="nav-link">config.js</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#content-markdown-bestanden" class="nav-link">Content: markdown bestanden</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#afbeeldingen" class="nav-link">Afbeeldingen</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#respec-frontend" class="nav-link">ReSpec Frontend</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#html-ingebed-in-respec" class="nav-link">HTML ingebed in ReSpec</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#html-voor-afbeeldingen" class="nav-link">HTML voor Afbeeldingen</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#referentie-naar-github-issues" class="nav-link">Referentie naar GitHub issues</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#publiceren-in-respec" class="nav-link">Publiceren in ReSpec</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#controles-voor-publicatie" class="nav-link">Controles voor publicatie</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#publiceren" class="nav-link">Publiceren</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#consultatie-versie-cv-maken" class="nav-link">Consultatie versie (CV) maken</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#vaststellingsversie-vv-maken" class="nav-link">Vaststellingsversie (VV) maken</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#definitieve-versie-def-maken" class="nav-link">Definitieve versie (DEF) maken</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="respec">ReSpec</h1>
+<p>We maken standaarden met ReSpec. ReSpec gebruikt
+input bestanden om HTML te genereren. Deze inputbestanden (de
+content) wordt gemaakt in Markdown. Deze Markdown bestanden kunnen
+worden aangemaakt met text editor. GitHub wordt gebruikt als de 'repository'
+waarin alle bestanden die bij een standaard horen, beheerd worden.</p>
+<p>ReSpec is een tool van W3C voor het schrijven van specifications.
+ReSpec zorgt voor een uniforme styling in het document, onderhoudt
+referenties en verwijzingen naar andere documentatie, verzorgt de inhoudsopgave,
+zorgt voor links naar vorige en meest recente versies, en heeft een integratie
+met Github issues.</p>
+<p>Geonovum gebruikt een fork van ReSpec die door Logius beheerd wordt. Dit
+document bevat een globale instructie over hoe snel aan de start te gaan. Meer
+documentatie is op andere plaatsen te vinden:</p>
+<ul>
+<li>Er is een gedetailleerde
+  <a href="https://github.com/w3c/respec/wiki/ReSpec-Editor's-Guide">gebruikershandleiding</a>
+  beschikbaar.</li>
+<li>Er is ook een
+  <a href="https://github.com/w3c/respec/wiki/Developers-Guide">ontwikkelaarshandleiding</a>
+  te vinden.</li>
+<li>De Geonovum <a href="https://github.com/Geonovum/respec/wiki">wiki over ReSpec</a> is
+  een fork van de w3c ReSpec met aanpassingen voor Geonovum. Deze is
+  achterhaald omdat we nu van de Logius Respec gebruik maken. (TODO aanpassen)</li>
+</ul>
+<h2 id="workflows-voor-het-maken-van-een-respec-document">Workflows voor het maken van een ReSpec document</h2>
+<p>Het volgende diagram beschrijft verschillende workflows voor het maken van een
+ReSpec publicatie. Er zijn twee hoofdroutes:</p>
+<ol>
+<li>ReSpec via Word. (Blauwe kolom)</li>
+<li>ReSpec via Markdown. (Groene kolom)</li>
+</ol>
+<p><img alt="publicatie infrastructuur" src="../media/WorkflowPublicatieProces.drawio.svg" /></p>
+<h2 id="respec-via-markdown">ReSpec via Markdown</h2>
+<p>ReSpec documenten worden beheerd in een <a href="/GitHub">GitHub</a> repository.</p>
+<ol>
+<li>Gebruik de <a href="https://github.com/Geonovum/NL-ReSpec-template">Geonovum ReSpec template</a>
+als startpunt en druk op 'Use this template'.</li>
+<li>Vervang alle voorkomens van 'TODO' met inhoud.</li>
+</ol>
+<p><strong>Regel:</strong> Een github repository mag maar één ReSpec document bevatten.</p>
+<p><strong>Regel:</strong> Nieuwe ReSpec documenten in Markdown volgen de  <a href="https://github.com/Geonovum/NL-ReSpec-template">Geonovum ReSpec template</a></p>
+<h2 id="de-url-van-een-publicatie-op-docsgeonovumnl">De URL van een publicatie op docs.geonovum.nl</h2>
+<p>ReSpec documenten worden gepubliceerd op
+<a href="https://docs.geostandaarden.nl">docs.geostandaarden.nl</a>. Iedere gepubliceerde
+versie van een document heeft een eigen URL. Voor de laatst gepubliceerde versie
+is een aparte URL.</p>
+<p>De URL van iedere publicatie wordt als volgt bepaald:</p>
+<pre class="highlight"><code class="language-text">https://docs.geostandaarden.nl/[pubdomain]/[specStatus]-[spectype]-[shortName]-[publishDate]/</code></pre>
+<p>De laatst gepubliceerde versie is OOK te vinden op:</p>
+<pre class="highlight"><code class="language-text">https://docs.geostandaarden.nl/[pubdomain]/[shortName]/</code></pre>
+<p>De namen van de variabelen staan verderop uitgelegd.</p>
+<h2 id="de-bestanden-van-een-respec-repository">De bestanden van een ReSpec repository</h2>
+<h3 id="het-bestand-indexhtml">Het bestand 'index.html'</h3>
+<p>Het bestand index.html zorgt ervoor dat het ReSpec document automatisch wordt
+geladen in de browser. Bij het laden wordt ook automatisch de
+geonovum-ReSpec-code geladen en uitgevoerd. Deze code zorgt ervoor dat het
+document zijn standaard layout krijgt.</p>
+<p>Het bestand 'index.html' heeft een vaste indeling.</p>
+<p>In de HTML-header wordt de js-ReSpec bibliotheek geladen. Het enige dat in de
+header mag worden aangepast is de title (tussen \&lt;title&gt; en \&lt;/title&gt;.</p>
+<p>In de HTML-Body geldt <em>vrijheid in gebondenheid</em> De <code>&lt;div&gt;</code> en/of <code>&lt;section&gt;</code>
+regels mogen worden gekopieerd en toegevoegd. Wel belangrijk om de structuur
+over te nemen, dus als volgt:</p>
+<pre class="highlight"><code class="language-html">&lt;div id='H00' data-format='Markdown' data-include="ToCoVo.md"&gt;&lt;/div&gt;
+&lt;section id='H01' data-format='Markdown' data-include="H1-Inleiding.md"\&gt;\&lt;h2\&gt;Inleiding\&lt;/h2\&gt;\&lt;/section\&gt;</code></pre>
+<p>Een <code>&lt;div&gt;</code> is een sectie plus bijbehorend document, dat niet in de
+inhoudsopgave terechtkomt. Deze gebruik je bijvoorbeeld voor een Toelichting,
+een Colofon of een Voorwoord.</p>
+<p>Een <code>&lt;section&gt;</code> komt wél in de inhoudsopgave terecht. Deze heeft daarom behalve
+de data-include van het document, ook (verplicht!) een <code>&lt;h2&gt;</code> tag. De tekst
+tussen <code>&lt;h2&gt;</code> en <code>&lt;/h2&gt;</code> komt in de inhoudsopgave te staan.</p>
+<h3 id="het-bestand-configjs">Het bestand 'config.js'</h3>
+<p>In config.js wordt een stuurvariabele voor ReSpec gevuld. De waarden in deze
+variabele worden door ReSpec gebruikt om de layout te bepalen, en bevatten een
+aantal document-eigenschappen.</p>
+<h3 id="specstatus">SpecStatus</h3>
+<p><strong>Bron:</strong> <a href="https://github.com/Geonovum/tools.geostandaarden.nl/blob/main/tools.geostandaarden.nl/respec/config/geonovum-config.js">https://github.com/Geonovum/tools.geostandaarden.nl/blob/main/tools.geostandaarden.nl/respec/config/geonovum-config.js</a></p>
+<p>De SpecStatus in de configuratie geeft de keuze uit 4 waarden, deze waarden zijn
+vastgesteld, en mogen niet zomaar uitgebreid of aangepast worden. Elke status
+hoort bij een formele fase van een ReSpec document. Zie ook de Geonovum ReSpec
+<a href="https://github.com/Geonovum/respec/wiki">wiki</a>.</p>
+<ul>
+<li><strong>wv</strong>, Werkversie: Dit is de versie van het document waaraan wordt
+  gewerkt. Deze versie is continu 'under-construction'.</li>
+<li><strong>cv</strong>, Consultatieversie: Dit is een 'snapshot' van de versie die 'in
+    consultatie' wordt gezet. Aan deze versie wordt niks meer gedaan totdat de
+    consultatie is afgelopen. Daarna worden alle op en aanmerkingen uit de
+    consultatieronde verwerkt.</li>
+<li><strong>vv</strong>, Vaststellingsversie: Dit is een 'snapshot' van de versie na het
+    verwerken van de op en aanmerkingen uit de consultatieronde is ontstaan.
+    Deze versie wordt aangeboden aan de programma-raad van Geonovum, om te
+    worden 'vastgesteld'.</li>
+<li><strong>def</strong>, Definitieve versie: Dit is de definitieve versie van het document,
+    zoals vastgesteld door de programma-raad. Van deze versie wordt opnieuw een
+    'snapshot' gemaakt in ReSpec. Het resultaat van die snapshot wordt op
+    <a href="http://docs.geonovum.nl">http://docs.geonovum.nl</a> neergezet.</li>
+<li><strong>ld</strong>, Levend document: Geschikt voor handreikingen en dergelijke die
+  regelmatig gewijzigd worden en waarvoor niet een consultatie- en
+  goedkeuringsproces gevolgd hoeft te worden</li>
+<li><strong>basis</strong>, document zonder officiële status.</li>
+</ul>
+<h3 id="spectype">SpecType</h3>
+<p><strong>Bron:</strong> <a href="https://www.geonovum.nl/uploads/documents/Geonovum%20GENERIEK%20Beheerplan%20geo-standaarden%20v1.1.pdf">https://www.geonovum.nl/uploads/documents/Geonovum%20GENERIEK%20Beheerplan%20geo-standaarden%20v1.1.pdf</a></p>
+<p>Het SpecType in de configuratie is een vaste lijst met waarden, deze waarden
+zijn vastgesteld, en mogen niet zonder overleg met de Technische ReSpec
+beheerders uitgebreid of aangepast worden.</p>
+<ul>
+<li>
+<p><strong>NO</strong> Norm: Een norm is bij een officieel standaardisatie instituut
+    ondergebracht en bevat bindende afspraken. Naast het gebruik van normen is
+    NEN 3610 de enige norm waar Geonovum een inhoudelijke verantwoordelijkheid
+    heeft. Het formele beheer en beslissingen worden genomen in de NEN
+    normcommissie 351 240 waar Geonovum de voorzitter van is.</p>
+</li>
+<li>
+<p><strong>ST</strong> Standaard: Een document met (bindende) afspraken.</p>
+</li>
+<li>
+<p><strong>IM</strong> Informatiemodel: Een standaard waarbij door de term informatiemodel
+    te hanteren wordt aangegeven dat het een abstractie (het model) vormt van de
+    werkelijkheid zoals beschreven binnen een bepaalde sector/domein.
+    Informatiemodellen zijn een semantische invulling van normen voor sectoren
+    zoals ruimtelijke ordening, kabels en leidingen, water, etc..</p>
+</li>
+<li>
+<p><strong>PR</strong> Praktijkrichtlijn: Praktijkrichtlijnen zijn producten die informatie
+    geven, vaak met een technisch karakter, die nodig is voor het toepassen van
+    standaarden. Een praktijkrichtlijn hoort altijd bij een standaard/norm.</p>
+</li>
+<li>
+<p><strong>HR</strong> Handreiking: Op zichzelf staande documentatie dat als doel heeft een
+    hulpmiddel te zijn, niet verplichtend maar ondersteunend.</p>
+</li>
+<li>
+<p><strong>WA</strong> Werkafspraak: Legt uit hoe wetgeving moet worden toegepast bij
+    onduidelijkheden, discrepanties of fouten in de standaarden.</p>
+</li>
+<li>
+<p><strong>BD</strong> Beheerdocumentatie: Documentatie met betrekking tot het beheerproces
+    van de standaard. Deze documentatie betreft niet een standaard of onderdeel
+    daarvan, zoals een handreiking of werkafspraak.</p>
+</li>
+<li>
+<p><strong>AL</strong> Algemeen: Op zichzelf staande algemene documentatie over standaarden.
+    De documentatie betreft niet een specifieke standaard of onderdeel daarvan,
+    het is ook geen beheerdocumentatie van een specifieke standaard.</p>
+</li>
+</ul>
+<h3 id="pubdomain">pubDomain</h3>
+<p>pubDomain bepaalt bij publicatie een deel van de URL waarop het document wordt
+gepubliceerd. Het zorgt voor een groepering van de documenten op
+docs.geostandaarden.nl Omdat je de URL van gepubliceerde documenten niet wilt
+veranderen is moet je hier goed over nadenken en alleen in overleg nieuwe
+toevoegen.</p>
+<p>De actuele lijst van pubDomains staat in de tabel hieronder. De herkomst van
+deze lijst is als volgt:</p>
+<ol>
+<li>Lijst op github :
+   <a href="https://github.com/Geonovum/respec-utils/blob/master/src/autodeploy/config/pubDomainList.json">respec-utils</a>.</li>
+<li>docs.geostandaarden.nl.</li>
+<li>register.geostandaarden.nl.</li>
+</ol>
+<p>Naamgevinsregels voor pubDomain:</p>
+<ul>
+<li>Lowercase</li>
+<li>Geen spaties</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Pubdomain</th>
+<th>Omschrijving</th>
+<th>Herkomst</th>
+<th>status</th>
+<th>GitHub Team</th>
+<th>Beslissing</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3dbv</td>
+<td>3D basisvoorziening</td>
+<td>docs.geostandaarden.nl</td>
+<td>inactief (gemigreerd)</td>
+<td></td>
+<td>mag niet meer gebruikt worden</td>
+</tr>
+<tr>
+<td>api</td>
+<td>Kennisplatform APIs</td>
+<td>respec utils</td>
+<td></td>
+<td><a href="https://github.com/orgs/Geonovum/teams/api-team">API team</a></td>
+<td>OK</td>
+</tr>
+<tr>
+<td>basisgeometrie</td>
+<td>Informatiemodel Basisgeometrie</td>
+<td>register.geostandaarden.nl</td>
+<td>zit op docs bij nen3610</td>
+<td></td>
+<td>niet gebruiken eigenlijk xsd redirecten</td>
+</tr>
+<tr>
+<td>bgt</td>
+<td>Basisregistratie grootschalige topografie</td>
+<td>docs.geostandaarden.nl</td>
+<td></td>
+<td><a href="https://github.com/orgs/Geonovum/teams/bgt-team">BGT team</a></td>
+<td>Arnoud vragen</td>
+</tr>
+<tr>
+<td>brt</td>
+<td>Informatiemodellen Basisregistratie Topografie</td>
+<td>register.geostandaarden.nl</td>
+<td></td>
+<td><a href="https://github.com/orgs/Geonovum/teams/brt-team">BRT team</a></td>
+<td>OK</td>
+</tr>
+<tr>
+<td>crs</td>
+<td>Coördinaatreferentiesystemen</td>
+<td>docs.geostandaarden.nl</td>
+<td></td>
+<td><a href="https://github.com/orgs/Geonovum/teams/crs-team">CRS team</a></td>
+<td>OK</td>
+</tr>
+<tr>
+<td>cvgg</td>
+<td>Informatiemodel Geluid</td>
+<td>docs.geostandaarden.nl</td>
+<td>duplicaat van img</td>
+<td></td>
+<td>OK</td>
+</tr>
+<tr>
+<td>disgeo</td>
+<td>DisGeo</td>
+<td>respec utils</td>
+<td></td>
+<td></td>
+<td>OK</td>
+</tr>
+<tr>
+<td>dsgo</td>
+<td>Digitaal Stelsel Gebouwde Omgeving</td>
+<td>docs.geostandaarden.nl</td>
+<td></td>
+<td></td>
+<td>OK (rare uri)</td>
+</tr>
+<tr>
+<td>dso</td>
+<td>Digitaal Stelsel Omgevingswet</td>
+<td>respec utils</td>
+<td>duplicaten: tpod imow ow</td>
+<td><a href="https://github.com/orgs/Geonovum/teams/dso-team">DSO team</a></td>
+<td>OK</td>
+</tr>
+<tr>
+<td>eu</td>
+<td></td>
+<td>docs.geostandaarden.nl</td>
+<td></td>
+<td><a href="https://github.com/orgs/Geonovum/teams/eu-team">EU team</a></td>
+<td>OK (rare uri en werkversie weg)</td>
+</tr>
+<tr>
+<td>g4w</td>
+<td></td>
+<td>docs.geostandaarden.nl</td>
+<td></td>
+<td></td>
+<td>groeperen?</td>
+</tr>
+<tr>
+<td>gbd</td>
+<td></td>
+<td>docs.geostandaarden.nl</td>
+<td></td>
+<td></td>
+<td>groeperen?</td>
+</tr>
+<tr>
+<td>geobag</td>
+<td></td>
+<td>docs.geostandaarden.nl</td>
+<td></td>
+<td></td>
+<td>OK</td>
+</tr>
+<tr>
+<td>gsw</td>
+<td></td>
+<td>docs.geostandaarden.nl</td>
+<td></td>
+<td></td>
+<td>groeperen?</td>
+</tr>
+<tr>
+<td>imaer</td>
+<td>Informatiemodel AERIUS</td>
+<td>register.geostandaarden.nl</td>
+<td></td>
+<td></td>
+<td>OK</td>
+</tr>
+<tr>
+<td>imev</td>
+<td>Informatiemodel Externe Veiligheid</td>
+<td>docs.geostandaarden.nl</td>
+<td></td>
+<td><a href="https://github.com/orgs/Geonovum/teams/api-team">IMEV team</a></td>
+<td>OK</td>
+</tr>
+<tr>
+<td>img</td>
+<td>Informatiemodel Geluid</td>
+<td>respec utils</td>
+<td>duplicaat: cvgg</td>
+<td><a href="https://github.com/orgs/Geonovum/teams/img-team">IMG team</a></td>
+<td>redirecten naar cvgg</td>
+</tr>
+<tr>
+<td>imgeo</td>
+<td>Informatiemodel Grootschalige Geografie</td>
+<td>docs.geostandaarden.nl</td>
+<td></td>
+<td></td>
+<td>Arnoud vragen</td>
+</tr>
+<tr>
+<td>imka</td>
+<td>Informatiemodel Klimaatadaptatie</td>
+<td>docs.geostandaarden.nl</td>
+<td></td>
+<td></td>
+<td>OK</td>
+</tr>
+<tr>
+<td>imkad</td>
+<td>Informatiemodel Kadaster</td>
+<td>register.geostandaarden.nl</td>
+<td></td>
+<td><a href="https://github.com/orgs/Geonovum/teams/imka-team">IMKA team</a></td>
+<td>OK</td>
+</tr>
+<tr>
+<td>imkl</td>
+<td>Informatiemodel Kabels en Leidingen</td>
+<td>register.geostandaarden.nl</td>
+<td>duplicaat: kl</td>
+<td><a href="https://github.com/orgs/Geonovum/teams/imkl-team">IMKL team</a></td>
+<td>Zou kl moeten worden</td>
+</tr>
+<tr>
+<td>imle</td>
+<td></td>
+<td>docs.geostandaarden.nl</td>
+<td></td>
+<td></td>
+<td>OK (niet netjes gepubliceerd)</td>
+</tr>
+<tr>
+<td>imro</td>
+<td>Informatiemodel Ruimtelijke Ordening</td>
+<td>register.geostandaarden.nl</td>
+<td>duplicaat: ro</td>
+<td></td>
+<td>liefst naar RO</td>
+</tr>
+<tr>
+<td>imow</td>
+<td>Informatiemodel Omgevingswet</td>
+<td>register.geostandaarden.nl</td>
+<td>duplicaten: tpod ow dso</td>
+<td></td>
+<td>liefst weg</td>
+</tr>
+<tr>
+<td>kl</td>
+<td>IMKL</td>
+<td>respec utils</td>
+<td>duplicaat: imkl</td>
+<td></td>
+<td>OK</td>
+</tr>
+<tr>
+<td>md</td>
+<td>Metadata</td>
+<td>respec utils</td>
+<td>duplicaat: metadata</td>
+<td></td>
+<td>OK</td>
+</tr>
+<tr>
+<td>mim</td>
+<td>Metamodel Informatie Modellering (MIM</td>
+<td>respec utils</td>
+<td></td>
+<td></td>
+<td>OK</td>
+</tr>
+<tr>
+<td>metadata</td>
+<td>Nederlandse metadata profielen voor datasets en services</td>
+<td>register.geostandaarden.nl</td>
+<td>duplicaat: md</td>
+<td></td>
+<td>verplaatsen naar md??</td>
+</tr>
+<tr>
+<td>nen3610</td>
+<td>NEN3610-Linkeddata</td>
+<td>respec utils</td>
+<td></td>
+<td></td>
+<td>OK</td>
+</tr>
+<tr>
+<td>ngii</td>
+<td></td>
+<td>docs.geostandaarden.nl</td>
+<td></td>
+<td></td>
+<td>OK</td>
+</tr>
+<tr>
+<td>oov</td>
+<td></td>
+<td>docs.geostandaarden.nl</td>
+<td></td>
+<td></td>
+<td>OK</td>
+</tr>
+<tr>
+<td>ow</td>
+<td>Standaarden omgevingswet</td>
+<td>respec utils</td>
+<td>duplicaten: tpod imow dso</td>
+<td></td>
+<td>OK</td>
+</tr>
+<tr>
+<td>ro</td>
+<td>RO Standaarden</td>
+<td>respec utils</td>
+<td>duplicaat: imro</td>
+<td></td>
+<td>OK</td>
+</tr>
+<tr>
+<td>rwgs</td>
+<td>Raamwerk van Geo-standaarden</td>
+<td>respec utils</td>
+<td></td>
+<td></td>
+<td>groeperen?</td>
+</tr>
+<tr>
+<td>serv</td>
+<td>Services</td>
+<td>respec utils</td>
+<td></td>
+<td></td>
+<td>groeperen?</td>
+</tr>
+<tr>
+<td>tpod</td>
+<td>Toepassingsprofiel omgevingsdocumenten</td>
+<td>respec utils</td>
+<td>duplicaten: ow imow dso</td>
+<td></td>
+<td>OK</td>
+</tr>
+<tr>
+<td>vg</td>
+<td>Informatiemodel Vastgoedgebruik</td>
+<td>respec utils</td>
+<td></td>
+<td></td>
+<td>OK</td>
+</tr>
+<tr>
+<td>visu</td>
+<td>Visualisatie</td>
+<td>respec utils</td>
+<td></td>
+<td></td>
+<td>groeperen?</td>
+</tr>
+<tr>
+<td>vtm</td>
+<td></td>
+<td>docs.geostandaarden.nl</td>
+<td>is eigenlijk metadata</td>
+<td></td>
+<td>verhuizen naar MD</td>
+</tr>
+<tr>
+<td>wp</td>
+<td>Whitepaper Geostandaarden</td>
+<td>respec utils</td>
+<td>ook een raar pubdomain</td>
+<td></td>
+<td>verhuizen naar ngii</td>
+</tr>
+</tbody>
+</table>
+<h2 id="bibliografie">Bibliografie</h2>
+<p>ReSpec maakt automatisch een literatuurlijst van alle documenten waarnaar
+je verwijst. Een normatieve verwijzing naar een document ziet er als volgt uit</p>
+<pre class="highlight"><code class="language-markdown">we gebruiken [[SemVer]] voor het nummeren van versies.</code></pre>
+<p>De referentie in dubbele blokhaken wordt op drie niveaus gezocht:</p>
+<ul>
+<li>Een globale lijst is te vinden op: <a href="https://www.specref.org/">SpecRef</a>.</li>
+<li>Een Geonovum brede lijst is te vinden op: <a href="https://specref.geostandaarden.nl/">specref.geostandaarden.nl</a></li>
+<li>In de lokale <code>config.js</code> kan je lokale referenties toevoegen</li>
+</ul>
+<p>Bij verwijzingen kan je kiezen of ze normatief zijn of niet. In
+de referenties onderaan worden twee lijsten getoond. 
+Of een referentie normatief is of niet hangt ervanaf of het hoofdstuk
+normatief is of niet. Per referentie kan het ook instellen door een 
+uitroepteken of vraagteken voor de verwijzing zetten te zetten <code>[[!ID]]</code> of <code>[[?ID]]</code>.</p>
+<h2 id="configjs">config.js</h2>
+<p>De file config.js is een stukje javascript (JSON) code, het bevat alle mogelijke
+waarden voor de verschillende versies die wij hanteren. In de file
+zelf staat aangegeven welke waarden verplicht zijn, en uit welke waarden te
+kiezen is.</p>
+<h2 id="content-markdown-bestanden">Content: markdown bestanden</h2>
+<p>De 'echte' content wordt gemaakt in het formaat 'Markdown'. Er is een aantal
+editors beschikbaar die dat formaat ondersteunen. Maak van elk hoofdstuk
+een aparte Markdown file.</p>
+<h2 id="afbeeldingen">Afbeeldingen</h2>
+<p>Afbeeldingen worden als '.png' of '.svg' bestand neergezet in de map 'media'.</p>
+<h2 id="respec-frontend">ReSpec Frontend</h2>
+<h3 id="de-knop-respec">De knop 'ReSpec'</h3>
+<p>De knop 'ReSpec' rechtsboven in de frontend van ReSpec, bevat een aantal handige
+functies. Als je klikt op de knop, verschijnt het vervolgscherm met een viertal
+functies.</p>
+<p>Elk van de functies wordt hieronder uitgelegd.</p>
+<p><img alt="media/image25.png" src="media/image25.png" /></p>
+<h3 id="bewaar-snapshot">Bewaar snapshot</h3>
+<p><img alt="media/image26.png" src="media/image26.png" /></p>
+<h3 id="doorzoek-specref">Doorzoek SpecRef</h3>
+<p><img alt="media/image27.png" src="media/image27.png" /> <img alt="media/image28.png" src="media/image28.png" /></p>
+<p>De gevonden zoekresultaten kunnen worden overgenomen in het ReSpec document.</p>
+<h3 id="lijst-van-definities">Lijst van definities</h3>
+<p>Zie: <a href="ReSpec-definitielijst-maken/">definitielijst maken</a></p>
+<h2 id="html-ingebed-in-respec">HTML ingebed in ReSpec</h2>
+<p>Omdat wij ervoor hebben gekozen om documenten te schrijven in Markdown,
+gebruiken wij niet alle ReSpec functionaliteit. In dit hoofdstuk worden de
+speciale ReSpec functies beschreven die als HTML code in het Markdown document
+kunnen wordnen opgenomen, of die in de door respec gegenereerde HTML file kunnen
+worden neergezet. Het gebruik van deze functionaliteit vereist dus wel HTML
+kennis.</p>
+<h2 id="html-voor-afbeeldingen">HTML voor Afbeeldingen</h2>
+<p>Een lijst van afbeeldingen kan door ReSpec automatisch worden gegenereerd, maar
+dan moet er wel aan een aantal ReSpec specifieke voorwaarden worden voldaan:</p>
+<p>In Index.html komt ergens te staan:</p>
+<pre class="highlight"><code class="language-html">&lt;figure id="flowchart"&gt;
+   &lt;img src="flowchart.svg" alt=""&gt;
+   &lt;figcaption&gt;The water flows from bucket A to bucket B.&lt;/figcaption&gt;
+&lt;/figure&gt;</code></pre>
+<p>In de documenten worden de afbeeldingen op de volgende manier neergezet:</p>
+<pre class="highlight"><code class="language-html">&lt;figure id="flowchart"&gt;
+   &lt;img src="flowchart.svg" alt=""&gt;
+   &lt;figcaption&gt;The water flows from bucket A to bucket B.&lt;/figcaption&gt;
+&lt;/figure&gt;</code></pre>
+<p>NB: <code>&lt;figure&gt;</code> inclusief uniek ID en een ge-embedde <code>&lt;figcaption&gt;</code> zijn
+verplicht!</p>
+<p>Eventuele referenties naar plaatjes doe je op e volgende manier:</p>
+<pre class="highlight"><code class="language-html">&lt;p&gt;The flowchart shown in &lt;a href="#flowchart"&gt;&lt;/a&gt; is quite impressive.&lt;/p&gt;
+&lt;/section&gt;</code></pre>
+<h2 id="referentie-naar-github-issues">Referentie naar GitHub issues</h2>
+<p>ReSpec ondersteunt ook een koppeling naar issues die zijn gemeld op GitHub. Jek
+kan referenties opnemen naar individuele issues. Ook is het mogelijk om een
+lijst met alle issues op te nemen in je document.</p>
+<p>Om GitHub issues op te nemen moet je in 'config.js' een referentie opnemen naar
+de GitHub repository.</p>
+<pre class="highlight"><code class="language-html">issueBase: "https://github.com/Geonovum/MIM-Werkomgeving/issues/"</code></pre>
+<p>Een referentie naar een issue neem je als volgt op:</p>
+<pre class="highlight"><code class="language-html">&lt;div class="issue" data-number="363"&gt;&lt;/div&gt;</code></pre>
+<p>Waarbij data-number het issuenummer is.</p>
+<p>Een lijst met issues kan je toevoegen met de volgende HTML code:</p>
+<pre class="highlight"><code class="language-html">&lt;section class="appendix" id="issue-summary"&gt;
+  &lt;!-- Issues will magically be listed here! --&gt;
+&lt;/section&gt;
+</code></pre>
+<h2 id="publiceren-in-respec">Publiceren in ReSpec</h2>
+<p>In dit hoofdstuk staan checklists die je kan gebruiken als je een nieuwe
+versie van een ReSpec document wilt publiceren op docs.geostandaarden.nl</p>
+<h2 id="controles-voor-publicatie">Controles voor publicatie</h2>
+<p>Controleer de volgende onderwerpen voor iedere publicatie:</p>
+<ul>
+<li>Controleer op <strong>WCAG</strong> (web toegankelijkheids-) regels. Bij het pushen van een ReSpec document naar
+    GitHub wordt automatisch een WCAG rapport geschreven. Dit is te vinden onder
+    'Actions'. Kies hier de commit die je gedaan hebt en je ziet daar
+    'build/WCAG Accessibility Check'). Deze controle checkt ook de HTML.</li>
+<li>Controleer op <strong>Broken links</strong>. Bij het pushen van een ReSpec document naar
+    GitHub wordt automatisch op broken links gechecked. Dit is te vinden onder
+    'Actions'. Kies hier de commit die je gedaan hebt en je ziet daar
+    'Build/Link validation').</li>
+</ul>
+<p>Los eventuele fouten op voordat je verder gaat met publiceren. </p>
+<h2 id="publiceren">Publiceren</h2>
+<blockquote>
+<p><strong>Note</strong></p>
+</blockquote>
+<p>Publiceren op docs.geostandaarden.nl met behulp van FTP is niet meer mogelijk.</p>
+<p><a href="ReSpec-publiceren/">Klik hier</a> voor een beschrijving van de automatische publicatieworkflow.</p>
+<p>Voorwaarden voor de werking van de publicatieworkflow: </p>
+<ul>
+<li>de folderstructuur van de repository waarin het ReSpec document staat, moet conform de <a href="https://github.com/Geonovum/NL-ReSpec-template">Geonovum ReSpec template</a> zijn<ul>
+<li>dat wil zeggen, <code>index.html</code> in de root folder, <code>config.js</code> in <code>/js</code> folder, afbeeldingen in <code>/media</code> en/of <code>/data/Images</code> folder;</li>
+</ul>
+</li>
+<li>de github repository mag maar één ReSpec document bevatten.</li>
+</ul>
+<h2 id="consultatie-versie-cv-maken">Consultatie versie (CV) maken</h2>
+<ol>
+<li>Edit en controleer config.js - configureer alles goed voor een
+   consultatieversie<ul>
+<li><code>specStatus</code>:<code>"CV"</code></li>
+<li><code>publishDate</code>: moet ingevuld zijn met de datum van publicatie van de
+  consultatieversie. <code>"jjjj-mm-dd"</code>,</li>
+<li><code>Shortname</code>: moet ingevuld zijn met korte naam voor het document. Dit
+  wordt onderdeel van de URL. Moet uniek zijn binnen pubdomain (afgezien van
+  versies).<ul>
+<li>Als er al eerder een versie gepubliceerd is (stabiele versie, dus
+  afgezien van de werkversie in github), kan Respec bovenin een document
+  de navigatie naar vorige versie goed genereren. Daarvoor moet je ook
+  invullen:</li>
+<li><code>Previousmaturity</code>: wat de status toen was.</li>
+<li><code>Previousmaturity</code>: wat de status toen was.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Commit je wijzigingen en push de commit. Dit triggert de <a href="ReSpec-publiceren/">publicatieworkflow</a>.</li>
+</ol>
+<h3 id="consultatieversie-maken-en-automatisch-publiceren">Consultatieversie maken en automatisch publiceren</h3>
+<ol>
+<li>Maak een release tag conform de naamgevingsconventie:
+   <code>\{specStatus\}-\{specType\}-\{shortName\}-\{publishDate\}</code></li>
+<li>Het script kopieert nu automatisch (NB: dit moet wel eenmalig geconfigureerd
+   zijn als <a href="ReSpec-publiceren/">workflow</a> in de github repository!) het <code>snapshot.html</code> en de
+   bijbehorende afbeeldingen naar de <a href="https://github.com/Geonovum/docs.geostandaarden.nl">publicatierepository</a>. </li>
+<li>Eén van de reviewers Frank Terpstra, Linda van den Brink of Wilko Quak checkt de publicatie. Als alles goed is bevonden  wordt het document vervolgens automatisch gepubliceerd op 
+   <a href="http://docs.geostandaarden.nl">docs.geostandaarden.nl</a>.</li>
+<li>Na succesvolle publicatie:<ul>
+<li>zet de <code>specStatus</code> in <code>config.js</code> terug op <code>"WV"</code></li>
+<li>Vul <code>previousMaturity</code> in met <code>"CV"</code></li>
+<li>Vul <code>previousPublishDate</code> in met de datum van de zojuist gepubliceerde
+  consultatieversie</li>
+</ul>
+</li>
+</ol>
+<h2 id="vaststellingsversie-vv-maken">Vaststellingsversie (VV) maken</h2>
+<ol>
+<li>Edit en controleer config.js - configureer alles goed voor een
+   vaststellingsversie<ul>
+<li>specStatus: "VV"</li>
+<li>publishDate: moet ingevuld zijn met de datum van publicatie van de
+  consultatieversie. "jjjj-mm-dd",</li>
+<li>Shortname: moet ingevuld zijn met korte naam voor het document. Dit wordt
+  onderdeel van de URL. Moet uniek zijn binnen pubdomain (afgezien van
+  versies).<ul>
+<li>Als er al eerder een versie gepubliceerd is (stabiele versie, dus
+  afgezien van de werkversie in github), kan Respec bovenin een document
+  de navigatie naar vorige versie goed genereren. Daarvoor moet je ook
+  invullen:</li>
+<li>Previousmaturity: wat de status toen was.</li>
+<li>Previousmaturity: wat de status toen was.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Commit je wijzigingen en push de commit. </li>
+<li>Maak een release tag conform de naamgevingsconventie:
+   {specStatus}-{specType}-{shortName}-{publishDate}</li>
+<li>Het script kopieert nu automatisch (NB: dit moet wel eenmalig geconfigureerd
+   zijn als <a href="ReSpec-publiceren/">workflow</a> in de github repository!) het<code>snapshot.html</code> en de
+   bijbehorende afbeeldingen naar de <a href="https://github.com/Geonovum/docs.geostandaarden.nl">publicatierepository</a>. </li>
+<li>Eén van de reviewers Frank Terpstra, Linda van den Brink of Wilko Quak checkt de publicatie. Als alles goed is bevonden  wordt het document vervolgens automatisch gepubliceerd op 
+   <a href="http://docs.geostandaarden.nl">docs.geostandaarden.nl</a>.</li>
+<li>Na succesvolle publicatie:<ul>
+<li>zet de specStatus in config.js terug op WV</li>
+<li>Vul previousMaturity in met CV</li>
+<li>Vul previousPublishDate in met de datum van de zojuist gepubliceerde
+  consultatieversie</li>
+</ul>
+</li>
+</ol>
+<h2 id="definitieve-versie-def-maken">Definitieve versie (DEF) maken</h2>
+<ol>
+<li>Zet in config.js alles goed voor een definitieve versie<ul>
+<li>specStatus: "DEF",</li>
+<li>publishDate: de publicatiedatum van de definitieve versie. "jjjj-mm-dd",</li>
+<li>Shortname: korte naam voor het document. Dit wordt
+  onderdeel van de URL. Moet uniek zijn binnen pubdomain (afgezien van
+  versies).</li>
+<li>Als er al eerder een versie gepubliceerd is (stabiele versie, dus afgezien
+  van de werkversie in github), kan Respec bovenin een document de navigatie
+  naar vorige versie goed genereren. Daarvoor moet je ook invullen:<ul>
+<li>Previousmaturity: wat de status toen was.</li>
+<li>previousPublishDate: vorige publicatiedatum (jjjj-mm-dd)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Commit je wijzigingen en push de commit. Dit triggert de publicatieworkflow.</li>
+<li>Maak een release tag conform de naamgevingsconventie:
+   {specStatus}-{specType}-{shortName}-{publishDate}</li>
+<li>Het script kopieert nu automatisch (NB: dit moet wel eenmalig geconfigureerd
+   zijn als <a href="ReSpec-publiceren/">workflow</a> in de github repository!) het<code>snapshot.html</code> en de
+   bijbehorende afbeeldingen naar de <a href="https://github.com/Geonovum/docs.geostandaarden.nl">publicatierepository</a>. </li>
+<li>Eén van de reviewers Frank Terpstra, Linda van den Brink of Wilko Quak checkt de publicatie. Als alles goed is bevonden  wordt het document vervolgens automatisch gepubliceerd op 
+   <a href="http://docs.geostandaarden.nl">docs.geostandaarden.nl</a>.</li>
+<li>Na succesvolle publicatie:<ul>
+<li>zet de specStatus in config.js terug op WV</li>
+<li>Vul previousMaturity in met DEF</li>
+<li>Vul previousPublishDate in met de datum van de zojuist gepubliceerde
+  definitieve versie</li>
+</ul>
+</li>
+</ol></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js"></script>
+        <script src="../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
