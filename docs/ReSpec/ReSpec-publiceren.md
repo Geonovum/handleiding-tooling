@@ -34,8 +34,7 @@ Als de workflow niet automatisch is geïnstalleerd, kun je dit zelf doen. Dit is
 1. Open de map waarin de repository staat
     - **Shift** + **rechter muisklik** in een lege ruimte in de map
     - Kies **"PowerShell-venster hier openen"** of **"Open in terminal"**
-1. **Download en voer het script uit**
-1. Kopieer en plak de volgende regels in PowerShell, voer ze om beuren uit:
+1. **Download en voer het script uit.**  Kopieer en plak de volgende regels in PowerShell, voer ze om beuren uit:
     1. `curl -o replace_workflow-local.ps1 https://raw.githubusercontent.com/Geonovum/NL-ReSpec-template/main/replace_workflow-local.ps1`
     1. `Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass`
     1. `.\replace_workflow-local.ps1`
