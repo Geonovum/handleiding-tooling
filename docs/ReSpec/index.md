@@ -1,4 +1,5 @@
 # ReSpec
+
 We maken standaarden met ReSpec. ReSpec gebruikt
 input bestanden om HTML te genereren. Deze inputbestanden (de
 content) wordt gemaakt in Markdown. Deze Markdown bestanden kunnen
@@ -251,7 +252,7 @@ we gebruiken [[SemVer]] voor het nummeren van versies.
 De referentie in dubbele blokhaken wordt op drie niveaus gezocht:
 
 - Een globale lijst is te vinden op: [SpecRef](https://www.specref.org/).
-- Een Geonovum brede lijst is te vinden op: [tools.geostandaarden.nl](https://github.com/Geonovum/tools.geostandaarden.nl/blob/main/tools.geostandaarden.nl/respec/config/geonovum-config.js)
+- Een Geonovum brede lijst is te vinden op: [specref.geostandaarden.nl](https://specref.geostandaarden.nl/)
 - In de lokale `config.js` kan je lokale referenties toevoegen
 
 Bij verwijzingen kan je kiezen of ze normatief zijn of niet. In
@@ -384,17 +385,30 @@ versie van een ReSpec document wilt publiceren op docs.geostandaarden.nl
 
 Controleer de volgende onderwerpen voor iedere publicatie:
 
-- Controleer op **WCAG** regels. Bij het pushen van een ReSpec document naar
+- Controleer op **WCAG** (web toegankelijkheids-) regels. Bij het pushen van een ReSpec document naar
     GitHub wordt automatisch een WCAG rapport geschreven. Dit is te vinden onder
     'Actions'. Kies hier de commit die je gedaan hebt en je ziet daar
-    'Check/WCAG').
+    'build/WCAG Accessibility Check'). Deze controle checkt ook de HTML.
 - Controleer op **Broken links**. Bij het pushen van een ReSpec document naar
     GitHub wordt automatisch op broken links gechecked. Dit is te vinden onder
     'Actions'. Kies hier de commit die je gedaan hebt en je ziet daar
-    'Check/Links').
-- Controleer of de **HTML correct** is: maak een snapshot aan en biedt het aan
-    aan de [W3C validator](https://validator.w3.org)
-- C
+    'Build/Link validation').
+
+Los eventuele fouten op voordat je verder gaat met publiceren. 
+
+## Publiceren
+
+> **Note**
+
+Publiceren op docs.geostandaarden.nl met behulp van FTP is niet meer mogelijk.
+
+[Klik hier](ReSpec-publiceren.md) voor een beschrijving van de automatische publicatieworkflow.
+
+Voorwaarden voor de werking van de publicatieworkflow: 
+
+- de folderstructuur van de repository waarin het ReSpec document staat, moet conform de [Geonovum ReSpec template](https://github.com/Geonovum/NL-ReSpec-template) zijn
+    - dat wil zeggen, `index.html` in de root folder, `config.js` in `/js` folder, afbeeldingen in `/media` en/of `/data/Images` folder;
+- de github repository mag maar één ReSpec document bevatten.
 
 ## Consultatie versie (CV) maken
 
@@ -412,32 +426,17 @@ Controleer de volgende onderwerpen voor iedere publicatie:
           invullen:
         - `Previousmaturity`: wat de status toen was.
         - `Previousmaturity`: wat de status toen was.
-1. Maak een snapshot (met de knop “Bewaar Snapshot” vanuit Respec)
-1. Kies “HTML” en noem dit bestand “snapshot.html”
-1. Commit het en push het naar dezelfde folder als waar `index.html` staat in je
-   Github-repository
+1. Commit je wijzigingen en push de commit. Dit triggert de [publicatieworkflow](ReSpec-publiceren.md).
 
-### Consultatieverise met ftp
-
-> **Note**: uitwerken
-
-Omdat de webhook nogal eens problemen oplevert is er ook een proces voor het
-publiceren met ftp. In het kort is het als volgt:
-
-1. Zet alles klaar in github (zoals bij de webhook).
-2. Vraag een beheerder om de boel naar docs.geostandaarden.nl om te zetten.
-
-### Consultatieversie maken met behulp van webhook
-
-[Klik hier](/Publiceren/) voor een beschrijving over hoe je een webhook eenmalig
-configureert voor een repository. over het toepassen van de webhook.
+### Consultatieversie maken en automatisch publiceren
 
 1. Maak een release tag conform de naamgevingsconventie:
    `\{specStatus\}-\{specType\}-\{shortName\}-\{publishDate\}`
 1. Het script kopieert nu automatisch (NB: dit moet wel eenmalig geconfigureerd
-   zijn als ‘webhook’ in de github repository!) het `snapshot.html` en de
-   bijbehorende afbeeldingen naar
-   [docs.geostandaarden.nl]<http://docs.geostandaarden.nl>).
+   zijn als [workflow](ReSpec-publiceren.md) in de github repository!) het `snapshot.html` en de
+   bijbehorende afbeeldingen naar de [publicatierepository](https://github.com/Geonovum/docs.geostandaarden.nl). 
+1. Eén van de reviewers Frank Terpstra, Linda van den Brink of Wilko Quak checkt de publicatie. Als alles goed is bevonden  wordt het document vervolgens automatisch gepubliceerd op 
+   [docs.geostandaarden.nl](http://docs.geostandaarden.nl).
 1. Na succesvolle publicatie:
     - zet de `specStatus` in `config.js` terug op `"WV"`
     - Vul `previousMaturity` in met `"CV"`
@@ -460,15 +459,14 @@ configureert voor een repository. over het toepassen van de webhook.
           invullen:
         - Previousmaturity: wat de status toen was.
         - Previousmaturity: wat de status toen was.
-2. Maak een snapshot (met de knop “Bewaar Snapshot” vanuit Respec)
-3. Kies “HTML” en noem dit bestand “snapshot.html”
-4. Commit het en push het naar dezelfde folder als waar index.html staat in je
-   Github repository
+2. Commit je wijzigingen en push de commit. 
 5. Maak een release tag conform de naamgevingsconventie:
    \{specStatus\}-\{specType\}-\{shortName\}-\{publishDate\}
 6. Het script kopieert nu automatisch (NB: dit moet wel eenmalig geconfigureerd
-   zijn als ‘webhook’ in de github repository!) het snapshot.html en de
-   bijbehorende afbeeldingen naar <http://docs.geonovum.nl>
+   zijn als [workflow](ReSpec-publiceren.md) in de github repository!) het`snapshot.html` en de
+   bijbehorende afbeeldingen naar de [publicatierepository](https://github.com/Geonovum/docs.geostandaarden.nl). 
+1. Eén van de reviewers Frank Terpstra, Linda van den Brink of Wilko Quak checkt de publicatie. Als alles goed is bevonden  wordt het document vervolgens automatisch gepubliceerd op 
+   [docs.geostandaarden.nl](http://docs.geostandaarden.nl).
 7. Na succesvolle publicatie:
     - zet de specStatus in config.js terug op WV
     - Vul previousMaturity in met CV
@@ -488,16 +486,14 @@ configureert voor een repository. over het toepassen van de webhook.
       naar vorige versie goed genereren. Daarvoor moet je ook invullen:
         - Previousmaturity: wat de status toen was.
         - previousPublishDate: vorige publicatiedatum (jjjj-mm-dd)
-2. Maak een snapshot (met de knop “Bewaar Snapshot” vanuit Respec)
-3. Kies “HTML” en noem dit bestand “snapshot.html”
-4. Commit het en push het naar dezelfde folder als waar index.html staat in je
-   Github repository
+2. Commit je wijzigingen en push de commit. Dit triggert de publicatieworkflow.
 5. Maak een release tag conform de naamgevingsconventie:
    {specStatus}-{specType}-{shortName}-{publishDate}
 6. Het script kopieert nu automatisch (NB: dit moet wel eenmalig geconfigureerd
-   zijn als ‘webhook’ in de github repository!) het snapshot.html en de
-   bijbehorende afbeeldingen naar <http://docs.geostandaarden.nl> Hoe dit werkt
-   is beschreven in: <https://github.com/Geonovum/technisch-register-2019>
+   zijn als [workflow](ReSpec-publiceren.md) in de github repository!) het`snapshot.html` en de
+   bijbehorende afbeeldingen naar de [publicatierepository](https://github.com/Geonovum/docs.geostandaarden.nl). 
+1. Eén van de reviewers Frank Terpstra, Linda van den Brink of Wilko Quak checkt de publicatie. Als alles goed is bevonden  wordt het document vervolgens automatisch gepubliceerd op 
+   [docs.geostandaarden.nl](http://docs.geostandaarden.nl).
 7. Na succesvolle publicatie:
     - zet de specStatus in config.js terug op WV
     - Vul previousMaturity in met DEF
