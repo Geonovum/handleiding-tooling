@@ -1,9 +1,9 @@
 # ReSpec - richtlijn code in tekst
 
-Veel documenten die we bij Geonovum publiceren zijn datatspecificaties. In de tekst gebruik je daarom regelmatig stukken code. Het kan gaan om bepaalde termen of gegevens, waarover je iets in de lopende tekst wilt zeggen (_inline code_), of over langere stukken code (_code block_). 
-Deze handleiding is specifiek bedoeld voor de toepassing van code in documentantatie over informatiemodellen. Voor andere type code staat het je vrij hoe je dit toepast.
+In de tekst gebruik je regelmatig stukken code, in de lopende tekst (_inline code_), of  langere stukken code (_code block_). Deze handleiding is specifiek bedoeld voor de toepassing van code in documentantatie over informatiemodellen. Voor andere type code staat het je vrij hoe je dit toepast.
 
 ## Inline code
+
 Wanneer je in een lopende tekst een term of gegeven wilt markeren als code, pas je _inline code_ toe. Door een term of gegeven als `code` te markeren, maak je duidelijk dat het woord een specifieke technische betekenis heeft. _Inline code_ pas je toe door tekst tussen [backticks](https://en.wikipedia.org/wiki/Backtick) (`` ` ``) te plaatsen. De standaardopmaak voor _inline code_ is sober: ReSpec zet het lettertype enkel om in een _monospace font_. Voor een duidelijkere opmaak van _inline code_, is daarom een [css-bestand beschikbaar](https://github.com/Geonovum/NL-ReSpec-GN-beheer/blob/main/css/inline-code.css). De schrijfwijze van metaklassenamen, modelelementnamen of gegevens volgt de [naamgevingsconventies van het MIM](https://geonovum.github.io/MIM-Werkomgeving/#afspraken-rondom-naamgeving-en-definities). Wees hierop alert als je _inline code_ toepast in handgeschreven teksten. 
 
 ### Metaklassenaam
@@ -19,7 +19,7 @@ Plaats voor deze notatiewijze naam van de metaklasse tussen twee dubbele _guille
  - `«` = `"alt"` + `"["`
  - `»` = `"alt"` + `"]"`
 
-In het markdown-bestand neem je een metaklassenaam als volgt op:
+In markdown neem je een metaklassenaam als volgt op:
 `` `«metaklassenaam»` ``. 
 
 ### Modelelementnaam
@@ -33,7 +33,7 @@ Pas deze notatie toe als je de naam van een modelelement van een informatiemodel
  - `geometrie` (`«Attribuutsoort»`)
  - `VlakOfMultivlak` (`«Keuze»`)
 
-In het markdown-bestand neem je een metaklassenaam als volgt op:
+In  markdown neem je een metaklassenaam als volgt op:
 `` `modelelementnaam` ``.
 
 ### Gegeven

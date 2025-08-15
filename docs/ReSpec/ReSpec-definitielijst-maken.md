@@ -3,13 +3,12 @@
 > **Note**
 > In dit stuk afbeeldingen opnemen waarin je het resultaat in ReSpec kunt zien. Daarvoor graag [NL-ReSpec-template](https://geonovum.github.io/NL-ReSpec-template/) aanvullen.
 
-
 > **TODO**
 > Het zou wel heel leuk zijn om een link met [NL-SBB](https://docs.geostandaarden.nl/nl-sbb/nl-sbb/) te leggen.
 
 ## Intro
 
-Een belangrijk onderdeel van een dataspecificatie is de definitie van begrippen. Steeds vaker leggen we bij Geonovum begrippen vast in een [begrippenkader](https://definities.geostandaarden.nl/nl/). Idealiter zouden we voor de definitie van een begrip altijd daarnaar willen verwijzen. Op dit moment is dat om meerdere redenen nog niet mogelijk. Op deze plek leggen we uit hoe we nu een definitie opnemen.
+Een belangrijk onderdeel van een dataspecificatie is de definitie van begrippen. Steeds vaker leggen we bij Geonovum begrippen vast in een [begrippenkader](https://definities.geostandaarden.nl/nl/). Idealiter verwijs je voor de definitie van een begrip altijd daarnaar. Op deze plek leggen we uit hoe we nu een definitie opnemen.
 
 ## Definitie van een begrip opnemen in specificatie
 
@@ -35,7 +34,6 @@ ReSpec toont een gedefinieerd begrip door de term schuin en dikgedrukt weer te g
 ```markdown
 <dfn>boek</dfn>een samengebonden of genaaid aantal bedrukte bladen.
 ```
-
 ##### Resultaat
 
 ![Voorbeeld van definitie in ReSpec](media/ReSpec-definitie.png)
@@ -71,19 +69,4 @@ wrap een definitie in een aside met attribute class="definition"
 
 ## Verwijzing maken naar gedefinieerd begrip
 
-Als je op andere plekken in je document wilt verwijzen naar een gedefinieerd begrip, dan kan dat eenvoudig door het begrip tussen `<a></a>` te zetten, bijv:  `<a>boek</a>`. Houd als richtlijn dat je alleen de eerste keer dat een term in een alinea voorkomt een verwijzing maakt. Dit voorkomt een overdaad aan verwijzingen in de tekst. Een verwijzing naar een term werkt in alle gevallen hetzelfde.
-
-<!-- ## Wanneer zelf term definieeren, wanneer verwijzen naar
-
-Index
-Begrippen gedefinieerd door deze specificatie
-https://respec.org/docs/#definitions-and-linking
-
-Begrippen gedefineerd door verwijzing.
-https://respec.org/docs/#referencing-terms-from-other-specifications
-
-bladzijde
-één kant van een blad uit een boek, krant, tijdschrift enz.
-
-kaft
-papieren omslag om een boek of schrift -->
+Als je op andere plekken in je document wilt verwijzen naar een gedefinieerd begrip, dan kan dat eenvoudig door het begrip tussen `<a>boek</a>` of `[=boek-]` te zetten. Houd als richtlijn dat je alleen de eerste keer dat een term in een alinea voorkomt een verwijzing maakt. Dit voorkomt een overdaad aan verwijzingen in de tekst. Een verwijzing naar een term werkt in alle gevallen hetzelfde.

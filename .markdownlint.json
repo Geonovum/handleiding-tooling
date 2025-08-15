@@ -1,7 +1,18 @@
+//
+// Dit is de markdownlint configuratie voor markdown bestanden binnen ReSpec
+//
+// Keuzes:
+// - MD003: Markdown heeft twee manieren om koppen in documenten te coderen.
+//          We kiezen voor atx.
+// - MD007: In bullet list beginnen we zonder indent en sublijsten hebben een
+//          indent van twee.
+// - MD013: 
+//
+
 {
     "default": true,
     "MD003": { "style": "atx" },
-    "MD007": { "indent": 4, "start_indented" : false },
+    "MD007": { "indent": 2, "start_indented" : false },
     "MD013": { "line_length": 80, "code_blocks": false, "heading_line_length": 200, "tables": false},
     "no-hard-tabs": false
 }
