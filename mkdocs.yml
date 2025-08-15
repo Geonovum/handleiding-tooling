@@ -22,6 +22,7 @@ nav:
     - Markdown: Markdown.md
     - ReSpec:
         - Manual: ReSpec/index.md
+        - Publiceren: ReSpec/ReSpec-publiceren.md
         - Code toepassen: ReSpec/ReSpec-code-toepassen.md
         - Definitielijst maken: ReSpec/ReSpec-definitielijst-maken.md
     - EA:

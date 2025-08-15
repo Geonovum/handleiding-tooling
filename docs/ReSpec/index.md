@@ -1,10 +1,6 @@
 # ReSpec
 
-We maken standaarden met ReSpec. ReSpec gebruikt
-input bestanden om HTML te genereren. Deze inputbestanden (de
-content) wordt gemaakt in Markdown. Deze Markdown bestanden kunnen
-worden aangemaakt met text editor. GitHub wordt gebruikt als de 'repository'
-waarin alle bestanden die bij een standaard horen, beheerd worden.
+We maken standaarden met ReSpec. De inhoud van ReSpec documenten zit in Markdown bestanden die je met een text editor kunt bewerken. De bestanden worden in een GitHub repository beheerd.
 
 ReSpec is een tool van W3C voor het schrijven van specifications.
 ReSpec zorgt voor een uniforme styling in het document, onderhoudt
@@ -26,13 +22,10 @@ documentatie is op andere plaatsen te vinden:
   een fork van de w3c ReSpec met aanpassingen voor Geonovum. Deze is
   achterhaald omdat we nu van de Logius Respec gebruik maken. (TODO aanpassen)
 
-## Workflows voor het maken van een ReSpec document
+## Workflow voor het beheer van een ReSpec document
 
-Het volgende diagram beschrijft verschillende workflows voor het maken van een
-ReSpec publicatie. Er zijn twee hoofdroutes:
-
-1. ReSpec via Word. (Blauwe kolom)
-2. ReSpec via Markdown. (Groene kolom)
+Het volgende diagram beschrijft de workflow voor het maken van een
+ReSpec publicatie:
 
 ![publicatie infrastructuur](../media/WorkflowPublicatieProces.drawio.svg)
 
@@ -101,7 +94,7 @@ Een `<section>` komt wél in de inhoudsopgave terecht. Deze heeft daarom behalve
 de data-include van het document, ook (verplicht!) een `<h2>` tag. De tekst
 tussen `<h2>` en `</h2>` komt in de inhoudsopgave te staan.
 
-### Het bestand 'config.js'
+### Het bestand 'js/config.js'
 
 In config.js wordt een stuurvariabele voor ReSpec gevuld. De waarden in deze
 variabele worden door ReSpec gebruikt om de layout te bepalen, en bevatten een
@@ -261,13 +254,6 @@ Of een referentie normatief is of niet hangt ervanaf of het hoofdstuk
 normatief is of niet. Per referentie kan het ook instellen door een 
 uitroepteken of vraagteken voor de verwijzing zetten te zetten `[[!ID]]` of `[[?ID]]`.
 
-##  config.js
-
-De file config.js is een stukje javascript (JSON) code, het bevat alle mogelijke
-waarden voor de verschillende versies die wij hanteren. In de file
-zelf staat aangegeven welke waarden verplicht zijn, en uit welke waarden te
-kiezen is.
-
 ## Content: markdown bestanden
 
 De 'echte' content wordt gemaakt in het formaat 'Markdown'. Er is een aantal
@@ -282,7 +268,7 @@ Afbeeldingen worden als '.png' of '.svg' bestand neergezet in de map 'media'.
 
 ### De knop 'ReSpec'
 
-De knop 'ReSpec' rechtsboven in de frontend van ReSpec, bevat een aantal handige
+De knop 'ReSpec' rechtsboven in de frontend van ReSpec, bevat een aantal
 functies. Als je klikt op de knop, verschijnt het vervolgscherm met een viertal
 functies.
 
@@ -398,9 +384,6 @@ Los eventuele fouten op voordat je verder gaat met publiceren.
 
 ## Publiceren
 
-> **Note**
-
-Publiceren op docs.geostandaarden.nl met behulp van FTP is niet meer mogelijk.
 
 [Klik hier](ReSpec-publiceren.md) voor een beschrijving van de automatische publicatieworkflow.
 
@@ -410,13 +393,12 @@ Voorwaarden voor de werking van de publicatieworkflow:
     - dat wil zeggen, `index.html` in de root folder, `config.js` in `/js` folder, afbeeldingen in `/media` en/of `/data/Images` folder;
 - de github repository mag maar één ReSpec document bevatten.
 
-## Consultatie versie (CV) maken
 
-1. Edit en controleer config.js - configureer alles goed voor een
-   consultatieversie
+## Publiceren van een Consultatie versie (CV)
+
+1. In 'js/config.js':
     - `specStatus`:`"CV"`
-    - `publishDate`: moet ingevuld zijn met de datum van publicatie van de
-      consultatieversie. `"jjjj-mm-dd"`,
+    - `publishDate`: moet ingevuld zijn met de datum van publicatie van de. `"jjjj-mm-dd"`,
     - `Shortname`: moet ingevuld zijn met korte naam voor het document. Dit
       wordt onderdeel van de URL. Moet uniek zijn binnen pubdomain (afgezien van
       versies).
@@ -425,7 +407,7 @@ Voorwaarden voor de werking van de publicatieworkflow:
           de navigatie naar vorige versie goed genereren. Daarvoor moet je ook
           invullen:
         - `Previousmaturity`: wat de status toen was.
-        - `Previousmaturity`: wat de status toen was.
+        - `previousPublishDate`: wat de status toen was.
 1. Commit je wijzigingen en push de commit. Dit triggert de [publicatieworkflow](ReSpec-publiceren.md).
 
 ### Consultatieversie maken en automatisch publiceren

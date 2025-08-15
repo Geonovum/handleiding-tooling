@@ -23,28 +23,27 @@ Deze paragraaf geeft per document een korte analyse van de inhoud. Op basis hier
 
 ### HIM
 
- - Past misschien beter bij _Geonovumwerkwijze_ (i.p.v. ~_omgeving_)
- - Handreiking voor informatiemodellering
- - Voor informatieproduten uitwisselen in context DSO
- - Objectgeoriënteerd
- - Heeft update nodig
- - Hoofdstuk 2-5 zijn met name relevant
- - Zouden we naast 'bijlage offerte' (Arnoud) moeten leggen.
- - Waarom blijven liggen? Nuttig document toch!?
- - Veel DSO-taal, hoewel idee toch voor alle informatiemodellen geldt?
-
+- Past misschien beter bij _Geonovumwerkwijze_ (i.p.v. ~_omgeving_)
+- Handreiking voor informatiemodellering
+- Voor informatieproduten uitwisselen in context DSO
+- Objectgeoriënteerd
+- Heeft update nodig
+- Hoofdstuk 2-5 zijn met name relevant
+- Zouden we naast 'bijlage offerte' (Arnoud) moeten leggen.
+- Waarom blijven liggen? Nuttig document toch!?
+- Veel DSO-taal, hoewel idee toch voor alle informatiemodellen geldt?
 
 ### Publiceren van het IMGeluid EAP-bestand
 
- - Heel nuttig!
- - Verwijst naar wijzigingsprotocol IMGeluid (ook breed nuttig)
- - Herinnert mij aan doc. Pano: versionering
- - Noemt 'beheerhandboek' (BOMOS?), is ook relevant voor modelleur. Grensgeval scope?
- - Bevat ook SVN, bestaat ook GitHub handleiding van
- - Handmatig XSD bewerken: o.a. imvertor ns verwijderen, hoorde ik ook bij BRO. Terugkoppelen naar Arjan?
- - Worden ook tools genoemd:
-    -  XML editor voor validatie
-    -  W3C Markup Validation Service
+- Heel nuttig!
+- Verwijst naar wijzigingsprotocol IMGeluid (ook breed nuttig)
+- Herinnert mij aan doc. Pano: versionering
+- Noemt 'beheerhandboek' (BOMOS?), is ook relevant voor modelleur. Grensgeval scope?
+- Bevat ook SVN, bestaat ook GitHub handleiding van
+- Handmatig XSD bewerken: o.a. imvertor ns verwijderen, hoorde ik ook bij BRO. Terugkoppelen naar Arjan?
+- Worden ook tools genoemd:
+  - XML editor voor validatie
+  - W3C Markup Validation Service
 
 # Werkwijze Informatiemodelleren
 

@@ -1,16 +1,13 @@
 # Publiceren van een ReSpec document
 
-## Handmatig publiceren
-Handmatig publiceren van een ReSpec document met FTP is niet meer mogelijk. 
-
-## Automatisch publiceren
 We gebruiken een automatische publicatieworkflow voor het publiceren van ReSpec documenten op [docs.geostandaarden.nl](https://docs.geostandaarden.nl). 
 
-**Noot**
+**Noot:**
 Automatisch publiceren werkt alleen in Github repositories waar, conform de [werkwijze](./index.md#respec-via-markdown), maar één ReSpec document in staat. 
 
 ### Aan de praat krijgen van de automatische workflow
-De workflow wordt automatisch geïnstalleerd in de meeste github repositories waarin ReSpec documenten ontwikkeld worden binnen https://github.com/geonovum. Bij het maken van een nieuw ReSpec document via de [template](https://github.com/Geonovum/NL-ReSpec-template) wordt de workflow automatisch geïnstalleerd. In github repositories die al een ReSpec document hadden voordat de nieuwe publicatieworkflow werd geïntroduceerd, is de workflow meestal ook al geinstalleerd. Alle actieve repositories waar een 'js/config.js' in gevonden is, hebben de nieuwe workflow gekregen.
+
+De workflow wordt automatisch geïnstalleerd in de meeste github repositories waarin ReSpec documenten ontwikkeld worden binnen https://github.com/Geonovum. Bij het maken van een nieuw ReSpec document via de [template](https://github.com/Geonovum/NL-ReSpec-template) wordt de workflow automatisch geïnstalleerd. In github repositories die al een ReSpec document hadden voordat de nieuwe publicatieworkflow werd geïntroduceerd, is de workflow meestal ook al geinstalleerd. Alle actieve repositories waar een 'js/config.js' in gevonden is, hebben de nieuwe workflow gekregen.
 
 Je kan controleren of de workflow is geïnstalleerd door bovenin de README.md in je repository te kijken. Hier moet in staan: 
 
@@ -61,3 +58,6 @@ De automatische workflow gaat aan het werk bij elke keer dat je iets commit in d
     - Na goedkeuring van de PR (door Wilko, Frank of Linda) wordt het document gepubliceerd op: https://docs.geostandaarden.nl/
 
 Meer documentatie staat in de readme van [NL-ReSpec-template](https://github.com/Geonovum/NL-ReSpec-template?tab=readme-ov-file#automatische-checks-en-build).
+
+## Handmatig publiceren
+De sit docs.geostandaarden.nl is een mirror is van het git repository [docs.geostandaarden.nl](https://github.com/Geonovum/docs.geostandaarden.nl/) daarom is handmatig publiceren via ftp naar docs.geostandaarden.nl niet meer mogelijk.
