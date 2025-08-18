@@ -5,9 +5,31 @@ We gebruiken een automatische publicatieworkflow voor het publiceren van ReSpec 
 **Noot:**
 Automatisch publiceren werkt alleen in Github repositories waar, conform de [werkwijze](./index.md#respec-via-markdown), maar één ReSpec document in staat. 
 
-### Aan de praat krijgen van de automatische workflow
+## Automatisch publiceren via de workflow
 
-De workflow wordt automatisch geïnstalleerd in de meeste github repositories waarin ReSpec documenten ontwikkeld worden binnen https://github.com/Geonovum. Bij het maken van een nieuw ReSpec document via de [template](https://github.com/Geonovum/NL-ReSpec-template) wordt de workflow automatisch geïnstalleerd. In github repositories die al een ReSpec document hadden voordat de nieuwe publicatieworkflow werd geïntroduceerd, is de workflow meestal ook al geinstalleerd. Alle actieve repositories waar een 'js/config.js' in gevonden is, hebben de nieuwe workflow gekregen.
+De automatische workflow gaat aan het werk bij elke keer dat je iets commit in de github repository, en bij elke keer dat je een Release aanmaakt in github. De stappen om een ReSpec document te publiceren naar docs.geostandaarden.nl via de workflow zijn als volgt:
+
+1. configureer je document op de juiste manier (zie [Publiceren in ReSpec](./index.md#publiceren-in-respec) en commit je wijzigingen.
+    1. Er wordt een HTML snapshot aangemaakt via ReSpec
+    1. (optioneel) PDF wordt gegenereerd indien je dit geconfigureerd hebt
+    1. WCAG (web toegankelijkheidseisen) en HTML worden gevalideerd
+    1. Links worden gecontroleerd
+1. Bekijk de resultaten van de controles via het tabblad **Actions** van de repository. Als er fouten gevonden zijn, los deze dan op en herhaal stap 1, of vraag om hulp.
+1. (optioneel) maak een Pre-release aan in de github repository. 
+    - Het ReSpec document wordt automatisch gepubliceerd op [test.docs.geostandaarden.nl](https://test.docs.geostandaarden.nl/). Je kunt het hier bekijken om te zien of alles goed is gegaan.
+1. Maak een Release aan in de github repository (zie [Publiceren in ReSpec](./index.md#publiceren-in-respec) voor meer informatie). 
+    - Er wordt automatisch een Pull Request (PR) aangemaakt naar: Geonovum/docs.geostandaarden.nl
+    - Na goedkeuring van de PR (door Wilko, Frank of Linda) wordt het document gepubliceerd op: https://docs.geostandaarden.nl/
+
+Meer documentatie staat in de readme van [NL-ReSpec-template](https://github.com/Geonovum/NL-ReSpec-template?tab=readme-ov-file#automatische-checks-en-build).
+
+## Handmatig publiceren
+De sit docs.geostandaarden.nl is een mirror is van het git repository [docs.geostandaarden.nl](https://github.com/Geonovum/docs.geostandaarden.nl/) daarom is handmatig publiceren via ftp naar docs.geostandaarden.nl niet meer mogelijk.
+
+
+### Configureren van de automatische workflow
+
+Bij het maken van een nieuw ReSpec document via de [template](https://github.com/Geonovum/NL-ReSpec-template) wordt de workflow automatisch geïnstalleerd. In github repositories die al een ReSpec document hadden voordat de nieuwe publicatieworkflow werd geïntroduceerd, is de workflow meestal ook al geinstalleerd. Alle actieve repositories waar een 'js/config.js' in gevonden is, hebben de nieuwe workflow gekregen.
 
 Je kan controleren of de workflow is geïnstalleerd door bovenin de README.md in je repository te kijken. Hier moet in staan: 
 
@@ -41,23 +63,3 @@ Als de workflow niet automatisch is geïnstalleerd, kun je dit zelf doen. Dit is
 
 1. Verwijder het bestand "replace_workflow-local.ps1"
 
-### Automatisch publiceren via de workflow
-
-De automatische workflow gaat aan het werk bij elke keer dat je iets commit in de github repository, en bij elke keer dat je een Release aanmaakt in github. De stappen om een ReSpec document te publiceren naar docs.geostandaarden.nl via de workflow zijn als volgt:
-
-1. configureer je document op de juiste manier (zie [Publiceren in ReSpec](./index.md#publiceren-in-respec) voor meer informatie) en commit je wijzigingen.
-    1. Er wordt een HTML snapshot aangemaakt via ReSpec
-    1. (optioneel) PDF wordt gegenereerd indien je dit geconfigureerd hebt
-    1. WCAG (web toegankelijkheidseisen) en HTML worden gevalideerd
-    1. Links worden gecontroleerd
-1. Bekijk de resultaten van de controles via het tabblad **Actions** van de repository. Als er fouten gevonden zijn, los deze dan op en herhaal stap 1, of vraag om hulp.
-1. (optioneel) maak een Pre-release aan in de github repository. 
-    - Het ReSpec document wordt automatisch gepubliceerd op [test.docs.geostandaarden.nl](https://test.docs.geostandaarden.nl/). Je kunt het hier bekijken om te zien of alles goed is gegaan.
-1. Maak een Release aan in de github repository (zie [Publiceren in ReSpec](./index.md#publiceren-in-respec) voor meer informatie). 
-    - Er wordt automatisch een Pull Request (PR) aangemaakt naar: Geonovum/docs.geostandaarden.nl
-    - Na goedkeuring van de PR (door Wilko, Frank of Linda) wordt het document gepubliceerd op: https://docs.geostandaarden.nl/
-
-Meer documentatie staat in de readme van [NL-ReSpec-template](https://github.com/Geonovum/NL-ReSpec-template?tab=readme-ov-file#automatische-checks-en-build).
-
-## Handmatig publiceren
-De sit docs.geostandaarden.nl is een mirror is van het git repository [docs.geostandaarden.nl](https://github.com/Geonovum/docs.geostandaarden.nl/) daarom is handmatig publiceren via ftp naar docs.geostandaarden.nl niet meer mogelijk.

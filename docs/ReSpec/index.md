@@ -29,17 +29,23 @@ ReSpec publicatie:
 
 ![publicatie infrastructuur](../media/WorkflowPublicatieProces.drawio.svg)
 
-## ReSpec via Markdown
+De workflow bevat de volgende stappen
+
+- ReSpec document aanmaken.
+- ReSpec document bewerken.
+- ReSpec document publiceren.
+
+## ReSpec document aanmaken
 
 ReSpec documenten worden beheerd in een [GitHub](/GitHub) repository.
 
-1. Gebruik de [Geonovum ReSpec template](https://github.com/Geonovum/NL-ReSpec-template)
-als startpunt en druk op 'Use this template'.
-2. Vervang alle voorkomens van 'TODO' met inhoud.
+Gebruik de [Geonovum ReSpec template](https://github.com/Geonovum/NL-ReSpec-template) om een nieuw document te maken; druk op 'Use this template'.
+
+**Regel:** kies een logische naam voor het repository.
 
 **Regel:** Een github repository mag maar één ReSpec document bevatten.
 
-**Regel:** Nieuwe ReSpec documenten in Markdown volgen de  [Geonovum ReSpec template](https://github.com/Geonovum/NL-ReSpec-template)
+Dit maakt een GitHub repository met een template document. Dit kun je meteen gaan wijzigen. Pas op alle plekken waar TODO staat het document aan.
 
 
 ## De URL van een publicatie op docs.geonovum.nl
