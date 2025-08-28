@@ -5,6 +5,8 @@ We gebruiken een automatische publicatieworkflow voor het publiceren van ReSpec 
 **Noot:**
 Automatisch publiceren werkt alleen in Github repositories waar, conform de [werkwijze](./index.md#respec-via-markdown), maar één ReSpec document in staat. 
 
+Als er meerdere Respec documenten in een repository staan kun je [handmatig publiceren](#handmatig-publiceren-van-respec-document).
+
 ## Automatisch publiceren via de workflow
 
 De automatische workflow gaat aan het werk bij elke keer dat je iets commit in de github repository, en bij elke keer dat je een Release aanmaakt in github. De stappen om een ReSpec document te publiceren naar docs.geostandaarden.nl via de workflow zijn als volgt:
@@ -23,8 +25,6 @@ De automatische workflow gaat aan het werk bij elke keer dat je iets commit in d
 
 Meer documentatie staat in de readme van [NL-ReSpec-template](https://github.com/Geonovum/NL-ReSpec-template?tab=readme-ov-file#automatische-checks-en-build).
 
-## Handmatig publiceren
-De sit docs.geostandaarden.nl is een mirror is van het git repository [docs.geostandaarden.nl](https://github.com/Geonovum/docs.geostandaarden.nl/) daarom is handmatig publiceren via ftp naar docs.geostandaarden.nl niet meer mogelijk.
 
 
 ### Configureren van de automatische workflow
@@ -62,4 +62,14 @@ Als de workflow niet automatisch is geïnstalleerd, kun je dit zelf doen. Dit is
 **Tenslotte**
 
 1. Verwijder het bestand "replace_workflow-local.ps1"
+
+
+## 'Handmatig' publiceren van respec document.
+
+Het ‘handmatige’ publicatieproces voor docs.geostandaarden.nl is als volgt:
+
+- Docs.geostandaarden.nl is een mirror van: <https://github.com/Geonovum/docs.geostandaarden.nl/>
+- Handmatige publicaie bestaat nu uit het neerzetten van de documenten in de juiste folder op dit repository.
+- Opnieuw synchroniseren van <docs.geostandaarden.nl>. Dit knopje zit op: <https://github.com/Geonovum/docs.geostandaarden.nl/actions/workflows/deploy.yml> . Hier zie je een knopje: ‘Run workflow’.
+
 
