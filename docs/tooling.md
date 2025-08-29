@@ -82,7 +82,7 @@ Staat los van rest van publicatie infrastructuur.
 
 ### [3] Imvertor
 
-- [Imvertor](Imvertor.md): Verwijzingen naar verschillende onderwerpen met
+- [Imvertor](Imvertor/): Verwijzingen naar verschillende onderwerpen met
     betrekking tot Imvertor.
 
 ### [4] ReSpec
