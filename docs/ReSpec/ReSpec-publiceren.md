@@ -69,7 +69,7 @@ Als de workflow niet automatisch is geïnstalleerd, kun je dit zelf doen. Dit is
 Het ‘handmatige’ publicatieproces voor docs.geostandaarden.nl is als volgt:
 
 - Docs.geostandaarden.nl is een mirror van: <https://github.com/Geonovum/docs.geostandaarden.nl/>
-- Handmatige publicaie bestaat nu uit het neerzetten van de documenten in de juiste folder op dit repository.
-- Opnieuw synchroniseren van <docs.geostandaarden.nl>. Dit knopje zit op: <https://github.com/Geonovum/docs.geostandaarden.nl/actions/workflows/deploy.yml> . Hier zie je een knopje: ‘Run workflow’.
+- Handmatige publicaie bestaat nu uit het rechstreeks wijzigen van dit reopsitory. Maak in dit geval een pull request voor het repository en laat het goedkeuren zoals hierboven beschreven.
+- In extreme gevallen kunnen beheerders ook zonder pull request wijzigingen doorvoer. In dat geval moet <docs.geostandaarden.nl> handmatig gesynchroniseerd worden. Dat kan via <https://github.com/Geonovum/docs.geostandaarden.nl/actions/workflows/deploy.yml> . Hier zie je een knopje: ‘Run workflow’.
 
 
