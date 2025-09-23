@@ -82,11 +82,11 @@ Staat los van rest van publicatie infrastructuur.
 
 ### [3] Imvertor
 
-- [Imvertor](Imvertor/): Verwijzingen naar verschillende onderwerpen met
+- [Imvertor](Imvertor/index.md): Verwijzingen naar verschillende onderwerpen met
     betrekking tot Imvertor.
 
 ### [4] ReSpec
-- [Respec handleiding](ReSpec/): Algemene handleiding.
+- [Respec handleiding](ReSpec/index.md): Algemene handleiding.
 - [Respec code toepassen](ReSpec/ReSpec-code-toepassen.md): Richtlijnen voor het
     toepassen van code in documentatie.
 - [Respec definitielijst maken](ReSpec/ReSpec-definitielijst-maken.md):
@@ -136,7 +136,7 @@ xmi is het uitwisselformaat voor UML modellen. Er zijn veel smaken. Voorstel voo
 
 
 ### [10] Markdown
- - [Markdown handleiding](Markdown.md): Handleiding werken met Markdown
+ - [Markdown handleiding](Markdown/index.md): Handleiding werken met Markdown
      voor ReSpec-documentatie.
 
 ### MIM
@@ -147,22 +147,22 @@ xmi is het uitwisselformaat voor UML modellen. Er zijn veel smaken. Voorstel voo
 
 ### GML
 
-- [GML](GML.md): Toelichting GML, XSD en Namespaces.
+- [GML](GML/index.md): Toelichting GML, XSD en Namespaces.
 
 ### Ontologie
 
-- [Ontologie](Handleiding-ontologie-maken-en-publiceren.md): Handleiding
+- [Ontologie](Ontologie/Handleiding-ontologie-maken-en-publiceren.md): Handleiding
     voor het maken en publiceren van een ontologie.
 
 ### Word2ResSpc
 
-- [Word2werkversie](WordConversies.md)
+- [Word2werkversie](Word2xxx/index.md)
 
 ### Ontologieën (modellen.geostandaarden.nl)
 
 Er is één ontologie gepubliceerd: die van NEN 3610. 
 
-Dit is uitgelegd in de [handleiding ontologie maken](Handleiding-ontologie-maken-en-publiceren.md)
+Dit is uitgelegd in de [handleiding ontologie maken](Ontologie/Handleiding-ontologie-maken-en-publiceren.md)
 
 ## beheer
 

@@ -37,7 +37,7 @@ De workflow bevat de volgende stappen
 
 ## ReSpec document aanmaken
 
-ReSpec documenten worden beheerd in een [GitHub](/GitHub) repository.
+ReSpec documenten worden beheerd in een [GitHub](../GitHub/index.md) repository.
 
 Gebruik de [Geonovum ReSpec template](https://github.com/Geonovum/NL-ReSpec-template) om een nieuw document te maken; druk op 'Use this template'.
 

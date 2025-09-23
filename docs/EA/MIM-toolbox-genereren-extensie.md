@@ -1,10 +1,10 @@
 # Handleiding - Extensie maken op MIM-toolbox
 
-| Software/Standaard  | Versie |
-| --- | ---: |
-| MIM-standaard | 1.1.1 |
-| MIM-toolbox | 1.1.1 |
-| Enterprise Architect (EA) | 15.2 |
+| Software/Standaard        | Versie |
+| ------------------------- | -----: |
+| MIM-standaard             |  1.1.1 |
+| MIM-toolbox               |  1.1.1 |
+| Enterprise Architect (EA) |   15.2 |
 
 ## Inhoud
  1. [Beschrijving](#beschrijving)

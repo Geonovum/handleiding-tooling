@@ -5,25 +5,25 @@ Hierin wordt beschreven:
 
 - De werkwijze geef invulling aan het document [Informatiemodellering Geonovum](https://stichtinggeonovum.sharepoint.com/:b:/s/Basisprogramma/EVGORVYMb0FFkjC0L14Ud5AB3cuyP27Ux2lz6ZfxGqqMDw?e=ESaacU) wat bedoeld is als bijsluiter voor onze opdrachtgevers.
 - Een compacte en leesbare beschrijving van de [werkwijze](werkwijzemodelleren.md) met veel links.
-- Architectuurplaatje van onze [tooling](tooling).
+- Architectuurplaatje van onze [tooling](tooling.md).
 - [todo](werkwijze-todo.md) items ter verbetering.
 
 Handleiding per onderwerp
 
-| Tool                                                   | omscrijving                                                 |
-| ------------------------------------------------------ | ----------------------------------------------------------- |
-| [GitHub](GitHub/)                                       | Beheeromgeving voor onze standaarden                        |
-| [Imvertor](Imvertor/)                                   | Tooling voor conversie van UML naar van alles               |
-| [Markdown](Markdown/)                                   | Eenvoudige mark-up taal waarin we veel documenten schrijven |
-| [ReSpec](ReSpec/)                                       | Hierin schrijven we onze standaarden                        |
-| [EA](EA/)                                               | UML Edtior                                                  |
-| [Subversion](svn)                                      | Beheertool voor UML diagrammen                              |
-| [GML](GML/)                                             | Uitwisseltaal voor geodata                                  |
-| [BegrippenXL](BegrippenXL/)                            | Begrippen                                                   |
-| [RDF](RDF)                                             | Conversietool naar RDF                                      |
-| [Ontologie](Handleiding-ontologie-maken-en-publiceren/) | Ontologie                                                   |
-| [Word2ReSpec](WordConversies/)                          | Word naar ReSpec, Markdown etc.                             |
-| [MIM](MIM/)                                             | MIM wordt gebruik als metamodel voor onze modellen          |
+| Tool                                    | omscrijving                                                 |
+| --------------------------------------- | ----------------------------------------------------------- |
+| [GitHub](GitHub/index.md)               | Beheeromgeving voor onze standaarden                        |
+| [Imvertor](Imvertor/index.md)           | Tooling voor conversie van UML naar van alles               |
+| [Markdown](Markdown/index.md)           | Eenvoudige mark-up taal waarin we veel documenten schrijven |
+| [ReSpec](ReSpec/index.md)               | Hierin schrijven we onze standaarden                        |
+| [EA](EA/index.md)                       | UML Edtior                                                  |
+| [Subversion](svn/index.md)              | Beheertool voor UML diagrammen                              |
+| [GML](GML/index.md)                     | Uitwisseltaal voor geodata                                  |
+| [BegrippenXL](Begrippen/BegrippenXL.md) | Begrippen                                                   |
+| [RDF](RDF/index.md)                     | Conversietool naar RDF                                      |
+| [Ontologie](Ontologie/Handleiding-ontologie-maken-en-publiceren.md)             | Ontologie                                                   |
+| [Word2ReSpec](Word2xxx/index.md)         | Word naar ReSpec, Markdown etc.                             |
+| [MIM](MIM/index.md)                     | MIM wordt gebruik als metamodel voor onze modellen          |
 
 Overzicht van onderwerpen en repositories die mogelijk betrekking hebben op de tooling die bij Geonovum gebruikt wordt.
 

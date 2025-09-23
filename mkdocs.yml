@@ -19,7 +19,7 @@ nav:
         - 'Manual': GitHub/index.md
         - 'GitHub Intro': GitHub/GitHub-Inleiding.md
     - Imvertor: Imvertor/index.md
-    - Markdown: Markdown.md
+    - Markdown: Markdown/index.md
     - ReSpec:
         - Manual: ReSpec/index.md
         - Publiceren: ReSpec/ReSpec-publiceren.md
@@ -35,9 +35,9 @@ nav:
         - SVN: svn/index.md
         - SVN installeren voor EAP: svn/SVN-installeren-voor-EAP.md
         - 'SVN importeren bestaand project': svn/SVN-importeren-bestaand-project.md
-    - GML: GML.md
+    - GML: GML/index.md
     - MIM: MIM/index.md
-    - BegrippenXL: BegrippenXL.md
+    - BegrippenXL: Begrippen/BegrippenXL.md
     - RDF: RDF/index.md
-    - Ontologie: Handleiding-ontologie-maken-en-publiceren.md
-    - Word2ReSpec: WordConversies.md
+    - Ontologie: Ontologie/Handleiding-ontologie-maken-en-publiceren.md
+    - Word2xxx: Word2xxx/index.md

@@ -11,7 +11,7 @@ Het ontwerpdoel van de taal is leesbaarheid. Teksten geschreven met behulp van
 Markdown zijn al leesbaar voordat opmaak is toegepast op de
 tekst. Opmaakinstructies en tags zijn dan ook niet te vinden in pure Markdown.
 
-De tekst in onze [ReSpec](../ReSpec) documenten schrijven we in Markdown.
+De tekst in onze [ReSpec](../ReSpec/index.md) documenten schrijven we in Markdown.
 
 ## Markdown openen in je browser
 
