@@ -19,7 +19,14 @@
 
 ## Beschrijving
 
-Deze handleiding beschrijft het proces voor het genereren van een customized toolbox voor modelleren met Enterprise Architect. Het gaat specifiek in op het maken van de _MIM-toolbox_. Maar ook voor het genereren customized toolboxen in het algemeen, biedt deze beschrijving een handig overzicht van de benodigde stappen. Een inhoudelijke beschrijving voor het maken van de benodigde profielen, vind je hier ([linkOpnemen](url)). De meest actuele versie van MIM kun je hier ([linkOpnemen](url)) raadplegen.
+Deze handleiding beschrijft het proces voor het genereren van een customized
+toolbox voor modelleren met Enterprise Architect. Het gaat specifiek in op het
+maken van de _MIM-toolbox_. Maar ook voor het genereren customized toolboxen in
+het algemeen, biedt deze beschrijving een handig overzicht van de benodigde
+stappen. Een inhoudelijke beschrijving voor het maken van de benodigde
+profielen, vind je hier ([linkOpnemen](url)). De meest actuele versie van MIM
+kun je hier ([linkOpnemen](https://docs.geostandaarden.nl/mim/mim/))
+raadplegen.
 
 <!-- ```diff
 NOG VERWERKEN

@@ -50,4 +50,4 @@ Hieronder staan belangrijke GitHub termen en de betekenis ervan:
 
 ## Zelf aan de slag met Github
 
-Als je een account hebt aangemaakt kun je zelf een repository aanmaken. Zie hiervoor: [Aanmaken GitHub Account](GitHub#installatie-en-inrichting)
+Zi hiervoor onze [instructies](index.md#installatie-en-inrichting)
