@@ -1,14 +1,9 @@
 site_name: Geonovum tooling
-markdown_extensions:
-  - pymdownx.highlight:
-      anchor_linenums: true
-      line_spans: __span
-      pygments_lang_class: true
-  - pymdownx.inlinehilite
-  - pymdownx.snippets
-  - pymdownx.superfences
+theme:
+    name: readthedocs
 repo_url: https://github.com/Geonovum/handleiding-tooling
 edit_uri: blob/main/docs/
+
 nav:
     - Home:
         - 'Welkom': index.md
@@ -27,9 +22,9 @@ nav:
         - Definitielijst maken: ReSpec/ReSpec-definitielijst-maken.md
     - EA:
         - Overzicht: EA/index.md
+        - Toolbox importeren: EA/MIM-toolbox-importeren.md
         - standaarddatatypen: EA/EA-toepassing-standaarddatatypen.md
         - Toolbox genereren: EA/MIM-toolbox-genereren.md
-        - Toolbox importeren: EA/MIM-toolbox-importeren.md
         - Toolbox genereren extensie: EA/MIM-toolbox-genereren-extensie.md
     - Subversion:
         - SVN: svn/index.md
@@ -39,5 +34,5 @@ nav:
     - MIM: MIM/index.md
     - BegrippenXL: Begrippen/BegrippenXL.md
     - RDF: RDF/index.md
-    - Ontologie: Ontologie/Handleiding-ontologie-maken-en-publiceren.md
+    - Ontologie: Ontologie/index.md
     - Word2xxx: Word2xxx/index.md

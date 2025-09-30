@@ -87,11 +87,6 @@ Staat los van rest van publicatie infrastructuur.
 
 ### [4] ReSpec
 - [Respec handleiding](ReSpec/index.md): Algemene handleiding.
-- [Respec code toepassen](ReSpec/ReSpec-code-toepassen.md): Richtlijnen voor het
-    toepassen van code in documentatie.
-- [Respec definitielijst maken](ReSpec/ReSpec-definitielijst-maken.md):
-    Handleiding voor het maken van een definitielijst in
-    ReSpec-documentatie.
 
 ### [5] GitHub
 - [GitHub werkwijze](GitHub/GitHub-Inleiding.md): algemene inleiding over GitHub.
@@ -154,7 +149,7 @@ xmi is het uitwisselformaat voor UML modellen. Er zijn veel smaken. Voorstel voo
 - [Ontologie](Ontologie/Handleiding-ontologie-maken-en-publiceren.md): Handleiding
     voor het maken en publiceren van een ontologie.
 
-### Word2ResSpc
+### Word2ResSpec
 
 - [Word2werkversie](Word2xxx/index.md)
 

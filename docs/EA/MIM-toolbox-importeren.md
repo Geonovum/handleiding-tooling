@@ -1,25 +1,10 @@
-# Handleiding - Importeren en toepassen MIM-toolbox in Enterprise Architect
+# Importeren en toepassen MIM-toolbox in Enterprise Architect
 
-| Software/Standaard | Versie |
-| --------------------- | :-------------- |
-| MIM-standaard         | 1.1.1           |
-| MIM-toolbox           | 1.1.1, build 5  |
-| Enterprise Architect  | 15.2            |
-| Subversion (SVN)      | 1.14.1          |
 
-## Inhoud
- 1. [Importeren MIM-toolbox](#1-importeren-mim-toolbox)
- 1. [Toepassen MIM-diagram](#2-toepassen-mim-diagram)
- 1. [Toepassen Quick Linker](#3-toepassen-quick-linker)
- 1. [Toepassen toolbox-item 'Relatierol'](#4-toepassen-toolbox-item-relatierol)
- 1. [Updaten MIM-versie in bestaand informatiemodel](#5-updaten-mim-versie-in-bestaand-informatiemodel)
- 1. [Verwijderen oudere toolbox](#6-verwijderen-oudere-toolbox)
- 1. [Toolboxen beheren](#7-toolboxen-beheren)
- 1. [Workspaces gebruiken](#8-workspaces-gebruiken)
 
-## 1: Importeren MIM-toolbox
+## Stap 1: Importeer MIM-toolbox
 
- - [Download het XML-bestand](https://register.geostandaarden.nl/informatiemodel/mim/1.1.1/) van de MIM-toolbox: `MDG_MIM_Toolbox_v1.1.1_build05.xml`.
+ - [Download het XML-bestand](https://register.geostandaarden.nl/informatiemodel/mim/1.2/) van de MIM-toolbox: `MDG_MIM_Toolbox_v1.1.1_build05.xml`.
  - Verwijder eventueel eerst de oudere versie van de toolbox als je die niet meer nodig hebt ([Toolbox verwijderen](#5-verwijderen-oudere-toolbox)).
  - Open Enterprise Architect
  - Open '_Resources_'
@@ -70,7 +55,7 @@
  > **Warning**<br>
  > De MIM-toolbox heeft een versienummer. Deze staat niet in de naam. Indien je besloten hebt om oudere versies van de MIM-toolbox niet te verwijderen, komt de naam 'MIM' mogelijk meerdere malen voor. Het [beheren van toolboxen](#6-toolboxen-beheren) in Enterprise Architect doe je op deze manier.
 
-## 2: Toepassen MIM-diagram
+## Stap 2: Toepassen MIM-diagram
 
 In voorgaande versies werd de MIM-toolbox toegepast op een standaard UML diagram (`UML::Class`). Dat kan nog steeds. Dit heeft echter één nadelige eigenschap. Als je in je project met meerdere diagrammen werkt, kan het voorkomen dat bij het wisselen tussen diagrammen de toolbox terugspringt op de standaard UML-toolbox. Hierdoor moet je de MIM-toolbox opnieuw opzoeken.
 
@@ -121,7 +106,7 @@ Het MIM-versienummer komt nu ook terug het veld Stereotype in het venster '_Prop
 
 ![](media/mim_modelelement_versienummer.jpg)
 
-## 3: Toepassen Quick Linker
+## Stap 3: Toepassen Quick Linker
 
 De Quick Linker is een hulpmiddel om snel en eenvoudig relaties te kunnen leggen tussen verschillende elementen. Het voordeel hiervan is dat het de gebruiker inzicht geeft in de volgens MIM toegestane relaties. De Quick Linker is beschikbaar via een icoontje dat rechtsboven een diagramelement verschijnt op het moment dat je het selecteert.
 
@@ -179,7 +164,7 @@ Ook is het mogelijk om vanuit een bestaand element meerdere én verschillende so
 
 ![](media/mim_ql_result_multiple.jpg)
 
-## 4: Toepassen toolbox-item 'Relatierol'
+## Stap 4: Toepassen toolbox-item 'Relatierol'
 
 Net als alle andere modelelementen uit de MIM-toolbox, kun je ook de `«Relatierol»` in het diagram slepen. Je doet dit door een `«Relatierol»` naar uiteinde van een reeds bestaande `«Relatiesoort»` te slepen. Wanneer je in EA het stereotype `«Relatierol»` toewijst aan een relatie, worden de bijbehorende '_Tagged Values_' automatisch meegenomen.
 
@@ -196,7 +181,7 @@ Net als alle andere modelelementen uit de MIM-toolbox, kun je ook de `«Relatier
  - Klik vervolgens in het '_Properties_' venster op het '_Target_' tabblad.
  - Vervolgens zie je de bijbehorende _Tagged Values_ voor [alternatief 1](https://docs.geostandaarden.nl/mim/mim/#relatiesoort-is-leidend-alternatief-1) of [alternatief 2](https://docs.geostandaarden.nl/mim/mim/#relatierol-is-leidend-alternatief-2).
 
-## 5: Updaten MIM-versie in bestaand informatiemodel
+## Stap 5: Updaten MIM-versie in bestaand informatiemodel
 
 Er zijn verschillende situaties denkbaar waarin je één of meerdere type modelelementen van een informatiemodel wilt updaten. Bijvoorbeeld omdat er een bug-fix is geweest. Zoals hierboven beschreven, kreeg een `«Relatierol»` in de eerste versies van de MIM1.1.1-toolbox (build01-build04) geen _Tagged Values_ mee. Maar het kan ook zijn dat je alle modelelementen in een model naar de nieuwste versie van toolbox wilt updaten. Hiervoor moet je het stereotype (het modelelement) synchroniseren. De volgende stappen beschrijven hoe dat werkt.
 
@@ -208,29 +193,29 @@ Er zijn verschillende situaties denkbaar waarin je één of meerdere type modele
 
 ![](media/mim_relatierol_sync_select.jpg)
 
- - Klik op '_Synchronize Stereotype_'.
- - Er opent een nieuw venster
- - Hierin staat in het veld '_stereotype_' `Relatierol` al geselecteerd.
- - Klik op '_Ok_'.
+- Klik op '_Synchronize Stereotype_'.
+- Er opent een nieuw venster
+- Hierin staat in het veld '_stereotype_' `Relatierol` al geselecteerd.
+- Klik op '_Ok_'.
 
 ![](media/mim_relatierol_sync_menu.jpg)
 
- - Er verschijnt een popup-venster dat vraagt: '_Save latest changes?_', klik '_Ja_'.
- - De tagged values zijn nu gesynchroniseerd.
+- Er verschijnt een popup-venster dat vraagt: '_Save latest changes?_', klik '_Ja_'.
+- De tagged values zijn nu gesynchroniseerd.
 
 ![](media/mim_relatierol_sync_saved.jpg)
 
 Herhaal bovenstaande stappen als je ook andere modelelementen wilt updaten. 
 
-## 6: Verwijderen oudere toolbox
+## stap 6: Verwijderen oudere toolbox
 Deze instructie is bedoeld voor het verwijderen van toolboxen die je niet meer wilt gebruiken. Bijvoorbeeld oudere versies van de MIM-toolbox.
 
- - Open Enterprise Architect
- - Open '_Resources_'
- - Kies rechts in beeld op '_Portals_'
- - Selecteer in het dropdown-menu '_Windows_'
- - Kies '_Resources_' (onder '_Explore_')
- - Klik op '_MDG Technologies_'
+- Open Enterprise Architect
+- Open '_Resources_'
+- Kies rechts in beeld op '_Portals_'
+- Selecteer in het dropdown-menu '_Windows_'
+- Kies '_Resources_' (onder '_Explore_')
+- Klik op '_MDG Technologies_'
  
  Controleer nu of er onder '_Model Technologies_' en/of '_User Technologies_' toolboxen staan die je niet meer wilt gebruiken.
 
@@ -243,7 +228,7 @@ Deze instructie is bedoeld voor het verwijderen van toolboxen die je niet meer w
     - Start hierna voor de zekerheid EA opnieuw op.
     - Ga verder met het [importeren van de MIM-toolbox](#1-importeren-mim-toolbox).
 
-## 7: Toolboxen beheren
+## Stap 7: Toolboxen beheren
  - Ga naar de menubalk boven in beeld en selecteer '_Specialize_' > '_Manage-Tech_'
  - Hier vind je een overzicht van alle aanwezige MDG-technologies.
  - Scroll naar beneden en zoek '_MIM_' op.
@@ -256,7 +241,7 @@ Deze instructie is bedoeld voor het verwijderen van toolboxen die je niet meer w
  > **Warning**<br>
  > Indien je toolboxen gebruikt met gelijknamige modelelementen, bijvoorbeeld oudere MIM-toolboxen of NEN3610 BRO Grouping-NL (dat een extensie is op MIM), dan kan dit leiden tot een verwijzing naar het 'verkeerde' profiel. Enterprise Architect doet dit automatisch. Hierdoor beschikt het stereotype bijvoorbeeld niet over de gewenste tagged values.
 
-## 8: Workspaces gebruiken
+## Stap 8: Workspaces gebruiken
 
 > **Note**<br>
 > Onderstaande tekst is nog in concept
@@ -266,15 +251,15 @@ Deze instructie is bedoeld voor het verwijderen van toolboxen die je niet meer w
 
 ### 8.1 Overzicht handige vensters bij het modelleren
 
- - Project Browser
- - Resources
- - Notes
- - Tagged Values
- - Features
- - Pan & Zoom
- - Relationships
- - Relationship Matrix
- - Toolbox
+- Project Browser
+- Resources
+- Notes
+- Tagged Values
+- Features
+- Pan & Zoom
+- Relationships
+- Relationship Matrix
+- Toolbox
 
 ### 8.2 Waar je ze vindt
 
