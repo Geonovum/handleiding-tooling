@@ -1,24 +1,23 @@
 # ReSpec
 
-We maken standaarden met ReSpec. De inhoud van ReSpec documenten zit in Markdown bestanden die je met een text editor kunt bewerken. De bestanden worden in een GitHub repository beheerd.
+We maken standaarden met ReSpec. De inhoud van ReSpec documenten zit in Markdown bestanden die je met een text editor kunt bewerken. De bestanden worden in een GitHub repository beheerd. ReSpec
 
-ReSpec is een tool van voor het schrijven van specifications.
-ReSpec zorgt voor een uniforme styling in het document, onderhoudt
-referenties en verwijzingen naar andere documentatie, verzorgt de inhoudsopgave,
-zorgt voor links naar vorige en meest recente versies, en heeft een integratie
-met Github issues.
+- zorgt voor een uniforme styling.
+- onderhoudt referenties en verwijzingen naar andere documentatie, 
+- verzorgt de inhoudsopgave,
+- zorgt voor links naar vorige en meest recente versies, 
+- heeft een integratie met Github issues.
 
-Dit diagram beschrijft het proces voor het maken van een
+Met volgende diagram beschrijft het proces voor het maken van een
 ReSpec publicatie:
 
-![publicatie infrastructuur](../media/WorkflowPublicatieProces.drawio.svg)
+![publicatie infrastructuur](media/WorkflowReSpecGit.drawio.svg)
 
 De workflow bevat de volgende stappen
 
-- ReSpec document uitchecken en bewerken en weer [inchecken](#respec-document-uitchecken-wijzigen-en-weer-inchecken).
-- Check je document voor publicatie via de [checklist](#controles-voor-publicatie).
-- ReSpec document [publiceren](#respec-document-publiceren).
-- ReSpec document [aanmaken](#een-nieuw-respec-document-aanmaken).
+- [1] Check het document wat je wilt bewerken met `git pull` uit.
+- [2] Wijzig je document locaal en 'commit' de changes.
+- [3] Met 'git push' zet je de locatie wijzigingen terug naar de centrale lop.e
 
 Geonovum gebruikt een fork van ReSpec die door Logius beheerd wordt. Meer
 documentatie is op andere plaatsen te vinden:

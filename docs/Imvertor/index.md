@@ -1,10 +1,14 @@
 # Imvertor
 
->
-> TODO: invullen vanuit de volgende documenten
->
+Imvertor wordt veel gebruikt binnen Geonovum voor het transformeren van UML 
+modellen naar bijvoorbeeld xml-schema’s of feature catalogues. Imvertor is
+een add-in in [Enterprise Architect](EA/index.md)
 
-Imvertor wordt veel gebruikt binnen Geonovum voor het transformeren van UML modellen naar bijvoorbeeld xml-schema’s of feature catalogues. De instructies van hoe er mee om te gaan zijn overal verspreid.  Op deze pagina probeer ik alles te verzamelen….
+## Installatie
+
+De [installatieinstructie](https://armatiek.nl/doc/imvertor/imvertor-startup/1.0/#installeren-van-de-software). Houd er rekening mee dat je ondersteuning nodig kunt hebben van systeembeheer voor deze installatie.
+
+## Gebruik
 
 | onderwerp             | verwijzing                                                                                                                    |
 | --------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
@@ -14,12 +18,14 @@ Imvertor wordt veel gebruikt binnen Geonovum voor het transformeren van UML mode
 | Uitleg schema mapping | [Hier](https://imvertor.armatiek.nl/imvertor-executor/dashboard/wiki?key=info-IMVERTORCONCEPTUALSCHEMAS)                      |
 | Nieuwsbrieven         | <https://armatiek.nl/nieuwsbrieven.html> |
 
-## Veel te veel plaatjes in de data folder
 
+## Losse onderwerpen
 
-- Een Imvertor run levert een flink aantal UML diagrammen op in de `data` folder. Niet meer gebruikt diagrammen worden nooit verwijderd uit deze folder waardoor er vaak veel niet gebruikt diagrammen in staan. **Tip:** gooi voor het draaien van Imvertor de data map een keer leeg.
+### Veel te veel plaatjes in de data folder
 
-# Schema generatie
+Een Imvertor run levert een flink aantal UML diagrammen op in de `data` folder. Niet meer gebruikt diagrammen worden nooit verwijderd uit deze folder waardoor er vaak veel niet gebruikt diagrammen in staan. **Tip:** gooi voor het draaien van Imvertor de data map een keer leeg.
+
+### Schema generatie
 
 Imvertor in in staat om verschillende soorten schema's (i.e. verschillende
 uitwisselformaten) te genereren. Via het properties file kun je aangeven of en
@@ -29,7 +35,7 @@ datgene wat er gegenereerd wordt aan je wensen aan te passen.
 Zie de [imvertor documentatie van het properties
 file](https://imvertor.armatiek.nl/imvertor-executor/dashboard/wiki?key=info-IMVERTORCONFIG-PROP). 
 
-## JSON genereren
+### JSON genereren
 
 Geef in de properties file die je kunt kiezen bij het runnen van imvertor, de volgende parameter mee: 
 
@@ -43,7 +49,7 @@ TODO uitzoeken wat er mogelijk is met de property `createjsonschemavariant`. De
 mogelijke waarden zijn niet gedocumenteerd.
 
 
-# Mapping van geo-klassen en -typen
+### Mapping van geo-klassen en -typen
 
 Imvertor werkt met een configuratiebestand `conceptual-schemas.xml` waarin een
 mapping is opgenomen tussen gestandaardiseerde **ISO-, OGC- en INSPIRE-klassen**
