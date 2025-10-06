@@ -8,8 +8,8 @@ nav:
     - Home:
         - 'Welkom': index.md
         - 'Werkwijze Modelleren': werkwijzemodelleren.md
-        - 'tooling' : tooling.md
-        - 'Werkwijze todo': werkwijze-todo.md
+        - 'Tooling' : tooling.md
+        - 'Verdere documentatie': werkwijze-todo.md
     - GitHub:
         - 'Manual': GitHub/index.md
         - 'GitHub Intro': GitHub/GitHub-Inleiding.md
@@ -20,14 +20,14 @@ nav:
     - ReSpec:
         - Manual: ReSpec/index.md
         - Publiceren: ReSpec/ReSpec-publiceren.md
-        - Code toepassen: ReSpec/ReSpec-code-toepassen.md
-        - Definitielijst maken: ReSpec/ReSpec-definitielijst-maken.md
-    - EA:
+        - Onderdelen van ReSpec: ReSpec/ReSpec-onderdelen.md
+    - Enterprise Architect:
         - Overzicht: EA/index.md
         - Toolbox importeren: EA/MIM-toolbox-importeren.md
         - standaarddatatypen: EA/EA-toepassing-standaarddatatypen.md
         - Toolbox genereren: EA/MIM-toolbox-genereren.md
         - Toolbox genereren extensie: EA/MIM-toolbox-genereren-extensie.md
+        - XMI exporteren: EA/xmi-exporteren.md
     - Subversion:
         - SVN: svn/index.md
         - SVN installeren voor EAP: svn/SVN-installeren-voor-EAP.md

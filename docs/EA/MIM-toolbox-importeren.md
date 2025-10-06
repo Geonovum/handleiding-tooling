@@ -4,7 +4,7 @@
 
 ## Stap 1: Importeer MIM-toolbox
 
- - [Download het XML-bestand](https://register.geostandaarden.nl/informatiemodel/mim/1.2/) van de MIM-toolbox: `MDG_MIM_Toolbox_v1.1.1_build05.xml`.
+ - [Download het XML-bestand](https://register.geostandaarden.nl/informatiemodel/mim/1.2/) van de MIM-toolbox.
  - Verwijder eventueel eerst de oudere versie van de toolbox als je die niet meer nodig hebt ([Toolbox verwijderen](#5-verwijderen-oudere-toolbox)).
  - Open Enterprise Architect
  - Open '_Resources_'

@@ -146,7 +146,7 @@ xmi is het uitwisselformaat voor UML modellen. Er zijn veel smaken. Voorstel voo
 
 ### Ontologie
 
-- [Ontologie](Ontologie/Handleiding-ontologie-maken-en-publiceren.md): Handleiding
+- [Ontologie](Ontologie/index.md): Handleiding
     voor het maken en publiceren van een ontologie.
 
 ### Word2ResSpec
@@ -157,7 +157,7 @@ xmi is het uitwisselformaat voor UML modellen. Er zijn veel smaken. Voorstel voo
 
 Er is één ontologie gepubliceerd: die van NEN 3610. 
 
-Dit is uitgelegd in de [handleiding ontologie maken](Ontologie/Handleiding-ontologie-maken-en-publiceren.md)
+Dit is uitgelegd in de [handleiding ontologie maken](Ontologie/index.md)
 
 ## beheer
 

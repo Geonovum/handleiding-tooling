@@ -2,7 +2,7 @@
 
 Imvertor wordt veel gebruikt binnen Geonovum voor het transformeren van UML 
 modellen naar bijvoorbeeld xml-schema’s of feature catalogues. Imvertor is
-een add-in in [Enterprise Architect](EA/index.md)
+een add-in in [Enterprise Architect](../EA/index.md)
 
 ## Installatie
 

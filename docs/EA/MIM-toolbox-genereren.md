@@ -23,9 +23,8 @@ Deze handleiding beschrijft het proces voor het genereren van een customized
 toolbox voor modelleren met Enterprise Architect. Het gaat specifiek in op het
 maken van de _MIM-toolbox_. Maar ook voor het genereren customized toolboxen in
 het algemeen, biedt deze beschrijving een handig overzicht van de benodigde
-stappen. Een inhoudelijke beschrijving voor het maken van de benodigde
-profielen, vind je hier ([linkOpnemen](url)). De meest actuele versie van MIM
-kun je hier ([linkOpnemen](https://docs.geostandaarden.nl/mim/mim/))
+stappen. De meest actuele versie van MIM
+kun je  ([hier](https://docs.geostandaarden.nl/mim/mim/))
 raadplegen.
 
 <!-- ```diff
@@ -48,7 +47,7 @@ Controleer voordat je (MIM-)profielen gaat genereren eerst de volgende zaken:
 
 Controleer of je beschikt over alle benodigde bestanden:
 
- - **EA-bestand** met MIM profile packages voor het genereren van de profiles en mdg technology ([Create MDG Technology File](https://sparxsystems.com/enterprise_architect_user_guide/15.2/modeling/creatingmdgtechnologies.html)), hiertoe behoort ten minste één package per stereotype: `«profile»`, `«diagram profile»` en `«toolbox profile»` (zie voor meer informatie over ... ([linkOpnemenNaarWelkePackagesPubliceren](url)).
+ - **EA-bestand** met MIM profile packages voor het genereren van de profiles en mdg technology ([Create MDG Technology File](https://sparxsystems.com/enterprise_architect_user_guide/15.2/modeling/creatingmdgtechnologies.html)), hiertoe behoort ten minste één package per stereotype: `«profile»`, `«diagram profile»` en `«toolbox profile»`).
  - **MTS-bestand** met MIM properties voor het genereren van MDG Technology ([Working with MTS Files](https://sparxsystems.com/enterprise_architect_user_guide/16.0/modeling_frameworks/working_with_mts_files.html )) 
  - **CSV-bestand** met definities van de quick linkers ([Quick Linker Definition Format](https://sparxsystems.com/enterprise_architect_user_guide/16.0/modeling_frameworks/quick_linker_definition_format.html))
 
@@ -69,9 +68,9 @@ Controleer of je beschikt over alle benodigde profielen:
 
 ![](media/mim_profile_quick_linker_location.jpg)
 
-> **NOTE**: Het CSV-bestand van de QuickLinker is een kopie van de informatie die in dit element is opgeslagen. Als je wijzigingen wilt aanbrengen in de QuickLinker, of als er in het model wijzingen zijn doorgevoerd die van invloed zijn op de QuickLinker, kun je die met behulp van het CSV-bestand aanpassen (hier [linkOpnemenNaarQuickLinkerMakenOfBewerken](url) lees je hoe dat moet).
+> **NOTE**: Het CSV-bestand van de QuickLinker is een kopie van de informatie die in dit element is opgeslagen. Als je wijzigingen wilt aanbrengen in de QuickLinker, of als er in het model wijzingen zijn doorgevoerd die van invloed zijn op de QuickLinker, kun je die met behulp van het CSV-bestand aanpassen).
 
-Indien de profielen al in XML-formaat beschikbaar zijn (zie: ([linkOpnemenNaarPackagePublicerenAlsProfiel](url)), klik dan hier ([linkOpnemenGenererenToolbox](url)) om de volgende stap over te slaan en direct te beginnen met het genereren van de toolbox.
+Indien de profielen al in XML-formaat beschikbaar zijn  om de volgende stap over te slaan en direct te beginnen met het genereren van de toolbox.
 
 ### 1.3 Versienummer Toolbox
 
@@ -85,7 +84,7 @@ Voor de MIM-toolbox is besloten om het versienummer op verschillende plekken mee
  - bij [het genereren van het _profile_](#132-versienummer-profiel)
  - als [alias van het _package_](#133-versienummer-package)
  - als [alias van de _toolbox pages_](#134-versienummer-toolbox-pages)
- - _optioneel_: [stereotype in diagram](#135-versienummer-diagram). Let op: als je dit veranderd, moet je ook het csv-bestand van de _Quick Linker_ aanpassen ([linkOpnemenNaarQuickLinkerMakenOfBewerken](url)).
+ - _optioneel_: [stereotype in diagram](#135-versienummer-diagram). Let op: als je dit veranderd, moet je ook het csv-bestand van de _Quick Linker_ aanpassen).
 
 #### 1.3.1 Versienummer _MDG Technology_ (Toolbox)
 
@@ -119,7 +118,7 @@ Hierdoor ziet de gebruiker van de toolbox in één oogopslag met welke versie er
 
 In MIM heeft het diagram geen versienummer. De MIM-dataspecificatie zegt daarom ook niets over een diagram; het is immers een hulpmiddel. 
 
-> **LET OP**: Indien je ervoor kiest om de naam van het diagram toch aan te passen, dient de nieuwe diagramnaam ook worden doorgevoerd in het _Quick Linker_-element (`kolom E`: `Diagram Filter`) (lees [hier](linkOpnemenNaarQuickLinkerMakenOfBewerken) hoe dat werkt).
+> **LET OP**: Indien je ervoor kiest om de naam van het diagram toch aan te passen, dient de nieuwe diagramnaam ook worden doorgevoerd in het _Quick Linker_-element (`kolom E`: `Diagram Filter`).
 
 ## 2 Profiel publiceren
 
