@@ -2,7 +2,7 @@
 
 Bij informatiemodelleren is het maken van een Begrippenmodel (Mim beschouwingsniveau 1) een belangrijk onderdeel. Hiervoor gebruiken we de [NL-SBB](https://docs.geostandaarden.nl/nl-sbb/nl-sbb/) standaard.
 
-Met begrippenmodel wordt gepubliceerd op: <https://definities.geostandaarden.nl/nl/>. 
+Met begrippenmodel wordt gepubliceerd op: <https://definities.geostandaarden.nl>. 
 
 ## Hoe maak ik een begrippenmodel (inhoudelijk)
 
@@ -19,14 +19,18 @@ Voor het maken en editen van begrippenmodellen zijn twee routes:
 
 Dit SKOS bestand (in .ttl formaat) kan je daarna met de hand editen.
 
-## Afspraken voor een net Begrippenmodel
+## Regels voor een begrippenmodel binnen Geonovum
 
+**Regel:** Een begrippenmodel is conform [NL-SBB](https://docs.geostandaarden.nl/nl-sbb/nl-sbb/)
 
+**Regel:** Een definitief begrippenmodel wordt gepubliceerd op: <https://definities.geostandaarden.nl>
+
+**TODO:** Invulling van NL-SBB [best practices](https://docs.geostandaarden.nl/nl-sbb/nl-sbb/#H5) maken voor Geonovum.
 
 ### Het publiceren van een SKOS bestand.
 
 Begrippenmodellen die nog niet definitief zijn kun je publiceren op: <https://staging-definities.geostandaarden.nl/>.
-Uitendelijk publiceren gebeurt op <https://staging-definities.geostandaarden.nl>
+Definitief publiceren gebeurt op <https://definities.geostandaarden.nl>
 
 Instructies voor het publiceren van het SKOS bestand staan in de laatste paragraaf van [begrippenXL](begrippenXL.md) editor.
 
