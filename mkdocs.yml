@@ -36,7 +36,8 @@ nav:
         - GML/index.md
     - MIM:
         - MIM/index.md
-    - BegrippenXL:
+    - Conceptenbibliotheek:
+        - Begrippen/index.md
         - Begrippen/BegrippenXL.md
     - RDF:
         - RDF/index.md
