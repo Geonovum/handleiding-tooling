@@ -1,27 +1,25 @@
-# Handleiding GitHub
+# Handleiding tooling
 
-Modelleurs bij Geonovum werken met verschillende tools. In deze repository
-verzamelen we alle handleidingen die binnen Geonovum beschikbaar zijn. De
-documentatie is in MarkDown geschreven en gebruikt een wrapper van mkdocs.
+In dit repository zit de [handleinding van de Geonovum tooling](https://geonovum.github.io/handleiding-tooling/).
+Deze handleiding heeft twee doelen:
 
-### HTML-versie
+- Handleiding van de tools binnen die binnen Geonovum gebruikt worden.
+- De gezamenlijke werkwijze van Geonovum vast
 
-Een html-versie van de handleiding is te vinden op [github pages](https://geonovum.github.io/handleiding-tooling/)
+De handleiding is in MarkDown geschreven en gebruikt [mkdocs](https://www.mkdocs.org/).
 
-### Lokaal serveren
+## Werwijze voor bijwerken handleiding
 
-Als je op je eigen laptop de handleiding wilt wijzigen kun je live de gegevens
-serveren:
-- Check deze repository lokaal uit.
-- Installeer de mkdocs software.
-- Ga in je command shell naar de folder waarin mkdocx.yml staat.
-- Type 'mkdocs serve'.
-- Nu draait er een locale webserver en via je browser zie je live de wijzigingen op: [browser](http://127.0.0.1:8000/). 
+- Dit document is van iedereen. Als je geen schrijfrechten hebt vraag die dan aan bij een [GitHub beheerder](https://github.com/orgs/Geonovum/people?query=role%3Aowner).
+- De menustructuur zit in het bestandje `mkdocs.yml`. Hierin is een aantal hoofdonderwerpen gedefinieerd.
+- Voor ieder hoofdonderwerp is een mapje gemaakt in de `docs` folder.
+- In iedere folder is een subfolder `media` voor de plaatjes.
+- Als je je wijzingen commit en pusht naar github wordt de [handleiding](https://geonovum.github.io/handleiding-tooling/) automatisch bijgewerkt
 
-Om `mkdocs serve` uit te kunnen voeren, heb je **Python** nodig. [Kijk hier voor de
-_requirements_ voor
-mkdocs](https://www.mkdocs.org/user-guide/installation/#requirements). Als je
-[Python via www.python.org
-installeert](https://wiki.python.org/moin/BeginnersGuide/Download), hoef je pip
-niet meer apart te installeren. Als je klaar bent, druk je de toetsencombinatie
-`CTRL` + `C` in de CLI om de server uit te zetten.
+
+### Lokale preview
+
+Mkdocs biedt ondersteuning om de gemaakte handleiding lokaal te previewen. Zie hiervoor de [user guide](https://www.mkdocs.org/user-guide/). Twee opties zijn:
+
+- Gebruik [mkdocs buid](https://www.mkdocs.org/user-guide/cli/#mkdocs-build) om lokaal een statische versie van de handleiding te maken.
+- Gebruik [mkdocs serve](https://www.mkdocs.org/user-guide/cli/#mkdocs-serve) om je eigen repository lokaal uit te serveren. Je zie dat de pages live mee veranderen.
