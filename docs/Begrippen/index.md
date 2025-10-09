@@ -1,14 +1,17 @@
 # Begrippenmodel
 
-Bij informatiemodelleren is het maken van een Begrippenmodel (Mim beschouwingsniveau 1) een belangrijk onderdeel. Hiervoor gebruiken we de [NL-SBB](https://docs.geostandaarden.nl/nl-sbb/nl-sbb/) standaard.
+Bij informatiemodelleren is het maken van een Begrippenmodel [MIM beschouwingsniveau 1](https://docs.geostandaarden.nl/mim/mim/#beschouwingsniveau-1-model-van-begrippen) een belangrijk onderdeel. Hiervoor gebruiken we de [NL-SBB](https://docs.geostandaarden.nl/nl-sbb/nl-sbb/) standaard.
 
-Met begrippenmodel wordt gepubliceerd op: <https://definities.geostandaarden.nl>. 
+Het begrippenmodel wordt gepubliceerd op: <https://definities.geostandaarden.nl>. 
 
 ## Hoe maak ik een begrippenmodel (inhoudelijk)
 
-Je kunt samen met het werkveld een begrippenmodel maken voor je echt gaat modelleren. Wat ook vaak gebeurt is dat er al een (conceptueel) model is waar je met een druk op de knop (Imvertor) de start van een begrippenmodel uit filtert. Dit kun na wat nabewerkingen publiceren.
+Een begrippenmodel wordt opgesteld door mensen bij voorkeur voordat er een informatiemodel wordt gemaakt.
 
-Ook kun je met een begrippeneditor of spreadsheet vanuit het niets een begrippenmodel maken.
+**TODO:** best practise zoeken en opnemen.
+
+Hoewel niet wenselijk komt het ook voor dat er achteraf een begrippenmodel wordt gemaakt op basis van een informatiemodel.
+
 
 ## Hoe maak ik een begrippenmodel (technisch)
 
@@ -25,9 +28,11 @@ Dit SKOS bestand (in .ttl formaat) kan je daarna met de hand editen.
 
 **Regel:** Een definitief begrippenmodel wordt gepubliceerd op: <https://definities.geostandaarden.nl>
 
+**Regel:** We voldoen minimaal aan [Best Practice 1](https://docs.geostandaarden.nl/nl-sbb/nl-sbb/#bp-gangbare-conventies-voor-het-beschrijven-van-termen-voorkeurstermen-alternatieve-termen-zijn) uit NL-SBB.
+
 **TODO:** Invulling van NL-SBB [best practices](https://docs.geostandaarden.nl/nl-sbb/nl-sbb/#H5) maken voor Geonovum.
 
-### Het publiceren van een SKOS bestand.
+### Het publiceren van een SKOS bestand
 
 Begrippenmodellen die nog niet definitief zijn kun je publiceren op: <https://staging-definities.geostandaarden.nl/>.
 Definitief publiceren gebeurt op <https://definities.geostandaarden.nl>
