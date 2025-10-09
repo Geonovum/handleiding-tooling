@@ -45,3 +45,5 @@ nav:
         - Ontologie/index.md
     - Word2xxx:
         - Word2xxx/index.md
+    - Schemas maken:
+        - schemas/JSON.md
