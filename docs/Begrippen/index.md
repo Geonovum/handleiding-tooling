@@ -26,6 +26,8 @@ Een begrippenkader is niet meer dan een SKOS bestand in .ttl formaat. Er zijn ve
 
 **Regel:** We voldoen minimaal aan [Best Practice 1](https://docs.geostandaarden.nl/nl-sbb/nl-sbb/#bp-gangbare-conventies-voor-het-beschrijven-van-termen-voorkeurstermen-alternatieve-termen-zijn) uit NL-SBB.
 
+**Regel:** We voorkomen dat vrijwel dezelfde begrippen in verschillende begrippenkaders voorkomen door [de regels voor harmonisatie en hergebruik uit NL-SBB](https://docs.geostandaarden.nl/nl-sbb/nl-sbb/#harmonisatie-en-hergebruik) toe te passen.
+
 **TODO:** Verdere invulling van [best practices](https://docs.geostandaarden.nl/nl-sbb/nl-sbb/#H5) maken voor Geonovum.
 
 ### Regels voor het .ttl bestand
