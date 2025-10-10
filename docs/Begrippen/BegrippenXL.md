@@ -103,8 +103,3 @@ Kies een begrip dat je wilt verwijderen. Klik vervolgens op "Meer" in het dropdo
 Je wordt doorgestuurd naar de verwijderpagina. Voeg daar een reden toe en klik op "Pagina verwijderen".
 
 NOTE:als je geen "verwijderen" knop ziet dan vraag Tanja R. voor rechten.
-
-
-## Publiceren op [definities.geostandaarden.nl](https://definities.geostandaarden.nl/nl/)
-
-Het vocabulaire kan je downloaden als .ttl en dat publiceren. Automatische publicatie van begrippen op register is nog in ontwikelling door Archi XL.

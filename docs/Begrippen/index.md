@@ -12,31 +12,42 @@ Een begrippenmodel wordt opgesteld door mensen bij voorkeur voordat er een infor
 
 Hoewel niet wenselijk komt het ook voor dat er achteraf een begrippenmodel wordt gemaakt op basis van een informatiemodel.
 
-
 ## Hoe maak ik een begrippenmodel (technisch)
 
-Voor het maken en editen van begrippenmodellen zijn twee routes:
+Een begrippenkader is niet meer dan een SKOS bestand in .ttl formaat. Er zijn verschillende routes om hieraan te komen:
 
-1. Je kunt de [begrippenXL](begrippenXL.md) editor gebruiken.
-2. Je kunt de begrippen met Imvertor uit een UML digrap halen door de optie `createskos = yes` in de configuratie op te nemen.
-
-Dit SKOS bestand (in .ttl formaat) kan je daarna met de hand editen.
+1. Je kunt de [begrippenXL](BegrippenXL.md) editor gebruiken.
+2. Een begrippen model is niet veel meer dan een lijst met begrippen en definities. Met een spreadsheet kom je al een heel eind. Dan kun je later naar SKOS converteren.
+3. Je kunt de begrippen met Imvertor uit een UML model halen door de optie `createskos = yes` in de configuratie op te nemen. Dit levert een SKOS bestand wat je als tekstbestand kunt editen.
 
 ## Regels voor een begrippenmodel binnen Geonovum
 
 **Regel:** Een begrippenmodel is conform [NL-SBB](https://docs.geostandaarden.nl/nl-sbb/nl-sbb/)
 
-**Regel:** Een definitief begrippenmodel wordt gepubliceerd op: <https://definities.geostandaarden.nl>
-
 **Regel:** We voldoen minimaal aan [Best Practice 1](https://docs.geostandaarden.nl/nl-sbb/nl-sbb/#bp-gangbare-conventies-voor-het-beschrijven-van-termen-voorkeurstermen-alternatieve-termen-zijn) uit NL-SBB.
 
-**TODO:** Invulling van NL-SBB [best practices](https://docs.geostandaarden.nl/nl-sbb/nl-sbb/#H5) maken voor Geonovum.
+**TODO:** Verdere invulling van [best practices](https://docs.geostandaarden.nl/nl-sbb/nl-sbb/#H5) maken voor Geonovum.
+
+### Regels voor het .ttl bestand
+
+**Regel:** Het .ttl bestand bevat 1 begrippenkader.
+
+**Regel:** De uitleg van het begrippenkader is niet leeg.
 
 ### Het publiceren van een SKOS bestand
 
-Begrippenmodellen die nog niet definitief zijn kun je publiceren op: <https://staging-definities.geostandaarden.nl/>.
-Definitief publiceren gebeurt op <https://definities.geostandaarden.nl>
+**Regel:** Begrippenkaders worden in de conceptenbibliotheek gepubliceerd. Deze is te vinden op: <https://definities.geostandaarden.nl>
 
-Instructies voor het publiceren van het SKOS bestand staan in de laatste paragraaf van [begrippenXL](begrippenXL.md) editor.
+![conceptenbibliotheek](media/conceptenbibliotheek.png)
+
+**Regel:** Bij publicatie wordt de naam van het begrippenkader gebruikt als titel.
+
+**TODO:** Hoe bepaal je het kopje waaronder je bibliotheek terechtkomt? Moet je dat los aanleveren?
+
+Begrippenmodellen die nog niet definitief zijn kun je publiceren op: <https://staging-definities.geostandaarden.nl/>.
+
+Proces voor publicatie:
+- Maak een .ttl bestand aan. Stuur het .ttl bestand naar Tanja voor publicatie.
+- Automatische publicatie van begrippen op register is nog in ontwikelling door Archi XL.
 
 **Regel:** Bij het publiceren van een definitieve versie moet de staging versie verwijderd worden.
