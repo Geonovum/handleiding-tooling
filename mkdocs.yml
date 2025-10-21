@@ -28,6 +28,9 @@ nav:
         - Toolbox genereren: EA/MIM-toolbox-genereren.md
         - Toolbox genereren extensie: EA/MIM-toolbox-genereren-extensie.md
         - XMI exporteren: EA/xmi-exporteren.md
+    - UML:
+        - UML: UML/index.md
+        - Leeswijzer UML: UML/UML-leeswijzer.md
     - Subversion:
         - SVN: svn/index.md
         - SVN installeren voor EAP: svn/SVN-installeren-voor-EAP.md
