@@ -7,10 +7,8 @@ MIM staat voor het Metamodel voor Informatiemodellering en omvat de regels voor 
 In deze bijlage wordt beschreven hoe een MIM-UML-klassendiagram gelezen moet worden.
 Aan de hand van een model voor de adminstratie van een fietsenwinkel worden de MIM-UML constructies toegelicht.
 
-<figure id="admin-fietswinkel">
-    <img src="media/admin-fietswinkel.png" alt="Informatiemodel Fietsenwinkel">
-    <figcaption>Een MIM-UML klassediagram voor een informatiemodel over de administratie van een fietsenwinkel.</figcaption>
-</figure>
+![Informatiemodel Fietsenwinkel](media/admin-fietswinkel.png) "Een MIM-UML klassediagram voor een informatiemodel over de administratie van een fietsenwinkel."
+
 
 Het 'fietsenwinkelmodel' beschrijft de administratie van een fietsenwinkel. Een `Winkel` verkoopt `Fiets`en.
 Een `Winkel` heeft een naam en een locatie.
