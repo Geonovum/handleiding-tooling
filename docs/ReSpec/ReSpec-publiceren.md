@@ -1,112 +1,77 @@
 # Publiceren van een ReSpec document
 
-Dit hoofdstuk beschrijft hoe je een ReSpec document publiceert op: docs.geostandaarden.nl. 
+Dit hoofdstuk beschrijft hoe je een ReSpec document publiceert op: <https://docs.geostandaarden.nl> en gebeurt in de volgende stappen:
 
-## Controles voor publicatie
+1. Geef het document de juiste status en vul de bijbehorende velden in.
+2. Controleer of het document klaar is voor publicatie.
+3. Check het document in op GitHub.
+4. Druk in GitHub op de release knop.
+5. Na succesvolle publicatie:
+    - zet de `specStatus` in `config.js` terug op `"wv"`
+    - Vul `previousMaturity` met de gepubliceerde `specStatus`
+    - Vul `previousPublishDate` in met de datum `publishDate`
 
-Publicatie is grotendeel geautomatiseerd als aan de volgende voorwaarden is voldaan:
+Stap 4 zorgt voor een pull request op <https://github.com/Geonovum/docs.geostandaarden.nl>. Eén van de reviewers Frank Terpstra, Linda van den Brink of Wilko Quak checkt de publicatie.
+   Als alles goed is bevonden  wordt het document vervolgens automatisch gepubliceerd op 
+   [docs.geostandaarden.nl](http://docs.geostandaarden.nl)
+
+## Geef het document de juiste status en vul de bijbehorende velden in.
+
+### Consultatieversie (cv)
+
+Controleer de volgende velden in `js/config.js`:
+
+- `specStatus`:`"cv"
+- `publishDate`: moet ingevuld zijn met de datum van publicatie van de. `"jjjj-mm-dd"`
+- `shortname` : moet ingevuld zijn.
+- Als er al eerder een versie gepubliceerd is moet daarnaar verwezen worden via het invullen van `Previousmaturity` en `previousPublishDate`.
+
+
+### Vastellingsversie versie (vv)
+
+- specStatus: "vv"
+- publishDate: moet ingevuld zijn met de datum van publicatie van de
+      consultatieversie. "jjjj-mm-dd",
+- Shortname: moet ingevuld zijn met korte naam voor het document. Dit wordt
+      onderdeel van de URL. Moet uniek zijn binnen pubdomain (afgezien van
+      versies).
+- Als er al eerder een versie gepubliceerd is moet daarnaar verwezen worden via het invullen van `Previousmaturity` en `previousPublishDate`.
+
+
+###  Definitieve versie (def)
+
+- specStatus: "def",
+- publishDate: de publicatiedatum van de definitieve versie. "jjjj-mm-dd",
+- Als er al eerder een versie gepubliceerd is moet daarnaar verwezen worden via het invullen van `Previousmaturity` en `previousPublishDate`.
+
+
+**Noot:**
+Automatisch publiceren werkt alleen in Github repositories waar, conform de [werkwijze](./index.md#respec-via-markdown), maar één ReSpec document in staat. Als er meerdere Respec documenten in een repository staan kun je [handmatig publiceren](#handmatig-publiceren-van-respec-document).
+
+
+## Is het document publicatieklaar?
+
+Publicatie is geautomatiseerd als aan de volgende voorwaarden is voldaan:
 
 - de folderstructuur van de repository waarin het ReSpec document staat, moet conform de [Geonovum ReSpec template](https://github.com/Geonovum/NL-ReSpec-template) zijn
     - dat wil zeggen, `index.html` in de root folder, `config.js` in `/js` folder, afbeeldingen in `/media` en/of `/data/Images` folder;
 - de github repository mag maar één ReSpec document bevatten.
 
 In het proces wordt op het volgende gecontroleerd:
-- Controleer op **WCAG** (web toegankelijkheids-) regels. Bij het pushen van een ReSpec document naar
+
+- Controle op **WCAG** (web toegankelijkheids-) regels. Bij het pushen van een ReSpec document naar
   GitHub wordt automatisch een WCAG rapport geschreven. Dit is te vinden onder
   'Actions'. Kies hier de commit die je gedaan hebt en je ziet daar
   'build/WCAG Accessibility Check'). Deze controle checkt ook de HTML.
-- Controleer op **Broken links**. Bij het pushen van een ReSpec document naar
+- Controle op **Broken links**. Bij het pushen van een ReSpec document naar
   GitHub wordt automatisch op broken links gecontroleerd. Dit is te vinden onder
   'Actions'. Kies hier de commit die je gedaan hebt en je ziet daar
   'Build/Link validation').
 
 
-## Actie voor publiceren van een Consultatie versie (CV)
-
-1. In 'js/config.js':
-    - `specStatus`:`"cv"`
-    - `publishDate`: moet ingevuld zijn met de datum van publicatie van de. `"jjjj-mm-dd"`,
-    - `Shortname`: moet ingevuld zijn met korte naam voor het document. Dit
-      wordt onderdeel van de URL. Moet uniek zijn binnen pubdomain (afgezien van
-      versies).
-        - Als er al eerder een versie gepubliceerd is (stabiele versie, dus
-          afgezien van de werkversie in github), kan Respec bovenin een document
-          de navigatie naar vorige versie goed genereren. Daarvoor moet je ook
-          invullen:
-        - `Previousmaturity`: wat de status toen was.
-        - `previousPublishDate`: wat de status toen was.
-2. Commit je wijzigingen en push de commit. 
-3. Maak op github een Release. De automatische workflow maakt dan een pull request voor
-   <https://github.com/Geonovum/docs.geostandaarden.nl> aan.
-3. Eén van de reviewers Frank Terpstra, Linda van den Brink of Wilko Quak checkt de publicatie.
-   Als alles goed is bevonden  wordt het document vervolgens automatisch gepubliceerd op 
-   [docs.geostandaarden.nl](http://docs.geostandaarden.nl).
-4. Na succesvolle publicatie:
-    - zet de `specStatus` in `config.js` terug op `"wv"`
-    - Vul `previousMaturity` in met `"cv"`
-    - Vul `previousPublishDate` in met de datum van de zojuist gepubliceerde
-      consultatieversie
-
-## Acties voor publiceren van een Vastellingsversie versie (VV)
-
-1. Edit en controleer config.js - configureer alles goed voor een
-   vaststellingsversie
-    - specStatus: "vv"
-    - publishDate: moet ingevuld zijn met de datum van publicatie van de
-      consultatieversie. "jjjj-mm-dd",
-    - Shortname: moet ingevuld zijn met korte naam voor het document. Dit wordt
-      onderdeel van de URL. Moet uniek zijn binnen pubdomain (afgezien van
-      versies).
-        - Als er al eerder een versie gepubliceerd is (stabiele versie, dus
-          afgezien van de werkversie in github), kan Respec bovenin een document
-          de navigatie naar vorige versie goed genereren. Daarvoor moet je ook
-          invullen:
-        - Previousmaturity: wat de status toen was.
-        - Previousmaturity: wat de status toen was.
-2. Commit je wijzigingen en push de commit. 
-3. Maak op github een Release. De automatische workflow maakt dan een pull request voor
-   <https://github.com/Geonovum/docs.geostandaarden.nl> aan.
-3. Eén van de reviewers Frank Terpstra, Linda van den Brink of Wilko Quak checkt de publicatie.
-   Als alles goed is bevonden  wordt het document vervolgens automatisch gepubliceerd op 
-   [docs.geostandaarden.nl](http://docs.geostandaarden.nl).
-7. Na succesvolle publicatie:
-    - zet de specStatus in config.js terug op WV
-    - Vul previousMaturity in met CV
-    - Vul previousPublishDate in met de datum van de zojuist gepubliceerde
-      consultatieversie
-
-### Acties voor het publiceren van een Definitieve versie (DEF) maken
-
-1. Zet in config.js alles goed voor een definitieve versie
-    - specStatus: "def",
-    - publishDate: de publicatiedatum van de definitieve versie. "jjjj-mm-dd",
-    - Shortname: korte naam voor het document. Dit wordt
-      onderdeel van de URL. Moet uniek zijn binnen pubdomain (afgezien van
-      versies).
-    - Als er al eerder een versie gepubliceerd is (stabiele versie, dus afgezien
-      van de werkversie in github), kan Respec bovenin een document de navigatie
-      naar vorige versie goed genereren. Daarvoor moet je ook invullen:
-        - Previousmaturity: wat de status toen was.
-        - previousPublishDate: vorige publicatiedatum (jjjj-mm-dd)
-2. Commit je wijzigingen en push de commit.
-3. Maak op github een Release. De automatische workflow maakt dan een pull request voor
-   <https://github.com/Geonovum/docs.geostandaarden.nl> aan.
-3. Eén van de reviewers Frank Terpstra, Linda van den Brink of Wilko Quak checkt de publicatie.
-   Als alles goed is bevonden  wordt het document vervolgens automatisch gepubliceerd op 
-   [docs.geostandaarden.nl](http://docs.geostandaarden.nl).
-7. Na succesvolle publicatie:
-    - zet de specStatus in config.js terug op WV
-    - Vul previousMaturity in met DEF
-    - Vul previousPublishDate in met de datum van de zojuist gepubliceerde
-      definitieve versie
 
 
-**Noot:**
-Automatisch publiceren werkt alleen in Github repositories waar, conform de [werkwijze](./index.md#respec-via-markdown), maar één ReSpec document in staat. 
-
-Als er meerdere Respec documenten in een repository staan kun je [handmatig publiceren](#handmatig-publiceren-van-respec-document).
-
-## Automatisch publiceren via de workflow
+## Publiceer Automatisch
 
 De automatische workflow gaat aan het werk bij elke keer dat je een Release aanmaakt in github. De stappen om een ReSpec document te publiceren naar docs.geostandaarden.nl via de workflow zijn als volgt:
 
@@ -123,7 +88,6 @@ De automatische workflow gaat aan het werk bij elke keer dat je een Release aanm
     - Na goedkeuring van de PR (door Wilko, Frank of Linda) wordt het document gepubliceerd op: https://docs.geostandaarden.nl/
 
 Meer documentatie staat in de readme van [NL-ReSpec-template](https://github.com/Geonovum/NL-ReSpec-template?tab=readme-ov-file#automatische-checks-en-build).
-
 
 
 ### Configureren van de automatische workflow
@@ -168,4 +132,4 @@ Het ‘handmatige’ publicatieproces voor docs.geostandaarden.nl is als volgt:
 
 - Docs.geostandaarden.nl is een mirror van: <https://github.com/Geonovum/docs.geostandaarden.nl/>
 - Handmatige publicaie bestaat nu uit het rechtstreeks wijzigen van dit reopsitory. Maak in dit geval een pull request voor het repository en laat het goedkeuren zoals hierboven beschreven.
-- In extreme gevallen kunnen beheerders ook zonder pull request wijzigingen doorvoer. In dat geval moet <docs.geostandaarden.nl> handmatig gesynchroniseerd worden. Dat kan via <https://github.com/Geonovum/docs.geostandaarden.nl/actions/workflows/deploy.yml> . Hier zie je een knopje: ‘Run workflow’.
+- In noodgevallen kunnen beheerders ook zonder pull request wijzigingen doorvoeren. In dat geval moet <docs.geostandaarden.nl> handmatig gesynchroniseerd worden. Dat kan via <https://github.com/Geonovum/docs.geostandaarden.nl/actions/workflows/deploy.yml> . Hier zie je een knopje: ‘Run workflow’.
