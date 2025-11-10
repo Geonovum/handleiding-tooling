@@ -12,7 +12,7 @@ De [installatieinstructie](https://armatiek.nl/doc/imvertor/imvertor-startup/1.0
 
 | onderwerp             | verwijzing                                                                                                                    |
 | --------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
-| Imvertor-properties   | [Uitleg verschillende properties](https://imvertor.armatiek.nl/imvertor-executor/dashboard/wiki?key=info-IMVERTORCONFIG-PROP) |
+| Imvertor-properties   | [Uitleg verschillende properties](https://armatiek.nl/doc/imvertor/imvertor-properties/1.0/) |
 | Algemeen              | [Verzamelde handleiding van organisaties](https://vng-realisatie.github.io/Model-Driven-Design-Documentatie/)                 |
 | Werkinstructie        | [IMGeluid werkinstructie](https://geonovum.atlassian.net/l/cp/Fi0U9bCk)                                                       |
 | Uitleg schema mapping | [Hier](https://imvertor.armatiek.nl/imvertor-executor/dashboard/wiki?key=info-IMVERTORCONCEPTUALSCHEMAS)                      |
@@ -29,11 +29,10 @@ Een Imvertor run levert een flink aantal UML diagrammen op in de `data` folder. 
 
 Imvertor in in staat om verschillende soorten schema's (i.e. verschillende
 uitwisselformaten) te genereren. Via het properties file kun je aangeven of en
-welke schema's je wilt genereren. Er zijn ook (gelimiteerde) mogelijkheden om
-datgene wat er gegenereerd wordt aan je wensen aan te passen. 
+welke schema's je wilt genereren. Er zijn ook  mogelijkheden om
+datgene wat er gegenereerd wordt aan je wensen aan te passen via het Imvertor-properties bestand zie: [properties](https://armatiek.nl/doc/imvertor/imvertor-properties/1.0/)
 
-Zie de [imvertor documentatie van het properties
-file](https://imvertor.armatiek.nl/imvertor-executor/dashboard/wiki?key=info-IMVERTORCONFIG-PROP). 
+
 
 ### JSON genereren
 
