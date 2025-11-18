@@ -69,23 +69,25 @@ In het proces wordt op het volgende gecontroleerd:
   'Build/Link validation').
 
 
-
-
-## Publiceer Automatisch
+## Publiceer via een GitHub release
 
 De automatische workflow gaat aan het werk bij elke keer dat je een Release aanmaakt in github. De stappen om een ReSpec document te publiceren naar docs.geostandaarden.nl via de workflow zijn als volgt:
 
-1. configureer je document op de juiste manier (zie [Publiceren in ReSpec](./index.md#publiceren-in-respec) en commit je wijzigingen.
+1. Zorg dat het document helemaal goed klaarstaat in je eigen repository
     1. Er wordt een HTML snapshot aangemaakt via ReSpec
     1. (optioneel) PDF wordt gegenereerd indien je dit geconfigureerd hebt
     1. WCAG (web toegankelijkheidseisen) en HTML worden gevalideerd
     1. Links worden gecontroleerd
-1. Bekijk de resultaten van de controles via het tabblad **Actions** van de repository. Als er fouten gevonden zijn, los deze dan op en herhaal stap 1, of vraag om hulp.
-1. (optioneel) maak een Pre-release aan in de github repository. 
-    - Het ReSpec document wordt automatisch gepubliceerd op [test.docs.geostandaarden.nl](https://test.docs.geostandaarden.nl/). Je kunt het hier bekijken om te zien of alles goed is gegaan.
-1. Maak een Release aan in de github repository (zie [Publiceren in ReSpec](./index.md#publiceren-in-respec) voor meer informatie). 
-    - Er wordt automatisch een Pull Request (PR) aangemaakt naar: Geonovum/docs.geostandaarden.nl
-    - Na goedkeuring van de PR (door Wilko, Frank of Linda) wordt het document gepubliceerd op: https://docs.geostandaarden.nl/
+2. Bekijk de resultaten van de controles via het tabblad **Actions** van de repository. Als er fouten gevonden zijn, los deze dan op en herhaal stap 1, of vraag om hulp.
+3. Maak een Release aan in GitHub:
+    1. Ga naar Releases.
+    2. Kies 'Draft a new release'
+    3. Als je het vinkje 'Set as a pre-release' aanzet wordt het document automatisch als test gepubliceer op <https://test.docs.geostandaarden.nl/>
+    4. Bij een echte release een Pull Request (PR) aangemaakt naar: Geonovum/docs.geostandaarden.nl
+    5. Na goedkeuring van de PR (door Wilko, Frank of Linda) wordt het document gepubliceerd op: https://docs.geostandaarden.nl/
+
+
+![Release a Document](media/ReleaseADocument.png)
 
 Meer documentatie staat in de readme van [NL-ReSpec-template](https://github.com/Geonovum/NL-ReSpec-template?tab=readme-ov-file#automatische-checks-en-build).
 
