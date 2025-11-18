@@ -191,6 +191,15 @@ Naamgevinsregels voor pubDomain:
 | vtm            |                                                          | docs.geostandaarden.nl     | is eigenlijk metadata     |                                                               | verhuizen naar MD                       |
 | wp             | Whitepaper Geostandaarden                                | respec utils               | ook een raar pubdomain    |                                                               | verhuizen naar ngii                     |
 
+
+## shortName
+
+Korte identificatie van het document die gebruikt wordt in de URL.
+
+**Regel:** shortName mag geen uppercase letters bevatten.
+
+
+
 ## Bibliografie
 
 ReSpec maakt automatisch een literatuurlijst van alle documenten waarnaar
