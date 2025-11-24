@@ -13,12 +13,8 @@ ReSpec publicatie:
 
 ![publicatie infrastructuur](media/WorkflowReSpecGit.drawio.svg)
 
-Het proces bestaat uit een [voortbrengingsproces](#het-voorbrengingsproces-respec-document-uitchecken-wijzigen-en-weer-inchecken) waarin met het werkveld het
+Het proces bestaat uit een [voortbrengingsproces](#het-voorbrengingsproces) waarin met het werkveld het
 document wordt gemaakt. Als uit dit proces een publiceerbare versie ontstaat wordt deze via het [publicatieproces](./ReSpec-publiceren.md) gepubliceerd.
-
-- [1] Check het document wat je wilt bewerken met `git pull` uit.
-- [2] Wijzig je document locaal en 'commit' de changes.
-- [3] Met 'git push' zet je de locatie wijzigingen terug naar de centrale lop.e
 
 Geonovum gebruikt een fork van ReSpec die door Logius beheerd wordt. Meer
 documentatie is op andere plaatsen te vinden:
@@ -33,7 +29,7 @@ documentatie is op andere plaatsen te vinden:
   een fork van de w3c ReSpec met aanpassingen voor Geonovum. Deze is
   achterhaald omdat we nu van de Logius Respec gebruik maken. (TODO aanpassen)
 
-## Het voorbrengingsproces: ReSpec document uitchecken wijzigen en weer inchecken
+## Het voorbrengingsproces
 
 - ReSpec documenten worden beheerd in een GitHub repository. Meestal zit er één ReSpec document in een repository.
 - Maakt met `git clone` een lokaal kopie van repository waarin het ReSpec document zodat je het lokaal kunt bewerken. Een overzicht van alle GitHub repositories van Geonovum staat [hier](https://github.com/Geonovum/repositories).
