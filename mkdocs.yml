@@ -13,7 +13,7 @@ nav:
     - GitHub:
         - 'Manual': GitHub/index.md
         - 'GitHub intro': GitHub/GitHub-Inleiding.md
-        - 'GitHub beheer' : Github/GitHub-beheer.md
+        - 'GitHub beheer' : GitHub/GitHub-beheer.md
     - Imvertor:
         - Imvertor/index.md
     - Markdown:
