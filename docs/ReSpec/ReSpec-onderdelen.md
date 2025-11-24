@@ -142,10 +142,8 @@ deze lijst is als volgt:
 2. docs.geostandaarden.nl.
 3. register.geostandaarden.nl.
 
-Naamgevinsregels voor pubDomain:
+**Regel:** een pubdomain mag geen hoofletters of spaties bevatten.
 
-- Lowercase
-- Geen spaties
 
 | Pubdomain      | Omschrijving                                             | Herkomst                   | status                    | GitHub Team                                                   | Beslissing                              |
 | -------------- | -------------------------------------------------------- | -------------------------- | ------------------------- | ------------------------------------------------------------- | --------------------------------------- |
