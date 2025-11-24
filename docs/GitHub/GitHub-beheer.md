@@ -3,13 +3,16 @@
 ## Github beheer
 
 - Github teamleden met beheerders rechten zijn te vinden via: <https://github.com/orgs/Geonovum/people?query=role%3Aowner>
-- Daarnaast zijn er nog drie inhoudelijk beheerders vanuit Geonovum: Arnoud de Boer, Frank Terpstra en Linda vd Brink.
+
+**Regel:** Alle beheerders en teamleden hebben 2FA aanstaan.
+
+
 
 ## Github gebruikers
 
-- Leden van het Geonovum team op GitHub staan op: <https://github.com/orgs/Geonovum/people>.
-- Er is geen bezwaar tegen het gebruiken van een privé account binnen de github omgeving.
-- Werk je niet meer bij Geonovum wordt je omgezet naar 'External Collaborator'.
+**Regel:** Er is geen bezwaar tegen het gebruiken van een privé account binnen de github omgeving.
+
+**Regel:** Alleen Geonovum werknemers kunnen lid worden van de Geonovum organisatie. Anderen worden 'External Collaborator'.
 
 ## GitHub teams
 
