@@ -12,7 +12,8 @@ nav:
         - 'Verdere documentatie': werkwijze-todo.md
     - GitHub:
         - 'Manual': GitHub/index.md
-        - 'GitHub Intro': GitHub/GitHub-Inleiding.md
+        - 'GitHub intro': GitHub/GitHub-Inleiding.md
+        - 'GitHub beheer' : Github/GitHub-beheer.md
     - Imvertor:
         - Imvertor/index.md
     - Markdown:
