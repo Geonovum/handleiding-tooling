@@ -1,4 +1,8 @@
-## UML leeswijzer: Hoe lees je een MIM-UML-klassendiagram?
+## Wat is UML
+
+Onderstaande leeswijzer is een kopie van de leeswijzer in [MIM-UML](https://github.com/Geonovum/mim-uml/blob/main/Bijlage_leeswijzer-MIM-UML.md).
+
+### UML leeswijzer: Hoe lees je een MIM-UML-klassendiagram?
 
 UML staat voor Unified Modelling Language en is een formele modelleertaal om objectgeoriënteerde analyses, ontwerpen en specificaties voor een informatiesysteem te kunnen maken. UML is een visuele modelleertaal om met behulp van diagrammen verschillende onderdelen van een specificatie te beschrijven. Het UML-klassendiagram is daarvan het diagramtype om de structuur en inhoud van informatie te modelleren: het informatiemodel.
 
@@ -17,7 +21,7 @@ Een `Fiets` heeft allerlei kenmerken en er zijn twee type fietsen: `Stadsfiets` 
 
 Al deze informatie wordt middels MIM-UML formeel in een informatiemodel vastgelegd. 
 
-Er zijn de volgende MIM-UML constructies:    
+Er zijn de volgende MIM-UML constructies:
 
 **Objecttypen**
 
