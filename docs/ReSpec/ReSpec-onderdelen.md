@@ -210,7 +210,7 @@ we gebruiken [[SemVer]] voor het nummeren van versies.
 De referentie in dubbele blokhaken wordt op drie niveaus gezocht:
 
 - Een globale lijst is te vinden op: [SpecRef](https://www.specref.org/).
-- Een Geonovum brede lijst is te vinden op: [specref.geostandaarden.nl](https://specref.geostandaarden.nl/)
+- Een Geonovum brede lijst is te vinden op: [specref.geostandaarden.nl](https://specref.geostandaarden.nl/). Deze lijst wordt beheerd via: <https://tools.geostandaarden.nl/respec/config/geonovum-config.js>.
 - In de lokale `config.js` kan je lokale referenties toevoegen
 
 Bij verwijzingen kan je kiezen of ze normatief zijn of niet. In
