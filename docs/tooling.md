@@ -118,40 +118,18 @@ Staat los van de rest van de publicatie infrastructuur.
 
 Staat los van rest van publicatie infrastructuur.
 
+### [17] Modeldesk UML tooling
+
+Zie <https://modeldesk.io/>
 
 ## beheer
 
 Voor licenties of de interne beheerder van de tooling kun je terecht op
 [intranet](https://stichtinggeonovum.sharepoint.com/:b:/s/FBICT/IQC8YxUUkR6tRr6RnMcPSmOgAQxZOKTlWu6-wg4oWK6oiwI?e=5SyNFk)
 
-## Aandachtspunten
-
-- **Algemeen**
-    - Het is niet één gezicht naar buiten maar meerdere. De samenhang kan beter.
-- **UML**
-    - We gebruiken ook [Modeldesk](https://modeldesk.io/).
-- **modellen.geostandaarden.nl**
-    - Hoe kan het dat hier maar 1 standaard op staat?
-- **docs.geostandaarden.nl**
-    - Documenten op de site zouden self contained moeten zijn maar sommige verwijzen naar css bestanden op register.geostandaarden.nl waardoor gepubliceerde standaarden opeens onleesbaar kunnen worden.
-- **definities.geostandaarden.nl**
-    - Er zijn hiervoor twee verschillende werkwijzes die een verschillend resultaat leveren. Goede beschrijving werkwijze is hier nodig.
-- **beheertools**
-    - Deze server moet zelf in beheer genomen worden.
-- **ReSpec**
-    - Heel veel documenten zijn van minder dan gewenste kwaliteit omdat er geen goede kwaliteitscriteria en controle mechanismes zijn.
-- **Website Geonovum**
-    - Beheer links met technische servers is vooral handmatig.
-    - Scheiding met technische servers kan leiden tot lagere ranking documenten bij zoeken.
-- **Microsoft teams**
-    - Dit is vooral een intern systeem waardoor samenwerking met externe partijen soms lastig is.
-    - Alle teams zouden voor iedereeen binnen Geonovum zichbaar moeten zijn maar zijn dat niet.
-    - Onderscheid tussen dingen die per jaar gaan en dingen die per project gaan is niet goed geregeld.
-    - Heel veel spookmappen en document die bij niemand bekend zijn.
-
 ## MkDocs voor deze handleiding
 
-De handleiding wordt beheerd in [MkDocs](https://www.mkdocs.org/). Dit is een
+Deze handleiding maakt gebruik van [MkDocs](https://www.mkdocs.org/), een
 lichtgewicht tool die een doorzoekbare en navigeerbare site maakt van een
 verzameling Markdown documenten. De handleiding staat op
 [github pages](https://github.com/Geonovum/handleiding-tooling). De
@@ -159,7 +137,7 @@ bronbestanden staan in:
 [handleiding-tooling](https://github.com/Geonovum/handleiding-tooling).
 
 Je kunt mkdocs ook lokaal installeren. Dan kun je live je edits volgen in je
-browser: [http://127.0.0.1:8000/](http://127.0.0.1:8000/) met het commando:
+browser: <http://127.0.0.1:8000/> met het commando:
 
 ```shell
 mkdocs serve
