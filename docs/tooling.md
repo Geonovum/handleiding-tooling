@@ -13,28 +13,42 @@ Dit is de publicatie infrastructuur van Geonovum. Onder het architectuurplaatje 
 
 ### [1] UML
 
-- UML klasse diagrammen maken we met Enterprise Architect.
-- Binnen UML gebruiken we MIM als metataal.
-- Ook gebruiken we NEN 3610 als raamwerk.
+- UML klasse diagrammen maken we met Enterprise Architect. (zie [UML](UML/index.md))
+- Binnen UML gebruiken we MIM als meta-taal. (zie [MIM](MIM/index.md))
+- We gebruiken NEN 3610 als raamwerk.
+- [Overzicht](EA/index.md)
+- [Primitieve datatypes](EA/EA-toepassing-standaarddatatypen.md): Handleiding
+    en toelichting op het toepassen van standaarddatatypes in
+    modelleeromgeving Geonovum.
+- [Toolbox importeren](EA/MIM-toolbox-importeren.md): Handleiding voor het
+    importeren van de MIM-toolbox in EA.
 
 ### [2] Subversion
 
-- De UML diagram worden met subversion (svn) beheerd.
-- Deze server draait op `svn.geostandaarden.nl`
+- De UML diagram worden met subversion (svn) beheerd. (zie [svn](svn/index.md))
+- De repositories staan op `svn.geostandaarden.nl`
+- [Subversion installeren voor EA](svn/SVN-importeren-bestaand-project.md):
+    Installatie SVN en informatiemodel in versiebeheer zetten.
+- [Subversion importeren bestaand project](svn/SVN-installeren-voor-EAP.md):
+    Packages importeren vanuit SVN in EA.
+
 
 ### [3] Imvertor
 
-- Imvertor vertaalt het UML naar catalog, xsd etc.
+- Imvertor vertaalt het UML naar catalog, xsd etc. (zie [Imvertor](Imvertor/index.md))
 
 ### [4] ReSpec document
 
-- Onze standaarden maken we in ReSpec.
+- Onze standaarden maken we in ReSpec. (zie [ReSpec](ReSpec/index.md))
 - Dit is een tool die uit een aantal bestanden (Markdown, HTML) een mooi document publiceert.
 - De bestanden beheren we in GitHub
 
 ### [5] GitHub
 
 - Onze standaarden beheren en versioneren we in GitHub.
+- [GitHub werkwijze](GitHub/GitHub-Inleiding.md): algemene inleiding over GitHub.
+- [GitHub handleiding](GitHub/index.md): Hoe maak je een account aan en hoe doe
+    je beheertaken.
 
 ### [6] docs.geostandaarden.nl
 
@@ -50,55 +64,13 @@ hier de logo's die in docs.geostandaarden.nl gebruikt worden.
 
 Interne server die beheertaken automatiseert.
 
+### [8] Word2ResSpec
+
+- [Word2werkversie](Word2xxx/index.md)
+
 ### [9] register.geostandaarden.nl
 
 Technisch register met xml-schemas, json-schemas etc.
-
-### [13] Nationaal Georegister
-
-Staat los van de rest van de publicatie infrastructuur.
-
-### [14] Web server van Geonovum
-
-Staat los van rest van publicatie infrastructuur.
-
-## Documentatie
-
-### [1] UML
-
-- [Overzicht](EA/index.md)
-- [Primitieve datatypes](EA/EA-toepassing-standaarddatatypen.md): Handleiding
-    en toelichting op het toepassen van standaarddatatypes in
-    modelleeromgeving Geonovum.
-- [Toolbox importeren](EA/MIM-toolbox-importeren.md): Handleiding voor het
-    importeren van de MIM-toolbox in EA.
-
-### [2] Subversion
-
-- [Subversion installeren voor EA](svn/SVN-importeren-bestaand-project.md):
-    Installatie SVN en informatiemodel in versiebeheer zetten.
-- [Subversion importeren bestaand project](svn/SVN-installeren-voor-EAP.md):
-    Packages importeren vanuit SVN in EA.
-
-### [3] Imvertor
-
-- [Imvertor](Imvertor/index.md): Verwijzingen naar verschillende onderwerpen met
-    betrekking tot Imvertor.
-
-### [4] ReSpec
-- [Respec handleiding](ReSpec/index.md): Algemene handleiding.
-
-### [5] GitHub
-- [GitHub werkwijze](GitHub/GitHub-Inleiding.md): algemene inleiding over GitHub.
-- [GitHub handleiding](GitHub/index.md): Hoe maak je een account aan en hoe doe
-    je beheertaken.
-
-### [6] docs.geostandaarden.nl
-- Zie [pubDomainList.json](https://github.com/Geonovum/respec-utils/blob/master/src/autodeploy/config/pubDomainList.json)
-
-
-### [9] register.geostandaarden.nl
-
 Invulinstructies: [https://github.com/Geonovum/technisch-register-2019/blob/master/documentatie/HandleidingVoorBeheerdersInformatiemodellen.md](https://github.com/Geonovum/technisch-register-2019/blob/master/documentatie/HandleidingVoorBeheerdersInformatiemodellen.md)
  
 Technische onderdelen van de standaard worden op: [register.geostandaarden.nl](https://register.geostandaarden.nl) gezet. Hoe je dit met een webhook kan doen staat beschreven in: [technisch-register-2019](https://github.com/Geonovum/technisch-register-2019/blob/master/documentatie/Handleiding%20voor%20beheerders%20informatiemodellen.md)
@@ -129,63 +101,43 @@ xmi is het uitwisselformaat voor UML modellen. Er zijn veel smaken. Voorstel voo
 - Selecteer het te exporteren root package. Kies 'Publish-->Export XML'.
 - Kies Export Type: 'XML 1.1'.
 
-
 ### [10] Markdown
  - [Markdown handleiding](Markdown/index.md): Handleiding werken met Markdown
      voor ReSpec-documentatie.
 
-### MIM
-- [Toolbox genereren](EA/MIM-toolbox-genereren.md): Handleiding voor het
-    maken van een EA-toolbox.
-- [Toolbox genereren extensie](EA/MIM-toolbox-genereren-extensie.md):
-    Handleiding voor het maken van een extensie op de MIM-toolbox.
-
-### GML
-
-- [GML](GML/index.md): Toelichting GML, XSD en Namespaces.
-
-### Ontologie
+### [11] Ontologie (modellen.geostandaarden.nl)
 
 - [Ontologie](Ontologie/index.md): Handleiding
     voor het maken en publiceren van een ontologie.
 
-### Word2ResSpec
+### [13] Nationaal Georegister
 
-- [Word2werkversie](Word2xxx/index.md)
+Staat los van de rest van de publicatie infrastructuur.
 
-### Ontologieën (modellen.geostandaarden.nl)
+### [14] Web server van Geonovum
 
-Er is één ontologie gepubliceerd: die van NEN 3610. 
+Staat los van rest van publicatie infrastructuur.
 
-Dit is uitgelegd in de [handleiding ontologie maken](Ontologie/index.md)
 
 ## beheer
 
 Voor licenties of de interne beheerder van de tooling kun je terecht op
-[intranet](https://stichtinggeonovum.sharepoint.com/:b:/r/sites/FBICT/Gedeelde%20documenten/General/wat%20staat%20waar/Tooling_en_Beheerders.pdf?csf=1&web=1&e=aEcKjl)
+[intranet](https://stichtinggeonovum.sharepoint.com/:b:/s/FBICT/IQC8YxUUkR6tRr6RnMcPSmOgAQxZOKTlWu6-wg4oWK6oiwI?e=5SyNFk)
 
 ## Aandachtspunten
 
 - **Algemeen**
     - Het is niet één gezicht naar buiten maar meerdere. De samenhang kan beter.
 - **UML**
-    - Er is een alternatieve tool voor UML. Wat gaan we daar mee doen? [Modeldesk](https://modeldesk.io/).
-- **Imvertor**
-    - De beheerders van Imvertor willen binnenkort met pensioen.
-    - Imvertor is niet echt modulair
+    - We gebruiken ook [Modeldesk](https://modeldesk.io/).
 - **modellen.geostandaarden.nl**
     - Hoe kan het dat hier maar 1 standaard op staat?
 - **docs.geostandaarden.nl**
-    - De gegevens op deze server worden slecht beheerd. We hebben ideeën voor een mooie beheeromgeving maar die is er nog niet.
     - Documenten op de site zouden self contained moeten zijn maar sommige verwijzen naar css bestanden op register.geostandaarden.nl waardoor gepubliceerde standaarden opeens onleesbaar kunnen worden.
 - **definities.geostandaarden.nl**
     - Er zijn hiervoor twee verschillende werkwijzes die een verschillend resultaat leveren. Goede beschrijving werkwijze is hier nodig.
-- **register.geostandaarden.nl**
-    - De documenten die hierop staan zijn niet in beheer.
 - **beheertools**
     - Deze server moet zelf in beheer genomen worden.
-- **GitHub**
-    - Deze server is publiek waardoor alles wat hierop staat publiek is.
 - **ReSpec**
     - Heel veel documenten zijn van minder dan gewenste kwaliteit omdat er geen goede kwaliteitscriteria en controle mechanismes zijn.
 - **Website Geonovum**
