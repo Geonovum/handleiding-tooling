@@ -40,8 +40,8 @@ Imvertor genereert dan een `.json` en een `.yaml` bestand. Dit zijn, in 2
 formaten, API beschrijvingen conform OpenAPI 3.0.0 die zijn gegenereerd uit je
 informatiemodel. 
 
-Met de property `createjsonschemavariant` kun je varianten configureren. Zie [handleiding](https://armatiek.nl/doc/imvertor/imvertor-properties/1.0/#cli-createjsonschemavariant)
-Voor meer informatie: zie [hier](https://geonovum.github.io/handleiding-tooling/schemas/JSON/)
+Met de property `createjsonschemavariant` kun je varianten configureren. Zie [handleiding](https://armatiek.nl/doc/imvertor/imvertor-properties/1.0/#cli-createjsonschemavariant).  
+Voor meer informatie: zie [hier](https://geonovum.github.io/handleiding-tooling/schemas/JSON/).
 
 
 ### Mapping van geo-klassen en -typen
