@@ -7,6 +7,7 @@ een add-in in [Enterprise Architect](../EA/index.md)
 ## Installatie
 
 De [installatieinstructie](https://armatiek.nl/doc/imvertor/imvertor-startup/1.0/#installeren-van-de-software). Houd er rekening mee dat je ondersteuning nodig kunt hebben van systeembeheer voor deze installatie.
+Wanneer de knop "Toch uitvoeren" niet verschijnt, moet je de cmd-promp openen als administrator en dan het gedownloade installatiescript runnen door de filenaam van de executable met pad en extensie in te tikken en enter te geven.
 
 ## Gebruik
 
@@ -40,6 +41,7 @@ formaten, API beschrijvingen conform OpenAPI 3.0.0 die zijn gegenereerd uit je
 informatiemodel. 
 
 Met de property `createjsonschemavariant` kun je varianten configureren. Zie [handleiding](https://armatiek.nl/doc/imvertor/imvertor-properties/1.0/#cli-createjsonschemavariant)
+Voor meer informatie: zie [hier](https://geonovum.github.io/handleiding-tooling/schemas/JSON/)
 
 
 ### Mapping van geo-klassen en -typen
