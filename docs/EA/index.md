@@ -8,6 +8,7 @@ Dit moet binnen EA geconfigureerd worden.
 
 - Neem voor installatie en licentie contact op met de
   [beheerder](https://stichtinggeonovum.sharepoint.com/:b:/r/sites/FBICT/Gedeelde%20documenten/General/wat%20staat%20waar/Tooling_en_Beheerders.pdf?csf=1&web=1&e=aEcKjl)
+- Bewaar het installatiebestand. Als je een nieuwe laptop krijgt heb je dit weer nodig.
 
 
 ## UML model uit svn halen

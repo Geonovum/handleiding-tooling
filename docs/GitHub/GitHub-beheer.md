@@ -10,7 +10,8 @@
 
 **Regel:** Er is geen bezwaar tegen het gebruiken van een privé account binnen de github omgeving.
 
-**Regel:** Alleen Geonovum werknemers kunnen member worden van de Geonovum organisatie.
+**Regel:** De beheerders van GitHub bepalen wie onderdeel is van de Geonovum organisatie. In principe loopt dat
+gelijk met het hebben van een Geonovum email account. 
 
 **Regel:** Bij vertrek worden members omgezet in 'External Collaborator'.
 
@@ -18,7 +19,11 @@
 
 - Er is een aantal teams gemaakt binnen Geonovum. Deze zijn te vinden op: <https://github.com/orgs/Geonovum/teams>.
 
-**Regel:** Ieder repository moet aan een team worden toegekend. Het team is aanspreekpunt voor beheer van  repository.
+**Regel:** Ieder team is gekoppeld aan een actief project binnen Geonovum.
+
+**Regel:** Repositories met content die in beheer moet zijn horen bij een team
+dat aanspreekpunt is voor dat repository. Andere repositories geven in de
+README.md aan wie aanspreekpunt is voor dat repository
 
 **Conventie:** Team namen eindigen op ' team'. Bijvoorbeeld 'DSO team'.
 

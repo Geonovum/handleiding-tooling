@@ -23,7 +23,7 @@ Als je **SVN Tortoise** nog niet hebt, installeer deze van
 > **Note**
 > Installeer ook de _**Command Line Client Tools**_ mee. Dit heb je nodig bij [stap 4: Breng EAP-bestand (packages) onder SVN](#stap-4-breng-eap-bestand-packages-onder-svn). Het is een extra optie en valt niet onder de standaardinstallatie, dus je moet hier zelf alert op zijn. Het is ook mogelijk om dit achteraf te doen. Hoe je dit doet, staat beschreven in stap 4.
 
-Vraag een account aan voor svn.geostandaarden.nl bij de [beheerder](https://stichtinggeonovum.sharepoint.com/:b:/r/sites/FBICT/Gedeelde%20documenten/General/wat%20staat%20waar/Tooling_en_Beheerders.pdf?csf=1&web=1&e=R30VuV)
+Vraag een account aan voor svn.geostandaarden.nl bij de [beheerder](https://stichtinggeonovum.sharepoint.com/:b:/s/FBICT/IQC8YxUUkR6tRr6RnMcPSmOgAQxZOKTlWu6-wg4oWK6oiwI?e=Z8JkMJ)
 
 ### Stap 1: Folder aanmaken op SVN-server
 
