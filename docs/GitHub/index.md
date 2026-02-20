@@ -104,7 +104,15 @@ Nadat je op “+” hebt geklikt, verschijnt het scherm hieronder.
 
 ![media/image19.png](media/image19.png)
 
-Vul hier de naam van de repository in. Gebruik een naam die kort en bondig is. Zie ook verderop in dit document voor de naamgevingsconventies.
+Vul hier de naam van de repository in. Gebruik een naam die kort en bondig is.Naamgevingsconventie:
+
+- Voor project met veel repositories. Bedenk een prefix voor het project. Bijvooorbeeld 'dso-' of 'vth-'. 
+- Gebruik liever geen underscores.
+- Gebruik lowercase repository namen.
+- Laat bij een ReSpec document de shortname van het document terugkomen in de naam van het repository.
+- Kijk ook of je naam aansluit bij bestaande repositories.
+
+**TODO:** de naamgevingsconventie verder uitwerken.
 
 Vul ook de beschrijving in van het project.
 
