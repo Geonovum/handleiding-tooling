@@ -10,10 +10,11 @@
 
 **Regel:** Er is geen bezwaar tegen het gebruiken van een privé account binnen de github omgeving.
 
-**Regel:** De beheerders van GitHub bepalen wie onderdeel is van de Geonovum organisatie. In principe loopt dat
-gelijk met het hebben van een Geonovum email account. 
+**Regel:** De beheerders van GitHub bepalen wie onderdeel is van de Geonovum 
+organisatie. In principe loopt dat gelijk met het hebben van een Geonovum email
+account.
 
-**Regel:** Bij vertrek worden members omgezet in 'External Collaborator'.
+**Regel:** Toegang tot repositories binnen Geonovum die niet lid zijn van de organisatie regelen we via [outside collaborator](https://docs.github.com/en/organizations/managing-user-access-to-your-organizations-repositories/managing-outside-collaborators/adding-outside-collaborators-to-repositories-in-your-organization#about-outside-collaborators)
 
 ## GitHub teams
 
