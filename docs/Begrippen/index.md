@@ -28,6 +28,8 @@ Een begrippenkader is niet meer dan een SKOS bestand in .ttl formaat. Er zijn ve
 
 **Regel:** We voorkomen dat vrijwel dezelfde begrippen in verschillende begrippenkaders voorkomen door [de regels voor harmonisatie en hergebruik uit NL-SBB](https://docs.geostandaarden.nl/nl-sbb/nl-sbb/#harmonisatie-en-hergebruik) toe te passen.
 
+**Regel:** Een begrippenkader bevat minstens één taal zijn waarin alle termen zijn beschreven. 
+
 **TODO:** Verdere invulling van [best practices](https://docs.geostandaarden.nl/nl-sbb/nl-sbb/#H5) maken voor Geonovum.
 
 ### Regels voor het .ttl bestand
