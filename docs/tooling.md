@@ -5,7 +5,7 @@ Dit is de publicatie infrastructuur van Geonovum. Onder het architectuurplaatje 
 - Een korte [beschrijving](#kort-overzicht).
 - Verwijzing naar [documentatie](#documentatie).
 - Aandachtspunten [verbeterpunten](#aandachtspunten).
-- Hoe we de boel beheren staat in [wie beheert wat](#beheer).
+- Hoe we de boel beheren staat in [wie beheert wat]((https://stichtinggeonovum.sharepoint.com/:b:/s/FBICT/IQC8YxUUkR6tRr6RnMcPSmOgAQxZOKTlWu6-wg4oWK6oiwI?e=Wjjl14).
 
 ![publicatie infrastructuur](media/PublicatieInfrastructuurGeonovum.drawio.svg)
 
@@ -122,10 +122,7 @@ Staat los van rest van publicatie infrastructuur.
 
 Zie <https://modeldesk.io/>
 
-## beheer
 
-Voor licenties of de interne beheerder van de tooling kun je terecht op
-[intranet](https://stichtinggeonovum.sharepoint.com/:b:/s/FBICT/IQC8YxUUkR6tRr6RnMcPSmOgAQxZOKTlWu6-wg4oWK6oiwI?e=5SyNFk)
 
 ## MkDocs voor deze handleiding
 
