@@ -5,7 +5,7 @@ Dit is de publicatie infrastructuur van Geonovum. Onder het architectuurplaatje 
 - Een korte [beschrijving](#kort-overzicht).
 - Verwijzing naar [documentatie](#documentatie).
 - Aandachtspunten [verbeterpunten](#aandachtspunten).
-- Hoe we de boel beheren staat in [wie beheert wat]((https://stichtinggeonovum.sharepoint.com/:b:/s/FBICT/IQC8YxUUkR6tRr6RnMcPSmOgAQxZOKTlWu6-wg4oWK6oiwI?e=Wjjl14).
+- Hoe we de boel beheren staat in [wie beheert wat](https://stichtinggeonovum.sharepoint.com/:b:/s/FBICT/IQC8YxUUkR6tRr6RnMcPSmOgAQxZOKTlWu6-wg4oWK6oiwI?e=Wjjl14).
 
 ![publicatie infrastructuur](media/PublicatieInfrastructuurGeonovum.drawio.svg)
 
@@ -127,7 +127,7 @@ Zie <https://modeldesk.io/>
 ## MkDocs voor deze handleiding
 
 Deze handleiding maakt gebruik van [MkDocs](https://www.mkdocs.org/), een
-lichtgewicht tool die een doorzoekbare en navigeerbare site maakt van een
+lichtgewicht tool die een doorzoekbare site maakt van een
 verzameling Markdown documenten. De handleiding staat op
 [github pages](https://github.com/Geonovum/handleiding-tooling). De
 bronbestanden staan in:

@@ -9,7 +9,7 @@ nav:
         - 'Welkom': index.md
         - 'Werkwijze Modelleren': werkwijzemodelleren.md
         - 'Tooling' : tooling.md
-        - 'Verdere documentatie': werkwijze-todo.md
+        - 'Verdere documentatie': externe-links.md
     - GitHub:
         - 'Manual': GitHub/index.md
         - 'GitHub intro': GitHub/GitHub-Inleiding.md

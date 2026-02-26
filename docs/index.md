@@ -13,4 +13,4 @@ Hierin wordt beschreven:
 
 ## Verdere documentatie
 
-Er is op veel andere [plekken](werkwijze-todo.md) meer documentatie te vinden over onze werkwijze. De moet nog geïntegreerd worden in deze handleiding.
+Er is op veel andere [plekken](externe-links.md) meer documentatie te vinden over onze werkwijze.
