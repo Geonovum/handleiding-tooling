@@ -83,7 +83,5 @@ Door de filenaam te veranderen en te saven, kan er op een ander json-bestand gev
 
 Json-schemas worden gepubliceerd in https://register.geostandaarden.nl/jsonschema/.  
 
-Als je github-repository goed geconfigureerd is, kan dit automatisch door een een map "jsonschema" aan te maken in je github-repository.
-Plaats daarin de schemas in mappen die corresponderen met de versies van je schemas die je wilt publiceren. vb.: https://github.com/Geonovum/imev/tree/main/jsonschema
-Maak daarna via de releases pagina een nieuwe release aan. vb.: https://github.com/Geonovum/imev/releases en dan wordt het gepubliceerd in een submap met de juiste repository-naam. vb.: https://register.geostandaarden.nl/jsonschema/imev/
+Dit gebeurt met sftp.
 
