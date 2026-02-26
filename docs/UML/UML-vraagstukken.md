@@ -1,4 +1,4 @@
-# UML Vraagstukken
+# UML FAQ
 
 Hier vind je antwoord op sommige modelleervraagstukken.
 

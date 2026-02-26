@@ -3,6 +3,8 @@ theme:
     name: readthedocs
 repo_url: https://github.com/Geonovum/handleiding-tooling
 edit_uri: blob/main/docs/
+extra_css:
+  - css/custom.css
 
 nav:
     - Home:
@@ -32,6 +34,7 @@ nav:
     - UML:
         - UML: UML/index.md
         - Leeswijzer UML: UML/UML-leeswijzer.md
+        - UML FAQ: UML/UML-vraagstukken.md
     - Subversion:
         - SVN: svn/index.md
         - SVN installeren voor EAP: svn/SVN-installeren-voor-EAP.md
