@@ -2,19 +2,19 @@
 
 ## Github beheer
 
-- Github teamleden met beheerders rechten zijn te vinden via: <https://github.com/orgs/Geonovum/people?query=role%3Aowner>
+- Github beheerders zijn te vinden via: <https://github.com/orgs/Geonovum/people?query=role%3Aowner>
 
-**Regel:** Alle beheerders en teamleden hebben 2FA aanstaan.
-
-## Github gebruikers
-
-**Regel:** Er is geen bezwaar tegen het gebruiken van een privé account binnen de github omgeving.
+**Regel:** Alle teamleden hebben 2FA aanstaan.
 
 **Regel:** De beheerders van GitHub bepalen wie onderdeel is van de Geonovum 
 organisatie. In principe loopt dat gelijk met het hebben van een Geonovum email
-account.
+account. Hierop zijn uitzondering mogelijk die we bijhouden via pas-toe-of-leg-uit.
 
-**Regel:** Toegang tot repositories binnen Geonovum die niet lid zijn van de organisatie regelen we via [outside collaborator](https://docs.github.com/en/organizations/managing-user-access-to-your-organizations-repositories/managing-outside-collaborators/adding-outside-collaborators-to-repositories-in-your-organization#about-outside-collaborators)
+**Regel:** Mensen buiten de Geonovum kunnen individueel toegang krijgen tot repositories.
+
+Hierdoor worden ze [outside collaborator](https://docs.github.com/en/organizations/managing-user-access-to-your-organizations-repositories/managing-outside-collaborators/adding-outside-collaborators-to-repositories-in-your-organization#about-outside-collaborators). Per outside collaborator is te zien welke repositories ze toegang toe hebben via [deze link](https://github.com/orgs/Geonovum/outside-collaborators)
+
+**Noot:** Er is geen bezwaar tegen het gebruik van een privé github account binnen het Geonovum team. Achterliggende gedacht is dat er flink wat mensen al een github account hebben en het geen toegevoegde waarde heeft om een tweede github account te hebben.
 
 ## GitHub teams
 
