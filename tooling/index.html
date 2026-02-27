@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Tooling - Geonovum tooling</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../css/custom.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Tooling";
+        var mkdocs_page_input_path = "tooling.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> Geonovum tooling
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">Home</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="..">Welkom</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../werkwijzemodelleren/">Werkwijze Modelleren</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Tooling</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#kort-overzicht">Kort Overzicht</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#1-uml">[1] UML</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#2-subversion">[2] Subversion</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#3-imvertor">[3] Imvertor</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#4-respec-document">[4] ReSpec document</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#5-github">[5] GitHub</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#6-docsgeostandaardennl">[6] docs.geostandaarden.nl</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#7-toolsgeostandaardennl">[7] tools.geostandaarden.nl</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#7-beheertools">[7] beheertools</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#8-word2resspec">[8] Word2ResSpec</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#9-registergeostandaardennl">[9] register.geostandaarden.nl</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#10-markdown">[10] Markdown</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#11-ontologie-modellengeostandaardennl">[11] Ontologie (modellen.geostandaarden.nl)</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#13-nationaal-georegister">[13] Nationaal Georegister</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#14-web-server-van-geonovum">[14] Web server van Geonovum</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#17-modeldesk-uml-tooling">[17] Modeldesk UML tooling</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#mkdocs-voor-deze-handleiding">MkDocs voor deze handleiding</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../externe-links/">Verdere documentatie</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">GitHub</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../GitHub/">Manual</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../GitHub/GitHub-Inleiding/">GitHub intro</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../GitHub/GitHub-beheer/">GitHub beheer</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Imvertor</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../Imvertor/">Imvertor</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Markdown</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../Markdown/">Markdown</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">ReSpec</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../ReSpec/">Manual</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ReSpec/ReSpec-publiceren/">Publiceren</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ReSpec/ReSpec-onderdelen/">Onderdelen van ReSpec</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Enterprise Architect</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../EA/">Overzicht</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../EA/MIM-toolbox-importeren/">Toolbox importeren</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../EA/EA-toepassing-standaarddatatypen/">standaarddatatypen</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../EA/MIM-toolbox-genereren/">Toolbox genereren</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../EA/MIM-toolbox-genereren-extensie/">Toolbox genereren extensie</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../EA/xmi-exporteren/">XMI exporteren</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">UML</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../UML/">UML</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../UML/UML-leeswijzer/">Leeswijzer UML</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../UML/UML-vraagstukken/">UML FAQ</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Subversion</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../svn/">SVN</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../svn/SVN-installeren-voor-EAP/">SVN installeren voor EAP</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../svn/SVN-importeren-bestaand-project/">SVN importeren bestaand project</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">GML</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../GML/">GML en XSD</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">MIM</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../MIM/">Metamodel Informatie Modellering</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Conceptenbibliotheek</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../Begrippen/">Begrippenmodel</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Begrippen/BegrippenXL/">Begrippen XL</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">RDF</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../RDF/">Handleiding voor het Gebruik van EA2RDF en RDF2RDF Tools</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Ontologie</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../Ontologie/">Handleiding ontologie maken en publiceren</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Word2xxx</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../Word2xxx/">MsWord conversies</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Schemas maken</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../schemas/JSON/">JSON schema's maken.</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">Geonovum tooling</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Home</li>
+      <li class="breadcrumb-item active">Tooling</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/Geonovum/handleiding-tooling/blob/main/docs/tooling.md" class="icon icon-github"> Edit on GitHub</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="tooling">Tooling</h1>
+<p>Dit is de publicatie infrastructuur van Geonovum. Onder het architectuurplaatje staan:</p>
+<ul>
+<li>Een korte <a href="#kort-overzicht">beschrijving</a>.</li>
+<li>Verwijzing naar <a href="#documentatie">documentatie</a>.</li>
+<li>Aandachtspunten <a href="#aandachtspunten">verbeterpunten</a>.</li>
+<li>Hoe we de boel beheren staat in <a href="https://stichtinggeonovum.sharepoint.com/:b:/s/FBICT/IQC8YxUUkR6tRr6RnMcPSmOgAQxZOKTlWu6-wg4oWK6oiwI?e=Wjjl14">wie beheert wat</a>.</li>
+</ul>
+<p><img alt="publicatie infrastructuur" src="../media/PublicatieInfrastructuurGeonovum.drawio.svg" /></p>
+<h2 id="kort-overzicht">Kort Overzicht</h2>
+<h3 id="1-uml">[1] UML</h3>
+<ul>
+<li>UML klasse diagrammen maken we met Enterprise Architect. (zie <a href="../UML/">UML</a>)</li>
+<li>Binnen UML gebruiken we MIM als meta-taal. (zie <a href="../MIM/">MIM</a>)</li>
+<li>We gebruiken NEN 3610 als raamwerk.</li>
+<li><a href="../EA/">Overzicht</a></li>
+<li><a href="../EA/EA-toepassing-standaarddatatypen/">Primitieve datatypes</a>: Handleiding
+    en toelichting op het toepassen van standaarddatatypes in
+    modelleeromgeving Geonovum.</li>
+<li><a href="../EA/MIM-toolbox-importeren/">Toolbox importeren</a>: Handleiding voor het
+    importeren van de MIM-toolbox in EA.</li>
+</ul>
+<h3 id="2-subversion">[2] Subversion</h3>
+<ul>
+<li>De UML diagram worden met subversion (svn) beheerd. (zie <a href="../svn/">svn</a>)</li>
+<li>De repositories staan op <code>svn.geostandaarden.nl</code></li>
+<li><a href="../svn/SVN-importeren-bestaand-project/">Subversion installeren voor EA</a>:
+    Installatie SVN en informatiemodel in versiebeheer zetten.</li>
+<li><a href="../svn/SVN-installeren-voor-EAP/">Subversion importeren bestaand project</a>:
+    Packages importeren vanuit SVN in EA.</li>
+</ul>
+<h3 id="3-imvertor">[3] Imvertor</h3>
+<ul>
+<li>Imvertor vertaalt het UML naar catalog, xsd etc. (zie <a href="../Imvertor/">Imvertor</a>)</li>
+</ul>
+<h3 id="4-respec-document">[4] ReSpec document</h3>
+<ul>
+<li>Onze standaarden maken we in ReSpec. (zie <a href="../ReSpec/">ReSpec</a>)</li>
+<li>Dit is een tool die uit een aantal bestanden (Markdown, HTML) een mooi document publiceert.</li>
+<li>De bestanden beheren we in GitHub</li>
+</ul>
+<h3 id="5-github">[5] GitHub</h3>
+<ul>
+<li>Onze standaarden beheren en versioneren we in GitHub.</li>
+<li><a href="../GitHub/GitHub-Inleiding/">GitHub werkwijze</a>: algemene inleiding over GitHub.</li>
+<li><a href="../GitHub/">GitHub handleiding</a>: Hoe maak je een account aan en hoe doe
+    je beheertaken.</li>
+</ul>
+<h3 id="6-docsgeostandaardennl">[6] docs.geostandaarden.nl</h3>
+<ul>
+<li>Onze standaarden publiceren we op docs.geostandaarden.nl</li>
+<li>Dit gebeurt via een geautomatiseerde workflow die in onze github repositories werkt. </li>
+</ul>
+<h3 id="7-toolsgeostandaardennl">[7] tools.geostandaarden.nl</h3>
+<p>Op deze server staan css bestanden en hulpbestanden voor ReSpec. Ook staan
+hier de logo's die in docs.geostandaarden.nl gebruikt worden.</p>
+<h3 id="7-beheertools">[7] beheertools</h3>
+<p>Interne server die beheertaken automatiseert.</p>
+<h3 id="8-word2resspec">[8] Word2ResSpec</h3>
+<ul>
+<li><a href="../Word2xxx/">Word2werkversie</a></li>
+</ul>
+<h3 id="9-registergeostandaardennl">[9] register.geostandaarden.nl</h3>
+<p>Technisch register met xml-schemas, json-schemas etc.
+Invulinstructies: <a href="https://github.com/Geonovum/technisch-register-2019/blob/master/documentatie/HandleidingVoorBeheerdersInformatiemodellen.md">https://github.com/Geonovum/technisch-register-2019/blob/master/documentatie/HandleidingVoorBeheerdersInformatiemodellen.md</a></p>
+<p>Technische onderdelen van de standaard worden op: <a href="https://register.geostandaarden.nl">register.geostandaarden.nl</a> gezet. Dit gebeurt momenteel middels sftp door een beheerder.</p>
+<p>Invulinstructies: <a href="https://github.com/Geonovum/technisch-register-2019/blob/master/documentatie/HandleidingVoorBeheerdersInformatiemodellen.md">https://github.com/Geonovum/technisch-register-2019/blob/master/documentatie/HandleidingVoorBeheerdersInformatiemodellen.md</a></p>
+<p><strong>UML</strong></p>
+<p>In de map <code>informatiemodel</code> wordt een informatiemodel gepubliceerd. Publicatieinstructies:</p>
+<p><strong>EAP</strong></p>
+<p>Dit is het natieve formaat van Enterprise Architect.</p>
+<ul>
+<li>Zorg ervoor dat alle links naar svn uit het bestand verwijderd zijn: selecteer een beheerde folder. Kies 'Configure-&gt;Package-VC'. Haal het vinkje weg bij 'Control Package'.</li>
+<li>Zet de versienummer van het model in de bestandsnaam.</li>
+</ul>
+<p><strong>xmi</strong></p>
+<p>xmi is het uitwisselformaat voor UML modellen. Er zijn veel smaken. Voorstel voor manier van publiceren:</p>
+<ul>
+<li>Niet alleen het model, maar ook alle packages waarnaar verwezen wordt.</li>
+<li>Selecteer het te exporteren root package. Kies 'Publish--&gt;Export XML'.</li>
+<li>Kies Export Type: 'XML 1.1'.</li>
+</ul>
+<h3 id="10-markdown">[10] Markdown</h3>
+<ul>
+<li><a href="../Markdown/">Markdown handleiding</a>: Handleiding werken met Markdown
+     voor ReSpec-documentatie.</li>
+</ul>
+<h3 id="11-ontologie-modellengeostandaardennl">[11] Ontologie (modellen.geostandaarden.nl)</h3>
+<ul>
+<li><a href="../Ontologie/">Ontologie</a>: Handleiding
+    voor het maken en publiceren van een ontologie.</li>
+</ul>
+<h3 id="13-nationaal-georegister">[13] Nationaal Georegister</h3>
+<p>Staat los van de rest van de publicatie infrastructuur.</p>
+<h3 id="14-web-server-van-geonovum">[14] Web server van Geonovum</h3>
+<p>Staat los van rest van publicatie infrastructuur.</p>
+<h3 id="17-modeldesk-uml-tooling">[17] Modeldesk UML tooling</h3>
+<p>Zie <a href="https://modeldesk.io/">https://modeldesk.io/</a></p>
+<h2 id="mkdocs-voor-deze-handleiding">MkDocs voor deze handleiding</h2>
+<p>Deze handleiding maakt gebruik van <a href="https://www.mkdocs.org/">MkDocs</a>, een
+lichtgewicht tool die een doorzoekbare site maakt van een
+verzameling Markdown documenten. De handleiding staat op
+<a href="https://github.com/Geonovum/handleiding-tooling">github pages</a>. De
+bronbestanden staan in:
+<a href="https://github.com/Geonovum/handleiding-tooling">handleiding-tooling</a>.</p>
+<p>Je kunt mkdocs ook lokaal installeren. Dan kun je live je edits volgen in je
+browser: <a href="http://127.0.0.1:8000/">http://127.0.0.1:8000/</a> met het commando:</p>
+<pre><code class="language-shell">mkdocs serve
+</code></pre>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../werkwijzemodelleren/" class="btn btn-neutral float-left" title="Werkwijze Modelleren"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../externe-links/" class="btn btn-neutral float-right" title="Verdere documentatie">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/Geonovum/handleiding-tooling" class="fa fa-github" style="color: #fcfcfc"> GitHub</a>
+        </span>
+    
+    
+      <span><a href="../werkwijzemodelleren/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../externe-links/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

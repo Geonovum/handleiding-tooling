@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Toolbox genereren extensie - Geonovum tooling</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../css/custom.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Toolbox genereren extensie";
+        var mkdocs_page_input_path = "EA/MIM-toolbox-genereren-extensie.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Geonovum tooling
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">Home</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../..">Welkom</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../werkwijzemodelleren/">Werkwijze Modelleren</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../tooling/">Tooling</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../externe-links/">Verdere documentatie</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">GitHub</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../GitHub/">Manual</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../GitHub/GitHub-Inleiding/">GitHub intro</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../GitHub/GitHub-beheer/">GitHub beheer</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Imvertor</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Imvertor/">Imvertor</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Markdown</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Markdown/">Markdown</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">ReSpec</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../ReSpec/">Manual</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../ReSpec/ReSpec-publiceren/">Publiceren</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../ReSpec/ReSpec-onderdelen/">Onderdelen van ReSpec</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Enterprise Architect</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../">Overzicht</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../MIM-toolbox-importeren/">Toolbox importeren</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../EA-toepassing-standaarddatatypen/">standaarddatatypen</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../MIM-toolbox-genereren/">Toolbox genereren</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Toolbox genereren extensie</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#inhoud">Inhoud</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#beschrijving">Beschrijving</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#voorbereiding">Voorbereiding</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#stap-1-importeer-de-mim-toolbox-in-de-ea-omgeving">Stap 1: Importeer de MIM-toolbox in de EA-omgeving</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#stap-2-maak-de-package-structuur-aan-voor-de-extensie">Stap 2: Maak de package-structuur aan voor de extensie</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#stap-3-modelleer-de-toolbox-extensie">Stap 3: Modelleer de toolbox-extensie</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#stap-4-modelleer-het-toolbox-menu">Stap 4: Modelleer het toolbox-menu</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#stap-5-modelleer-het-diagram">Stap 5: Modelleer het diagram</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#stap-6-genereer-mdg-technology">Stap 6: Genereer MDG Technology</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#stap-7-werken-met-de-toolbox">Stap 7: Werken met de toolbox</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../xmi-exporteren/">XMI exporteren</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">UML</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../UML/">UML</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../UML/UML-leeswijzer/">Leeswijzer UML</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../UML/UML-vraagstukken/">UML FAQ</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Subversion</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../svn/">SVN</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../svn/SVN-installeren-voor-EAP/">SVN installeren voor EAP</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../svn/SVN-importeren-bestaand-project/">SVN importeren bestaand project</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">GML</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../GML/">GML en XSD</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">MIM</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../MIM/">Metamodel Informatie Modellering</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Conceptenbibliotheek</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Begrippen/">Begrippenmodel</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Begrippen/BegrippenXL/">Begrippen XL</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">RDF</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../RDF/">Handleiding voor het Gebruik van EA2RDF en RDF2RDF Tools</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Ontologie</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Ontologie/">Handleiding ontologie maken en publiceren</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Word2xxx</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Word2xxx/">MsWord conversies</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Schemas maken</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../schemas/JSON/">JSON schema's maken.</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Geonovum tooling</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Enterprise Architect</li>
+      <li class="breadcrumb-item active">Toolbox genereren extensie</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/Geonovum/handleiding-tooling/blob/main/docs/EA/MIM-toolbox-genereren-extensie.md" class="icon icon-github"> Edit on GitHub</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="handleiding-extensie-maken-op-mim-toolbox">Handleiding - Extensie maken op MIM-toolbox</h1>
+<table>
+<thead>
+<tr>
+<th>Software/Standaard</th>
+<th style="text-align: right;">Versie</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>MIM-standaard</td>
+<td style="text-align: right;">1.1.1</td>
+</tr>
+<tr>
+<td>MIM-toolbox</td>
+<td style="text-align: right;">1.1.1</td>
+</tr>
+<tr>
+<td>Enterprise Architect (EA)</td>
+<td style="text-align: right;">15.2</td>
+</tr>
+</tbody>
+</table>
+<h2 id="inhoud">Inhoud</h2>
+<ol>
+<li><a href="#beschrijving">Beschrijving</a></li>
+<li><a href="#stap-1-importeer-de-mim-toolbox-in-de-ea-omgeving">Importeer de MIM-toolbox in de EA-omgeving</a></li>
+<li><a href="#stap-2-maak-de-package-structuur-aan-voor-de-extensie">Maak de package-structuur aan voor de extensie</a></li>
+<li><a href="#stap-3-modelleer-de-toolbox-extensie">Modelleer de toolbox-extensie</a></li>
+<li><a href="#stap-4-modelleer-het-toolbox-menu">Modelleer het toolbox-menu</a></li>
+<li><a href="#stap-5-modelleer-het-diagram">Modelleer het diagram</a></li>
+<li><a href="#stap-6-genereer-mdg-technology">Genereer MDG Technology</a></li>
+<li><a href="#stap-7-werken-met-de-toolbox">Werken met de toolbox</a></li>
+</ol>
+<h2 id="beschrijving">Beschrijving</h2>
+<p>Deze handleiding beschrijft hoe je in <strong>Enterprise Architect</strong> een <strong>extensie</strong> maakt <strong>op de MIM-toolbox</strong>. Dit is van toepassing als er extra <strong>metamodelconstructies</strong> nodig zijn voor het maken van een informatiemodel. Meer informatie en spelregels hiervoor vind je in de <a href="https://docs.geostandaarden.nl/mim/mim/#een-eigen-extensie-op-het-metamodel">MIM-standaard</a>. Een extensie op de MIM-toolbox is ook bedoeld voor het maken van <strong>aanvullende constructies</strong> die alleen spelen op het niveau van implementatie, of op het niveau van afgeleide technsiche modellen ten behoeve van specifieke interfaces.</p>
+<p>Met een extensie breidt je MIM-toolbox uit. Dit is handig wanneer je extra informatie aan modelonderdelen (bijv. objecttypen) wilt toevoegen. Bijvoorbeeld voor:
+ - het uitbreiden van de set met metagegevens voor modelonderdelen van een specifiek sector-/domeinmodel (extra tagged values);
+ - het uitbreiden van de set met metagegevens voor specifieke toepassingen van het model, zoals bijvoorbeeld in Imvertor of voor een UML-JSON-encodings;
+ - het het toevoegen van extra stereotypen.</p>
+<p>Deze handleiding neemt het maken van een <strong>DiSGeo-extensie op MIM als voorbeeld</strong>. Voor het <strong>informatiemodel DiSGeo</strong> zijn voor de MIM-stereotypen <code>«Objecttype»</code> en <code>«Attribuutsoort»</code> meta-informatie nodig in de vorm van extra <em>tagged values</em>. Voor <a href="https://geonovum.github.io/disgeo-imsor/modelleerprincipes/#specificatie-voor-objecttype">Objecttype</a> gaat dat om het toevoegen van <code>Actualiteit</code> en <code>Inwinning verplicht</code>. Voor <a href="https://geonovum.github.io/disgeo-imsor/modelleerprincipes/#specificatie-voor-attribuutsoort">Attribuutsoort</a> zijn dat: <code>Inwinningsregels</code> en <code>Positionele juistheid</code>.</p>
+<h2 id="voorbereiding">Voorbereiding</h2>
+<p>Zorg dat je de volgende twee zaken bij de hand hebt:
+ 1. Enterprise Architect: Het is handig om de volgende venster te openen
+    - Browser
+    - Toolbox
+    - Properties
+    - Features
+ 1. De MIM-toolbox waarop je een extensie wilt bouwen, in de vorm van een MDG Technology (.xml). Hier vind je de <a href="https://register.geostandaarden.nl/informatiemodel/mim/1.1.1/">meest actuele versie</a> van de toolbox </p>
+<h2 id="stap-1-importeer-de-mim-toolbox-in-de-ea-omgeving">Stap 1: Importeer de MIM-toolbox in de EA-omgeving</h2>
+<ul>
+<li>Open de <em>project browser</em>.</li>
+<li>Klik op de tab <em>Resources</em>.</li>
+<li>Klik op de map <em>MDG Technologies</em>.</li>
+<li>Klik met de rechtermuisknop op <em>Model Technologies</em> en selecteer <em>Import Technology</em>.</li>
+<li>Open de MDG Technology (dit bestand heeft een <code>.xml</code>-extensie) van de MIM-toolbox.</li>
+<li>Klik <em>Openen</em>.</li>
+<li>Selecteer daar linksonderin het diagloogvenster <em>Import To Model</em> en klik vervolgens op <em>OK</em>.</li>
+</ul>
+<p>Indien je geen foutmelding krijgt, heb je de MIM-toolbox succesvol geïmporteerd.</p>
+<h2 id="stap-2-maak-de-package-structuur-aan-voor-de-extensie">Stap 2: Maak de package-structuur aan voor de extensie</h2>
+<ul>
+<li>Klik in de <em>project browser</em> linksbovenin op de <strong>map met het gele sterretje</strong>, of druk <code>Ctrl+Shift+M</code>.</li>
+<li>Hierdoor open de <em>Model Wizard</em>.</li>
+<li>Selecteer het tabblad <em>Model Patterns</em>.</li>
+<li>Klik daaronder op <em>Model Technologies Perspective</em>.</li>
+<li>Ga naar <em>Management</em> en selecter vervolgens: <em>MDG Technology Builder</em>.</li>
+<li>In het venster verschijnen nu verschillende <em>Model Patterns</em>. Dit zijn templates voor het maken van modellen. </li>
+<li>Kies nu onder <em>MDG Technology Builder</em> voor <em>Basic Template</em> en klik linksonderin op <em>Create Pattern(s)</em>.</li>
+<li>Geef in het dialoogvenster dat nu verschijnt de naam van de extensie op die je gaat maken (bijvoorbeeld 'DISGEO') en klik op <em>OK</em>.</li>
+</ul>
+<p>In de project browser zie dat er nu een nieuwe package DiSGeo is toegevoegd. Dat package bevat een 
+ - <em>diagram</em>;
+ - een <code>«profile»</code>;
+ - een <code>«diagram profile»</code>;
+ - en een <code>«toolbox profile»</code>.</p>
+<p>Je hebt nu succesvol de package structuur aangemaakt.</p>
+<h2 id="stap-3-modelleer-de-toolbox-extensie">Stap 3: Modelleer de toolbox-extensie</h2>
+<ul>
+<li>Vouw het package <code>«profile»DISGEO</code> uit</li>
+<li>Dubbelklik op het diagram</li>
+<li>Hierdoor opent het diagram en verschijnt de bijbehorende toolbox: <code>UML::Profile</code></li>
+<li>Ga in het toolboxmenu naar <em>Metaclass</em> en sleep dit element in het diagram.</li>
+<li>Er verschijnt nu een venster <em>Extend Metaclass</em>.</li>
+<li>Klik in de linkerkolom op <em>Stereotypes</em>. Hierdoor verschijnen aan de rechterkant alle stereotypen die MIM kent. </li>
+</ul>
+<blockquote>
+<p><strong>Let op</strong>: deze zijn alleen beschikbaarbaar <em>nadat</em> je de MIM-toolbox hebt geïmporteerd (zie: <a href="#stap-1-importeer-de-mim-toolbox-in-de-ea-omgeving">stap: 1</a>).</p>
+</blockquote>
+<ul>
+<li>Zoek in de lijst aan de rechterkant <code>«Objecttype»</code> en <code>«Attribuutsoort»</code> op, selecteer deze en klik op <em>OK</em>.</li>
+<li>Deze worden nu toegevoegd aan het diagram.</li>
+<li>Zoek nu in het toolboxmenu <em>Add Stereotype</em> op (onder <em>Profile Helpers</em>) en sleep dit element op het diagram.</li>
+<li>Er verschijnt nu een venster <em>Add Stereotype</em>.</li>
+<li>We gaan nu een stereotype maken dat dient als extensie op het MIM-stereotype <code>«Attribuutsoort»</code>.</li>
+<li>Geef een naam op voor het stereotype. In het geval van dit voorbeeld is gekozen voor <code>Attribuutsoort</code>, maar dit kan elke andere willekeurige naam zijn.</li>
+<li>Klik vervogens op de button <em>Add Metaclass</em>.</li>
+<li>Hier geef je de UML-metaklasse <strong>uit EA</strong> op waarop je extensie plaatsvindt. Als je niet weet van welke UML-metaklasse je stereotype wordt afgeleid, zoek dit dan op in het MIM-profiel.</li>
+</ul>
+<blockquote>
+<p><strong>Info</strong>: In <a href="https://docs.geostandaarden.nl/mim/mim/#metamodel-in-uml">hoofdstuk 3 van de MIM-standaard</a> staat beschreven van welke UML-metaklasse elk MIM-stereotype is afgeleid. Omdat je een extensie maakt op MIM, is de nieuwe extensie automatisch óók een extensie op een UML-type. Desondanks moet je dit in Enterprise Architect <strong>expliciet</strong> benoemen.</p>
+</blockquote>
+<ul>
+<li>Laat de overige instellingen staan en klik op <em>Volgende</em>.</li>
+<li>In dit venster, <em>Define Tagged Values</em>, kun je de extra metadata-elementen opvoeren.</li>
+<li>Klik met de rechtermuisknop in de kolom <em>Property</em></li>
+<li>Kies uit het menu <em>Add Tagged Value</em>.</li>
+<li>Voer een naam op voor de tagged value. In het geval van dit voorbeeld <code>Actualiteit</code>.</li>
+<li>In de linkerkolom kun je nog een standaardwaarde opvoeren, maar dat is niet verplicht.</li>
+<li>In dit voorbeeld blijft dit veld leeg.</li>
+<li>Herhaal deze stap voor alle tagged values die je aan dit element wilt toevoegen.</li>
+<li>Als je klaar bent, kun je bovenstaande stappen herhalen voor <code>«Objecttype»</code>.</li>
+<li>Klik daarna op <em>Voltooien</em></li>
+</ul>
+<p>Je ziet nu het nieuwe stereotype met de tagged values. Daarnaast heeft het nu een relatie met de UML-metaklasse <code>«Attribute»</code>. Als laatste onderdeel van deze stap moet nu de relatie gelegd worden tussen het nieuwe stereotype en het MIM-stereotype. Dit gaat als volgt:</p>
+<ul>
+<li>Klik nu op het element <code>Attribuutsoort</code>.</li>
+<li>Er verschijnen nu rechts van het element een aantal iconen.</li>
+<li>Klik op de witte pijl (<a href="https://github.com/Geonovum/MIM-Werkomgeving/blob/master/UML%20profieltooling/werkversie1.1.1/README.md#3-toepassen-quick-linker"><em>QuickLinker</em></a>) met de muisknop ingedrukt en sleep dit naar het bijbehorende MIM-type (het bovenste icoon)</li>
+<li>Kies uit het menu dat nu verschijnt voor <em>Generalization</em>.</li>
+<li>Je extensie-type heeft nu een relatie met <code>MIM::Attribuutsoort</code> én <code>UML::Attribute</code>.</li>
+<li>Herhaal deze stappen voor <code>«Objecttype»</code>.</li>
+</ul>
+<p>Als laatste stap is het handig om het kleurenschema van het modelelement gelijk te maken aan dat van MIM. Dat gaat als volgt:</p>
+<ul>
+<li>Klik met de rechtermuisknop op het nieuwe element <code>Objecttype</code>.</li>
+<li>Navigeer naar <em>Appearance</em> en klik op <em>Default Appearance</em>.</li>
+<li>Nu opent een venster met dezelfde naam.</li>
+<li>Klik op <em>Background Color</em>.</li>
+<li>Klik op <em>More Colors</em>.</li>
+<li>Selecteer het tabblad <em>Custom</em>.</li>
+<li>En vul vervolgens onderstaande waarden in:</li>
+</ul>
+<pre><code>   Hue:   128
+   Sat:   245
+   Lum:   230
+   Red:   206
+   Green: 253
+   Blue:  254
+</code></pre>
+<ul>
+<li>Klik op <em>OK</em>.</li>
+<li>Zet <em>Border Color</em> en <em>Font Color</em> op <code>zwart</code>.</li>
+<li>Klik op <em>OK</em>.</li>
+<li>Herhaal deze stap voor de andere modelelementen, in dit geval <code>Attribuutsoort</code>.</li>
+</ul>
+<p>Je hebt nu succesvol het profiel van je extensie aangemaakt.</p>
+<h2 id="stap-4-modelleer-het-toolbox-menu">Stap 4: Modelleer het toolbox-menu</h2>
+<p>In deze stap maak je de menupagina van de toolbox. Hiermee bepaal je hoe en welke stereotypes zichtbaar zijn in het menu. Het doel van de DiSGeo-extensie is om bestaande MIM-stereotypen uitbreiden met extra <em>tagged values</em>. Daarvoor introduceerden we in EA onder de moterkap weliswaar twee nieuwe stereotypen (<code>«Objectype»</code> en <code>«Attribuutsoort»</code>), maar die willen we niet expliciet terugzien in de toolbox. In de toolbox willen we <code>«Objecttype»</code> en <code>«Attribuutsoort»</code> aanbieden.</p>
+<ul>
+<li><strong>Open</strong> het lege <strong>diagram</strong> uit het package <code>«toolbox profile»DISGEO</code>.</li>
+<li><strong>Sleep</strong> uit de toolbox die bij dit diagram hoort de <em>Profile Helper</em> <strong><em>Add Toolbox Page</em></strong> op het diagram.</li>
+<li>Het venster <em>Add Toolbox Page</em> opent nu.</li>
+<li><strong>Vul</strong> de <strong>naam in</strong> van de <strong>toolboxpagina</strong> die je wilt maken. In dit geval maken we een kopie van de MIM-toolbox, dus noemen we deze (eerste) pagina: <em>MIM: Objecten en attributen</em>.</li>
+<li><strong>Klik</strong> vervolgens op de Add-button en selecteer de optie <em>Add Stereotype</em>.</li>
+<li>Het venster <em>Select A Profile Element</em> opent nu.</li>
+<li><strong>Navigeer</strong> naar het package <code>«profile»</code>DISGEO en selecter <code>«stereotype»Objecttype</code> en klik op <em>OK</em>.</li>
+<li>In de eerste rij van de tabel in het venster <em>Add Toolbox Page</em>, is nu dit stereotype toegevoegd.</li>
+<li>Voor de leesbaarheid is het fijn om het type een <code>alias</code> mee te geven (anders heet het toolbox-item <code>DISGEO::Objectype(UML::Class)</code>. Vanwege het eerder genoemde uitgangspunt, krijgt dit stereotype het <code>alias</code> <strong>'Objecttype'</strong>.</li>
+<li><strong>Voeg</strong> nu op dezelfde manier <strong>'Attribuutsoort'</strong> <strong>toe</strong> en <strong><em>klik nog niet op OK!</em></strong>.</li>
+<li>Je hebt nu de twee nieuwe stereotypes toegevoeg aan de toolboxpagina:</li>
+</ul>
+<pre><code class="language-diff">+ DISGEO::Objecttype(UML::Class)
++ DISGEO::Attribuutsoort(UML::Attribute)
+</code></pre>
+<p>In de MIM-toolbox heeft deze pagina nog drie andere stereotypes. Deze kun je uit het package MIM-UML halen. Deze beschrijving gaat ervan uit dat je hierover beschikt.</p>
+<ul>
+<li><strong>Klik</strong> nogmaals <strong>op de Add-button</strong> en navigeer nu naar het package <code>«MIM-UMLprofile»</code> en voeg de volgende elementen toe:</li>
+</ul>
+<pre><code class="language-diff">DISGEO::Objecttype(UML::Class)
+DISGEO::Attribuutsoort(UML::Attribute)
++ MIM::Gegevensgroep(UML::Attribute)
++ MIM::Gegevensgroeptype(UML::Class)
++ MIM_Keuzeattribuut::Keuze(UML::Attribute)
+</code></pre>
+<ul>
+<li><strong>Geef</strong> ze de bijbehorende <strong>aliassen</strong> uit het MIM-profiel</li>
+<li>Klik nu op <em>OK</em>.</li>
+<li>Voeg de toolboxpage toe voor <em><strong>MIM-Relaties</strong></em>, <em><strong>MIM-Datatypen</strong></em>, <em><strong>MIM-Waardelijsten</strong></em> en <em><strong>MIM-Packages</strong></em>.</li>
+<li><em>Herhaal</em> hiervoor de <strong>voorgaande stappen</strong>.</li>
+</ul>
+<p>Je hebt nu met succes het toolboxmenu gemaakt. Het is in alle gevallen mogelijk om de namen van de stereotypen met de hand op te voeren. De schrijfwijze luistert heel nauw, dus heeft het de voorkeur gebruik te maken van <em>Add Stereotype</em>.</p>
+<h2 id="stap-5-modelleer-het-diagram">Stap 5: Modelleer het diagram</h2>
+<ul>
+<li>Open het lege diagram uit het package <code>«Diagram Profile»DISGEO</code>.</li>
+<li>Sleept uit de toolbox die bij dit diagram hoort de <em>Profile Helper</em> <em>Add Diagram Extention</em> op het diagram.</li>
+<li>Het venster <em>Add Diagram Extention</em> opent nu.</li>
+<li>Geef een naam op voor het diagram en kies bij <em>Extention Type</em> voor <code>Class</code>.</li>
+<li>Geef bij <em>Description</em> eventueel een beschrijving op voor de toepassing van dit diagram. Het is handig om hier te vermelden dat je dit diagram nodig hebt om voor de MIM-toolbox inclusief extensie!</li>
+<li>Vouw onder <em>Properties</em> de lijst met <em>General</em> uit.</li>
+<li>Kies bij <em>Toolbox Profile</em> uit de lijst met namen, de naam van het profiel, in dit geval: <strong>DISGEO</strong> en klik op <em>OK</em>.</li>
+<li>Klik nu op het modelelement <code>«metaclass» Diagram Logical</code> en voeg bij <em>Features</em> een nieuw attribuut toe met de naam: <code>toolboxPage</code>.
+ Vul bij <em>Initial Value</em> de het volgende in:</li>
+</ul>
+<p><code>MIM: Objecten en attributen=1;MIM: Relaties=1;MIM: Datatypen=1;MIM: Waardelijsten=1;MIM: Packages=1;UML: Connectors=0;</code></p>
+<ul>
+<li>Dit geeft aan welke onderdelen van de het toolbox menu uit- (waarde: <code>1</code>) of ingevouwen (waarde: <code>0</code>) zijn.</li>
+</ul>
+<p>Je hebt nu succesvol een <em>Diagram Profile</em> aangemaakt.</p>
+<h2 id="stap-6-genereer-mdg-technology">Stap 6: Genereer MDG Technology</h2>
+<p>Je hebt nu succesvol de volgende drie profielen gemaakt:
+ - <code>«profile»DISGEO</code>
+ - <code>«diagram profile»DISGEO</code>
+ - <code>«toolbox profile»DISGEO</code></p>
+<p>In de volgende stap lees je hoe je de profielen publiceert
+Volg <a href="https://github.com/Geonovum/MIM-Werkomgeving/tree/master/UML%20profieltooling#2--profiel-publiceren">deze link</a> voor een beschrijving.</p>
+<p>Nadat je elk profiel gepubliceert hebt, 'bundel' je ze in een MDG Technology. 
+Hoe je dat doet, lees je <a href="https://github.com/Geonovum/MIM-Werkomgeving/tree/master/UML%20profieltooling#3--genereer-mdg-technologie">hier</a></p>
+<h2 id="stap-7-werken-met-de-toolbox">Stap 7: Werken met de toolbox</h2>
+<p>Bekijk de meest actuele <a href="https://github.com/Geonovum/MIM-Werkomgeving/tree/master/UML%20profieltooling/werkversie1.1.1#readme">handleiding</a> voor het gebruik van toolboxen in EA.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../MIM-toolbox-genereren/" class="btn btn-neutral float-left" title="Toolbox genereren"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../xmi-exporteren/" class="btn btn-neutral float-right" title="XMI exporteren">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/Geonovum/handleiding-tooling" class="fa fa-github" style="color: #fcfcfc"> GitHub</a>
+        </span>
+    
+    
+      <span><a href="../MIM-toolbox-genereren/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../xmi-exporteren/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

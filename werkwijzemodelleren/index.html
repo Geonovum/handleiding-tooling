@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Werkwijze Modelleren - Geonovum tooling</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../css/custom.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Werkwijze Modelleren";
+        var mkdocs_page_input_path = "werkwijzemodelleren.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> Geonovum tooling
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">Home</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="..">Welkom</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Werkwijze Modelleren</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#de-basis">De basis</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#locatie-informatie">​​​​​​​​​​​​​locatie-informatie</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#relevante-standaarden">relevante standaarden​</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#software-installeren-en-configureren">Software installeren en configureren</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#informatiemodelleren">Informatiemodelleren</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#informatiemodel-publiceren">Informatiemodel publiceren​​​​​​​</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#standaardenbeheer">Standaardenbeheer</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../tooling/">Tooling</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../externe-links/">Verdere documentatie</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">GitHub</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../GitHub/">Manual</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../GitHub/GitHub-Inleiding/">GitHub intro</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../GitHub/GitHub-beheer/">GitHub beheer</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Imvertor</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../Imvertor/">Imvertor</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Markdown</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../Markdown/">Markdown</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">ReSpec</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../ReSpec/">Manual</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ReSpec/ReSpec-publiceren/">Publiceren</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ReSpec/ReSpec-onderdelen/">Onderdelen van ReSpec</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Enterprise Architect</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../EA/">Overzicht</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../EA/MIM-toolbox-importeren/">Toolbox importeren</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../EA/EA-toepassing-standaarddatatypen/">standaarddatatypen</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../EA/MIM-toolbox-genereren/">Toolbox genereren</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../EA/MIM-toolbox-genereren-extensie/">Toolbox genereren extensie</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../EA/xmi-exporteren/">XMI exporteren</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">UML</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../UML/">UML</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../UML/UML-leeswijzer/">Leeswijzer UML</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../UML/UML-vraagstukken/">UML FAQ</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Subversion</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../svn/">SVN</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../svn/SVN-installeren-voor-EAP/">SVN installeren voor EAP</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../svn/SVN-importeren-bestaand-project/">SVN importeren bestaand project</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">GML</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../GML/">GML en XSD</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">MIM</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../MIM/">Metamodel Informatie Modellering</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Conceptenbibliotheek</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../Begrippen/">Begrippenmodel</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Begrippen/BegrippenXL/">Begrippen XL</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">RDF</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../RDF/">Handleiding voor het Gebruik van EA2RDF en RDF2RDF Tools</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Ontologie</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../Ontologie/">Handleiding ontologie maken en publiceren</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Word2xxx</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../Word2xxx/">MsWord conversies</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Schemas maken</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../schemas/JSON/">JSON schema's maken.</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">Geonovum tooling</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Home</li>
+      <li class="breadcrumb-item active">Werkwijze Modelleren</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/Geonovum/handleiding-tooling/blob/main/docs/werkwijzemodelleren.md" class="icon icon-github"> Edit on GitHub</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="werkwijze-informatiemodelleren">Werkwijze informatiemodelleren</h1>
+<h2 id="de-basis">De basis</h2>
+<p><strong>Wat is een informatiemodel?</strong></p>
+<p>Wanneer we informatie over bepaalde onderwerpen willen inwinnen, registreren of uitwisselen, dan is het van belang om deze informatie eerst goed te beschrijven. We doen dit door een model te maken van de informatie, ofwel: een informatiemodel. Dit beschrijft de structuur, semantiek en de eigenschappen van informatie over dingen in de werkelijkheid (<a href="https://docs.geostandaarden.nl/mim/mim/#wat-is-een-informatiemodel">lees meer</a>).</p>
+<p><strong>Wat is UML?</strong></p>
+<p>UML (Unified Modelling Language) is de modelleertaal die voorgeschreven wordt voor het maken van een informatiemodel. UML bepaalt voor een deel de structuur en informatie-elementen van het informatiemodel, maar het laat nog teveel vrijheden om richtinggevend te zijn. Binnen UML kunnen én moeten nog extra regels vastgelegd worden om de betekenis van de informatie-elementen eenduidig vast te leggen. Voor dat doeleinde is het Metamodel voor Informatiemodellering (MIM) ontwikkeld (<a href="https://docs.geostandaarden.nl/mim/mim/">lees meer</a>).</p>
+<p><strong>Wat is het Metamodel voor Informatiemodellering (MIM)?</strong></p>
+<p>Een metamodel beschrijft de informatie-elementen die kunnen voorkomen in een informatiemodel. Het is in feite het informatiemodel van onze informatiemodellen. Het Metamodel voor Informatiemodellering definieert een verzameling van modelleerconstructies in de vorm van bouwstenen, oftewel: <strong>modelelementen</strong> zoals <strong><em>Objecttype</em></strong>, <strong><em>Relatiesoort</em></strong> en <strong><em>Attribuutsoort</em></strong> met bijbehorende betekenis en afspraken over hoe je dit kunt toepassen in een informatiemodel. Het MIM is een soort "sjabloon" voor de ontwikkeling van conceptuele en logische informatiemodellen bij Geonovum (<a href="https://docs.geostandaarden.nl/mim/mim/#wat-is-het-metamodel-voor-informatiemodellering">lees meer</a>).</p>
+<p><strong>Welke soorten (informatie)modellen zijn er?</strong></p>
+<p>De modellering van een bepaald domein start in principe met het beschrijven van kennis, te weten de begrippen die een rol spelen in een domein, uitgedrukt in een (meestal) domein specifieke terminologie: <strong>niveau 1</strong>. Op dit niveau is er nog geen of slechts een beperkte notie van welke informatie er geregistreerd en uitgewisseld moet worden; er dus geen nog sprake van een informatiemodel. MIM verstaat onder een informatiemodel een <em>conceptueel</em>: <strong>niveau 2</strong>, of <em>logisch informatiemodel</em>: <strong>niveau 3</strong>. Het metamodel (MIM) richt zich dan ook primair op niveau 2 en 3. Tot slot kan een het informatiemodel uitgewerkt worden in verschillende soorten technische datamodellen en schema's, zoals XML of JSON. In MIM wordt dit <strong>niveau 4</strong> genoemd. Meer informatie over de verschillende niveau's, vind je hier:  </p>
+<ul>
+<li>Niveau 1: <a href="https://docs.geostandaarden.nl/mim/mim/#beschouwingsniveau-1-model-van-begrippen">Model van begrippen</a></li>
+<li>Niveau 2: <a href="https://docs.geostandaarden.nl/mim/mim/#beschouwingsniveau-2-conceptueel-informatiemodel">Conceptueel informatiemodel</a></li>
+<li>Niveau 3: <a href="https://docs.geostandaarden.nl/mim/mim/#beschouwingsniveau-3-logisch-informatie-of-gegevensmodel">Logisch informatiemodel</a></li>
+<li>Niveau 4: <a href="https://docs.geostandaarden.nl/mim/mim/#beschouwingsniveau-4-fysiek-of-technisch-gegevens-of-datamodel">Fysiek of Technisch gegevensmodel</a></li>
+</ul>
+<p>Een informatiemodel is altijd <strong>techniek-onafhankelijk</strong>. Niveau 4 valt daarom buiten de scope van het MIM. Wel streeft het MIM naar <em>Model Driven Development</em>, waarbij technische modellen (niveau 4) gegenereerd kunnen worden vanuit logische modellen (niveau 3). Hiervoor gebruiken we bij Geonovum Imvertor (<a href="https://docs.geostandaarden.nl/mim/mim/#typering-van-modellen-en-wat-wel-en-niet-in-scope-is-van-deze-standaard">lees meer</a>).</p>
+<h2 id="locatie-informatie">​​​​​​​​​​​​​locatie-informatie</h2>
+<p><strong>Basismodel Geo-informatie (NEN3610)</strong></p>
+<p>Geonovum richt zich in het bijzonder op het modelleren van geografische informatie. Hiervoor is het Basismodel Geo-informatie (NEN3610) leidend. Aanvullend op het MIM dat de methode van het informatiemodelleren standaardiseert, geeft het <a href="https://stichtinggeonovum.sharepoint.com/sites/msteams_bf388d/Gedeelde%20documenten/Forms/AllItems.aspx?id=/sites/msteams_bf388d/Gedeelde%20documenten/General/A%20Informatiemodellen/NEN3610/NEN%203610_2022%20nl.pdf&amp;viewid=3a693696-6e40-41fb-a369-1de62b54d550&amp;parent=/sites/msteams_bf388d/Gedeelde%20documenten/General/A%20Informatiemodellen/NEN3610">Basismodel geo-informatie</a> regels voor het <em>eenduidig beschrijven van conceptuele en logische informatiemodellen met locatiegebonden informatie</em> (geo-informatie). Hoe je deze regels hanteert, beschrijft de <a href="https://geonovum.github.io/nen3610-werkomgeving/">handreiking voor het toepassen van het Basismodel geo-informatie</a>. Tevens bestaat er een Linked Data-toepassing van het Basismodel geo-informatie. Meer informatie hierover vind je terug in het document <a href="https://geonovum.github.io/NEN3610-Linkeddata/">NEN 3610 - Linked Data</a>.</p>
+<p><strong>Geometrie in informatiemodellen</strong></p>
+<p>Het basismodel geo-informatie (NEN3610) verwijst voor de toepassing van geometrie in informatiemodellen naar de relevante ISO-normen. Voor toepassing in het werkveld zijn deze normen niet toegankelijk genoeg. De handleiding <a href="https://geonovum.github.io/gimeg/">toepassing van geometrie in informatiemodellering</a> slaat een brug tussen NEN3610 en het werkveld.</p>
+<p><strong>Coördinaatreferentiesystemen</strong></p>
+<p>In de <a href="https://docs.geostandaarden.nl/crs/crs/">handreiking gebruik coördinaatreferentiesystemen bij uitwisseling en visualisatie van geo-informatie</a>, vind je een bundeling van bestaande adviezen van het <a href="https://www.nsgi.nl/">Nederlandse Samenwerking Geodetische Infrastructuur</a> (NSGI) over geodetisch correct gebruik van de in Nederland gebruikte coördinaatreferentiesystemen (CRS-en).</p>
+<p><strong>Langelijnenadvies</strong></p>
+<p>Voor het waarborgen van de nauwkeurigheid van lange lijnstukken van grenzen, passen we het advies <a href="https://geoforum.nl/uploads/default/original/2X/c/c0795baa683bf3845c866ae4c576a880455be02a.pdf">Eenduidige transformatie van grenzen tussen ETRS89 en RD</a> toe.</p>
+<p><strong>Geometrie in Uitwisselingsformaten</strong></p>
+<p>Geography Markup Language (GML) is een hele volledige, maar ook vrij complexe standaard, en daardoor niet geschikt voor alle toepassingen. De handreiking <a href="https://docs.geostandaarden.nl/g4w/vv-hr-geox-20220104/#kieswijzer">geometrie in uitwisselingsformaten</a> geeft daarom een overzicht van de meest populaire alternatieven voor het uitwisselen en publiceren van vectordata - volgens open standaarden. Het gaat hierbij om 'lichtere bestandsformaten', in tegenstelling tot het allesomvattende (maar daardoor ook complexere) GML-formaat.</p>
+<p><strong>Basisgeometrie</strong></p>
+<p>In sommige situaties beschrijven verschillende informatiemodellen hetzelfde object in de werkelijkheid. Als elk model een unieke set van kenmerken bevat van hetzelfde object en daarvoor dezelfde geometrie hanteert, is het niet nodig dat elk model de geometrie apart vastlegt. Je kunt die modellen naar één geometrie laten verwijzen. Het <a href="https://geonovum.github.io/Basisgeometrie-Werkomgeving/">model Basisgeometrie</a> biedt hiervoor een gestandaardiseerde oplossing.</p>
+<h2 id="relevante-standaarden">relevante standaarden​</h2>
+<p><strong>​​​​​​​​​​​​​Bij de ontwikkeling van een geo-informatiestandaard, krijg je te maken met een grote verscheidenheid aan verschillende soorten standaarden. Niet alle standaarden zijn voor elke toepassing relevant.</strong></p>
+<p><strong>Raamwerk van Geo-standaarden</strong></p>
+<p>Het <a href="https://geonovum.github.io/raamwerk-geostandaarden/">raamwerk van geo-standaarden</a> helpt bij de opzet en ontwikkeling van een geo-informatie infrastructuur om de juiste set standaarden te kiezen. Het benoemt de internationale en nationale standaarden die voor Nederland binnen het geo-domein van toepassing zijn voor aansluiting met andere domeinen. Onderwerpen die aan bod komen zijn standaarden voor: <a href="https://geonovum.github.io/raamwerk-geostandaarden/#geo-standaarden-in-samenhang">geo-informatie</a>, <a href="https://geonovum.github.io/raamwerk-geostandaarden/#informatiemodellen">informatiemodellering</a>, <a href="https://geonovum.github.io/raamwerk-geostandaarden/#visualisatie">visualisatie</a>, <a href="https://geonovum.github.io/raamwerk-geostandaarden/#application-programming-interfaces">API's</a>, <a href="https://geonovum.github.io/raamwerk-geostandaarden/#uitwisselformaten">uitwisselformaten</a>, <a href="https://geonovum.github.io/raamwerk-geostandaarden/#metadata">metadata</a> en <a href="https://geonovum.github.io/raamwerk-geostandaarden/#coordinaatreferentiesystemen">coördinaatreferentiesystemen</a>.</p>
+<p><strong>Standaarden Op Teams</strong></p>
+<p>Hoofdmap waar documentatie van de <a href="https://stichtinggeonovum.sharepoint.com/sites/Basisprogramma/Gedeelde%20documenten/Forms/AllItems.aspx?csf=1&amp;web=1&amp;e=51pjTB&amp;cid=8e49bf07-9c61-4222-8d16-d7e33e4ae315&amp;FolderCTID=0x01200083248CF916421045A630BAD1CFC3A243&amp;id=/sites/Basisprogramma/Gedeelde%20documenten/General/Standaardisatie%20GII/4%20Bibliotheek/ISO%2019xxx&amp;sortField=Modified&amp;isAscending=false&amp;viewid=94f965cf-2c44-46c9-bbd2-1aff169b4901">ISO-standaarden op Teams</a> beschikbaar zijn. We beschikken niet over de complete set relevante geo-standaarden. Bovendien zijn de documenten in deze map niet altijd de formeel definitieve versie van de standaard.</p>
+<h2 id="software-installeren-en-configureren">Software installeren en configureren</h2>
+<p>​​​​​​​<strong>UML modelleersoftware: Enterprise Architect (EA)</strong></p>
+<p>Informatiemodellen ontwikkelen we bij Geonovum met de software Enterprise Architect van Sparx Systems. Download en installeer EA (<a href="https://sparxsystems.com/enterprise_architect_user_guide/15.2/product_information/installea.html">installatie-instructie</a>). Bewaar het installatiebestand. De licentie voor support van Sparx verloopt na een jaar en daarmee tevens de <em>credentials</em> voor het downloaden van de laatste versie. Je kunt EA dan nog wel gebruiken. Mocht je EA opnieuw willen installeren, dan heb je dit bestand en je oorspronkelijke <em>credentials </em>nodig. Bewaar die dus goed!</p>
+<p><strong>Versiebeheersoftware: Subversion (SVN)</strong></p>
+<p>Informatiemodellen staan altijd onder versiebeheer. Hiervoor gebruiken we het programma <strong>TurtoiseSVN</strong>. Vraag <strong>toegang </strong>tot de SVN-server (via <strong>Rob Kaesehagen</strong>). Installeer SVN en zet een project in versiebeheer (<a href="https://geonovum.github.io/handleiding-tooling/SVN-installeren-voor-EAP/">installatie-instructie</a>). Ga je met een bestaand project aan de slag, lees dan in de handleiding <a href="https://github.com/Geonovum/handleiding-tooling/blob/main/docs/SVN-importeren-bestaand-project.md">importeren bestaand SVN-project in EA</a>hoe je dat doet. Onder het kopje <a href="https://github.com/Geonovum/geonovum-werkwijze/blob/main/howto.md#72---versiebeheer">versiebeheer</a>, vind je meer informatie.</p>
+<p><strong>MIM-toolbox voor Enterprise Architect</strong></p>
+<p>Voor een eenvoudige toepassing van Metamodel voor Informatiemodellering (MIM) is de MIM-toolbox beschikbaar. Het gebruik van de toolbox is niet verplicht, maar we raden het wel aan. Het bespaart je als modelleur veel handwerk. De handleiding <a href="https://github.com/Geonovum/MIM-Werkomgeving/blob/master/UML%20profieltooling/werkversie1.1.1/README.md">importeren en toepassen MIM-toolbox voor Enterprise Architect</a> legt uit hoe je hiermee aan de slag kunt.</p>
+<p><strong>GitHub</strong></p>
+<p>Werkversies van informatiemodellen maken we publiek toegankelijk via GitHub. De <strong>handleiding</strong> <a href="https://geonovum.github.io/handleiding-tooling/GitHub-Inleiding/">GitHub-introductie</a> legt uit waarom GitHub handig is en hoe je ermee aan de slag kunt. Een <strong>beschrijving</strong> van de manier waarop we GitHub gebruiken, is opgenomen in de handleiding GitHub, onder <a href="https://geonovum.github.io/handleiding-tooling/GitHub/#werkwijze-geonovum">werkwijze Geonovum</a>. Om met GitHub te werken heb je een <strong>account</strong> nodig. Als je dat nog niet hebt, maak er dan één aan (<a href="https://geonovum.github.io/handleiding-tooling/GitHub/#installatie-en-inrichting">account maken</a>). Vraag vervolgens aan één van de GitHub-<em>administrators</em> om je toe te voegen aan de <a href="https://github.com/Geonovum">Geonovum-GitHub-pagina</a>, dit kan onder andere via het Slack-kanaal <strong>#github-admins</strong>. Zorg hierna dat je de juiste <strong>rechten</strong> ontvangt voor de <em>repository </em>waaraan je gaat werken. Ga je aan een nieuw project werken, vraag dan of één van de Github <em>administrators</em> een <strong>nieuw repository</strong> voor je opzet. </p>
+<p><strong>Publicatie- en schemageneratiesoftware: Imvertor</strong></p>
+<p>Geonovum ontwikkelt standaarden <em>Model Driven</em>. Deze manier van softwareontwikkeling integreert het hele proces van bedenken tot uitvoeren en testen. Hiervoor gebruiken we de software Imvertor. Dit is een <em>add-in</em> voor Enterprise Architect. Vraag een <strong>Imvertoraccount </strong>aan. Installeer Imvertor aan de hand van de <a href="https://imvertor.armatiek.nl/imvertor-executor/dashboard/wiki?key=info-IMVERTORHTSWWI">installatie-instructie</a> op de website van Armatiek. Naast de standaardinstallatie biedt Imvertor veel configuratie-opties. Vanuit gebruikservaring bij Geonovum is er een document met enkele <a href="https://geonovum.atlassian.net/l/cp/2iwpfavy">handige tips voor Imvertorgebruik beschikbaar</a>.</p>
+<h2 id="informatiemodelleren">Informatiemodelleren</h2>
+<p><strong>Begrippenkader maken</strong></p>
+<p>Er zijn op dit moment twee manieren om een <em>model van begrippen</em> te maken. Beiden leveren hetzelfde resultaat op in de vorm van een Turtle-bestand op (extensie: &lt;modelnaam&gt;.ttl). Je kunt ervoor kiezen om te werken met het programma <strong>Vocbench</strong> (<a href="https://stichtinggeonovum.sharepoint.com/:p:/r/sites/msteams_bf388d/_layouts/15/Doc.aspx?sourcedoc=%7bA6142988-50A2-4803-B8EB-658AA51FF4EE%7d&amp;file=20210125%20Werken%20met%20VocBench.pptx&amp;action=edit&amp;mobileredirect=true">handleiding</a>). Of je kunt rechtstreeks aan de slag in een <strong>teksteditor</strong>. Hier vind je een <a href="https://definities.geostandaarden.nl/hitte/nl/">voorbeeld van een gepubliceerd begrippenkader</a> en het onderliggende <a href="https://github.com/Geonovum/imka-begrippen/blob/main/ttl/imka-begrippen.ttl">Turtle-bestand op GitHub</a>. Een <strong>werkversie</strong> van een begrippenkader kun je publiceren op: <a href="https://begrippen.geostandaarden.nl/">https://begrippen.geostandaarden.nl</a>. De <strong>formele publicatie</strong> vindt plaats op: <a href="https://definities.geostandaarden.nl/">https://definities.geostandaarden.nl</a>.</p>
+<p><strong>Informatiemodel maken</strong></p>
+<p>Voor hulp bij het maken van een informatiemodel is de <a href="https://docs.geostandaarden.nl/mim/him10/">Handreiking Informatiemodelleren</a> (HIM) beschikbaar. Hierin vind je onder andere informatie over <a href="https://docs.geostandaarden.nl/mim/him10/#H02">algemene aspecten</a> van informatiemodelleren, een <a href="https://docs.geostandaarden.nl/mim/him10/#H03">stappenplan</a> om te komen tot een informatiemodel én uitleg over de <a href="https://docs.geostandaarden.nl/mim/him10/#H04">toepassing van het MIM</a> voor het opstellen van een informatiemodel. Het <a href="https://docs.geostandaarden.nl/mim/mim/">MIM</a>, beschrijft de <em>metaklassen</em>, <em>metastructuur</em> en <em>metagegevens</em> van een informatiemodel. Door standaardisatie van de methode van informatiemodelleren, faciliteert het metamodel een stelsel van samenhangende informatiemodellen, zowel binnen als buiten het geodomein.</p>
+<p><strong>EAP-bestanden van bestaande modellen</strong></p>
+<p>Ben je op zoek naar voorbeelden van door Geonovum ontwikkelde modellen? Kijk dan ook eens naar de EAP-bestanden in de Teams folder <a href="https://stichtinggeonovum.sharepoint.com/:f:/r/sites/msteams_bf388d/Gedeelde%20documenten/General/A%20Informatiemodellen?csf=1&amp;web=1&amp;e=Qc6obQ">A Informatiemodellen</a> in het team 'Geonovum'. Mogelijk is dit niet compleet en actueel. Ook verouderde modellen zijn hierin opgenomen. Ook modellen die niet door ons ontwikkelde zijn, maar wel relevant zijn, kun je hier vinden zoals bijvoorbeeld (een oude versie van) IMWOZ.</p>
+<p><strong>WaU</strong></p>
+<p>Het programma Werk aan Uitvoering (WAU) levert o.a. een aantal <a href="https://github.com/geonovum/WaU/#deliverables">deliverables</a> op, zoals een <em>cross-domein model</em>, <em>generieke modelleerpatronen</em> en <em>vertaalspecificaties</em>. Dit is nog in ontwikkeling, maar biedt belangrijke uitgangspunten en aanknopingspunten voor het modelleren van domeinoverstijgende vraagstukken.</p>
+<h2 id="informatiemodel-publiceren">Informatiemodel publiceren​​​​​​​</h2>
+<p><strong>Hoe en waar je een informatiemodel publiceert, hangt af van de </strong><strong><em>status</em></strong><strong> en het </strong><strong><em>type</em></strong><strong> model. Van een model van begrippen komt de werkversie op begrippen.geostandaarden.nl; de vastgestelde versie op definities.geostandaarden.nl (zie: </strong><a href="https://github.com/Geonovum/geonovum-werkwijze/blob/main/linkOpnemen">Begrippenkader maken</a><strong>. De werkversie van een conceptueel model komt als ReSpec-document op GitHub; de vastgestelde versie als ReSpec-document op </strong><a href="https://github.com/Geonovum/geonovum-werkwijze/blob/main/linkOpnemen">docs.geostandaarden.nl</a><strong>. Technische documentie van vastgestelde conceptuele, logische of technische modellen, brengen we onder op </strong><a href="https://github.com/Geonovum/geonovum-werkwijze/blob/main/linkOpnemen">register.geostandaarden.nl</a><strong>. Denk bij technische documenten bijvoorbeeld aan een beschrijving van het informatiemodel in UML (*.EAP of *.XMI), maar ook aan een GML-applicatieschema, XML-schema, regels of een waardelijst (zie: </strong><a href="https://register.geostandaarden.nl/">kolom ingang: soort bestand</a><strong>).</strong></p>
+<p><strong>ReSpec</strong></p>
+<p>ReSpec geneert automatisch vanuit één of meerdere <a href="https://www.markdownguide.org/cheat-sheet/">Markdown</a>-bestanden een gestandaardiseerd HTML-document. Er is een standaardconfiguratie op Geonovum-standaarden van toepassing, dus in principe is kennis van Markdown voldoende. Wil je meer weten over hoe je ReSpec kunt gebruiken, kijk dan op deze <a href="https://github.com/w3c/respec/wiki">Engelstalige wiki</a>, of in de <a href="https://respec.org/docs/">officiële documentatie</a>. Het is ook mogelijk om vanuit een Word-document ReSpec te genereren. Meer daarover lees je in het document <a href="https://geonovum.github.io/word2werkversie_handleiding/">Word2ReSpec</a>. Het hoofdstuk gegevensdefinitie publiceer je vanuit Enterprise Architect automatisch met behulp van <a href="https://github.com/Geonovum/handleiding-tooling/blob/main/docs/Imvertor.md">Imvertor</a>. Een voorbeeld van een procesbeschrijving lees je terug in het document <a href="https://geonovum.atlassian.net/l/cp/Fi0U9bCk">publiceren van IMGeluid EAP-bestand</a>.</p>
+<p><strong>Docs.geostandaarden</strong></p>
+<p>Het ReSpec-document van een vastgestelde versie van een standaard publiceren we op docs.geostandaarden. Het document <a href="https://geonovum.atlassian.net/l/cp/Fi0U9bCk">publiceren van het IMGeluid EAP-bestand</a> bevat een <a href="https://geonovum.atlassian.net/wiki/spaces/IMGeluid/pages/2243657743/Het+wijzigen+en+publiceren+van+een+nieuwe+versie+van+IMGeluid#Het-publiceren-van-de-IMGeluid-standaard">beschrijving</a> hoe je dit doet.</p>
+<p><strong>Register.geostandaarden</strong></p>
+<p>Het technisch register biedt praktische informatie aan met name ontwikkelaars die op basis van deze informatiemodellen software bouwen. Het is daarmee de authentieke bron waar je alle relevante versies van technische bestanden, inclusief validatieregels, direct online kunt vinden. Het register is de centrale plek waar je alle technische bestanden van informatiemodellen uit de NEN3610-familie vindt. Op de <a href="https://github.com/Geonovum/technisch-register-2019">Github-pagina technisch register 2019</a> vind je meer informatie. Hoe je de technische bestanden van een informatiemodel in het technisch register publiceert, lees je in de <a href="https://github.com/Geonovum/technisch-register-2019/blob/master/documentatie/HandleidingVoorBeheerdersInformatiemodellen.md">handleiding voor beheerders informatiemodellen</a>. Wil je een systeem opzetten voor het volgen van versies van een nieuw informatiemodel, raadpleeg dan de <a href="https://github.com/Geonovum/technisch-register-2019/blob/master/documentatie/HandleidingVoorBeheerdersTechnischRegister.md">handleiding voor beheerders technisch register</a> en kijk voor meer informatie bij <a href="https://github.com/Geonovum/geonovum-werkwijze/blob/main/howto.md#versiebeheer">versiebeheer</a>.</p>
+<h2 id="standaardenbeheer">Standaardenbeheer</h2>
+<p><strong>Beheer basis-geostandaarden</strong></p>
+<p>Het document <a href="https://geonovum.github.io/Geo-standaarden-beheerplan/">beheer basis-geostandaarden</a> beschrijft verschillende beheeraspecten, zoals implementatieondersteuning, wijzigingsproces en governance. zodat iedere organisatie die de basis geo-standaarden gebruikt haar weg daarin weet te vinden. Met behulp van het <a href="https://www.logius.nl/domeinen/infrastructuur/bomos">beheer- en ontwikkelmodel voor open standaarden</a> (BOMOS) geeft Geonovum het beheer en de verdere ontwikkeling van de basis geo-standaarden structureel vorm. Wil je meer weten over de <strong>Geonovum werkwijze op basis van BOMOS</strong> dan kun je <a href="https://stichtinggeonovum.sharepoint.com/:f:/r/sites/msteams_bf388d/Gedeelde%20documenten/General/A%20Beheer%20Geostandaarden/BOMOS?csf=1&amp;web=1&amp;e=AOLWOO">in deze map</a> meer informatie vinden. Of bekijk de presentatie <a href="https://stichtinggeonovum.sharepoint.com/:p:/r/sites/msteams_bf388d/Gedeelde%20documenten/General/A%20Beheer%20Geostandaarden/BOMOS/2022%20Geonovum%20en%20BOMOS.pptx?d=w9baa0e5136b54635bab2a84c620893d0&amp;csf=1&amp;web=1&amp;e=uShrig">Geonovum en BOMOS</a>. </p>
+<p><strong>Versiebeheer</strong></p>
+<p>Bij een geostandaard in beheer horen ook afspraken over het <a href="https://geonovum.github.io/Geo-standaarden-beheerplan/#versiebeheer">versiebeheer</a>. Versies van een standaard zijn er in verschillende gradaties: X, Y of Z. Elk type wijziging heeft een relatie met een voorgaande versie. Wijzigingen worden vastgelegd in een apart document bij de uitgebrachte versie van de standaard. De gebruiker kan zo nagaan op welke plaatsen de een standaard gewijzigd is. Het verdient de voorkeur deze aanpak ook in de ontwikkelomgeving van informatiemodellen toe te passen. Het document <a href="https://github.com/Geonovum/disgeo-im/blob/main/docs/algemeen/versionering_strategie.md">strategie semantic versioning DiSGeo</a> toont een praktische toepassing van versiebeheer in Subversion.</p>
+<p><strong>Wijzigingen</strong></p>
+<p>Over de manier waarop de wijzigingen van een basis-geostandaard plaatsvinden lees je in het <a href="https://geonovum.github.io/Geo-standaarden-wijzigingsprotocol/">wijzigingsprotocol geo-standaarden</a>. Hierin staan de sturende principes achter het generieke wijzigingsproces van de basisset van geostandaarden.Het wijzigingsprotocol is alleen van toepassing op de basisset van geostandaarden, voor zover die bij Geonovum in beheer zijn. Een concrete toepassing hiervan vind je in het <a href="https://geonovum.github.io/IMG-wijzigingsprotocol/">wijzigingsprotocol IMGeluid</a>.</p>
+<p><strong>Handboek intern beheer</strong></p>
+<p>Geonovum werkt aan vele projecten en aan flink aantal beheeropdrachten. Beheer is een proces en geen project en daarom des te meer van belang onze ervaring en kennis te delen, te borgen en de nieuwe collega’s te coachen in het standaardenwerk bij Geonovum. Daarbij hoort ook het vastleggen van de afspraken: <em>zo doen we dat bij Geonovum!</em> Het <a href="https://stichtinggeonovum.sharepoint.com/:b:/r/sites/msteams_bf388d/Gedeelde%20documenten/General/A%20Beheer%20Geostandaarden/Handboek%20Beheerder/Handboek%20beheer%20standaarden%20bij%20Geonovum.pdf?csf=1&amp;web=1&amp;e=ltQh3L">handboek beheer</a> is de invulling van de beheeropdracht, het <a href="https://stichtinggeonovum.sharepoint.com/sites/msteams_bf388d/Gedeelde%20documenten/Forms/AllItems.aspx?id=/sites/msteams_bf388d/Gedeelde%20documenten/General/Handboek%20Opdrachtnemer/componenten/pdf/Handboekopdrachtnemer.pdf&amp;viewid=3a693696-6e40-41fb-a369-1de62b54d550&amp;parent=/sites/msteams_bf388d/Gedeelde%20documenten/General/Handboek%20Opdrachtnemer/componenten/pdf">handboek opdrachtnemer</a> gaat over onder andere het organiseren van de beheeropdracht in samenwerking met de opdrachtgever.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href=".." class="btn btn-neutral float-left" title="Welkom"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../tooling/" class="btn btn-neutral float-right" title="Tooling">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/Geonovum/handleiding-tooling" class="fa fa-github" style="color: #fcfcfc"> GitHub</a>
+        </span>
+    
+    
+      <span><a href=".." style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../tooling/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

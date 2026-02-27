@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>SVN importeren bestaand project - Geonovum tooling</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../css/custom.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "SVN importeren bestaand project";
+        var mkdocs_page_input_path = "svn/SVN-importeren-bestaand-project.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Geonovum tooling
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">Home</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../..">Welkom</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../werkwijzemodelleren/">Werkwijze Modelleren</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../tooling/">Tooling</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../externe-links/">Verdere documentatie</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">GitHub</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../GitHub/">Manual</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../GitHub/GitHub-Inleiding/">GitHub intro</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../GitHub/GitHub-beheer/">GitHub beheer</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Imvertor</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Imvertor/">Imvertor</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Markdown</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Markdown/">Markdown</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">ReSpec</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../ReSpec/">Manual</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../ReSpec/ReSpec-publiceren/">Publiceren</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../ReSpec/ReSpec-onderdelen/">Onderdelen van ReSpec</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Enterprise Architect</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../EA/">Overzicht</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../EA/MIM-toolbox-importeren/">Toolbox importeren</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../EA/EA-toepassing-standaarddatatypen/">standaarddatatypen</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../EA/MIM-toolbox-genereren/">Toolbox genereren</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../EA/MIM-toolbox-genereren-extensie/">Toolbox genereren extensie</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../EA/xmi-exporteren/">XMI exporteren</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">UML</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../UML/">UML</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../UML/UML-leeswijzer/">Leeswijzer UML</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../UML/UML-vraagstukken/">UML FAQ</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Subversion</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../">SVN</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SVN-installeren-voor-EAP/">SVN installeren voor EAP</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">SVN importeren bestaand project</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#inleiding">Inleiding</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#inhoud">Inhoud</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#voorbereiding">Voorbereiding</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#mim-toolbox-importeren">MIM-toolbox importeren</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#lokale-folder-aanmaken-en-koppelen">Lokale folder aanmaken en koppelen</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#packages-importeren">Packages importeren</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#stap-1-configureer-de-vc-settings">Stap 1: Configureer de VC-settings</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#11-model-settings">1.1 Model Settings:</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#12-configuration-details">1.2 Configuration Details</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#13-workstation-settings">1.3 Workstation Settings</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#14-defined-configurations">1.4 Defined Configurations</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#stap-2-haal-het-package-op">Stap 2: Haal het package op</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#stap-3-haal-de-inhoud-van-het-package-op">Stap 3: Haal de inhoud van het package op</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">GML</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../GML/">GML en XSD</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">MIM</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../MIM/">Metamodel Informatie Modellering</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Conceptenbibliotheek</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Begrippen/">Begrippenmodel</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Begrippen/BegrippenXL/">Begrippen XL</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">RDF</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../RDF/">Handleiding voor het Gebruik van EA2RDF en RDF2RDF Tools</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Ontologie</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Ontologie/">Handleiding ontologie maken en publiceren</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Word2xxx</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Word2xxx/">MsWord conversies</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Schemas maken</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../schemas/JSON/">JSON schema's maken.</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Geonovum tooling</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Subversion</li>
+      <li class="breadcrumb-item active">SVN importeren bestaand project</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/Geonovum/handleiding-tooling/blob/main/docs/svn/SVN-importeren-bestaand-project.md" class="icon icon-github"> Edit on GitHub</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="svn-importeren-van-een-bestaand-project-in-ea">SVN - Importeren van een bestaand project in EA</h1>
+<p>Enterprise Architect versie: 15.2</p>
+<p>Tortoise SVN Subversion versie: 1.14.1</p>
+<h2 id="inleiding">Inleiding</h2>
+<p>Deze handleiding beschrijft hoe je in Enterprise Architect de packages van een bestaand project kunt importeren vanuit Subversion . Het stappenplan laat zien hoe je aan de hand van een EAP-bestand van het IMDiSGeo (<code>IMSOR-XMI</code>) een bestaand package toevoegt. In dit voorbeeld wordt het package met <a href="https://geonovum.github.io/uml-datatypen/">standaarddatatypes</a> toegevoegd. Je kunt ook bestaande packages importeren in een nieuw (leeg) EAP-bestand. De methode is vrijwel identiek. De handleiding licht beide opties toe.</p>
+<h2 id="inhoud">Inhoud</h2>
+<p>Dit document bevat de volgende onderdelen: </p>
+<ul>
+<li><a href="#voorbereiding">Voorbereiding</a></li>
+<li><a href="#stap-1-configureer-de-vc-settings">Stap 1: Configureer de VC-settings</a></li>
+<li><a href="#stap-2-haal-het-package-op">Stap 2: Haal het <em>package</em> op</a></li>
+<li><a href="#stap-3-haal-de-inhoud-van-het-package-op">Stap 3: Haal de inhoud van het <em>package</em> op</a></li>
+</ul>
+<h2 id="voorbereiding">Voorbereiding</h2>
+<h3 id="mim-toolbox-importeren">MIM-toolbox importeren</h3>
+<p>Importeer de MIM-toolbox (<a href="https://github.com/Geonovum/MIM-Werkomgeving/blob/master/UML%20profieltooling/werkversie1.1.1/README.md#1--importeren-mim-toolbox">instructie</a>). Dit is met name relevant als het bestaande project ontwikkeld is met de MIM-toolbox. Door de toolbox vooraf te importeren, maakt EA automatisch een koppeling met de MIM-modelelementen in de packages die je gaat importeren.</p>
+<h3 id="lokale-folder-aanmaken-en-koppelen">Lokale folder aanmaken en koppelen</h3>
+<p>Zie hiervoor <strong>stap 2</strong> en <strong>stap 3</strong> uit de handleiding <a href="https://github.com/Geonovum/imvertor/blob/main/handleidingen/SVN%20-%20installeren%20voor%20EAP.md#handleiding-voor-het-installeren-van-svn-subversion-voor-een-eap-bestand">SVN - installeren voor EAP</a>.</p>
+<h2 id="packages-importeren"><em>Packages</em> importeren</h2>
+<h3 id="stap-1-configureer-de-vc-settings">Stap 1: Configureer de VC-settings</h3>
+<p>Configueer de version control settings van het bestaande project</p>
+<ul>
+<li>Ga naar <code>Configure</code> &gt; <code>Project-VC</code>.</li>
+<li>Er verschijn nu een venster met de naam <code>Version Control Settings</code>.</li>
+<li>Bij een <strong>nieuw EAP-bestand</strong> is dit venster leeg, maar bij een <strong>bestaand EAP-bestand</strong> met packages onder versiebeheer moet je eerst op <em>New</em> klikken (zie onderstaande afbeelding).</li>
+<li>Doorloop daarna de onderdelen onder de afbeelding.</li>
+</ul>
+<p><img alt="" src="../media/svn_pcsettings_create_new.png" /></p>
+<h4 id="11-model-settings">1.1 Model Settings:</h4>
+<ul>
+<li>Check: "<em>Save nested version</em>" [...]</li>
+</ul>
+<h4 id="12-configuration-details">1.2 Configuration Details</h4>
+<ul>
+<li>Check: "<em>Subversion</em>"</li>
+<li>Unique ID: Zelf gekozen unieke aanduiding voor de package onder version control. <strong>Suggestie</strong>: <code>Geonovum-{naam van het package}</code>, bijvoorbeeld; <code>Geonovum-datatypes</code>, of: <code>Geonovum-imkl</code>.</li>
+<li>Selecteer het <em>Working Copy Path</em> dat je gebruikt voor Subversion. Dit is de folder waar de lokale SVN-gegevens worden weggeschreven (zie: stap 2 bij <a href="#lokale-folder-aanmaken-en-koppelen">lokale folder aanmaken en koppelen</a>).</li>
+</ul>
+<h4 id="13-workstation-settings">1.3 Workstation Settings</h4>
+<ul>
+<li>Selecteer het <em>Subversion Exe Path</em> (de locatie van het bestand: <code>svn.exe</code>), als dat nog niet is ingevuld.</li>
+<li>Klik <em>Save</em></li>
+</ul>
+<h4 id="14-defined-configurations">1.4 Defined Configurations</h4>
+<ul>
+<li>Controleer de Defined Configuration. Dit veld heeft nu één (nieuwe) ingevulde regel (zie afbeelding) met de Unique ID die je in <a href="#12-configuration-details">onderdeel 1.2</a> hebt opgegeven.</li>
+<li>Klik <em>Close</em></li>
+</ul>
+<p><img alt="" src="../media/svn_configure_project_vc.jpg" /></p>
+<h3 id="stap-2-haal-het-package-op">Stap 2: Haal het <em>package</em> op</h3>
+<ul>
+<li>Klik met rechtermuisknop op <em>Model</em> en ga naar <code>Package Control</code> &gt; <code>Get Package</code>.</li>
+<li>Selecteer bij <em>Select a Version Control Configuration</em> in: <code>Geonovum-datatypes</code>.</li>
+<li>Selecteer bij <em>Select A Shared File For Inclusion</em>: <code>Geonovum-algemeen.xml</code>.</li>
+</ul>
+<p><img alt="" src="../media/svn_get_package.png" /></p>
+<blockquote>
+<p><strong>Note</strong>: Kies indien van toepassing het 'hoogtste' <em>package</em> in de hiërarchie van de <em>package</em>-structuur van het te importeren bestand. Op deze manier haal je ook in één keer alle subpackages op. </p>
+<p><strong>Note</strong>: Het niveau in de package-structuur van de project browser waar je klikt, bepaalt de plek waar het geimporteerde package terecht komt. Het komt daaronder. kies je model, dan komt het op het 'hoogste' niveau. Dit is soms relevant. Als iets wel, of juist niet onderdeel van het model moet zijn. Ook voor Imvertor is/was dit relevant... (controleren)</p>
+</blockquote>
+<p><img alt="" src="../media/svn_get_shared_file.png" /></p>
+<p>In de <em>Project Browser</em> verschijnt nu het <em>package</em> <code>Geonovum-algemeen</code> en indien aanwezig inclusief de subpackages. Het kan zijn dat de <em>packages</em> in dit stadium nog leeg zijn. Dat lossen we in de volgende stap op.</p>
+<h3 id="stap-3-haal-de-inhoud-van-het-package-op">Stap 3: Haal de inhoud van het <em>package</em> op</h3>
+<blockquote>
+<p><strong>Note</strong>: Via onderstaande stappen haal je de meest actuele versie op van de packages die onder versiebeheer staan. Als je met verschillende modelleurs aan een package werkt, is het verstandig om deze stappen tussentijds regelmatig uit te voeren.</p>
+</blockquote>
+<ul>
+<li>Klik met de rechtermuisknop op een <em>package</em>, bijv. <code>Geonovum-geometrie</code>.</li>
+<li>Klik op <em>Ok</em></li>
+<li>Klik met de rechtermuisknop op het <em>package</em> <code>Geonovum-geometrie</code> &gt; <code>Package Control</code> &gt; <code>Get All Latest</code>.</li>
+</ul>
+<p><img alt="" src="../media/svn_get_all_latest.png" /></p>
+<p>Er verschijnt een venster <em>Get All Latest</em>
+ - Selecteer <em>Import Changed Files Only</em> (recommended)
+ - Klik <em>Ok</em>.</p>
+<p><img alt="" src="../media/svn_get_all_latest_window.png" /></p>
+<p>Het <em>package</em> en de <em>subpackages</em> zijn succesvol geïmporteerd. Indien je meerdere basismodellen (of andere typen <em>packages</em>) wilt importeren, doorloop je stap 1 t/m 3 opnieuw.</p>
+<blockquote>
+<p><strong>Note</strong>: Het kan zijn dat de packages toch niet goed geïmporteerd worden. Doorloop dan onderstaande stappen.</p>
+</blockquote>
+<ul>
+<li>Klik met de rechtermuisknop op het <em>package</em> <code>«Geonovum-geometrie»</code>.</li>
+<li>Klik op <em>Ok</em></li>
+<li>Klik met de rechtermuisknop op het <em>package</em> <code>Basismodel</code> &gt; <code>Package Control</code> &gt; <code>Get Latest</code>.</li>
+</ul>
+<p>Er verschijnt een venster <em>Import Package</em>
+ - Selecteer <em>Force reload from XMI</em>
+ - Klik <em>Ok</em>.</p>
+<p><img alt="" src="../media/svn_get_latest_force_reload.png" /></p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../SVN-installeren-voor-EAP/" class="btn btn-neutral float-left" title="SVN installeren voor EAP"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../../GML/" class="btn btn-neutral float-right" title="GML en XSD">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/Geonovum/handleiding-tooling" class="fa fa-github" style="color: #fcfcfc"> GitHub</a>
+        </span>
+    
+    
+      <span><a href="../SVN-installeren-voor-EAP/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../../GML/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

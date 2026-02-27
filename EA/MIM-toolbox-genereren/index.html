@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Toolbox genereren - Geonovum tooling</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../css/custom.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Toolbox genereren";
+        var mkdocs_page_input_path = "EA/MIM-toolbox-genereren.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Geonovum tooling
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">Home</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../..">Welkom</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../werkwijzemodelleren/">Werkwijze Modelleren</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../tooling/">Tooling</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../externe-links/">Verdere documentatie</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">GitHub</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../GitHub/">Manual</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../GitHub/GitHub-Inleiding/">GitHub intro</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../GitHub/GitHub-beheer/">GitHub beheer</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Imvertor</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Imvertor/">Imvertor</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Markdown</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Markdown/">Markdown</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">ReSpec</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../ReSpec/">Manual</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../ReSpec/ReSpec-publiceren/">Publiceren</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../ReSpec/ReSpec-onderdelen/">Onderdelen van ReSpec</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Enterprise Architect</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../">Overzicht</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../MIM-toolbox-importeren/">Toolbox importeren</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../EA-toepassing-standaarddatatypen/">standaarddatatypen</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Toolbox genereren</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#inhoud">Inhoud</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#beschrijving">Beschrijving</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#1-voorbereiding">1 Voorbereiding</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#11-benodigde-bestanden">1.1 Benodigde bestanden</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#12-benodigde-profielen">1.2 Benodigde profielen</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#13-versienummer-toolbox">1.3 Versienummer Toolbox</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#131-versienummer-mdg-technology-toolbox">1.3.1 Versienummer MDG Technology (Toolbox)</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#132-versienummer-profile">1.3.2 Versienummer profile</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#133-versienummer-package">1.3.3 Versienummer package</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#134-versienummer-toolbox-pages">1.3.4 Versienummer toolbox pages</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#135-versienummer-diagram">1.3.5 Versienummer diagram</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#2-profiel-publiceren">2 Profiel publiceren</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#21-publiceer-package-als-uml-profiel">2.1 Publiceer package als UML-profiel</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#3-genereer-mdg-technologie">3 Genereer MDG Technologie</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#31-selecteer-package">3.1 Selecteer package</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#32-open-wizard">3.2 Open wizard</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#33-selecteer-mts-bestand">3.3 Selecteer MTS-bestand</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#34-controleer-gegevens">3.4 Controleer gegevens</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#35-controleer-instellingen">3.5 Controleer instellingen</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#36-selecteer-profiles">3.6 Selecteer profiles</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#37-selecteer-diagrams">3.7 Selecteer diagrams</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#38-selecteer-toolboxes">3.8 Selecteer Toolboxes</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#39-controleer-gegevens-en-voltooi-proces">3.9 Controleer gegevens en voltooi proces</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#4-test-de-toolbox">4 Test de Toolbox</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#5-quicklinker">5 Quicklinker</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#afbeeldingen">Afbeeldingen</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#6-aandachtspunten">6 Aandachtspunten</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#7-mim-mdg">7 MIM MDG</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#8-regels">8 Regels</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../MIM-toolbox-genereren-extensie/">Toolbox genereren extensie</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../xmi-exporteren/">XMI exporteren</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">UML</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../UML/">UML</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../UML/UML-leeswijzer/">Leeswijzer UML</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../UML/UML-vraagstukken/">UML FAQ</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Subversion</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../svn/">SVN</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../svn/SVN-installeren-voor-EAP/">SVN installeren voor EAP</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../svn/SVN-importeren-bestaand-project/">SVN importeren bestaand project</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">GML</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../GML/">GML en XSD</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">MIM</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../MIM/">Metamodel Informatie Modellering</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Conceptenbibliotheek</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Begrippen/">Begrippenmodel</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Begrippen/BegrippenXL/">Begrippen XL</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">RDF</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../RDF/">Handleiding voor het Gebruik van EA2RDF en RDF2RDF Tools</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Ontologie</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Ontologie/">Handleiding ontologie maken en publiceren</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Word2xxx</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Word2xxx/">MsWord conversies</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Schemas maken</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../schemas/JSON/">JSON schema's maken.</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Geonovum tooling</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Enterprise Architect</li>
+      <li class="breadcrumb-item active">Toolbox genereren</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/Geonovum/handleiding-tooling/blob/main/docs/EA/MIM-toolbox-genereren.md" class="icon icon-github"> Edit on GitHub</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="handleiding-mim-profiel-toolbox-mdg-genereren">Handleiding - MIM-Profiel, -Toolbox &amp; -MDG Genereren</h1>
+<table>
+<thead>
+<tr>
+<th>Software/Standaard</th>
+<th style="text-align: right;">Versie</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>MIM-standaard</td>
+<td style="text-align: right;">1.1.1</td>
+</tr>
+<tr>
+<td>Enterprise Architect</td>
+<td style="text-align: right;">15.2</td>
+</tr>
+<tr>
+<td>Subversion (SVN)</td>
+<td style="text-align: right;">1.14.1</td>
+</tr>
+</tbody>
+</table>
+<h2 id="inhoud">Inhoud</h2>
+<ol>
+<li><a href="#1-voorbereiding">Voorbereiding</a></li>
+<li><a href="#2-profiel-publiceren">Profiel publiceren</a></li>
+<li><a href="#3-genereer-mdg-technologie">Genereer MDG Technologie</a></li>
+<li><a href="#4-test-de-toolbox">Test de Toolbox</a></li>
+<li><a href="#5-quicklinker">Quicklinker</a></li>
+<li><a href="#6-aandachtspunten">Aandachtspunten</a></li>
+<li><a href="#7-mim-mdg">MIM MDG</a></li>
+<li><a href="#8-regels">Regels</a></li>
+</ol>
+<h2 id="beschrijving">Beschrijving</h2>
+<p>Deze handleiding beschrijft het proces voor het genereren van een customized
+toolbox voor modelleren met Enterprise Architect. Het gaat specifiek in op het
+maken van de <em>MIM-toolbox</em>. Maar ook voor het genereren customized toolboxen in
+het algemeen, biedt deze beschrijving een handig overzicht van de benodigde
+stappen. De meest actuele versie van MIM
+kun je  (<a href="https://docs.geostandaarden.nl/mim/mim/">hier</a>)
+raadplegen.</p>
+<!-- ```diff
+NOG VERWERKEN
++ In deze beschrijving gaan we ervan uit dat de inhoud voor de toolbox al is aangemaakt
++ en dat deze in de juiste packages en dito structuur is opgenomen.
++ Beschrijving inhoudelijke informatie voor het maken van _profile packages_
++ (zelf schrijven en/of verwijzen naar _Sparx_/_profile helpers_)?
+``` -->
+
+<h2 id="1-voorbereiding">1 Voorbereiding</h2>
+<p>Controleer voordat je (MIM-)profielen gaat genereren eerst de volgende zaken:</p>
+<ul>
+<li>Beschik je over de <a href="#benodigde-bestanden">benodigde bestanden</a>?</li>
+<li>Zijn de <a href="#benodigde-profielen">benodigde profielen</a> aanwezig?</li>
+<li>Is het <a href="#versienummer-toolbox">versienummer correct ingevuld</a>?</li>
+</ul>
+<h3 id="11-benodigde-bestanden">1.1 Benodigde bestanden</h3>
+<p>Controleer of je beschikt over alle benodigde bestanden:</p>
+<ul>
+<li><strong>EA-bestand</strong> met MIM profile packages voor het genereren van de profiles en mdg technology (<a href="https://sparxsystems.com/enterprise_architect_user_guide/15.2/modeling/creatingmdgtechnologies.html">Create MDG Technology File</a>), hiertoe behoort ten minste één package per stereotype: <code>«profile»</code>, <code>«diagram profile»</code> en <code>«toolbox profile»</code>).</li>
+<li><strong>MTS-bestand</strong> met MIM properties voor het genereren van MDG Technology (<a href="https://sparxsystems.com/enterprise_architect_user_guide/16.0/modeling_frameworks/working_with_mts_files.html">Working with MTS Files</a>) </li>
+<li><strong>CSV-bestand</strong> met definities van de quick linkers (<a href="https://sparxsystems.com/enterprise_architect_user_guide/16.0/modeling_frameworks/quick_linker_definition_format.html">Quick Linker Definition Format</a>)</li>
+</ul>
+<p>Het MTS- en CSV-bestand vind je <a href="https://github.com/Geonovum/MIM-Werkomgeving/tree/master/UML%20profieltooling/werkversie1.1.1">hier</a> (zie ook: onderstaande afbeelding).</p>
+<p><img alt="" src="../media/mim_profile_mts_and_csv_file_location.jpg" /></p>
+<h3 id="12-benodigde-profielen">1.2 Benodigde profielen</h3>
+<p>Controleer of je beschikt over alle benodigde profielen:</p>
+<ul>
+<li>Open met Enterprise Architect het project met de MIM-profielen.</li>
+<li>Ga in de project browser naar het package <code>MIM-UMLprofiel</code>.</li>
+<li>Controleer of daarin de benodigde <em>profile packages</em> aanwezig zijn:</li>
+</ul>
+<p><img alt="" src="../media/mim_profile_benodigde_profielen.jpg" /></p>
+<ul>
+<li>Controleer of in het <em>package</em> <code>«profile» MIM</code> het element <code>«document» QuickLinker</code> aanwezig is.</li>
+</ul>
+<p><img alt="" src="../media/mim_profile_quick_linker_location.jpg" /></p>
+<blockquote>
+<p><strong>NOTE</strong>: Het CSV-bestand van de QuickLinker is een kopie van de informatie die in dit element is opgeslagen. Als je wijzigingen wilt aanbrengen in de QuickLinker, of als er in het model wijzingen zijn doorgevoerd die van invloed zijn op de QuickLinker, kun je die met behulp van het CSV-bestand aanpassen).</p>
+</blockquote>
+<p>Indien de profielen al in XML-formaat beschikbaar zijn  om de volgende stap over te slaan en direct te beginnen met het genereren van de toolbox.</p>
+<h3 id="13-versienummer-toolbox">1.3 Versienummer Toolbox</h3>
+<p>Het is handig om een toolbox een versienummer mee te geven. Hiervoor zijn verschillende manieren. Bovendien is het mogelijk om te kiezen hoever je deze nummering doorvoert. Hieronder wordt uitgelegd op welke manier de MIM-toolbox van een versienummer wordt voorzien. Het belangrijkste uitgangspunt is dat het versienummer van de MIM-toolbox correspondeert met het versienummer van de MIM-dataspecificatie.</p>
+<p><strong>Format</strong>: <code>MIM&lt;spatie&gt;#.#.#</code></p>
+<p>Voor de MIM-toolbox is besloten om het versienummer op verschillende plekken mee te geven:</p>
+<ul>
+<li>bij <a href="#131-versienummer-mdg-technology-toolbox">het genereren van de <em>toolbox</em></a></li>
+<li>bij <a href="#132-versienummer-profiel">het genereren van het <em>profile</em></a></li>
+<li>als <a href="#133-versienummer-package">alias van het <em>package</em></a></li>
+<li>als <a href="#134-versienummer-toolbox-pages">alias van de <em>toolbox pages</em></a></li>
+<li><em>optioneel</em>: <a href="#135-versienummer-diagram">stereotype in diagram</a>. Let op: als je dit veranderd, moet je ook het csv-bestand van de <em>Quick Linker</em> aanpassen).</li>
+</ul>
+<h4 id="131-versienummer-mdg-technology-toolbox">1.3.1 Versienummer <em>MDG Technology</em> (Toolbox)</h4>
+<p>Dit is het officiële versienummer. Als een gebruiker de toolbox importeert, kan dit teruggevonden worden onder <code>Specialize</code> &gt; <code>Manage Tech</code>. In het venster dat dan verschijnt zoek je <code>MIM</code> op in de kolom <em>Technology</em>. In het subvenster rechtsboven vind je het versienummer terug.</p>
+<h4 id="132-versienummer-profile">1.3.2 Versienummer <em>profile</em></h4>
+<p>De toolbox wordt gegenereerd uit profielen. Deze hebben ook een versienummer. Dit nummer is o.a. terug te vinden in XML-bestand. Omdat er in de loop van de tijd meerdere profielen gemaakt zullen worden, is het verstandig om dit in te vullen. Door dit bij te houden kun je in het XML-bestand van het profiel terugvinden welk profiel aan een bepaalde toolbox ten grondslag ligt.</p>
+<h4 id="133-versienummer-package">1.3.3 Versienummer <em>package</em></h4>
+<p>Door in het veld <code>Alias</code> van elk package het versienummer mee te geven kan een gebruiker van de toolbox in één oogopslag in het <em>properties-venster</em> zien met welke versie van de toolbox een modelelement is gemaakt. Dit is vooral handig in het dagelijks gebruik van de toolbox. Ook als je twee (versies van) MIM-modellen wilt vergelijken, geeft dit snel inzicht in de gebruikte MIM-versie.</p>
+<p><img alt="" src="../media/mim_versionnr_elements_result.jpg" /></p>
+<h4 id="134-versienummer-toolbox-pages">1.3.4 Versienummer <em>toolbox pages</em></h4>
+<p>De <em>toolbox pages</em> krijgen eveneens een versienummer. Hiervoor vouw je het package met het stereotype <code>toolbox profile</code> uit. Voor elke toolbox page is een element met het stereotype: <code>stereotype</code>.</p>
+<p><img alt="" src="../media/mim_versionnr_toolbox_stereo_types.jpg" /></p>
+<p>Controleer of bij elk element het versienummer klopt.</p>
+<p><img alt="" src="../media/mim_versionnr_toolbox_stereo_types_check.jpg" /></p>
+<p>Hierdoor ziet de gebruiker van de toolbox in één oogopslag met welke versie er gewerkt wordt.</p>
+<p><img alt="" src="../media/mim_versionnr_toolbox_stereo_types_result.jpg" /></p>
+<h4 id="135-versienummer-diagram">1.3.5 Versienummer <em>diagram</em></h4>
+<p>In MIM heeft het diagram geen versienummer. De MIM-dataspecificatie zegt daarom ook niets over een diagram; het is immers een hulpmiddel. </p>
+<blockquote>
+<p><strong>LET OP</strong>: Indien je ervoor kiest om de naam van het diagram toch aan te passen, dient de nieuwe diagramnaam ook worden doorgevoerd in het <em>Quick Linker</em>-element (<code>kolom E</code>: <code>Diagram Filter</code>).</p>
+</blockquote>
+<h2 id="2-profiel-publiceren">2 Profiel publiceren</h2>
+<h3 id="21-publiceer-package-als-uml-profiel">2.1 Publiceer <em>package</em> als UML-profiel</h3>
+<blockquote>
+<p><strong>NOTE</strong>: Tussenkoppen toevoegen</p>
+</blockquote>
+<ul>
+<li>Navigeer naar het package <code>MIM-UMLprofiel</code>.</li>
+<li>Selecteer vervolgens één van de bovengenoemde profielen (bijv. <code>«profile» MIM</code>).</li>
+<li>Ga naar: <em>Specialize</em>.</li>
+<li>Kies <em>Publish Package as UML Profile</em>.</li>
+<li>En klik op: <em>Publish Pack As UML profile</em>.</li>
+<li>Er verschijnt nu een nieuw venster.</li>
+</ul>
+<p><img alt="" src="../media/mim_publish_as_UML_or_MDG.jpg" /></p>
+<ul>
+<li>Voer <em>profile name</em> in: <em>MIM</em>.</li>
+<li>Kies de locatie waar je het profiel wilt opslaan en geef het bestand een herkenbare naam </li>
+<li>Voer het versienummer van de corresponderende MIM-dataspecificatie in (bijv.:<code>1.1.1</code>).</li>
+</ul>
+<p><img alt="" src="../media/mim_profile_publish_as_uml_settings.jpg" /></p>
+<p>Let op er zijn twee belangrijke voorwaarden:
+1. De <em>profile name</em> moet overeenkomenm met de naam van het <em>package</em>.
+2. De namen van de packages met de stereotypen <code>«profile»</code>, <code>«profile diagram»</code> en <code>«profile toolbox»</code> moeten exact hetzelfde zijn.
+3. De naam van een package moet overeenkomen met de prefix van een toolbox-element (zie: afbeelding).</p>
+<blockquote>
+<p><strong>Opmerking</strong>: Dat er daarnaast packages zijn met een andere naam, maakt niet uit, zoals bijv. <code>MIM_Keuzebasis</code>, zo lang de drie voorgenoemde packages maar hetzelfde zijn.</p>
+</blockquote>
+<p><img alt="" src="../media/mim_profile_prefix_check.jpg" /></p>
+<blockquote>
+<p><strong>Opmerking</strong>: Een toolbox-element verwijst naar de het package met het bijbehorende profiel. Als je de packagenaam van een profiel aanpast, verandert de naam van het toolbox-element niet automatisch mee. In de uiteindelijke toolbox zul je dit element dan niet kunnen gebruiken.</p>
+</blockquote>
+<ul>
+<li>Controleer of aan deze voorwaarden voldaan wordt.</li>
+<li>Klik: 'Save'</li>
+<li>Herhaal deze stappen voor alle profielen</li>
+<li>Ga daarna door na de volgende stap om op basis van de profielen een toolbox te genereren.</li>
+</ul>
+<h2 id="3-genereer-mdg-technologie">3 Genereer MDG Technologie</h2>
+<p>Doorloop voor het genereren van een toolbox de volgende stappen in de <em>Generate MDG Technology Wizard</em>. </p>
+<h3 id="31-selecteer-package">3.1 Selecteer package</h3>
+<ul>
+<li>Selecteer het package waaronder alle subpackages vallen, in dit geval: <code>MIM-UMLprofiel</code>.</li>
+</ul>
+<p><img alt="" src="../media/mim_mdg_select_package.jpg" /></p>
+<h3 id="32-open-wizard">3.2 Open wizard</h3>
+<ul>
+<li>Klik op 'Specialize' in de <em>ribbon</em>.</li>
+<li>Kies: 'Publish Package'.</li>
+<li>Kies: 'Generate MDG Technology'.</li>
+</ul>
+<p><img alt="" src="../media/mim_mdg_gen_tech.jpg" /></p>
+<h3 id="33-selecteer-mts-bestand">3.3 Selecteer MTS-bestand</h3>
+<ul>
+<li>Kies 'Volgende'.</li>
+<li>Kies 'Open an existing MTS file'.</li>
+<li>Negeer de melding.</li>
+</ul>
+<blockquote>
+<p><strong>Opm</strong>: Het MTS-bestand vult een aantal standaard configuraties vooraf in, maar je kunt deze tijdens het proces nog aanpassen. Dit is een handig bestand. Het kan voorkomen dat je na het genereren van de toolbox aanpassingen wilt maken. Als je na het aanpassen van de gegevens opnieuw de toolbox wilt genereren, is het fijn als je deze gegevens niet opnieuw hoeft in te vullen.</p>
+</blockquote>
+<h3 id="34-controleer-gegevens">3.4 Controleer gegevens</h3>
+<p>Vanuit het MTS-bestand wordt het volgende venster al ingevuld
+ - Technology: <code>MIM</code>
+ - Filename: (kies een naam en locatie)
+ - ID: build + build number (bijv.: <code>build03</code>)
+ - Version: <code>1.1.1</code></p>
+<p><img alt="" src="../media/mim_mdg_tech_1.jpg" /></p>
+<blockquote>
+<p><strong>Toelichting</strong>
+1. Icon en logo: deze velden blijven vooralsnog leeg.
+1. URL: link naar corresponderende MIM-documentatie op GitHub/ReSpec.
+1. Support: link naar website Geonovum.
+1. Notes: Vul in het notes veld kort in wat is er in deze versie nieuw is.</p>
+</blockquote>
+<ul>
+<li>Klik 'Volgende'.</li>
+</ul>
+<h3 id="35-controleer-instellingen">3.5 Controleer instellingen</h3>
+<ul>
+<li>Controleer of <em>Profiles</em>, <em>Diagram Types</em> en <em>Toolboxes</em> zijn geselecteerd</li>
+<li>Wijzig indien nodig de instellingen </li>
+<li>Klik op 'Ok'</li>
+</ul>
+<p><img alt="" src="../media/mim_mdg_tech_2.jpg" /></p>
+<h3 id="36-selecteer-profiles">3.6 Selecteer <em>profiles</em></h3>
+<ul>
+<li>Alle configuraties kun je laden vanuit de MTF file.</li>
+<li>Voor de eerste keer kun je ook een MTS-bestand genereren.</li>
+<li>Select:  'Files To Be Included As <strong>Profiles</strong>'.</li>
+<li>Kies hier alle XML-bestanden, behalve de toolboxprofile.</li>
+<li>Klik 'Volgende'.</li>
+</ul>
+<p><img alt="" src="../media/mim_mdg_tech_3.jpg" /></p>
+<h3 id="37-selecteer-diagrams">3.7 Selecteer <em>diagrams</em></h3>
+<ul>
+<li>Select: 'Files To Be Included As <strong>Diagram definitions</strong>'</li>
+<li>Kies hier het diagramprofiel</li>
+<li>Klik 'Volgende'.</li>
+</ul>
+<p><img alt="" src="../media/mim_mdg_tech_4.jpg" /></p>
+<h3 id="38-selecteer-toolboxes">3.8 Selecteer <em>Toolboxes</em></h3>
+<ul>
+<li>Select: 'Files To Be Included As <strong>Toolbox Definitions</strong>'</li>
+<li>Kies hier het toolboxprofiel</li>
+<li>
+<p>Klik 'Volgende'.</p>
+</li>
+<li>
+<p>In de volgende stap selecteer je tot slot het toolbox profiel.</p>
+</li>
+</ul>
+<p><img alt="" src="../media/mim_mdg_tech_5.jpg" /></p>
+<h3 id="39-controleer-gegevens-en-voltooi-proces">3.9 Controleer gegevens en voltooi proces</h3>
+<ul>
+<li>Klik 'Volgende'.</li>
+<li>Check de box 'Save to MTS' en klik op 'Voltooien'</li>
+<li>Indien je wijzigingen in de configuratie hebt aangebracht:</li>
+<li>Kies checkbox  'Save To MTS'</li>
+</ul>
+<p><img alt="" src="../media/mim_mdg_tech_6.jpg" /></p>
+<ul>
+<li>Klik: 'Voltooien'</li>
+</ul>
+<h2 id="4-test-de-toolbox">4 Test de Toolbox</h2>
+<ul>
+<li>Laad het MIM-profiel via "Resources"</li>
+<li>maar er is een EAP-testf file</li>
+<li>Verschillende manieren om de nieuwe toolbox te testen</li>
+<li>Een model bouwen met alle MIM-mogelijkheden erin</li>
+<li>Of: een nieuwe toolbox laden en update van het bestaande model uitvoeren</li>
+<li>En dat kan door MIM metaklassen te slepen</li>
+<li>Of door gebruik te maken va "Sync Tagged Values And Constraints"</li>
+<li>Deze laatste optie vind je terug in het "Resources" menu</li>
+</ul>
+<h2 id="5-quicklinker">5 Quicklinker</h2>
+<blockquote>
+<p><strong>NOTE</strong>: verder uitwerken</p>
+</blockquote>
+<p>In ieder geval beschrijven:
+ - CSV-bestand nodig
+ - In Nederlandse versies van OS, is scheidingsteken een puntkomma: <code>;</code>
+ - Voor Enterprise heb je een komma (<code>,</code>) nodig als scheidingsteken. 
+ - Ook iets zeggen over werken in Excel, kan ook in EAP, maar werkt <em>onoverzichtelijk</em>.
+ - Overigens schijnt er ook een alternatieve (lees:eenvoudigere) methode te zijn vanaf een bepaalde EA-versie (<strong><em>nog uitzoeken!</em></strong>)</p>
+<h4 id="afbeeldingen">Afbeeldingen</h4>
+<p><img alt="" src="../media/mim_create_diagram_profiel.jpg" /></p>
+<p><img alt="" src="../media/mim_create_diagram_profiel_model.jpg" /></p>
+<p><img alt="" src="../media/mim_ql_in_browser.jpg" /></p>
+<p><img alt="" src="../media/mim_ql_linked_doc.jpg" /></p>
+<p><img alt="" src="../media/mim_ql_column_e.jpg" /></p>
+<h2 id="6-aandachtspunten">6 Aandachtspunten</h2>
+<blockquote>
+<p><strong>NOTE</strong>: verder uitwerken</p>
+</blockquote>
+<ul>
+<li>Tekstveld voor toelichting, niet <code>initial value</code>, maar <code>notes field</code> als datatype</li>
+<li>Uitgebreide toelichting wordt afgekapt vanwege maximale lengte.</li>
+<li>Profiel niet elke keer opnieuw moeten laden door het kopppelen aan een (std.) diagram</li>
+<li>MIM 1.1 build 1</li>
+<li>Vorige versie had ook zo'n naam, dit kun je op website of github terugvinden. gaat om de naam van de het XML</li>
+</ul>
+<h2 id="7-mim-mdg">7 MIM MDG</h2>
+<blockquote>
+<p><strong>NOTE</strong>: verder uitwerken</p>
+</blockquote>
+<ul>
+<li>profile helpers, model wizard: https://sparxsystems.com/enterprise_architect_user_guide/15.2/modeling/using_the_profile_helpers.html</li>
+<li>Create Diagram Profiles using the Profile Helpers:https://sparxsystems.com/enterprise_architect_user_guide/15.2/modeling/create_diagram_profiles_using_.html</li>
+<li>Morgen weer verder!</li>
+</ul>
+<h2 id="8-regels">8 Regels</h2>
+<blockquote>
+<p><strong>NOTE</strong>: verder uitwerken</p>
+</blockquote>
+<ul>
+<li><code>«profile»</code>, <code>«diagram profile»</code> en <code>«toolbox profile»</code> moeten dezelfde naam dragen</li>
+<li>Bij het genereren van een profiel, moet <em>profile name</em> gelijk zijn aan de naam die het profiel draagt</li>
+<li>Binnen een package mogen elementen niet dezelfde naam hebben, maar MIM kent verschillende elementen met de naam '<em>Keuze</em>'. Om dit mogelijk te maken in de toolbox, zijn voor de keuze-elementen aparte aanvullende packages gemaakt. Vandaar dat er meerdere packages <code>«profile»</code> zijn. </li>
+</ul>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../EA-toepassing-standaarddatatypen/" class="btn btn-neutral float-left" title="standaarddatatypen"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../MIM-toolbox-genereren-extensie/" class="btn btn-neutral float-right" title="Toolbox genereren extensie">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/Geonovum/handleiding-tooling" class="fa fa-github" style="color: #fcfcfc"> GitHub</a>
+        </span>
+    
+    
+      <span><a href="../EA-toepassing-standaarddatatypen/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../MIM-toolbox-genereren-extensie/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

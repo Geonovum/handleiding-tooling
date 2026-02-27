@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Markdown - Geonovum tooling</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../css/custom.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Markdown";
+        var mkdocs_page_input_path = "Markdown/index.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> Geonovum tooling
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">Home</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="..">Welkom</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../werkwijzemodelleren/">Werkwijze Modelleren</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../tooling/">Tooling</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../externe-links/">Verdere documentatie</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">GitHub</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../GitHub/">Manual</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../GitHub/GitHub-Inleiding/">GitHub intro</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../GitHub/GitHub-beheer/">GitHub beheer</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Imvertor</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../Imvertor/">Imvertor</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Markdown</span></p>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Markdown</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#markdown-openen-in-je-browser">Markdown openen in je browser</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#chrome">Chrome</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#firefox">Firefox</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#tools-voor-markdown">Tools voor Markdown</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#markdown-formattering">Markdown formattering</a>
+    </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">ReSpec</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../ReSpec/">Manual</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ReSpec/ReSpec-publiceren/">Publiceren</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ReSpec/ReSpec-onderdelen/">Onderdelen van ReSpec</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Enterprise Architect</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../EA/">Overzicht</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../EA/MIM-toolbox-importeren/">Toolbox importeren</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../EA/EA-toepassing-standaarddatatypen/">standaarddatatypen</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../EA/MIM-toolbox-genereren/">Toolbox genereren</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../EA/MIM-toolbox-genereren-extensie/">Toolbox genereren extensie</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../EA/xmi-exporteren/">XMI exporteren</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">UML</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../UML/">UML</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../UML/UML-leeswijzer/">Leeswijzer UML</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../UML/UML-vraagstukken/">UML FAQ</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Subversion</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../svn/">SVN</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../svn/SVN-installeren-voor-EAP/">SVN installeren voor EAP</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../svn/SVN-importeren-bestaand-project/">SVN importeren bestaand project</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">GML</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../GML/">GML en XSD</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">MIM</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../MIM/">Metamodel Informatie Modellering</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Conceptenbibliotheek</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../Begrippen/">Begrippenmodel</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Begrippen/BegrippenXL/">Begrippen XL</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">RDF</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../RDF/">Handleiding voor het Gebruik van EA2RDF en RDF2RDF Tools</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Ontologie</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../Ontologie/">Handleiding ontologie maken en publiceren</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Word2xxx</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../Word2xxx/">MsWord conversies</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Schemas maken</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../schemas/JSON/">JSON schema's maken.</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">Geonovum tooling</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Markdown</li>
+      <li class="breadcrumb-item active">Markdown</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/Geonovum/handleiding-tooling/blob/main/docs/Markdown/index.md" class="icon icon-github"> Edit on GitHub</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="markdown">Markdown</h1>
+<p><a href="https://nl.wikipedia.org/wiki/Markdown">Markdown</a> is een lichtgewicht
+opmaaktaal op basis van platte tekst die zodanig ontworpen is dat het
+gemakkelijk valt te converteren naar HTML en andere. Markdown wordt vaak
+gebruikt voor de opmaak van project documentatie (README-bestanden), eenvoudige
+CMS-systemen en berichten in online fora. Je kunt Markdown in iedere simpele
+teksteditor bewerken.</p>
+<p>Het ontwerpdoel van de taal is leesbaarheid. Teksten geschreven met behulp van
+Markdown zijn al leesbaar voordat opmaak is toegepast op de
+tekst. Opmaakinstructies en tags zijn dan ook niet te vinden in pure Markdown.</p>
+<p>De tekst in onze <a href="../ReSpec/">ReSpec</a> documenten schrijven we in Markdown.</p>
+<h2 id="markdown-openen-in-je-browser">Markdown openen in je browser</h2>
+<p>Sommige browsers weigeren het openen van lokale bestanden, of negeren links naar
+locale bestanden. Dit kun je in de configuratie aanpassen:</p>
+<h3 id="chrome">Chrome</h3>
+<p>Je moet twee dingen instellen:</p>
+<ul>
+<li>Local access: Toestaan dat je local files toont in Chrome, dat is een opstart
+  argument. Kan je doen vanuit een cmd-prompt
+  `%localappdata%\google\chrome\application\chrome
+  --allow-file-access-from-files</li>
+<li>CORS Toestaan : zelfde soort oplossing: <code>--disable-web-security</code></li>
+</ul>
+<p>Dit kan je ook in een snelkoppeling zetten als icoon op de desktop.</p>
+<h3 id="firefox">Firefox</h3>
+<p>In Firefox kan je dat instellen via de parameters.</p>
+<ul>
+<li>Ga naar het configuratiescherm van Firefox door <code>about:config</code> in de zoekbalk
+  te zetten.</li>
+<li>Firefox vraag nu of je het zeker weet. Niet twijfelen.</li>
+<li>zet de instelling <code>security.fileuri.strict_origin_policy = false</code> op false.</li>
+</ul>
+<h2 id="tools-voor-markdown">Tools voor Markdown</h2>
+<table>
+<thead>
+<tr>
+<th>tool</th>
+<th>omschrijving</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://www.markdownguide.org/getting-started/">Markdown Tutorial</a></td>
+<td>Handleiding Markdown</td>
+</tr>
+<tr>
+<td><a href="https://www.markdownguide.org/basic-syntax">Markdown Reference</a></td>
+<td>Naslag Markdown</td>
+</tr>
+<tr>
+<td><a href="https://code.visualstudio.com/">Visual Studio Code</a></td>
+<td>Fijne teksteditor die ook goed integreert met Github Desktop</td>
+</tr>
+<tr>
+<td><a href="https://learn.microsoft.com/en-us/windows/powertoys/">PowerToys</a></td>
+<td>Geeft preview van Markdown rechtstreeks in Windows Explorer (en nog heeel veel andere tooltjes)</td>
+</tr>
+<tr>
+<td><a href="https://www.tablesgenerator.com/markdown_tables">Tables Generator</a></td>
+<td>Helpt met het maken van tabellen in MarkDown</td>
+</tr>
+<tr>
+<td><a href="https://marketplace.visualstudio.com/items?itemName=TakumiI.markdowntable">Markdown Table</a></td>
+<td>VSCode plugin voor het editen van Markdown tabellen.</td>
+</tr>
+<tr>
+<td><a href="https://prettier.io/">Prettier</a></td>
+<td>Een code formatter die automatisch zorgt dat je markdown aan de regels voldoet.</td>
+</tr>
+<tr>
+<td><a href="https://github.com/Laboratoria/mdlint">markdownlint</a></td>
+<td>Een style checker form markdown bestanden. Geeft meldingen voor verkeerde markdown</td>
+</tr>
+<tr>
+<td><a href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer">Live Server</a></td>
+<td>VSCode plugin. Klik rechtsonder op "Go Live" en je ReSpec doc wordt in live browser geopend.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="markdown-formattering">Markdown formattering</h2>
+<p>Voor beter leesbare en uitwisselbare Markdown spreken we volgende styling regels
+af:</p>
+<ul>
+<li>We maken gebruik van unix style line endings.</li>
+</ul>
+<p>Tools zoals 'prettier' en 'markdownlint' helpen hierbij.</p>
+<p>Configuratie bestanden hiervoor: </p>
+<p>Voorbeeld van '.prettierrc':</p>
+<pre><code class="language-json">{
+    &quot;tabWidth&quot;: 4,
+    &quot;useTabs&quot;: false,
+    &quot;singleQuote&quot;: true,
+    &quot;endOfLine&quot;: &quot;lf&quot;,
+    &quot;proseWrap&quot;: &quot;always&quot;,
+    &quot;printWidth&quot;: 80
+}
+</code></pre>
+<p>Voorbeeld van <code>.markdownlinkt.json</code>:</p>
+<pre><code class="language-json">{
+    &quot;default&quot;: true,
+    &quot;MD003&quot;: { &quot;style&quot;: &quot;atx&quot; },
+    &quot;MD007&quot;: { &quot;indent&quot;: 4 },
+    &quot;MD013&quot;: { &quot;line_length&quot;: 80, &quot;code_blocks&quot;: false, &quot;heading_line_length&quot;: 200, &quot;tables&quot;: false},
+    &quot;no-hard-tabs&quot;: false
+}
+</code></pre>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../Imvertor/" class="btn btn-neutral float-left" title="Imvertor"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../ReSpec/" class="btn btn-neutral float-right" title="Manual">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/Geonovum/handleiding-tooling" class="fa fa-github" style="color: #fcfcfc"> GitHub</a>
+        </span>
+    
+    
+      <span><a href="../Imvertor/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../ReSpec/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
