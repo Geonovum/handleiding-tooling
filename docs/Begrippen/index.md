@@ -32,6 +32,8 @@ Een begrippenkader is niet meer dan een SKOS bestand in .ttl formaat. Er zijn ve
 
 **TODO:** Verdere invulling van [best practices](https://docs.geostandaarden.nl/nl-sbb/nl-sbb/#H5) maken voor Geonovum.
 
+Op astraonline staan [kwaliteitsregels voor begripsdefinitie](https://www.astraonline.nl/index.php/Regels_voor_definitiekwaliteit). Deze zijn mogelijk te gebruiken als invulling voor best practices.
+
 ### Regels voor het .ttl bestand
 
 **Regel:** Het .ttl bestand bevat 1 begrippenkader.
