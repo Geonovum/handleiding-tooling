@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Toolbox importeren - Geonovum tooling</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../css/custom.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Toolbox importeren";
+        var mkdocs_page_input_path = "EA/MIM-toolbox-importeren.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Geonovum tooling
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">Home</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../..">Welkom</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../werkwijzemodelleren/">Werkwijze Modelleren</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../tooling/">Tooling</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../externe-links/">Verdere documentatie</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">GitHub</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../GitHub/">Manual</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../GitHub/GitHub-Inleiding/">GitHub intro</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../GitHub/GitHub-beheer/">GitHub beheer</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Imvertor</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Imvertor/">Imvertor</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Markdown</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Markdown/">Markdown</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">ReSpec</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../ReSpec/">Manual</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../ReSpec/ReSpec-publiceren/">Publiceren</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../ReSpec/ReSpec-onderdelen/">Onderdelen van ReSpec</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Enterprise Architect</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../">Overzicht</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Toolbox importeren</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#stap-1-importeer-mim-toolbox">Stap 1: Importeer MIM-toolbox</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#stap-2-toepassen-mim-diagram">Stap 2: Toepassen MIM-diagram</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#stap-3-toepassen-quick-linker">Stap 3: Toepassen Quick Linker</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#31-verbinden-bestaande-modelelementen">3.1 Verbinden bestaande modelelementen</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#32-nieuw-modelelement">3.2 Nieuw modelelement</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#33-meerdere-nieuwe-modelelementen">3.3 Meerdere nieuwe modelelementen</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#stap-4-toepassen-toolbox-item-relatierol">Stap 4: Toepassen toolbox-item 'Relatierol'</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#stap-5-updaten-mim-versie-in-bestaand-informatiemodel">Stap 5: Updaten MIM-versie in bestaand informatiemodel</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#stap-6-verwijderen-oudere-toolbox">stap 6: Verwijderen oudere toolbox</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#stap-7-toolboxen-beheren">Stap 7: Toolboxen beheren</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#stap-8-workspaces-gebruiken">Stap 8: Workspaces gebruiken</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#81-overzicht-handige-vensters-bij-het-modelleren">8.1 Overzicht handige vensters bij het modelleren</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#82-waar-je-ze-vindt">8.2 Waar je ze vindt</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#83-en-hoe-je-een-workspace-maakt-en-waarom-dat-handig-kan-zijn">8.3 En hoe je een workspace maakt en waarom dat handig kan zijn</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../EA-toepassing-standaarddatatypen/">standaarddatatypen</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../MIM-toolbox-genereren/">Toolbox genereren</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../MIM-toolbox-genereren-extensie/">Toolbox genereren extensie</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../xmi-exporteren/">XMI exporteren</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">UML</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../UML/">UML</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../UML/UML-leeswijzer/">Leeswijzer UML</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../UML/UML-vraagstukken/">UML FAQ</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Subversion</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../svn/">SVN</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../svn/SVN-installeren-voor-EAP/">SVN installeren voor EAP</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../svn/SVN-importeren-bestaand-project/">SVN importeren bestaand project</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">GML</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../GML/">GML en XSD</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">MIM</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../MIM/">Metamodel Informatie Modellering</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Conceptenbibliotheek</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Begrippen/">Begrippenmodel</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Begrippen/BegrippenXL/">Begrippen XL</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">RDF</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../RDF/">Handleiding voor het Gebruik van EA2RDF en RDF2RDF Tools</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Ontologie</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Ontologie/">Handleiding ontologie maken en publiceren</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Word2xxx</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Word2xxx/">MsWord conversies</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Schemas maken</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../schemas/JSON/">JSON schema's maken.</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Geonovum tooling</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Enterprise Architect</li>
+      <li class="breadcrumb-item active">Toolbox importeren</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/Geonovum/handleiding-tooling/blob/main/docs/EA/MIM-toolbox-importeren.md" class="icon icon-github"> Edit on GitHub</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="importeren-en-toepassen-mim-toolbox-in-enterprise-architect">Importeren en toepassen MIM-toolbox in Enterprise Architect</h1>
+<h2 id="stap-1-importeer-mim-toolbox">Stap 1: Importeer MIM-toolbox</h2>
+<ul>
+<li><a href="https://register.geostandaarden.nl/informatiemodel/mim/1.2/">Download het XML-bestand</a> van de MIM-toolbox.</li>
+<li>Verwijder eventueel eerst de oudere versie van de toolbox als je die niet meer nodig hebt (<a href="#5-verwijderen-oudere-toolbox">Toolbox verwijderen</a>).</li>
+<li>Open Enterprise Architect</li>
+<li>Open '<em>Resources</em>'<ul>
+<li>Kies rechts in beeld op '<em>Portals</em>', of direct op het gelijknamige tablad in de '<em>Project Browser</em>'</li>
+<li>Selecteer in het dropdown-menu '<em>Windows</em>'</li>
+<li>Kies '<em>Resources</em>' (onder '<em>Explore</em>')</li>
+</ul>
+</li>
+</ul>
+<p><img alt="" src="../media/mim_import_find_resources.jpg" /></p>
+<ul>
+<li>Klik op '<em>MDG Technologies</em>'</li>
+</ul>
+<p><img alt="" src="../media/mim_import_find_mdg_tech.jpg" /></p>
+<blockquote>
+<p><strong>Note</strong><br>
+Hier moet je de keuze maken of je de toolbox op model- of gebruikersniveau importeert. Beide hebben voor- en nadelen:
+ - <strong>Model</strong>: alleen te gebruiken binnen één EA-project. Voor elke project moet je apart de toolbox importeren. Indien je dit project met een andere gebruiker deelt, beschikt deze gebruiker ook over de toolbox. Dit is de <strong>aanbevolen optie</strong>. Dit geeft de minste kans op conflicten. 
+ - <strong>User</strong>: Je hoeft de toolbox slechts éénmalig te importeren. Vervolgens is de toolbox automatisch beschikbaar voor alle EA-projecten waar je als gebruiker aan werkt. Het nadeel is dat bij het delen van projecten de toolbox niet mee komt. Bovendien kunnen er conflicten tussen toolboxen ontstaan (zie: volgende informatiekader).</p>
+<p><strong>Warning</strong><br>
+Indien binnen jouw EA-omgeving ook een toolbox van een extensie op het MIM aanwezig is (bijvoorbeeld voor de BRO), dan is het raadzaam om de toolboxen alleen op model-niveau te importeren. Indien tenminste één van de twee op user-niveau is geïmporteerd, kan dit bij het toewijzen van stereotypen verwarring opleveren. Veel stereotypen hebben exact dezelfde naam en voor EA is het dan onduidelijk welke <em>MDG Technology</em> het moet kiezen. De bovenstaande aanpak houdt de werkwijze zuiverder.</p>
+</blockquote>
+<ul>
+<li>Klik met de rechtermuisknop op '<em>Model Technologies</em>' of '<em>User Technologies</em>'.</li>
+</ul>
+<p><img alt="" src="../media/mim_import_choose_type.jpg" /></p>
+<ul>
+<li>Selecteer '<em>Import technology</em>'.</li>
+<li>Zoek het gedownloade XML-bestand van de MIM-toolbox op en kies '<em>Openen</em>'.<ul>
+<li>Overigens kun je ook in dit venster nog kiezen tussen '<em>model</em>' of '<em>user</em>'.</li>
+<li>Op welke plek je de keuze maakt voor '<em>model</em>' of '<em>user</em>', maakt geen verschil.</li>
+</ul>
+</li>
+<li>De velden '<em>Technology</em>', '<em>Version</em>' en '<em>Notes</em>' worden nu automatisch ingevuld met de juiste informatie.</li>
+<li>Controleer het versienummer: <code>Version: 1.1.1</code>.</li>
+</ul>
+<p><img alt="" src="../media/mim_import_to_model.jpg" /></p>
+<ul>
+<li>Klik '<em>Ok</em>'</li>
+<li>Navigeer in het '<em>Resources</em>' naar '<em>MDG Technologies</em>' &gt; '<em>Model Technologies</em>'.</li>
+<li>Controleer of hier nu een map met de naam '<em>MIM</em>' staat.</li>
+<li>Controleer ook of het MIM-versienummer klopt bij '<em>UML Profiles</em>', '<em>Diagram Types</em>' en '<em>Toolboxes</em>'.</li>
+</ul>
+<p><img alt="" src="../media/mim_import_to_model_succesful.jpg" /></p>
+<ul>
+<li>Bij een <em>user import</em> zal er nog een venster verschijnen met de tekst '<em>Copy succesfull</em>'.</li>
+<li>De MIM-toolbox is nu beschikbaar  voor gebruik, maar het is raadzaam om eerst de volgende instructies door te nemen: </li>
+<li>Instructie voor het <a href="#2-toepassen-mim-diagram">gebruik van het MIM-diagram</a>.</li>
+<li>Instructie voor het <a href="#3-toepassen-quick-linker">gebruik van de Quick Linker</a>.</li>
+<li>Instructie voor het <a href="#4-toepassen-toolbox-item-relatierol">gebruik van toolbox-item «Relatierol»</a>.</li>
+</ul>
+<blockquote>
+<p><strong>Warning</strong><br>
+De MIM-toolbox heeft een versienummer. Deze staat niet in de naam. Indien je besloten hebt om oudere versies van de MIM-toolbox niet te verwijderen, komt de naam 'MIM' mogelijk meerdere malen voor. Het <a href="#6-toolboxen-beheren">beheren van toolboxen</a> in Enterprise Architect doe je op deze manier.</p>
+</blockquote>
+<h2 id="stap-2-toepassen-mim-diagram">Stap 2: Toepassen MIM-diagram</h2>
+<p>In voorgaande versies werd de MIM-toolbox toegepast op een standaard UML diagram (<code>UML::Class</code>). Dat kan nog steeds. Dit heeft echter één nadelige eigenschap. Als je in je project met meerdere diagrammen werkt, kan het voorkomen dat bij het wisselen tussen diagrammen de toolbox terugspringt op de standaard UML-toolbox. Hierdoor moet je de MIM-toolbox opnieuw opzoeken.</p>
+<p>Dit probleem wordt veroorzaakt doordat een diagram en een toolbox aan elkaar gekoppeld zijn. Daarom is in versie 1.1.1 van de MIM-toolbox een speciaal MIM-diagram aangemaakt waaraan de toolbox gekoppeld is. Dit diagram is een directe afgeleide van het standaard '<em>UML Class diagram</em>'. Hieronder staat uitgelegd hoe je dit kunt toepassen.</p>
+<ul>
+<li>Ga in de '<em>Project Browser</em>' naar '<em>Project</em>'.</li>
+<li>Selecteer een package.</li>
+<li>Klik op het diagramlogo om een nieuw diagram aan te maken.</li>
+</ul>
+<p><img alt="" src="../media/mim_diagram_create.jpg" /></p>
+<blockquote>
+<p><strong>Warning</strong><br>
+Dit kan alleen als je onder model in de <em>Project browser</em> al een package hebt aangemaakt. Als je dat nog niet hebt, maak dan eerst een (nieuw) package aan.</p>
+</blockquote>
+<ul>
+<li>Er opent nu een venster.</li>
+<li>Geef het diagram een naam.</li>
+<li>Klik op het dropdown-menu bij '<em>Type</em>'.</li>
+<li>Selecteer '<em>Specialized</em>' &gt; '<em>User Technologies</em>' of '<em>Model Technologies</em>' (afhankelijk van de manier waarop je de <a href="#1-importeren-mim-toolbox">toolbox geimporteerd</a> hebt).</li>
+</ul>
+<p><img alt="" src="../media/mim_diagram_find_mim.jpg" /></p>
+<ul>
+<li>Klik in het deelvenster '<em>Select From</em>' op '<em>MIM 1.1.1</em>'.</li>
+</ul>
+<p><img alt="" src="../media/mim_diagram_select_tech.jpg" /></p>
+<ul>
+<li>Nu verschijnt in het deelvenster '<em>Diagram Types</em>' het '<em>MIM Diagram</em>'.</li>
+<li>Selecteer het diagram en klik op '<em>Ok</em>'.</li>
+</ul>
+<blockquote>
+<p><strong>Note</strong><br>
+Het is belangrijk dat je het diagram daadwerkelijk selecteert. Je kunt herkennen of dit gelukt is, doordat in het onderste deelvenster een toelichtende tekst op het diagram verschijnt (anders staat er alleen 'MIM').</p>
+</blockquote>
+<p><img alt="" src="../media/mim_diagram_select_diagram.jpg" /> </p>
+<ul>
+<li>De MIM-toolbox verschijnt nu in het toolbox-menu.</li>
+</ul>
+<p><img alt="" src="../media/mim_diagram_toolbox_menu.jpg" /></p>
+<ul>
+<li>Dubbelklik in de '<em>Project browser</em>' op het nieuwe diagram.</li>
+<li>In het venster '<em>Properties</em>' zie je dat het diagram van het type '<em>MIM</em>' is.</li>
+</ul>
+<p><img alt="" src="../media/mim_diagram_final_check.jpg" /></p>
+<p>Het MIM-versienummer komt nu ook terug het veld Stereotype in het venster '<em>Properties</em>' van het object.
+ - Maak een objecttype "A" aan.
+ - Controleer vervolgens in de het venster '<em>Properties</em>' of in de naam van het stereotype het betreffende MIM-versienummer verschijnt.
+ - Tevens verschijnt er in dit venster een deelmenu met de titel '<em>«Objecttype» ( from MIM 1.1.1 - Basiselementen )</em>'
+ - Als dit klopt, is de toolbox correct geïmporteerd.</p>
+<p><img alt="" src="../media/mim_modelelement_versienummer.jpg" /></p>
+<h2 id="stap-3-toepassen-quick-linker">Stap 3: Toepassen Quick Linker</h2>
+<p>De Quick Linker is een hulpmiddel om snel en eenvoudig relaties te kunnen leggen tussen verschillende elementen. Het voordeel hiervan is dat het de gebruiker inzicht geeft in de volgens MIM toegestane relaties. De Quick Linker is beschikbaar via een icoontje dat rechtsboven een diagramelement verschijnt op het moment dat je het selecteert.</p>
+<p><img alt="" src="../media/mim_ql_icon.jpg" /></p>
+<p>Je kunt de Quick Linker op drie manieren inzetten, namelijk voor het:</p>
+<ul>
+<li><a href="#31-verbinden-bestaande-modelelementen">Verbinden van twee bestaande modelelementen</a></li>
+<li><a href="#32-nieuw-modelelement">Creëren van nieuwe modelelementen</a></li>
+<li><a href="#33-meerdere-nieuwe-modelelementen">Creëren van meerdere modelelemten tegelijk</a></li>
+</ul>
+<p>Hieronder beschrijven we elke methode afzonderlijk.</p>
+<h3 id="31-verbinden-bestaande-modelelementen">3.1 Verbinden bestaande modelelementen</h3>
+<ul>
+<li>Klik met de muis op het icoon.</li>
+<li>Houd de muisknop ingedrukt en trek een lijn naar het object waarmee je het wilt verbinden.</li>
+<li>Er verschijnt een stippellijn en een menu.</li>
+</ul>
+<p><img alt="" src="../media/mim_ql_connect_elements.jpg" /></p>
+<ul>
+<li>Selecteer het gewenste type MIM-relatie (bijvoorbeeld: <code>«Generalisatie»</code>.</li>
+</ul>
+<p><img alt="" src="../media/mim_ql_generalization.jpg" /></p>
+<h3 id="32-nieuw-modelelement">3.2 Nieuw modelelement</h3>
+<p>Je kunt ook vanuit een bestaand element een nieuw modelelement creëren. Dat gaat als volgt:</p>
+<ul>
+<li>Klik met de muis op het icoon.</li>
+<li>Houd de muisknop ingedrukt en trek een lijn naar een lege plek in het diagram.</li>
+<li>Er verschijnt een stippellijn en een menu.</li>
+</ul>
+<p><img alt="" src="../media/mim_ql_draw_relation.jpg" /></p>
+<ul>
+<li>Dit menu ziet er anders uit dan bij het verbinden van twee bestaande elementen.</li>
+<li>Navigeer naar '<em>MIM</em>' en selecteer het gewenste type MIM-relatie (bijvoorbeeld: <code>«Generalisatie»</code>)</li>
+</ul>
+<p><img alt="" src="../media/mim_ql_generalization.jpg" /></p>
+<h3 id="33-meerdere-nieuwe-modelelementen">3.3 Meerdere nieuwe modelelementen</h3>
+<p>Ook is het mogelijk om vanuit een bestaand element meerdere én verschillende soorten modelelementen in één keer te creëren. Dat gaat als volgt:</p>
+<ul>
+<li>Klik met de muis op het icoon.</li>
+<li>Houd de muisknop ingedrukt en trek een lijn naar een lege plek in het diagram.</li>
+<li>Er verschijnt een stippellijn en een menu.</li>
+</ul>
+<p><img alt="" src="../media/mim_ql_create_multiple.jpg" /></p>
+<ul>
+<li>Navigeer naar '<em>Create Multiple Elements</em>'.</li>
+<li>Er verschijnt een nieuw venster.</li>
+</ul>
+<p><img alt="" src="../media/mim_ql_define_multiple.jpg" /></p>
+<ul>
+<li>Defineer in dit venster de elementen in de eerste kolom ('<em>Name</em>') en selecteer het gewenste type relatie in de derde kolom ('<em>Type</em>').</li>
+<li>Klik op '<em>Ok</em>' als je klaar bent.</li>
+</ul>
+<p><img alt="" src="../media/mim_ql_result_multiple.jpg" /></p>
+<h2 id="stap-4-toepassen-toolbox-item-relatierol">Stap 4: Toepassen toolbox-item 'Relatierol'</h2>
+<p>Net als alle andere modelelementen uit de MIM-toolbox, kun je ook de <code>«Relatierol»</code> in het diagram slepen. Je doet dit door een <code>«Relatierol»</code> naar uiteinde van een reeds bestaande <code>«Relatiesoort»</code> te slepen. Wanneer je in EA het stereotype <code>«Relatierol»</code> toewijst aan een relatie, worden de bijbehorende '<em>Tagged Values</em>' automatisch meegenomen.</p>
+<blockquote>
+<p><strong>Note</strong><br>
+In eerdere versies van de MIM1.1.1-toolbox ontbraken de <em>Tagged Values</em> bij de <code>«Relatierol»</code> na toewijzing. Dit is opgelost in build 5: <a href="https://register.geostandaarden.nl/informatiemodel/mim/1.1.1/"><code>MDG_MIM_Toolbox_v1.1.1_build05</code></a>.</p>
+</blockquote>
+<ul>
+<li>Indien je twee modelelementen met elkaar verbindt door middel van een <code>«Relatiesoort»</code>, kun je de <code>«Relatierol»</code> aan de <em>target end</em> (of de <em>source end</em>) toevoegen door middel van het toolbox-item <code>«Relatierol»</code>.</li>
+<li>Klik op het toolbox-item <code>«Relatierol»</code> en sleep het item met de muisknop ingedrukt naar de <em>target end</em> van de associatie en laat hier de muisknop weer los.</li>
+<li>Er verschijnt een popup-venster.</li>
+</ul>
+<p><img alt="" src="../media/mim_relatierol_name.jpg" /></p>
+<ul>
+<li>Vul bij '<em>Enter value</em>' de naam van de <code>«Relatierol»</code> in en klik op '<em>Ok</em>'.</li>
+<li>Klik vervolgens in het '<em>Properties</em>' venster op het '<em>Target</em>' tabblad.</li>
+<li>Vervolgens zie je de bijbehorende <em>Tagged Values</em> voor <a href="https://docs.geostandaarden.nl/mim/mim/#relatiesoort-is-leidend-alternatief-1">alternatief 1</a> of <a href="https://docs.geostandaarden.nl/mim/mim/#relatierol-is-leidend-alternatief-2">alternatief 2</a>.</li>
+</ul>
+<h2 id="stap-5-updaten-mim-versie-in-bestaand-informatiemodel">Stap 5: Updaten MIM-versie in bestaand informatiemodel</h2>
+<p>Er zijn verschillende situaties denkbaar waarin je één of meerdere type modelelementen van een informatiemodel wilt updaten. Bijvoorbeeld omdat er een bug-fix is geweest. Zoals hierboven beschreven, kreeg een <code>«Relatierol»</code> in de eerste versies van de MIM1.1.1-toolbox (build01-build04) geen <em>Tagged Values</em> mee. Maar het kan ook zijn dat je alle modelelementen in een model naar de nieuwste versie van toolbox wilt updaten. Hiervoor moet je het stereotype (het modelelement) synchroniseren. De volgende stappen beschrijven hoe dat werkt.</p>
+<p><a href="#6-verwijderen-oudere-toolbox">Verwijder de oude toolbox</a> eerst en <a href="#1-importeren-mim-toolbox">importeer vervolgens de nieuwe versie</a>. Doorloop daarna de volgende stappen. Hieronder gebruiken we het updaten van <code>«Relatierol»</code> als voorbeeld, maar je kunt dit voor elk gewenst modelelement uit de toolbox toepassen.</p>
+<p><img alt="" src="../media/mim_relatierol_target_menu.jpg" /></p>
+<ul>
+<li>Ga naar het toolbox-item <code>Relatierol</code> en klik hier met de rechtermuisknop op.</li>
+</ul>
+<p><img alt="" src="../media/mim_relatierol_sync_select.jpg" /></p>
+<ul>
+<li>Klik op '<em>Synchronize Stereotype</em>'.</li>
+<li>Er opent een nieuw venster</li>
+<li>Hierin staat in het veld '<em>stereotype</em>' <code>Relatierol</code> al geselecteerd.</li>
+<li>Klik op '<em>Ok</em>'.</li>
+</ul>
+<p><img alt="" src="../media/mim_relatierol_sync_menu.jpg" /></p>
+<ul>
+<li>Er verschijnt een popup-venster dat vraagt: '<em>Save latest changes?</em>', klik '<em>Ja</em>'.</li>
+<li>De tagged values zijn nu gesynchroniseerd.</li>
+</ul>
+<p><img alt="" src="../media/mim_relatierol_sync_saved.jpg" /></p>
+<p>Herhaal bovenstaande stappen als je ook andere modelelementen wilt updaten. </p>
+<h2 id="stap-6-verwijderen-oudere-toolbox">stap 6: Verwijderen oudere toolbox</h2>
+<p>Deze instructie is bedoeld voor het verwijderen van toolboxen die je niet meer wilt gebruiken. Bijvoorbeeld oudere versies van de MIM-toolbox.</p>
+<ul>
+<li>Open Enterprise Architect</li>
+<li>Open '<em>Resources</em>'</li>
+<li>Kies rechts in beeld op '<em>Portals</em>'</li>
+<li>Selecteer in het dropdown-menu '<em>Windows</em>'</li>
+<li>Kies '<em>Resources</em>' (onder '<em>Explore</em>')</li>
+<li>Klik op '<em>MDG Technologies</em>'</li>
+</ul>
+<p>Controleer nu of er onder '<em>Model Technologies</em>' en/of '<em>User Technologies</em>' toolboxen staan die je niet meer wilt gebruiken.</p>
+<ul>
+<li>Verwijderen '<em>Model Technologies</em>'<ul>
+<li>Klik met de rechtermuisknop op de toolbox en selecteer '<em>Remove technology</em>'</li>
+<li>Start hierna voor de zekerheid EA opnieuw op.</li>
+</ul>
+</li>
+<li>Verwijderen '<em>User Technologies</em>'<ul>
+<li>Klik met de rechtermuisknop op de toolbox en selecteer '<em>Locate Technology</em>'. </li>
+<li>Verwijder het XML-bestand van de toolbox op deze locatie</li>
+<li>Start hierna voor de zekerheid EA opnieuw op.</li>
+<li>Ga verder met het <a href="#1-importeren-mim-toolbox">importeren van de MIM-toolbox</a>.</li>
+</ul>
+</li>
+</ul>
+<h2 id="stap-7-toolboxen-beheren">Stap 7: Toolboxen beheren</h2>
+<ul>
+<li>Ga naar de menubalk boven in beeld en selecteer '<em>Specialize</em>' &gt; '<em>Manage-Tech</em>'</li>
+<li>Hier vind je een overzicht van alle aanwezige MDG-technologies.</li>
+<li>Scroll naar beneden en zoek '<em>MIM</em>' op.</li>
+<li>Indien je meerdere versies van de toolbox geïmporteerd hebt, vind je die hier terug.</li>
+<li>Klik op één van de versies voor meer informatie.</li>
+<li>In het informatievenster rechtsboven zie je welke versie het betreft. Tevens vind je hier terug of de toolbox op model- of gebruikersniveau is geïmporteerd.</li>
+<li>Met het checkbox in de kolom '<em>Enabled</em>' kun je ervoor kiezen om bepaalde bepaalde toolboxen uit te zetten. Dit doe je door het vinkje te verwijderen.</li>
+<li>Ga verder met de laatste stappen van het <a href="#1-importeren-mim-toolbox">importeren van de MIM-toolbox</a>.</li>
+</ul>
+<blockquote>
+<p><strong>Warning</strong><br>
+Indien je toolboxen gebruikt met gelijknamige modelelementen, bijvoorbeeld oudere MIM-toolboxen of NEN3610 BRO Grouping-NL (dat een extensie is op MIM), dan kan dit leiden tot een verwijzing naar het 'verkeerde' profiel. Enterprise Architect doet dit automatisch. Hierdoor beschikt het stereotype bijvoorbeeld niet over de gewenste tagged values.</p>
+</blockquote>
+<h2 id="stap-8-workspaces-gebruiken">Stap 8: Workspaces gebruiken</h2>
+<blockquote>
+<p><strong>Note</strong><br>
+Onderstaande tekst is nog in concept</p>
+<p><strong>Warning</strong><br>
+Dit onderwerp hoort niet in deze handleiding thuis, maar in handleiding over EA. Het kan wel handig zijn om vanuit deze handleiding ernaar te verwijzen.</p>
+</blockquote>
+<h3 id="81-overzicht-handige-vensters-bij-het-modelleren">8.1 Overzicht handige vensters bij het modelleren</h3>
+<ul>
+<li>Project Browser</li>
+<li>Resources</li>
+<li>Notes</li>
+<li>Tagged Values</li>
+<li>Features</li>
+<li>Pan &amp; Zoom</li>
+<li>Relationships</li>
+<li>Relationship Matrix</li>
+<li>Toolbox</li>
+</ul>
+<h3 id="82-waar-je-ze-vindt">8.2 Waar je ze vindt</h3>
+<p>Ga allereerst naar
+Klik rechtsboven op <em>Portals</em> en selecteer <em>Windows</em>.</p>
+<p>De meeste vensters uit 8.1 vind je terug in de volgende deelmenu's:</p>
+<p>Explore
+ - <em>Project Browser</em>
+ - <em>Resources</em></p>
+<p>Properties
+ - <em>Properties</em>
+ - <em>Notes</em>
+ - <em>Tagged Values</em>
+ - <em>Features</em></p>
+<p>Diagram
+ - <em>Pan &amp; Zoom</em></p>
+<p>Trace
+ - <em>Relationships</em>
+ - <em>Relationship Matrix</em></p>
+<p>Het venster Toolbox vind je in de taakbalk bovenin. Ga naar:</p>
+<p><em>Design</em> &gt; <em>Diagram</em> &gt; <em>Toolbox</em> (<code>Ctrl</code>+<code>Shift</code>+<code>3</code>)</p>
+<h3 id="83-en-hoe-je-een-workspace-maakt-en-waarom-dat-handig-kan-zijn">8.3 En hoe je een workspace maakt en waarom dat handig kan zijn</h3>
+<blockquote>
+<p><strong>Note</strong>
+To do: tekst schrijven</p>
+</blockquote>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../" class="btn btn-neutral float-left" title="Overzicht"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../EA-toepassing-standaarddatatypen/" class="btn btn-neutral float-right" title="standaarddatatypen">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/Geonovum/handleiding-tooling" class="fa fa-github" style="color: #fcfcfc"> GitHub</a>
+        </span>
+    
+    
+      <span><a href="../" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../EA-toepassing-standaarddatatypen/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

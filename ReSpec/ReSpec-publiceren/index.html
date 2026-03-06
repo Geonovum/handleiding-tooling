@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Publiceren - Geonovum tooling</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../css/custom.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Publiceren";
+        var mkdocs_page_input_path = "ReSpec/ReSpec-publiceren.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Geonovum tooling
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">Home</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../..">Welkom</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../werkwijzemodelleren/">Werkwijze Modelleren</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../tooling/">Tooling</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../externe-links/">Verdere documentatie</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">GitHub</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../GitHub/">Manual</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../GitHub/GitHub-Inleiding/">GitHub intro</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../GitHub/GitHub-beheer/">GitHub beheer</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Imvertor</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Imvertor/">Imvertor</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Markdown</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Markdown/">Markdown</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">ReSpec</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../">Manual</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Publiceren</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#geef-het-document-de-juiste-status-en-vul-de-bijbehorende-velden-in">Geef het document de juiste status en vul de bijbehorende velden in.</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#consultatieversie-cv">Consultatieversie (cv)</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#vastellingsversie-versie-vv">Vastellingsversie versie (vv)</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#definitieve-versie-def">Definitieve versie (def)</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#is-het-document-publicatieklaar">Is het document publicatieklaar?</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#publiceer-via-een-github-release">Publiceer via een GitHub release</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#configureren-van-de-automatische-workflow">Configureren van de automatische workflow</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#handmatig-publiceren-van-respec-document">'Handmatig' publiceren van respec document.</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ReSpec-onderdelen/">Onderdelen van ReSpec</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Enterprise Architect</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../EA/">Overzicht</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../EA/MIM-toolbox-importeren/">Toolbox importeren</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../EA/EA-toepassing-standaarddatatypen/">standaarddatatypen</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../EA/MIM-toolbox-genereren/">Toolbox genereren</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../EA/MIM-toolbox-genereren-extensie/">Toolbox genereren extensie</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../EA/xmi-exporteren/">XMI exporteren</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">UML</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../UML/">UML</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../UML/UML-leeswijzer/">Leeswijzer UML</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../UML/UML-vraagstukken/">UML FAQ</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Subversion</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../svn/">SVN</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../svn/SVN-installeren-voor-EAP/">SVN installeren voor EAP</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../svn/SVN-importeren-bestaand-project/">SVN importeren bestaand project</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">GML</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../GML/">GML en XSD</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">MIM</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../MIM/">Metamodel Informatie Modellering</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Conceptenbibliotheek</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Begrippen/">Begrippenmodel</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Begrippen/BegrippenXL/">Begrippen XL</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">RDF</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../RDF/">Handleiding voor het Gebruik van EA2RDF en RDF2RDF Tools</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Ontologie</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Ontologie/">Handleiding ontologie maken en publiceren</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Word2xxx</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Word2xxx/">MsWord conversies</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Schemas maken</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../schemas/JSON/">JSON schema's maken.</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Geonovum tooling</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">ReSpec</li>
+      <li class="breadcrumb-item active">Publiceren</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/Geonovum/handleiding-tooling/blob/main/docs/ReSpec/ReSpec-publiceren.md" class="icon icon-github"> Edit on GitHub</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="publiceren-van-een-respec-document">Publiceren van een ReSpec document</h1>
+<p>Dit hoofdstuk beschrijft hoe je een ReSpec document publiceert op: <a href="https://docs.geostandaarden.nl">https://docs.geostandaarden.nl</a> en gebeurt in de volgende stappen:</p>
+<ol>
+<li>Geef het document de juiste status en vul de bijbehorende velden in.</li>
+<li>Controleer of het document klaar is voor publicatie.</li>
+<li>Check het document in op GitHub.</li>
+<li>Druk in GitHub op de release knop.</li>
+<li>Na succesvolle publicatie:<ul>
+<li>zet de <code>specStatus</code> in <code>config.js</code> terug op <code>"wv"</code></li>
+<li>Vul <code>previousMaturity</code> met de gepubliceerde <code>specStatus</code></li>
+<li>Vul <code>previousPublishDate</code> in met de datum <code>publishDate</code></li>
+</ul>
+</li>
+</ol>
+<p>Stap 4 zorgt voor een pull request op <a href="https://github.com/Geonovum/docs.geostandaarden.nl">https://github.com/Geonovum/docs.geostandaarden.nl</a>. Eén van de reviewers Frank Terpstra, Linda van den Brink of Wilko Quak checkt de publicatie.
+   Als alles goed is bevonden  wordt het document vervolgens automatisch gepubliceerd op 
+   <a href="http://docs.geostandaarden.nl">docs.geostandaarden.nl</a></p>
+<h2 id="geef-het-document-de-juiste-status-en-vul-de-bijbehorende-velden-in">Geef het document de juiste status en vul de bijbehorende velden in.</h2>
+<h3 id="consultatieversie-cv">Consultatieversie (cv)</h3>
+<p>Controleer de volgende velden in <code>js/config.js</code>:</p>
+<ul>
+<li><code>specStatus</code>:`"cv"</li>
+<li><code>publishDate</code>: moet ingevuld zijn met de datum van publicatie van de. <code>"jjjj-mm-dd"</code></li>
+<li><code>shortname</code> : moet ingevuld zijn.</li>
+<li>Als er al eerder een versie gepubliceerd is moet daarnaar verwezen worden via het invullen van <code>Previousmaturity</code> en <code>previousPublishDate</code>.</li>
+</ul>
+<h3 id="vastellingsversie-versie-vv">Vastellingsversie versie (vv)</h3>
+<ul>
+<li>specStatus: "vv"</li>
+<li>publishDate: moet ingevuld zijn met de datum van publicatie van de
+      consultatieversie. "jjjj-mm-dd",</li>
+<li>Shortname: moet ingevuld zijn met korte naam voor het document. Dit wordt
+      onderdeel van de URL. Moet uniek zijn binnen pubdomain (afgezien van
+      versies).</li>
+<li>Als er al eerder een versie gepubliceerd is moet daarnaar verwezen worden via het invullen van <code>Previousmaturity</code> en <code>previousPublishDate</code>.</li>
+</ul>
+<h3 id="definitieve-versie-def">Definitieve versie (def)</h3>
+<ul>
+<li>specStatus: "def",</li>
+<li>publishDate: de publicatiedatum van de definitieve versie. "jjjj-mm-dd",</li>
+<li>Als er al eerder een versie gepubliceerd is moet daarnaar verwezen worden via het invullen van <code>Previousmaturity</code> en <code>previousPublishDate</code>.</li>
+</ul>
+<p><strong>Noot:</strong>
+Automatisch publiceren werkt alleen in Github repositories waar, conform de <a href="../#respec-via-markdown">werkwijze</a>, maar één ReSpec document in staat. Als er meerdere Respec documenten in een repository staan kun je <a href="#handmatig-publiceren-van-respec-document">handmatig publiceren</a>.</p>
+<h2 id="is-het-document-publicatieklaar">Is het document publicatieklaar?</h2>
+<p>Publicatie is geautomatiseerd als aan de volgende voorwaarden is voldaan:</p>
+<ul>
+<li>de folderstructuur van de repository waarin het ReSpec document staat, moet conform de <a href="https://github.com/Geonovum/NL-ReSpec-template">Geonovum ReSpec template</a> zijn<ul>
+<li>dat wil zeggen, <code>index.html</code> in de root folder, <code>config.js</code> in <code>/js</code> folder, afbeeldingen in <code>/media</code> en/of <code>/data/Images</code> folder;</li>
+</ul>
+</li>
+<li>de github repository mag maar één ReSpec document bevatten.</li>
+</ul>
+<p>In het proces wordt op het volgende gecontroleerd:</p>
+<ul>
+<li>Controle op <strong>WCAG</strong> (web toegankelijkheids-) regels. Bij het pushen van een ReSpec document naar
+  GitHub wordt automatisch een WCAG rapport geschreven. Dit is te vinden onder
+  'Actions'. Kies hier de commit die je gedaan hebt en je ziet daar
+  'build/WCAG Accessibility Check'). Deze controle checkt ook de HTML.</li>
+<li>Controle op <strong>Broken links</strong>. Bij het pushen van een ReSpec document naar
+  GitHub wordt automatisch op broken links gecontroleerd. Dit is te vinden onder
+  'Actions'. Kies hier de commit die je gedaan hebt en je ziet daar
+  'Build/Link validation').</li>
+</ul>
+<h2 id="publiceer-via-een-github-release">Publiceer via een GitHub release</h2>
+<p>De automatische workflow gaat aan het werk bij elke keer dat je een Release aanmaakt in github. De stappen om een ReSpec document te publiceren naar docs.geostandaarden.nl via de workflow zijn als volgt:</p>
+<ol>
+<li>Zorg dat het document helemaal goed klaarstaat in je eigen repository<ol>
+<li>Er wordt een HTML snapshot aangemaakt via ReSpec</li>
+<li>(optioneel) PDF wordt gegenereerd indien je dit geconfigureerd hebt</li>
+<li>WCAG (web toegankelijkheidseisen) en HTML worden gevalideerd</li>
+<li>Links worden gecontroleerd</li>
+</ol>
+</li>
+<li>Bekijk de resultaten van de controles via het tabblad <strong>Actions</strong> van de repository. Als er fouten gevonden zijn, los deze dan op en herhaal stap 1, of vraag om hulp.</li>
+<li>Maak een Release aan in GitHub:<ol>
+<li>Ga naar Releases.</li>
+<li>Kies 'Draft a new release'</li>
+<li>Als je het vinkje 'Set as a pre-release' aanzet wordt het document automatisch als test gepubliceer op <a href="https://test.docs.geostandaarden.nl/">https://test.docs.geostandaarden.nl/</a></li>
+<li>Bij een echte release een Pull Request (PR) aangemaakt naar: Geonovum/docs.geostandaarden.nl</li>
+<li>Na goedkeuring van de PR (door Wilko, Frank of Linda) wordt het document gepubliceerd op: https://docs.geostandaarden.nl/</li>
+</ol>
+</li>
+</ol>
+<p><img alt="Release a Document" src="../media/ReleaseADocument.png" /></p>
+<p>Meer documentatie staat in de readme van <a href="https://github.com/Geonovum/NL-ReSpec-template?tab=readme-ov-file#automatische-checks-en-build">NL-ReSpec-template</a>.</p>
+<h3 id="configureren-van-de-automatische-workflow">Configureren van de automatische workflow</h3>
+<p>Bij het maken van een nieuw ReSpec document via de <a href="https://github.com/Geonovum/NL-ReSpec-template">template</a> wordt de workflow automatisch geïnstalleerd. In github repositories die al een ReSpec document hadden voordat de nieuwe publicatieworkflow werd geïntroduceerd, is de workflow meestal ook al geinstalleerd. Alle actieve repositories waar een 'js/config.js' in gevonden is, hebben de nieuwe workflow gekregen.</p>
+<p>Je kan controleren of de workflow is geïnstalleerd door bovenin de README.md in je repository te kijken. Hier moet in staan: </p>
+<blockquote>
+<p>Deze repository is automatisch bijgewerkt naar de nieuwste workflow. Voor vragen, neem contact op met Linda van den Brink of Wilko Quak.
+Als je een nieuwe publicatie wilt starten, lees dan eerst de instructies in de README van de NL-ReSpec-template: https://github.com/Geonovum/NL-ReSpec-template.</p>
+</blockquote>
+<p>Als de workflow niet automatisch is geïnstalleerd, kun je dit zelf doen. Dit is een eenmalige stap. Mocht dit niet lukken, dan kan Linda, Wilko of Matthijs erbij helpen:</p>
+<p><strong>Zorg dat Git is geïnstalleerd en beschikbaar is in je terminal</strong></p>
+<ol>
+<li>Open de <strong>Opdrachtprompt</strong>:<ul>
+<li>➜ Druk op de <strong>Windows-knop</strong>, typ <code>cmd</code>, druk op <strong>Enter</strong></li>
+</ul>
+</li>
+<li>Typ vervolgens in de cmd terminal:<ul>
+<li><code>git --version</code></li>
+<li>Zie je een versie zoals <code>git version 2.x.x</code>, dan is alles goed.</li>
+</ul>
+</li>
+<li>Krijg je een foutmelding zoals <code>'git' is not recognized as an internal or external command</code>, dan moet je Git nog installeren via: https://git-scm.com/downloads/win</li>
+</ol>
+<p><strong>Vervolg, na installatie van git</strong></p>
+<ol>
+<li><strong>Navigeer naar de repository in Verkenner</strong></li>
+<li>Open de map waarin de repository staat<ul>
+<li><strong>Shift</strong> + <strong>rechter muisklik</strong> in een lege ruimte in de map</li>
+<li>Kies <strong>"PowerShell-venster hier openen"</strong> of <strong>"Open in terminal"</strong></li>
+</ul>
+</li>
+<li><strong>Download en voer het script uit.</strong>  Kopieer en plak de volgende regels in PowerShell, voer ze om beuren uit:<ol>
+<li><code>curl -o replace_workflow-local.ps1 https://raw.githubusercontent.com/Geonovum/NL-ReSpec-template/main/replace_workflow-local.ps1</code></li>
+<li><code>Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass</code></li>
+<li><code>.\replace_workflow-local.ps1</code></li>
+</ol>
+</li>
+<li>Als er geen errors verschijnen is dit gelukt. Je kunt dit checken door README.md te openen: als het goed is staat hier nu bovenin een tekst die begint met "Deze repository is automatisch bijgewerkt..."</li>
+</ol>
+<p><strong>Tenslotte</strong></p>
+<ol>
+<li>Verwijder het bestand "replace_workflow-local.ps1"</li>
+</ol>
+<h2 id="handmatig-publiceren-van-respec-document">'Handmatig' publiceren van respec document.</h2>
+<p>Het ‘handmatige’ publicatieproces voor docs.geostandaarden.nl is als volgt:</p>
+<ul>
+<li>Docs.geostandaarden.nl is een mirror van: <a href="https://github.com/Geonovum/docs.geostandaarden.nl/">https://github.com/Geonovum/docs.geostandaarden.nl/</a></li>
+<li>Handmatige publicaie bestaat nu uit het rechtstreeks wijzigen van dit reopsitory. Maak in dit geval een pull request voor het repository en laat het goedkeuren zoals hierboven beschreven.</li>
+<li>In noodgevallen kunnen beheerders ook zonder pull request wijzigingen doorvoeren. In dat geval moet <docs.geostandaarden.nl> handmatig gesynchroniseerd worden. Dat kan via <a href="https://github.com/Geonovum/docs.geostandaarden.nl/actions/workflows/deploy.yml">https://github.com/Geonovum/docs.geostandaarden.nl/actions/workflows/deploy.yml</a> . Hier zie je een knopje: ‘Run workflow’.</li>
+</ul>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../" class="btn btn-neutral float-left" title="Manual"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../ReSpec-onderdelen/" class="btn btn-neutral float-right" title="Onderdelen van ReSpec">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/Geonovum/handleiding-tooling" class="fa fa-github" style="color: #fcfcfc"> GitHub</a>
+        </span>
+    
+    
+      <span><a href="../" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../ReSpec-onderdelen/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

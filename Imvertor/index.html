@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Imvertor - Geonovum tooling</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../css/custom.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Imvertor";
+        var mkdocs_page_input_path = "Imvertor/index.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> Geonovum tooling
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">Home</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="..">Welkom</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../werkwijzemodelleren/">Werkwijze Modelleren</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../tooling/">Tooling</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../externe-links/">Verdere documentatie</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">GitHub</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../GitHub/">Manual</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../GitHub/GitHub-Inleiding/">GitHub intro</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../GitHub/GitHub-beheer/">GitHub beheer</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Imvertor</span></p>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Imvertor</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#installatie">Installatie</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#gebruik">Gebruik</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#losse-onderwerpen">Losse onderwerpen</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#schema-generatie">Schema generatie</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#json-genereren">JSON genereren</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#mapping-van-geo-klassen-en-typen">Mapping van geo-klassen en -typen</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#veel-te-veel-plaatjes-in-de-data-folder">Veel te veel plaatjes in de data folder</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Markdown</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../Markdown/">Markdown</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">ReSpec</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../ReSpec/">Manual</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ReSpec/ReSpec-publiceren/">Publiceren</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ReSpec/ReSpec-onderdelen/">Onderdelen van ReSpec</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Enterprise Architect</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../EA/">Overzicht</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../EA/MIM-toolbox-importeren/">Toolbox importeren</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../EA/EA-toepassing-standaarddatatypen/">standaarddatatypen</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../EA/MIM-toolbox-genereren/">Toolbox genereren</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../EA/MIM-toolbox-genereren-extensie/">Toolbox genereren extensie</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../EA/xmi-exporteren/">XMI exporteren</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">UML</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../UML/">UML</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../UML/UML-leeswijzer/">Leeswijzer UML</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../UML/UML-vraagstukken/">UML FAQ</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Subversion</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../svn/">SVN</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../svn/SVN-installeren-voor-EAP/">SVN installeren voor EAP</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../svn/SVN-importeren-bestaand-project/">SVN importeren bestaand project</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">GML</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../GML/">GML en XSD</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">MIM</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../MIM/">Metamodel Informatie Modellering</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Conceptenbibliotheek</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../Begrippen/">Begrippenmodel</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Begrippen/BegrippenXL/">Begrippen XL</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">RDF</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../RDF/">Handleiding voor het Gebruik van EA2RDF en RDF2RDF Tools</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Ontologie</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../Ontologie/">Handleiding ontologie maken en publiceren</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Word2xxx</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../Word2xxx/">MsWord conversies</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Schemas maken</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../schemas/JSON/">JSON schema's maken.</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">Geonovum tooling</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Imvertor</li>
+      <li class="breadcrumb-item active">Imvertor</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/Geonovum/handleiding-tooling/blob/main/docs/Imvertor/index.md" class="icon icon-github"> Edit on GitHub</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="imvertor">Imvertor</h1>
+<p>Imvertor wordt veel gebruikt binnen Geonovum voor het transformeren van UML 
+modellen naar bijvoorbeeld xml-schema’s of feature catalogues. Imvertor is
+een add-in in <a href="../EA/">Enterprise Architect</a></p>
+<h2 id="installatie">Installatie</h2>
+<p>De <a href="https://armatiek.nl/doc/imvertor/imvertor-startup/1.0/#installeren-van-de-software">installatieinstructie</a>. Houd er rekening mee dat je ondersteuning nodig kunt hebben van systeembeheer voor deze installatie.
+Wanneer de knop "Toch uitvoeren" niet verschijnt, moet je de cmd-promp openen als administrator en dan het gedownloade installatiescript runnen door de filenaam van de executable met pad en extensie in te tikken en enter te geven.</p>
+<h2 id="gebruik">Gebruik</h2>
+<table>
+<thead>
+<tr>
+<th>onderwerp</th>
+<th>verwijzing</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Algemeen</td>
+<td><a href="https://vng-realisatie.github.io/Model-Driven-Design-Documentatie/">Verzamelde handleiding van organisaties</a></td>
+</tr>
+<tr>
+<td>Werkinstructie</td>
+<td><a href="https://geonovum.atlassian.net/l/cp/Fi0U9bCk">IMGeluid werkinstructie</a></td>
+</tr>
+<tr>
+<td>Uitleg schema mapping</td>
+<td><a href="https://imvertor.armatiek.nl/imvertor-executor/dashboard/wiki?key=info-IMVERTORCONCEPTUALSCHEMAS">Hier</a></td>
+</tr>
+<tr>
+<td>Nieuwsbrieven</td>
+<td><a href="https://armatiek.nl/nieuwsbrieven.html">https://armatiek.nl/nieuwsbrieven.html</a></td>
+</tr>
+<tr>
+<td>Imvertor-properties</td>
+<td><a href="https://armatiek.nl/doc/imvertor/imvertor-properties/1.0/">Uitleg verschillende properties</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="losse-onderwerpen">Losse onderwerpen</h2>
+<h3 id="schema-generatie">Schema generatie</h3>
+<p>Imvertor in in staat om verschillende soorten schema's (i.e. verschillende
+uitwisselformaten) te genereren. Via het properties file kun je aangeven of en
+welke schema's je wilt genereren. Er zijn ook  mogelijkheden om
+datgene wat er gegenereerd wordt aan je wensen aan te passen via het Imvertor-properties bestand zie: <a href="https://armatiek.nl/doc/imvertor/imvertor-properties/1.0/">properties</a></p>
+<h3 id="json-genereren">JSON genereren</h3>
+<p>Geef in de properties file die je kunt kiezen bij het runnen van imvertor, de volgende parameter mee: </p>
+<pre><code>createjsonschema = yes
+</code></pre>
+<p>Imvertor genereert dan een <code>.json</code> en een <code>.yaml</code> bestand. Dit zijn, in 2
+formaten, API beschrijvingen conform OpenAPI 3.0.0 die zijn gegenereerd uit je
+informatiemodel. </p>
+<p>Met de property <code>createjsonschemavariant</code> kun je varianten configureren. Zie <a href="https://armatiek.nl/doc/imvertor/imvertor-properties/1.0/#cli-createjsonschemavariant">handleiding</a>.<br />
+Voor meer informatie: zie <a href="https://geonovum.github.io/handleiding-tooling/schemas/JSON/">hier</a>.</p>
+<h3 id="mapping-van-geo-klassen-en-typen">Mapping van geo-klassen en -typen</h3>
+<p>Imvertor werkt met een configuratiebestand <code>conceptual-schemas.xml</code> waarin een
+mapping is opgenomen tussen gestandaardiseerde <strong>ISO-, OGC- en INSPIRE-klassen</strong>
+en typen die wij in informatiemodellen gebruiken, naar bijvoorbeeld in <strong>GML</strong>
+voorkomende typen. <strong>Imvertor</strong> gebruikt dit om bijvoorbeeld <strong>GML Application
+schema's</strong> te genereren uit een informatiemodel. </p>
+<p>Bij deze klassen en typen is het ook mogelijk om links op te nemen naar een
+online gepubliceerde definitie en/of uitleg ervan, die Imvertor dan kan
+gebruiken om links in de documentatie te genereren. </p>
+<p>Een voorbeeldje. In onze UML modellen gebruiken we vaak <code>GM_Surface</code>. </p>
+<p>Imvertor “weet” al (omdat dit in een configuratiebestand staat) hoe dit vertaald
+moet worden naar een <strong>GML-type</strong> zodat er een correct <strong>GML application
+schema</strong> uit komt rollen. </p>
+<p>We genereren met Imvertor niet alleen <strong>XML/GML schema’s</strong>, maar ook
+dataspecificaties, bv. dit hoofdstuk uit de <strong>IMGeluid</strong> <strong>catalogus</strong> is met
+Imvertor uit <strong>UML</strong> gegenereerd: https://docs.geostandaarden.nl/cvgg/img/#cat</p>
+<p>Je ziet daarin dat het <strong>ISO-concept</strong> <code>GM_Surface</code> niet gedocumenteerd is. Een
+lezer die het niet kent, kan niet direct opzoeken wat het betekent. Zie bv. het
+geometrie attribuut in de klasse <code>VlakbronIndustrie</code>
+https://docs.geostandaarden.nl/cvgg/img/#detail_attribute_IMGeluidAlgemeen_VlakbronIndustrie_geometrie</p>
+<p>Terwijl andere typen klikbaar zijn omdat ze elders in de data specificatie
+worden gedefinieerd. </p>
+<p>Nu willen we Imvertor in gevallen zoals <code>GM_Surface links</code> laten genereren naar
+definities in de <strong>ISO Geolexica</strong>, het <strong>INSPIRE register</strong> en ons eigen
+definities.geostandaarden.nl voor <strong>NEN 3610</strong>. Daarvoor hebben we een eerste
+(onvolledige)
+<a href="mapping-ISOlexicon.xlsx">mapping</a>
+gemaakt. </p>
+<p>De ambitie is om niet alleen deze mapping te verbeteren, maar om ook de lijst
+van in informatiemodellen te gebruiken geo-klassen en -typen te standaardiseren. </p>
+<h3 id="veel-te-veel-plaatjes-in-de-data-folder">Veel te veel plaatjes in de data folder</h3>
+<p>Een Imvertor run levert een flink aantal UML diagrammen op in de <code>data</code> folder. Niet meer gebruikt diagrammen worden nooit verwijderd uit deze folder waardoor er vaak veel niet gebruikt diagrammen in staan. <strong>Tip:</strong> gooi voor het draaien van Imvertor de data map een keer leeg.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../GitHub/GitHub-beheer/" class="btn btn-neutral float-left" title="GitHub beheer"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../Markdown/" class="btn btn-neutral float-right" title="Markdown">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/Geonovum/handleiding-tooling" class="fa fa-github" style="color: #fcfcfc"> GitHub</a>
+        </span>
+    
+    
+      <span><a href="../GitHub/GitHub-beheer/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../Markdown/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
