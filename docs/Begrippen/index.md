@@ -8,7 +8,7 @@ Het begrippenmodel wordt gepubliceerd op: <https://definities.geostandaarden.nl>
 
 Een begrippenmodel wordt opgesteld door mensen bij voorkeur voordat er een informatiemodel wordt gemaakt.
 
-**TODO:** best practise zoeken en opnemen.
+**TODO:** best practice zoeken en opnemen.
 
 Hoewel niet wenselijk komt het ook voor dat er achteraf een begrippenmodel wordt gemaakt op basis van een informatiemodel.
 
