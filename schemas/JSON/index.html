@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>JSON schema's maken. - Geonovum tooling</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../css/custom.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "JSON schema\u0027s maken.";
+        var mkdocs_page_input_path = "schemas/JSON.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Geonovum tooling
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">Home</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../..">Welkom</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../werkwijzemodelleren/">Werkwijze Modelleren</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../tooling/">Tooling</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../externe-links/">Verdere documentatie</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">GitHub</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../GitHub/">Manual</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../GitHub/GitHub-Inleiding/">GitHub intro</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../GitHub/GitHub-beheer/">GitHub beheer</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Imvertor</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Imvertor/">Imvertor</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Markdown</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Markdown/">Markdown</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">ReSpec</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../ReSpec/">Manual</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../ReSpec/ReSpec-publiceren/">Publiceren</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../ReSpec/ReSpec-onderdelen/">Onderdelen van ReSpec</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Enterprise Architect</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../EA/">Overzicht</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../EA/MIM-toolbox-importeren/">Toolbox importeren</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../EA/EA-toepassing-standaarddatatypen/">standaarddatatypen</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../EA/MIM-toolbox-genereren/">Toolbox genereren</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../EA/MIM-toolbox-genereren-extensie/">Toolbox genereren extensie</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../EA/xmi-exporteren/">XMI exporteren</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">UML</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../UML/">UML</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../UML/UML-leeswijzer/">Leeswijzer UML</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../UML/UML-vraagstukken/">UML FAQ</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Subversion</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../svn/">SVN</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../svn/SVN-installeren-voor-EAP/">SVN installeren voor EAP</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../svn/SVN-importeren-bestaand-project/">SVN importeren bestaand project</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">GML</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../GML/">GML en XSD</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">MIM</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../MIM/">Metamodel Informatie Modellering</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Conceptenbibliotheek</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Begrippen/">Begrippenmodel</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Begrippen/BegrippenXL/">Begrippen XL</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">RDF</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../RDF/">Handleiding voor het Gebruik van EA2RDF en RDF2RDF Tools</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Ontologie</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Ontologie/">Handleiding ontologie maken en publiceren</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Word2xxx</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Word2xxx/">MsWord conversies</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Schemas maken</span></p>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">JSON schema's maken.</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#imvertor">Imvertor</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#andere-tools">Andere tools</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#handmatig-aanpassen">Handmatig aanpassen</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#voorbeeldbestanden-maken">Voorbeeldbestanden maken</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#valideren">Valideren</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#publiceren">Publiceren</a>
+    </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Geonovum tooling</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Schemas maken</li>
+      <li class="breadcrumb-item active">JSON schema's maken.</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/Geonovum/handleiding-tooling/blob/main/docs/schemas/JSON.md" class="icon icon-github"> Edit on GitHub</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="json-schemas-maken">JSON schema's maken.</h1>
+<h2 id="imvertor">Imvertor</h2>
+<p>Met behulp van Imvertor kan een eerste versie van het JSON-schema gemaakt worden uit een UML in Enterprise Architect.
+Voor Geonovum is deze aangepast aan <a href="https://docs.ogc.org/bp/24-017r1.html">de best practise UML2json</a>.
+Om bij het draaien van Imvertor ook een JSON-schem te maken, moeten 2 regels opgenomen worden in de <a href="https://armatiek.nl/doc/imvertor/imvertor-properties/1.0/">Imvertor-propertiesfile</a> :</p>
+<ul>
+<li>createjsonschema = yes</li>
+<li>createjsonschemavariant = plainjson</li>
+</ul>
+<p>Er zijn daarbij 3 varianten:
+- plainjson
+- geojson
+- jsonfg</p>
+<p>Geojson is de beste keuze wanneer het schema bedoeld is voor GIS-bestanden in GEO-json-formaat. Het nadeel is wel dat de structuur gecompliceerder is dan voor plainjson.
+Jsonfg is vergelijkbaar met geojson, maar heeft meer mogelijkheden voor 3D en tijd. Ook staat deze bijzonderde datatypes zoals een cirkel toe.</p>
+<p>Er zijn organisatie specifieke instellingen die in een organisatiespecifieke configuratiefile verwerkt zijn. 
+Als deze ook aangepast moeten worden, moet dat in overleg met de Geonovum coordinator voor Imvertor.</p>
+<p>Imvertor geeft een foutmelding in de conversie naar het json-schema wanneer er meer dan 1 stereotypen zijn ingesteld op 1 objectklasse. De extra moeten dan verwijderd worden. 
+Dat kan eventueel toegepast worden door de extra stereotypen alleen in het conceptuele model op te nemen, maar in het logische model slechts 1.</p>
+<h2 id="andere-tools">Andere tools</h2>
+<p>JSON-schemas kunnen ook met <a href="https://modeldesk.io/">Modeldesk</a> gemaakt worden.
+Dit is in het <a href="https://github.com/Geonovum/ibro-lm">IBRO</a> project gebruikt. Zie: https://raw.githubusercontent.com/Geonovum/ibro-lm/refs/heads/main/schemas/IMIBRO-LM.schema.json</p>
+<h2 id="handmatig-aanpassen">Handmatig aanpassen</h2>
+<p>De kans is groot dat het schema uit Imvertor of een andere applicatie niet helemaal zo is als gewenst.
+Geonovum heeft ook nog enkele wensen uitstaan bij Armatiek voor aanpassing van Imvertor. Zie: <a href="https://github.com/Imvertor/Imvertor-Maven/issues/585">#585</a> t/m <a href="https://github.com/Imvertor/Imvertor-Maven/issues/590">#590</a>.
+Oxygen is een prettig programma voor het handmatig bewerken van JSON-schema. Het kan de structuur van het schema mooi visualiseren.</p>
+<p>Bij dit aanpassen zijn er de volgende overwegingen die gemaakt moeten worden:</p>
+<ul>
+<li>title, comment en description en "$schema": "https://json-schema.org/draft/2020-12/schema" toevoegen in header</li>
+<li>Relaties die twee kanten opgaan, kunnen leiden tot eeuwige loop bij het valideren of bij het aanmaken van voorbeeldbestanden. Een optie is het weglaten van één of beide richtingen.</li>
+<li>Het attribuut entityType toevoegen als constante. Het entityType geeft aan welk type het object betreft. Dit maakt het leesbaarder en het valideren eenduidiger.</li>
+<li>Ga na of er een extra id-attribuut nodig is naast het Nen3610-Id. Het is voor implementaties lastig verwijzen naar een genest id, zoals bij het NEN3610-localid</li>
+<li>Hoe wordt er omgegaan met subtypes en supertypes? Via een oneOf constructie kunnen mogelijke subtypes aangegeven worden, maar dit hoeft niet. Via allof worden de attributen van de supertypes overgenomen. Dit kan ook door al deze attributen afzonderlijk opnieuw op te nemen, maar dat maakt het schema onnodig lang.</li>
+<li>Bij subtypes die een allOf aanroepen, moet een unevaluatedProperties key = false opgenomen worden</li>
+<li>Relaties leggen naar alle mogelijke subtypes van een supertype via oneOf i.p.v. alleen naar het supertype verwijzen. Dat laatste klinkt makkelijker, maar is moeilijker te valideren.</li>
+<li>Hoe ga je om met voidable objecten? Hierover is een discussie gaande op <a href="https://github.com/Imvertor/Imvertor-Maven/issues/590">#590</a></li>
+<li>Hoe ga je om met keuze objecten? Het kan door de twee kwuzes als opstionele properties op te nemen en 2 regels toe toe te voegen '"minProperties": 1' en '"maxProperties": 1'. Dit doet Imvertor. Het kan ook via een oneOf-constructie</li>
+<li>Realiseer je dat het schema bedoeld is voor implementatie en daarom kan die afwijken van het model. Een voorbeeld van deze afwijking is het attribuut "entityType". Dit attribuut komt niet voor in het UML.</li>
+<li>Voor hetzelfde UML-model kunnen verschillende schema's bestaan met ieder verschillende doelen. bv voor input of output. Het atribuut "tijdstipRegistratie" komt bv. niet in de input voor, maar wel in de output.</li>
+<li>Kijk goed of alle tagged values uit het UML overgenomen zijn het schema. Let vooral op de formele patronen, min en max values en kardinaliteiten.</li>
+<li>Hoe ga je om met regels/constraints? Sommige kunnen via een constante opgelost worden in een json-schema: vb. "entityType": {"const": "Bewaarplaats"}</li>
+</ul>
+<h2 id="voorbeeldbestanden-maken">Voorbeeldbestanden maken</h2>
+<p>Het loont om voorbeeldbestanden te maken. Dat geeft inzicht in de bruikbaarheid van het schema.
+Soms zijn deze er al vanuit de praktijk, zoals bij IMEV het geval was vanuit vorige versies van het IMEV. Met slechts enkele aanpassingen konden deze aangepast worden aan de nieuwste versie van het IMEV en het daarbij behorende schema.
+Als ze er nog niet zijn, dan biedt Oxygen de mogelijkheid om voorbeeldbestanden met dummy waarden aan te maken. 
+Wanneer het UML complex is, loont het om alleen voor enkele representatieve objectklassen voorbeeldbestanden te maken. 
+Richt je daarbij ook op de vraag hoe de datauitwisseling voor de bijbehorende registratie verloopt. Maak onderscheid tussen input en output.</p>
+<h2 id="valideren">Valideren</h2>
+<p>Gebleken is dat verschillende tools verschillend valideren. Wanneer er subtypes en supertypes voorkomen, kunnen validaties daar vaak niet goed mee omgaan.
+Het beste tot nu toe ging het valideren met Visusal Studio.
+Visual Studio gebruikt daarvoor een klein bestandje dat "settings.code" heet en dat in een submap moet staan met de naam .vscode. Hier staat bv. het volgende in:</p>
+<pre><code>{   
+    &quot;json.schemas&quot;: [
+        {
+          &quot;fileMatch&quot;: [&quot;voorbeeld.json&quot;],
+          &quot;url&quot;: &quot;./voorbeeld_schema.json&quot;
+        }
+      ]
+} 
+</code></pre>
+<p>Hierna zal hij on the fly het bestand "voorbeeld.json" valideren op "voorbeeld_schema.json". Dus tijdens het editen van voorbeeld.json wordt direct zichbaar of de inhoud voldoet aan het schema.
+Door de filenaam te veranderen en te saven, kan er op een ander json-bestand gevalideerd worden.</p>
+<h2 id="publiceren">Publiceren</h2>
+<p>Json-schemas worden gepubliceerd in https://register.geostandaarden.nl/jsonschema/.  </p>
+<p>Dit gebeurt met sftp.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../../Word2xxx/" class="btn btn-neutral float-left" title="MsWord conversies"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/Geonovum/handleiding-tooling" class="fa fa-github" style="color: #fcfcfc"> GitHub</a>
+        </span>
+    
+    
+      <span><a href="../../Word2xxx/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
