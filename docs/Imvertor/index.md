@@ -28,6 +28,16 @@ uitwisselformaten) te genereren. Via het properties file kun je aangeven of en
 welke schema's je wilt genereren. Er zijn ook  mogelijkheden om
 datgene wat er gegenereerd wordt aan je wensen aan te passen via het Imvertor-properties bestand zie: [properties](https://armatiek.nl/doc/imvertor/imvertor-properties/1.0/)
 
+### In welk git repo komt de catalogus terecht
+
+Bij het runnen van Imvertor wordt een catalogus bestand gepushed naar de data folder van een Git repository. Ik (wilko) kan niet precies vinden waar bepaald is welk repository dat is. Zo te zien werk het als volgt:
+
+1. Als je kan in de imvertor properties file een variable `gitpath = /Geonovum/XXX` opnemen dan wordt het git repo 'https://github.com/Geonovum/XXX/data` gebruikt.
+2. Als die niet in ingevuld wordt de naam van het package gebruikt: `XXX`.
+
+Methode 2 heeft de voorkeur omdat het vaak voorkomt dat je invertor draait met het verkeerde `imvertor.properties` bestand waardoor de catalogus op de verkeerde plek terechtkomt.
+
+
 ### JSON genereren
 
 Geef in de properties file die je kunt kiezen bij het runnen van imvertor, de volgende parameter mee: 
