@@ -1,6 +1,6 @@
 # Onderdelen van een ReSpec document
 
-## De URL van een publicatie op docs.geonovum.nl
+## De URL van een publicatie op docs.geostandaarden.nl
 
 ReSpec documenten worden gepubliceerd op
 [docs.geostandaarden.nl](https://docs.geostandaarden.nl). Iedere gepubliceerde
@@ -326,13 +326,10 @@ Een lijst met issues kan je toevoegen met de volgende HTML code:
 <section class="appendix" id="issue-summary">
   <!-- Issues will magically be listed here! -->
 </section>
-
 ```
-
-
 ## Definities in ReSpec
 
-Een  onderdeel van een dataspecificatie is de definitie van begrippen. Steeds vaker leggen we bij Geonovum begrippen vast in een [begrippenkader](https://definities.geostandaarden.nl/nl/). Idealiter verwijs je voor de definitie van een begrip altijd daarnaar. Op deze plek leggen we uit hoe we nu een definitie opnemen.
+Een onderdeel van een dataspecificatie is de definitie van begrippen. Steeds vaker leggen we bij Geonovum begrippen vast in een [begrippenkader](https://definities.geostandaarden.nl/nl/). Idealiter verwijs je voor de definitie van een begrip altijd daarnaar. Op deze plek leggen we uit hoe we nu een definitie opnemen.
 
 ### Definitie van een begrip opnemen in specificatie
 
@@ -345,16 +342,17 @@ Een definitie wordt als volgt gemaakt:
 ```markdown
 <dfn>boek</dfn>een samengebonden of genaaid aantal bedrukte bladen.
 ```
-
 Het resultaat ziet er zo uit:
 
 ![Voorbeeld van definitie in ReSpec](media/ReSpec-definitie.png)
 
 ### Gebruik van definitie
 
-Wil je naar een gedefinineerd begrip verwijzen gaat dat zo: `<a>boek</a>`` of `[=boek-]`
+Wil je naar een gedefinieerd begrip verwijzen gaat dat zo: `<a>boek</a>`` of `[=boek-]`
 
-Houd als richtlijn dat je alleen de eerste keer dat een term in een alinea voorkomt een verwijzing maakt. Dit voorkomt een overdaad aan verwijzingen in de tekst.
+Houd als richtlijn dat je alleen de eerste keer dat een term in een alinea
+voorkomt een verwijzing maakt. Dit voorkomt een overdaad aan verwijzingen 
+in de tekst.
 
 ### Aanvullende styling
 
@@ -374,7 +372,6 @@ wrap een definitie in een aside met attribute class="definition"
 > **TODO**
 > Het zou wel heel leuk zijn om een link met [NL-SBB](https://docs.geostandaarden.nl/nl-sbb/nl-sbb/) te leggen.
 
-
 ## ReSpec - richtlijn code in tekst
 
 In de tekst gebruik je regelmatig stukken code, in de lopende tekst (_inline code_), of  langere stukken code (_code block_). Deze handleiding is specifiek bedoeld voor de toepassing van code in documentantatie over informatiemodellen. Voor andere type code staat het je vrij hoe je dit toepast.
@@ -391,12 +388,9 @@ Pas deze notatie toe als je een modelelement (in UML: stereotype) uit een metamo
  - `«Attribuutsoort»`
  - `«Relatiesoort»`
 
-Plaats voor deze notatiewijze naam van de metaklasse tussen twee dubbele _guillemets_ `«`, `»`. Je vindt ze met de volgende toetsencombinaties:
+Plaats voor deze notatiewijze naam van de metaklasse tussen twee dubbele _guillemets_ `«`, `»`. 
 
- - `«` = `"alt"` + `"["`
- - `»` = `"alt"` + `"]"`
-
-In markdown neem je een metaklassenaam als volgt op:
+In Markdown neem je een metaklassenaam als volgt op:
 `` `«metaklassenaam»` ``. 
 
 #### Modelelementnaam

@@ -30,70 +30,29 @@ datgene wat er gegenereerd wordt aan je wensen aan te passen via het Imvertor-pr
 
 ### In welk git repo komt de catalogus terecht
 
-Bij het runnen van Imvertor wordt een catalogus bestand gepushed naar de data folder van een Git repository. Ik (wilko) kan niet precies vinden waar bepaald is welk repository dat is. Zo te zien werk het als volgt:
+Bij het runnen van Imvertor wordt een catalogus bestand gepushed naar de data folder van een Git repository. Dit wordt als volgt bepaald:
 
-1. Als je kan in de imvertor properties file een variable `gitpath = /Geonovum/XXX` opnemen dan wordt het git repo 'https://github.com/Geonovum/XXX/data` gebruikt.
-2. Als die niet in ingevuld wordt de naam van het package gebruikt: `XXX`.
+- Als in het UML package de Alias is ingevuld wordt één van de volgend gebruikt: `https://github.com/[Alias]` of `https://github.com/Geonovum/[Alias]`.
+- Ook kan je in de  imvertor.properties file een variable `gitpath = /Geonovum/XXX` opnemen dan wordt het git repo 'https://github.com/Geonovum/XXX/` gebruikt.
+.
 
-Methode 2 heeft de voorkeur omdat het vaak voorkomt dat je invertor draait met het verkeerde `imvertor.properties` bestand waardoor de catalogus op de verkeerde plek terechtkomt.
+De eerste methode heeft de voorkeur omdat het vaak voorkomt dat je invertor draait met het verkeerde `imvertor.properties` bestand waardoor de catalogus op de verkeerde plek terechtkomt.
 
 
 ### JSON genereren
 
-Geef in de properties file die je kunt kiezen bij het runnen van imvertor, de volgende parameter mee: 
+Geef in de properties file die je kunt kiezen bij de aanroep Imvertor de parameter 
+`createjsonschema = yes` mee.
 
-```
-createjsonschema = yes
-```
-
-Imvertor genereert dan een `.json` en een `.yaml` bestand. Dit zijn, in 2
+Imvertor maakt dan een `.json` en een `.yaml` bestand. Dit zijn, in 2
 formaten, API beschrijvingen conform OpenAPI 3.0.0 die zijn gegenereerd uit je
 informatiemodel. 
 
 Met de property `createjsonschemavariant` kun je varianten configureren. Zie [handleiding](https://armatiek.nl/doc/imvertor/imvertor-properties/1.0/#cli-createjsonschemavariant).  
 Voor meer informatie: zie [hier](https://geonovum.github.io/handleiding-tooling/schemas/JSON/).
 
-
-### Mapping van geo-klassen en -typen
-
-Imvertor werkt met een configuratiebestand `conceptual-schemas.xml` waarin een
-mapping is opgenomen tussen gestandaardiseerde **ISO-, OGC- en INSPIRE-klassen**
-en typen die wij in informatiemodellen gebruiken, naar bijvoorbeeld in **GML**
-voorkomende typen. **Imvertor** gebruikt dit om bijvoorbeeld **GML Application
-schema's** te genereren uit een informatiemodel. 
-
-Bij deze klassen en typen is het ook mogelijk om links op te nemen naar een
-online gepubliceerde definitie en/of uitleg ervan, die Imvertor dan kan
-gebruiken om links in de documentatie te genereren. 
-
-Een voorbeeldje. In onze UML modellen gebruiken we vaak `GM_Surface`. 
-
-Imvertor “weet” al (omdat dit in een configuratiebestand staat) hoe dit vertaald
-moet worden naar een **GML-type** zodat er een correct **GML application
-schema** uit komt rollen. 
-
-We genereren met Imvertor niet alleen **XML/GML schema’s**, maar ook
-dataspecificaties, bv. dit hoofdstuk uit de **IMGeluid** **catalogus** is met
-Imvertor uit **UML** gegenereerd: https://docs.geostandaarden.nl/cvgg/img/#cat
-
-Je ziet daarin dat het **ISO-concept** `GM_Surface` niet gedocumenteerd is. Een
-lezer die het niet kent, kan niet direct opzoeken wat het betekent. Zie bv. het
-geometrie attribuut in de klasse `VlakbronIndustrie`
-https://docs.geostandaarden.nl/cvgg/img/#detail_attribute_IMGeluidAlgemeen_VlakbronIndustrie_geometrie
-
-Terwijl andere typen klikbaar zijn omdat ze elders in de data specificatie
-worden gedefinieerd. 
-
-Nu willen we Imvertor in gevallen zoals `GM_Surface links` laten genereren naar
-definities in de **ISO Geolexica**, het **INSPIRE register** en ons eigen
-definities.geostandaarden.nl voor **NEN 3610**. Daarvoor hebben we een eerste
-(onvolledige)
-[mapping](mapping-ISOlexicon.xlsx)
-gemaakt. 
-
-De ambitie is om niet alleen deze mapping te verbeteren, maar om ook de lijst
-van in informatiemodellen te gebruiken geo-klassen en -typen te standaardiseren. 
-
 ### Veel te veel plaatjes in de data folder
 
-Een Imvertor run levert een flink aantal UML diagrammen op in de `data` folder. Niet meer gebruikt diagrammen worden nooit verwijderd uit deze folder waardoor er vaak veel niet gebruikt diagrammen in staan. **Tip:** gooi voor het draaien van Imvertor de data map een keer leeg.
+Een Imvertor run levert een flink aantal UML diagrammen op in de `data` folder. Niet meer gebruikt diagrammen worden nooit verwijderd uit deze folder waardoor er vaak veel niet gebruikt diagrammen in staan.
+
+**Tip:** gooi voor het draaien van Imvertor de data map een keer leeg.

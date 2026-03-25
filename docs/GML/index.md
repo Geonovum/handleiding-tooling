@@ -1,12 +1,15 @@
 # GML en XSD
 
+GML is een standaard uitwisselformaat voor geodata.
+
 Een algemene handleiding voor het opslaan van Geometrie in GML bestanden is te
 vinden in: [Geometrie in model en GML](https://geonovum.github.io/gimeg/)
 
-## De namespace van een GML-applicatieschema
+Best practices voor het maken van een GML-Applicatieschema:
 
-In een GML applicatieschema gebruiken we namespaces. Een namespace heeft de vorm
-van een URI en identificeert een domein.
+## De namespace
+
+Een namespace heeft de vorm van een URI en identificeert een domein.
 
 - Voor de basis wordt: http://www.geostandaarden.nl gebruikt.
 - Daarna volgt een identificatie van de standaard.
@@ -25,7 +28,7 @@ Samen wordt dit:
 
 - namespace van schema: http://www.geostandaarden.nl/[standaard]/[onderdeel]/x.y
 - locatie van schema: https://register.geostanadaarden.nl/xmlschema/[standaard]/[x.y.z]/[onderdeel].xsd
-- vesion in het schema: [x.y.z]
+- version in het schema: [x.y.z]
 
 Bij een standaard zonder onderdelen wordt de bestandsnaam als onderdeelnaam gebruikt bij locatie.
 
