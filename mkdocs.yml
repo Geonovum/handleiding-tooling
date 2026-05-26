@@ -44,6 +44,7 @@ nav:
         - MIM/index.md
     - Conceptenbibliotheek:
         - Begrippen/index.md
+        - Begrippen/begrippen-regels.md
         - Begrippen/BegrippenXL.md
     - RDF:
         - RDF/index.md

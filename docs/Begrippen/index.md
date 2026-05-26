@@ -20,25 +20,6 @@ Een begrippenkader is niet meer dan een SKOS bestand in .ttl formaat. Er zijn ve
 2. Een begrippen model is niet veel meer dan een lijst met begrippen en definities. Met een spreadsheet kom je al een heel eind. Dan kun je later naar SKOS converteren.
 3. Je kunt de begrippen met Imvertor uit een UML model halen door de optie `createskos = yes` in de configuratie op te nemen. Dit levert een SKOS bestand wat je als tekstbestand kunt editen.
 
-## Regels voor een begrippenmodel binnen Geonovum
-
-**Regel:** Een begrippenmodel is conform [NL-SBB](https://docs.geostandaarden.nl/nl-sbb/nl-sbb/)
-
-**Regel:** We voldoen minimaal aan [Best Practice 1](https://docs.geostandaarden.nl/nl-sbb/nl-sbb/#bp-gangbare-conventies-voor-het-beschrijven-van-termen-voorkeurstermen-alternatieve-termen-zijn) uit NL-SBB.
-
-**Regel:** We voorkomen dat vrijwel dezelfde begrippen in verschillende begrippenkaders voorkomen door [de regels voor harmonisatie en hergebruik uit NL-SBB](https://docs.geostandaarden.nl/nl-sbb/nl-sbb/#harmonisatie-en-hergebruik) toe te passen.
-
-**Regel:** Een begrippenkader bevat minstens één taal zijn waarin alle termen zijn beschreven. 
-
-**TODO:** Verdere invulling van [best practices](https://docs.geostandaarden.nl/nl-sbb/nl-sbb/#H5) maken voor Geonovum.
-
-Op astraonline staan [kwaliteitsregels voor begripsdefinitie](https://www.astraonline.nl/index.php/Regels_voor_definitiekwaliteit). Deze zijn mogelijk te gebruiken als invulling voor best practices.
-
-### Regels voor het .ttl bestand
-
-**Regel:** Het .ttl bestand bevat 1 begrippenkader.
-
-**Regel:** De uitleg van het begrippenkader is niet leeg.
 
 ### Het publiceren van een SKOS bestand
 
