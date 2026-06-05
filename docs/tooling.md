@@ -63,9 +63,9 @@ hier de logo's die in docs.geostandaarden.nl gebruikt worden.
 
 Interne server die beheertaken automatiseert.
 
-### [8] Word2ResSpec
+### [8] Word2Respec
 
-- [Word2werkversie](Word2xxx/index.md)
+- [Word2werkversie](Word2Respec/index.md)
 
 ### [9] register.geostandaarden.nl
 

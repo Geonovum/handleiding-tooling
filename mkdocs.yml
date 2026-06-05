@@ -50,7 +50,7 @@ nav:
         - RDF/index.md
     - Ontologie:
         - Ontologie/index.md
-    - Word2xxx:
-        - Word2xxx/index.md
+    - Word2Respec:
+        - Word2Respec/index.md
     - Schemas maken:
         - schemas/JSON.md
