@@ -1,5 +1,6 @@
 ## Regels voor een begrippenmodel binnen Geonovum
 
+
 **Regel:** Een begrippenmodel is conform [NL-SBB](https://docs.geostandaarden.nl/nl-sbb/nl-sbb/)
 
 **Regel:** We voldoen minimaal aan [Best Practice 1](https://docs.geostandaarden.nl/nl-sbb/nl-sbb/#bp-gangbare-conventies-voor-het-beschrijven-van-termen-voorkeurstermen-alternatieve-termen-zijn) uit NL-SBB.

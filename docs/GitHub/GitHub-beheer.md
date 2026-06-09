@@ -2,7 +2,7 @@
 
 ## Github beheer
 
-- Github beheerders zijn te vinden via: <https://github.com/orgs/Geonovum/people?query=role%3Aowner>
+Github beheerders zijn te vinden in het github [gebuikersoverzicht](https://github.com/orgs/Geonovum/people?query=role%3Aowner).
 
 **Regel:** Alle teamleden hebben 2FA aanstaan.
 
@@ -18,7 +18,7 @@ Hierdoor worden ze [outside collaborator](https://docs.github.com/en/organizatio
 
 ## GitHub teams
 
-- Er is een aantal teams gemaakt binnen Geonovum. Deze zijn te vinden op: <https://github.com/orgs/Geonovum/teams>.
+Er is een aantal teams gemaakt binnen Geonovum. Deze zijn te vinden op: <https://github.com/orgs/Geonovum/teams>.
 
 **Regel:** Ieder team is gekoppeld aan een actief project binnen Geonovum.
 
