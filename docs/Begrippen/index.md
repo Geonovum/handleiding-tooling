@@ -21,11 +21,9 @@ Een begrippen model is niet veel meer dan een lijst met begrippen en definities:
 3. [Modeldesk](https://app.modeldesk.io) heeft eein ingebouwde begrippeneditor
 4. Je kunt de [begrippenXL](BegrippenXL.md) editor gebruiken.
 
-### Het publiceren van een begrippenkader
+## Het publiceren van een begrippenkader
 
-Een begrippenkader wordt gepubliceerd op <https://definities.geostandaarden.nl>:
-
-Voor hiervoor de volgende stappen uit:
+Een begrippenkader wordt gepubliceerd op <https://definities.geostandaarden.nl>, of op de staging omgeving <https://staging-definities.geostandaarden.nl/> door de volgende stappen uit te voeren:
 
 1. Controleer of het begrippenkader voldoet aan de interne kwaliteitseisen in [begrippen-regels.md](regels)
 2. Sla het te publiceren bestand op in een git repository. Voorstel maak in het mapje bij een informatiemodel een submap begrippenkader
