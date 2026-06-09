@@ -25,8 +25,6 @@ Een begrippen model is niet veel meer dan een lijst met begrippen en definities:
 
 Een begrippenkader wordt gepubliceerd op <https://definities.geostandaarden.nl>:
 
-![conceptenbibliotheek](media/conceptenbibliotheek.png)
-
 Voor hiervoor de volgende stappen uit:
 
 1. Controleer of het begrippenkader voldoet aan de interne kwaliteitseisen in [begrippen-regels.md](regels)
