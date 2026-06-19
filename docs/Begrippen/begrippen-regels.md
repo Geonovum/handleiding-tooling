@@ -1,5 +1,6 @@
 ## Regels voor een begrippenmodel binnen Geonovum
 
+Deze regels zijn zeker geldig voor nieuw te ontwikkelen begrippenkaders. Voor kaders die al gepubliceerd zijn zoeken we een route om uiteindelijk aan deze regels te voldoen.
 
 **Regel:** Een begrippenmodel is conform [NL-SBB](https://docs.geostandaarden.nl/nl-sbb/nl-sbb/)
 

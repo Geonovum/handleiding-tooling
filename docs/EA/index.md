@@ -9,6 +9,7 @@ Dit moet binnen EA geconfigureerd worden.
 - Neem voor installatie en licentie contact op met de
   [beheerder](https://stichtinggeonovum.sharepoint.com/:b:/r/sites/FBICT/Gedeelde%20documenten/General/wat%20staat%20waar/Tooling_en_Beheerders.pdf?csf=1&web=1&e=aEcKjl)
 - Bewaar het installatiebestand. Als je een nieuwe laptop krijgt heb je dit weer nodig.
+- Er is EA add-in ter ondersteuning van [MIM modelleren](https://armatiek.nl/mim-add-in.html)
 
 
 ## UML model uit svn halen
@@ -16,7 +17,7 @@ Dit moet binnen EA geconfigureerd worden.
 - Maak een leeg project aan in Enterprise Architect.
 - Configureer svn in dat project
 - Importeer de [MIM Toolbox](MIM-toolbox-importeren.md)
-- Importeer de boel
+- Synchroniseer het model via 'Get all latest'. 
 
 ## Handleidingen op andere plekken
 
