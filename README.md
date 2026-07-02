@@ -1,10 +1,10 @@
 # Handleiding tooling
 
-In dit repository zit de [handleinding van de Geonovum tooling](https://geonovum.github.io/handleiding-tooling/).
+In deze repository zit de [handleiding van de Geonovum tooling](https://geonovum.github.io/handleiding-tooling/).
 Deze handleiding heeft twee doelen:
 
-- Handleiding van de tools binnen die binnen Geonovum gebruikt worden.
-- De gezamenlijke werkwijze van Geonovum vast
+- Handleiding van de tools die binnen Geonovum gebruikt worden.
+- De gezamenlijke werkwijze van Geonovum vastleggen.
 
 De handleiding is in MarkDown geschreven en gebruikt [mkdocs](https://www.mkdocs.org/).
 
@@ -21,5 +21,5 @@ De handleiding is in MarkDown geschreven en gebruikt [mkdocs](https://www.mkdocs
 
 Mkdocs biedt ondersteuning om de gemaakte handleiding lokaal te previewen. Zie hiervoor de [user guide](https://www.mkdocs.org/user-guide/). Twee opties zijn:
 
-- Gebruik [mkdocs buid](https://www.mkdocs.org/user-guide/cli/#mkdocs-build) om lokaal een statische versie van de handleiding te maken.
+- Gebruik [mkdocs build](https://www.mkdocs.org/user-guide/cli/#mkdocs-build) om lokaal een statische versie van de handleiding te maken.
 - Gebruik [mkdocs serve](https://www.mkdocs.org/user-guide/cli/#mkdocs-serve) om je eigen repository lokaal uit te serveren. Je zie dat de pages live mee veranderen.
