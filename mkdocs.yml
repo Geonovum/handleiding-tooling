@@ -10,7 +10,6 @@ nav:
     - Home:
         - 'Welkom': index.md
         - 'Werkwijze Modelleren': werkwijzemodelleren.md
-        - 'Tooling' : tooling.md
     - GitHub:
         - 'Manual': GitHub/index.md
         - 'GitHub intro': GitHub/GitHub-Inleiding.md

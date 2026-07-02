@@ -2,21 +2,19 @@
 
 ## Inleiding
 
-Welkom bij de beschrijving van werkwijze en tooling van Geonovum.
-Hierin wordt beschreven:
+Dit document beschrijft werkwijze en tooling van Geonovum.
 
 - De werkwijze geef invulling aan het document [Informatiemodellering Geonovum](https://stichtinggeonovum.sharepoint.com/:b:/s/Basisprogramma/EVGORVYMb0FFkjC0L14Ud5AB3cuyP27Ux2lz6ZfxGqqMDw?e=ESaacU) die onze werkwijze in het kort beschrijft voor onze opdrachtgevers.
-- Een compacte en leesbare beschrijving van de [werkwijze](werkwijzemodelleren.md) met veel links.
-- Architectuurplaatje van onze [tooling](tooling.md).
-- Zie de linkerkolom voor alle onderwerpen.
+- Een compacte en leesbare beschrijving van de [werkwijze](werkwijzemodelleren.md).
+- Hoe we dit beheren staat in [wie beheert wat](https://stichtinggeonovum.sharepoint.com/:b:/s/FBICT/IQC8YxUUkR6tRr6RnMcPSmOgAQxZOKTlWu6-wg4oWK6oiwI?e=Wjjl14).
+
+![publicatie infrastructuur](media/PublicatieInfrastructuurGeonovum.drawio.svg)
 
 ## Verdere documentatie
 
-Documenten die kunnen helpen bij het ontwikkelen van standaarden:
-
 | Document                                                                                                                                                                                                                                                                                                                                                                                                                                                                        | Korte omschrijving                                                                                                                                                                                                                                                    |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Informatiemodelleren cursusmateriaal ](https://stichtinggeonovum.sharepoint.com/:f:/s/Basisprogramma/ErIgyU58KvFeoe5cieS22z4BSl-c9UcUoeHVvaXibHPxaA?e=Y2Imgb)                                                                                                                                                                                                                                                                                                                  | Cursus voor modelleurs gegeven door Paul en Wilko                                                                                                                                                                                                                     |
+| [Informatiemodelleren cursusmateriaal](https://stichtinggeonovum.sharepoint.com/:f:/s/Basisprogramma/ErIgyU58KvFeoe5cieS22z4BSl-c9UcUoeHVvaXibHPxaA?e=Y2Imgb)                                                                                                                                                                                                                                                                                                                  | Cursus voor modelleurs gegeven door Paul en Wilko                                                                                                                                                                                                                     |
 | [HIM - Handreiking Informatie Modelleren](https://geonovum.github.io/HIM-Werkomgeving/)                                                                                                                                                                                                                                                                                                                                                                                         | Handleiding voor het opstellen van een informatiemodel of dataproductspecificatie. Beschrijft rol, proces en basismethodiek                                                                                                                                           |
 | [Geometrie in model ](https://geonovum.github.io/gimeg/)                                                                                                                                                                                                                                                                                                                                                                                                                        | Beschrijving van de toepassing van geometrie in informatiemodellering en de implementatie daarvan in GML.                                                                                                                                                             |
 | [GitHub](https://docs.geostandaarden.nl/g4w/vv-hr-geox-20220104/#kieswijzer)                                                                                                                                                                                                                                                                                                                                                                                                    | Handreiking over het uitwisselen van geometrie, met o.a. een overzicht van de verschillende bestandsformaten, handvatten voor het kiezen van het juiste formaat en gedetaileerde informatie over het uitwisselen van geometrie in HTML, GML, JSON, GeoPackage en RDF. |
@@ -47,3 +45,16 @@ Documenten die kunnen helpen bij het ontwikkelen van standaarden:
 | [Handleiding voor beheerders technisch register](https://github.com/Geonovum/technisch-register-2019/blob/master/documentatie/HandleidingVoorBeheerdersTechnischRegister.md)                                                                                                                                                                                                                                                                                                    | In dit document worden de stappen beschreven voor het opzetten van een systeem voor het volgen van versies van een nieuw informatiemodel in het Technisch register van Geonovum.                                                                                      |
 | [ReSpec Utilities](https://github.com/Geonovum/respec-utils)                                                                                                                                                                                                                                                                                                                                                                                                                    | ReSpec Utilities voor Geonovum                                                                                                                                                                                                                                        |
 | [word2werkversie/~markdown/~publicatie](https://geonovum.github.io/word2werkversie_handleiding/)                                                                                                                                                                                                                                                                                                                                                                                | Beschrijving van ingerichte workflow waarmee je Word-bestanden om kunt zetten naar een ReSpec-werkversies.                                                                                                                                                            |
+
+## MkDocs
+
+Deze handleiding is gemaakt met[MkDocs](https://www.mkdocs.org/), een
+lichtgewicht tool die een doorzoekbare site maakt van een
+verzameling Markdown documenten.
+
+Je kunt mkdocs ook lokaal installeren. Dan kun je live je edits volgen in je
+browser: <http://127.0.0.1:8000/> met het commando:
+
+```shell
+mkdocs serve
+```

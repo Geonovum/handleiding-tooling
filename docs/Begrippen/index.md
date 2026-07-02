@@ -25,7 +25,7 @@ Je kunt de [begrippeneditor van de stelselcatalogus](https://editor.stelselcatal
 
 Een begrippenkader wordt gepubliceerd op <https://definities.geostandaarden.nl>, of op de staging omgeving <https://staging-definities.geostandaarden.nl/> door de volgende stappen uit te voeren:
 
-1. Controleer of het begrippenkader voldoet aan de interne kwaliteitseisen in [begrippen-regels.md](regels)
+1. Controleer of het begrippenkader voldoet aan de interne kwaliteitseisen in [regels](begrippen-regels.md)
 2. Sla het te publiceren bestand op in een git repository. Voorstel maak in het mapje bij een informatiemodel een submap begrippenkaders
 3. Stuur een link naar Tanja met een verzoek tot publicatie. op de publicatie omgeving <https://definities.geostandaarden.nl> of de staging omgeving <https://staging-definities.geostandaarden.nl/>.
 4. Tanja geeft invulling aan het vier-ogen principe door het bestand te controleren of dit uit te besteden aan Frank, Linda of Wilko.
