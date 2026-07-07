@@ -32,7 +32,7 @@ documentatie is op andere plaatsen te vinden:
 ## Het voorbrengingsproces
 
 - ReSpec documenten worden beheerd in een GitHub repository. Meestal zit er één ReSpec document in een repository.
-- Maakt met `git clone` een lokaal kopie van repository waarin het ReSpec document zodat je het lokaal kunt bewerken. Een overzicht van alle GitHub repositories van Geonovum staat [hier](https://github.com/Geonovum/repositories).
+- Maakt met `git clone` een lokaal kopie van repository waarin het ReSpec document zodat je het lokaal kunt bewerken. Een overzicht van alle GitHub repositories van Geonovum staat [hier](https://github.com/orgs/Geonovum/repositories).
 - Het lokale kopie bestaat uit een collectie bestanden. De tekstuele inhoud zit meestal in markdown (*md) bestanden. Deze kan je nu lokaal wijzingen
 - Met `git commit` en `git push` kun je de lokale wijzingen naar de centrale werkversie overzetten.
 
