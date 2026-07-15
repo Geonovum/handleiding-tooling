@@ -65,16 +65,33 @@ In het proces wordt op het volgende gecontroleerd:
   'Actions'. Kies hier de commit die je gedaan hebt en je ziet daar
   'Build/Link validation').
 
-## Publiceer via een GitHub release
+## Maak een testrelease op test.docs.geostandaarden.nl
 
-Een ReSpec document kan automatisch op <docs.geostandaarden.nl> of op <test.docs.ogestandaarden.nl> gepubliceerd worden door in GitHub een nieuwe release te maken van het GitHub repository waarin je document beheerd wordt. Door een release te maken wordt een automatische workflow gestart die zorgt voor publicatie. Voer hiervoor de volgende stappen uit:
+Een ReSpec document kan automatisch op <test.docs.geostandaarden.nl> gepubliceerd worden door in GitHub een  release te maken van het GitHub repository waarin je document beheerd wordt met het vinkje 'pre-release' aan. Voer hiervoor de volgende stappen uit:
 
 1. Zorg dat de werkversie van je document in je eigen repository helemaal goed staat.
 1. Ga naar Releases.
-2. Kies 'Draft a new release'. Je kunt nu kiezen voor een release op <test.docs.geostandaarden.nl> of op <docs.geostandaarden.nl>: Als je je het vinkje 'Set as a pre-release' aanzet wordt het document automatisch als test gepubliceerd op <test.docs.geostandaarden.nl>. 
-3. Als je het vinkje niet aanzet wordt een publicatieverzoek via een pull request op het repository <github.com/Geonovum/docs.geostandaarden.nl> gemaakt.
-De automatische workflow gaat aan het werk bij elke keer dat je een Release aanmaakt in github. De stappen om een ReSpec document te publiceren naar docs.geostandaarden.nl.
-Na goedkeuring van de PR (door Wilko, Frank of Linda) wordt het document gepubliceerd.
+2. Kies 'Draft a new release'. Zet het vinkje 'Set as a pre-release'.
+
+De automatische workflow gaat aan het werk en als er geen foutmeldingen zijn verschijnt de testpublicatie automatisch.
+
+
+Tijdens het publicatieproces gebeuren (onder water) de volgende stappen:
+
+1. Er wordt een HTML snapshot aangemaakt via ReSpec
+2. (optioneel) PDF wordt gegenereerd indien je dit geconfigureerd hebt
+3. WCAG (web toegankelijkheidseisen) en HTML worden gevalideerd
+4. Links worden gecontroleerd
+
+
+## Publiceer op docs.geostandaarden.nl via een GitHub release
+
+Een officiele publicatie op <docs.geostandaarden.nl> gebeurt door in GitHub een nieuwe release te maken van het GitHub repository waarin je document beheerd wordt. Dit zorgt voor workflow  die een pull request maakt. Dat pull request moet volgens het vier ogen principe nog goedgekeurd worden door één van de ReSpec beheerders.
+
+1. Zorg dat de werkversie van je document in je eigen repository helemaal goed staat.
+1. Ga naar Releases.
+2. Kies 'Draft a new release' en voer de release uit. Dit zorgt voor een pull-request dat door Wilko, Frank of Linda moet worden goedgekeurd.
+
 
 
 Tijdens het publicatieproces gebeuren (onder water) de volgende stappen:
