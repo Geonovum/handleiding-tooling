@@ -126,7 +126,7 @@ beheerders uitgebreid of aangepast worden.
     De documentatie betreft niet een specifieke standaard of onderdeel daarvan,
     het is ook geen beheerdocumentatie van een specifieke standaard.
 
-### pubDomain
+### pubdomain
 
 pubDomain bepaalt bij publicatie een deel van de URL waarop het document wordt
 gepubliceerd. Het zorgt voor een groepering van de documenten op
@@ -134,67 +134,40 @@ docs.geostandaarden.nl Omdat je de URL van gepubliceerde documenten niet wilt
 veranderen is moet je hier goed over nadenken en alleen in overleg nieuwe
 toevoegen.
 
-De actuele lijst van pubDomains staat in de tabel hieronder. De herkomst van
-deze lijst is als volgt:
-
-1. Lijst op github :
-   [respec-utils](https://github.com/Geonovum/respec-utils/blob/master/src/autodeploy/config/pubDomainList.json).
-2. docs.geostandaarden.nl.
-3. register.geostandaarden.nl.
-
 **Regel:** een pubdomain mag geen hoofletters of spaties bevatten.
+
+De actuele lijst van pubdomainst staat op <https://docs.geostandaarden.nl/pubDomainList.json>
+
+Deze lijst bevat ook pubdomains waarop niet meer gepubliceerd wordt maar waar nog wel publicaties op bestaan. Een indicatie hiervan staat hieronder:
 
 
 | Pubdomain      | status                    | Beslissing                    | Omschrijving                                             | GitHub Team                                                   |
 | -------------- | ------------------------- | ----------------------------- | -------------------------------------------------------- | ------------------------------------------------------------- |
-| 3d             | actief                    |                               | 3D                                                       |                                                               |
 | 3dbv           | deprecated                |                               | 3D basisvoorziening                                      |                                                               |
-| api            |                           | OK                            | Kennisplatform APIs                                      | [API team](https://github.com/orgs/Geonovum/teams/api-team)   |
 | basisgeometrie | deprecated                | redirecten naar nen3610       | Informatiemodel Basisgeometrie                           |                                                               |
-| bgt            |                           | Arnoud vragen                 | Basisregistratie grootschalige topografie                | [BGT team](https://github.com/orgs/Geonovum/teams/bgt-team)   |
-| bro            |                           |                               | Basisregistratie ondergrond                              |                                                               |
-| brt            |                           | OK                            | Informatiemodellen Basisregistratie Topografie           | [BRT team](https://github.com/orgs/Geonovum/teams/brt-team)   |
-| crs            |                           | OK                            | Coördinaatreferentiesystemen                             | [CRS team](https://github.com/orgs/Geonovum/teams/crs-team)   |
+| bgt            |                           | TODO                          | Basisregistratie grootschalige topografie                | [BGT team](https://github.com/orgs/Geonovum/teams/bgt-team)   |
 | cvgg           | duplicaat van img         | OK                            | Informatiemodel Geluid                                   |                                                               |
-| dcat           |                           | OK                            |                                                          |                                                               |
-| disgeo         |                           | OK                            | DisGeo                                                   |                                                               |
-| dsgo           |                           | OK                            | Digitaal Stelsel Gebouwde Omgeving                       |                                                               |
 | dso            | duplicaten: tpod imow ow  | OK                            | Digitaal Stelsel Omgevingswet                            | [DSO team](https://github.com/orgs/Geonovum/teams/dso-team)   |
-| eu             |                           | OK                            |                                                          | [EU team](https://github.com/orgs/Geonovum/teams/eu-team)     |
 | g4w            |                           | groeperen?                    |                                                          |                                                               |
 | gbd            |                           | groeperen?                    |                                                          |                                                               |
-| geobag         |                           | OK                            |                                                          |                                                               |
 | gsw            |                           | groeperen?                    |                                                          |                                                               |
-| ibro           |                           |                               |                                                          |                                                               |
-| imaer          |                           | OK                            | Informatiemodel AERIUS                                   |                                                               |
-| imev           |                           | OK                            | Informatiemodel Externe Veiligheid                       | [IMEV team](https://github.com/orgs/Geonovum/teams/api-team)  |
 | img            | duplicaat: cvgg           | redirecten naar cvgg          | Informatiemodel Geluid                                   | [IMG team](https://github.com/orgs/Geonovum/teams/img-team)   |
-| imgeo          |                           | Arnoud vragen                 | Informatiemodel Grootschalige Geografie                  |                                                               |
-| imka           |                           | OK                            | Informatiemodel Klimaatadaptatie                         |                                                               |
-| imkad          |                           | OK                            | Informatiemodel Kadaster                                 | [IMKA team](https://github.com/orgs/Geonovum/teams/imka-team) |
+| imgeo          |                           | TODO                          | Informatiemodel Grootschalige Geografie                  |                                                               |
 | imkl           | duplicaat: kl             | Zou kl moeten worden          | Informatiemodel Kabels en Leidingen                      | [IMKL team](https://github.com/orgs/Geonovum/teams/imkl-team) |
 | imle           |                           | OK (niet netjes gepubliceerd) |                                                          |                                                               |
 | imro           | duplicaat: ro             | liefst naar RO                | Informatiemodel Ruimtelijke Ordening                     |                                                               |
 | imow           | duplicaten: tpod ow dso   | liefst weg                    | Informatiemodel Omgevingswet                             |                                                               |
-| imx            |                           |                               |                                                          |                                                               |
 | kl             | duplicaat: imkl           | OK                            | IMKL                                                     |                                                               |
 | md             | duplicaat: metadata       | OK                            | Metadata                                                 |                                                               |
-| mim            |                           | OK                            | Metamodel Informatie Modellering (MIM                    |                                                               |
 | metadata       | duplicaat: md             | verplaatsen naar md??         | Nederlandse metadata profielen voor datasets en services |                                                               |
-| nen3610        |                           | OK                            | NEN3610-Linkeddata                                       |                                                               |
-| ngii           |                           | OK                            |                                                          |                                                               |
-| oov            |                           | OK                            |                                                          |                                                               |
 | ow             | duplicaten: tpod imow dso | OK                            | Standaarden omgevingswet                                 |                                                               |
 | ro             | duplicaat: imro           | OK                            | RO Standaarden                                           |                                                               |
 | rwgs           |                           | groeperen?                    | Raamwerk van Geo-standaarden                             |                                                               |
 | serv           |                           | groeperen?                    | Services                                                 |                                                               |
 | tpod           | duplicaten: ow imow dso   | OK                            | Toepassingsprofiel omgevingsdocumenten                   |                                                               |
-| vg             |                           | OK                            | Informatiemodel Vastgoedgebruik                          |                                                               |
 | visu           |                           | groeperen?                    | Visualisatie                                             |                                                               |
-| vth            |                           | OK                            |                                                          |                                                               |
 | vtm            | is eigenlijk metadata     | verhuizen naar MD             |                                                          |                                                               |
 | wp             | ook een raar pubdomain    | verhuizen naar ngii           | Whitepaper Geostandaarden                                |                                                               |
-
 
 ## shortName
 
