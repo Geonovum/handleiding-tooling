@@ -20,10 +20,10 @@ Geonovum gebruikt een fork van ReSpec die door Logius beheerd wordt. Meer
 documentatie is op andere plaatsen te vinden:
 
 - Er is een gedetailleerde
-  [gebruikershandleiding](https://github.com/w3c/respec/wiki/ReSpec-Editor's-Guide)
+  [gebruikershandleiding](https://github.com/speced/respec/wiki/ReSpec-Editor's-Guide)
   beschikbaar.
 - Er is ook een
-  [ontwikkelaarshandleiding](https://github.com/w3c/respec/wiki/Developers-Guide)
+  [ontwikkelaarshandleiding](https://github.com/speced/respec/wiki/Developers-Guide)
   te vinden.
 - De Geonovum [wiki over ReSpec](https://github.com/Geonovum/respec/wiki) is
   een fork van de w3c ReSpec met aanpassingen voor Geonovum. Deze is
