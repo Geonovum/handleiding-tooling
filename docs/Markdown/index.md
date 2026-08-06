@@ -20,7 +20,7 @@ locale bestanden. Dit kun je in de configuratie aanpassen:
 
 ### Chrome
 
-Je moet twee dingen instellen:
+Stel de volgende dingen in:
 
 - Local access: Toestaan dat je local files toont in Chrome, dat is een opstart
   argument. Kan je doen vanuit een cmd-prompt
@@ -36,8 +36,8 @@ In Firefox kan je dat instellen via de parameters.
 
 - Ga naar het configuratiescherm van Firefox door `about:config` in de zoekbalk
   te zetten.
-- Firefox vraag nu of je het zeker weet. Niet twijfelen.
 - zet de instelling `security.fileuri.strict_origin_policy = false` op false.
+- Niet twijfelen.
 
 ## Tools voor Markdown
 
@@ -46,7 +46,7 @@ In Firefox kan je dat instellen via de parameters.
 | [Markdown Tutorial](https://www.markdownguide.org/getting-started/)                         | Handleiding Markdown                                                                            |
 | [Markdown Reference](https://www.markdownguide.org/basic-syntax)                            | Naslag Markdown                                                                                 |
 | [Visual Studio Code](https://code.visualstudio.com/)                                        | Fijne teksteditor die ook goed integreert met Github Desktop                                    |
-| [PowerToys](https://learn.microsoft.com/en-us/windows/powertoys/)                           | Geeft preview van Markdown rechtstreeks in Windows Explorer (en nog heeel veel andere tooltjes) |
+| [PowerToys](https://learn.microsoft.com/en-us/windows/powertoys/)                           | Geeft preview van Markdown rechtstreeks in Windows Explorer |
 | [Tables Generator](https://www.tablesgenerator.com/markdown_tables)                         | Helpt met het maken van tabellen in MarkDown                                                    |
 | [Markdown Table](https://marketplace.visualstudio.com/items?itemName=TakumiI.markdowntable) | VSCode plugin voor het editen van Markdown tabellen.                                            |
 | [Prettier](https://prettier.io/)                                                            | Een code formatter die automatisch zorgt dat je markdown aan de regels voldoet.                 |
@@ -58,9 +58,7 @@ In Firefox kan je dat instellen via de parameters.
 Voor beter leesbare en uitwisselbare Markdown spreken we volgende styling regels
 af:
 
-- We maken gebruik van unix style line endings.
-
-
+- We gebruiken unix style line endings (LF).
 
 Tools zoals 'prettier' en 'markdownlint' helpen hierbij.
 
@@ -79,7 +77,7 @@ Voorbeeld van '.prettierrc':
 }
 ```
 
-Voorbeeld van `.markdownlinkt.json`:
+Voorbeeld van `.markdownlink.json`:
 
 ```json
 {
