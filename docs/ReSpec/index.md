@@ -20,10 +20,10 @@ Geonovum gebruikt de Logius [ReSpec](https://github.com/Logius-standaarden/respe
 
 Documentatie over ReSpec is te vonden
 - Er is een gedetailleerde
-  [gebruikershandleiding](https://github.com/w3c/respec/wiki/ReSpec-Editor's-Guide)
+  [gebruikershandleiding](https://github.com/speced/respec/wiki/ReSpec-Editor's-Guide)
   beschikbaar.
 - Er is ook een
-  [ontwikkelaarshandleiding](https://github.com/w3c/respec/wiki/Developers-Guide)
+  [ontwikkelaarshandleiding](https://github.com/speced/respec/wiki/Developers-Guide)
   te vinden.
 - Ook de [template](https://github.com/Geonovum/NL-ReSpec-template/) is een mooi startpunt.
 
