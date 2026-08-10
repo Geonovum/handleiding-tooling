@@ -27,7 +27,7 @@ De namen van de variabelen staan verderop uitgelegd.
 
 Het bestand index.html zorgt ervoor dat het ReSpec document automatisch wordt
 geladen in de browser. Bij het laden wordt ook automatisch de
-geonovum-ReSpec-code geladen en uitgevoerd. Deze code zorgt ervoor dat het
+ReSpec-code geladen en uitgevoerd. Deze zorgt ervoor dat het
 document zijn standaard layout krijgt.
 
 Het bestand 'index.html' heeft een vaste indeling.
@@ -54,32 +54,26 @@ tussen `<h2>` en `</h2>` komt in de inhoudsopgave te staan.
 
 ### Het bestand 'js/config.js'
 
-In config.js wordt een stuurvariabele voor ReSpec gevuld. De waarden in deze
-variabele worden door ReSpec gebruikt om de layout te bepalen, en bevatten een
-aantal document-eigenschappen.
+Met dit bestand configureer je onderdelen van je publicatie. Het bevat de
+volgende configureerbare onderdelen:
 
 ### SpecStatus
 
-**Bron:** <https://github.com/Geonovum/tools.geostandaarden.nl/blob/main/tools.geostandaarden.nl/respec/config/geonovum-config.js>
-
-De SpecStatus in de configuratie geeft de keuze uit 4 waarden, deze waarden zijn
-vastgesteld, en mogen niet zomaar uitgebreid of aangepast worden. Elke status
-hoort bij een formele fase van een ReSpec document. Zie ook de Geonovum ReSpec
-[wiki](https://github.com/Geonovum/respec/wiki).
+De SpecStatus geeft de status van het document aan en kan de de
+volgende waarden hebben:
 
 - **wv**, Werkversie: Dit is de versie van het document waaraan wordt
-  gewerkt. Deze versie is continu 'under-construction'.
+  gewerkt. Deze versie kan zonder zonder aankondiging veranderen.
 - **cv**, Consultatieversie: Dit is een 'snapshot' van de versie die 'in
-    consultatie' wordt gezet. Aan deze versie wordt niks meer gedaan totdat de
-    consultatie is afgelopen. Daarna worden alle op en aanmerkingen uit de
+    consultatie' wordt gezet. Gedurende de consultatie zal deze versie
+    niet veranderen. Daarna worden alle op en aanmerkingen uit de
     consultatieronde verwerkt.
 - **vv**, Vaststellingsversie: Dit is een 'snapshot' van de versie na het
     verwerken van de op en aanmerkingen uit de consultatieronde is ontstaan.
-    Deze versie wordt aangeboden aan de programma-raad van Geonovum, om te
+    Deze versie wordt aangeboden aan de programmaraad van Geonovum, om te
     worden 'vastgesteld'.
 - **def**, Definitieve versie: Dit is de definitieve versie van het document,
-    zoals vastgesteld door de programma-raad. Van deze versie wordt opnieuw een
-    'snapshot' gemaakt in ReSpec. Het resultaat van die snapshot wordt op
+    zoals vastgesteld door de programmaraad. Het resultaat van die snapshot wordt op
     <http://docs.geonovum.nl> neergezet.
 - **ld**, Levend document: Geschikt voor handreikingen en dergelijke die
   regelmatig gewijzigd worden en waarvoor niet een consultatie- en
@@ -91,8 +85,7 @@ hoort bij een formele fase van een ReSpec document. Zie ook de Geonovum ReSpec
 **Bron:** <https://www.geonovum.nl/uploads/documents/Geonovum%20GENERIEK%20Beheerplan%20geo-standaarden%20v1.1.pdf>
 
 Het SpecType in de configuratie is een vaste lijst met waarden, deze waarden
-zijn vastgesteld, en mogen niet zonder overleg met de Technische ReSpec
-beheerders uitgebreid of aangepast worden.
+zijn vastgesteld.
 
 - **NO** Norm: Een norm is bij een officieel standaardisatie instituut
     ondergebracht en bevat bindende afspraken. Naast het gebruik van normen is
@@ -128,18 +121,19 @@ beheerders uitgebreid of aangepast worden.
 
 ### pubdomain
 
-pubDomain bepaalt bij publicatie een deel van de URL waarop het document wordt
-gepubliceerd. Het zorgt voor een groepering van de documenten op
-docs.geostandaarden.nl Omdat je de URL van gepubliceerde documenten niet wilt
+pubDomain zorgt voor een groepering van de documenten op
+docs.geostandaarden.nl en is onderdeel van de URL in.
+Omdat je de URL van gepubliceerde documenten niet wilt
 veranderen is moet je hier goed over nadenken en alleen in overleg nieuwe
 toevoegen.
 
-**Regel:** een pubdomain mag geen hoofletters of spaties bevatten.
+**Regel:** een pubdomain mag geen hoofdletters of spaties bevatten.
 
-De actuele lijst van pubdomainst staat op <https://docs.geostandaarden.nl/pubDomainList.json>
+De actuele lijst van pubdomains staat op <https://docs.geostandaarden.nl/pubDomainList.json>
 
-Deze lijst bevat ook pubdomains waarop niet meer gepubliceerd wordt maar waar nog wel publicaties op bestaan. Een indicatie hiervan staat hieronder:
-
+Deze lijst wordt gebruikt voor de hoofdstukindeling van de overzichtspagina en bevat ook
+pubdomains waar ooit op gepubliceerd is maar die nu niet meer in gebruik zijn. Gebruik
+de volgende tabel om te zien of een pubdomain nog in gebruik is:
 
 | Pubdomain      | status                    | Beslissing                    | Omschrijving                                             | GitHub Team                                                   |
 | -------------- | ------------------------- | ----------------------------- | -------------------------------------------------------- | ------------------------------------------------------------- |
@@ -176,7 +170,6 @@ Korte identificatie van het document die gebruikt wordt in de URL.
 **Regel:** shortName mag geen uppercase letters bevatten.
 
 
-
 ## Bibliografie
 
 ReSpec maakt automatisch een literatuurlijst van alle documenten waarnaar
@@ -200,9 +193,8 @@ uitroepteken of vraagteken voor de verwijzing zetten te zetten `[[!ID]]` of `[[?
 
 ## Content: markdown bestanden
 
-De 'echte' content wordt gemaakt in het formaat 'Markdown'. Er is een aantal
-editors beschikbaar die dat formaat ondersteunen. Maak van elk hoofdstuk
-een aparte Markdown file.
+De inhoudelijke test van een document zit in 'Markdown' bestanden.
+Maak van elk hoofdstuk een aparte Markdown file.
 
 ## Afbeeldingen
 
@@ -262,10 +254,10 @@ In de documenten worden de afbeeldingen op de volgende manier neergezet:
 </figure>
 ```
 
-NB: `<figure>` inclusief uniek ID en een ge-embedde `<figcaption>` zijn
+**Regel:**: `<figure>` inclusief uniek ID en een ge-embedde `<figcaption>` zijn
 verplicht!
 
-Eventuele referenties naar plaatjes doe je op e volgende manier:
+Verwijzen naar een figuur gaat als volgt:
 
 ```html
 <p>The flowchart shown in <a href="#flowchart"></a> is quite impressive.</p>
@@ -300,13 +292,14 @@ Een lijst met issues kan je toevoegen met de volgende HTML code:
   <!-- Issues will magically be listed here! -->
 </section>
 ```
+
 ## Definities in ReSpec
 
 Een onderdeel van een dataspecificatie is de definitie van begrippen. Steeds vaker leggen we bij Geonovum begrippen vast in een [begrippenkader](https://definities.geostandaarden.nl/nl/). Idealiter verwijs je voor de definitie van een begrip altijd daarnaar. Op deze plek leggen we uit hoe we nu een definitie opnemen.
 
 ### Definitie van een begrip opnemen in specificatie
 
-In een informatiemodel worden veel begrippen gedefinieerd in de met Imvertor gemaakte catalogus. In andere hoofdstukken worden ook begrippen gedefinieer. Deze handleiding gaat hierover
+In een informatiemodel worden veel begrippen gedefinieerd in de met Imvertor gemaakte catalogus. In andere hoofdstukken worden ook begrippen gedefinieerd. Deze handleiding gaat hierover.
 
 De [beschrijving in de handleiding van ReSpec](https://respec.org/docs/#definitions-and-linking) is heel summier. Hierdoor pas je het snel en eenvoudig toe, maar het leidt niet vanzelfsprekend tot éénduidig gebruik. 
 
@@ -321,10 +314,10 @@ Het resultaat ziet er zo uit:
 
 ### Gebruik van definitie
 
-Wil je naar een gedefinieerd begrip verwijzen gaat dat zo: `<a>boek</a>`` of `[=boek-]`
+Verwijzen naar een gedefinieerd begrip gaat als volgt: `<a>boek</a>`` of `[=boek-]`
 
-Houd als richtlijn dat je alleen de eerste keer dat een term in een alinea
-voorkomt een verwijzing maakt. Dit voorkomt een overdaad aan verwijzingen 
+**Richtlijn:** maak alleen alleen de eerste keer dat een term in een alinea
+voorkomt een verwijzing. Dit voorkomt een overdaad aan verwijzingen
 in de tekst.
 
 ### Aanvullende styling
@@ -370,12 +363,12 @@ In Markdown neem je een metaklassenaam als volgt op:
 
 Pas deze notatie toe als je de naam van een modelelement van een informatiemodel opneemt in de lopende tekst. Het gaat dan bijvoorbeeld om de naam van een `«Objecttype»` of `«Attribuutsoort»` in een specifiek domeinmodel, zoals bijvoorbeeld:
 
- - `Pand` (`«Objecttype»`)
- - `Persoon` (`«Objecttype»`)
- - `naam` (`«Attribuutsoort»`)
- - `geboortedatum` (`«Attribuutsoort»`)
- - `geometrie` (`«Attribuutsoort»`)
- - `VlakOfMultivlak` (`«Keuze»`)
+- `Pand` (`«Objecttype»`)
+- `Persoon` (`«Objecttype»`)
+- `naam` (`«Attribuutsoort»`)
+- `geboortedatum` (`«Attribuutsoort»`)
+- `geometrie` (`«Attribuutsoort»`)
+- `VlakOfMultivlak` (`«Keuze»`)
 
 In  markdown neem je een metaklassenaam als volgt op:
 `` `modelelementnaam` ``.
@@ -384,20 +377,20 @@ In  markdown neem je een metaklassenaam als volgt op:
 
 Pas deze notitie toe als je een feitelijk of fictief gegeven opneemt in de lopende tekst. Het gaat om concrete waarden zoals die in een registratie (kunnen) voorkomen, zoals: 
 
- - `"Jan"`
- - `"01-01-1970"`
- - `"234.5"`
- - `"[125.6, 10.1]"`
+- `"Jan"`
+- `"01-01-1970"`
+- `"234.5"`
+- `"[125.6, 10.1]"`
 
 Specifiek in de context van het MIM, gaat het om waarden die ingevuld (kunnen) worden bij de volgende modelelementen:
 
- - `«Attribuutsoort»`
- - `«Gegevensgroeptype»`
- - `«Relatiesoort»`
- - `«Relatieklasse»`
- - `«Data-element»`
- - `«Referentie-element»`
- - `«Enumeratie-waarde»`
+- `«Attribuutsoort»`
+- `«Gegevensgroeptype»`
+- `«Relatiesoort»`
+- `«Relatieklasse»`
+- `«Data-element»`
+- `«Referentie-element»`
+- `«Enumeratie-waarde»`
 
 In het markdown-bestand neem je een metaklassenaam als volgt op:
 `` `"gegeven"` ``.

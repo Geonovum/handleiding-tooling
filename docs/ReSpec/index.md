@@ -2,13 +2,13 @@
 
 We maken standaarden met ReSpec. De inhoud van ReSpec documenten zit in Markdown bestanden die je met een text editor kunt bewerken. De bestanden worden in een GitHub repository beheerd. ReSpec
 
-- zorgt voor een uniforme styling.
-- onderhoudt referenties en verwijzingen naar andere documentatie, 
+- zorgt voor een uniforme styling,
+- onderhoudt referenties en verwijzingen naar andere documentatie,
 - verzorgt de inhoudsopgave,
-- zorgt voor links naar vorige en meest recente versies, 
+- zorgt voor links naar vorige en meest recente versies,
 - heeft een integratie met Github issues.
 
-Met volgende diagram beschrijft het proces voor het maken van een
+Het volgende diagram beschrijft het proces voor het maken van een
 ReSpec publicatie:
 
 ![publicatie infrastructuur](media/WorkflowReSpecGit.drawio.svg)
@@ -16,7 +16,7 @@ ReSpec publicatie:
 Het proces bestaat uit een [voortbrengingsproces](#het-voorbrengingsproces) waarin met het werkveld het
 document wordt gemaakt. Als uit dit proces een publiceerbare versie ontstaat wordt deze via het [publicatieproces](./ReSpec-publiceren.md) gepubliceerd.
 
-Geonovum gebruikt de Logius [ReSpec](https://github.com/Logius-standaarden/respec) in een Git omgeving voor het beheer van de documenten.
+Geonovum gebruikt de Logius [ReSpec](https://github.com/Logius-standaarden/respec) in een GitHub omgeving voor het beheer van de documenten.
 
 Documentatie over ReSpec is te vonden
 - Er is een gedetailleerde

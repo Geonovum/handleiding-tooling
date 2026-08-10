@@ -1,8 +1,8 @@
-## Regels voor een begrippenmodel binnen Geonovum
+## Regels en instructies voor begrippenkaders binnen Geonovum
 
 Deze regels zijn zeker geldig voor nieuw te ontwikkelen begrippenkaders. Voor kaders die al gepubliceerd zijn zoeken we een route om uiteindelijk aan deze regels te voldoen.
 
-**Regel:** Een begrippenmodel is conform [NL-SBB](https://docs.geostandaarden.nl/nl-sbb/nl-sbb/)
+**Regel:** Een begrippenkader is conform [NL-SBB](https://docs.geostandaarden.nl/nl-sbb/nl-sbb/)
 
 **Regel:** We voldoen minimaal aan [Best Practice 1](https://docs.geostandaarden.nl/nl-sbb/nl-sbb/#bp-gangbare-conventies-voor-het-beschrijven-van-termen-voorkeurstermen-alternatieve-termen-zijn) uit NL-SBB.
 
@@ -19,3 +19,11 @@ Op astraonline staan [kwaliteitsregels voor begripsdefinitie](https://www.astrao
 **Regel:** Het .ttl bestand bevat 1 begrippenkader.
 
 **Regel:** De uitleg van het begrippenkader is niet leeg.
+
+## Hoe verwijs ik naar de wet als bron voor een begrip?
+
+Ik neem hiervoor het begrip 'geluidproductieplafond' (GPP) dat zijn bron heeft in 
+
+Eerst maar eens kijken waar GPP wordt gedefinieerd op wetten.nl. TODO
+
+

@@ -1,6 +1,7 @@
 # Publiceren van een ReSpec document
 
-Dit hoofdstuk beschrijft hoe je een ReSpec document publiceert op: <https://docs.geostandaarden.nl> en gebeurt in de volgende stappen:
+Het publiceren van een ReSpec document op <https://docs.geostandaarden.nl> 
+gebeurt in de volgende stappen:
 
 1. Geef het document de juiste status en vul de bijbehorende velden in.
 2. Controleer of het document klaar is voor publicatie.
@@ -46,7 +47,7 @@ Controleer de volgende velden in `js/config.js`:
 **Noot:** Automatisch publiceren werkt alleen in Github repositories waar, conform de [werkwijze](./index.md#respec-via-markdown), maar één ReSpec document in staat. Als er meerdere Respec documenten in een repository staan kun je [handmatig publiceren](#handmatig-publiceren-van-respec-document).
 
 
-## Is het document publicatieklaar?
+## Is het document klaar voor publicatie?
 
 Publicatie is geautomatiseerd als aan de volgende voorwaarden is voldaan:
 
@@ -73,8 +74,8 @@ Een ReSpec document kan automatisch op <test.docs.geostandaarden.nl> gepubliceer
 1. Ga naar Releases.
 2. Kies 'Draft a new release'. Zet het vinkje 'Set as a pre-release'.
 
-De automatische workflow gaat aan het werk en als er geen foutmeldingen zijn verschijnt de testpublicatie automatisch.
-
+De automatische workflow gaat aan het werk en als er geen foutmeldingen zijn
+verschijnt de testpublicatie automatisch.
 
 Tijdens het publicatieproces gebeuren (onder water) de volgende stappen:
 
