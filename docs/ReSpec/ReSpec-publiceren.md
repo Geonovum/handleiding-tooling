@@ -6,7 +6,7 @@ en het neerzetten van die versie op <https://docs.geostandaarden.nl>. Dit gaat i
 
 1. Zet de werkversie klaar voor publicatie door in config.js de  velden `publishDate`, `specStatus`, 'previousMaturity` en `previousPublishDate` in te vullen. Zorg ook dat de automatische controle geen fouten meer geeft. 
 2. Door in het GitHub repository op 'Draft a new Release' te drukken wordt het publicatieproces
-   automatisch in werking gezet wat resulteert in publicatie op <docs.geostandaarden.nl>, of als je het vinkje 'set as a pre-release` zet op <test.docs.geostandaarden.nl>. Dit 
+   automatisch in werking gezet wat resulteert in publicatie op <https://docs.geostandaarden.nl>, of als je het vinkje 'set as a pre-release` zet op <https://test.docs.geostandaarden.nl>. Dit 
    zorgt voor een pull request op <https://github.com/Geonovum/docs.geostandaarden.nl>. Een pre-release wordt automatisch goedgekeurd. Een officiële release moet goedgekeurd worden door een reviewer.
 3. Als de release gelukt is begint het proces weer van voor af aan en zet je in de werkversie
    de specStatus weer op `wv`. Ook laat je `previousMaturity`en `previousPublishDate` verwijzen naar
@@ -32,15 +32,22 @@ waardoor door steeds op 'vorige' te klikken alle versies van een document te vin
 
 **Noot:** Automatisch publiceren werkt alleen wanneer er , conform de [werkwijze](./index.md#respec-via-markdown), één ReSpec document een repository staat. Als er meerdere Respec documenten in een repository staan kun je [handmatig publiceren](#handmatig-publiceren-van-respec-document).
 
-## Stap 2: doe een Release op het GitHub document
+## Stap 2: Maak een (Test)Release
 
-Door in het GitHub repository op 'Draft a new Release' te drukken wordt het publicatieproces verschijnt het volgende scherm.
+Via het knopje 'Draft a new Release' start je het publicatieproces. Er verschijnt het volgende scherm:
 
 ![Release a Document](media/ReleaseADocument.png)
 
-automatisch in werking gezet wat resulteert in publicatie op <docs.geostandaarden.nl>. Dit 
-zorgt voor een pull request op <https://github.com/Geonovum/docs.geostandaarden.nl>. 
-Eén van de reviewers checkt de publicatie en na goedkeuring verschijnt deze automatisch.
+Vul de velden als volgt in:
+
+- Tag: kies hier een tag voor de release. Conventie: `[specStatus]-[spectype]-[shortName]-[publishDate]/`
+- Release title: mens leesbare naam.
+- Set as a pre-release: gaat het om een testversie of een officiële publicatie?
+
+Door de knop 'Publish release' in te drukken wordt het publicatieproces gestart. Dit kan enige tijd duren. Afhankelijk van of het een test release is of gebeurt het volgende:
+
+- Bij een test-release wordt de publicatie automatisch goedgekeurd  en gepubliceerd op <https://test.docs.geostandandaarden.nl>. 
+- Bij een officële release resulteert de publicatie in een pull request op <https://github.com/Geonovum/docs.geostandaarden.nl>. Eén van de reviewers checkt de publicatie en na goedkeuring verschijnt deze automatisch.
 
 Voor deze automatische publicatie gelden de volgende eisen:
 
@@ -58,14 +65,6 @@ In het proces wordt op het volgende gecontroleerd:
   GitHub wordt automatisch op broken links gecontroleerd. Dit is te vinden onder
   'Actions'. Kies hier de commit die je gedaan hebt en je ziet daar
   'Build/Link validation').
-
-### Maak een testrelease op test.docs.geostandaarden.nl
-
-Een testrelase van een document kun je automatisch publiceren op <https://test.docs.geostandaarden.nl>. Voor hiervoor dezelfde stappen uit als bij een
-officiële release maar zet een vinkje in het veld 'Set as a pre-release'.
-
-Voor deze release is geen tweede paar ogen nodig en wordt automatisch goedgekeurd en uitgevoerd. Als er geen fouten optreden verschijnt na enige tijd  je publicatie automatisch.
-
 
 
 Meer documentatie staat in de readme van [NL-ReSpec-template](https://github.com/Geonovum/NL-ReSpec-template?tab=readme-ov-file#automatische-checks-en-build).
