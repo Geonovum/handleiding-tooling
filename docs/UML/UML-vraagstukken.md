@@ -35,7 +35,7 @@ Bij verwijzing komt het vaak voor dat het object waarnaar je verwijst verandert 
 
 Verschillende use-cases waarin we verwijzen naar een BAG Pand.
 
-#### eenvoudige verwijzing
+#### Eenvoudige verwijzing
 
 De eenvoudigste manier van verwijzen is het enkelvoudig opnemen van de identificatie van het object in de BAG. 
 
@@ -47,7 +47,7 @@ Wat veel voorkomt is dat je in een model bepaalde kenmerken hergebruikt uit een 
 
 Een veel voorkomend geval is dat je in een model verwijst maar in de uitwisseling ook een kopie van het object en een selectie van de attributen meelevert. 
 
-#### Alleen de geometrie wordt gekopieerd, maar uit verschillende andere registraties
+#### Alleen de geometrie wordt gekopieerd, eventueel uit verschillende registraties
 
 Als alleen de geometrie wordt gekopieerd uit verschillende registraties, is het van belang om ook meta-informatie op te nemen in het nieuwe verplichte veld met de naam: geometrieMetagegevens.
 Hierin kan aangegeven worden waar de geometrie vandaan is gekomen. De volgende broninformatie kan dan bv opgenomen worden:
@@ -60,7 +60,7 @@ Hierin kan aangegeven worden waar de geometrie vandaan is gekomen. De volgende b
 Als er meerdere basisregistraties mogelijk zijn, wordt de keuze overgelaten aan de bronhouder.
 Met deze optie blijft het voor een bronhouder ook mogelijk om een eigen inwinning te doen.
 
-![GeometrieMetagegevens voorbeeld](media/GeometrieMetagegevens.png) "Een voorbeeld van hoe je metagegevens kan opnemen over geometrie uit andere registraties."
+![GeometrieMetagegevens voorbeeld](media/GeometrieMetagegevens.png) "Een voorbeeld uit [IMEV](https://docs.geostandaarden.nl/imev/cv-im-imev-20260817/#EAID_1BCFD8B9_E231_4be4_B9D0_4095DAA63F96)"
 
 
 
