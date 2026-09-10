@@ -39,16 +39,32 @@ Verschillende use-cases waarin we verwijzen naar een BAG Pand.
 
 De eenvoudigste manier van verwijzen is het enkelvoudig opnemen van de identificatie van het object in de BAG. 
 
-### Kopie met bronvermeldig
+#### Kopie met bronvermeldig
 
 Wat veel voorkomt is dat je in een model bepaalde kenmerken hergebruikt uit een andere (basis)registratie. In veel gevallen sla je dan een kopie op in je eigen model.
 
-#### verwijzing met kopie
+#### Verwijzing met kopie
 
-Een veel voorkomend geval is dat je in een model verwijst maar in de uitwisseling ook een kopie van het object en een selectie van de attributen meelevert. In dat geval heb je in je model een 
+Een veel voorkomend geval is dat je in een model verwijst maar in de uitwisseling ook een kopie van het object en een selectie van de attributen meelevert. 
+
+#### Alleen de geometrie wordt gekopieerd, maar uit verschillende andere registraties
+
+Als alleen de geometrie wordt gekopieerd uit verschillende registraties, is het van belang om ook meta-informatie op te nemen in het nieuwe verplichte veld met de naam: geometrieMetagegevens.
+Hierin kan aangegeven worden waar de geometrie vandaan is gekomen. De volgende broninformatie kan dan bv opgenomen worden:
+
+- bronregistratie (uit een enumeratie)
+- idInBronregistratie (het ID in de bronregistratie)
+- itemlink (de link in de beteffende API van de registratie als die beschikbaar is)
+- toelichting (Dit is vooral van belang als de bron geen basisregistratie is)
+
+Als er meerdere basisregistraties mogelijk zijn, wordt de keuze overgelaten aan de bronhouder.
+Met deze optie blijft het voor een bronhouder ook mogelijk om een eigen inwinning te doen.
 
 
- 
+<img src="media/GeometrieMetagegevens.png" alt="">
+
+
+
 
 
 

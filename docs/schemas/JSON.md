@@ -4,7 +4,7 @@
 
 Met behulp van Imvertor kan een eerste versie van het JSON-schema gemaakt worden uit een UML in Enterprise Architect.
 Voor Geonovum is deze aangepast aan [de best practise UML2json](https://docs.ogc.org/bp/24-017r1.html).
-Om bij het draaien van Imvertor ook een JSON-schem te maken, moeten 2 regels opgenomen worden in de [Imvertor-propertiesfile](https://armatiek.nl/doc/imvertor/imvertor-properties/1.0/) :
+Om bij het draaien van Imvertor ook een JSON-schema te maken, moeten 2 regels opgenomen worden in de [Imvertor-propertiesfile](https://armatiek.nl/doc/imvertor/imvertor-properties/1.0/) :
 
 - createjsonschema = yes
 - createjsonschemavariant = plainjson
@@ -41,10 +41,10 @@ Bij dit aanpassen zijn er de volgende overwegingen die gemaakt moeten worden:
 - Het attribuut entityType toevoegen als constante. Het entityType geeft aan welk type het object betreft. Dit maakt het leesbaarder en het valideren eenduidiger.
 - Ga na of er een extra id-attribuut nodig is naast het Nen3610-Id. Het is voor implementaties lastig verwijzen naar een genest id, zoals bij het NEN3610-localid
 - Hoe wordt er omgegaan met subtypes en supertypes? Via een oneOf constructie kunnen mogelijke subtypes aangegeven worden, maar dit hoeft niet. Via allof worden de attributen van de supertypes overgenomen. Dit kan ook door al deze attributen afzonderlijk opnieuw op te nemen, maar dat maakt het schema onnodig lang.
-- Bij subtypes die een allOf aanroepen, moet een unevaluatedProperties key = false opgenomen worden
+- Bij subtypes die een allOf aanroepen, moet een unevaluatedProperties key = false opgenomen worden tenzij het een abstract object is met subtypes.
 - Relaties leggen naar alle mogelijke subtypes van een supertype via oneOf i.p.v. alleen naar het supertype verwijzen. Dat laatste klinkt makkelijker, maar is moeilijker te valideren.
 - Hoe ga je om met voidable objecten? Hierover is een discussie gaande op [#590](https://github.com/Imvertor/Imvertor-Maven/issues/590)
-- Hoe ga je om met keuze objecten? Het kan door de twee kwuzes als opstionele properties op te nemen en 2 regels toe toe te voegen '"minProperties": 1' en '"maxProperties": 1'. Dit doet Imvertor. Het kan ook via een oneOf-constructie
+- Hoe ga je om met keuze objecten? Het kan door de twee keuzes als opstionele properties op te nemen en 2 regels toe toe te voegen '"minProperties": 1' en '"maxProperties": 1'. Dit doet Imvertor. Het kan ook via een oneOf-constructie
 - Realiseer je dat het schema bedoeld is voor implementatie en daarom kan die afwijken van het model. Een voorbeeld van deze afwijking is het attribuut "entityType". Dit attribuut komt niet voor in het UML.
 - Voor hetzelfde UML-model kunnen verschillende schema's bestaan met ieder verschillende doelen. bv voor input of output. Het atribuut "tijdstipRegistratie" komt bv. niet in de input voor, maar wel in de output.
 - Kijk goed of alle tagged values uit het UML overgenomen zijn het schema. Let vooral op de formele patronen, min en max values en kardinaliteiten.
@@ -52,11 +52,11 @@ Bij dit aanpassen zijn er de volgende overwegingen die gemaakt moeten worden:
 
 ## Voorbeeldbestanden maken
 
-Het loont om voorbeeldbestanden te maken. Dat geeft inzicht in de bruikbaarheid van het schema.
+Het loont om voorbeeldbestanden te maken. Dat geeft inzicht in de bruikbaarheid van het schema en kan ook fungeren als een soort controle.
 Soms zijn deze er al vanuit de praktijk, zoals bij IMEV het geval was vanuit vorige versies van het IMEV. Met slechts enkele aanpassingen konden deze aangepast worden aan de nieuwste versie van het IMEV en het daarbij behorende schema.
 Als ze er nog niet zijn, dan biedt Oxygen de mogelijkheid om voorbeeldbestanden met dummy waarden aan te maken. 
 Wanneer het UML complex is, loont het om alleen voor enkele representatieve objectklassen voorbeeldbestanden te maken. 
-Richt je daarbij ook op de vraag hoe de datauitwisseling voor de bijbehorende registratie verloopt. Maak onderscheid tussen input en output.
+Richt je daarbij ook op de vraag hoe de data-uitwisseling voor de bijbehorende registratie verloopt. Maak onderscheid tussen input en output.
 
 
 ## Valideren
@@ -83,5 +83,5 @@ Door de filenaam te veranderen en te saven, kan er op een ander json-bestand gev
 
 Json-schemas worden gepubliceerd in https://register.geostandaarden.nl/jsonschema/.  
 
-Dit gebeurt met sftp.
+IMEV gebruikt hiervoor een speciale repository vanwaaruit publicaties op het register gemaakt kunnen worden: https://github.com/Geonovum/imev
 
