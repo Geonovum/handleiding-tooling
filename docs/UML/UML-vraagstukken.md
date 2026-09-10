@@ -60,8 +60,7 @@ Hierin kan aangegeven worden waar de geometrie vandaan is gekomen. De volgende b
 Als er meerdere basisregistraties mogelijk zijn, wordt de keuze overgelaten aan de bronhouder.
 Met deze optie blijft het voor een bronhouder ook mogelijk om een eigen inwinning te doen.
 
-
-<img src="media/GeometrieMetagegevens.png" alt="">
+![GeometrieMetagegevens voorbeeld](media/GeometrieMetagegevens.png) "Een voorbeeld van hoe je metagegevens kan opnemen over geometrie uit andere registraties."
 
 
 
