@@ -4,7 +4,7 @@ Het publiceren van een ReSpec document bestaat uit het omzetten van de werkversi
 van dat document op GitHub naar een vaststellingsversie, consultatieversie of definitieve versie
 en het neerzetten van die versie op <https://docs.geostandaarden.nl>. Dit gaat in een aantal stappen:
 
-1. Zet de werkversie klaar voor publicatie door in config.js de  velden `publishDate`, `specStatus`, 'previousMaturity` en `previousPublishDate` in te vullen. Zorg ook dat de automatische controle geen fouten meer geeft. 
+1. Zet de werkversie klaar voor publicatie door in config.js de velden `pubDomain`, `shortName`, `publishDate`, `specStatus` en evt. `previousMaturity` en `previousPublishDate` in te vullen. Zorg ook dat de automatische controle (bij push naar github) geen fouten meer geeft. 
 2. Door in het GitHub repository op 'Draft a new Release' te drukken wordt het publicatieproces
    automatisch in werking gezet wat resulteert in publicatie op <https://docs.geostandaarden.nl>, of als je het vinkje 'set as a pre-release` zet op <https://test.docs.geostandaarden.nl>. Dit 
    zorgt voor een pull request op <https://github.com/Geonovum/docs.geostandaarden.nl>. Een pre-release wordt automatisch goedgekeurd. Een officiële release moet goedgekeurd worden door een reviewer.
@@ -12,11 +12,9 @@ en het neerzetten van die versie op <https://docs.geostandaarden.nl>. Dit gaat i
    de specStatus weer op `wv`. Ook laat je `previousMaturity`en `previousPublishDate` verwijzen naar
    de zojuist gepubliceerde versie.
 
-## Stap 1: zet de  werkversie klaar voor publicatie
+## Stap 1: zet de werkversie klaar voor publicatie
 
-Zorg dat je werkversie op GitHub helemaal klaarstaat voor publicatie door in coffig.js de `publishDate`,
-`specStatus`, 'previousMaturity` en `previousPublishDate` in te vullen. Zorg ook dat de 
-automatische controle geen fouten meer geeft.
+Zorg dat je werkversie op GitHub helemaal klaarstaat voor publicatie door in config.js `pubDomain`, `shortName`, `publishDate`, `specStatus` en evt. `previousMaturity` en `previousPublishDate` in te vullen. Zorg ook dat de automatische controle (bij push naar github) geen fouten meer geeft.
 
 De status van een document staat in het veld `specStatus`. Documenten met de status 'wv' (werkversie)
 staat altijd op github. Te publiceren documenten hebben één van de volgende statussen:
@@ -30,7 +28,7 @@ De velden `Previousmaturity` en `previousPublishDate` moeten ingevuld zijn. Deze
 ervoor dat het nieuw gepubliceerde document verwijst naar de vorige gepubliceerde versie
 waardoor door steeds op 'vorige' te klikken alle versies van een document te vinden blijven.
 
-**Noot:** Automatisch publiceren werkt alleen wanneer er , conform de [werkwijze](./index.md#respec-via-markdown), één ReSpec document een repository staat. Als er meerdere Respec documenten in een repository staan kun je [handmatig publiceren](#handmatig-publiceren-van-respec-document).
+**Noot:** Automatisch publiceren werkt alleen wanneer er, conform de [werkwijze](./index.md#respec-via-markdown), één ReSpec document in een repository staat. Als er meerdere Respec documenten in een repository staan kun je [handmatig publiceren](#handmatig-publiceren-van-respec-document).
 
 ## Stap 2: Maak een (Test)Release
 
@@ -46,7 +44,7 @@ Vul de velden als volgt in:
 
 Door de knop 'Publish release' in te drukken wordt het publicatieproces gestart. Dit kan enige tijd duren. Afhankelijk van of het een test release is of gebeurt het volgende:
 
-- Bij een test-release wordt de publicatie automatisch goedgekeurd  en gepubliceerd op <https://test.docs.geostandandaarden.nl>. 
+- Bij een test-release wordt de publicatie automatisch goedgekeurd en gepubliceerd op <https://test.docs.geostandandaarden.nl>. 
 - Bij een officële release resulteert de publicatie in een pull request op <https://github.com/Geonovum/docs.geostandaarden.nl>. Eén van de reviewers checkt de publicatie en na goedkeuring verschijnt deze automatisch.
 
 Voor deze automatische publicatie gelden de volgende eisen:
@@ -84,7 +82,7 @@ Je kan controleren of de workflow is geïnstalleerd door bovenin de README.md in
 > Deze repository is automatisch bijgewerkt naar de nieuwste workflow. Voor vragen, neem contact op met Linda van den Brink of Wilko Quak.
 > Als je een nieuwe publicatie wilt starten, lees dan eerst de instructies in de README van de NL-ReSpec-template: https://github.com/Geonovum/NL-ReSpec-template.
 
-Als de workflow niet automatisch is geïnstalleerd, kun je dit zelf doen. Dit is een eenmalige stap. Mocht dit niet lukken, dan kan Linda, Wilko of Matthijs erbij helpen:
+Als de workflow niet automatisch is geïnstalleerd, kun je dit zelf doen. Dit is een eenmalige stap. Mocht dit niet lukken, dan kan Linda, Wilko, Inge of Matthijs erbij helpen:
 
 **Zorg dat Git is geïnstalleerd en beschikbaar is in je terminal**
 
@@ -116,5 +114,5 @@ Als de workflow niet automatisch is geïnstalleerd, kun je dit zelf doen. Dit is
 Het is ook mogelijk om documenten handmatig te publiceren op docs.geostandaarden.nl:
 
 - Docs.geostandaarden.nl is een mirror van: <https://github.com/Geonovum/docs.geostandaarden.nl/>
-- Bij handmatige publicatie wijzig je rechtstreeks   dit reopsitory. Maak in dit geval een pull request voor het repository en laat het goedkeuren zoals hierboven beschreven.
+- Bij handmatige publicatie wijzig je rechtstreeks dit reopsitory. Maak in dit geval een pull request voor het repository en laat het goedkeuren zoals hierboven beschreven.
 - In noodgevallen kunnen beheerders ook zonder pull request wijzigingen doorvoeren. In dat geval moet <docs.geostandaarden.nl> handmatig gesynchroniseerd worden. Dat kan via <https://github.com/Geonovum/docs.geostandaarden.nl/actions/workflows/deploy.yml> . Hier zie je een knopje: ‘Run workflow’.
