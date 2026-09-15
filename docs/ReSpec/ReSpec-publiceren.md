@@ -24,7 +24,7 @@ staat altijd op github. Te publiceren documenten hebben één van de volgende st
 - 'def': voor een definitiever versie.
 - 'ld': voor een levend document.
 
-De velden `Previousmaturity` en `previousPublishDate` moeten ingevuld zijn. Deze velden zorgen
+De velden `previousmaturity` en `previousPublishDate` moeten ingevuld zijn. Deze velden zorgen
 ervoor dat het nieuw gepubliceerde document verwijst naar de vorige gepubliceerde versie
 waardoor door steeds op 'vorige' te klikken alle versies van een document te vinden blijven.
 
@@ -114,5 +114,5 @@ Als de workflow niet automatisch is geïnstalleerd, kun je dit zelf doen. Dit is
 Het is ook mogelijk om documenten handmatig te publiceren op docs.geostandaarden.nl:
 
 - Docs.geostandaarden.nl is een mirror van: <https://github.com/Geonovum/docs.geostandaarden.nl/>
-- Bij handmatige publicatie wijzig je rechtstreeks dit reopsitory. Maak in dit geval een pull request voor het repository en laat het goedkeuren zoals hierboven beschreven.
+- Bij handmatige publicatie wijzig je rechtstreeks dit repository. Maak in dit geval een pull request voor het repository en laat het goedkeuren zoals hierboven beschreven.
 - In noodgevallen kunnen beheerders ook zonder pull request wijzigingen doorvoeren. In dat geval moet <docs.geostandaarden.nl> handmatig gesynchroniseerd worden. Dat kan via <https://github.com/Geonovum/docs.geostandaarden.nl/actions/workflows/deploy.yml> . Hier zie je een knopje: ‘Run workflow’.
