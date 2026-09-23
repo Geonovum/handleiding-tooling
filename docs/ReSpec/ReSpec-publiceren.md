@@ -58,7 +58,7 @@ In het proces wordt op het volgende gecontroleerd:
 - Controle op **WCAG** (web toegankelijkheids-) regels. Bij het pushen van een ReSpec document naar
   GitHub wordt automatisch een WCAG rapport geschreven. Dit is te vinden onder
   'Actions'. Kies hier de commit die je gedaan hebt en je ziet daar
-  'build/WCAG Accessibility Check'). Deze controle checkt ook de HTML.
+  'build/WCAG Accessibility Check'. Deze controle checkt ook de HTML.
 - Controle op **Broken links**. Bij het pushen van een ReSpec document naar
   GitHub wordt automatisch op broken links gecontroleerd. Dit is te vinden onder
   'Actions'. Kies hier de commit die je gedaan hebt en je ziet daar
@@ -113,6 +113,6 @@ Als de workflow niet automatisch is geïnstalleerd, kun je dit zelf doen. Dit is
 
 Het is ook mogelijk om documenten handmatig te publiceren op docs.geostandaarden.nl:
 
-- Docs.geostandaarden.nl is een mirror van: <https://github.com/Geonovum/docs.geostandaarden.nl/>
-- Bij handmatige publicatie wijzig je rechtstreeks dit repository. Maak in dit geval een pull request voor het repository en laat het goedkeuren zoals hierboven beschreven.
+- docs.geostandaarden.nl is een mirror van: <https://github.com/Geonovum/docs.geostandaarden.nl/>
+- Bij handmatige publicatie wijzig je rechtstreeks de repository. Maak in dit geval een pull request voor het repository met de publish-versie van je respec-document' (~ snapshot.html als index.html +media) en laat het goedkeuren zoals hierboven beschreven.
 - In noodgevallen kunnen beheerders ook zonder pull request wijzigingen doorvoeren. In dat geval moet <docs.geostandaarden.nl> handmatig gesynchroniseerd worden. Dat kan via <https://github.com/Geonovum/docs.geostandaarden.nl/actions/workflows/deploy.yml> . Hier zie je een knopje: ‘Run workflow’.

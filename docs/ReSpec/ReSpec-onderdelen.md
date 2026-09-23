@@ -1,5 +1,7 @@
 # Onderdelen van een ReSpec document
 
+Zie ook: [NL-ReSpec-template README.md](https://github.com/Geonovum/NL-ReSpec-template/blob/main/README.md).
+
 ## De URL van een publicatie op docs.geostandaarden.nl
 
 ReSpec documenten worden gepubliceerd op
@@ -26,41 +28,31 @@ De namen van de variabelen staan verderop uitgelegd.
 ### Het bestand 'index.html'
 
 Het bestand index.html zorgt ervoor dat het ReSpec document automatisch wordt
-geladen in de browser. Bij het laden wordt ook automatisch de
-ReSpec-code geladen en uitgevoerd. Deze zorgt ervoor dat het
+geladen in de browser. Bij het laden wordt automatisch de ReSpec-code geladen en uitgevoerd. Deze zorgt ervoor dat het
 document zijn standaard layout krijgt.
 
 Het bestand 'index.html' heeft een vaste indeling.
 
-In de HTML-header wordt de js-ReSpec bibliotheek geladen. Het enige dat in de
-header mag worden aangepast is de title (tussen \<title\> en \</title\>.
+In de HTML-header wordt de js-ReSpec bibliotheek geladen.
 
-In de HTML-Body geldt _vrijheid in gebondenheid_ De `<div>` en/of `<section>`
-regels mogen worden gekopieerd en toegevoegd. Wel belangrijk om de structuur
-over te nemen, dus als volgt:
+In de HTML-Body geldt _vrijheid in gebondenheid_. De `<div>` en/of `<section>` regels mogen worden gekopieerd en toegevoegd. Wel belangrijk om de structuur over te nemen, dus als volgt:
 
 ```html
-<div id='H00' data-format='Markdown' data-include="ToCoVo.md"></div>
-<section id='H01' data-format='Markdown' data-include="H1-Inleiding.md"\>\<h2\>Inleiding\</h2\>\</section\>
+<div id='H00' data-include-format='Markdown' data-include="ToCoVo.md"></div>
+<section id='H01' data-include-format='Markdown' data-include="H1-Inleiding.md"></section>
 ```
 
-Een `<div>` is een sectie plus bijbehorend document, dat niet in de
-inhoudsopgave terechtkomt. Deze gebruik je bijvoorbeeld voor een Toelichting,
-een Colofon of een Voorwoord.
+Een `<div>` is een sectie plus bijbehorend document, dat niet in de inhoudsopgave terechtkomt. Deze gebruik je bijvoorbeeld voor een Toelichting, een Colofon of een Voorwoord.
 
-Een `<section>` komt wél in de inhoudsopgave terecht. Deze heeft daarom behalve
-de data-include van het document, ook (verplicht!) een `<h2>` tag. De tekst
-tussen `<h2>` en `</h2>` komt in de inhoudsopgave te staan.
+Een `<section>` komt wél in de inhoudsopgave terecht (behalve met class="notoc").
 
 ### Het bestand 'js/config.js'
 
-Met dit bestand configureer je onderdelen van je publicatie. Het bevat de
-volgende configureerbare onderdelen:
+Met dit bestand configureer je onderdelen van je publicatie. Het bevat de volgende configureerbare onderdelen:
 
 ### SpecStatus
 
-De SpecStatus geeft de status van het document aan en kan de de
-volgende waarden hebben:
+De SpecStatus geeft de status van het document aan en kan de de volgende waarden hebben:
 
 - **wv**, Werkversie: Dit is de versie van het document waaraan wordt
   gewerkt. Deze versie kan zonder zonder aankondiging veranderen.
@@ -82,7 +74,7 @@ volgende waarden hebben:
 
 ### SpecType
 
-**Bron:** <https://www.geonovum.nl/uploads/documents/Geonovum%20GENERIEK%20Beheerplan%20geo-standaarden%20v1.1.pdf>
+**Bron:** <https://www.geonovum.nl/uploads/documents/Geonovum%20GENERIEK%20Beheerplan%20geo-standaarden%20v1.1.pdf> [404: Vervallen?]
 
 Het SpecType in de configuratie is een vaste lijst met waarden, deze waarden
 zijn vastgesteld.
@@ -119,7 +111,7 @@ zijn vastgesteld.
     De documentatie betreft niet een specifieke standaard of onderdeel daarvan,
     het is ook geen beheerdocumentatie van een specifieke standaard.
 
-### pubdomain
+### pubDomain [beheer?]
 
 pubDomain zorgt voor een groepering van de documenten op
 docs.geostandaarden.nl en is onderdeel van de URL in.
@@ -147,7 +139,8 @@ meer worden gebruikt voor nieuwe publicaties. Zie hiervoor de volgende lijst:
 
 ## shortName
 
-Korte identificatie van het document die gebruikt wordt in de URL.
+Korte identificatie van het document die gebruikt wordt in de URL. 
+Gebruik lowercase en vermijd spaties. Spaties worden vervangen door '-'.
 
 **Regel:** shortName mag geen uppercase letters bevatten.
 
@@ -236,7 +229,7 @@ In de documenten worden de afbeeldingen op de volgende manier neergezet:
 </figure>
 ```
 
-**Regel:**: `<figure>` inclusief uniek ID en een ge-embedde `<figcaption>` zijn
+**Regel:** `<figure>` inclusief uniek ID en een ge-embedde `<figcaption>` zijn
 verplicht!
 
 Verwijzen naar een figuur gaat als volgt:
@@ -317,7 +310,7 @@ wrap een definitie in een aside met attribute class="definition"
 
 [`afbeelding opnemen`]
 
-> **TODO**
+> **TODO:**
 > Het zou wel heel leuk zijn om een link met [NL-SBB](https://docs.geostandaarden.nl/nl-sbb/nl-sbb/) te leggen.
 
 ## ReSpec - richtlijn code in tekst
@@ -326,7 +319,12 @@ In de tekst gebruik je regelmatig stukken code, in de lopende tekst (_inline cod
 
 ### Inline code
 
-Wanneer je in een lopende tekst een term of gegeven wilt markeren als code, pas je _inline code_ toe. Door een term of gegeven als `code` te markeren, maak je duidelijk dat het woord een specifieke technische betekenis heeft. _Inline code_ pas je toe door tekst tussen [backticks](https://en.wikipedia.org/wiki/Backtick) (`` ` ``) te plaatsen. De standaardopmaak voor _inline code_ is sober: ReSpec zet het lettertype enkel om in een _monospace font_. Voor een duidelijkere opmaak van _inline code_, is daarom een [css-bestand beschikbaar](https://github.com/Geonovum/NL-ReSpec-GN-beheer/blob/main/css/inline-code.css). De schrijfwijze van metaklassenamen, modelelementnamen of gegevens volgt de [naamgevingsconventies van het MIM](https://geonovum.github.io/MIM-Werkomgeving/#afspraken-rondom-naamgeving-en-definities). Wees hierop alert als je _inline code_ toepast in handgeschreven teksten. 
+Wanneer je in een lopende tekst een term of gegeven wilt markeren als code, pas je _inline code_ toe. Door een term of gegeven als `code` te markeren, maak je duidelijk dat het woord een specifieke technische betekenis heeft. _Inline code_ pas je toe door tekst tussen [backticks](https://en.wikipedia.org/wiki/Backtick) (`` ` ``) te plaatsen. De standaardopmaak voor _inline code_ is sober: ReSpec zet het lettertype enkel om in een _monospace font_. 
+
+**TODO:** Archived repo, herzien...
+Voor een duidelijkere opmaak van _inline code_, is een [css-bestand beschikbaar](https://github.com/Geonovum/NL-ReSpec-GN-beheer/blob/main/css/inline-code.css). 
+
+De schrijfwijze van metaklassenamen, modelelementnamen of gegevens volgt de [naamgevingsconventies van het MIM](https://geonovum.github.io/MIM-Werkomgeving/#afspraken-rondom-naamgeving-en-definities). Wees hierop alert als je _inline code_ toepast in handgeschreven teksten. 
 
 #### Metaklassenaam
 
@@ -435,4 +433,3 @@ Als je een stuk code hebt dat uit meerdere regels bestaat, kun je dit in een _co
   }
 }
 ```
-
