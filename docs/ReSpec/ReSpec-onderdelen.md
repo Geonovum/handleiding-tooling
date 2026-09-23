@@ -131,37 +131,19 @@ toevoegen.
 
 De actuele lijst van pubdomains staat op <https://docs.geostandaarden.nl/pubDomainList.json>
 
-Deze lijst wordt gebruikt voor de hoofdstukindeling van de overzichtspagina en bevat ook
-pubdomains waar ooit op gepubliceerd is maar die nu niet meer in gebruik zijn. Gebruik
-de volgende tabel om te zien of een pubdomain nog in gebruik is:
+Deze lijst wordt gebruikt voor de hoofdstukindeling van de overzichtspagina en bevat alle
+pubdomains waar ooit op gepubliceerd. Sommige pubdomains zijn vervallen en mogen niet
+meer worden gebruikt voor nieuwe publicaties. Zie hiervoor de volgende lijst:
 
-| Pubdomain      | status                    | Beslissing                    | Omschrijving                                             | GitHub Team                                                   |
-| -------------- | ------------------------- | ----------------------------- | -------------------------------------------------------- | ------------------------------------------------------------- |
-| 3dbv           | deprecated                |                               | 3D basisvoorziening                                      |                                                               |
-| basisgeometrie | deprecated                | redirecten naar nen3610       | Informatiemodel Basisgeometrie                           |                                                               |
-| bgt            |                           | TODO                          | Basisregistratie grootschalige topografie                | [BGT team](https://github.com/orgs/Geonovum/teams/bgt-team)   |
-| cvgg           | duplicaat van img         | OK                            | Informatiemodel Geluid                                   |                                                               |
-| dso            | duplicaten: tpod imow ow  | OK                            | Digitaal Stelsel Omgevingswet                            | [DSO team](https://github.com/orgs/Geonovum/teams/dso-team)   |
-| g4w            |                           | groeperen?                    |                                                          |                                                               |
-| gbd            |                           | groeperen?                    |                                                          |                                                               |
-| gsw            |                           | groeperen?                    |                                                          |                                                               |
-| img            | duplicaat: cvgg           | redirecten naar cvgg          | Informatiemodel Geluid                                   | [IMG team](https://github.com/orgs/Geonovum/teams/img-team)   |
-| imgeo          |                           | TODO                          | Informatiemodel Grootschalige Geografie                  |                                                               |
-| imkl           | duplicaat: kl             | Zou kl moeten worden          | Informatiemodel Kabels en Leidingen                      | [IMKL team](https://github.com/orgs/Geonovum/teams/imkl-team) |
-| imle           |                           | OK (niet netjes gepubliceerd) |                                                          |                                                               |
-| imro           | duplicaat: ro             | liefst naar RO                | Informatiemodel Ruimtelijke Ordening                     |                                                               |
-| imow           | duplicaten: tpod ow dso   | liefst weg                    | Informatiemodel Omgevingswet                             |                                                               |
-| kl             | duplicaat: imkl           | OK                            | IMKL                                                     |                                                               |
-| md             | duplicaat: metadata       | OK                            | Metadata                                                 |                                                               |
-| metadata       | duplicaat: md             | verplaatsen naar md??         | Nederlandse metadata profielen voor datasets en services |                                                               |
-| ow             | duplicaten: tpod imow dso | OK                            | Standaarden omgevingswet                                 |                                                               |
-| ro             | duplicaat: imro           | OK                            | RO Standaarden                                           |                                                               |
-| rwgs           |                           | groeperen?                    | Raamwerk van Geo-standaarden                             |                                                               |
-| serv           |                           | groeperen?                    | Services                                                 |                                                               |
-| tpod           | duplicaten: ow imow dso   | OK                            | Toepassingsprofiel omgevingsdocumenten                   |                                                               |
-| visu           |                           | groeperen?                    | Visualisatie                                             |                                                               |
-| vtm            | is eigenlijk metadata     | verhuizen naar MD             |                                                          |                                                               |
-| wp             | ook een raar pubdomain    | verhuizen naar ngii           | Whitepaper Geostandaarden                                |                                                               |
+| Pubdomain      | status     | comment          |
+| -------------- | ---------- | ---------------- |
+| basisgeometrie | deprecated | gebruik: nen3610 |
+| img            | deprecated | gebruik: cvgg    |
+| imkl           | deprecated | gebruik: kl      |
+| imro           | deprecated | gebruik: ro      |
+| metadata       | deprecated | gebruik: md      |
+| vtm            | deprecated | gebruik: md      |
+| wp             | deprecated | gebruik: ngii    |
 
 ## shortName
 
