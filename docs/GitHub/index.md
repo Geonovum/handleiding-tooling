@@ -66,12 +66,16 @@ In dit scherm kan je de voorkeurs editor instellen. Default wordt gekeken naar d
 
 ### De Geonovum GitHub
 
-Geonovum heeft binnen GitHub twee teams:
+Geonovum heeft binnen GitHub twee organisaties:
 
-| Team                               | Doel                                          |
+| Organisatie                        | Doel                                          |
 | ---------------------------------- | --------------------------------------------- |
 | <https://github.com/Geonovum>      | Voor het beheren van producten en standaarden |
 | <https://github.com/Geonovum-labs> | repositories met open source code, demo's, voorbeelden en experimenten ter ondersteuning van standaarden.                                     |
+
+### Toegang tot Geonovum GitHub
+
+Zie hiervoor onze [GitHub beheer](GitHub-beheer.md#github-beheer).
 
 ### Mappenstructuur in de respository
 
@@ -145,4 +149,3 @@ het committen heb je dus nog niks ge-upload.
 ### GitHub Push origin of Pull request: wijzigingen uploaden
 
 Nadat je de wijzigingen hebt gecommit, moeten ze richting de centrale repository. Nu zijn er twee mogelijkheden. Ofwel je hebt schrijfrechten op de Centrale Repository, of je hebt ze niet. In het eerste geval kan je een Push Origin uitvoeren, dan worden de wijzigingen meteen in de Centrale GitHub Repository verwerkt. In het tweede geval doe je een Pull request bij de eigenaar van de Repository om de wijzigingen door te voeren. Github maakt dan een eigen versie voor je aan (dat heet een fork) en vraagt aan de eigenaar van de Repository om die fork te verwerken in de Centrale Repository.
-
