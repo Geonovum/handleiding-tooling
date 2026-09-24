@@ -2,9 +2,8 @@
 
 Informatiemodellen op [MIM beschouwingsniveau 1](https://docs.geostandaarden.nl/mim/mim/#beschouwingsniveau-1-model-van-begrippen) maken we volgens de [NL-SBB](https://docs.geostandaarden.nl/nl-sbb/nl-sbb/) standaard.
 
-## Hoe maak ik een begrippenkader (inhoudelijk)
-
-Een begrippenkader wordt opgesteld door mensen bij voorkeur voordat er een informatiemodel wordt gemaakt.
+Onderwerpen:
+- [werkwijze](werkwijze-begrippenkader.md)
 
 ## Hoe maak ik een begrippenkader (technisch)
 
@@ -16,7 +15,7 @@ Een begrippenkader is een SKOS bestand in .ttl formaat. Deze kun je op verschill
 1. Je kunt de [begrippenXL](BegrippenXL.md) editor gebruiken.
 1.  Met een spreadsheet kom je al een heel eind. Dan kun je later naar SKOS converteren.
 
-## Het publiceren van een begrippenkader
+## Hoe publiceerd ik een begrippenkader
 
 Een begrippenkader wordt gepubliceerd op <https://definities.geostandaarden.nl>, of op de staging omgeving <https://staging-definities.geostandaarden.nl/> door de volgende stappen uit te voeren:
 

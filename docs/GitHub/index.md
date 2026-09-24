@@ -114,15 +114,16 @@ Vul hier de naam van de repository in. Gebruik een naam die kort en bondig is.Na
 - Gebruik liever geen underscores.
 - Gebruik lowercase repository namen.
 - Laat bij een ReSpec document de shortname van het document terugkomen in de naam van het repository.
-- Kijk ook of je naam aansluit bij bestaande repositories.
+- Zorg dat de naam aansluit bij bestaande repositories.
 
-**TODO:** de naamgevingsconventie verder uitwerken.
 
 Vul ook de beschrijving in van het project.
 
 Geef als local path de naam van de GitHub map op. GitHub zal dan de naam van de standaard als mapnaam aanmaken onder de lokale GitHub map.
 
-Het is wel zo netjes om een readme file aan te maken, hierin zet je een korte omschrijving van de repository. Klik vervolgens op “Create Repository”
+Maak ook een readme bestand, hierin zet je een korte omschrijving van de repository. Klik vervolgens op "Create Repository"
+
+Voeg het repository ook toe aan een Team binnen de Geonovum omgeving. Dit zorgt ervoor dat er een aanspreekpunt is.
 
 ### GitHub Clone: eerste keer ophalen van de centrale repository
 
