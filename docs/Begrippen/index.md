@@ -12,7 +12,6 @@ Een begrippenkader is een SKOS bestand in .ttl formaat. Deze kun je op verschill
 1. Je kunt de begrippen met Imvertor uit een UML model halen door de optie `createskos = yes` in de configuratie op te nemen. Dit levert een SKOS bestand op.
 1. [Modeldesk](https://app.modeldesk.io) heeft een ingebouwde begrippeneditor.
 1.  Je kunt de [begrippeneditor van de stelselcatalogus](https://editor.stelselcatalogus.nl/) gebruiken.
-1. Je kunt de [begrippenXL](BegrippenXL.md) editor gebruiken.
 1.  Met een spreadsheet kom je al een heel eind. Dan kun je later naar SKOS converteren.
 
 ## Hoe publiceerd ik een begrippenkader
