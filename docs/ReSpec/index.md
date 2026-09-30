@@ -27,7 +27,7 @@ Documentatie over ReSpec is te vonden
   te vinden.
 - Ook de [template](https://github.com/Geonovum/NL-ReSpec-template/) is een mooi startpunt.
 
-## Het voorbrengingsproces
+## Het voortbrengingsproces
 
 - ReSpec documenten worden beheerd in een [GitHub](../GitHub/index.md) repository. Meestal zit er één ReSpec document in een repository.
 - Maakt met `git clone` een lokaal kopie van repository waarin het ReSpec document zodat je het lokaal kunt bewerken. Een overzicht van alle GitHub repositories van Geonovum staat [hier](https://github.com/orgs/Geonovum/repositories).
@@ -47,6 +47,15 @@ Gebruik de [Geonovum ReSpec template](https://github.com/Geonovum/NL-ReSpec-temp
 **Regel:** kies een logische naam voor het repository.
 
 **Regel:** Een github repository mag maar één ReSpec document bevatten.
+
+## Was-wordt representatie maken
+
+Soms wordt er bij een publicatie een verschillijst (of was-wordt lijst) getoond waarin
+met kleuren de verschillen ten opzichte van de vorige versie zichtbaar worden gemaakt. Gebruik hiervoor de [Online W3C HTML Diff service](https://services.w3.org/htmldiff).
+
+
+
+
 
 
 
