@@ -14,7 +14,7 @@ Een begrippenkader is een SKOS bestand in .ttl formaat. Deze kun je op verschill
 1.  Je kunt de [begrippeneditor van de stelselcatalogus](https://editor.stelselcatalogus.nl/) gebruiken.
 1.  Met een spreadsheet kom je al een heel eind. Dan kun je later naar SKOS converteren.
 
-## Hoe publiceerd ik een begrippenkader
+## Hoe publiceer ik een begrippenkader
 
 Een begrippenkader wordt gepubliceerd op <https://definities.geostandaarden.nl>, of op de staging omgeving <https://staging-definities.geostandaarden.nl/> door de volgende stappen uit te voeren:
 
@@ -25,3 +25,7 @@ Een begrippenkader wordt gepubliceerd op <https://definities.geostandaarden.nl>,
 5. Als resultaat wordt het begrippenkader gepubliceerd of je krijgt een melding terug.
 
 **Regel:** Bij het publiceren van een definitieve versie moet de staging versie verwijderd worden.
+
+## Technische stappen voor het publiceren van een begrippenkader
+
+Dit gebeurt via het (Begrippen-XL Portaal)[begrippenkader-publiceren.md]

@@ -44,6 +44,8 @@ nav:
     - Begrippen (NL-SBB):
         - Begrippen/index.md
         - Begrippen/begrippen-regels.md
+        - Begrippen/werkwijze-begrippenkader.md
+        - Begrippen/begrippenkader-publiceren.md
     - RDF:
         - RDF/index.md
     - Ontologie:
