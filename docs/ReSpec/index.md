@@ -48,6 +48,12 @@ Gebruik de [Geonovum ReSpec template](https://github.com/Geonovum/NL-ReSpec-temp
 
 **Regel:** Een github repository mag maar één ReSpec document bevatten.
 
+## strategie multi-document repository opsplitsen
+
+Aangezien de regel geldt dat een github repository maar één ReSpec document mag bevatten. is het nodig om de repository op te splitsen naar repositories met een enkel document. Het kan gewenst zijn om de verbinding tussen de ***'ouder'***-repository en alle ***'kind'***-repositories weer te geven via verwijzingen in `README.md` bij ouder/kind.
+
+!['strategie'](media/StrategieOpsplitsenMultidoc.drawio.svg)
+
 ## Was-wordt representatie maken
 
 Soms wordt er bij een publicatie een verschillijst (of was-wordt lijst) getoond waarin

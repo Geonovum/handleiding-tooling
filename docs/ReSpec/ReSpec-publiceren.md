@@ -1,33 +1,25 @@
 # Publiceren van een ReSpec document
 
 Het publiceren van een ReSpec document bestaat uit het omzetten van de werkversie
-van dat document op GitHub naar een vaststellingsversie, consultatieversie of definitieve versie
-en het neerzetten van die versie op <https://docs.geostandaarden.nl>. Dit gaat in een aantal stappen:
+van dat document op GitHub naar een vaststellingsversie, consultatieversie of definitieve versie en het neerzetten van die versie op <https://docs.geostandaarden.nl>. Dit gaat in een aantal stappen:
 
-1. Zet de werkversie klaar voor publicatie door in config.js de velden `pubDomain`, `shortName`, `publishDate`, `specStatus` en evt. `previousMaturity` en `previousPublishDate` in te vullen. 
+1. Zet de werkversie klaar voor publicatie door in config.js de velden `pubDomain`, `shortName`, `publishDate`, `specStatus` en evt. `specType`, `previousMaturity` en `previousPublishDate` in te vullen. 
 2. Zorg ook dat de automatische controle (bij push naar github) geen fouten meer geeft. 
-3. Door in het GitHub repository op 'Draft a new Release' te drukken wordt het publicatieproces
-   automatisch in werking gezet wat resulteert in publicatie op <https://docs.geostandaarden.nl>, of als je het vinkje 'set as a pre-release` zet op <https://test.docs.geostandaarden.nl>. Dit 
-   zorgt voor een pull request op <https://github.com/Geonovum/docs.geostandaarden.nl>. Een pre-release wordt automatisch goedgekeurd. Een officiële release moet goedgekeurd worden door een reviewer.
-4. Als de release gelukt is begint het proces weer van voor af aan en zet je in de werkversie
-   de specStatus weer op `wv`. Ook laat je `previousMaturity`en `previousPublishDate` verwijzen naar
-   de zojuist gepubliceerde versie.
+3. Door in het GitHub repository op 'Draft a new Release' te drukken wordt het publicatieproces automatisch in werking gezet wat resulteert in publicatie op <https://docs.geostandaarden.nl>, of als je het vinkje 'set as a pre-release` zet op <https://test.docs.geostandaarden.nl>. Dit zorgt voor een pull request op <https://github.com/Geonovum/docs.geostandaarden.nl>. Een pre-release wordt automatisch goedgekeurd. Een officiële release moet goedgekeurd worden door een reviewer.
+4.  Als de release gelukt is begint het proces weer van voor af aan en zet je in de werkversie de specStatus weer op `wv`. Ook laat je `previousMaturity`en `previousPublishDate` verwijzen naar de zojuist gepubliceerde versie.
 
 ## Stap 1: zet de werkversie klaar voor publicatie
 
-Zorg dat je werkversie op GitHub helemaal klaarstaat voor publicatie door in config.js `pubDomain`, `shortName`, `publishDate`, `specStatus`, `specType` en evt. `previousMaturity` en `previousPublishDate` in te vullen. Zorg ook dat de automatische controle (bij push naar github) geen fouten meer geeft.
+Zorg dat je werkversie op GitHub helemaal klaarstaat voor publicatie door in config.js `pubDomain`, `shortName`, `publishDate`, `specStatus` en evt. `specType`, `previousMaturity` en `previousPublishDate` in te vullen. Zorg ook dat de automatische controle (bij push naar github) geen fouten meer geeft.
 
-De status van een document staat in het veld `specStatus`. Documenten met de status 'wv' (werkversie)
-staat altijd op github. Te publiceren documenten hebben één van de volgende statussen:
+De status van een document staat in het veld `specStatus`. Documenten met de status 'wv' (werkversie) staat altijd op github. Te publiceren documenten hebben één van de volgende statussen:
 
 - 'cv': voor een consultatieversie.
 - 'vv': voor een vaststellingsversie.
 - 'def': voor een definitiever versie.
 - 'ld': voor een levend document.
 
-De velden `previousmaturity` en `previousPublishDate` moeten ingevuld zijn. Deze velden zorgen
-ervoor dat het nieuw gepubliceerde document verwijst naar de vorige gepubliceerde versie
-waardoor door steeds op 'vorige' te klikken alle versies van een document te vinden blijven.
+De velden `previousmaturity` en `previousPublishDate` moeten ingevuld zijn. Deze velden zorgen ervoor dat het nieuw gepubliceerde document verwijst naar de vorige gepubliceerde versie waardoor door steeds op 'vorige' te klikken alle versies van een document te vinden blijven.
 
 **Noot:** Automatisch publiceren werkt alleen wanneer er, conform de [werkwijze](./index.md#respec-via-markdown), één ReSpec document in een repository staat. Als er meerdere Respec documenten in een repository staan kun je [handmatig publiceren](#handmatig-publiceren-van-respec-document).
 
@@ -35,29 +27,34 @@ waardoor door steeds op 'vorige' te klikken alle versies van een document te vin
 
 Zie ook: [README bij Geonovum ReSpec template](https://github.com/Geonovum/NL-ReSpec-template/blob/main/README.md).
 
-- Uitgangspunten:
-    - de folderstructuur van de repository waarin het ReSpec document staat, moet conform de [Geonovum ReSpec template](https://github.com/Geonovum/NL-ReSpec-template) zijn
-    - dat wil zeggen, 
-        - `index.html` in de root folder, 
-        - `config.js` in `/js` folder, 
-        - afbeeldingen (of anders?) in `/media` en/of `/data` folder (**+ subdirectories**);
-    - de github repository mag maar één ReSpec document bevatten.
+### Uitgangspunten
+- de folderstructuur van de repository waarin het ReSpec document staat, moet conform de [Geonovum ReSpec template](https://github.com/Geonovum/NL-ReSpec-template) zijn
+- dat wil zeggen, 
+    - `index.html` in de root folder, 
+    - `config.js` in `/js` folder, 
+    - afbeeldingen (of anders?) in `/media` en/of `/data` folder (**+ subdirectories** zoals `Images`);
+- de github repository mag maar één ReSpec document bevatten.
 
-- Controles:
-    - **HTML** proof/validation, algemene HTML controle:
-        - Favicon, 
-        - Images, 
-        - Links, (#`<id>` waarvan er geen element is met id="`<id>`"). !['broken-link'](media/broken-link.png)
-        - OpenGraph, 
-        - Scripts        
-    - **WCAG** check, controle op webtoegankelijkheid regels (-> WCAG rapport).
-    - **publication links**, `publicatiepreflight`, is het document gereed voor publicatie?  
-    <br/>  
-    - Resultaten controle zijn te vinden onder 'Actions'. ![Github actions in balk](media/github-actions.png)
-    - Kies hier de commit die je gedaan hebt en je ziet na klikken op 'build > Snapshot + Checks' ![build > Snapshot + Checks](media/snapshot-checks.png) 
-    - 'Snapshot + Checks' stappen !['Snapshot + Checks details'](media/snapshot-checks-details.png)
-        - 'Validate publication HTML', 'Run WCAG x.x check' en 'Validate publication links' !['Snapshot + Checks: HTML, WCAG, publicatielinks'](media/snapshot-checks-details-2.png)  
-        - publicatiegereed ja/nee? !['Snapshot + Checks: summary publicatiegereed'](media/summary-preflight.png)
+### Controles
+- **HTML** proof/validation, algemene HTML controle:
+    - Favicon, 
+    - Images, 
+    - Links,
+    - OpenGraph, 
+    - Scripts        
+- **WCAG** check, controle op webtoegankelijkheid regels (-> WCAG rapport).
+- **publication links**, `publicatiepreflight`, is het document gereed voor publicatie?  
+<br/>  
+- Resultaten controle zijn te vinden onder 'Actions'. ![Github actions in balk](media/github-actions.png)
+- Kies hier de commit die je gedaan hebt en je ziet na klikken op 'build > Snapshot + Checks' ![build > Snapshot + Checks](media/snapshot-checks.png) 
+- 'Snapshot + Checks' stappen !['Snapshot + Checks details'](media/snapshot-checks-details.png)
+    - 'Validate publication HTML', 'Run WCAG x.x check' en 'Validate publication links' !['Snapshot + Checks: HTML, WCAG, publicatielinks'](media/snapshot-checks-details-2.png)  
+    - publicatiegereed ja/nee? !['Snapshot + Checks: summary publicatiegereed'](media/summary-preflight.png)
+
+### Typische fouten
+- referentiefout id (#`<id>` waarvan er geen element is met id="`<id>`"). !['broken-link'](media/broken-link.png) 
+- `Duplicate ID`, dubbele id's, bijvoorbeeld meerdere keer id="col1" bij tabellen gegenereerd bij word2respec.
+- ongeldige html-tags, bijvpoorbeeld `<h7>` of `<alias>`. Dit is typisch voor een oudere imvertor-versie.
 
 
 ## Stap 3: Maak een (Test)Release
