@@ -4,17 +4,18 @@ Het publiceren van een ReSpec document bestaat uit het omzetten van de werkversi
 van dat document op GitHub naar een vaststellingsversie, consultatieversie of definitieve versie
 en het neerzetten van die versie op <https://docs.geostandaarden.nl>. Dit gaat in een aantal stappen:
 
-1. Zet de werkversie klaar voor publicatie door in config.js de velden `pubDomain`, `shortName`, `publishDate`, `specStatus` en evt. `previousMaturity` en `previousPublishDate` in te vullen. Zorg ook dat de automatische controle (bij push naar github) geen fouten meer geeft. 
-2. Door in het GitHub repository op 'Draft a new Release' te drukken wordt het publicatieproces
+1. Zet de werkversie klaar voor publicatie door in config.js de velden `pubDomain`, `shortName`, `publishDate`, `specStatus` en evt. `previousMaturity` en `previousPublishDate` in te vullen. 
+2. Zorg ook dat de automatische controle (bij push naar github) geen fouten meer geeft. 
+3. Door in het GitHub repository op 'Draft a new Release' te drukken wordt het publicatieproces
    automatisch in werking gezet wat resulteert in publicatie op <https://docs.geostandaarden.nl>, of als je het vinkje 'set as a pre-release` zet op <https://test.docs.geostandaarden.nl>. Dit 
    zorgt voor een pull request op <https://github.com/Geonovum/docs.geostandaarden.nl>. Een pre-release wordt automatisch goedgekeurd. Een officiële release moet goedgekeurd worden door een reviewer.
-3. Als de release gelukt is begint het proces weer van voor af aan en zet je in de werkversie
+4. Als de release gelukt is begint het proces weer van voor af aan en zet je in de werkversie
    de specStatus weer op `wv`. Ook laat je `previousMaturity`en `previousPublishDate` verwijzen naar
    de zojuist gepubliceerde versie.
 
 ## Stap 1: zet de werkversie klaar voor publicatie
 
-Zorg dat je werkversie op GitHub helemaal klaarstaat voor publicatie door in config.js `pubDomain`, `shortName`, `publishDate`, `specStatus` en evt. `previousMaturity` en `previousPublishDate` in te vullen. Zorg ook dat de automatische controle (bij push naar github) geen fouten meer geeft.
+Zorg dat je werkversie op GitHub helemaal klaarstaat voor publicatie door in config.js `pubDomain`, `shortName`, `publishDate`, `specStatus`, `specType` en evt. `previousMaturity` en `previousPublishDate` in te vullen. Zorg ook dat de automatische controle (bij push naar github) geen fouten meer geeft.
 
 De status van een document staat in het veld `specStatus`. Documenten met de status 'wv' (werkversie)
 staat altijd op github. Te publiceren documenten hebben één van de volgende statussen:
@@ -30,7 +31,36 @@ waardoor door steeds op 'vorige' te klikken alle versies van een document te vin
 
 **Noot:** Automatisch publiceren werkt alleen wanneer er, conform de [werkwijze](./index.md#respec-via-markdown), één ReSpec document in een repository staat. Als er meerdere Respec documenten in een repository staan kun je [handmatig publiceren](#handmatig-publiceren-van-respec-document).
 
-## Stap 2: Maak een (Test)Release
+## Stap 2: fouten bij push oplossen
+
+Zie ook: [README bij Geonovum ReSpec template](https://github.com/Geonovum/NL-ReSpec-template/blob/main/README.md).
+
+- Uitgangspunten:
+    - de folderstructuur van de repository waarin het ReSpec document staat, moet conform de [Geonovum ReSpec template](https://github.com/Geonovum/NL-ReSpec-template) zijn
+    - dat wil zeggen, 
+        - `index.html` in de root folder, 
+        - `config.js` in `/js` folder, 
+        - afbeeldingen (of anders?) in `/media` en/of `/data` folder (**+ subdirectories**);
+    - de github repository mag maar één ReSpec document bevatten.
+
+- Controles:
+    - **HTML** proof/validation, algemene HTML controle:
+        - Favicon, 
+        - Images, 
+        - Links, (#`<id>` waarvan er geen element is met id="`<id>`"). !['broken-link'](media/broken-link.png)
+        - OpenGraph, 
+        - Scripts        
+    - **WCAG** check, controle op webtoegankelijkheid regels (-> WCAG rapport).
+    - **publication links**, `publicatiepreflight`, is het document gereed voor publicatie?  
+    <br/>  
+    - Resultaten controle zijn te vinden onder 'Actions'. ![Github actions in balk](media/github-actions.png)
+    - Kies hier de commit die je gedaan hebt en je ziet na klikken op 'build > Snapshot + Checks' ![build > Snapshot + Checks](media/snapshot-checks.png) 
+    - 'Snapshot + Checks' stappen !['Snapshot + Checks details'](media/snapshot-checks-details.png)
+        - 'Validate publication HTML', 'Run WCAG x.x check' en 'Validate publication links' !['Snapshot + Checks: HTML, WCAG, publicatielinks'](media/snapshot-checks-details-2.png)  
+        - publicatiegereed ja/nee? !['Snapshot + Checks: summary publicatiegereed'](media/summary-preflight.png)
+
+
+## Stap 3: Maak een (Test)Release
 
 Via het knopje 'Draft a new Release' start je het publicatieproces. Er verschijnt het volgende scherm:
 
@@ -47,27 +77,11 @@ Door de knop 'Publish release' in te drukken wordt het publicatieproces gestart.
 - Bij een test-release wordt de publicatie automatisch goedgekeurd en gepubliceerd op <https://test.docs.geostandandaarden.nl>. 
 - Bij een officële release resulteert de publicatie in een pull request op <https://github.com/Geonovum/docs.geostandaarden.nl>. Eén van de reviewers checkt de publicatie en na goedkeuring verschijnt deze automatisch.
 
-Voor deze automatische publicatie gelden de volgende eisen:
-
-- de folderstructuur van de repository waarin het ReSpec document staat, moet conform de [Geonovum ReSpec template](https://github.com/Geonovum/NL-ReSpec-template) zijn
-    - dat wil zeggen, `index.html` in de root folder, `config.js` in `/js` folder, afbeeldingen in `/media` en/of `/data/Images` folder;
-- de github repository mag maar één ReSpec document bevatten.
-
-In het proces wordt op het volgende gecontroleerd:
-
-- Controle op **WCAG** (web toegankelijkheids-) regels. Bij het pushen van een ReSpec document naar
-  GitHub wordt automatisch een WCAG rapport geschreven. Dit is te vinden onder
-  'Actions'. Kies hier de commit die je gedaan hebt en je ziet daar
-  'build/WCAG Accessibility Check'. Deze controle checkt ook de HTML.
-- Controle op **Broken links**. Bij het pushen van een ReSpec document naar
-  GitHub wordt automatisch op broken links gecontroleerd. Dit is te vinden onder
-  'Actions'. Kies hier de commit die je gedaan hebt en je ziet daar
-  'Build/Link validation').
-
+Voor deze automatische publicatie gelden de volgende eisen, naast uitgangspunten en controles zoals beschreven bij **stap 2**: GEEN?
 
 Meer documentatie staat in de readme van [NL-ReSpec-template](https://github.com/Geonovum/NL-ReSpec-template?tab=readme-ov-file#automatische-checks-en-build).
 
-### Stap 3: Zet de 'specStatus' weer op werkversie
+### Stap 4: Zet de 'specStatus' weer op werkversie
 
 Als de publicatie gelukt is begin het werk aan de volgende versie. Deze
 start weer als werkversie. Zet in je beheerdocument de specStatus weer op 'wv'.

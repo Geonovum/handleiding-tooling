@@ -9,10 +9,10 @@ ReSpec documenten worden gepubliceerd op
 versie van een document heeft een eigen URL. Voor de laatst gepubliceerde versie
 is een aparte URL.
 
-De URL van iedere publicatie wordt als volgt bepaald:
+De URL van iedere publicatie wordt als volgt bepaald (specStatus='basis zonder specTpe):
 
 ```text
-https://docs.geostandaarden.nl/[pubdomain]/[specStatus]-[spectype]-[shortName]-[publishDate]/
+https://docs.geostandaarden.nl/[pubdomain]/[specStatus]{-[specType]}-[shortName]-[publishDate]/
 ```
 
 De laatst gepubliceerde versie is OOK te vinden op:
@@ -46,13 +46,13 @@ Een `<div>` is een sectie plus bijbehorend document, dat niet in de inhoudsopgav
 
 Een `<section>` komt wél in de inhoudsopgave terecht (behalve met class="notoc").
 
-### Het bestand 'js/config.js'
+### Het bestand 'js/config.js''(respecConfig)
 
 Met dit bestand configureer je onderdelen van je publicatie. Het bevat de volgende configureerbare onderdelen:
 
 ### SpecStatus
 
-De SpecStatus geeft de status van het document aan en kan de de volgende waarden hebben:
+De specStatus geeft de status van het document aan en kan de de volgende waarden hebben:
 
 - **wv**, Werkversie: Dit is de versie van het document waaraan wordt
   gewerkt. Deze versie kan zonder zonder aankondiging veranderen.
@@ -72,11 +72,18 @@ De SpecStatus geeft de status van het document aan en kan de de volgende waarden
   goedkeuringsproces gevolgd hoeft te worden
 - **basis**, document zonder officiële status.
 
+
+#### Toekomstige ontwikkeling specStatus
+
+- **eo**, Verouderde versie: ***[nog verder beschrijven]***
+- **tg**, Teruggetrokken versie: ***[nog verder beschrijven]***
+
+
 ### SpecType
 
-**Bron:** <https://www.geonovum.nl/uploads/documents/Geonovum%20GENERIEK%20Beheerplan%20geo-standaarden%20v1.1.pdf> [404: Vervallen?]
+**Bron:** [Beheer Geostandaarden/Handboek Beheerder](https://stichtinggeonovum.sharepoint.com/sites/msteams_bf388d/Gedeelde%20documenten/General/A%20Beheer%20Geostandaarden/Handboek%20Beheerder/Handboek%20beheer%20standaarden%20bij%20Geonovum.pdf)
 
-Het SpecType in de configuratie is een vaste lijst met waarden, deze waarden
+Het specType in de configuratie is een vaste lijst met waarden, deze waarden
 zijn vastgesteld.
 
 - **NO** Norm: Een norm is bij een officieel standaardisatie instituut
@@ -97,19 +104,22 @@ zijn vastgesteld.
     geven, vaak met een technisch karakter, die nodig is voor het toepassen van
     standaarden. Een praktijkrichtlijn hoort altijd bij een standaard/norm.
 
+- **BP** Best Practice: Best Practices zijn vergelijkbaar met prakrijkrichtlijnen.
+    (Niet) normatieve Informatie over het toepassen van standaarden in de prakrijk. Een Best Practice hoort altijd bij een standaard. 
+
 - **HR** Handreiking: Op zichzelf staande documentatie dat als doel heeft een
     hulpmiddel te zijn, niet verplichtend maar ondersteunend.
 
 - **WA** Werkafspraak: Legt uit hoe wetgeving moet worden toegepast bij
     onduidelijkheden, discrepanties of fouten in de standaarden.
 
-- **BD** Beheerdocumentatie: Documentatie met betrekking tot het beheerproces
-    van de standaard. Deze documentatie betreft niet een standaard of onderdeel
-    daarvan, zoals een handreiking of werkafspraak.
-
 - **AL** Algemeen: Op zichzelf staande algemene documentatie over standaarden.
     De documentatie betreft niet een specifieke standaard of onderdeel daarvan,
     het is ook geen beheerdocumentatie van een specifieke standaard.
+
+- **BD** Beheerdocumentatie: Documentatie met betrekking tot het beheerproces
+    van de standaard. Deze documentatie betreft niet een standaard of onderdeel
+    daarvan, zoals een handreiking of werkafspraak.`
 
 ### pubDomain [beheer?]
 
@@ -169,7 +179,7 @@ uitroepteken of vraagteken voor de verwijzing zetten te zetten `[[!ID]]` of `[[?
 ## Content: markdown bestanden
 
 De inhoudelijke test van een document zit in 'Markdown' bestanden.
-Maak van elk hoofdstuk een aparte Markdown file.
+Maak van elk hoofdstuk een aparte Markdown file. [in map?]
 
 ## Afbeeldingen
 
@@ -238,6 +248,7 @@ Verwijzen naar een figuur gaat als volgt:
 <p>The flowchart shown in <a href="#flowchart"></a> is quite impressive.</p>
 </section>
 ```
+Via hekje (hash) gevolgd door het id (#<id>) wordt naar een element met dat betreffende id verwezen.
 
 ## Referentie naar GitHub issues
 
