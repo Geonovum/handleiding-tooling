@@ -50,11 +50,13 @@ Zie ook: [README bij Geonovum ReSpec template](https://github.com/Geonovum/NL-Re
 - 'Snapshot + Checks' stappen !['Snapshot + Checks details'](media/snapshot-checks-details.png)
     - 'Validate publication HTML', 'Run WCAG x.x check' en 'Validate publication links' !['Snapshot + Checks: HTML, WCAG, publicatielinks'](media/snapshot-checks-details-2.png)  
     - publicatiegereed ja/nee? !['Snapshot + Checks: summary publicatiegereed'](media/summary-preflight.png)
+    - evt. artefacts/artifacts bekijken !['artefacts'](media/artefacts.png)
 
 ### Typische fouten
 - referentiefout id (#`<id>` waarvan er geen element is met id="`<id>`"). !['broken-link'](media/broken-link.png) 
-- `Duplicate ID`, dubbele id's, bijvoorbeeld meerdere keer id="col1" bij tabellen gegenereerd bij word2respec.
-- ongeldige html-tags, bijvpoorbeeld `<h7>` of `<alias>`. Dit is typisch voor een oudere imvertor-versie.
+- broken link (?), bijv `internally linking to docs.geostandaarden.nl/xxx/yyy/, which does not exist`. Hier ontbreekt het protocol `https://`.
+- `error: Duplicate ID “xxx”.`, dubbele id's, bijvoorbeeld meerdere keer id="col1" bij tabellen gegenereerd bij word2respec.
+- ongeldige html-tags, bijvpoorbeeld `<h7>` of `<alias>`. Dit is typisch voor een oudere imvertor-versie. Oplossing is om opnieuw output met imvertor te creëren.
 
 
 ## Stap 3: Maak een (Test)Release
