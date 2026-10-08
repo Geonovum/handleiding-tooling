@@ -13,6 +13,8 @@ tekst. Opmaakinstructies en tags zijn dan ook niet te vinden in pure Markdown.
 
 De tekst in onze [ReSpec](../ReSpec/index.md) documenten schrijven we in Markdown.
 
+**Pas op**: Gebruik geen tabs in markdown tabellen voor Respec. De tabel wordt dan niet omgezet in de html-pagina terwijl de preview wel goed gaat. Gebruik indien je het wenst (voor eigen leesbaarheid) 2 spaties ipv een tab. Voor de opmaak in het document is het niet van belang.
+
 ## Markdown openen in je browser
 
 Sommige browsers weigeren het openen van lokale bestanden, of negeren links naar

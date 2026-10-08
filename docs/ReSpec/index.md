@@ -52,7 +52,10 @@ Gebruik de [Geonovum ReSpec template](https://github.com/Geonovum/NL-ReSpec-temp
 
 Aangezien de regel geldt dat een github repository maar één ReSpec document mag bevatten. is het nodig om de repository op te splitsen naar repositories met een enkel document. Het kan gewenst zijn om de verbinding tussen de ***'ouder'***-repository en alle ***'kind'***-repositories weer te geven via verwijzingen in `README.md` bij ouder/kind.
 
+
 !['strategie'](media/StrategieOpsplitsenMultidoc.drawio.svg)
+
+De nieuwe repositories dienen toegevoegd te worden aan een team, waarschijnlijk allen bij hetzelfde team als waartoe de ***'ouder'***-repository behoort.
 
 ## Was-wordt representatie maken
 

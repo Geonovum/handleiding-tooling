@@ -45,12 +45,23 @@ Zie ook: [README bij Geonovum ReSpec template](https://github.com/Geonovum/NL-Re
 - **WCAG** check, controle op webtoegankelijkheid regels (-> WCAG rapport).
 - **publication links**, `publicatiepreflight`, is het document gereed voor publicatie?  
 <br/>  
-- Resultaten controle zijn te vinden onder 'Actions'. ![Github actions in balk](media/github-actions.png)
-- Kies hier de commit die je gedaan hebt en je ziet na klikken op 'build > Snapshot + Checks' ![build > Snapshot + Checks](media/snapshot-checks.png) 
-- 'Snapshot + Checks' stappen !['Snapshot + Checks details'](media/snapshot-checks-details.png)
-    - 'Validate publication HTML', 'Run WCAG x.x check' en 'Validate publication links' !['Snapshot + Checks: HTML, WCAG, publicatielinks'](media/snapshot-checks-details-2.png)  
-    - publicatiegereed ja/nee? !['Snapshot + Checks: summary publicatiegereed'](media/summary-preflight.png)
-    - evt. artefacts/artifacts bekijken !['artefacts'](media/artefacts.png)
+- Resultaten controle zijn te vinden onder 'Actions'.  
+  <!-- ![Github actions in balk](media/github-actions.png) -->
+  <img src="media/github-actions.png" alt="Github actions in balk" style="max-width:600px; height:auto;">
+- Kies hier de commit die je gedaan hebt en je ziet na klikken op 'build > Snapshot + Checks'  
+  <!-- ![build > Snapshot + Checks](media/snapshot-checks.png)   -->
+  <img src="media/snapshot-checks.png" alt="build > Snapshot + Checks" style="max-width:600px; height:auto;">
+- 'Snapshot + Checks' stappen  
+  <!-- !['Snapshot + Checks details'](media/snapshot-checks-details.png) -->
+  <img src="media/snapshot-checks-details.png" alt="Snapshot + Checks details" style="max-width:600px; height:auto;">  
+
+    - 'Validate publication HTML', 'Run WCAG x.x check' en 'Validate publication links'  
+      !['Snapshot + Checks: HTML, WCAG, publicatielinks'](media/snapshot-checks-details-2.png)  
+    - publicatiegereed ja/nee?  
+      <!-- !['Snapshot + Checks: summary publicatiegereed'](media/summary-preflight.png) -->
+      <img src="media/summary-preflight.png" alt="Snapshot + Checks: summary publicatiegereed" style="max-width:400px; height:auto;">  
+    - evt. artefacts/artifacts bekijken  
+      !['artefacts'](media/artefacts.png)
 
 ### Typische fouten
 - referentiefout id (#`<id>` waarvan er geen element is met id="`<id>`"). !['broken-link'](media/broken-link.png) 
