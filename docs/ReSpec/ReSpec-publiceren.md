@@ -30,12 +30,11 @@ Zie ook: [README bij Geonovum ReSpec template](https://github.com/Geonovum/NL-Re
 Onderstaande details zijn standaard ingeklapt en alleen van toepassing als je fouten in je document hebt.
 
 <details>
-  <summary>Details voor fouten bij push oplossen</summary>
+  <summary>Details voor fouten bij push oplossen</summary>  
 
-  Onderstaande lijst
 
 <details>
-  <summary>Uitgangspunten - structuur van de repository</summary>
+  <summary>Uitgangspunten - structuur van de repository</summary>  
 
 - de folderstructuur van de repository waarin het ReSpec document staat, moet conform de [Geonovum ReSpec template](https://github.com/Geonovum/NL-ReSpec-template) zijn
 - dat wil zeggen, 
@@ -44,10 +43,10 @@ Onderstaande details zijn standaard ingeklapt en alleen van toepassing als je fo
     - afbeeldingen e.d. in `/media` en/of `/data` folder (**+ subdirectories** zoals `Images`); **NB** zet géén andere bestanden onder `/media` en/of `/data` folder (+subdirectories) aangezien deze dan ook mee gaan bij het publiceren.
 - de github repository mag maar één ReSpec document bevatten.
 
-</details>
+</details>  
 
 <details>
-  <summary>Soort controles welke uitgevoerd worden</summary>
+  <summary>Soort controles welke uitgevoerd worden</summary>  
 
 Er zijn 3 soorten controles.
 - Proof **HTML**, 'Validate publication HTML'. Dit is een algemene HTML controle voor:
@@ -61,10 +60,10 @@ Er zijn 3 soorten controles.
 
 Proof HTML en de Lychee-linkcontrole zijn blokkerend en bepalen het resultaat van `Publicatiegereed: ja/nee`.
 
-</details>
+</details>  
 
 <details>
-  <summary>Controle resultaten terugvinden op Github</summary>
+  <summary>Controle resultaten terugvinden op Github</summary>  
 
 - De resultaten van de controles zijn te vinden onder 'Actions' op Github.  
   <img src="../media/github-actions.png" alt="Github actions in balk" style="max-width:400px; height:auto;"/>
@@ -75,10 +74,10 @@ Proof HTML en de Lychee-linkcontrole zijn blokkerend en bepalen het resultaat va
 -  publicatiegereed ja/nee? evt. artefacts/artifacts bekijken  
     !['artefacts'](media/artefacts.png)
 
-</details>
+</details>  
 
 <details>
-  <summary>Typische fouten die gevonden worden met oplossing</summary>
+  <summary>Typische fouten die gevonden worden met oplossing</summary>  
 
 - referentiefout id (#`<id>` waarvan er geen element is met id="`<id>`").
   <img src="../media/broken-link.png" alt="broken-link" style="max-width:400px; height:auto;">  
@@ -89,9 +88,10 @@ Proof HTML en de Lychee-linkcontrole zijn blokkerend en bepalen het resultaat va
 
 - ongeldige html-tags, bijvpoorbeeld `<h7>` of `<alias>`. Dit is typisch voor een oudere imvertor-versie. Oplossing is om opnieuw output met imvertor te creëren.
 
-</details>
+</details>  
 
-</details>
+</details>  
+
 
 ## Stap 3: Maak een (Test)Release
 
