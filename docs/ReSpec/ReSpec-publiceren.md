@@ -43,7 +43,8 @@ Onderstaande details zijn standaard ingeklapt en alleen van toepassing als je fo
     - afbeeldingen e.d. in `/media` en/of `/data` folder (**+ subdirectories** zoals `Images`); **NB** zet géén andere bestanden onder `/media` en/of `/data` folder (+subdirectories) aangezien deze dan ook mee gaan bij het publiceren.
 - de github repository mag maar één ReSpec document bevatten.
 
-</details>  
+</details> 
+<br/> 
 
 <details>
   <summary>Soort controles welke uitgevoerd worden</summary>  
@@ -61,6 +62,7 @@ Er zijn 3 soorten controles.
 Proof HTML en de Lychee-linkcontrole zijn blokkerend en bepalen het resultaat van `Publicatiegereed: ja/nee`.
 
 </details>  
+<br/> 
 
 <details>
   <summary>Controle resultaten terugvinden op Github</summary>  
@@ -75,24 +77,27 @@ Proof HTML en de Lychee-linkcontrole zijn blokkerend en bepalen het resultaat va
     !['artefacts'](media/artefacts.png)
 
 </details>  
+<br/> 
 
 <details>
-  <summary>Typische fouten die gevonden worden met oplossing</summary>  
+  <summary>Typische fouten die gevonden worden (met oplossing)</summary>  
 
-- referentiefout id (#`<id>` waarvan er geen element is met id="`<id>`").
+- referentiefout id (#`<id>` waarvan er geen element is met id="`<id>`").  
   <img src="../media/broken-link.png" alt="broken-link" style="max-width:400px; height:auto;">  
-
+  
 - protocol ontbreekt in url, bijv.  `https://`. Melding `internally linking to docs.geostandaarden.nl/xxx/yyy/, which does not exist`.  
-
+  
 - `error: Duplicate ID “xxx”.`, dubbele id's, bijvoorbeeld meerdere keer id="col1" bij tabellen gegenereerd bij word2respec.  
-
-- ongeldige html-tags, bijvpoorbeeld `<h7>` of `<alias>`. Dit is typisch voor een oudere imvertor-versie. Oplossing is om opnieuw output met imvertor te creëren.
+  
+- ongeldige html-tags, bijvpoorbeeld `<h7>` of `<alias>`. Dit is typisch voor een oudere imvertor-versie. Oplossing is om opnieuw output met imvertor te creëren.  
+  
+</details>  
+<br/> 
 
 </details>  
-
-</details>  
-
-
+<br/> 
+  
+  
 ## Stap 3: Maak een (Test)Release
 
 Via het knopje 'Draft a new Release' start je het publicatieproces. Er verschijnt het volgende scherm:
