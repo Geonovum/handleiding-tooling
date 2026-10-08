@@ -47,7 +47,11 @@ Zie ook: [README bij Geonovum ReSpec template](https://github.com/Geonovum/NL-Re
 <br/>  
 - Resultaten controle zijn te vinden onder 'Actions'.  
   <!-- ![Github actions in balk](media/github-actions.png) -->
-  <img src="media/github-actions.png" alt="Github actions in balk" style="max-width:600px; height:auto;">
+  <figure id="github-actions">
+    <img src="media/github-actions.png" alt="" style="max-width:600px; height:auto;">
+    <figcaption>Github actions in balk</figcaption>
+  </figure>
+  
 - Kies hier de commit die je gedaan hebt en je ziet na klikken op 'build > Snapshot + Checks'  
   <!-- ![build > Snapshot + Checks](media/snapshot-checks.png)   -->
   <img src="media/snapshot-checks.png" alt="build > Snapshot + Checks" style="max-width:600px; height:auto;">
