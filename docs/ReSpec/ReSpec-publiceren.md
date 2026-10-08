@@ -27,7 +27,16 @@ De velden `previousmaturity` en `previousPublishDate` moeten ingevuld zijn. Deze
 
 Zie ook: [README bij Geonovum ReSpec template](https://github.com/Geonovum/NL-ReSpec-template/blob/main/README.md).
 
-### Uitgangspunten
+Onderstaande details zijn standaard ingeklapt en alleen van toepassing als je fouten in je document hebt.
+
+<details>
+  <summary>Details voor fouten bij push oplossen</summary>
+
+  Onderstaande lijst
+
+<details>
+  <summary>Uitgangspunten - structuur van de repository</summary>
+
 - de folderstructuur van de repository waarin het ReSpec document staat, moet conform de [Geonovum ReSpec template](https://github.com/Geonovum/NL-ReSpec-template) zijn
 - dat wil zeggen, 
     - `index.html` in de root folder, 
@@ -35,7 +44,10 @@ Zie ook: [README bij Geonovum ReSpec template](https://github.com/Geonovum/NL-Re
     - afbeeldingen e.d. in `/media` en/of `/data` folder (**+ subdirectories** zoals `Images`); **NB** zet géén andere bestanden onder `/media` en/of `/data` folder (+subdirectories) aangezien deze dan ook mee gaan bij het publiceren.
 - de github repository mag maar één ReSpec document bevatten.
 
-### Controles
+</details>
+
+<details>
+  <summary>Soort controles welke uitgevoerd worden</summary>
 
 Er zijn 3 soorten controles.
 - Proof **HTML**, 'Validate publication HTML'. Dit is een algemene HTML controle voor:
@@ -49,35 +61,37 @@ Er zijn 3 soorten controles.
 
 Proof HTML en de Lychee-linkcontrole zijn blokkerend en bepalen het resultaat van `Publicatiegereed: ja/nee`.
 
+</details>
 
-### Controle resultaten
+<details>
+  <summary>Controle resultaten terugvinden op Github</summary>
 
 - De resultaten van de controles zijn te vinden onder 'Actions' op Github.  
-  <!-- ![Github actions in balk](media/github-actions.png) -->
   <img src="../media/github-actions.png" alt="Github actions in balk" style="max-width:400px; height:auto;"/>
   
-- Kies hier de commit die je gedaan hebt, en klik voor details op 'build > Snapshot + Checks'. Dit geeft de 'Snapshot + Checks' stappen. Grijze vinkjes zijn oké. Rode kruizen vragen om aandacgt voor zaken om op te lossen.
-  <!-- !['Snapshot + Checks details'](media/snapshot-checks-details.png) -->
-  <img src="../media/snapshot-checks-details.png" alt="Snapshot + Checks details" style="max-width:600px; height:auto;"/>  
-  !['Snapshot + Checks: HTML, WCAG, publicatielinks'](media/snapshot-checks-details-2.png)  
+- Kies hier de commit die je gedaan hebt, en klik voor details op 'build > Snapshot + Checks'. Dit geeft de 'Snapshot + Checks' stappen. Grijze vinkjes zijn oké. Rode kruisen vragen om aandacht voor zaken om op te lossen.  
+  <img src="../media/snapshot-checks-details.png" alt="Snapshot + Checks details" style="max-width:600px; height:auto;"/><img src="../media/snapshot-checks-details-2.png" alt="Snapshot + Checks details 2" style="max-width:400px; height:auto;"/> 
 
-- publicatiegereed ja/nee?  
-    <!-- !['Snapshot + Checks: summary publicatiegereed'](media/summary-preflight.png) -->
-    <img src="../media/summary-preflight.png" alt="Snapshot + Checks: summary publicatiegereed" style="max-width:400px; height:auto;">  
-    
-- evt. artefacts/artifacts bekijken  
+-  publicatiegereed ja/nee? evt. artefacts/artifacts bekijken  
     !['artefacts'](media/artefacts.png)
 
+</details>
 
-### Typische fouten
+<details>
+  <summary>Typische fouten die gevonden worden met oplossing</summary>
 
 - referentiefout id (#`<id>` waarvan er geen element is met id="`<id>`").
- <!-- !['broken-link'](media/broken-link.png)  -->
-  <img src="../media/broken-link.png" alt="broken-link" style="max-width:400px; height:auto;"> 
-- protocol ontbreekt in url, bijv.  `https://`. Melding `internally linking to docs.geostandaarden.nl/xxx/yyy/, which does not exist`.
-- `error: Duplicate ID “xxx”.`, dubbele id's, bijvoorbeeld meerdere keer id="col1" bij tabellen gegenereerd bij word2respec.
+  <img src="../media/broken-link.png" alt="broken-link" style="max-width:400px; height:auto;">  
+
+- protocol ontbreekt in url, bijv.  `https://`. Melding `internally linking to docs.geostandaarden.nl/xxx/yyy/, which does not exist`.  
+
+- `error: Duplicate ID “xxx”.`, dubbele id's, bijvoorbeeld meerdere keer id="col1" bij tabellen gegenereerd bij word2respec.  
+
 - ongeldige html-tags, bijvpoorbeeld `<h7>` of `<alias>`. Dit is typisch voor een oudere imvertor-versie. Oplossing is om opnieuw output met imvertor te creëren.
 
+</details>
+
+</details>
 
 ## Stap 3: Maak een (Test)Release
 
