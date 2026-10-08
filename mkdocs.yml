@@ -21,7 +21,7 @@ nav:
     - ReSpec:
         - Manual: ReSpec/index.md
         - Publiceren: ReSpec/ReSpec-publiceren.md
-        - Problemen oplossenc: ReSpec/ReSpec-problemen.md
+        - Problemen oplossen: ReSpec/ReSpec-problemen.md
         - Onderdelen van ReSpec: ReSpec/ReSpec-onderdelen.md
     - Enterprise Architect:
         - Overzicht: EA/index.md

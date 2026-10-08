@@ -23,14 +23,14 @@ De velden `previousmaturity` en `previousPublishDate` moeten ingevuld zijn. Deze
 
 **Noot:** Automatisch publiceren werkt alleen wanneer er, conform de [werkwijze](./index.md#respec-via-markdown), één ReSpec document in een repository staat. Als er meerdere Respec documenten in een repository staan kun je [handmatig publiceren](#handmatig-publiceren-van-respec-document).
 
-## Stap 2: fouten bij push oplossen
+## Stap 2: Fouten bij push oplossen
 
 **Tip**: Probeer de fouten steeds na een push op te lossen zodat wellicht duidelijker is wat de oorzaak is.
 
+Details om problemen op te lossen staan op een [aparte pagina](ReSpec-problemen.md/#fouten-bij-push-oplossen) en zijn alleen van toepassing als je problemen in je document hebt.
+  
 Zie ook: [README bij Geonovum ReSpec template](https://github.com/Geonovum/NL-ReSpec-template/blob/main/README.md).
 
-Details staan op een [aparte pagina](#fouten-bij-push-oplossen) en en alleen van toepassing als je problemen in je document hebt welke het publiceren blokkeren.
-  
   
 ## Stap 3: Maak een (Test)Release
 
