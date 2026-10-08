@@ -48,22 +48,22 @@ Zie ook: [README bij Geonovum ReSpec template](https://github.com/Geonovum/NL-Re
 - Resultaten controle zijn te vinden onder 'Actions'.  
   <!-- ![Github actions in balk](media/github-actions.png) -->
   <figure id="github-actions">
-    <img src="media/github-actions.png" alt="" style="min-width:400px; max-width:600px; height:auto;">
+    <img src="../media/github-actions.png" alt="" style="max-width:600px; height:auto;">
     <figcaption>Github actions in balk</figcaption>
   </figure>
   
 - Kies hier de commit die je gedaan hebt en je ziet na klikken op 'build > Snapshot + Checks'  
   <!-- ![build > Snapshot + Checks](media/snapshot-checks.png)   -->
-  <img src="media/snapshot-checks.png" alt="build > Snapshot + Checks" style="max-width:600px; height:auto;">
+  <img src="../media/snapshot-checks.png" alt="build > Snapshot + Checks" style="max-width:600px; height:auto;">
 - 'Snapshot + Checks' stappen  
   <!-- !['Snapshot + Checks details'](media/snapshot-checks-details.png) -->
-  <img src="media/snapshot-checks-details.png" alt="Snapshot + Checks details" style="max-width:600px; height:auto;">  
+  <img src="../media/snapshot-checks-details.png" alt="Snapshot + Checks details" style="max-width:600px; height:auto;">  
 
     - 'Validate publication HTML', 'Run WCAG x.x check' en 'Validate publication links'  
       !['Snapshot + Checks: HTML, WCAG, publicatielinks'](media/snapshot-checks-details-2.png)  
     - publicatiegereed ja/nee?  
       <!-- !['Snapshot + Checks: summary publicatiegereed'](media/summary-preflight.png) -->
-      <img src="media/summary-preflight.png" alt="Snapshot + Checks: summary publicatiegereed" style="max-width:400px; height:auto;">  
+      <img src="../media/summary-preflight.png" alt="Snapshot + Checks: summary publicatiegereed" style="max-width:400px; height:auto;">  
     - evt. artefacts/artifacts bekijken  
       !['artefacts'](media/artefacts.png)
 
