@@ -48,7 +48,7 @@ Zie ook: [README bij Geonovum ReSpec template](https://github.com/Geonovum/NL-Re
 - Resultaten controle zijn te vinden onder 'Actions'.  
   <!-- ![Github actions in balk](media/github-actions.png) -->
   <figure id="github-actions">
-    <img src="media/github-actions.png" alt="" style="max-width:600px; height:auto;">
+    <img src="media/github-actions.png" alt="" style="min-width:400px; max-width:600px; height:auto;">
     <figcaption>Github actions in balk</figcaption>
   </figure>
   
