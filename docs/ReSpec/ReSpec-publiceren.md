@@ -61,39 +61,15 @@ start weer als werkversie. Zet in je beheerdocument de specStatus weer op 'wv'.
 
 ### Configureren van de automatische workflow
 
-Bij het maken van een nieuw ReSpec document via de [template](https://github.com/Geonovum/NL-ReSpec-template) wordt de workflow automatisch geïnstalleerd. In github repositories die al een ReSpec document hadden voordat de nieuwe publicatieworkflow werd geïntroduceerd, is de workflow meestal ook al geinstalleerd. Alle actieve repositories waar een 'js/config.js' in gevonden is, hebben de nieuwe workflow gekregen.
+Bij het maken van een nieuw ReSpec document via de [template](https://github.com/Geonovum/NL-ReSpec-template) krijg je de workflow automatisch. De repository bevat dan alleen twee kleine workflows in `.github/workflows/`: `main.yml` en `visual-regression.yml`. Die roepen de centrale build-, controle- en publicatiestappen aan uit [NL-ReSpec-workflows](https://github.com/Geonovum/NL-ReSpec-workflows). Pas deze twee bestanden niet zelf aan; ze worden centraal bijgehouden.
 
-Je kan controleren of de workflow is geïnstalleerd door bovenin de README.md in je repository te kijken. Hier moet in staan: 
+Alle actieve repositories waarin een `js/config.js` staat, worden vanuit NL-ReSpec-workflows automatisch bijgewerkt. Je kan controleren of de workflow is geïnstalleerd door `.github/workflows/main.yml` in je repository te openen: daarin moet `Geonovum/NL-ReSpec-workflows` staan.
 
-> Deze repository is automatisch bijgewerkt naar de nieuwste workflow. Voor vragen, neem contact op met Linda van den Brink of Wilko Quak.
-> Als je een nieuwe publicatie wilt starten, lees dan eerst de instructies in de README van de NL-ReSpec-template: https://github.com/Geonovum/NL-ReSpec-template.
+Staat de workflow er niet in, vraag dan Linda, Wilko, Inge of Matthijs om je repository mee te nemen in de centrale update. Je kan de twee bestanden ook zelf toevoegen:
 
-Als de workflow niet automatisch is geïnstalleerd, kun je dit zelf doen. Dit is een eenmalige stap. Mocht dit niet lukken, dan kan Linda, Wilko, Inge of Matthijs erbij helpen:
-
-**Zorg dat Git is geïnstalleerd en beschikbaar is in je terminal**
-
-1. Open de **Opdrachtprompt**:
-    - ➜ Druk op de **Windows-knop**, typ `cmd`, druk op **Enter**
-1. Typ vervolgens in de cmd terminal:
-    - `git --version`
-    - Zie je een versie zoals `git version 2.x.x`, dan is alles goed.
-1. Krijg je een foutmelding zoals `'git' is not recognized as an internal or external command`, dan moet je Git nog installeren via: https://git-scm.com/downloads/win
- 
-**Vervolg, na installatie van git**
-
-1. **Navigeer naar de repository in Verkenner**
-1. Open de map waarin de repository staat
-    - **Shift** + **rechter muisklik** in een lege ruimte in de map
-    - Kies **"PowerShell-venster hier openen"** of **"Open in terminal"**
-1. **Download en voer het script uit.**  Kopieer en plak de volgende regels in PowerShell, voer ze om beuren uit:
-    1. `curl -o replace_workflow-local.ps1 https://raw.githubusercontent.com/Geonovum/NL-ReSpec-template/main/replace_workflow-local.ps1`
-    1. `Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass`
-    1. `.\replace_workflow-local.ps1`
-1. Als er geen errors verschijnen is dit gelukt. Je kunt dit checken door README.md te openen: als het goed is staat hier nu bovenin een tekst die begint met "Deze repository is automatisch bijgewerkt..."
-
-**Tenslotte**
-
-1. Verwijder het bestand "replace_workflow-local.ps1"
+1. Open in NL-ReSpec-workflows de map [`document-repo/.github/workflows`](https://github.com/Geonovum/NL-ReSpec-workflows/tree/main/document-repo/.github/workflows).
+1. Maak in je eigen repository via **Add file** → **Create new file** het bestand `.github/workflows/main.yml` aan en plak de inhoud van `main.yml` erin. Doe hetzelfde voor `visual-regression.yml`.
+1. Staan er in `.github/workflows/` nog oude bestanden zoals `build.yml`, `publish.yml` of `pdf.js`, verwijder die dan.
 
 ## 'Handmatig' publiceren van respec document.
 
