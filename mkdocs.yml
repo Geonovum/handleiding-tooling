@@ -1,6 +1,11 @@
 site_name: Geonovum tooling
 theme:
     name: readthedocs
+shortcuts:
+    help: 191    # ?
+    next: 78     # n
+    previous: 80 # p
+    search: 83   # s
 repo_url: https://github.com/Geonovum/handleiding-tooling
 edit_uri: blob/main/docs/
 extra_css:
