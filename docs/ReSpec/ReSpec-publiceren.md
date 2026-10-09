@@ -16,8 +16,10 @@ De status van een document staat in het veld `specStatus`. Documenten met de sta
 
 - 'cv': voor een consultatieversie.
 - 'vv': voor een vaststellingsversie.
-- 'def': voor een definitiever versie.
+- 'def': voor een definitieve versie.
 - 'ld': voor een levend document.
+
+- 'basis': ***nog beschrijven***
 
 De velden `previousmaturity` en `previousPublishDate` moeten ingevuld zijn. Deze velden zorgen ervoor dat het nieuw gepubliceerde document verwijst naar de vorige gepubliceerde versie waardoor door steeds op 'vorige' te klikken alle versies van een document te vinden blijven.
 
@@ -27,9 +29,7 @@ De velden `previousmaturity` en `previousPublishDate` moeten ingevuld zijn. Deze
 
 **Tip**: Probeer de fouten steeds na een push op te lossen zodat wellicht duidelijker is wat de oorzaak is.
 
-Details om problemen op te lossen staan op een [aparte pagina](ReSpec-problemen.md/#fouten-bij-push-oplossen) en zijn alleen van toepassing als je problemen in je document hebt.
-  
-Zie ook: [README bij Geonovum ReSpec template](https://github.com/Geonovum/NL-ReSpec-template/blob/main/README.md).
+Details om problemen op te lossen staan op een [aparte pagina](ReSpec-problemen.md/#fouten-bij-push-oplossen) en zijn alleen van toepassing als er problemen (❌) in het document aanwezig zijn.  
 
   
 ## Stap 3: Maak een (Test)Release

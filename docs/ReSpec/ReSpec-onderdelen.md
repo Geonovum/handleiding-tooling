@@ -9,7 +9,7 @@ ReSpec documenten worden gepubliceerd op
 versie van een document heeft een eigen URL. Voor de laatst gepubliceerde versie
 is een aparte URL.
 
-De URL van iedere publicatie wordt als volgt bepaald (specStatus='basis zonder specTpe):
+De URL van iedere publicatie wordt als volgt bepaald (specStatus='basis' zonder specType):
 
 ```text
 https://docs.geostandaarden.nl/[pubdomain]/[specStatus]{-[specType]}-[shortName]-[publishDate]/
@@ -70,7 +70,7 @@ De specStatus geeft de status van het document aan en kan de de volgende waarden
 - **ld**, Levend document: Geschikt voor handreikingen en dergelijke die
   regelmatig gewijzigd worden en waarvoor niet een consultatie- en
   goedkeuringsproces gevolgd hoeft te worden
-- **basis**, document zonder officiële status.
+- **basis**, document zonder officiële status.(***specType: []***)
 
 
 #### Toekomstige ontwikkeling specStatus
