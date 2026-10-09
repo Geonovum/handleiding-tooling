@@ -1,17 +1,15 @@
 # Fouten bij push oplossen  
 
 ## Uitgangspunten - structuur van de repository  
+  
+- de folderstructuur van de repository waarin het ReSpec document staat, moet conform de [Geonovum ReSpec template](https://github.com/Geonovum/NL-ReSpec-template) zijn  
 
->? UITGANGSPUNTEN:
->  
->- de folderstructuur van de repository waarin het ReSpec document staat, moet conform de [Geonovum ReSpec template](https://github.com/Geonovum/NL-ReSpec-template) zijn  
->
->- dat wil zeggen, 
->    - `index.html` in de root folder, 
->    - `config.js` in `/js` folder, 
->    - afbeeldingen e.d. in `/media` en/of `/data` folder (**+ subdirectories** zoals `Images`); **NB** zet géén andere bestanden onder `/media` en/of `/data` folder (+subdirectories) aangezien deze dan ook mee gaan bij het publiceren.  
->    
->- de github repository mag maar één ReSpec document bevatten.
+- dat wil zeggen, 
+    - `index.html` in de root folder, 
+    - `config.js` in `/js` folder, 
+    - afbeeldingen e.d. in `/media` en/of `/data` folder (**+ subdirectories** zoals `Images`); **NB** zet géén andere bestanden onder `/media` en/of `/data` folder (+subdirectories) aangezien deze dan ook mee gaan bij het publiceren.  
+    
+- de github repository mag maar één ReSpec document bevatten.
   
 ## Soort controles welke uitgevoerd worden  
 
