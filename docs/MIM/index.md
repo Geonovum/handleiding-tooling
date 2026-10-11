@@ -4,7 +4,11 @@ Geononvum gebruikt het Metamodel Informatie Modellering [MIM](https://docs.geost
 
 Er is een actieve [MIM community](https://www.mim-community.nl).
 
-Interessante documenten
+## Kwaliteitscriteria
+
+Ieder informatiemodel gepubliceerd door Geonovum voldoet aan de volgende [kwaliteitscriteria](kwaliteitscriteria-informatiemodellen.md)
+
+## Verder lezen
 
 | Document       | Verwijzing                                |
 | -------------- | ----------------------------------------- |
