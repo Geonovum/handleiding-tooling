@@ -16,64 +16,22 @@ De status van een document staat in het veld `specStatus`. Documenten met de sta
 
 - 'cv': voor een consultatieversie.
 - 'vv': voor een vaststellingsversie.
-- 'def': voor een definitiever versie.
+- 'def': voor een definitieve versie.
 - 'ld': voor een levend document.
+
+- 'basis': ***nog beschrijven***
 
 De velden `previousmaturity` en `previousPublishDate` moeten ingevuld zijn. Deze velden zorgen ervoor dat het nieuw gepubliceerde document verwijst naar de vorige gepubliceerde versie waardoor door steeds op 'vorige' te klikken alle versies van een document te vinden blijven.
 
 **Noot:** Automatisch publiceren werkt alleen wanneer er, conform de [werkwijze](./index.md#respec-via-markdown), één ReSpec document in een repository staat. Als er meerdere Respec documenten in een repository staan kun je [handmatig publiceren](#handmatig-publiceren-van-respec-document).
 
-## Stap 2: fouten bij push oplossen
+## Stap 2: Fouten bij push oplossen
 
-Zie ook: [README bij Geonovum ReSpec template](https://github.com/Geonovum/NL-ReSpec-template/blob/main/README.md).
+**Tip**: Probeer de fouten steeds na een push op te lossen zodat wellicht duidelijker is wat de oorzaak is.
 
-### Uitgangspunten
-- de folderstructuur van de repository waarin het ReSpec document staat, moet conform de [Geonovum ReSpec template](https://github.com/Geonovum/NL-ReSpec-template) zijn
-- dat wil zeggen, 
-    - `index.html` in de root folder, 
-    - `config.js` in `/js` folder, 
-    - afbeeldingen (of anders?) in `/media` en/of `/data` folder (**+ subdirectories** zoals `Images`);
-- de github repository mag maar één ReSpec document bevatten.
+Details om problemen op te lossen staan op een [aparte pagina](ReSpec-problemen.md/#fouten-bij-push-oplossen) en zijn alleen van toepassing als er problemen (❌) in het document aanwezig zijn.  
 
-### Controles
-- **HTML** proof/validation, algemene HTML controle:
-    - Favicon, 
-    - Images, 
-    - Links,
-    - OpenGraph, 
-    - Scripts        
-- **WCAG** check, controle op webtoegankelijkheid regels (-> WCAG rapport).
-- **publication links**, `publicatiepreflight`, is het document gereed voor publicatie?  
-<br/>  
-- Resultaten controle zijn te vinden onder 'Actions'.  
-  <!-- ![Github actions in balk](media/github-actions.png) -->
-  <figure id="github-actions">
-    <img src="../media/github-actions.png" alt="" style="max-width:600px; height:auto;">
-    <figcaption>Github actions in balk</figcaption>
-  </figure>
   
-- Kies hier de commit die je gedaan hebt en je ziet na klikken op 'build > Snapshot + Checks'  
-  <!-- ![build > Snapshot + Checks](media/snapshot-checks.png)   -->
-  <img src="../media/snapshot-checks.png" alt="build > Snapshot + Checks" style="max-width:600px; height:auto;">
-- 'Snapshot + Checks' stappen  
-  <!-- !['Snapshot + Checks details'](media/snapshot-checks-details.png) -->
-  <img src="../media/snapshot-checks-details.png" alt="Snapshot + Checks details" style="max-width:600px; height:auto;">  
-
-    - 'Validate publication HTML', 'Run WCAG x.x check' en 'Validate publication links'  
-      !['Snapshot + Checks: HTML, WCAG, publicatielinks'](media/snapshot-checks-details-2.png)  
-    - publicatiegereed ja/nee?  
-      <!-- !['Snapshot + Checks: summary publicatiegereed'](media/summary-preflight.png) -->
-      <img src="../media/summary-preflight.png" alt="Snapshot + Checks: summary publicatiegereed" style="max-width:400px; height:auto;">  
-    - evt. artefacts/artifacts bekijken  
-      !['artefacts'](media/artefacts.png)
-
-### Typische fouten
-- referentiefout id (#`<id>` waarvan er geen element is met id="`<id>`"). !['broken-link'](media/broken-link.png) 
-- broken link (?), bijv `internally linking to docs.geostandaarden.nl/xxx/yyy/, which does not exist`. Hier ontbreekt het protocol `https://`.
-- `error: Duplicate ID “xxx”.`, dubbele id's, bijvoorbeeld meerdere keer id="col1" bij tabellen gegenereerd bij word2respec.
-- ongeldige html-tags, bijvpoorbeeld `<h7>` of `<alias>`. Dit is typisch voor een oudere imvertor-versie. Oplossing is om opnieuw output met imvertor te creëren.
-
-
 ## Stap 3: Maak een (Test)Release
 
 Via het knopje 'Draft a new Release' start je het publicatieproces. Er verschijnt het volgende scherm:
@@ -88,7 +46,7 @@ Vul de velden als volgt in:
 
 Door de knop 'Publish release' in te drukken wordt het publicatieproces gestart. Dit kan enige tijd duren. Afhankelijk van of het een test release is of gebeurt het volgende:
 
-- Bij een test-release wordt de publicatie automatisch goedgekeurd en gepubliceerd op <https://test.docs.geostandandaarden.nl>. 
+- Bij een test-release wordt de publicatie automatisch goedgekeurd en gepubliceerd op <https://test.docs.geostandaarden.nl>. 
 - Bij een officële release resulteert de publicatie in een pull request op <https://github.com/Geonovum/docs.geostandaarden.nl>. Eén van de reviewers checkt de publicatie en na goedkeuring verschijnt deze automatisch.
 
 Voor deze automatische publicatie gelden de volgende eisen, naast uitgangspunten en controles zoals beschreven bij **stap 2**: GEEN?
