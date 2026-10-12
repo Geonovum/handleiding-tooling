@@ -3,7 +3,7 @@
 
 ## Inhoud
 
-- [Huidige stand van zaken](#huidige-stand-van-zaken)
+- [Er zijn twee portalen](#definitieve-begrippen-en-staging)
 - [Beheer via het uploadportaal](#beheer-via-het-uploadportaal)
 - [Uploaden via een bestand](#uploaden-via-een-bestand)
 - [Uploaden via een URL](#uploaden-via-een-url)
@@ -12,14 +12,14 @@
 - [URL wijzigen voor rechtstreeks inlezen via Git](#url-wijzigen-voor-rechtstreeks-inlezen-via-git)
 - [Governance en autorisatie](#governance-en-autorisatie)
 
-## Huidige stand van zaken
+## Definitieve begrippen en staging
 
 Er zijn twee BegrippenXL-portalen:
 
-| Omgeving | URL | Inhoud |
-|---|---|---|
-| Productie | [definities.geostandaarden.nl](https://definities.geostandaarden.nl/) | 9 thema's en 22 modellen |
-| Staging | [staging-definities.geostandaarden.nl](https://staging-definities.geostandaarden.nl/) | 1 thema en 11 modellen |
+| Omgeving  | URL                                                                                   |
+| --------- | ------------------------------------------------------------------------------------- |
+| Productie | [definities.geostandaarden.nl](https://definities.geostandaarden.nl/)                 |
+| Staging   | [staging-definities.geostandaarden.nl](https://staging-definities.geostandaarden.nl/) |
 
 ## Beheer via het uploadportaal
 
@@ -73,6 +73,7 @@ Na een upload geeft het portaal informatie over het resultaat:
 - De gebruiker ontvangt na iedere upload een e-mail.
 - De bijlage bij deze e-mail bevat de logging van de Skosify-datacontrole.
 - Foutmeldingen worden eveneens meegestuurd. Een mislukte upload krijgt de status **failure**.
+- **Noot:** de publicatie verschijnt alleen op 1 van de portalen als ze zijn aangemeld bij de helpdesk.
 
 ## URL wijzigen voor rechtstreeks inlezen via Git
 

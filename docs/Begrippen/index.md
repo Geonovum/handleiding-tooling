@@ -28,4 +28,4 @@ Een begrippenkader wordt gepubliceerd op <https://definities.geostandaarden.nl>,
 
 ## Technische stappen voor het publiceren van een begrippenkader
 
-Dit gebeurt via het (Begrippen-XL Portaal)[begrippenkader-publiceren.md]
+Dit gebeurt via het [Begrippen-XL Portaal](begrippenkader-publiceren.md)
