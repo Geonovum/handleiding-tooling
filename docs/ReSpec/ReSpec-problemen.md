@@ -44,12 +44,15 @@ Proof HTML en de Lychee-linkcontrole zijn blokkerend en bepalen het resultaat va
   <img src="../media/broken-link.png" alt="broken-link" style="max-width:500px; height:auto;">  
   **Oplossing**: Verwijs naar wel bestaand `<id>` of verwijder de verwijzing.  
   
+
 - protocol ontbreekt in url, bijv.  `https://`. Melding `internally linking to docs.geostandaarden.nl/xxx/yyy/, which does not exist`.  
   **Oplossing**: Voeg protocol toe. Gebruik https en niet meer http.  
   
-- `error: Duplicate ID “xxx”.`, dubbele id's, bijvoorbeeld meerdere keer id="col1" bij tabellen gegenereerd bij oudere word2respec, of door kopieeractie.  
-  **Oplossing**: maak het id's uniek (evt. met toevoeging '-x') of verwijder ze, kan veelal voor col-id's.  
+
+- dubbele id's (`error: Duplicate ID “xxx”.`), bijv. meerdere keren id="col1" bij html-tabellen gegenereerd door oudere word2respec-versie, of door kopieeractie.  
+  **Oplossing**: maak het id's uniek (evt. met toevoeging '-x') of verwijder ze (kan veelal voor col-id's).  
   
+
 - ongeldige html-tags, bijvoorbeeld `<h7>` of `<alias>`. Dit is typisch voor een oudere imvertor-versie.  
   **Oplossing**: Creëer nieuwe output met imvertor. (***oktober 2026: gebruik nightly-build***).  
 
