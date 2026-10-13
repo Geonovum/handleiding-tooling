@@ -55,7 +55,7 @@ Met dit bestand configureer je onderdelen van je publicatie. Het bevat de volgen
 De specStatus geeft de status van het document aan en kan de de volgende waarden hebben:
 
 - **wv**, Werkversie: Dit is de versie van het document waaraan wordt
-  gewerkt. Deze versie kan zonder zonder aankondiging veranderen. Deze wordt niet gepubliceerd op <http://docs.geonovum.nl>.
+  gewerkt. Deze versie kan zonder zonder aankondiging veranderen. Deze wordt niet gepubliceerd op <http://docs.geostandaarden.nl>.
 - **cv**, Consultatieversie: Dit is een 'snapshot' van de versie die 'in
     consultatie' wordt gezet. Gedurende de consultatie zal deze versie
     niet veranderen. Daarna worden alle op en aanmerkingen uit de
@@ -66,7 +66,7 @@ De specStatus geeft de status van het document aan en kan de de volgende waarden
     worden 'vastgesteld'.
 - **def**, Vastgestelde versie: Dit is de definitieve versie van het document,
     zoals vastgesteld door de programmaraad. Het resultaat van die snapshot wordt op
-    <http://docs.geonovum.nl> neergezet.
+    <http://docs.geostandaarden.nl> neergezet.
 - **ld**, Levend document: Geschikt voor handreikingen en dergelijke die
   regelmatig gewijzigd worden en waarvoor niet een consultatie- en
   goedkeuringsproces gevolgd hoeft te worden.

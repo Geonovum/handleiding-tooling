@@ -12,14 +12,7 @@ van dat document op GitHub naar een vaststellingsversie, consultatieversie of de
 
 Zorg dat je werkversie op GitHub helemaal klaarstaat voor publicatie door in config.js `pubDomain`, `shortName`, `publishDate`, `specStatus` en evt. `specType`, `previousMaturity` en `previousPublishDate` in te vullen. Zorg ook dat de automatische controle (bij push naar github) geen fouten meer geeft.
 
-De status van een document staat in het veld `specStatus`. Documenten met de status 'wv' (werkversie) staat altijd op github. Te publiceren documenten hebben één van de volgende statussen:
-
-- 'cv': voor een consultatieversie.
-- 'vv': voor een vaststellingsversie.
-- 'def': voor een definitieve versie.
-- 'ld': voor een levend document.
-
-- 'basis': ***nog beschrijven***
+De status van een document staat in het veld `specStatus`. Documenten met de status 'wv' (werkversie) worden niet gepubliceerd en staan alleen op github. Te publiceren documenten hebben één van de volgende statussen: 'cv','vv', 'def','ld' of 'basis'. Zie [specStatus](ReSpec-onderdelen/#specstatus) voor de betekenis,
 
 De velden `previousmaturity` en `previousPublishDate` moeten ingevuld zijn. Deze velden zorgen ervoor dat het nieuw gepubliceerde document verwijst naar de vorige gepubliceerde versie waardoor door steeds op 'vorige' te klikken alle versies van een document te vinden blijven.
 
