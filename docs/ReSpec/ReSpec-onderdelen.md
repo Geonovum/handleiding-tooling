@@ -9,10 +9,10 @@ ReSpec documenten worden gepubliceerd op
 versie van een document heeft een eigen URL. Voor de laatst gepubliceerde versie
 is een aparte URL.
 
-De URL van iedere publicatie wordt als volgt bepaald (specStatus='basis' zonder specType):
+De URL van iedere publicatie wordt als volgt bepaald:
 
 ```text
-https://docs.geostandaarden.nl/[pubdomain]/[specStatus]{-[specType]}-[shortName]-[publishDate]/
+https://docs.geostandaarden.nl/[pubdomain]/[specStatus]-[specType]-[shortName]-[publishDate]/
 ```
 
 De laatst gepubliceerde versie is OOK te vinden op:
