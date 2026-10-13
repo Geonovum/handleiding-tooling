@@ -55,22 +55,22 @@ Met dit bestand configureer je onderdelen van je publicatie. Het bevat de volgen
 De specStatus geeft de status van het document aan en kan de de volgende waarden hebben:
 
 - **wv**, Werkversie: Dit is de versie van het document waaraan wordt
-  gewerkt. Deze versie kan zonder zonder aankondiging veranderen.
+  gewerkt. Deze versie kan zonder zonder aankondiging veranderen. Deze wordt niet gepubliceerd op <http://docs.geonovum.nl>.
 - **cv**, Consultatieversie: Dit is een 'snapshot' van de versie die 'in
     consultatie' wordt gezet. Gedurende de consultatie zal deze versie
     niet veranderen. Daarna worden alle op en aanmerkingen uit de
     consultatieronde verwerkt.
-- **vv**, Vaststellingsversie: Dit is een 'snapshot' van de versie na het
+- **vv**, Versie ter vaststelling: Dit is een 'snapshot' van de versie na het
     verwerken van de op en aanmerkingen uit de consultatieronde is ontstaan.
     Deze versie wordt aangeboden aan de programmaraad van Geonovum, om te
     worden 'vastgesteld'.
-- **def**, Definitieve versie: Dit is de definitieve versie van het document,
+- **def**, Vastgestelde versie: Dit is de definitieve versie van het document,
     zoals vastgesteld door de programmaraad. Het resultaat van die snapshot wordt op
     <http://docs.geonovum.nl> neergezet.
 - **ld**, Levend document: Geschikt voor handreikingen en dergelijke die
   regelmatig gewijzigd worden en waarvoor niet een consultatie- en
-  goedkeuringsproces gevolgd hoeft te worden
-- **basis**, document zonder officiële status.(***specType: []***)
+  goedkeuringsproces gevolgd hoeft te worden.
+- **basis**, Document: zonder officiële status.
 
 
 #### Toekomstige ontwikkeling specStatus
@@ -81,7 +81,7 @@ De specStatus geeft de status van het document aan en kan de de volgende waarden
 
 ### SpecType
 
-**Bron:** [Beheer Geostandaarden/Handboek Beheerder](https://stichtinggeonovum.sharepoint.com/sites/msteams_bf388d/Gedeelde%20documenten/General/A%20Beheer%20Geostandaarden/Handboek%20Beheerder/Handboek%20beheer%20standaarden%20bij%20Geonovum.pdf)
+**Bron:** [Beheer Geostandaarden/Generiek beheer van standaarden bij Geonovum-Intern Handboek](https://stichtinggeonovum.sharepoint.com/sites/msteams_bf388d/Gedeelde%20documenten/General/A%20Beheer%20Geostandaarden/Handboek%20Beheerder/Handboek%20beheer%20standaarden%20bij%20Geonovum.pdf)
 
 Het specType in de configuratie is een vaste lijst met waarden, deze waarden
 zijn vastgesteld.
@@ -119,7 +119,7 @@ zijn vastgesteld.
 
 - **BD** Beheerdocumentatie: Documentatie met betrekking tot het beheerproces
     van de standaard. Deze documentatie betreft niet een standaard of onderdeel
-    daarvan, zoals een handreiking of werkafspraak.`
+    daarvan, zoals een handreiking of werkafspraak.
 
 ### pubDomain [beheer?]
 
