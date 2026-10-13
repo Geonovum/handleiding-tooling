@@ -41,11 +41,15 @@ Proof HTML en de Lychee-linkcontrole zijn blokkerend en bepalen het resultaat va
 ## Typische fouten die gevonden worden (met oplossing)  
   
 - referentiefout id (#`<id>` waarvan er geen element is met id="`<id>`").  
-  <img src="../media/broken-link.png" alt="broken-link" style="max-width:400px; height:auto;">  
+  <img src="../media/broken-link.png" alt="broken-link" style="max-width:500px; height:auto;">  
+  **Oplossing**: Verwijs naar wel bestaand `<id>` of verwijder de verwijzing.  
   
 - protocol ontbreekt in url, bijv.  `https://`. Melding `internally linking to docs.geostandaarden.nl/xxx/yyy/, which does not exist`.  
+  **Oplossing**: Voeg protocol toe. Gebruik https en niet meer http.  
   
-- `error: Duplicate ID “xxx”.`, dubbele id's, bijvoorbeeld meerdere keer id="col1" bij tabellen gegenereerd bij word2respec, of door kopieeractie.  
+- `error: Duplicate ID “xxx”.`, dubbele id's, bijvoorbeeld meerdere keer id="col1" bij tabellen gegenereerd bij oudere word2respec, of door kopieeractie.  
+  **Oplossing**: maak het id's uniek (evt. met toevoeging '-x') of verwijder ze, kan veelal voor col-id's.  
   
-- ongeldige html-tags, bijvpoorbeeld `<h7>` of `<alias>`. Dit is typisch voor een oudere imvertor-versie. Oplossing is om opnieuw output met imvertor te creëren. (***begin oktober 2026: gebruik nightly-build***)  
+- ongeldige html-tags, bijvoorbeeld `<h7>` of `<alias>`. Dit is typisch voor een oudere imvertor-versie.  
+  **Oplossing**: Creëer nieuwe output met imvertor. (***oktober 2026: gebruik nightly-build***).  
 
