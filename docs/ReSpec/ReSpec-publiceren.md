@@ -3,16 +3,16 @@
 Het publiceren van een ReSpec document bestaat uit het omzetten van de werkversie
 van dat document op GitHub naar een vaststellingsversie, consultatieversie of definitieve versie en het neerzetten van die versie op <https://docs.geostandaarden.nl>. Dit gaat in een aantal stappen:
 
-1. Zet de werkversie klaar voor publicatie door in config.js de velden `pubDomain`, `shortName`, `publishDate`, `specStatus` en evt. `specType`, `previousMaturity` en `previousPublishDate` in te vullen. 
+1. Zet de werkversie klaar voor publicatie door in config.js de velden `pubDomain`, `shortName`, `publishDate`, `specStatus`, `specType` en evt. `previousMaturity` en `previousPublishDate` in te vullen. 
 2. Zorg ook dat de automatische controle (bij push naar github) geen fouten meer geeft. 
 3. Door in het GitHub repository op 'Draft a new Release' te drukken wordt het publicatieproces automatisch in werking gezet wat resulteert in publicatie op <https://docs.geostandaarden.nl>, of als je het vinkje 'set as a pre-release` zet op <https://test.docs.geostandaarden.nl>. Dit zorgt voor een pull request op <https://github.com/Geonovum/docs.geostandaarden.nl>. Een pre-release wordt automatisch goedgekeurd. Een officiële release moet goedgekeurd worden door een reviewer.
 4.  Als de release gelukt is begint het proces weer van voor af aan en zet je in de werkversie de specStatus weer op `wv`. Ook laat je `previousMaturity`en `previousPublishDate` verwijzen naar de zojuist gepubliceerde versie.
 
 ## Stap 1: zet de werkversie klaar voor publicatie
 
-Zorg dat je werkversie op GitHub helemaal klaarstaat voor publicatie door in config.js `pubDomain`, `shortName`, `publishDate`, `specStatus` en evt. `specType`, `previousMaturity` en `previousPublishDate` in te vullen. Zorg ook dat de automatische controle (bij push naar github) geen fouten meer geeft.
+Zorg dat je werkversie op GitHub helemaal klaarstaat voor publicatie door in config.js `pubDomain`, `shortName`, `publishDate`, `specStatus`, `specType` en evt. `previousMaturity` en `previousPublishDate` in te vullen. Zorg ook dat de automatische controle (bij push naar github) geen fouten meer geeft.
 
-De status van een document staat in het veld `specStatus`. Documenten met de status 'wv' (werkversie) worden niet gepubliceerd en staan alleen op github. Te publiceren documenten hebben één van de volgende statussen: 'cv','vv', 'def','ld' of 'basis'. Zie [specStatus](ReSpec-onderdelen/#specstatus) voor de betekenis,
+De status van een document staat in het veld `specStatus`. Documenten met de status 'wv' (werkversie) worden niet gepubliceerd en staan alleen op github. Te publiceren documenten hebben één van de volgende statussen: 'cv','vv', 'def','ld' of 'basis'. Zie [specStatus](../ReSpec-onderdelen/#specstatus) voor de betekenis,
 
 De velden `previousmaturity` en `previousPublishDate` moeten ingevuld zijn. Deze velden zorgen ervoor dat het nieuw gepubliceerde document verwijst naar de vorige gepubliceerde versie waardoor door steeds op 'vorige' te klikken alle versies van een document te vinden blijven.
 
