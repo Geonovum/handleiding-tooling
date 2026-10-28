@@ -1,10 +1,10 @@
 # Geonovum tooling
 
-Welkom bij de beschrijving van de werkwijze en tooling van Geonovu.
+Welkom bij de beschrijving van de werkwijze en tooling van Geonovum.
 
 - De werkwijze implementeert wat we doen: [Informatiemodellering Geonovum](https://stichtinggeonovum.sharepoint.com/:b:/s/Basisprogramma/EVGORVYMb0FFkjC0L14Ud5AB3cuyP27Ux2lz6ZfxGqqMDw?e=ESaacU) die onze werkwijze in het kort beschrijft voor onze opdrachtgevers.
 - Een compacte en leesbare beschrijving van de [werkwijze](werkwijzemodelleren.md).
-- [wie beheert wat](https://stichtinggeonovum.sharepoint.com/:b:/s/FBICT/IQC8YxUUkR6tRr6RnMcPSmOgAQxZOKTlWu6-wg4oWK6oiwI?e=Wjjl14)?
+- [Wie beheert wat](https://stichtinggeonovum.sharepoint.com/:b:/s/FBICT/IQC8YxUUkR6tRr6RnMcPSmOgAQxZOKTlWu6-wg4oWK6oiwI?e=Wjjl14)?
 
 ![publicatie infrastructuur](media/PublicatieInfrastructuurGeonovum.drawio.svg)
 
