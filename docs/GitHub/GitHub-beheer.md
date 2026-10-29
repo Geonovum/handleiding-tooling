@@ -12,7 +12,9 @@ GitHub beheerders zijn te vinden in het github [gebuikersoverzicht](https://gith
 
 **Regel:** De GitHub beheerders beheren de pas-toe-of-leg-uit lijst.
 
-**Regel:** Iedereen binnen de organisatie heeft(automatisch) leesrechten tot alle repos.
+**Regel:** Iedereen binnen de organisatie heeft (automatisch) leesrechten tot alle repos.
+
+**Regel:** Iedereen (binnen en buiten de Geonovum organisatie) heeft (automatisch) leesrechten tot alle *publieke* repos.
 
 **Regel:** Wie behoort tot de Geonovum organisatie heeft toegang tot GitHub repositories via GitHub teams.
 
@@ -34,6 +36,6 @@ Er is een aantal teams gemaakt binnen Geonovum. Deze zijn te vinden op: <https:/
 
 **Regel:** Ieder team is gekoppeld aan een actief project binnen Geonovum.
 
-**Regel:** Repositories met content die in beheer zijn horen bij een team dat aanspreekpunt is voor die repository. Andere repositories geven in de README.md aan wie aanspreekpunt is voor die repository.
+**Regel:** Repositories met content die in beheer zijn horen bij een team dat aanspreekpunt is voor die repository. *Andere* repositories geven in de README.md aan wie aanspreekpunt is voor die repository.
 
 **Conventie:** Team namen eindigen op ' team'. Bijvoorbeeld 'DSO team'.
