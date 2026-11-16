@@ -70,7 +70,6 @@ De specStatus geeft de status van het document aan en kan de de volgende waarden
 - **ld**, Levend document: Geschikt voor handreikingen en dergelijke die
   regelmatig gewijzigd worden en waarvoor niet een consultatie- en
   goedkeuringsproces gevolgd hoeft te worden.
-- **basis**, Document: zonder officiële status.
 
 
 #### Toekomstige ontwikkeling specStatus
